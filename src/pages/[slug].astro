@@ -1,0 +1,516 @@
+---
+import { getCollection, render } from 'astro:content';
+import ShareButton from '../components/ShareButton.jsx';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('entries');
+  return entries.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { title, oneLiner, alsoKnownAs, category, tags, howToSpotIt, thoughtToHoldOnto, whyItMattersNow, relatedConcepts } = entry.data;
+
+// Render the Markdown body (What it means + In the real world)
+const { Content } = await render(entry);
+
+// Resolve related concepts to get titles and one-liners
+const allEntries = await getCollection('entries');
+const resolvedRelated = relatedConcepts.map((rel) => {
+  const found = allEntries.find((e) => e.id === rel.slug);
+  return {
+    slug: rel.slug,
+    title: found ? found.data.title : rel.slug,
+    oneLiner: found ? found.data.oneLiner : '',
+    category: found ? found.data.category : '',
+    note: rel.note,
+  };
+});
+
+const siteUrl = 'https://moresapien.org';
+const pageUrl = siteUrl + '/' + entry.id;
+
+const categoryColours: Record<string, string> = {
+  'Cognitive Bias': '#c17f59',
+  'Logical Fallacy': '#7b8a6e',
+  'Mental Model': '#5b7a8a',
+  'Political Theory': '#8a6e7b',
+  'Rhetorical Device': '#6e7b8a',
+  'Systems Thinking': '#7a8a5b',
+  'Manipulation Tactic': '#8b4a4a',
+  'Psychological Phenomenon': '#7a6699',
+  'Psychological Defence': '#4a7a7a',
+};
+
+const accentColour = categoryColours[category] || '#c17f59';
+
+function renderMarkdown(text: string): string {
+  return text.replace(/\*(.*?)\*/g, '<em>$1</em>');
+}
+
+const pageTitle = title + ' - Moresapien';
+const pageDescription = title + ': ' + oneLiner + ' Learn about this ' + category.toLowerCase() + ' and how it affects your thinking.';
+const ogImage = siteUrl + '/og/' + entry.id + '.png';
+const thoughtHtml = renderMarkdown(thoughtToHoldOnto);
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={oneLiner} />
+    <meta property="og:url" content={pageUrl} />
+    <meta property="og:site_name" content="Moresapien" />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={oneLiner} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <nav class="breadcrumb">
+        <a href="/">← All concepts</a>
+        <span class="separator">/</span>
+        <span class="category-label" style={"color:" + accentColour}>{category}</span>
+      </nav>
+
+      <article class="entry">
+        <header class="entry-header">
+          <span class="category-badge" style={"background:" + accentColour}>
+            {category}
+          </span>
+          <h1 class="entry-title">{title}</h1>
+          <p class="entry-oneliner">{oneLiner}</p>
+
+          {alsoKnownAs && alsoKnownAs.length > 0 && (
+            <p class="also-known-as">Also known as: {alsoKnownAs.join(', ')}</p>
+          )}
+
+          <div class="entry-tags">
+            {tags.map((tag: string) => (
+              <span class="tag">#{tag}</span>
+            ))}
+          </div>
+        </header>
+
+        <!-- Markdown body: "What it means" and "In the real world" -->
+        <div class="entry-body">
+          <Content />
+        </div>
+
+        <!-- How to spot it (new in v2) -->
+        <section class="entry-section entry-spot-it">
+          <h2>How to spot it</h2>
+          <p set:html={renderMarkdown(howToSpotIt)} />
+        </section>
+
+        <section class="entry-section entry-thought">
+          <blockquote>
+            <h2>The thought to hold onto</h2>
+            <p set:html={thoughtHtml} />
+          </blockquote>
+        </section>
+
+        <!-- Why it matters now (optional, new in v2) -->
+        {whyItMattersNow && (
+          <section class="entry-section entry-matters-now">
+            <h2>Why it matters now</h2>
+            <p set:html={renderMarkdown(whyItMattersNow)} />
+          </section>
+        )}
+
+        <footer class="entry-footer">
+          <div class="share-row">
+            <span class="share-label">Found this useful?</span>
+            <ShareButton
+              client:load
+              title={title}
+              oneLiner={oneLiner}
+              url={pageUrl}
+              category={category}
+            />
+          </div>
+
+          {resolvedRelated.length > 0 && (
+            <div class="related-concepts">
+              <h3>Related concepts</h3>
+              <div class="related-grid">
+                {resolvedRelated.map((related) => (
+                  <a href={"/" + related.slug} class="related-card">
+                    <span class="related-category" style={"color:" + (categoryColours[related.category] || '#c17f59')}>
+                      {related.category}
+                    </span>
+                    <span class="related-title">{related.title}</span>
+                    <span class="related-oneliner">{related.oneLiner}</span>
+                    {related.note && (
+                      <span class="related-note">{related.note}</span>
+                    )}
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+        </footer>
+      </article>
+
+      <div class="site-footer">
+        <p>
+          <a href="/">Moresapien</a> — Understanding ourselves, one idea at a time.
+        </p>
+      </div>
+    </div>
+
+    <style define:vars={{ accentColour }}>
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Nunito', sans-serif;
+        background: #faf8f5;
+        color: #3a3530;
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .page-wrapper {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 2rem 1.5rem 4rem;
+      }
+
+      .breadcrumb {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 2.5rem;
+        font-size: 0.875rem;
+      }
+
+      .breadcrumb a {
+        color: #8a7f72;
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+
+      .breadcrumb a:hover {
+        color: var(--accentColour);
+      }
+
+      .separator {
+        color: #d0c8be;
+      }
+
+      .category-label {
+        font-weight: 600;
+      }
+
+      .entry-header {
+        margin-bottom: 3rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #e8e0d8;
+      }
+
+      .category-badge {
+        display: inline-block;
+        color: #faf8f5;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        padding: 0.25rem 0.75rem;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .entry-title {
+        font-family: 'Lora', serif;
+        font-size: clamp(2rem, 5vw, 3rem);
+        font-weight: 700;
+        color: #2a2520;
+        line-height: 1.15;
+        margin-bottom: 0.75rem;
+      }
+
+      .entry-oneliner {
+        font-size: 1.25rem;
+        color: #6a6058;
+        line-height: 1.5;
+        font-style: italic;
+      }
+
+      .also-known-as {
+        margin-top: 0.75rem;
+        font-size: 0.9rem;
+        color: #8a7f72;
+        font-style: italic;
+      }
+
+      .entry-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 1.25rem;
+      }
+
+      .tag {
+        font-size: 0.8rem;
+        color: #a09888;
+        background: #f0ebe4;
+        padding: 0.2rem 0.6rem;
+        border-radius: 0.75rem;
+      }
+
+      /* Markdown body styles */
+      .entry-body {
+        margin-bottom: 2.5rem;
+      }
+
+      .entry-body :global(h2) {
+        font-family: 'Lora', serif;
+        font-size: 1.375rem;
+        font-weight: 600;
+        color: #2a2520;
+        margin-bottom: 1rem;
+        margin-top: 2.5rem;
+      }
+
+      .entry-body :global(h2:first-child) {
+        margin-top: 0;
+      }
+
+      .entry-body :global(p) {
+        margin-bottom: 1rem;
+        font-size: 1.05rem;
+        line-height: 1.8;
+      }
+
+      .entry-body :global(p:last-child) {
+        margin-bottom: 0;
+      }
+
+      /* "In the real world" section gets the accent treatment */
+      .entry-body :global(h2:nth-of-type(2)) {
+        margin-top: 2.5rem;
+      }
+
+      .entry-section {
+        margin-bottom: 2.5rem;
+      }
+
+      .entry-section h2 {
+        font-family: 'Lora', serif;
+        font-size: 1.375rem;
+        font-weight: 600;
+        color: #2a2520;
+        margin-bottom: 1rem;
+      }
+
+      .entry-section p {
+        margin-bottom: 1rem;
+        font-size: 1.05rem;
+        line-height: 1.8;
+      }
+
+      .entry-section p:last-child {
+        margin-bottom: 0;
+      }
+
+      .entry-spot-it {
+        background: #f0f5ee;
+        padding: 1.75rem 2rem;
+        border-radius: 1rem;
+        border-left: 3px solid var(--accentColour);
+      }
+
+      .entry-matters-now {
+        background: #f5f0ea;
+        padding: 1.75rem 2rem;
+        border-radius: 1rem;
+        border-left: 3px solid var(--accentColour);
+      }
+
+      .entry-thought blockquote {
+        background: linear-gradient(135deg, #f9f5f0 0%, #f5f0ea 100%);
+        padding: 2rem 2.25rem;
+        border-radius: 1rem;
+        position: relative;
+      }
+
+      .entry-thought blockquote::before {
+        content: '\201C';
+        font-family: 'Lora', serif;
+        font-size: 4rem;
+        color: var(--accentColour);
+        opacity: 0.25;
+        position: absolute;
+        top: 0.25rem;
+        left: 0.75rem;
+        line-height: 1;
+      }
+
+      .entry-thought h2 {
+        font-family: 'Lora', serif;
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--accentColour);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 0.75rem;
+      }
+
+      .entry-thought p {
+        font-family: 'Lora', serif;
+        font-size: 1.15rem;
+        font-style: italic;
+        line-height: 1.7;
+        color: #4a4540;
+      }
+
+      .entry-footer {
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid #e8e0d8;
+      }
+
+      .share-row {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 3rem;
+      }
+
+      .share-label {
+        font-size: 0.95rem;
+        color: #8a7f72;
+      }
+
+      .related-concepts h3 {
+        font-family: 'Lora', serif;
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #2a2520;
+        margin-bottom: 1rem;
+      }
+
+      .related-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+        gap: 1rem;
+      }
+
+      .related-card {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        padding: 1.25rem;
+        background: #fff;
+        border: 1px solid #e8e0d8;
+        border-radius: 0.75rem;
+        text-decoration: none;
+        transition: all 0.2s ease;
+      }
+
+      .related-card:hover {
+        border-color: #d0c8be;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+        transform: translateY(-1px);
+      }
+
+      .related-category {
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      .related-title {
+        font-family: 'Lora', serif;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #2a2520;
+      }
+
+      .related-oneliner {
+        font-size: 0.85rem;
+        color: #8a7f72;
+        line-height: 1.5;
+      }
+
+      .related-note {
+        font-size: 0.8rem;
+        color: #a09888;
+        font-style: italic;
+        line-height: 1.45;
+        margin-top: 0.25rem;
+        padding-top: 0.5rem;
+        border-top: 1px solid #f0ebe4;
+      }
+
+      .site-footer {
+        margin-top: 4rem;
+        padding-top: 2rem;
+        border-top: 1px solid #e8e0d8;
+        text-align: center;
+        font-size: 0.875rem;
+        color: #a09888;
+      }
+
+      .site-footer a {
+        color: #6a6058;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .site-footer a:hover {
+        color: var(--accentColour);
+      }
+
+      @media (max-width: 640px) {
+        .page-wrapper {
+          padding: 1.5rem 1rem 3rem;
+        }
+
+        .entry-spot-it,
+        .entry-matters-now {
+          padding: 1.25rem 1.5rem;
+        }
+
+        .entry-thought blockquote {
+          padding: 1.5rem 1.75rem;
+        }
+
+        .share-row {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.75rem;
+        }
+
+        .related-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </body>
+</html>

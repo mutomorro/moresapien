@@ -1,0 +1,1883 @@
+{
+  "nodes": [
+    {
+      "slug": "affect-heuristic",
+      "title": "Affect Heuristic",
+      "category": "Cognitive Bias",
+      "colour": "#D4A574",
+      "oneLiner": "We make judgements based on our current emotions rather than objective analysis.",
+      "tags": [
+        "emotion",
+        "decision-making",
+        "fear",
+        "persuasion",
+        "politics",
+        "advertising",
+        "everyday life"
+      ],
+      "connections": 10
+    },
+    {
+      "slug": "anchoring-bias",
+      "title": "Anchoring Bias",
+      "category": "Cognitive Bias",
+      "colour": "#D4A574",
+      "oneLiner": "The first number or piece of information we hear disproportionately shapes everything that follows.",
+      "tags": [
+        "decision-making",
+        "persuasion",
+        "politics",
+        "advertising",
+        "everyday life",
+        "workplace"
+      ],
+      "connections": 6
+    },
+    {
+      "slug": "appeal-to-emotion",
+      "title": "Appeal to Emotion",
+      "category": "Logical Fallacy",
+      "colour": "#7EA886",
+      "oneLiner": "Substituting feelings for evidence to win an argument.",
+      "tags": [
+        "persuasion",
+        "manipulation",
+        "rhetoric",
+        "media literacy",
+        "debate",
+        "politics",
+        "advertising",
+        "misinformation"
+      ],
+      "connections": 5
+    },
+    {
+      "slug": "appeal-to-false-authority",
+      "title": "Appeal to False Authority",
+      "category": "Logical Fallacy",
+      "colour": "#7EA886",
+      "oneLiner": "Using a source that sounds authoritative but isn't actually reliable or relevant as the foundation of an argument.",
+      "tags": [
+        "critical thinking",
+        "misinformation",
+        "media literacy",
+        "debate",
+        "persuasion",
+        "news media",
+        "social media"
+      ],
+      "connections": 7
+    },
+    {
+      "slug": "appeal-to-nature",
+      "title": "Appeal to Nature",
+      "category": "Logical Fallacy",
+      "colour": "#7EA886",
+      "oneLiner": "The assumption that something is good because it's natural, or bad because it's artificial.",
+      "tags": [
+        "critical thinking",
+        "health",
+        "science",
+        "advertising",
+        "misinformation",
+        "everyday life"
+      ],
+      "connections": 5
+    },
+    {
+      "slug": "authority-bias",
+      "title": "Authority Bias",
+      "category": "Cognitive Bias",
+      "colour": "#D4A574",
+      "oneLiner": "We give disproportionate weight to the opinions of people we perceive as authorities - even outside their expertise.",
+      "tags": [
+        "persuasion",
+        "misinformation",
+        "media literacy",
+        "advertising",
+        "science",
+        "everyday life"
+      ],
+      "connections": 11
+    },
+    {
+      "slug": "availability-heuristic",
+      "title": "Availability Heuristic",
+      "category": "Cognitive Bias",
+      "colour": "#D4A574",
+      "oneLiner": "We judge how likely something is based on how easily an example comes to mind.",
+      "tags": [
+        "decision-making",
+        "risk",
+        "fear",
+        "media literacy",
+        "news media",
+        "everyday life"
+      ],
+      "connections": 10
+    },
+    {
+      "slug": "aversive-racism",
+      "title": "Aversive Racism",
+      "category": "Psychological Phenomenon",
+      "colour": "#9B8EC4",
+      "oneLiner": "When people who genuinely believe they are not prejudiced still harbour unconscious biases that shape their behaviour in subtle ways.",
+      "tags": [
+        "self-deception",
+        "identity",
+        "social dynamics",
+        "everyday life",
+        "workplace",
+        "critical thinking"
+      ],
+      "connections": 8
+    },
+    {
+      "slug": "backfire-effect",
+      "title": "Backfire Effect",
+      "category": "Psychological Phenomenon",
+      "colour": "#9B8EC4",
+      "oneLiner": "Correcting someone's false belief can actually make them believe it more strongly.",
+      "tags": [
+        "misinformation",
+        "self-deception",
+        "critical thinking",
+        "politics",
+        "media literacy",
+        "education"
+      ],
+      "connections": 8
+    },
+    {
+      "slug": "bandwagon-effect",
+      "title": "Bandwagon Effect",
+      "category": "Cognitive Bias",
+      "colour": "#D4A574",
+      "oneLiner": "We're more likely to believe or do something if lots of other people already do.",
+      "tags": [
+        "social dynamics",
+        "persuasion",
+        "politics",
+        "misinformation",
+        "social media",
+        "advertising",
+        "everyday life"
+      ],
+      "connections": 8
+    },
+    {
+      "slug": "ben-franklin-effect",
+      "title": "Ben Franklin Effect",
+      "category": "Cognitive Bias",
+      "colour": "#D4A574",
+      "oneLiner": "We grow to like people we've done favours for, not just people who've done favours for us.",
+      "tags": [
+        "persuasion",
+        "social dynamics",
+        "relationships",
+        "everyday life",
+        "workplace"
+      ],
+      "connections": 3
+    },
+    {
+      "slug": "betrayal-aversion",
+      "title": "Betrayal Aversion",
+      "category": "Psychological Phenomenon",
+      "colour": "#9B8EC4",
+      "oneLiner": "Harm that comes with a violation of trust hurts far more than the same harm without it.",
+      "tags": [
+        "emotion",
+        "relationships",
+        "politics",
+        "social dynamics",
+        "ego",
+        "everyday life"
+      ],
+      "connections": 6
+    },
+    {
+      "slug": "cognitive-dissonance",
+      "title": "Cognitive Dissonance",
+      "category": "Cognitive Bias",
+      "colour": "#D4A574",
+      "oneLiner": "The uncomfortable tension we feel when holding two contradictory beliefs at the same time.",
+      "tags": [
+        "self-deception",
+        "ego",
+        "critical thinking",
+        "politics",
+        "everyday life",
+        "relationships"
+      ],
+      "connections": 16
+    },
+    {
+      "slug": "confirmation-bias",
+      "title": "Confirmation Bias",
+      "category": "Cognitive Bias",
+      "colour": "#D4A574",
+      "oneLiner": "We seek out information that supports what we already believe, and ignore what doesn't.",
+      "tags": [
+        "misinformation",
+        "self-deception",
+        "critical thinking",
+        "media literacy",
+        "social media",
+        "news media",
+        "science"
+      ],
+      "connections": 20
+    },
+    {
+      "slug": "dog-whistling",
+      "title": "Dog Whistling",
+      "category": "Manipulation Tactic",
+      "colour": "#C47A7A",
+      "oneLiner": "Using coded language that sounds innocent to most people but carries a specific prejudiced message to a target audience.",
+      "tags": [
+        "propaganda",
+        "persuasion",
+        "media literacy",
+        "politics",
+        "bad faith",
+        "news media",
+        "social media",
+        "debate"
+      ],
+      "connections": 8
+    },
+    {
+      "slug": "dunning-kruger-effect",
+      "title": "Dunning-Kruger Effect",
+      "category": "Cognitive Bias",
+      "colour": "#D4A574",
+      "oneLiner": "The less you know about something, the more confident you're likely to feel about it.",
+      "tags": [
+        "self-deception",
+        "ego",
+        "critical thinking",
+        "social media",
+        "science",
+        "everyday life"
+      ],
+      "connections": 6
+    },
+    {
+      "slug": "expectancy-violation",
+      "title": "Expectancy Violation",
+      "category": "Psychological Phenomenon",
+      "colour": "#9B8EC4",
+      "oneLiner": "When someone behaves differently from what we expected, our emotional reaction is amplified - for better or worse.",
+      "tags": [
+        "emotion",
+        "relationships",
+        "social dynamics",
+        "communication",
+        "everyday life"
+      ],
+      "connections": 5
+    },
+    {
+      "slug": "false-dilemma",
+      "title": "False Dilemma",
+      "category": "Logical Fallacy",
+      "colour": "#7EA886",
+      "oneLiner": "When someone presents only two options, even though more exist.",
+      "tags": [
+        "critical thinking",
+        "debate",
+        "politics",
+        "media literacy",
+        "news media"
+      ],
+      "connections": 8
+    },
+    {
+      "slug": "false-equivalence",
+      "title": "False Equivalence",
+      "category": "Logical Fallacy",
+      "colour": "#7EA886",
+      "oneLiner": "Treating two things as equally valid or important when they clearly aren't.",
+      "tags": [
+        "media literacy",
+        "critical thinking",
+        "debate",
+        "politics",
+        "news media",
+        "misinformation",
+        "science"
+      ],
+      "connections": 7
+    },
+    {
+      "slug": "firehose-of-falsehood",
+      "title": "Firehose of Falsehood",
+      "category": "Manipulation Tactic",
+      "colour": "#C47A7A",
+      "oneLiner": "Flooding the information space with so many lies, half-truths, and contradictions that people give up trying to figure out what's true.",
+      "tags": [
+        "propaganda",
+        "misinformation",
+        "politics",
+        "media literacy",
+        "bad faith",
+        "social media",
+        "news media"
+      ],
+      "connections": 9
+    },
+    {
+      "slug": "framing-effect",
+      "title": "Framing Effect",
+      "category": "Rhetorical Device",
+      "colour": "#8B9FC5",
+      "oneLiner": "The way information is presented changes how we respond to it - even when the underlying facts are identical.",
+      "tags": [
+        "persuasion",
+        "media literacy",
+        "politics",
+        "news media",
+        "advertising",
+        "decision-making",
+        "critical thinking"
+      ],
+      "connections": 15
+    },
+    {
+      "slug": "gish-gallop",
+      "title": "Gish Gallop",
+      "category": "Manipulation Tactic",
+      "colour": "#C47A7A",
+      "oneLiner": "Overwhelming someone with a flood of arguments, regardless of their accuracy, so they can't possibly respond to them all.",
+      "tags": [
+        "bad faith",
+        "debate",
+        "misinformation",
+        "propaganda",
+        "media literacy",
+        "social media",
+        "politics"
+      ],
+      "connections": 11
+    },
+    {
+      "slug": "illusory-truth-effect",
+      "title": "Illusory Truth Effect",
+      "category": "Psychological Phenomenon",
+      "colour": "#9B8EC4",
+      "oneLiner": "The more often we hear something, the more likely we are to believe it - regardless of whether it's true.",
+      "tags": [
+        "misinformation",
+        "propaganda",
+        "media literacy",
+        "social media",
+        "news media",
+        "advertising"
+      ],
+      "connections": 9
+    },
+    {
+      "slug": "in-group-out-group-bias",
+      "title": "In-group/Out-group Bias",
+      "category": "Cognitive Bias",
+      "colour": "#D4A574",
+      "oneLiner": "We automatically trust people who seem like us and distrust people who don't.",
+      "tags": [
+        "identity",
+        "social dynamics",
+        "politics",
+        "misinformation",
+        "fear",
+        "media literacy"
+      ],
+      "connections": 8
+    },
+    {
+      "slug": "independent-evaluation",
+      "title": "Independent Evaluation",
+      "category": "Mental Model",
+      "colour": "#C4956A",
+      "oneLiner": "Forming your own judgement before hearing what everyone else thinks.",
+      "tags": [
+        "critical thinking",
+        "decision-making",
+        "workplace",
+        "groupthink",
+        "everyday life"
+      ],
+      "connections": 8
+    },
+    {
+      "slug": "just-world-fallacy",
+      "title": "Just-World Fallacy",
+      "category": "Logical Fallacy",
+      "colour": "#7EA886",
+      "oneLiner": "The belief that people generally get what they deserve - that the world is fundamentally fair.",
+      "tags": [
+        "self-deception",
+        "social dynamics",
+        "politics",
+        "everyday life",
+        "identity"
+      ],
+      "connections": 7
+    },
+    {
+      "slug": "learned-helplessness",
+      "title": "Learned Helplessness",
+      "category": "Psychological Phenomenon",
+      "colour": "#9B8EC4",
+      "oneLiner": "When repeated failure or lack of control teaches us to stop trying - even when things change.",
+      "tags": [
+        "misinformation",
+        "propaganda",
+        "fear",
+        "social dynamics",
+        "politics",
+        "everyday life",
+        "relationships"
+      ],
+      "connections": 7
+    },
+    {
+      "slug": "microaggressions",
+      "title": "Microaggressions",
+      "category": "Psychological Phenomenon",
+      "colour": "#9B8EC4",
+      "oneLiner": "Small, everyday slights and indignities - often unintentional - that communicate hostility or prejudice toward members of marginalised groups.",
+      "tags": [
+        "social dynamics",
+        "identity",
+        "everyday life",
+        "workplace",
+        "education",
+        "relationships",
+        "critical thinking"
+      ],
+      "connections": 7
+    },
+    {
+      "slug": "moral-hypocrisy-judgement",
+      "title": "Moral Hypocrisy Judgement",
+      "category": "Psychological Phenomenon",
+      "colour": "#9B8EC4",
+      "oneLiner": "We punish the contradiction between someone's stated values and their behaviour more harshly than we punish the behaviour alone.",
+      "tags": [
+        "ego",
+        "politics",
+        "social dynamics",
+        "relationships",
+        "everyday life",
+        "emotion"
+      ],
+      "connections": 5
+    },
+    {
+      "slug": "motivated-reasoning",
+      "title": "Motivated Reasoning",
+      "category": "Psychological Defence",
+      "colour": "#7AACB0",
+      "oneLiner": "Using our intelligence not to find truth but to defend conclusions we've already reached.",
+      "tags": [
+        "self-deception",
+        "ego",
+        "critical thinking",
+        "politics",
+        "science",
+        "everyday life"
+      ],
+      "connections": 14
+    },
+    {
+      "slug": "motte-and-bailey",
+      "title": "Motte-and-Bailey",
+      "category": "Manipulation Tactic",
+      "colour": "#C47A7A",
+      "oneLiner": "Holding a controversial position but retreating to a much more defensible one when challenged - then switching back once the pressure's off.",
+      "tags": [
+        "bad faith",
+        "debate",
+        "politics",
+        "social media",
+        "critical thinking"
+      ],
+      "connections": 8
+    },
+    {
+      "slug": "negativity-bias",
+      "title": "Negativity Bias",
+      "category": "Cognitive Bias",
+      "colour": "#D4A574",
+      "oneLiner": "Bad experiences affect us more powerfully than equally good ones.",
+      "tags": [
+        "emotion",
+        "fear",
+        "media literacy",
+        "news media",
+        "everyday life",
+        "relationships",
+        "decision-making"
+      ],
+      "connections": 6
+    },
+    {
+      "slug": "normalcy-bias",
+      "title": "Normalcy Bias",
+      "category": "Psychological Phenomenon",
+      "colour": "#9B8EC4",
+      "oneLiner": "The assumption that because things have always been a certain way, they will continue to be.",
+      "tags": [
+        "risk",
+        "decision-making",
+        "politics",
+        "everyday life",
+        "fear",
+        "critical thinking"
+      ],
+      "connections": 10
+    },
+    {
+      "slug": "occams-razor",
+      "title": "Occam's Razor",
+      "category": "Mental Model",
+      "colour": "#C4956A",
+      "oneLiner": "The simplest explanation that fits the facts is usually the right one.",
+      "tags": [
+        "critical thinking",
+        "decision-making",
+        "science",
+        "everyday life"
+      ],
+      "connections": 4
+    },
+    {
+      "slug": "overton-window",
+      "title": "Overton Window",
+      "category": "Political Theory",
+      "colour": "#B07AA1",
+      "oneLiner": "The range of ideas the public considers acceptable at any given time - and how that range can be deliberately shifted.",
+      "tags": [
+        "politics",
+        "persuasion",
+        "propaganda",
+        "media literacy",
+        "social dynamics"
+      ],
+      "connections": 7
+    },
+    {
+      "slug": "pluralistic-ignorance",
+      "title": "Pluralistic Ignorance",
+      "category": "Psychological Phenomenon",
+      "colour": "#9B8EC4",
+      "oneLiner": "When most people in a group privately disagree with a norm but go along with it because they assume everyone else agrees.",
+      "tags": [
+        "social dynamics",
+        "groupthink",
+        "politics",
+        "workplace",
+        "everyday life",
+        "fear"
+      ],
+      "connections": 9
+    },
+    {
+      "slug": "psychological-projection",
+      "title": "Psychological Projection",
+      "category": "Psychological Defence",
+      "colour": "#7AACB0",
+      "oneLiner": "Attributing your own feelings, motives, or behaviours to someone else.",
+      "tags": [
+        "self-deception",
+        "ego",
+        "politics",
+        "relationships",
+        "bad faith",
+        "everyday life"
+      ],
+      "connections": 9
+    },
+    {
+      "slug": "sealioning",
+      "title": "Sealioning",
+      "category": "Manipulation Tactic",
+      "colour": "#C47A7A",
+      "oneLiner": "Endlessly demanding evidence or explanations in bad faith, disguised as polite curiosity.",
+      "tags": [
+        "bad faith",
+        "debate",
+        "social media",
+        "social dynamics",
+        "media literacy"
+      ],
+      "connections": 5
+    },
+    {
+      "slug": "second-order-thinking",
+      "title": "Second-Order Thinking",
+      "category": "Mental Model",
+      "colour": "#C4956A",
+      "oneLiner": "Asking 'and then what?' - looking beyond the immediate consequences to what happens next.",
+      "tags": [
+        "decision-making",
+        "critical thinking",
+        "politics",
+        "everyday life",
+        "workplace"
+      ],
+      "connections": 5
+    },
+    {
+      "slug": "source-laundering",
+      "title": "Source Laundering",
+      "category": "Manipulation Tactic",
+      "colour": "#C47A7A",
+      "oneLiner": "Passing unreliable information through credible-looking channels until it appears legitimate.",
+      "tags": [
+        "misinformation",
+        "propaganda",
+        "media literacy",
+        "bad faith",
+        "politics",
+        "news media",
+        "social media"
+      ],
+      "connections": 7
+    },
+    {
+      "slug": "straw-man",
+      "title": "Straw Man",
+      "category": "Logical Fallacy",
+      "colour": "#7EA886",
+      "oneLiner": "Misrepresenting someone's argument to make it easier to attack.",
+      "tags": [
+        "debate",
+        "bad faith",
+        "politics",
+        "media literacy",
+        "critical thinking",
+        "social media"
+      ],
+      "connections": 10
+    },
+    {
+      "slug": "survivorship-bias",
+      "title": "Survivorship Bias",
+      "category": "Cognitive Bias",
+      "colour": "#D4A574",
+      "oneLiner": "We only see the winners, so we misjudge what it takes to succeed.",
+      "tags": [
+        "decision-making",
+        "risk",
+        "critical thinking",
+        "everyday life",
+        "workplace",
+        "science"
+      ],
+      "connections": 4
+    },
+    {
+      "slug": "symbolic-racism",
+      "title": "Symbolic Racism",
+      "category": "Psychological Phenomenon",
+      "colour": "#9B8EC4",
+      "oneLiner": "When prejudice is expressed not through overt hostility but through opposition to policies and positions associated with marginalised groups, framed in the language of fairness and principle.",
+      "tags": [
+        "politics",
+        "identity",
+        "self-deception",
+        "media literacy",
+        "news media",
+        "social dynamics",
+        "critical thinking"
+      ],
+      "connections": 7
+    },
+    {
+      "slug": "whataboutism",
+      "title": "Whataboutism",
+      "category": "Manipulation Tactic",
+      "colour": "#C47A7A",
+      "oneLiner": "Deflecting criticism by pointing to someone else's wrongdoing instead of addressing the original point.",
+      "tags": [
+        "bad faith",
+        "debate",
+        "politics",
+        "propaganda",
+        "social media",
+        "media literacy"
+      ],
+      "connections": 9
+    },
+    {
+      "slug": "woozle-effect",
+      "title": "Woozle Effect",
+      "category": "Psychological Phenomenon",
+      "colour": "#9B8EC4",
+      "oneLiner": "When a weak or unsupported claim gets cited and re-cited until it starts looking like established fact.",
+      "tags": [
+        "misinformation",
+        "media literacy",
+        "critical thinking",
+        "propaganda",
+        "news media",
+        "social media",
+        "science",
+        "education"
+      ],
+      "connections": 7
+    }
+  ],
+  "edges": [
+    {
+      "source": "affect-heuristic",
+      "target": "availability-heuristic",
+      "notes": [
+        {
+          "from": "affect-heuristic",
+          "text": "The affect heuristic and availability heuristic often fire together - vivid memories trigger emotional responses that shape judgement"
+        },
+        {
+          "from": "availability-heuristic",
+          "text": "The availability heuristic and the affect heuristic often work together - vivid memories trigger emotional responses that shape judgement"
+        }
+      ]
+    },
+    {
+      "source": "affect-heuristic",
+      "target": "negativity-bias"
+    },
+    {
+      "source": "affect-heuristic",
+      "target": "framing-effect",
+      "notes": [
+        {
+          "from": "affect-heuristic",
+          "text": "Framing works partly by triggering different emotional responses to the same information"
+        }
+      ]
+    },
+    {
+      "source": "affect-heuristic",
+      "target": "motivated-reasoning"
+    },
+    {
+      "source": "anchoring-bias",
+      "target": "framing-effect",
+      "notes": [
+        {
+          "from": "anchoring-bias",
+          "text": "Anchoring is a specific form of framing - the first piece of information frames everything after it"
+        },
+        {
+          "from": "framing-effect",
+          "text": "Anchoring is a specific form of framing - the first number frames everything after it"
+        }
+      ]
+    },
+    {
+      "source": "anchoring-bias",
+      "target": "overton-window",
+      "notes": [
+        {
+          "from": "anchoring-bias",
+          "text": "Extreme anchors can shift what feels like a reasonable middle ground"
+        },
+        {
+          "from": "overton-window",
+          "text": "Extreme positions anchor the debate, making the merely unreasonable feel like a compromise"
+        }
+      ]
+    },
+    {
+      "source": "anchoring-bias",
+      "target": "false-dilemma"
+    },
+    {
+      "source": "affect-heuristic",
+      "target": "appeal-to-emotion",
+      "notes": [
+        {
+          "from": "appeal-to-emotion",
+          "text": "The cognitive bias that makes appeal to emotion work - we judge things by how they make us feel."
+        }
+      ]
+    },
+    {
+      "source": "appeal-to-emotion",
+      "target": "framing-effect",
+      "notes": [
+        {
+          "from": "appeal-to-emotion",
+          "text": "How the same facts can trigger completely different emotional responses depending on how they're presented."
+        }
+      ]
+    },
+    {
+      "source": "appeal-to-emotion",
+      "target": "confirmation-bias",
+      "notes": [
+        {
+          "from": "appeal-to-emotion",
+          "text": "We're more susceptible to emotional appeals that confirm what we already believe."
+        }
+      ]
+    },
+    {
+      "source": "appeal-to-emotion",
+      "target": "motivated-reasoning",
+      "notes": [
+        {
+          "from": "appeal-to-emotion",
+          "text": "Once an emotional appeal has landed, motivated reasoning kicks in to justify the conclusion we've already reached."
+        }
+      ]
+    },
+    {
+      "source": "appeal-to-emotion",
+      "target": "straw-man",
+      "notes": [
+        {
+          "from": "appeal-to-emotion",
+          "text": "Often paired with emotional appeals - distort someone's position, then react emotionally to the distortion."
+        }
+      ]
+    },
+    {
+      "source": "appeal-to-false-authority",
+      "target": "authority-bias",
+      "notes": [
+        {
+          "from": "appeal-to-false-authority",
+          "text": "The cognitive bias that makes us susceptible to this fallacy - we're wired to defer to perceived authority figures"
+        }
+      ]
+    },
+    {
+      "source": "appeal-to-false-authority",
+      "target": "woozle-effect",
+      "notes": [
+        {
+          "from": "appeal-to-false-authority",
+          "text": "What happens next - the false authority's claim gets cited and re-cited until it looks like established fact"
+        },
+        {
+          "from": "woozle-effect",
+          "text": "Often the starting point - a dubious source gets treated as authoritative, and the Woozle Effect does the rest"
+        }
+      ]
+    },
+    {
+      "source": "appeal-to-false-authority",
+      "target": "source-laundering",
+      "notes": [
+        {
+          "from": "appeal-to-false-authority",
+          "text": "The deliberate version - routing unreliable claims through credible-looking channels"
+        },
+        {
+          "from": "source-laundering",
+          "text": "Source laundering manufactures the false authority that this fallacy then exploits"
+        }
+      ]
+    },
+    {
+      "source": "appeal-to-false-authority",
+      "target": "confirmation-bias",
+      "notes": [
+        {
+          "from": "appeal-to-false-authority",
+          "text": "We're more likely to accept a dubious authority if they're telling us what we already believe"
+        }
+      ]
+    },
+    {
+      "source": "appeal-to-false-authority",
+      "target": "illusory-truth-effect"
+    },
+    {
+      "source": "affect-heuristic",
+      "target": "appeal-to-nature",
+      "notes": [
+        {
+          "from": "appeal-to-nature",
+          "text": "'Natural' triggers a positive emotional response that bypasses rational evaluation"
+        }
+      ]
+    },
+    {
+      "source": "appeal-to-nature",
+      "target": "framing-effect"
+    },
+    {
+      "source": "appeal-to-nature",
+      "target": "authority-bias"
+    },
+    {
+      "source": "appeal-to-nature",
+      "target": "confirmation-bias"
+    },
+    {
+      "source": "authority-bias",
+      "target": "bandwagon-effect"
+    },
+    {
+      "source": "authority-bias",
+      "target": "dunning-kruger-effect",
+      "notes": [
+        {
+          "from": "dunning-kruger-effect",
+          "text": "The Dunning-Kruger effect explains why we should be cautious about self-appointed authorities"
+        }
+      ]
+    },
+    {
+      "source": "authority-bias",
+      "target": "independent-evaluation",
+      "notes": [
+        {
+          "from": "authority-bias",
+          "text": "Authority bias is one of the strongest forces that independent evaluation protects against"
+        }
+      ]
+    },
+    {
+      "source": "availability-heuristic",
+      "target": "negativity-bias",
+      "notes": [
+        {
+          "from": "availability-heuristic",
+          "text": "Negative events are more vivid and memorable, making them more 'available'"
+        },
+        {
+          "from": "negativity-bias",
+          "text": "Negative events are more vivid and memorable, making them more 'available' to recall"
+        }
+      ]
+    },
+    {
+      "source": "availability-heuristic",
+      "target": "framing-effect"
+    },
+    {
+      "source": "availability-heuristic",
+      "target": "confirmation-bias"
+    },
+    {
+      "source": "aversive-racism",
+      "target": "dog-whistling",
+      "notes": [
+        {
+          "from": "aversive-racism",
+          "text": "Dog whistles work partly because they activate the unconscious biases that aversive racism describes"
+        },
+        {
+          "from": "dog-whistling",
+          "text": "Dog whistling works partly because it activates prejudices people don't consciously acknowledge"
+        }
+      ]
+    },
+    {
+      "source": "aversive-racism",
+      "target": "symbolic-racism",
+      "notes": [
+        {
+          "from": "aversive-racism",
+          "text": "Where aversive racism is unconscious and personal, symbolic racism is its political expression"
+        },
+        {
+          "from": "symbolic-racism",
+          "text": "Aversive racism operates at the personal and unconscious level; symbolic racism is how it shows up in political attitudes"
+        }
+      ]
+    },
+    {
+      "source": "aversive-racism",
+      "target": "microaggressions",
+      "notes": [
+        {
+          "from": "aversive-racism",
+          "text": "Microaggressions are often the visible surface of aversive racism - the moments where unconscious bias leaks into behaviour"
+        },
+        {
+          "from": "microaggressions",
+          "text": "Microaggressions are often the visible surface of the unconscious biases that aversive racism describes"
+        }
+      ]
+    },
+    {
+      "source": "aversive-racism",
+      "target": "in-group-out-group-bias",
+      "notes": [
+        {
+          "from": "aversive-racism",
+          "text": "The deeper tribal wiring that aversive racism builds on"
+        }
+      ]
+    },
+    {
+      "source": "aversive-racism",
+      "target": "cognitive-dissonance",
+      "notes": [
+        {
+          "from": "aversive-racism",
+          "text": "The discomfort when someone who believes they are fair is confronted with evidence of their own bias"
+        }
+      ]
+    },
+    {
+      "source": "backfire-effect",
+      "target": "cognitive-dissonance",
+      "notes": [
+        {
+          "from": "backfire-effect",
+          "text": "The backfire effect is cognitive dissonance taken to its extreme - the brain protects the belief at any cost"
+        },
+        {
+          "from": "cognitive-dissonance",
+          "text": "What happens when cognitive dissonance gets so intense that correction strengthens the original belief"
+        }
+      ]
+    },
+    {
+      "source": "backfire-effect",
+      "target": "confirmation-bias",
+      "notes": [
+        {
+          "from": "confirmation-bias",
+          "text": "What happens when someone tries to correct a belief held through confirmation bias"
+        }
+      ]
+    },
+    {
+      "source": "backfire-effect",
+      "target": "motivated-reasoning",
+      "notes": [
+        {
+          "from": "backfire-effect",
+          "text": "The backfire effect is what happens when motivated reasoning wins the fight against evidence"
+        }
+      ]
+    },
+    {
+      "source": "backfire-effect",
+      "target": "illusory-truth-effect"
+    },
+    {
+      "source": "bandwagon-effect",
+      "target": "pluralistic-ignorance",
+      "notes": [
+        {
+          "from": "bandwagon-effect",
+          "text": "The bandwagon effect and pluralistic ignorance feed each other - we join the crowd, assuming the crowd knows something we don't"
+        },
+        {
+          "from": "pluralistic-ignorance",
+          "text": "Pluralistic ignorance creates false bandwagons - everyone joins because they think everyone else is already on board"
+        }
+      ]
+    },
+    {
+      "source": "bandwagon-effect",
+      "target": "independent-evaluation",
+      "notes": [
+        {
+          "from": "bandwagon-effect",
+          "text": "The direct antidote to the bandwagon effect"
+        },
+        {
+          "from": "independent-evaluation",
+          "text": "Independent evaluation is the antidote to the bandwagon effect"
+        }
+      ]
+    },
+    {
+      "source": "bandwagon-effect",
+      "target": "confirmation-bias"
+    },
+    {
+      "source": "ben-franklin-effect",
+      "target": "cognitive-dissonance",
+      "notes": [
+        {
+          "from": "ben-franklin-effect",
+          "text": "The Ben Franklin Effect is cognitive dissonance in action - we helped them, so we must like them"
+        }
+      ]
+    },
+    {
+      "source": "ben-franklin-effect",
+      "target": "motivated-reasoning"
+    },
+    {
+      "source": "affect-heuristic",
+      "target": "ben-franklin-effect"
+    },
+    {
+      "source": "betrayal-aversion",
+      "target": "cognitive-dissonance",
+      "notes": [
+        {
+          "from": "betrayal-aversion",
+          "text": "Part of the pain of betrayal is confronting our own misjudgement"
+        }
+      ]
+    },
+    {
+      "source": "betrayal-aversion",
+      "target": "expectancy-violation",
+      "notes": [
+        {
+          "from": "betrayal-aversion",
+          "text": "Betrayal aversion is what happens when a positive expectation is violated by someone we trusted"
+        },
+        {
+          "from": "expectancy-violation",
+          "text": "Betrayal aversion is a specific case of expectancy violation - where the violated expectation was trust"
+        }
+      ]
+    },
+    {
+      "source": "betrayal-aversion",
+      "target": "moral-hypocrisy-judgement",
+      "notes": [
+        {
+          "from": "betrayal-aversion",
+          "text": "We punish the contradiction between stated values and behaviour, not just the behaviour itself"
+        },
+        {
+          "from": "moral-hypocrisy-judgement",
+          "text": "Betrayal aversion is about broken trust. Moral hypocrisy judgement is about broken consistency between values and actions."
+        }
+      ]
+    },
+    {
+      "source": "betrayal-aversion",
+      "target": "psychological-projection",
+      "notes": [
+        {
+          "from": "betrayal-aversion",
+          "text": "The 'every accusation is a confession' pattern - sometimes the loudest virtue-signallers are the worst offenders"
+        }
+      ]
+    },
+    {
+      "source": "cognitive-dissonance",
+      "target": "motivated-reasoning",
+      "notes": [
+        {
+          "from": "cognitive-dissonance",
+          "text": "The tool our brains use to resolve cognitive dissonance without actually changing our minds"
+        },
+        {
+          "from": "motivated-reasoning",
+          "text": "Motivated reasoning is the brain's primary tool for resolving cognitive dissonance without changing beliefs"
+        }
+      ]
+    },
+    {
+      "source": "cognitive-dissonance",
+      "target": "confirmation-bias",
+      "notes": [
+        {
+          "from": "cognitive-dissonance",
+          "text": "We avoid dissonance by seeking information that confirms what we already believe"
+        }
+      ]
+    },
+    {
+      "source": "cognitive-dissonance",
+      "target": "psychological-projection",
+      "notes": [
+        {
+          "from": "psychological-projection",
+          "text": "Projection is a way of externalising the dissonance between who we think we are and how we actually behave"
+        }
+      ]
+    },
+    {
+      "source": "confirmation-bias",
+      "target": "motivated-reasoning",
+      "notes": [
+        {
+          "from": "confirmation-bias",
+          "text": "The engine behind confirmation bias - we use our intelligence to defend conclusions we've already reached"
+        },
+        {
+          "from": "motivated-reasoning",
+          "text": "Confirmation bias is the passive version - motivated reasoning is the active version"
+        }
+      ]
+    },
+    {
+      "source": "confirmation-bias",
+      "target": "illusory-truth-effect",
+      "notes": [
+        {
+          "from": "confirmation-bias",
+          "text": "Repeated exposure to confirming information makes it feel even more true"
+        },
+        {
+          "from": "illusory-truth-effect",
+          "text": "Confirmation bias primes us to accept repeated claims that align with existing beliefs"
+        }
+      ]
+    },
+    {
+      "source": "dog-whistling",
+      "target": "symbolic-racism",
+      "notes": [
+        {
+          "from": "dog-whistling",
+          "text": "The political expression of prejudice that dog whistling is designed to activate"
+        },
+        {
+          "from": "symbolic-racism",
+          "text": "Dog whistling is the rhetorical delivery system for symbolic racism - the coded language that activates it"
+        }
+      ]
+    },
+    {
+      "source": "dog-whistling",
+      "target": "framing-effect",
+      "notes": [
+        {
+          "from": "dog-whistling",
+          "text": "Dog whistling is a specific form of framing - choosing words that trigger particular associations"
+        }
+      ]
+    },
+    {
+      "source": "dog-whistling",
+      "target": "motte-and-bailey",
+      "notes": [
+        {
+          "from": "dog-whistling",
+          "text": "When challenged, dog whistlers retreat to the innocent literal meaning - a classic motte-and-bailey move"
+        }
+      ]
+    },
+    {
+      "source": "dog-whistling",
+      "target": "microaggressions",
+      "notes": [
+        {
+          "from": "dog-whistling",
+          "text": "Where dog whistling is public and strategic, microaggressions are the personal and often unconscious equivalent"
+        },
+        {
+          "from": "microaggressions",
+          "text": "Where dog whistling is public and strategic, microaggressions are personal and usually unconscious - but both rely on coded communication"
+        }
+      ]
+    },
+    {
+      "source": "confirmation-bias",
+      "target": "dunning-kruger-effect"
+    },
+    {
+      "source": "dunning-kruger-effect",
+      "target": "motivated-reasoning"
+    },
+    {
+      "source": "cognitive-dissonance",
+      "target": "dunning-kruger-effect"
+    },
+    {
+      "source": "cognitive-dissonance",
+      "target": "expectancy-violation"
+    },
+    {
+      "source": "expectancy-violation",
+      "target": "normalcy-bias",
+      "notes": [
+        {
+          "from": "expectancy-violation",
+          "text": "Normalcy bias is what happens when we refuse to update our expectations even when the evidence demands it"
+        }
+      ]
+    },
+    {
+      "source": "false-dilemma",
+      "target": "straw-man",
+      "notes": [
+        {
+          "from": "false-dilemma",
+          "text": "Often used together - a false dilemma paired with a distorted version of the other option"
+        },
+        {
+          "from": "straw-man",
+          "text": "Often used together - straw man the opposing view, then present a false choice"
+        }
+      ]
+    },
+    {
+      "source": "false-dilemma",
+      "target": "framing-effect",
+      "notes": [
+        {
+          "from": "false-dilemma",
+          "text": "How the options are presented shapes which one seems reasonable"
+        }
+      ]
+    },
+    {
+      "source": "false-dilemma",
+      "target": "false-equivalence",
+      "notes": [
+        {
+          "from": "false-equivalence",
+          "text": "False equivalence often creates a false dilemma - two positions framed as the only options, treated as equally valid"
+        }
+      ]
+    },
+    {
+      "source": "false-dilemma",
+      "target": "overton-window"
+    },
+    {
+      "source": "false-equivalence",
+      "target": "framing-effect"
+    },
+    {
+      "source": "authority-bias",
+      "target": "false-equivalence"
+    },
+    {
+      "source": "false-equivalence",
+      "target": "gish-gallop"
+    },
+    {
+      "source": "firehose-of-falsehood",
+      "target": "illusory-truth-effect",
+      "notes": [
+        {
+          "from": "firehose-of-falsehood",
+          "text": "The firehose ensures claims are repeated often enough to trigger the illusory truth effect"
+        },
+        {
+          "from": "illusory-truth-effect",
+          "text": "The firehose strategy deliberately exploits the illusory truth effect through sheer volume"
+        }
+      ]
+    },
+    {
+      "source": "firehose-of-falsehood",
+      "target": "gish-gallop",
+      "notes": [
+        {
+          "from": "firehose-of-falsehood",
+          "text": "The Gish gallop is the debate-scale version; the firehose is the society-scale version"
+        },
+        {
+          "from": "gish-gallop",
+          "text": "The industrialised, state-level version of the same tactic"
+        }
+      ]
+    },
+    {
+      "source": "firehose-of-falsehood",
+      "target": "learned-helplessness",
+      "notes": [
+        {
+          "from": "firehose-of-falsehood",
+          "text": "The firehose's ultimate goal - a population too exhausted to seek truth"
+        },
+        {
+          "from": "learned-helplessness",
+          "text": "The firehose strategy's ultimate goal is learned helplessness - people giving up on determining what's true"
+        }
+      ]
+    },
+    {
+      "source": "firehose-of-falsehood",
+      "target": "whataboutism"
+    },
+    {
+      "source": "framing-effect",
+      "target": "negativity-bias",
+      "notes": [
+        {
+          "from": "framing-effect",
+          "text": "Negative frames are more powerful because of our built-in negativity bias"
+        },
+        {
+          "from": "negativity-bias",
+          "text": "Framing something as a loss rather than a gain exploits negativity bias"
+        }
+      ]
+    },
+    {
+      "source": "gish-gallop",
+      "target": "sealioning",
+      "notes": [
+        {
+          "from": "gish-gallop",
+          "text": "A different bad-faith debate tactic - overwhelming through endless questions rather than endless claims"
+        },
+        {
+          "from": "sealioning",
+          "text": "Sealioning overwhelms through questions; the Gish gallop overwhelms through claims. Both exploit the asymmetry between asking and answering."
+        }
+      ]
+    },
+    {
+      "source": "gish-gallop",
+      "target": "whataboutism"
+    },
+    {
+      "source": "gish-gallop",
+      "target": "straw-man"
+    },
+    {
+      "source": "availability-heuristic",
+      "target": "illusory-truth-effect"
+    },
+    {
+      "source": "confirmation-bias",
+      "target": "in-group-out-group-bias",
+      "notes": [
+        {
+          "from": "in-group-out-group-bias",
+          "text": "In-group bias filters information the same way confirmation bias does - through the lens of belonging"
+        }
+      ]
+    },
+    {
+      "source": "bandwagon-effect",
+      "target": "in-group-out-group-bias"
+    },
+    {
+      "source": "in-group-out-group-bias",
+      "target": "pluralistic-ignorance"
+    },
+    {
+      "source": "in-group-out-group-bias",
+      "target": "psychological-projection"
+    },
+    {
+      "source": "anchoring-bias",
+      "target": "independent-evaluation",
+      "notes": [
+        {
+          "from": "independent-evaluation",
+          "text": "Others' opinions act as anchors that pull your judgement towards them"
+        }
+      ]
+    },
+    {
+      "source": "confirmation-bias",
+      "target": "independent-evaluation"
+    },
+    {
+      "source": "just-world-fallacy",
+      "target": "survivorship-bias",
+      "notes": [
+        {
+          "from": "just-world-fallacy",
+          "text": "Survivorship bias feeds the just-world fallacy - we see the winners and assume they deserved to win"
+        },
+        {
+          "from": "survivorship-bias",
+          "text": "Survivorship bias feeds the belief that success is always deserved"
+        }
+      ]
+    },
+    {
+      "source": "cognitive-dissonance",
+      "target": "just-world-fallacy",
+      "notes": [
+        {
+          "from": "just-world-fallacy",
+          "text": "The just-world fallacy is a way of avoiding the dissonance that comes from living in an unfair world"
+        }
+      ]
+    },
+    {
+      "source": "just-world-fallacy",
+      "target": "motivated-reasoning"
+    },
+    {
+      "source": "just-world-fallacy",
+      "target": "psychological-projection"
+    },
+    {
+      "source": "learned-helplessness",
+      "target": "pluralistic-ignorance"
+    },
+    {
+      "source": "learned-helplessness",
+      "target": "normalcy-bias"
+    },
+    {
+      "source": "cognitive-dissonance",
+      "target": "learned-helplessness"
+    },
+    {
+      "source": "in-group-out-group-bias",
+      "target": "microaggressions",
+      "notes": [
+        {
+          "from": "microaggressions",
+          "text": "The tribal instinct that makes us unconsciously treat 'outsiders' differently in small, everyday ways"
+        }
+      ]
+    },
+    {
+      "source": "microaggressions",
+      "target": "normalcy-bias",
+      "notes": [
+        {
+          "from": "microaggressions",
+          "text": "People on the receiving end sometimes normalise microaggressions because they are so constant - and people committing them normalise their own behaviour for the same reason"
+        }
+      ]
+    },
+    {
+      "source": "microaggressions",
+      "target": "pluralistic-ignorance",
+      "notes": [
+        {
+          "from": "microaggressions",
+          "text": "Bystanders often stay silent during microaggressions because they assume nobody else noticed or minded"
+        }
+      ]
+    },
+    {
+      "source": "moral-hypocrisy-judgement",
+      "target": "psychological-projection",
+      "notes": [
+        {
+          "from": "moral-hypocrisy-judgement",
+          "text": "Projection and moral hypocrisy often travel together - the loudest moralisers are sometimes projecting their own failings"
+        }
+      ]
+    },
+    {
+      "source": "cognitive-dissonance",
+      "target": "moral-hypocrisy-judgement",
+      "notes": [
+        {
+          "from": "moral-hypocrisy-judgement",
+          "text": "The hypocrite is experiencing cognitive dissonance between their stated values and their behaviour. We're experiencing it too, when we discover the gap."
+        }
+      ]
+    },
+    {
+      "source": "expectancy-violation",
+      "target": "moral-hypocrisy-judgement"
+    },
+    {
+      "source": "motte-and-bailey",
+      "target": "straw-man",
+      "notes": [
+        {
+          "from": "motte-and-bailey",
+          "text": "The straw man distorts the opponent's position. The motte-and-bailey distorts your own."
+        },
+        {
+          "from": "straw-man",
+          "text": "The motte-and-bailey is a kind of reverse straw man - distorting your own position rather than your opponent's"
+        }
+      ]
+    },
+    {
+      "source": "motte-and-bailey",
+      "target": "whataboutism"
+    },
+    {
+      "source": "gish-gallop",
+      "target": "motte-and-bailey"
+    },
+    {
+      "source": "false-equivalence",
+      "target": "motte-and-bailey"
+    },
+    {
+      "source": "normalcy-bias",
+      "target": "overton-window",
+      "notes": [
+        {
+          "from": "normalcy-bias",
+          "text": "Normalcy bias makes us slow to notice when the Overton Window is shifting beneath our feet"
+        },
+        {
+          "from": "overton-window",
+          "text": "We assume the current window is stable, making us slow to recognise when it's shifting"
+        }
+      ]
+    },
+    {
+      "source": "normalcy-bias",
+      "target": "second-order-thinking",
+      "notes": [
+        {
+          "from": "second-order-thinking",
+          "text": "Normalcy bias stops us from thinking through second and third-order effects of change"
+        }
+      ]
+    },
+    {
+      "source": "availability-heuristic",
+      "target": "normalcy-bias"
+    },
+    {
+      "source": "confirmation-bias",
+      "target": "occams-razor",
+      "notes": [
+        {
+          "from": "occams-razor",
+          "text": "We often prefer complicated explanations because they fit a narrative we already believe"
+        }
+      ]
+    },
+    {
+      "source": "independent-evaluation",
+      "target": "occams-razor"
+    },
+    {
+      "source": "occams-razor",
+      "target": "second-order-thinking"
+    },
+    {
+      "source": "framing-effect",
+      "target": "overton-window"
+    },
+    {
+      "source": "overton-window",
+      "target": "pluralistic-ignorance"
+    },
+    {
+      "source": "normalcy-bias",
+      "target": "pluralistic-ignorance"
+    },
+    {
+      "source": "motivated-reasoning",
+      "target": "psychological-projection"
+    },
+    {
+      "source": "sealioning",
+      "target": "whataboutism"
+    },
+    {
+      "source": "motte-and-bailey",
+      "target": "sealioning"
+    },
+    {
+      "source": "sealioning",
+      "target": "straw-man"
+    },
+    {
+      "source": "independent-evaluation",
+      "target": "second-order-thinking"
+    },
+    {
+      "source": "source-laundering",
+      "target": "woozle-effect",
+      "notes": [
+        {
+          "from": "source-laundering",
+          "text": "The organic cousin - where the Woozle Effect happens through careless repetition, source laundering achieves the same result by design"
+        },
+        {
+          "from": "woozle-effect",
+          "text": "The deliberate cousin - where the Woozle Effect happens organically, source laundering engineers the same outcome on purpose"
+        }
+      ]
+    },
+    {
+      "source": "firehose-of-falsehood",
+      "target": "source-laundering",
+      "notes": [
+        {
+          "from": "source-laundering",
+          "text": "Often used together - flood the zone with laundered claims and legitimate fact-checking can't keep up"
+        }
+      ]
+    },
+    {
+      "source": "gish-gallop",
+      "target": "source-laundering",
+      "notes": [
+        {
+          "from": "source-laundering",
+          "text": "Another volume-based tactic - laundered sources provide the ammunition for rapid-fire claims"
+        }
+      ]
+    },
+    {
+      "source": "authority-bias",
+      "target": "source-laundering",
+      "notes": [
+        {
+          "from": "source-laundering",
+          "text": "The cognitive bias being exploited - we instinctively trust information that comes from credible-looking channels"
+        }
+      ]
+    },
+    {
+      "source": "straw-man",
+      "target": "whataboutism"
+    },
+    {
+      "source": "availability-heuristic",
+      "target": "survivorship-bias",
+      "notes": [
+        {
+          "from": "survivorship-bias",
+          "text": "We overestimate the likelihood of success because success stories are more visible than failures"
+        }
+      ]
+    },
+    {
+      "source": "confirmation-bias",
+      "target": "survivorship-bias"
+    },
+    {
+      "source": "just-world-fallacy",
+      "target": "symbolic-racism",
+      "notes": [
+        {
+          "from": "symbolic-racism",
+          "text": "The belief that people get what they deserve underpins much of symbolic racism's logic - if the system is fair, inequality must reflect individual failure"
+        }
+      ]
+    },
+    {
+      "source": "framing-effect",
+      "target": "symbolic-racism",
+      "notes": [
+        {
+          "from": "symbolic-racism",
+          "text": "Symbolic racism depends on framing - presenting racial opposition as principled concern"
+        }
+      ]
+    },
+    {
+      "source": "motivated-reasoning",
+      "target": "symbolic-racism",
+      "notes": [
+        {
+          "from": "symbolic-racism",
+          "text": "People engaging in symbolic racism are often motivated reasoners - reaching a prejudiced conclusion first, then finding principled justifications"
+        }
+      ]
+    },
+    {
+      "source": "false-equivalence",
+      "target": "whataboutism",
+      "notes": [
+        {
+          "from": "whataboutism",
+          "text": "Whataboutism often implies a false equivalence between the original criticism and the deflection"
+        }
+      ]
+    },
+    {
+      "source": "illusory-truth-effect",
+      "target": "woozle-effect",
+      "notes": [
+        {
+          "from": "woozle-effect",
+          "text": "The cognitive mechanism underneath - repeated exposure to a claim makes it feel true regardless of its accuracy"
+        }
+      ]
+    },
+    {
+      "source": "confirmation-bias",
+      "target": "woozle-effect",
+      "notes": [
+        {
+          "from": "woozle-effect",
+          "text": "We're less likely to check the original source when the claim confirms what we already believe"
+        }
+      ]
+    },
+    {
+      "source": "firehose-of-falsehood",
+      "target": "woozle-effect"
+    }
+  ],
+  "collections": [
+    {
+      "slug": "fallen-heroes",
+      "title": "Why We Judge Fallen Heroes More Harshly Than Known Villains",
+      "type": "pathway",
+      "entries": [
+        "expectancy-violation",
+        "betrayal-aversion",
+        "moral-hypocrisy-judgement",
+        "cognitive-dissonance",
+        "psychological-projection",
+        "motivated-reasoning"
+      ]
+    },
+    {
+      "slug": "how-bad-information-becomes-common-knowledge",
+      "title": "How Bad Information Becomes Common Knowledge",
+      "type": "pathway",
+      "entries": [
+        "appeal-to-false-authority",
+        "authority-bias",
+        "woozle-effect",
+        "illusory-truth-effect",
+        "source-laundering",
+        "confirmation-bias",
+        "firehose-of-falsehood"
+      ]
+    },
+    {
+      "slug": "misinformation-toolkit",
+      "title": "The Misinformation Toolkit",
+      "type": "pathway",
+      "entries": [
+        "confirmation-bias",
+        "illusory-truth-effect",
+        "availability-heuristic",
+        "framing-effect",
+        "anchoring-bias",
+        "bandwagon-effect",
+        "authority-bias",
+        "affect-heuristic",
+        "false-equivalence",
+        "gish-gallop",
+        "firehose-of-falsehood",
+        "sealioning",
+        "whataboutism",
+        "motte-and-bailey",
+        "motivated-reasoning",
+        "backfire-effect",
+        "pluralistic-ignorance",
+        "learned-helplessness"
+      ]
+    }
+  ],
+  "categoryColours": {
+    "Cognitive Bias": "#D4A574",
+    "Logical Fallacy": "#7EA886",
+    "Rhetorical Device": "#8B9FC5",
+    "Mental Model": "#C4956A",
+    "Systems Thinking": "#6BA3A0",
+    "Political Theory": "#B07AA1",
+    "Manipulation Tactic": "#C47A7A",
+    "Psychological Phenomenon": "#9B8EC4",
+    "Psychological Defence": "#7AACB0"
+  },
+  "meta": {
+    "totalEntries": 45,
+    "totalConnections": 127,
+    "totalCollections": 3,
+    "categoryDistribution": {
+      "Cognitive Bias": 12,
+      "Logical Fallacy": 7,
+      "Psychological Phenomenon": 12,
+      "Manipulation Tactic": 7,
+      "Rhetorical Device": 1,
+      "Mental Model": 3,
+      "Psychological Defence": 2,
+      "Political Theory": 1
+    },
+    "buildTimestamp": "2026-03-18T17:18:26.680Z"
+  }
+}

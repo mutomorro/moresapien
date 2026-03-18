@@ -1,0 +1,54 @@
+---
+import { getCollection } from 'astro:content';
+import Moresapien from '../components/Moresapien.jsx';
+
+// Query all entries from Content Collections
+const allEntries = await getCollection('entries');
+
+// Transform into the shape Moresapien.jsx expects
+const entriesData = allEntries
+  .map((entry) => ({
+    slug: entry.id,
+    title: entry.data.title,
+    oneLiner: entry.data.oneLiner,
+    category: entry.data.category,
+    tags: entry.data.tags,
+  }))
+  .sort((a, b) => a.title.localeCompare(b.title));
+
+// Query all collections
+const allCollections = await getCollection('curatedCollections');
+
+const collectionsData = allCollections.map((col) => ({
+  slug: col.id,
+  title: col.data.title,
+  type: col.data.type,
+  entryCount: col.data.collectionEntries.length,
+}));
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Moresapien - Understanding ourselves, one idea at a time</title>
+    <meta name="description" content="A free knowledge base of cognitive biases, mental models, logical fallacies, and the mental tricks we play on ourselves. For everyone." />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Moresapien - Understanding ourselves, one idea at a time" />
+    <meta property="og:description" content="A free knowledge base of cognitive biases, mental models, logical fallacies, and the mental tricks we play on ourselves. For everyone." />
+    <meta property="og:url" content="https://moresapien.org" />
+    <meta property="og:site_name" content="Moresapien" />
+    <meta property="og:image" content="https://moresapien.org/og/homepage.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Moresapien - Understanding ourselves, one idea at a time" />
+    <meta name="twitter:description" content="A free knowledge base of cognitive biases, mental models, logical fallacies, and the mental tricks we play on ourselves. For everyone." />
+    <meta name="twitter:image" content="https://moresapien.org/og/homepage.png" />
+  </head>
+  <body>
+    <Moresapien client:load entries={entriesData} collections={collectionsData} />
+  </body>
+</html>

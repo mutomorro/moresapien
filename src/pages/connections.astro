@@ -1,0 +1,37 @@
+---
+import ConceptGraph from '../components/ConceptGraph.jsx';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connections - Moresapien</title>
+    <meta name="description" content="Explore how cognitive biases, logical fallacies, mental models, and manipulation tactics connect and reinforce each other." />
+
+    <meta property="og:title" content="Connections - Moresapien" />
+    <meta property="og:description" content="An interactive map of how the tricks of the mind connect." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://moresapien.org/connections" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+      *, *::before, *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html, body {
+        height: 100%;
+        overflow: hidden;
+        background: #FFFBF5;
+      }
+    </style>
+  </head>
+  <body>
+    <ConceptGraph client:only="react" />
+  </body>
+</html>

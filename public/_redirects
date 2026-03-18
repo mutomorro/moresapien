@@ -1,0 +1,77 @@
+# ──────────────────────────────────────────────
+# Moresapien -- URL Redirects
+# Old WordPress URLs → New Astro URLs
+# Place this file in /public/_redirects
+# ──────────────────────────────────────────────
+
+# ── Category/archive pages → homepage ──
+/bias/                                          /               301
+/bias                                           /               301
+/mental-model/                                  /               301
+/mental-model                                   /               301
+/framework/                                     /               301
+/framework                                      /               301
+/codifiers/                                     /               301
+/codifiers                                      /               301
+/theories/                                      /               301
+/theories                                       /               301
+
+# ── Entries with same slug (just strip trailing slash) ──
+/false-dilemma/                                 /false-dilemma                  301
+/anchoring-bias/                                /anchoring-bias                 301
+/availability-heuristic/                        /availability-heuristic         301
+/ben-franklin-effect/                           /ben-franklin-effect            301
+/negativity-bias/                               /negativity-bias                301
+/cognitive-dissonance/                          /cognitive-dissonance           301
+/survivorship-bias/                             /survivorship-bias              301
+/normalcy-bias/                                 /normalcy-bias                  301
+/salience-bias/                                 /salience-bias                  301
+/implicit-association/                          /implicit-association           301
+/anthropocentrism/                              /anthropocentrism               301
+/illusory-correlation/                          /illusory-correlation           301
+/clustering-illusion/                           /clustering-illusion            301
+/apophenia/                                     /apophenia                      301
+/functional-fixedness/                          /functional-fixedness           301
+/law-of-the-instrument/                         /law-of-the-instrument          301
+/common-source-bias/                            /common-source-bias             301
+/contrast-effect/                               /contrast-effect                301
+/pareidolia/                                    /pareidolia                     301
+/arrival-fallacy/                               /arrival-fallacy                301
+/complexity-bias/                               /complexity-bias                301
+/conservative-bias/                             /conservative-bias              301
+/self-reference-effect/                         /self-reference-effect          301
+/picture-superiority-effect/                    /picture-superiority-effect     301
+/von-restorff-effect/                           /von-restorff-effect            301
+/humour-effect/                                 /humour-effect                  301
+/bizarreness-effect/                            /bizarreness-effect             301
+/base-rate-fallacy/                             /base-rate-fallacy              301
+/omission-bias/                                 /omission-bias                  301
+/frequency-illusion/                            /frequency-illusion             301
+/mood-congruent-memory-bias/                    /mood-congruent-memory-bias     301
+/cue-dependent-forgetting/                      /cue-dependent-forgetting       301
+/context-effect/                                /context-effect                 301
+/mere-exposure-effect/                          /mere-exposure-effect           301
+/illusory-truth-effect/                         /illusory-truth-effect          301
+/attentional-bias/                              /attentional-bias               301
+
+# ── Entries with different slugs or paths ──
+/cognitive-dissonance/effort-justification/     /effort-justification           301
+/empathy-gap/                                   /hot-cold-empathy-gap           301
+/empathy-gap                                    /hot-cold-empathy-gap           301
+/mental-model/hanlons-razor/                    /hanlons-razor                  301
+/mental-model/hanlons-razor                     /hanlons-razor                  301
+
+# ── Session 1 entries that were written fresh (no old URL) ──
+# /false-dilemma, /straw-man, /overton-window, /occams-razor,
+# /second-order-thinking, /independent-evaluation, /ben-franklin-effect
+# These were new to the Astro build -- no WordPress URL to redirect from.
+
+# ── Old pages that don't have equivalents ──
+# Redirect to homepage as a safe fallback
+/framework/the-com-b-model/                    /               301
+/codifiers/marcel-proust/                       /               301
+
+# ── Misc WordPress pages ──
+/privacy-policy/                                /               301
+/cookie-policy/                                 /               301
+/checkout-2/                                    /               301
