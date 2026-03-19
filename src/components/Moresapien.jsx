@@ -169,35 +169,6 @@ export default function Moresapien({ entries = [], collections = [] }) {
           font-weight: 400;
         }
 
-        .ms-header {
-          background: #FAF7F2;
-          padding: 1.5rem 2rem 1.5rem;
-          text-align: center;
-          border-bottom: 1px solid #EAE4DA;
-        }
-
-        .ms-logo {
-          font-family: 'Lora', serif;
-          font-size: clamp(2rem, 5vw, 3rem);
-          font-weight: 600;
-          color: #2C2825;
-          letter-spacing: -0.01em;
-        }
-
-        .ms-logo em {
-          font-style: italic;
-          color: #C4622D;
-        }
-
-        .ms-mission {
-          margin-top: 0.6rem;
-          font-size: 1rem;
-          color: #8A7F74;
-          font-weight: 400;
-          font-family: 'Lora', serif;
-          font-style: italic;
-        }
-
         .ms-controls {
           max-width: 860px;
           margin: 0 auto;
@@ -512,10 +483,6 @@ export default function Moresapien({ entries = [], collections = [] }) {
       `}</style>
 
       <div className="ms">
-
-        <header className="ms-header">
-          <div className="ms-mission">Understanding ourselves, one idea at a time.</div>
-        </header>
 
         <div className="ms-controls">
           <div className="ms-search-wrap">
