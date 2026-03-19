@@ -1,4 +1,5 @@
 ---
+import Nav from '../components/Nav.astro';
 import ConceptGraph from '../components/ConceptGraph.jsx';
 ---
 
@@ -29,9 +30,16 @@ import ConceptGraph from '../components/ConceptGraph.jsx';
         overflow: hidden;
         background: #FFFBF5;
       }
+      .graph-container {
+        height: calc(100vh - 49px);
+        overflow: hidden;
+      }
     </style>
   </head>
   <body>
-    <ConceptGraph client:only="react" />
+    <Nav currentPage="connections" />
+    <div class="graph-container">
+      <ConceptGraph client:only="react" />
+    </div>
   </body>
 </html>

@@ -1,0 +1,159 @@
+---
+import Nav from '../components/Nav.astro';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About - Moresapien</title>
+    <meta name="description" content="About Moresapien - a free knowledge base helping people understand the mental tricks we play on ourselves, and the ones that get played on us." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <Nav currentPage="about" />
+    <div class="page-wrapper">
+      <article class="about">
+        <header class="about-header">
+          <h1 class="about-title">About Moresapien</h1>
+        </header>
+
+        <div class="about-body">
+          <p>
+            Moresapien is a free, open knowledge base helping people of all ages understand the mental tricks we play on ourselves - and the ones that get played on us.
+          </p>
+
+          <p>
+            Rooted in the ancient maxim <em>gnothi seauton</em> - "know thyself" - the project exists to make concepts from psychology, logic, rhetoric, and systems thinking genuinely accessible to everyone from teenagers to retirees. Not pseudo-intellectual. Not academic. For everyone.
+          </p>
+
+          <h2>Why it exists</h2>
+
+          <p>
+            In a world of algorithmic feeds, political spin, and information overload, understanding how our own minds work isn't a luxury - it's a survival skill. Every cognitive bias, logical fallacy, and manipulation tactic on this site is something that affects real people making real decisions every single day.
+          </p>
+
+          <p>
+            Moresapien's ambition is to become a free resource that schools and colleges can use to teach critical thinking, media literacy, and misinformation awareness. No paywalls, no ads, no data harvesting. Just clear, honest explanations of how thinking works.
+          </p>
+
+          <h2>How it works</h2>
+
+          <p>
+            Every concept on the site follows the same structure: what it means in plain language, how it shows up in the real world, how to spot it, and a thought worth holding onto. Concepts don't exist in isolation - they link to each other, forming a web of connections you can explore on the <a href="/connections">connections map</a>.
+          </p>
+
+          <h2>Get in touch</h2>
+
+          <p>
+            Moresapien is built and maintained by James at <a href="https://mutomorro.com" target="_blank" rel="noopener">Mutomorro</a>. If you'd like to get in touch, suggest a concept, or talk about using Moresapien in an educational setting, you can find the project on <a href="https://bsky.app/profile/moresapien.bsky.social" target="_blank" rel="noopener">Bluesky</a>.
+          </p>
+        </div>
+      </article>
+
+      <div class="site-footer">
+        <p>
+          <a href="/">Moresapien</a> - Understanding ourselves, one idea at a time.
+        </p>
+      </div>
+    </div>
+
+    <style>
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Nunito', sans-serif;
+        background: #faf8f5;
+        color: #3a3530;
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .page-wrapper {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 2rem 1.5rem 4rem;
+      }
+
+      .about-header {
+        margin-bottom: 2.5rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #e8e0d8;
+      }
+
+      .about-title {
+        font-family: 'Lora', serif;
+        font-size: clamp(2rem, 5vw, 2.75rem);
+        font-weight: 700;
+        color: #2a2520;
+        line-height: 1.15;
+      }
+
+      .about-body p {
+        margin-bottom: 1rem;
+        font-size: 1.05rem;
+        line-height: 1.8;
+      }
+
+      .about-body h2 {
+        font-family: 'Lora', serif;
+        font-size: 1.375rem;
+        font-weight: 600;
+        color: #2a2520;
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .about-body a {
+        color: #C4622D;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(196, 98, 45, 0.3);
+        transition: border-color 0.2s;
+      }
+
+      .about-body a:hover {
+        border-color: #C4622D;
+      }
+
+      .about-body em {
+        font-style: italic;
+      }
+
+      .site-footer {
+        margin-top: 4rem;
+        padding-top: 2rem;
+        border-top: 1px solid #e8e0d8;
+        text-align: center;
+        font-size: 0.875rem;
+        color: #a09888;
+      }
+
+      .site-footer a {
+        color: #6a6058;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .site-footer a:hover {
+        color: #C4622D;
+      }
+
+      @media (max-width: 640px) {
+        .page-wrapper {
+          padding: 1.5rem 1rem 3rem;
+        }
+      }
+    </style>
+  </body>
+</html>

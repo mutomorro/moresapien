@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import Nav from '../components/Nav.astro';
 import Moresapien from '../components/Moresapien.jsx';
 
 // Query all entries from Content Collections
@@ -47,8 +48,16 @@ const collectionsData = allCollections.map((col) => ({
     <meta name="twitter:title" content="Moresapien - Understanding ourselves, one idea at a time" />
     <meta name="twitter:description" content="A free knowledge base of cognitive biases, mental models, logical fallacies, and the mental tricks we play on ourselves. For everyone." />
     <meta name="twitter:image" content="https://moresapien.org/og/homepage.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <Nav currentPage="concepts" />
     <Moresapien client:load entries={entriesData} collections={collectionsData} />
   </body>
 </html>

@@ -171,7 +171,7 @@ export default function Moresapien({ entries = [], collections = [] }) {
 
         .ms-header {
           background: #FAF7F2;
-          padding: 3.5rem 2rem 2.5rem;
+          padding: 1.5rem 2rem 1.5rem;
           text-align: center;
           border-bottom: 1px solid #EAE4DA;
         }
@@ -514,7 +514,6 @@ export default function Moresapien({ entries = [], collections = [] }) {
       <div className="ms">
 
         <header className="ms-header">
-          <div className="ms-logo">more<em>sapien</em></div>
           <div className="ms-mission">Understanding ourselves, one idea at a time.</div>
         </header>
 

@@ -1,5 +1,6 @@
 ---
 import { getCollection, render } from 'astro:content';
+import Nav from '../components/Nav.astro';
 import ShareButton from '../components/ShareButton.jsx';
 
 export async function getStaticPaths() {
@@ -86,10 +87,9 @@ const thoughtHtml = renderMarkdown(thoughtToHoldOnto);
   </head>
 
   <body>
+    <Nav />
     <div class="page-wrapper">
       <nav class="breadcrumb">
-        <a href="/">← All concepts</a>
-        <span class="separator">/</span>
         <span class="category-label" style={"color:" + accentColour}>{category}</span>
       </nav>
 
@@ -174,7 +174,7 @@ const thoughtHtml = renderMarkdown(thoughtToHoldOnto);
 
       <div class="site-footer">
         <p>
-          <a href="/">Moresapien</a> — Understanding ourselves, one idea at a time.
+          <a href="/">Moresapien</a> - Understanding ourselves, one idea at a time.
         </p>
       </div>
     </div>
@@ -204,22 +204,8 @@ const thoughtHtml = renderMarkdown(thoughtToHoldOnto);
         display: flex;
         align-items: center;
         gap: 0.5rem;
-        margin-bottom: 2.5rem;
+        margin-bottom: 2rem;
         font-size: 0.875rem;
-      }
-
-      .breadcrumb a {
-        color: #8a7f72;
-        text-decoration: none;
-        transition: color 0.2s;
-      }
-
-      .breadcrumb a:hover {
-        color: var(--accentColour);
-      }
-
-      .separator {
-        color: #d0c8be;
       }
 
       .category-label {
@@ -310,7 +296,6 @@ const thoughtHtml = renderMarkdown(thoughtToHoldOnto);
         margin-bottom: 0;
       }
 
-      /* "In the real world" section gets the accent treatment */
       .entry-body :global(h2:nth-of-type(2)) {
         margin-top: 2.5rem;
       }

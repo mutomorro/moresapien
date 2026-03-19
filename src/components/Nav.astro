@@ -1,0 +1,141 @@
+---
+export interface Props {
+  currentPage?: string;
+}
+
+const { currentPage = '' } = Astro.props;
+---
+
+<nav class="site-nav">
+  <a href="/" class="nav-logo">more<em>sapien</em></a>
+
+  <div class="nav-links">
+    <a href="/" class:list={['nav-pill', { active: currentPage === 'concepts' }]}>
+      <svg class="nav-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="3" width="7" height="7" rx="1"/>
+        <rect x="14" y="3" width="7" height="7" rx="1"/>
+        <rect x="3" y="14" width="7" height="7" rx="1"/>
+        <rect x="14" y="14" width="7" height="7" rx="1"/>
+      </svg>
+      <span class="nav-label">Browse</span>
+    </a>
+
+    <a href="/connections" class:list={['nav-pill', { active: currentPage === 'connections' }]}>
+      <svg class="nav-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <circle cx="5" cy="6" r="2.5"/>
+        <circle cx="19" cy="8" r="2.5"/>
+        <circle cx="12" cy="19" r="2.5"/>
+        <line x1="7" y1="7" x2="17" y2="9"/>
+        <line x1="6" y1="8" x2="11" y2="17"/>
+        <line x1="17" y1="10" x2="13" y2="17"/>
+      </svg>
+      <span class="nav-label">Connections</span>
+    </a>
+
+    <a href="/about" class:list={['nav-pill', { active: currentPage === 'about' }]}>
+      <svg class="nav-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <circle cx="12" cy="12" r="10"/>
+        <line x1="12" y1="16" x2="12" y2="12"/>
+        <circle cx="12" cy="8" r="0.5" fill="currentColor" stroke="none"/>
+      </svg>
+      <span class="nav-label">About</span>
+    </a>
+
+    <div class="nav-divider"></div>
+
+    <a href="/" class="nav-pill nav-search" aria-label="Search concepts">
+      <svg class="nav-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <circle cx="11" cy="11" r="8"/>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+    </a>
+  </div>
+</nav>
+
+<style>
+  .site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem 1.5rem;
+    background: #FAF7F2;
+    border-bottom: 1px solid #EAE4DA;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .nav-logo {
+    font-family: 'Lora', serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2C2825;
+    text-decoration: none;
+    letter-spacing: -0.01em;
+  }
+
+  .nav-logo em {
+    font-style: italic;
+    color: #C4622D;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  .nav-pill {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.4rem 0.75rem;
+    border-radius: 100px;
+    text-decoration: none;
+    color: #6B6059;
+    font-size: 0.825rem;
+    font-weight: 500;
+    transition: background 0.15s, color 0.15s;
+  }
+
+  .nav-pill:hover {
+    background: rgba(44, 40, 37, 0.06);
+    color: #2C2825;
+  }
+
+  .nav-pill.active {
+    background: rgba(196, 98, 45, 0.1);
+    color: #C4622D;
+  }
+
+  .nav-search {
+    padding: 0.4rem 0.6rem;
+  }
+
+  .nav-icon {
+    flex-shrink: 0;
+  }
+
+  .nav-divider {
+    width: 1px;
+    height: 1.25rem;
+    background: #EAE4DA;
+    margin: 0 0.2rem;
+  }
+
+  @media (max-width: 640px) {
+    .site-nav {
+      padding: 0.6rem 1rem;
+    }
+
+    .nav-label {
+      display: none;
+    }
+
+    .nav-pill {
+      padding: 0.5rem;
+    }
+
+    .nav-divider {
+      margin: 0 0.1rem;
+    }
+  }
+</style>
