@@ -1,0 +1,257 @@
+---
+import { getCollection } from 'astro:content';
+import Nav from '../../components/Nav.astro';
+
+const collections = await getCollection('curatedCollections');
+const allEntries = await getCollection('entries');
+
+const collectionsData = collections.map((col) => {
+  const entryCount = col.data.collectionEntries.length;
+  const resolvedEntries = col.data.collectionEntries.slice(0, 5).map((slug) => {
+    const found = allEntries.find((e) => e.id === slug);
+    return found ? { title: found.data.title, category: found.data.category } : null;
+  }).filter(Boolean);
+
+  return {
+    slug: col.id,
+    title: col.data.title,
+    type: col.data.type,
+    audience: col.data.audience,
+    entryCount,
+    categories: [...new Set(resolvedEntries.map((e) => e.category))],
+  };
+});
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collections - Moresapien</title>
+    <meta name="description" content="Curated pathways through Moresapien's knowledge base. Guided journeys through cognitive biases, logical fallacies, manipulation tactics, and more." />
+
+    <meta property="og:title" content="Collections - Moresapien" />
+    <meta property="og:description" content="Curated pathways through the knowledge base - guided journeys through how thinking works." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://moresapien.org/collections" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+      *, *::before, *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Nunito', sans-serif;
+        background: #FFFBF5;
+        color: #4a4540;
+        min-height: 100vh;
+      }
+
+      .page-wrapper {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 2.5rem 2rem 4rem;
+      }
+
+      .page-title {
+        font-family: 'Lora', serif;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #2c2825;
+        margin-bottom: 0.75rem;
+      }
+
+      .page-intro {
+        font-size: 1.0625rem;
+        line-height: 1.75;
+        color: #6a6058;
+        margin-bottom: 2.5rem;
+      }
+
+      .collections-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+      }
+
+      .collection-card {
+        display: block;
+        text-decoration: none;
+        background: #FFFBF5;
+        border: 1px solid #e8e0d8;
+        border-radius: 12px;
+        padding: 1.5rem 1.75rem;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .collection-card:hover {
+        border-color: #c4b5a5;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+      }
+
+      .collection-meta-row {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .collection-type-badge {
+        font-size: 0.75rem;
+        font-weight: 700;
+        padding: 0.2rem 0.7rem;
+        border-radius: 99px;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+      }
+
+      .badge-pathway {
+        background: #fef0e6;
+        color: #9e4a1a;
+      }
+
+      .badge-toolkit {
+        background: #e6f4ef;
+        color: #1a6b52;
+      }
+
+      .collection-count {
+        font-size: 0.8125rem;
+        color: #a09888;
+      }
+
+      .collection-title {
+        font-family: 'Lora', serif;
+        font-size: 1.3125rem;
+        font-weight: 600;
+        color: #2c2825;
+        margin-bottom: 0.5rem;
+        line-height: 1.35;
+      }
+
+      .collection-audience {
+        font-size: 0.875rem;
+        color: #a09888;
+        line-height: 1.5;
+      }
+
+      .collection-categories {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.375rem;
+        margin-top: 0.875rem;
+      }
+
+      .category-dot {
+        font-size: 0.6875rem;
+        font-weight: 600;
+        padding: 0.15rem 0.55rem;
+        border-radius: 4px;
+        background: #f5f0ea;
+        color: #8a7e74;
+      }
+
+      .page-footer-note {
+        text-align: center;
+        margin-top: 3rem;
+        font-size: 0.875rem;
+        color: #a09888;
+      }
+
+      .page-footer-note a {
+        color: #6a6058;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .page-footer-note a:hover {
+        color: #C4622D;
+      }
+
+      .site-footer {
+        margin-top: 4rem;
+        padding-top: 2rem;
+        border-top: 1px solid #e8e0d8;
+        text-align: center;
+        font-size: 0.875rem;
+        color: #a09888;
+      }
+
+      .site-footer a {
+        color: #6a6058;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .site-footer a:hover {
+        color: #C4622D;
+      }
+
+      @media (max-width: 640px) {
+        .page-wrapper {
+          padding: 1.5rem 1rem 3rem;
+        }
+
+        .page-title {
+          font-size: 1.625rem;
+        }
+
+        .collection-card {
+          padding: 1.25rem 1.25rem;
+        }
+
+        .collection-title {
+          font-size: 1.125rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <Nav currentPage="collections" />
+
+    <div class="page-wrapper">
+      <h1 class="page-title">Collections</h1>
+      <p class="page-intro">
+        Curated pathways through the knowledge base. Each collection groups related concepts into a journey - read them in order, or browse freely.
+      </p>
+
+      <div class="collections-list">
+        {collectionsData.map((col) => (
+          <a href={`/collections/${col.slug}`} class="collection-card">
+            <div class="collection-meta-row">
+              <span class:list={['collection-type-badge', col.type === 'pathway' ? 'badge-pathway' : 'badge-toolkit']}>
+                {col.type === 'pathway' ? 'Learning pathway' : 'Toolkit'}
+              </span>
+              <span class="collection-count">
+                {col.entryCount} {col.entryCount === 1 ? 'concept' : 'concepts'}
+              </span>
+            </div>
+            <h2 class="collection-title">{col.title}</h2>
+            <p class="collection-audience">{col.audience}</p>
+            {col.categories.length > 0 && (
+              <div class="collection-categories">
+                {col.categories.map((cat) => (
+                  <span class="category-dot">{cat}</span>
+                ))}
+              </div>
+            )}
+          </a>
+        ))}
+      </div>
+
+      <p class="page-footer-note">
+        More collections coming soon. <a href="/connections">Explore the full knowledge graph</a>
+      </p>
+
+      <footer class="site-footer">
+        <a href="/">Moresapien</a> - Understanding ourselves, one idea at a time.
+      </footer>
+    </div>
+  </body>
+</html>
