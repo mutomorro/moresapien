@@ -1,0 +1,140 @@
+---
+// StayCurious.astro - Newsletter signup + Bluesky follow
+// Place in src/components/StayCurious.astro
+---
+
+<div class="stay-curious">
+  <p class="sc-heading">Stay curious</p>
+  <p class="sc-subtext">Get new ideas in your inbox each month. No spam, ever.</p>
+
+  <form
+    action="https://buttondown.com/api/emails/embed-subscribe/moresapien"
+    method="post"
+    class="sc-form"
+  >
+    <div class="sc-input-row">
+      <input
+        type="email"
+        name="email"
+        placeholder="your@email.com"
+        required
+        class="sc-email"
+      />
+      <button type="submit" class="sc-submit">Subscribe</button>
+    </div>
+  </form>
+
+  <div class="sc-divider"></div>
+
+  <a
+    href="https://bsky.app/profile/moresapien.bsky.social"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="sc-bluesky"
+  >
+    <svg width="18" height="18" viewBox="0 0 600 530" fill="currentColor">
+      <path d="M135.72 44.03C198.29 104.14 266.49 169.42 282.2 186.6c15.71-17.18 83.91-82.46 146.48-142.57C486.74-12.4 556.25-14.48 589.36 18.63c33.11 33.11 31.03 102.62-25.4 160.68-59.98 61.65-163.91 155.94-281.77 303.08C164.34 335.25 60.41 240.96.43 179.31-55.99 121.25-58.07 51.74-24.96 18.63 8.15-14.48 77.66-12.4 135.72 44.03z"/>
+    </svg>
+    <span>Follow on Bluesky</span>
+  </a>
+</div>
+
+<style>
+  .stay-curious {
+    background: #fff;
+    border: 1.5px solid #C4956A;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .sc-heading {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #8B5E3C;
+    margin-bottom: 0.2rem;
+  }
+
+  .sc-subtext {
+    font-size: 0.75rem;
+    color: #a09888;
+    margin-bottom: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .sc-form {
+    margin: 0;
+  }
+
+  .sc-input-row {
+    display: flex;
+    gap: 0.4rem;
+  }
+
+  .sc-email {
+    flex: 1;
+    min-width: 0;
+    height: 2.1rem;
+    padding: 0 0.65rem;
+    border: 1px solid #e0d8ce;
+    border-radius: 0.4rem;
+    background: #faf8f5;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.8rem;
+    color: #3a3530;
+    outline: none;
+    transition: border-color 0.15s;
+  }
+
+  .sc-email::placeholder {
+    color: #c0b8ae;
+  }
+
+  .sc-email:focus {
+    border-color: #C4956A;
+  }
+
+  .sc-submit {
+    height: 2.1rem;
+    padding: 0 0.9rem;
+    background: #C4956A;
+    color: #fff;
+    border: none;
+    border-radius: 0.4rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s;
+    white-space: nowrap;
+  }
+
+  .sc-submit:hover {
+    background: #b0854e;
+  }
+
+  .sc-divider {
+    height: 1px;
+    background: #eae4da;
+    margin: 0.85rem 0;
+  }
+
+  .sc-bluesky {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #006AFF;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: color 0.15s;
+  }
+
+  .sc-bluesky:hover {
+    color: #0055cc;
+  }
+
+  .sc-bluesky svg {
+    flex-shrink: 0;
+  }
+</style>

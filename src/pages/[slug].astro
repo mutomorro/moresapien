@@ -2,6 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import Nav from '../components/Nav.astro';
 import ShareButton from '../components/ShareButton.jsx';
+import StayCurious from '../components/StayCurious.astro';
 
 export async function getStaticPaths() {
   const entries = await getCollection('entries');
@@ -88,95 +89,109 @@ const thoughtHtml = renderMarkdown(thoughtToHoldOnto);
 
   <body>
     <Nav />
-    <div class="page-wrapper">
-      <nav class="breadcrumb">
-        <span class="category-label" style={"color:" + accentColour}>{category}</span>
-      </nav>
+    <div class="page-layout">
+      <div class="page-main">
+        <nav class="breadcrumb">
+          <span class="category-label" style={"color:" + accentColour}>{category}</span>
+        </nav>
 
-      <article class="entry">
-        <header class="entry-header">
-          <span class="category-badge" style={"background:" + accentColour}>
-            {category}
-          </span>
-          <h1 class="entry-title">{title}</h1>
-          <p class="entry-oneliner">{oneLiner}</p>
+        <article class="entry">
+          <header class="entry-header">
+            <span class="category-badge" style={"background:" + accentColour}>
+              {category}
+            </span>
+            <h1 class="entry-title">{title}</h1>
+            <p class="entry-oneliner">{oneLiner}</p>
 
-          {alsoKnownAs && alsoKnownAs.length > 0 && (
-            <p class="also-known-as">Also known as: {alsoKnownAs.join(', ')}</p>
+            {alsoKnownAs && alsoKnownAs.length > 0 && (
+              <p class="also-known-as">Also known as: {alsoKnownAs.join(', ')}</p>
+            )}
+
+            <div class="entry-tags">
+              {tags.map((tag: string) => (
+                <span class="tag">#{tag}</span>
+              ))}
+            </div>
+          </header>
+
+          <!-- Markdown body: "What it means" and "In the real world" -->
+          <div class="entry-body">
+            <Content />
+          </div>
+
+          <!-- How to spot it (new in v2) -->
+          <section class="entry-section entry-spot-it">
+            <h2>How to spot it</h2>
+            <p set:html={renderMarkdown(howToSpotIt)} />
+          </section>
+
+          <section class="entry-section entry-thought">
+            <blockquote>
+              <h2>The thought to hold onto</h2>
+              <p set:html={thoughtHtml} />
+            </blockquote>
+          </section>
+
+          <!-- Why it matters now (optional, new in v2) -->
+          {whyItMattersNow && (
+            <section class="entry-section entry-matters-now">
+              <h2>Why it matters now</h2>
+              <p set:html={renderMarkdown(whyItMattersNow)} />
+            </section>
           )}
 
-          <div class="entry-tags">
-            {tags.map((tag: string) => (
-              <span class="tag">#{tag}</span>
-            ))}
-          </div>
-        </header>
+          <footer class="entry-footer">
+            <div class="share-row">
+              <span class="share-label">Found this useful?</span>
+              <ShareButton
+                client:load
+                title={title}
+                oneLiner={oneLiner}
+                url={pageUrl}
+                category={category}
+              />
+            </div>
 
-        <!-- Markdown body: "What it means" and "In the real world" -->
-        <div class="entry-body">
-          <Content />
+            {resolvedRelated.length > 0 && (
+              <div class="related-concepts">
+                <h3>Related concepts</h3>
+                <div class="related-grid">
+                  {resolvedRelated.map((related) => (
+                    <a href={"/" + related.slug} class="related-card">
+                      <span class="related-category" style={"color:" + (categoryColours[related.category] || '#c17f59')}>
+                        {related.category}
+                      </span>
+                      <span class="related-title">{related.title}</span>
+                      <span class="related-oneliner">{related.oneLiner}</span>
+                      {related.note && (
+                        <span class="related-note">{related.note}</span>
+                      )}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
+          </footer>
+        </article>
+
+        <!-- Mobile only: Stay Curious appears after the article -->
+        <div class="sc-mobile">
+          <StayCurious />
         </div>
 
-        <!-- How to spot it (new in v2) -->
-        <section class="entry-section entry-spot-it">
-          <h2>How to spot it</h2>
-          <p set:html={renderMarkdown(howToSpotIt)} />
-        </section>
-
-        <section class="entry-section entry-thought">
-          <blockquote>
-            <h2>The thought to hold onto</h2>
-            <p set:html={thoughtHtml} />
-          </blockquote>
-        </section>
-
-        <!-- Why it matters now (optional, new in v2) -->
-        {whyItMattersNow && (
-          <section class="entry-section entry-matters-now">
-            <h2>Why it matters now</h2>
-            <p set:html={renderMarkdown(whyItMattersNow)} />
-          </section>
-        )}
-
-        <footer class="entry-footer">
-          <div class="share-row">
-            <span class="share-label">Found this useful?</span>
-            <ShareButton
-              client:load
-              title={title}
-              oneLiner={oneLiner}
-              url={pageUrl}
-              category={category}
-            />
-          </div>
-
-          {resolvedRelated.length > 0 && (
-            <div class="related-concepts">
-              <h3>Related concepts</h3>
-              <div class="related-grid">
-                {resolvedRelated.map((related) => (
-                  <a href={"/" + related.slug} class="related-card">
-                    <span class="related-category" style={"color:" + (categoryColours[related.category] || '#c17f59')}>
-                      {related.category}
-                    </span>
-                    <span class="related-title">{related.title}</span>
-                    <span class="related-oneliner">{related.oneLiner}</span>
-                    {related.note && (
-                      <span class="related-note">{related.note}</span>
-                    )}
-                  </a>
-                ))}
-              </div>
-            </div>
-          )}
-        </footer>
-      </article>
-
-      <div class="site-footer">
-        <p>
-          <a href="/">Moresapien</a> - Understanding ourselves, one idea at a time.
-        </p>
+        <div class="site-footer">
+          <p>
+            <a href="/">Moresapien</a> - Understanding ourselves, one idea at a time.
+          </p>
+        </div>
       </div>
+
+      <!-- Desktop sidebar -->
+      <aside class="page-sidebar">
+        <div class="sidebar-sticky">
+          <StayCurious />
+        </div>
+      </aside>
     </div>
 
     <style define:vars={{ accentColour }}>
@@ -194,12 +209,38 @@ const thoughtHtml = renderMarkdown(thoughtToHoldOnto);
         -webkit-font-smoothing: antialiased;
       }
 
-      .page-wrapper {
-        max-width: 42rem;
+      /* --- Two-column layout --- */
+      .page-layout {
+        display: flex;
+        gap: 2rem;
+        max-width: 56rem;
         margin: 0 auto;
         padding: 2rem 1.5rem 4rem;
       }
 
+      .page-main {
+        flex: 1;
+        min-width: 0;
+        max-width: 42rem;
+      }
+
+      .page-sidebar {
+        width: 14rem;
+        flex-shrink: 0;
+      }
+
+      .sidebar-sticky {
+        position: sticky;
+        top: calc(50vh - 6rem);
+      }
+
+      /* Mobile: hide sidebar, show inline version */
+      .sc-mobile {
+        display: none;
+        margin-top: 2.5rem;
+      }
+
+      /* --- Entry styles (unchanged) --- */
       .breadcrumb {
         display: flex;
         align-items: center;
@@ -472,8 +513,25 @@ const thoughtHtml = renderMarkdown(thoughtToHoldOnto);
         color: var(--accentColour);
       }
 
+      /* --- Responsive --- */
+      @media (max-width: 960px) {
+        .page-layout {
+          display: block;
+          max-width: 42rem;
+          padding: 2rem 1.5rem 4rem;
+        }
+
+        .page-sidebar {
+          display: none;
+        }
+
+        .sc-mobile {
+          display: block;
+        }
+      }
+
       @media (max-width: 640px) {
-        .page-wrapper {
+        .page-layout {
           padding: 1.5rem 1rem 3rem;
         }
 
