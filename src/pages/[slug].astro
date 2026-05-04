@@ -32,7 +32,7 @@ const resolvedRelated = relatedConcepts.map((rel) => {
 });
 
 const siteUrl = 'https://moresapien.org';
-const pageUrl = siteUrl + '/' + entry.id;
+const pageUrl = siteUrl + '/' + entry.id + '/';
 
 const categoryColours: Record<string, string> = {
   'Cognitive Bias': '#c17f59',
@@ -56,6 +56,28 @@ const pageTitle = title + ' - Moresapien';
 const pageDescription = title + ': ' + oneLiner + ' Learn about this ' + category.toLowerCase() + ' and how it affects your thinking.';
 const ogImage = siteUrl + '/og/' + entry.id + '.png';
 const thoughtHtml = renderMarkdown(thoughtToHoldOnto);
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'DefinedTerm',
+  name: title,
+  description: oneLiner,
+  url: pageUrl,
+  inDefinedTermSet: {
+    '@type': 'DefinedTermSet',
+    name: 'Moresapien Knowledge Base',
+    url: siteUrl + '/',
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': pageUrl,
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Moresapien',
+    url: siteUrl + '/',
+  },
+};
 ---
 
 <html lang="en">
@@ -64,6 +86,7 @@ const thoughtHtml = renderMarkdown(thoughtToHoldOnto);
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title>
     <meta name="description" content={pageDescription} />
+    <link rel="canonical" href={pageUrl} />
 
     <meta property="og:type" content="article" />
     <meta property="og:title" content={pageTitle} />
@@ -85,6 +108,8 @@ const thoughtHtml = renderMarkdown(thoughtToHoldOnto);
       href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Nunito:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
   </head>
 
   <body>
@@ -157,7 +182,7 @@ const thoughtHtml = renderMarkdown(thoughtToHoldOnto);
                 <h3>Related concepts</h3>
                 <div class="related-grid">
                   {resolvedRelated.map((related) => (
-                    <a href={"/" + related.slug} class="related-card">
+                    <a href={"/" + related.slug + "/"} class="related-card">
                       <span class="related-category" style={"color:" + (categoryColours[related.category] || '#c17f59')}>
                         {related.category}
                       </span>

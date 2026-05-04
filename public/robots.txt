@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://moresapien.org/sitemap-index.xml

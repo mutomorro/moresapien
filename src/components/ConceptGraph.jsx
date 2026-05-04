@@ -288,7 +288,7 @@ export default function ConceptGraph() {
         setHoveredNode(null);
       })
       .on('click', (event, d) => {
-        window.location.href = `/${d.slug}`;
+        window.location.href = `/${d.slug}/`;
       });
 
     // ----- Search highlighting -----

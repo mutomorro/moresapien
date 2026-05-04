@@ -547,7 +547,7 @@ export default function Moresapien({ entries = [], collections = [] }) {
                   <a
                     key={col.slug}
                     className={`ms-collection-card ${col.type}`}
-                    href={"/collections/" + col.slug}
+                    href={"/collections/" + col.slug + "/"}
                   >
                     <span className={`ms-collection-type ${col.type}`}>
                       {col.type === "pathway" ? "Learning pathway" : "Toolkit"}
@@ -590,7 +590,7 @@ export default function Moresapien({ entries = [], collections = [] }) {
                 key={entry.slug}
                 className="ms-card"
                 style={{ animationDelay: `${i * 0.035}s` }}
-                href={"/" + entry.slug}
+                href={"/" + entry.slug + "/"}
               >
                 <div className="ms-card-svg">
                   <ConceptIllustration category={entry.category} color={c.dot} size={48} />

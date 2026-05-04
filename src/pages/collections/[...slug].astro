@@ -26,6 +26,9 @@ const resolvedEntries = collectionEntries.map((slug, index) => {
   };
 });
 
+const siteUrl = 'https://moresapien.org';
+const pageUrl = siteUrl + '/collections/' + collection.id + '/';
+
 const categoryColours: Record<string, string> = {
   'Cognitive Bias': '#c17f59',
   'Logical Fallacy': '#7b8a6e',
@@ -45,6 +48,13 @@ const categoryColours: Record<string, string> = {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title} - Moresapien</title>
     <meta name="description" content={audience} />
+    <link rel="canonical" href={pageUrl} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title + ' - Moresapien'} />
+    <meta property="og:description" content={audience} />
+    <meta property="og:url" content={pageUrl} />
+    <meta property="og:site_name" content="Moresapien" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -82,7 +92,7 @@ const categoryColours: Record<string, string> = {
             <ol class="pathway-list">
               {resolvedEntries.map((entry) => (
                 <li>
-                  <a href={`/${entry.slug}`} class="pathway-item">
+                  <a href={`/${entry.slug}/`} class="pathway-item">
                     <span class="pathway-number">{entry.index}</span>
                     <div class="pathway-content">
                       <span class="pathway-category" style={"color:" + (categoryColours[entry.category] || '#8a7f72')}>
@@ -98,7 +108,7 @@ const categoryColours: Record<string, string> = {
           ) : (
             <div class="toolkit-grid">
               {resolvedEntries.map((entry) => (
-                <a href={`/${entry.slug}`} class="toolkit-card">
+                <a href={`/${entry.slug}/`} class="toolkit-card">
                   <span class="toolkit-category" style={"color:" + (categoryColours[entry.category] || '#8a7f72')}>
                     {entry.category}
                   </span>

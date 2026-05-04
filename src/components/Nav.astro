@@ -23,14 +23,14 @@ const { currentPage = '' } = Astro.props;
       <span class="nav-label">Browse</span>
     </a>
 
-    <a href="/collections" class:list={['nav-pill', { active: currentPage === 'collections' }]}>
+    <a href="/collections/" class:list={['nav-pill', { active: currentPage === 'collections' }]}>
       <svg class="nav-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
       </svg>
       <span class="nav-label">Collections</span>
     </a>
 
-    <a href="/connections" class:list={['nav-pill', { active: currentPage === 'connections' }]}>
+    <a href="/connections/" class:list={['nav-pill', { active: currentPage === 'connections' }]}>
       <svg class="nav-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
         <circle cx="5" cy="6" r="2.5"/>
         <circle cx="19" cy="8" r="2.5"/>
@@ -42,7 +42,7 @@ const { currentPage = '' } = Astro.props;
       <span class="nav-label">Connections</span>
     </a>
 
-    <a href="/about" class:list={['nav-pill', { active: currentPage === 'about' }]}>
+    <a href="/about/" class:list={['nav-pill', { active: currentPage === 'about' }]}>
       <svg class="nav-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
         <circle cx="12" cy="12" r="10"/>
         <line x1="12" y1="16" x2="12" y2="12"/>

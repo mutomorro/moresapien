@@ -29,11 +29,12 @@ const collectionsData = collections.map((col) => {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Collections - Moresapien</title>
     <meta name="description" content="Curated pathways through Moresapien's knowledge base. Guided journeys through cognitive biases, logical fallacies, manipulation tactics, and more." />
+    <link rel="canonical" href="https://moresapien.org/collections/" />
 
     <meta property="og:title" content="Collections - Moresapien" />
     <meta property="og:description" content="Curated pathways through the knowledge base - guided journeys through how thinking works." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://moresapien.org/collections" />
+    <meta property="og:url" content="https://moresapien.org/collections/" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -223,7 +224,7 @@ const collectionsData = collections.map((col) => {
 
       <div class="collections-list">
         {collectionsData.map((col) => (
-          <a href={`/collections/${col.slug}`} class="collection-card">
+          <a href={`/collections/${col.slug}/`} class="collection-card">
             <div class="collection-meta-row">
               <span class:list={['collection-type-badge', col.type === 'pathway' ? 'badge-pathway' : 'badge-toolkit']}>
                 {col.type === 'pathway' ? 'Learning pathway' : 'Toolkit'}
@@ -246,7 +247,7 @@ const collectionsData = collections.map((col) => {
       </div>
 
       <p class="page-footer-note">
-        More collections coming soon. <a href="/connections">Explore the full knowledge graph</a>
+        More collections coming soon. <a href="/connections/">Explore the full knowledge graph</a>
       </p>
 
       <footer class="site-footer">
