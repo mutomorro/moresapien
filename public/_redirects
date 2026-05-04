@@ -53,6 +53,37 @@
 /cookie-policy/                                 /               301
 /checkout-2/                                    /               301
 
+# ── Old WP entries not yet migrated to v2 ──
+# Netlify only applies these when no static file matches, so once an
+# entry is migrated to /src/content/entries the redirect becomes a no-op.
+/salience-bias/                                 /               301
+/implicit-association/                          /               301
+/anthropocentrism/                              /               301
+/illusory-correlation/                          /               301
+/clustering-illusion/                           /               301
+/apophenia/                                     /               301
+/functional-fixedness/                          /               301
+/law-of-the-instrument/                         /               301
+/common-source-bias/                            /               301
+/contrast-effect/                               /               301
+/pareidolia/                                    /               301
+/arrival-fallacy/                               /               301
+/complexity-bias/                               /               301
+/conservative-bias/                             /               301
+/self-reference-effect/                         /               301
+/picture-superiority-effect/                    /               301
+/von-restorff-effect/                           /               301
+/humour-effect/                                 /               301
+/bizarreness-effect/                            /               301
+/base-rate-fallacy/                             /               301
+/omission-bias/                                 /               301
+/frequency-illusion/                            /               301
+/mood-congruent-memory-bias/                    /               301
+/cue-dependent-forgetting/                      /               301
+/context-effect/                                /               301
+/mere-exposure-effect/                          /               301
+/attentional-bias/                              /               301
+
 # ── WordPress uploads / admin paths ──
 /wp-content/*                                   /               301
 /wp-admin/*                                     /               301
