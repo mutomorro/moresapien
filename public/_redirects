@@ -22,9 +22,12 @@
 /theories                                       /               301
 
 # ── Entries with different slugs or paths ──
-/cognitive-dissonance/effort-justification/     /effort-justification/   301
-/empathy-gap/                                   /hot-cold-empathy-gap/   301
-/empathy-gap                                    /hot-cold-empathy-gap/   301
+# /effort-justification and /hot-cold-empathy-gap are not yet in the
+# v2 content collection — point at / for now; flip these back to the
+# proper destinations once the entries are migrated.
+/cognitive-dissonance/effort-justification/     /                        301
+/empathy-gap/                                   /                        301
+/empathy-gap                                    /                        301
 /mental-model/hanlons-razor/                    /hanlons-razor/          301
 /mental-model/hanlons-razor                     /hanlons-razor/          301
 
