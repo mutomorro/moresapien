@@ -3,6 +3,9 @@ import { getCollection, render } from 'astro:content';
 import Nav from '../components/Nav.astro';
 import ShareButton from '../components/ShareButton.jsx';
 import StayCurious from '../components/StayCurious.astro';
+import KnowledgeCard from '../components/KnowledgeCard.astro';
+import ConnectionMiniMap from '../components/ConnectionMiniMap.astro';
+import { categoryColours } from '../data/categoryColours.js';
 
 export async function getStaticPaths() {
   const entries = await getCollection('entries');
@@ -34,18 +37,6 @@ const resolvedRelated = relatedConcepts.map((rel) => {
 const siteUrl = 'https://moresapien.org';
 const pageUrl = siteUrl + '/' + entry.id + '/';
 
-const categoryColours: Record<string, string> = {
-  'Cognitive Bias': '#c17f59',
-  'Logical Fallacy': '#7b8a6e',
-  'Mental Model': '#5b7a8a',
-  'Political Theory': '#8a6e7b',
-  'Rhetorical Device': '#6e7b8a',
-  'Systems Thinking': '#7a8a5b',
-  'Manipulation Tactic': '#8b4a4a',
-  'Psychological Phenomenon': '#7a6699',
-  'Psychological Defence': '#4a7a7a',
-};
-
 const accentColour = categoryColours[category] || '#c17f59';
 
 function renderMarkdown(text: string): string {
@@ -57,12 +48,21 @@ const pageDescription = title + ': ' + oneLiner + ' Learn about this ' + categor
 const ogImage = siteUrl + '/og/' + entry.id + '.png';
 const thoughtHtml = renderMarkdown(thoughtToHoldOnto);
 
+const ogImageCaption = title + ' - ' + category + ' - Moresapien knowledge card';
+
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'DefinedTerm',
   name: title,
   description: oneLiner,
   url: pageUrl,
+  image: {
+    '@type': 'ImageObject',
+    url: ogImage,
+    width: 1200,
+    height: 630,
+    caption: ogImageCaption,
+  },
   inDefinedTermSet: {
     '@type': 'DefinedTermSet',
     name: 'Moresapien Knowledge Base',
@@ -139,6 +139,18 @@ const structuredData = {
             </div>
           </header>
 
+          <!-- Auto-generated visual summary -->
+          <div class="entry-visual">
+            <KnowledgeCard
+              title={title}
+              oneLiner={oneLiner}
+              category={category}
+              thoughtToHoldOnto={thoughtToHoldOnto}
+              relatedConcepts={resolvedRelated}
+              slug={entry.id}
+            />
+          </div>
+
           <!-- Markdown body: "What it means" and "In the real world" -->
           <div class="entry-body">
             <Content />
@@ -176,6 +188,19 @@ const structuredData = {
                 category={category}
               />
             </div>
+
+            {resolvedRelated.length > 0 && (
+              <div class="connection-map">
+                <h3>How this connects</h3>
+                <p class="map-hint">{title} sits alongside {resolvedRelated.length === 1 ? 'one related idea' : `${resolvedRelated.length} related ideas`} - a quick map of the neighbourhood.</p>
+                <ConnectionMiniMap
+                  title={title}
+                  category={category}
+                  relatedConcepts={resolvedRelated}
+                  slug={entry.id}
+                />
+              </div>
+            )}
 
             {resolvedRelated.length > 0 && (
               <div class="related-concepts">
@@ -332,6 +357,47 @@ const structuredData = {
         background: #f0ebe4;
         padding: 0.2rem 0.6rem;
         border-radius: 0.75rem;
+      }
+
+      /* Auto-generated knowledge card */
+      .entry-visual {
+        margin: 0 0 2rem;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid #e8e0d8;
+        background: #FFFBF5;
+      }
+
+      .entry-visual :global(svg) {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      /* Connection mini-map */
+      .connection-map {
+        margin: 0 0 2rem;
+      }
+
+      .connection-map h3 {
+        font-family: 'Lora', serif;
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #2a2520;
+        margin-bottom: 0.25rem;
+      }
+
+      .connection-map .map-hint {
+        font-size: 0.85rem;
+        color: #8a7f72;
+        margin-bottom: 1rem;
+        font-style: italic;
+      }
+
+      .connection-map :global(svg) {
+        display: block;
+        width: 100%;
+        height: auto;
       }
 
       /* Markdown body styles */

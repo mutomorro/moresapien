@@ -1,0 +1,170 @@
+---
+import { categoryColours, brandColours } from '../data/categoryColours.js';
+
+interface RelatedConcept {
+  slug: string;
+  title: string;
+  category: string;
+}
+
+interface Props {
+  title: string;
+  category: string;
+  relatedConcepts: RelatedConcept[];
+  slug: string;
+}
+
+const { title, category, relatedConcepts, slug } = Astro.props;
+
+// Filter out anything that didn't resolve to a real entry (no category) so we
+// never render a satellite that has no colour or that points at a 404.
+const satellites = (relatedConcepts || []).filter((r) => r && r.category && r.title);
+
+// Landscape canvas (similar aspect to the knowledge card), with an elliptical
+// satellite ring so nodes spread out horizontally and don't crowd the centre.
+const W = 1000;
+const H = 480;
+const cx = W / 2;
+const cy = H / 2;
+const rx = 340;
+const ry = 160;
+const centreColour = categoryColours[category] || brandColours.gold;
+
+function angleFor(i: number, total: number): number {
+  // start at top (12 o'clock), distribute evenly clockwise
+  return (2 * Math.PI * i) / total - Math.PI / 2;
+}
+
+function truncate(text: string, max: number): string {
+  if (text.length <= max) return text;
+  return text.slice(0, max - 1).replace(/\s+\S*$/, '') + '…';
+}
+
+const positioned = satellites.map((concept, i) => {
+  const a = angleFor(i, Math.max(satellites.length, 1));
+  const len = (concept.title || '').length;
+  // Shrink the title font for longer names so they fit inside the circle.
+  const titleFontSize = len <= 12 ? 13 : len <= 16 ? 11 : 10;
+  return {
+    ...concept,
+    x: cx + rx * Math.cos(a),
+    y: cy + ry * Math.sin(a),
+    colour: categoryColours[concept.category] || brandColours.gold,
+    titleFontSize,
+    displayTitle: truncate(concept.title, 17),
+  };
+});
+
+const centreLines = (() => {
+  // Wrap the centre title onto up to 2 lines inside the centre node.
+  const words = title.split(' ');
+  const maxChars = 14;
+  const lines: string[] = [];
+  let current = '';
+  for (const word of words) {
+    const next = current ? current + ' ' + word : word;
+    if (next.length > maxChars && current) {
+      lines.push(current);
+      current = word;
+    } else {
+      current = next;
+    }
+  }
+  if (current) lines.push(current);
+  return lines.slice(0, 2);
+})();
+
+const altLabel = `How ${title} connects to ${satellites.map((s) => s.title).join(', ') || 'related concepts'}`;
+const mapId = 'cm-' + slug;
+---
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox={`0 0 ${W} ${H}`}
+  preserveAspectRatio="xMidYMid meet"
+  role="img"
+  aria-label={`Connection map for ${title}`}
+  class="connection-map-svg"
+>
+  <title>{`How ${title} connects to related concepts`}</title>
+  <desc>{altLabel}</desc>
+
+  {/* Connection lines drawn first so nodes sit on top */}
+  {positioned.map((s) => (
+    <line
+      x1={cx}
+      y1={cy}
+      x2={s.x}
+      y2={s.y}
+      stroke={brandColours.connectionLine}
+      stroke-width="1.2"
+      stroke-opacity="0.35"
+    />
+  ))}
+
+  {/* Centre node */}
+  <g>
+    <circle
+      cx={cx}
+      cy={cy}
+      r="56"
+      fill={centreColour}
+      fill-opacity="0.12"
+      stroke={centreColour}
+      stroke-width="1.8"
+    />
+    <text
+      x={cx}
+      y={cy + (centreLines.length === 1 ? 5 : -6)}
+      font-family="Lora, Georgia, serif"
+      font-size="14"
+      font-weight="600"
+      fill={centreColour}
+      text-anchor="middle"
+    >
+      {centreLines.map((line, i) => (
+        <tspan x={cx} dy={i === 0 ? 0 : 18}>{line}</tspan>
+      ))}
+    </text>
+  </g>
+
+  {/* Satellite nodes */}
+  {positioned.map((s) => (
+    <g>
+      <circle
+        cx={s.x}
+        cy={s.y}
+        r="46"
+        fill={s.colour}
+        fill-opacity="0.10"
+        stroke={s.colour}
+        stroke-width="1.5"
+      />
+      <text
+        x={s.x}
+        y={s.y + 4}
+        font-family="Lora, Georgia, serif"
+        font-size={s.titleFontSize}
+        font-weight="600"
+        fill={s.colour}
+        text-anchor="middle"
+      >{s.displayTitle}</text>
+      <text
+        x={s.x}
+        y={s.y + 66}
+        font-family="Nunito, system-ui, sans-serif"
+        font-size="11"
+        fill={brandColours.textLight}
+        text-anchor="middle"
+      >{s.category}</text>
+    </g>
+  ))}
+</svg>
+
+<style>
+  .connection-map-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+</style>

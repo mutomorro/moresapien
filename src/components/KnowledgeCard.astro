@@ -1,0 +1,289 @@
+---
+import { categoryColours, brandColours } from '../data/categoryColours.js';
+
+interface RelatedConcept {
+  slug: string;
+  title: string;
+}
+
+interface Props {
+  title: string;
+  oneLiner: string;
+  category: string;
+  thoughtToHoldOnto: string;
+  relatedConcepts: RelatedConcept[];
+  slug: string;
+}
+
+const { title, oneLiner, category, thoughtToHoldOnto, relatedConcepts, slug } = Astro.props;
+
+const accent = categoryColours[category] || brandColours.gold;
+const related = (relatedConcepts || []).slice(0, 3);
+
+// Strip simple markdown emphasis so it doesn't render literally in SVG text.
+function stripMd(s: string): string {
+  return (s || '').replace(/\*(.*?)\*/g, '$1').replace(/\s+/g, ' ').trim();
+}
+
+// Greedy word-wrapper. avgChar is an approximate per-character width in px
+// at the given font-size; tuned empirically to Lora/system-sans rendering.
+function wrap(text: string, maxWidth: number, fontSize: number, avgChar = 0.55): string[] {
+  const words = stripMd(text).split(' ');
+  const maxChars = Math.floor(maxWidth / (fontSize * avgChar));
+  const lines: string[] = [];
+  let current = '';
+  for (const word of words) {
+    const next = current ? current + ' ' + word : word;
+    if (next.length > maxChars && current) {
+      lines.push(current);
+      current = word;
+    } else {
+      current = next;
+    }
+  }
+  if (current) lines.push(current);
+  return lines;
+}
+
+function clipLines(lines: string[], maxLines: number): string[] {
+  if (lines.length <= maxLines) return lines;
+  const clipped = lines.slice(0, maxLines);
+  const last = clipped[maxLines - 1];
+  clipped[maxLines - 1] = last.replace(/[.,;:\s]+$/, '') + '…';
+  return clipped;
+}
+
+// Card dimensions match standard OG ratio.
+const W = 1200;
+const H = 630;
+const padX = 64;
+const accentBarH = 12;
+
+// Layout - calculated from designed line counts.
+const titleLines = clipLines(wrap(title, W - padX * 2, 60, 0.58), 2);
+const oneLinerLines = clipLines(wrap(oneLiner, W - padX * 2, 28, 0.5), 2);
+const thoughtLines = clipLines(wrap(thoughtToHoldOnto, W - padX * 2 - 80, 30, 0.55), 4);
+
+// Y positions (top-down flow).
+let y = accentBarH + 50;
+const badgeY = y;
+y += 56;
+const titleY = y;
+y += 60 * titleLines.length + 14;
+const oneLinerY = y;
+y += 36 * oneLinerLines.length + 32;
+const divider1Y = y;
+y += 28;
+const thoughtBoxY = y;
+const thoughtBoxPadY = 28;
+const thoughtLabelY = thoughtBoxY + thoughtBoxPadY + 22;
+const thoughtTextY = thoughtLabelY + 36;
+const thoughtBoxH = thoughtBoxPadY + 22 + 14 + 36 * thoughtLines.length + thoughtBoxPadY;
+y = thoughtBoxY + thoughtBoxH + 28;
+const divider2Y = y;
+y += 36;
+const relatedY = y;
+
+const footerY = H - 36;
+const cardId = 'kc-' + slug;
+const accentSafe = accent.replace('#', '');
+
+// Approximate label widths so we can lay out related dots in a row.
+function approxWidth(text: string, fontSize: number, avgChar = 0.5): number {
+  return text.length * fontSize * avgChar;
+}
+
+const dotR = 7;
+const dotGap = 14;
+const labelGap = 36;
+let cursor = padX;
+const relatedItems = related.map((r) => {
+  const w = approxWidth(r.title, 22, 0.52);
+  const item = { x: cursor, title: r.title, w };
+  cursor += dotR * 2 + dotGap + w + labelGap;
+  return item;
+});
+
+// Build accessible alt copy used in role/title/desc/aria-label.
+const altText = `${title} - ${category}. ${oneLiner}`;
+---
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox={`0 0 ${W} ${H}`}
+  preserveAspectRatio="xMidYMid meet"
+  role="img"
+  aria-label={`Knowledge card: ${altText}`}
+  class="knowledge-card-svg"
+>
+  <title>{`${title} - ${category} - Moresapien`}</title>
+  <desc>{altText}</desc>
+
+  <defs>
+    <linearGradient id={`${cardId}-thought`} x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color={brandColours.thoughtBg} />
+      <stop offset="100%" stop-color="#f5f0ea" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width={W} height={H} fill={brandColours.cream} />
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width={W} height={accentBarH} fill={accent} />
+
+  <!-- Category pill -->
+  <g>
+    {(() => {
+      const labelW = approxWidth(category.toUpperCase(), 20, 0.62) + 36;
+      return (
+        <>
+          <rect
+            x={padX}
+            y={badgeY}
+            width={labelW}
+            height={36}
+            rx="18"
+            ry="18"
+            fill={accent}
+          />
+          <text
+            x={padX + labelW / 2}
+            y={badgeY + 24}
+            font-family="Nunito, system-ui, sans-serif"
+            font-size="16"
+            font-weight="700"
+            fill={brandColours.cream}
+            text-anchor="middle"
+            letter-spacing="1.2"
+          >{category.toUpperCase()}</text>
+        </>
+      );
+    })()}
+  </g>
+
+  <!-- Title -->
+  <text
+    x={padX}
+    y={titleY + 50}
+    font-family="Lora, Georgia, serif"
+    font-size="60"
+    font-weight="600"
+    fill={brandColours.text}
+  >
+    {titleLines.map((line, i) => (
+      <tspan x={padX} dy={i === 0 ? 0 : 64}>{line}</tspan>
+    ))}
+  </text>
+
+  <!-- One-liner -->
+  <text
+    x={padX}
+    y={oneLinerY + 24}
+    font-family="Nunito, system-ui, sans-serif"
+    font-size="28"
+    font-style="italic"
+    fill={brandColours.textMuted}
+  >
+    {oneLinerLines.map((line, i) => (
+      <tspan x={padX} dy={i === 0 ? 0 : 36}>{line}</tspan>
+    ))}
+  </text>
+
+  <!-- Divider -->
+  <line
+    x1={padX}
+    y1={divider1Y}
+    x2={W - padX}
+    y2={divider1Y}
+    stroke={brandColours.border}
+    stroke-width="1"
+  />
+
+  <!-- Thought-to-hold-onto box -->
+  <rect
+    x={padX}
+    y={thoughtBoxY}
+    width={W - padX * 2}
+    height={thoughtBoxH}
+    rx="14"
+    ry="14"
+    fill={`url(#${cardId}-thought)`}
+  />
+  <text
+    x={padX + 36}
+    y={thoughtLabelY}
+    font-family="Nunito, system-ui, sans-serif"
+    font-size="16"
+    font-weight="700"
+    fill={accent}
+    letter-spacing="1.5"
+  >THE THOUGHT TO HOLD ONTO</text>
+  <text
+    x={padX + 36}
+    y={thoughtTextY}
+    font-family="Lora, Georgia, serif"
+    font-size="30"
+    font-style="italic"
+    fill="#3a342e"
+  >
+    {thoughtLines.map((line, i) => {
+      const open = i === 0 ? '“' : '';
+      const close = i === thoughtLines.length - 1 ? '”' : '';
+      return <tspan x={padX + 36} dy={i === 0 ? 0 : 38}>{open + line + close}</tspan>;
+    })}
+  </text>
+
+  <!-- Divider -->
+  <line
+    x1={padX}
+    y1={divider2Y}
+    x2={W - padX}
+    y2={divider2Y}
+    stroke={brandColours.border}
+    stroke-width="1"
+  />
+
+  <!-- Related concepts row -->
+  {relatedItems.length > 0 && (
+    <g>
+      {relatedItems.map((item) => (
+        <>
+          <circle
+            cx={item.x + dotR}
+            cy={relatedY}
+            r={dotR}
+            fill={brandColours.relatedDot}
+          />
+          <text
+            x={item.x + dotR * 2 + dotGap}
+            y={relatedY + 8}
+            font-family="Nunito, system-ui, sans-serif"
+            font-size="22"
+            font-weight="500"
+            fill={brandColours.textMuted}
+          >{item.title}</text>
+        </>
+      ))}
+    </g>
+  )}
+
+  <!-- Footer -->
+  <text
+    x={W - padX}
+    y={footerY}
+    font-family="Nunito, system-ui, sans-serif"
+    font-size="20"
+    font-weight="600"
+    fill={brandColours.textLight}
+    text-anchor="end"
+  >moresapien.org</text>
+</svg>
+
+<style>
+  .knowledge-card-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+</style>

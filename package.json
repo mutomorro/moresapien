@@ -3,9 +3,10 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "prebuild": "node scripts/build-graph.mjs",
+    "prebuild": "node scripts/build-graph.mjs && node scripts/generate-og-images.mjs",
     "dev": "astro dev",
     "build": "astro build",
+    "postbuild": "node scripts/enrich-sitemap.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -21,5 +22,11 @@
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "tailwindcss": "^4.2.1"
+  },
+  "devDependencies": {
+    "@fontsource/lora": "^5.2.8",
+    "@fontsource/nunito": "^5.2.7",
+    "@resvg/resvg-js": "^2.6.2",
+    "satori": "^0.26.0"
   }
 }
