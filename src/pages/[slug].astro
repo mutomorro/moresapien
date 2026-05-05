@@ -6,6 +6,7 @@ import StayCurious from '../components/StayCurious.astro';
 import KnowledgeCard from '../components/KnowledgeCard.astro';
 import ConnectionMiniMap from '../components/ConnectionMiniMap.astro';
 import { categoryColours } from '../data/categoryColours.js';
+import { hasDiagram, loadDiagram } from '../data/diagramRegistry.js';
 
 export async function getStaticPaths() {
   const entries = await getCollection('entries');
@@ -49,6 +50,12 @@ const ogImage = siteUrl + '/og/' + entry.id + '.png';
 const thoughtHtml = renderMarkdown(thoughtToHoldOnto);
 
 const ogImageCaption = title + ' - ' + category + ' - Moresapien knowledge card';
+
+// If a hand-crafted concept diagram exists for this slug, render that
+// instead of the auto-generated knowledge card on the page itself.
+// (The OG/social card always remains the auto-generated PNG.)
+const entryHasDiagram = hasDiagram(entry.id);
+const DiagramComponent = entryHasDiagram ? await loadDiagram(entry.id) : null;
 
 const structuredData = {
   '@context': 'https://schema.org',
@@ -139,17 +146,24 @@ const structuredData = {
             </div>
           </header>
 
-          <!-- Auto-generated visual summary -->
-          <div class="entry-visual">
-            <KnowledgeCard
-              title={title}
-              oneLiner={oneLiner}
-              category={category}
-              thoughtToHoldOnto={thoughtToHoldOnto}
-              relatedConcepts={resolvedRelated}
-              slug={entry.id}
-            />
-          </div>
+          <!-- Hand-crafted concept diagram if registered, otherwise the
+               auto-generated knowledge card. -->
+          {entryHasDiagram && DiagramComponent ? (
+            <div class="diagram-container">
+              <DiagramComponent category={category} />
+            </div>
+          ) : (
+            <div class="entry-visual">
+              <KnowledgeCard
+                title={title}
+                oneLiner={oneLiner}
+                category={category}
+                thoughtToHoldOnto={thoughtToHoldOnto}
+                relatedConcepts={resolvedRelated}
+                slug={entry.id}
+              />
+            </div>
+          )}
 
           <!-- Markdown body: "What it means" and "In the real world" -->
           <div class="entry-body">
@@ -369,6 +383,21 @@ const structuredData = {
       }
 
       .entry-visual :global(svg) {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      /* Hand-crafted concept diagram container (when one is registered) */
+      .diagram-container {
+        margin: 0 0 2rem;
+        padding: 1.25rem;
+        background: #FFFBF5;
+        border-radius: 12px;
+        border: 1px solid #e8e0d8;
+      }
+
+      .diagram-container :global(svg) {
         display: block;
         width: 100%;
         height: auto;

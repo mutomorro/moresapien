@@ -28,6 +28,20 @@ export const brandColours = {
   relatedDot: '#5DCAA5',
 };
 
+// Semantic palette for hand-crafted concept diagrams in
+// src/components/diagrams/. Diagrams should never hardcode hex - always
+// import from this file so palette changes propagate to every diagram.
+export const diagramColours = {
+  positive: '#5DCAA5',     // teal - supports, true, passes through, good
+  negative: '#F09977',     // coral - contradicts, false, blocked, bad
+  positiveDark: '#0F6E56', // dark teal - text on positive fills
+  negativeDark: '#993C1D', // dark coral - text on negative fills
+  connection: '#C4956A',   // warm gold - lines between things
+  highlight: '#8B5E3C',    // dark gold - emphasis, labels
+  mutedFill: '#f9f5f0',    // thought box / highlight background
+  insightText: '#4a4540',  // closing insight line colour
+};
+
 export function getCategoryColour(category) {
   return categoryColours[category] || brandColours.gold;
 }

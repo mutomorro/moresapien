@@ -1,0 +1,41 @@
+---
+// Template for hand-crafted concept diagrams.
+// Copy this file, rename to {slug}.astro (matching the entry filename), then
+// register it in src/data/diagramRegistry.js.
+//
+// Rules:
+//   - Accept `category` as the only prop.
+//   - Import every colour from ../../data/categoryColours.js. Never hardcode hex.
+//   - Always include role="img", aria-label, <title>, <desc> for accessibility.
+//   - Match the design language of KnowledgeCard.astro (Lora serif, Nunito sans,
+//     warm cream background, generous whitespace).
+//
+// This file is prefixed with `_` so it's clearly a template - it is never
+// imported anywhere and must not be referenced in diagramRegistry.js.
+
+import { brandColours, diagramColours, categoryColours } from '../../data/categoryColours.js';
+
+interface Props {
+  category: string;
+}
+
+const { category } = Astro.props;
+const accentColour = categoryColours[category] || brandColours.gold;
+---
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 680 420"
+  preserveAspectRatio="xMidYMid meet"
+  role="img"
+  aria-label="Concept diagram - replace with a plain-English description"
+>
+  <title>How [concept] works - Moresapien</title>
+  <desc>Replace with a sentence or two describing what the diagram shows.</desc>
+
+  <!-- Diagram body goes here. Reach for these palette tokens:
+       brandColours.cream / .gold / .text / .textMuted / .border / .thoughtBg
+       diagramColours.positive / .negative / .connection / .highlight / .insightText
+       categoryColours[category] (or accentColour above) for the entry's accent
+  -->
+</svg>
