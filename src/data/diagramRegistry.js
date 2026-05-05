@@ -12,8 +12,8 @@
 // from `./categoryColours.js` so palette changes propagate everywhere.
 
 export const diagrams = {
-  // Example - uncomment when the component lands:
-  // 'confirmation-bias': () => import('../components/diagrams/confirmation-bias.astro'),
+  'sunk-cost-fallacy': () => import('../components/diagrams/sunk-cost-fallacy.astro'),
+  'straw-man': () => import('../components/diagrams/straw-man.astro'),
 };
 
 export function hasDiagram(slug) {
