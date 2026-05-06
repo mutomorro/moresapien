@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
 import Asterisk from '../../components/Asterisk.astro';
 import { getCategoryColor } from '../../utils/categoryColors';
 
@@ -76,6 +77,8 @@ const collectionsData = collections.map((col) => {
       <a href="/connections/">Explore the full knowledge graph →</a>
     </p>
   </main>
+
+  <Footer />
 </BaseLayout>
 
 <style>

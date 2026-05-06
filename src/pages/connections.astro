@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
 import ConceptGraph from '../components/ConceptGraph.jsx';
 ---
 <BaseLayout
@@ -13,6 +14,8 @@ import ConceptGraph from '../components/ConceptGraph.jsx';
   <div class="graph-container">
     <ConceptGraph client:only="react" />
   </div>
+
+  <Footer />
 </BaseLayout>
 
 <style>

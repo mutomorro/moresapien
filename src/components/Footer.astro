@@ -1,0 +1,203 @@
+---
+// Footer.astro — shared site footer
+// Import into every page template alongside Nav.astro
+---
+
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+
+    <!-- Wordmark & tagline -->
+    <div class="footer-brand">
+      <a href="/" class="footer-logo">more<em>sapien</em></a>
+      <p class="footer-tagline">Understanding ourselves, one idea at a time.</p>
+    </div>
+
+    <!-- Three-column link grid -->
+    <nav class="footer-columns" aria-label="Footer navigation">
+
+      <div class="footer-col">
+        <h3 class="footer-col-heading">Explore</h3>
+        <ul>
+          <li><a href="/">Browse all entries</a></li>
+          <li><a href="/collections">Collections</a></li>
+          <li><a href="/connections">Connections graph</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-col-heading">Categories</h3>
+        <ul>
+          <li><a href="/">Cognitive Bias</a></li>
+          <li><a href="/">Logical Fallacy</a></li>
+          <li><a href="/">Rhetorical Device</a></li>
+          <li><a href="/">Manipulation Tactic</a></li>
+          <li><a href="/">Mental Model</a></li>
+          <li><a href="/" class="footer-more">+ 4 more</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-col-heading">Stay curious</h3>
+        <ul>
+          <li><a href="https://buttondown.com/moresapien" target="_blank" rel="noopener noreferrer">Newsletter</a></li>
+          <li><a href="https://bsky.app/profile/moresapien.bsky.social" target="_blank" rel="noopener noreferrer">Bluesky</a></li>
+        </ul>
+      </div>
+
+    </nav>
+
+    <!-- Bottom bar -->
+    <div class="footer-rule"></div>
+    <div class="footer-bottom">
+      <span>&copy; {new Date().getFullYear()} Moresapien &middot; A <a href="https://mutomorro.com" target="_blank" rel="noopener noreferrer">Mutomorro</a> project</span>
+      <span class="footer-ethos">Free to use. No ads. No tracking.</span>
+    </div>
+
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: #15140F;
+    margin-top: 4rem;
+  }
+
+  .footer-inner {
+    max-width: 56rem;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 2rem;
+  }
+
+  /* Brand */
+  .footer-brand {
+    margin-bottom: 2rem;
+  }
+
+  .footer-logo {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: #F5F1E8;
+    text-decoration: none;
+    letter-spacing: -0.02em;
+  }
+
+  .footer-logo em {
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  .footer-tagline {
+    font-family: 'Nunito', system-ui, sans-serif;
+    font-size: 0.8125rem;
+    color: #6B6655;
+    margin-top: 0.25rem;
+  }
+
+  /* Columns */
+  .footer-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2.25rem;
+  }
+
+  .footer-col-heading {
+    font-family: 'Nunito', system-ui, sans-serif;
+    font-size: 0.625rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #6B6655;
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-col ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-col li {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-col a {
+    display: block;
+    font-family: 'Nunito', system-ui, sans-serif;
+    font-size: 0.8125rem;
+    color: #B8B3A6;
+    text-decoration: none;
+    padding: 0.2rem 0;
+    transition: color 0.15s ease;
+  }
+
+  .footer-col a:hover {
+    color: #F5F1E8;
+  }
+
+  .footer-more {
+    color: #4A473E !important;
+  }
+
+  .footer-more:hover {
+    color: #B8B3A6 !important;
+  }
+
+  /* Divider */
+  .footer-rule {
+    border-top: 1px solid #2A2822;
+    margin-bottom: 1.25rem;
+  }
+
+  /* Bottom row */
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-family: 'Nunito', system-ui, sans-serif;
+    font-size: 0.75rem;
+    color: #4A473E;
+  }
+
+  .footer-bottom a {
+    color: #6B6655;
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+
+  .footer-bottom a:hover {
+    color: #B8B3A6;
+  }
+
+  .footer-ethos {
+    color: #4A473E;
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    .footer-inner {
+      padding: 2rem 1rem 1.5rem;
+    }
+
+    .footer-columns {
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem 1rem;
+    }
+
+    .footer-bottom {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .footer-columns {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
