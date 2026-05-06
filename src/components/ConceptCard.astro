@@ -1,0 +1,94 @@
+---
+import Asterisk from './Asterisk.astro';
+import { getCategoryColor } from '../utils/categoryColors';
+
+export interface Props {
+  title: string;
+  oneLiner: string;
+  category: string;
+  slug: string;
+}
+
+const { title, oneLiner, category, slug } = Astro.props;
+const accent = getCategoryColor(category);
+---
+<a
+  href={`/${slug}/`}
+  class="ms-card"
+  style={`--card-accent: ${accent};`}
+  data-category={category}
+>
+  <span class="ms-card-eyebrow">{category}</span>
+  <h2 class="ms-card-title">
+    <span>{title}</span>
+    <span class="ms-card-asterisk"><Asterisk size={14} color={accent} /></span>
+  </h2>
+  <p class="ms-card-oneliner">{oneLiner}</p>
+</a>
+
+<style>
+  .ms-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--ms-r2);
+    background: var(--ms-white);
+    border: var(--ms-rule-width) solid var(--ms-rule);
+    border-top: var(--ms-accent-rule-width) solid var(--card-accent);
+    border-radius: var(--ms-radius-sm);
+    padding: var(--ms-r5);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    height: 100%;
+  }
+
+  .ms-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  }
+
+  .ms-card-eyebrow {
+    font-family: var(--ms-font-mono);
+    font-size: var(--ms-meta);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--card-accent);
+    font-weight: 500;
+  }
+
+  .ms-card-title {
+    font-family: var(--ms-font-display);
+    font-size: 1.625rem;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--ms-ink);
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    flex-wrap: wrap;
+  }
+  .ms-card-asterisk {
+    display: inline-flex;
+    align-self: baseline;
+    transform: translateY(-0.55em);
+  }
+
+  .ms-card-oneliner {
+    font-family: var(--ms-font-body);
+    font-size: 0.875rem;
+    line-height: 1.55;
+    color: var(--ms-ink);
+    margin-top: var(--ms-r2);
+  }
+
+  @media (max-width: 640px) {
+    .ms-card {
+      padding: var(--ms-r4);
+    }
+    .ms-card-title {
+      font-size: 1.375rem;
+    }
+  }
+</style>

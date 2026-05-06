@@ -1,64 +1,231 @@
 ---
 import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
 import Nav from '../components/Nav.astro';
-import Moresapien from '../components/Moresapien.jsx';
+import ConceptCard from '../components/ConceptCard.astro';
+import { CATEGORIES, getCategoryColor } from '../utils/categoryColors';
 
-// Query all entries from Content Collections
 const allEntries = await getCollection('entries');
 
-// Transform into the shape Moresapien.jsx expects
-const entriesData = allEntries
+const entries = allEntries
   .map((entry) => ({
     slug: entry.id,
     title: entry.data.title,
     oneLiner: entry.data.oneLiner,
     category: entry.data.category,
-    tags: entry.data.tags,
   }))
   .sort((a, b) => a.title.localeCompare(b.title));
 
-// Query all collections
-const allCollections = await getCollection('curatedCollections');
+const categoriesPresent = CATEGORIES.filter((cat) =>
+  entries.some((e) => e.category === cat),
+);
 
-const collectionsData = allCollections.map((col) => ({
-  slug: col.id,
-  title: col.data.title,
-  type: col.data.type,
-  entryCount: col.data.collectionEntries.length,
-}));
+const totalCount = entries.length;
 ---
+<BaseLayout
+  title="Moresapien — Understanding ourselves, one idea at a time"
+  description="A free knowledge base of cognitive biases, mental models, logical fallacies, and the mental tricks we play on ourselves. For everyone."
+  canonical="https://moresapien.org/"
+  ogImage="https://moresapien.org/og/home.png"
+>
+  <Nav currentPage="browse" />
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Moresapien - Understanding ourselves, one idea at a time</title>
-    <meta name="description" content="A free knowledge base of cognitive biases, mental models, logical fallacies, and the mental tricks we play on ourselves. For everyone." />
-    <link rel="canonical" href="https://moresapien.org/" />
+  <main id="main" class="browse">
+    <header class="browse-header">
+      <p class="browse-eyebrow">A field guide to the mind</p>
+      <h1 class="browse-title">Browse</h1>
+      <p class="browse-intro">
+        The mental tricks we play on ourselves — and the ones that get played on us.
+      </p>
+      <p class="browse-count">{totalCount} concepts</p>
+    </header>
 
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Moresapien - Understanding ourselves, one idea at a time" />
-    <meta property="og:description" content="A free knowledge base of cognitive biases, mental models, logical fallacies, and the mental tricks we play on ourselves. For everyone." />
-    <meta property="og:url" content="https://moresapien.org/" />
-    <meta property="og:site_name" content="Moresapien" />
-    <meta property="og:image" content="https://moresapien.org/og/homepage.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <div class="filter-bar" role="group" aria-label="Filter by category">
+      <button class="chip chip-all is-active" data-filter="all" type="button">All</button>
+      {categoriesPresent.map((cat) => (
+        <button
+          class="chip"
+          type="button"
+          data-filter={cat}
+          style={`--chip-color: ${getCategoryColor(cat)};`}
+        >
+          {cat}
+        </button>
+      ))}
+    </div>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Moresapien - Understanding ourselves, one idea at a time" />
-    <meta name="twitter:description" content="A free knowledge base of cognitive biases, mental models, logical fallacies, and the mental tricks we play on ourselves. For everyone." />
-    <meta name="twitter:image" content="https://moresapien.org/og/homepage.png" />
+    <div class="card-grid" id="card-grid">
+      {entries.map((entry) => (
+        <div class="card-cell" data-category={entry.category}>
+          <ConceptCard
+            title={entry.title}
+            oneLiner={entry.oneLiner}
+            category={entry.category}
+            slug={entry.slug}
+          />
+        </div>
+      ))}
+    </div>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Nunito:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <Nav currentPage="concepts" />
-    <Moresapien client:load entries={entriesData} collections={collectionsData} />
-  </body>
-</html>
+    <footer class="browse-footer">
+      <p>
+        <a href="/connections/">See how the concepts connect →</a>
+      </p>
+    </footer>
+  </main>
+</BaseLayout>
+
+<style>
+  .browse {
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: var(--ms-r7) var(--ms-r5) var(--ms-r9);
+  }
+
+  .browse-header {
+    margin-bottom: var(--ms-r7);
+  }
+
+  .browse-eyebrow {
+    font-family: var(--ms-font-mono);
+    font-size: var(--ms-meta);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ms-mute);
+    margin-bottom: var(--ms-r3);
+  }
+
+  .browse-title {
+    font-family: var(--ms-font-display);
+    font-size: var(--ms-h1);
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    line-height: 0.95;
+    color: var(--ms-ink);
+    margin-bottom: var(--ms-r4);
+  }
+
+  .browse-intro {
+    font-family: var(--ms-font-body);
+    font-size: 1.125rem;
+    line-height: 1.55;
+    color: var(--ms-ink);
+    max-width: 38rem;
+    margin-bottom: var(--ms-r4);
+  }
+
+  .browse-count {
+    font-family: var(--ms-font-mono);
+    font-size: var(--ms-meta);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ms-mute);
+  }
+
+  .filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--ms-r2);
+    margin-bottom: var(--ms-r6);
+    padding-bottom: var(--ms-r5);
+    border-bottom: 1px solid var(--ms-rule);
+  }
+
+  .chip {
+    font-family: var(--ms-font-mono);
+    font-size: var(--ms-meta);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background: transparent;
+    color: var(--chip-color, var(--ms-ink));
+    border: 1.5px solid var(--chip-color, var(--ms-mute));
+    border-radius: var(--ms-radius-pill);
+    padding: 6px 14px;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  }
+
+  .chip-all {
+    --chip-color: var(--ms-ink);
+    color: var(--ms-ink);
+    border-color: var(--ms-ink);
+  }
+
+  .chip:hover {
+    background: color-mix(in srgb, var(--chip-color, var(--ms-ink)) 12%, transparent);
+  }
+
+  .chip.is-active {
+    background: var(--chip-color, var(--ms-ink));
+    color: var(--ms-white);
+    border-color: var(--chip-color, var(--ms-ink));
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--ms-r5);
+    align-items: stretch;
+  }
+
+  .card-cell {
+    display: contents;
+  }
+
+  .card-cell[hidden] {
+    display: none;
+  }
+
+  .browse-footer {
+    margin-top: var(--ms-r9);
+    padding-top: var(--ms-r6);
+    border-top: 1px solid var(--ms-rule);
+    text-align: center;
+  }
+
+  .browse-footer a {
+    font-family: var(--ms-font-ui);
+    font-size: 14px;
+    color: var(--ms-coral);
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    transition: opacity 0.15s ease;
+  }
+
+  .browse-footer a:hover {
+    opacity: 0.75;
+  }
+
+  @media (max-width: 640px) {
+    .browse {
+      padding: var(--ms-r5) var(--ms-r4) var(--ms-r8);
+    }
+    .browse-header {
+      margin-bottom: var(--ms-r5);
+    }
+    .browse-intro {
+      font-size: 1rem;
+    }
+    .card-grid {
+      grid-template-columns: 1fr;
+      gap: var(--ms-r4);
+    }
+  }
+</style>
+
+<script>
+  const chips = document.querySelectorAll<HTMLButtonElement>('.chip');
+  const cells = document.querySelectorAll<HTMLDivElement>('.card-cell');
+
+  chips.forEach((chip) => {
+    chip.addEventListener('click', () => {
+      const filter = chip.dataset.filter || 'all';
+      chips.forEach((c) => c.classList.toggle('is-active', c === chip));
+      cells.forEach((cell) => {
+        const matches = filter === 'all' || cell.dataset.category === filter;
+        cell.hidden = !matches;
+      });
+    });
+  });
+</script>
