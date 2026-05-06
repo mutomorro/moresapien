@@ -21,18 +21,18 @@ const ENTRIES_DIR = path.resolve('src/content/entries');
 const COLLECTIONS_DIR = path.resolve('src/content/collections');
 const OUTPUT_PATH = path.resolve('public/graph-data.json');
 
-// Category colours - mirrored from content.config.ts
-// so the visualisation doesn't need to import TypeScript.
+// Category colours - mirror src/utils/categoryColors.ts so the
+// visualisation doesn't need to import TypeScript.
 const CATEGORY_COLOURS = {
-  'Cognitive Bias': '#D4A574',
-  'Logical Fallacy': '#7EA886',
-  'Rhetorical Device': '#8B9FC5',
-  'Mental Model': '#C4956A',
-  'Systems Thinking': '#6BA3A0',
-  'Political Theory': '#B07AA1',
-  'Manipulation Tactic': '#C47A7A',
-  'Psychological Phenomenon': '#9B8EC4',
-  'Psychological Defence': '#7AACB0',
+  'Cognitive Bias':           '#3559B0',
+  'Logical Fallacy':          '#E8A533',
+  'Rhetorical Device':        '#8B5CF6',
+  'Mental Model':             '#B54A2A',
+  'Systems Thinking':         '#7A8B3A',
+  'Political Theory':         '#2A8A8A',
+  'Manipulation Tactic':      '#C44A8A',
+  'Psychological Phenomenon': '#7A3A5E',
+  'Psychological Defence':    '#26467D',
 };
 
 // -------------------------------------------------

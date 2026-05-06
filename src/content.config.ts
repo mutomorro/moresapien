@@ -25,19 +25,20 @@ export const CATEGORIES = [
 ] as const;
 
 // -------------------------------------------------
-// Category colours (carried over from session 1 build)
-// Add/adjust as needed for the three new categories
+// Category colours - mirror src/utils/categoryColors.ts and
+// src/styles/global.css. Schools any consumer that imports the
+// taxonomy from this config file. Keep in sync.
 // -------------------------------------------------
 export const CATEGORY_COLOURS: Record<string, string> = {
-  'Cognitive Bias': '#D4A574',
-  'Logical Fallacy': '#7EA886',
-  'Rhetorical Device': '#8B9FC5',
-  'Mental Model': '#C4956A',
-  'Systems Thinking': '#6BA3A0',
-  'Political Theory': '#B07AA1',
-  'Manipulation Tactic': '#C47A7A',
-  'Psychological Phenomenon': '#9B8EC4',
-  'Psychological Defence': '#7AACB0',
+  'Cognitive Bias':           '#3559B0',
+  'Logical Fallacy':          '#E8A533',
+  'Rhetorical Device':        '#8B5CF6',
+  'Mental Model':             '#B54A2A',
+  'Systems Thinking':         '#7A8B3A',
+  'Political Theory':         '#2A8A8A',
+  'Manipulation Tactic':      '#C44A8A',
+  'Psychological Phenomenon': '#7A3A5E',
+  'Psychological Defence':    '#26467D',
 };
 
 // -------------------------------------------------

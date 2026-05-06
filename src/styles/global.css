@@ -1,1 +1,172 @@
-@import "tailwindcss";
+/* Moresapien · Global stylesheet
+ * Single source of truth for design tokens, base styles and font faces.
+ * Imported by every page via BaseLayout.astro. */
+
+/* ---- Colour tokens ---------------------------------------------------- */
+:root {
+  /* Primary brand */
+  --ms-coral:  #FF5D4A;
+  --ms-mint:   #6FE8B0;
+  --ms-ink:    #15140F;
+  --ms-paper:  #F5F1E8;
+  --ms-mute:   #6B6655;
+  --ms-rule:   #DCD5C2;
+  --ms-white:  #FFFFFF;
+
+  /* Category palette - used as navigation device, never primary */
+  --ms-cat-cognitive-bias:    #3559B0;
+  --ms-cat-logical-fallacy:   #E8A533;
+  --ms-cat-psych-phenomenon:  #7A3A5E;
+  --ms-cat-psych-defence:     #26467D;
+  --ms-cat-manipulation:      #C44A8A;
+  --ms-cat-rhetorical:        #8B5CF6;
+  --ms-cat-systems:           #7A8B3A;
+  --ms-cat-mental-model:      #B54A2A;
+  --ms-cat-political-theory:  #2A8A8A;
+}
+
+/* ---- Typography tokens ------------------------------------------------- */
+:root {
+  --ms-font-display: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --ms-font-body:    'General Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --ms-font-ui:      'Space Grotesk', system-ui, sans-serif;
+  --ms-font-mono:    'DM Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+}
+
+/* ---- Type scale -------------------------------------------------------- */
+:root {
+  --ms-h1:    clamp(2.5rem, 5vw, 4.375rem);
+  --ms-h2:    clamp(1.75rem, 3.5vw, 2.75rem);
+  --ms-h3:    clamp(1.375rem, 2.5vw, 2rem);
+  --ms-h4:    1.25rem;
+  --ms-body:  1rem;
+  --ms-small: 0.875rem;
+  --ms-meta:  0.6875rem;
+}
+
+/* ---- Spacing & rhythm -------------------------------------------------- */
+:root {
+  --ms-r1: 4px;   --ms-r2: 8px;   --ms-r3: 12px;
+  --ms-r4: 16px;  --ms-r5: 24px;  --ms-r6: 36px;
+  --ms-r7: 48px;  --ms-r8: 64px;  --ms-r9: 96px;
+
+  --ms-radius-sm:   4px;
+  --ms-radius-md:   8px;
+  --ms-radius-pill: 999px;
+
+  --ms-rule-width:        1px;
+  --ms-accent-rule-width: 4px;
+}
+
+/* ---- Reset & base ------------------------------------------------------ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--ms-font-body);
+  font-size: var(--ms-body);
+  line-height: 1.55;
+  color: var(--ms-ink);
+  background-color: var(--ms-paper);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  min-height: 100vh;
+  font-family: inherit;
+  background: inherit;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ms-font-display);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: var(--ms-ink);
+  line-height: 1.1;
+}
+
+p {
+  line-height: 1.55;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img, svg {
+  max-width: 100%;
+}
+
+/* ---- Mono / meta utility ---------------------------------------------- */
+.ms-meta {
+  font-family: var(--ms-font-mono);
+  font-size: var(--ms-meta);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* ---- Italics emphasis carries coral by default ----------------------- */
+em {
+  font-style: italic;
+  color: var(--ms-coral);
+}
+
+/* But in display/header contexts the italic is the type itself */
+h1 em, h2 em, h3 em, h4 em,
+.ms-display em {
+  color: inherit;
+}
+
+/* ---- Selection ------------------------------------------------------- */
+::selection {
+  background: var(--ms-coral);
+  color: var(--ms-paper);
+}
+
+/* ---- Focus states ---------------------------------------------------- */
+:focus-visible {
+  outline: 2px solid var(--ms-coral);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ---- Diagram SVG text classes ---------------------------------------- */
+/* Used by hand-crafted diagrams in src/components/diagrams. */
+svg .th {
+  font-family: var(--ms-font-display);
+  font-size: 14px;
+  font-weight: 500;
+  fill: var(--ms-ink);
+}
+svg .ts {
+  font-family: var(--ms-font-body);
+  font-size: 11px;
+  fill: var(--ms-mute);
+}
+
+/* ---- Skip-to-content link (visible on focus) ------------------------- */
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--ms-ink);
+  color: var(--ms-paper);
+  padding: 8px 16px;
+  z-index: 100;
+  font-family: var(--ms-font-ui);
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}

@@ -4,7 +4,7 @@
       "slug": "ad-hominem",
       "title": "Ad Hominem",
       "category": "Logical Fallacy",
-      "colour": "#7EA886",
+      "colour": "#E8A533",
       "oneLiner": "Attacking the person making the argument instead of the argument itself.",
       "tags": [
         "debate",
@@ -20,7 +20,7 @@
       "slug": "affect-heuristic",
       "title": "Affect Heuristic",
       "category": "Cognitive Bias",
-      "colour": "#D4A574",
+      "colour": "#3559B0",
       "oneLiner": "We make judgements based on our current emotions rather than objective analysis.",
       "tags": [
         "emotion",
@@ -37,7 +37,7 @@
       "slug": "anchoring-bias",
       "title": "Anchoring Bias",
       "category": "Cognitive Bias",
-      "colour": "#D4A574",
+      "colour": "#3559B0",
       "oneLiner": "The first number or piece of information we hear disproportionately shapes everything that follows.",
       "tags": [
         "decision-making",
@@ -53,7 +53,7 @@
       "slug": "appeal-to-emotion",
       "title": "Appeal to Emotion",
       "category": "Logical Fallacy",
-      "colour": "#7EA886",
+      "colour": "#E8A533",
       "oneLiner": "Substituting feelings for evidence to win an argument.",
       "tags": [
         "persuasion",
@@ -71,7 +71,7 @@
       "slug": "appeal-to-false-authority",
       "title": "Appeal to False Authority",
       "category": "Logical Fallacy",
-      "colour": "#7EA886",
+      "colour": "#E8A533",
       "oneLiner": "Using a source that sounds authoritative but isn't actually reliable or relevant as the foundation of an argument.",
       "tags": [
         "critical thinking",
@@ -88,7 +88,7 @@
       "slug": "appeal-to-nature",
       "title": "Appeal to Nature",
       "category": "Logical Fallacy",
-      "colour": "#7EA886",
+      "colour": "#E8A533",
       "oneLiner": "The assumption that something is good because it's natural, or bad because it's artificial.",
       "tags": [
         "critical thinking",
@@ -104,7 +104,7 @@
       "slug": "authority-bias",
       "title": "Authority Bias",
       "category": "Cognitive Bias",
-      "colour": "#D4A574",
+      "colour": "#3559B0",
       "oneLiner": "We give disproportionate weight to the opinions of people we perceive as authorities - even outside their expertise.",
       "tags": [
         "persuasion",
@@ -120,7 +120,7 @@
       "slug": "availability-heuristic",
       "title": "Availability Heuristic",
       "category": "Cognitive Bias",
-      "colour": "#D4A574",
+      "colour": "#3559B0",
       "oneLiner": "We judge how likely something is based on how easily an example comes to mind.",
       "tags": [
         "decision-making",
@@ -136,7 +136,7 @@
       "slug": "aversive-racism",
       "title": "Aversive Racism",
       "category": "Psychological Phenomenon",
-      "colour": "#9B8EC4",
+      "colour": "#7A3A5E",
       "oneLiner": "When people who genuinely believe they are not prejudiced still harbour unconscious biases that shape their behaviour in subtle ways.",
       "tags": [
         "self-deception",
@@ -152,7 +152,7 @@
       "slug": "backfire-effect",
       "title": "Backfire Effect",
       "category": "Psychological Phenomenon",
-      "colour": "#9B8EC4",
+      "colour": "#7A3A5E",
       "oneLiner": "Correcting someone's false belief can actually make them believe it more strongly.",
       "tags": [
         "misinformation",
@@ -168,7 +168,7 @@
       "slug": "bandwagon-effect",
       "title": "Bandwagon Effect",
       "category": "Cognitive Bias",
-      "colour": "#D4A574",
+      "colour": "#3559B0",
       "oneLiner": "We're more likely to believe or do something if lots of other people already do.",
       "tags": [
         "social dynamics",
@@ -185,7 +185,7 @@
       "slug": "ben-franklin-effect",
       "title": "Ben Franklin Effect",
       "category": "Cognitive Bias",
-      "colour": "#D4A574",
+      "colour": "#3559B0",
       "oneLiner": "We grow to like people we've done favours for, not just people who've done favours for us.",
       "tags": [
         "persuasion",
@@ -200,7 +200,7 @@
       "slug": "betrayal-aversion",
       "title": "Betrayal Aversion",
       "category": "Psychological Phenomenon",
-      "colour": "#9B8EC4",
+      "colour": "#7A3A5E",
       "oneLiner": "Harm that comes with a violation of trust hurts far more than the same harm without it.",
       "tags": [
         "emotion",
@@ -216,7 +216,7 @@
       "slug": "burden-of-proof",
       "title": "Burden of Proof",
       "category": "Logical Fallacy",
-      "colour": "#7EA886",
+      "colour": "#E8A533",
       "oneLiner": "Demanding that someone disprove your claim, rather than proving it yourself.",
       "tags": [
         "critical thinking",
@@ -232,7 +232,7 @@
       "slug": "bystander-effect",
       "title": "Bystander Effect",
       "category": "Psychological Phenomenon",
-      "colour": "#9B8EC4",
+      "colour": "#7A3A5E",
       "oneLiner": "The more people who witness an emergency, the less likely any one person is to help.",
       "tags": [
         "social dynamics",
@@ -246,7 +246,7 @@
       "slug": "circle-of-competence",
       "title": "Circle of Competence",
       "category": "Mental Model",
-      "colour": "#C4956A",
+      "colour": "#B54A2A",
       "oneLiner": "Knowing the boundaries of what you actually understand - and being honest about where those boundaries lie.",
       "tags": [
         "decision-making",
@@ -260,7 +260,7 @@
       "slug": "circular-reasoning",
       "title": "Circular Reasoning",
       "category": "Logical Fallacy",
-      "colour": "#7EA886",
+      "colour": "#E8A533",
       "oneLiner": "Using your conclusion as your premise - the argument proves itself by assuming itself.",
       "tags": [
         "critical thinking",
@@ -275,7 +275,7 @@
       "slug": "cognitive-dissonance",
       "title": "Cognitive Dissonance",
       "category": "Cognitive Bias",
-      "colour": "#D4A574",
+      "colour": "#3559B0",
       "oneLiner": "The uncomfortable tension we feel when holding two contradictory beliefs at the same time.",
       "tags": [
         "self-deception",
@@ -291,7 +291,7 @@
       "slug": "compartmentalisation",
       "title": "Compartmentalisation",
       "category": "Psychological Defence",
-      "colour": "#7AACB0",
+      "colour": "#26467D",
       "oneLiner": "Holding contradictory beliefs or values by keeping them in separate mental boxes that never touch.",
       "tags": [
         "psychology",
@@ -306,7 +306,7 @@
       "slug": "compassion-fatigue",
       "title": "Compassion Fatigue",
       "category": "Psychological Phenomenon",
-      "colour": "#9B8EC4",
+      "colour": "#7A3A5E",
       "oneLiner": "Repeated exposure to suffering gradually reduces your capacity to care.",
       "tags": [
         "psychology",
@@ -321,7 +321,7 @@
       "slug": "concern-trolling",
       "title": "Concern Trolling",
       "category": "Manipulation Tactic",
-      "colour": "#C47A7A",
+      "colour": "#C44A8A",
       "oneLiner": "Pretending to be sympathetic or worried in order to undermine.",
       "tags": [
         "manipulation",
@@ -337,7 +337,7 @@
       "slug": "confirmation-bias",
       "title": "Confirmation Bias",
       "category": "Cognitive Bias",
-      "colour": "#D4A574",
+      "colour": "#3559B0",
       "oneLiner": "We seek out information that supports what we already believe, and ignore what doesn't.",
       "tags": [
         "misinformation",
@@ -354,7 +354,7 @@
       "slug": "darvo",
       "title": "DARVO",
       "category": "Manipulation Tactic",
-      "colour": "#C47A7A",
+      "colour": "#C44A8A",
       "oneLiner": "Deny the behaviour, Attack the person who raised it, Reverse the roles of Victim and Offender.",
       "tags": [
         "manipulation",
@@ -370,7 +370,7 @@
       "slug": "denial",
       "title": "Denial",
       "category": "Psychological Defence",
-      "colour": "#7AACB0",
+      "colour": "#26467D",
       "oneLiner": "Refusing to accept reality because it's too threatening to process.",
       "tags": [
         "psychology",
@@ -385,7 +385,7 @@
       "slug": "dog-whistling",
       "title": "Dog Whistling",
       "category": "Manipulation Tactic",
-      "colour": "#C47A7A",
+      "colour": "#C44A8A",
       "oneLiner": "Using coded language that sounds innocent to most people but carries a specific prejudiced message to a target audience.",
       "tags": [
         "propaganda",
@@ -403,7 +403,7 @@
       "slug": "dunning-kruger-effect",
       "title": "Dunning-Kruger Effect",
       "category": "Cognitive Bias",
-      "colour": "#D4A574",
+      "colour": "#3559B0",
       "oneLiner": "The less you know about something, the more confident you're likely to feel about it.",
       "tags": [
         "self-deception",
@@ -419,7 +419,7 @@
       "slug": "emergence",
       "title": "Emergence",
       "category": "Systems Thinking",
-      "colour": "#6BA3A0",
+      "colour": "#7A8B3A",
       "oneLiner": "Complex behaviours arising from simple rules, with no central plan or control.",
       "tags": [
         "systems",
@@ -434,7 +434,7 @@
       "slug": "euphemism",
       "title": "Euphemism",
       "category": "Rhetorical Device",
-      "colour": "#8B9FC5",
+      "colour": "#8B5CF6",
       "oneLiner": "Softening an unpleasant reality with gentler, vaguer words.",
       "tags": [
         "persuasion",
@@ -451,7 +451,7 @@
       "slug": "expectancy-violation",
       "title": "Expectancy Violation",
       "category": "Psychological Phenomenon",
-      "colour": "#9B8EC4",
+      "colour": "#7A3A5E",
       "oneLiner": "When someone behaves differently from what we expected, our emotional reaction is amplified - for better or worse.",
       "tags": [
         "emotion",
@@ -466,7 +466,7 @@
       "slug": "false-balance",
       "title": "False Balance",
       "category": "Rhetorical Device",
-      "colour": "#8B9FC5",
+      "colour": "#8B5CF6",
       "oneLiner": "Presenting two sides as equally valid when the evidence overwhelmingly favours one.",
       "tags": [
         "media literacy",
@@ -483,7 +483,7 @@
       "slug": "false-consensus-effect",
       "title": "False Consensus Effect",
       "category": "Cognitive Bias",
-      "colour": "#D4A574",
+      "colour": "#3559B0",
       "oneLiner": "We tend to assume that most people think the way we do - and we're usually wrong.",
       "tags": [
         "social dynamics",
@@ -499,7 +499,7 @@
       "slug": "false-dilemma",
       "title": "False Dilemma",
       "category": "Logical Fallacy",
-      "colour": "#7EA886",
+      "colour": "#E8A533",
       "oneLiner": "When someone presents only two options, even though more exist.",
       "tags": [
         "critical thinking",
@@ -514,7 +514,7 @@
       "slug": "false-equivalence",
       "title": "False Equivalence",
       "category": "Logical Fallacy",
-      "colour": "#7EA886",
+      "colour": "#E8A533",
       "oneLiner": "Treating two things as equally valid or important when they clearly aren't.",
       "tags": [
         "media literacy",
@@ -531,7 +531,7 @@
       "slug": "feedback-loops",
       "title": "Feedback Loops",
       "category": "Systems Thinking",
-      "colour": "#6BA3A0",
+      "colour": "#7A8B3A",
       "oneLiner": "When the output of a system feeds back in as input, either amplifying or dampening the original effect.",
       "tags": [
         "systems",
@@ -547,7 +547,7 @@
       "slug": "firehose-of-falsehood",
       "title": "Firehose of Falsehood",
       "category": "Manipulation Tactic",
-      "colour": "#C47A7A",
+      "colour": "#C44A8A",
       "oneLiner": "Flooding the information space with so many lies, half-truths, and contradictions that people give up trying to figure out what's true.",
       "tags": [
         "propaganda",
@@ -564,7 +564,7 @@
       "slug": "first-principles-thinking",
       "title": "First Principles Thinking",
       "category": "Mental Model",
-      "colour": "#C4956A",
+      "colour": "#B54A2A",
       "oneLiner": "Breaking a problem down to its most fundamental truths and reasoning up from there, rather than relying on analogy or convention.",
       "tags": [
         "decision-making",
@@ -579,7 +579,7 @@
       "slug": "framing-effect",
       "title": "Framing Effect",
       "category": "Rhetorical Device",
-      "colour": "#8B9FC5",
+      "colour": "#8B5CF6",
       "oneLiner": "The way information is presented changes how we respond to it - even when the underlying facts are identical.",
       "tags": [
         "persuasion",
@@ -596,7 +596,7 @@
       "slug": "fundamental-attribution-error",
       "title": "Fundamental Attribution Error",
       "category": "Cognitive Bias",
-      "colour": "#D4A574",
+      "colour": "#3559B0",
       "oneLiner": "When others mess up, we blame their character. When we mess up, we blame the situation.",
       "tags": [
         "social dynamics",
@@ -612,7 +612,7 @@
       "slug": "gaslighting",
       "title": "Gaslighting",
       "category": "Manipulation Tactic",
-      "colour": "#C47A7A",
+      "colour": "#C44A8A",
       "oneLiner": "Making someone doubt their own perception of reality.",
       "tags": [
         "manipulation",
@@ -628,7 +628,7 @@
       "slug": "gish-gallop",
       "title": "Gish Gallop",
       "category": "Manipulation Tactic",
-      "colour": "#C47A7A",
+      "colour": "#C44A8A",
       "oneLiner": "Overwhelming someone with a flood of arguments, regardless of their accuracy, so they can't possibly respond to them all.",
       "tags": [
         "bad faith",
@@ -645,7 +645,7 @@
       "slug": "halo-effect",
       "title": "Halo Effect",
       "category": "Cognitive Bias",
-      "colour": "#D4A574",
+      "colour": "#3559B0",
       "oneLiner": "One positive trait colours your entire perception of a person, product, or idea.",
       "tags": [
         "perception",
@@ -661,7 +661,7 @@
       "slug": "hanlons-razor",
       "title": "Hanlon's Razor",
       "category": "Mental Model",
-      "colour": "#C4956A",
+      "colour": "#B54A2A",
       "oneLiner": "Never attribute to malice that which is adequately explained by incompetence, ignorance, or accident.",
       "tags": [
         "critical thinking",
@@ -677,7 +677,7 @@
       "slug": "hasty-generalisation",
       "title": "Hasty Generalisation",
       "category": "Logical Fallacy",
-      "colour": "#7EA886",
+      "colour": "#E8A533",
       "oneLiner": "Drawing a broad conclusion from too few examples.",
       "tags": [
         "critical thinking",
@@ -693,7 +693,7 @@
       "slug": "hindsight-bias",
       "title": "Hindsight Bias",
       "category": "Cognitive Bias",
-      "colour": "#D4A574",
+      "colour": "#3559B0",
       "oneLiner": "After something happens, we convince ourselves we knew it all along.",
       "tags": [
         "decision-making",
@@ -709,7 +709,7 @@
       "slug": "illusory-truth-effect",
       "title": "Illusory Truth Effect",
       "category": "Psychological Phenomenon",
-      "colour": "#9B8EC4",
+      "colour": "#7A3A5E",
       "oneLiner": "The more often we hear something, the more likely we are to believe it - regardless of whether it's true.",
       "tags": [
         "misinformation",
@@ -725,7 +725,7 @@
       "slug": "in-group-out-group-bias",
       "title": "In-group/Out-group Bias",
       "category": "Cognitive Bias",
-      "colour": "#D4A574",
+      "colour": "#3559B0",
       "oneLiner": "We automatically trust people who seem like us and distrust people who don't.",
       "tags": [
         "identity",
@@ -741,7 +741,7 @@
       "slug": "independent-evaluation",
       "title": "Independent Evaluation",
       "category": "Mental Model",
-      "colour": "#C4956A",
+      "colour": "#B54A2A",
       "oneLiner": "Forming your own judgement before hearing what everyone else thinks.",
       "tags": [
         "critical thinking",
@@ -756,7 +756,7 @@
       "slug": "inversion",
       "title": "Inversion",
       "category": "Mental Model",
-      "colour": "#C4956A",
+      "colour": "#B54A2A",
       "oneLiner": "Instead of asking how to succeed, ask how you would guarantee failure - then avoid those things.",
       "tags": [
         "decision-making",
@@ -770,7 +770,7 @@
       "slug": "just-world-fallacy",
       "title": "Just-World Fallacy",
       "category": "Logical Fallacy",
-      "colour": "#7EA886",
+      "colour": "#E8A533",
       "oneLiner": "The belief that people generally get what they deserve - that the world is fundamentally fair.",
       "tags": [
         "self-deception",
@@ -785,7 +785,7 @@
       "slug": "learned-helplessness",
       "title": "Learned Helplessness",
       "category": "Psychological Phenomenon",
-      "colour": "#9B8EC4",
+      "colour": "#7A3A5E",
       "oneLiner": "When repeated failure or lack of control teaches us to stop trying - even when things change.",
       "tags": [
         "misinformation",
@@ -802,7 +802,7 @@
       "slug": "loaded-language",
       "title": "Loaded Language",
       "category": "Rhetorical Device",
-      "colour": "#8B9FC5",
+      "colour": "#8B5CF6",
       "oneLiner": "Words chosen for their emotional charge rather than their accuracy.",
       "tags": [
         "persuasion",
@@ -818,7 +818,7 @@
       "slug": "loss-aversion",
       "title": "Loss Aversion",
       "category": "Cognitive Bias",
-      "colour": "#D4A574",
+      "colour": "#3559B0",
       "oneLiner": "Losses hurt roughly twice as much as equivalent gains feel good.",
       "tags": [
         "decision-making",
@@ -834,7 +834,7 @@
       "slug": "manufactured-consent",
       "title": "Manufactured Consent",
       "category": "Political Theory",
-      "colour": "#B07AA1",
+      "colour": "#2A8A8A",
       "oneLiner": "When media systems produce public agreement with elite interests - not through censorship, but through structure.",
       "tags": [
         "politics",
@@ -850,7 +850,7 @@
       "slug": "map-is-not-the-territory",
       "title": "Map is Not the Territory",
       "category": "Mental Model",
-      "colour": "#C4956A",
+      "colour": "#B54A2A",
       "oneLiner": "Every model of reality is a simplification - useful, but never the full picture.",
       "tags": [
         "critical thinking",
@@ -865,7 +865,7 @@
       "slug": "microaggressions",
       "title": "Microaggressions",
       "category": "Psychological Phenomenon",
-      "colour": "#9B8EC4",
+      "colour": "#7A3A5E",
       "oneLiner": "Small, everyday slights and indignities - often unintentional - that communicate hostility or prejudice toward members of marginalised groups.",
       "tags": [
         "social dynamics",
@@ -882,7 +882,7 @@
       "slug": "moral-hypocrisy-judgement",
       "title": "Moral Hypocrisy Judgement",
       "category": "Psychological Phenomenon",
-      "colour": "#9B8EC4",
+      "colour": "#7A3A5E",
       "oneLiner": "We punish the contradiction between someone's stated values and their behaviour more harshly than we punish the behaviour alone.",
       "tags": [
         "ego",
@@ -898,7 +898,7 @@
       "slug": "moral-licensing",
       "title": "Moral Licensing",
       "category": "Psychological Phenomenon",
-      "colour": "#9B8EC4",
+      "colour": "#7A3A5E",
       "oneLiner": "Doing something good gives you unconscious permission to do something bad.",
       "tags": [
         "psychology",
@@ -913,7 +913,7 @@
       "slug": "moral-panic",
       "title": "Moral Panic",
       "category": "Political Theory",
-      "colour": "#B07AA1",
+      "colour": "#2A8A8A",
       "oneLiner": "Intense public fear about a perceived threat, amplified by media, disproportionate to the actual danger.",
       "tags": [
         "politics",
@@ -929,7 +929,7 @@
       "slug": "motivated-reasoning",
       "title": "Motivated Reasoning",
       "category": "Psychological Defence",
-      "colour": "#7AACB0",
+      "colour": "#26467D",
       "oneLiner": "Using our intelligence not to find truth but to defend conclusions we've already reached.",
       "tags": [
         "self-deception",
@@ -945,7 +945,7 @@
       "slug": "motte-and-bailey",
       "title": "Motte-and-Bailey",
       "category": "Manipulation Tactic",
-      "colour": "#C47A7A",
+      "colour": "#C44A8A",
       "oneLiner": "Holding a controversial position but retreating to a much more defensible one when challenged - then switching back once the pressure's off.",
       "tags": [
         "bad faith",
@@ -960,7 +960,7 @@
       "slug": "moving-the-goalposts",
       "title": "Moving the Goalposts",
       "category": "Logical Fallacy",
-      "colour": "#7EA886",
+      "colour": "#E8A533",
       "oneLiner": "Changing the criteria for proof after the original criteria have been met.",
       "tags": [
         "debate",
@@ -976,7 +976,7 @@
       "slug": "naive-realism",
       "title": "Naive Realism",
       "category": "Cognitive Bias",
-      "colour": "#D4A574",
+      "colour": "#3559B0",
       "oneLiner": "The belief that you see the world objectively - and that anyone who disagrees must be uninformed, irrational, or biased.",
       "tags": [
         "critical thinking",
@@ -992,7 +992,7 @@
       "slug": "negativity-bias",
       "title": "Negativity Bias",
       "category": "Cognitive Bias",
-      "colour": "#D4A574",
+      "colour": "#3559B0",
       "oneLiner": "Bad experiences affect us more powerfully than equally good ones.",
       "tags": [
         "emotion",
@@ -1009,7 +1009,7 @@
       "slug": "normalcy-bias",
       "title": "Normalcy Bias",
       "category": "Psychological Phenomenon",
-      "colour": "#9B8EC4",
+      "colour": "#7A3A5E",
       "oneLiner": "The assumption that because things have always been a certain way, they will continue to be.",
       "tags": [
         "risk",
@@ -1025,7 +1025,7 @@
       "slug": "occams-razor",
       "title": "Occam's Razor",
       "category": "Mental Model",
-      "colour": "#C4956A",
+      "colour": "#B54A2A",
       "oneLiner": "The simplest explanation that fits the facts is usually the right one.",
       "tags": [
         "critical thinking",
@@ -1039,7 +1039,7 @@
       "slug": "opportunity-cost",
       "title": "Opportunity Cost",
       "category": "Mental Model",
-      "colour": "#C4956A",
+      "colour": "#B54A2A",
       "oneLiner": "Every choice has a hidden price: the thing you didn't choose.",
       "tags": [
         "decision-making",
@@ -1054,7 +1054,7 @@
       "slug": "overton-window",
       "title": "Overton Window",
       "category": "Political Theory",
-      "colour": "#B07AA1",
+      "colour": "#2A8A8A",
       "oneLiner": "The range of ideas the public considers acceptable at any given time - and how that range can be deliberately shifted.",
       "tags": [
         "politics",
@@ -1069,7 +1069,7 @@
       "slug": "paradox-of-tolerance",
       "title": "Paradox of Tolerance",
       "category": "Political Theory",
-      "colour": "#B07AA1",
+      "colour": "#2A8A8A",
       "oneLiner": "A tolerant society that tolerates intolerance will eventually be destroyed by it.",
       "tags": [
         "politics",
@@ -1084,7 +1084,7 @@
       "slug": "pluralistic-ignorance",
       "title": "Pluralistic Ignorance",
       "category": "Psychological Phenomenon",
-      "colour": "#9B8EC4",
+      "colour": "#7A3A5E",
       "oneLiner": "When most people in a group privately disagree with a norm but go along with it because they assume everyone else agrees.",
       "tags": [
         "social dynamics",
@@ -1100,7 +1100,7 @@
       "slug": "post-hoc",
       "title": "Post Hoc",
       "category": "Logical Fallacy",
-      "colour": "#7EA886",
+      "colour": "#E8A533",
       "oneLiner": "Assuming that because one thing followed another, the first thing caused the second.",
       "tags": [
         "critical thinking",
@@ -1116,7 +1116,7 @@
       "slug": "probabilistic-thinking",
       "title": "Probabilistic Thinking",
       "category": "Mental Model",
-      "colour": "#C4956A",
+      "colour": "#B54A2A",
       "oneLiner": "Thinking in likelihoods rather than certainties - because almost nothing is truly yes or no.",
       "tags": [
         "decision-making",
@@ -1132,7 +1132,7 @@
       "slug": "psychological-projection",
       "title": "Psychological Projection",
       "category": "Psychological Defence",
-      "colour": "#7AACB0",
+      "colour": "#26467D",
       "oneLiner": "Attributing your own feelings, motives, or behaviours to someone else.",
       "tags": [
         "self-deception",
@@ -1148,7 +1148,7 @@
       "slug": "rationalisation",
       "title": "Rationalisation",
       "category": "Psychological Defence",
-      "colour": "#7AACB0",
+      "colour": "#26467D",
       "oneLiner": "Constructing a logical-sounding justification for a decision you actually made for emotional or self-serving reasons.",
       "tags": [
         "self-deception",
@@ -1163,7 +1163,7 @@
       "slug": "red-herring",
       "title": "Red Herring",
       "category": "Logical Fallacy",
-      "colour": "#7EA886",
+      "colour": "#E8A533",
       "oneLiner": "Introducing something irrelevant to divert attention from the actual issue.",
       "tags": [
         "debate",
@@ -1179,7 +1179,7 @@
       "slug": "relative-deprivation",
       "title": "Relative Deprivation",
       "category": "Psychological Phenomenon",
-      "colour": "#9B8EC4",
+      "colour": "#7A3A5E",
       "oneLiner": "Feeling worse off based on who you compare yourself to, not on what you actually have.",
       "tags": [
         "social dynamics",
@@ -1195,7 +1195,7 @@
       "slug": "scapegoating",
       "title": "Scapegoating",
       "category": "Rhetorical Device",
-      "colour": "#8B9FC5",
+      "colour": "#8B5CF6",
       "oneLiner": "Blaming a person or group for problems they didn't cause.",
       "tags": [
         "politics",
@@ -1211,7 +1211,7 @@
       "slug": "sealioning",
       "title": "Sealioning",
       "category": "Manipulation Tactic",
-      "colour": "#C47A7A",
+      "colour": "#C44A8A",
       "oneLiner": "Endlessly demanding evidence or explanations in bad faith, disguised as polite curiosity.",
       "tags": [
         "bad faith",
@@ -1226,7 +1226,7 @@
       "slug": "second-order-thinking",
       "title": "Second-Order Thinking",
       "category": "Mental Model",
-      "colour": "#C4956A",
+      "colour": "#B54A2A",
       "oneLiner": "Asking 'and then what?' - looking beyond the immediate consequences to what happens next.",
       "tags": [
         "decision-making",
@@ -1241,7 +1241,7 @@
       "slug": "slippery-slope",
       "title": "Slippery Slope",
       "category": "Logical Fallacy",
-      "colour": "#7EA886",
+      "colour": "#E8A533",
       "oneLiner": "Arguing that one step will inevitably lead to an extreme outcome, without justifying the chain of events in between.",
       "tags": [
         "debate",
@@ -1256,7 +1256,7 @@
       "slug": "social-proof",
       "title": "Social Proof",
       "category": "Psychological Phenomenon",
-      "colour": "#9B8EC4",
+      "colour": "#7A3A5E",
       "oneLiner": "Looking to other people's behaviour to decide what's correct.",
       "tags": [
         "social dynamics",
@@ -1272,7 +1272,7 @@
       "slug": "source-laundering",
       "title": "Source Laundering",
       "category": "Manipulation Tactic",
-      "colour": "#C47A7A",
+      "colour": "#C44A8A",
       "oneLiner": "Passing unreliable information through credible-looking channels until it appears legitimate.",
       "tags": [
         "misinformation",
@@ -1289,7 +1289,7 @@
       "slug": "state-of-nature-assumption",
       "title": "State of Nature Assumption",
       "category": "Mental Model",
-      "colour": "#C4956A",
+      "colour": "#B54A2A",
       "oneLiner": "The unconscious belief about whether people are fundamentally selfish or fundamentally cooperative - and how that shapes everything else you think.",
       "tags": [
         "critical thinking",
@@ -1306,7 +1306,7 @@
       "slug": "straw-man",
       "title": "Straw Man",
       "category": "Logical Fallacy",
-      "colour": "#7EA886",
+      "colour": "#E8A533",
       "oneLiner": "Misrepresenting someone's argument to make it easier to attack.",
       "tags": [
         "debate",
@@ -1322,7 +1322,7 @@
       "slug": "sunk-cost-fallacy",
       "title": "Sunk Cost Fallacy",
       "category": "Cognitive Bias",
-      "colour": "#D4A574",
+      "colour": "#3559B0",
       "oneLiner": "Continuing to invest in something because of what you've already put in, not because of what you'll get out.",
       "tags": [
         "decision-making",
@@ -1337,7 +1337,7 @@
       "slug": "survivorship-bias",
       "title": "Survivorship Bias",
       "category": "Cognitive Bias",
-      "colour": "#D4A574",
+      "colour": "#3559B0",
       "oneLiner": "We only see the winners, so we misjudge what it takes to succeed.",
       "tags": [
         "decision-making",
@@ -1353,7 +1353,7 @@
       "slug": "symbolic-racism",
       "title": "Symbolic Racism",
       "category": "Psychological Phenomenon",
-      "colour": "#9B8EC4",
+      "colour": "#7A3A5E",
       "oneLiner": "When prejudice is expressed not through overt hostility but through opposition to policies and positions associated with marginalised groups, framed in the language of fairness and principle.",
       "tags": [
         "politics",
@@ -1370,7 +1370,7 @@
       "slug": "thought-terminating-cliche",
       "title": "Thought-Terminating Cliche",
       "category": "Rhetorical Device",
-      "colour": "#8B9FC5",
+      "colour": "#8B5CF6",
       "oneLiner": "A phrase that sounds wise but actually shuts down critical thinking.",
       "tags": [
         "persuasion",
@@ -1386,7 +1386,7 @@
       "slug": "tone-policing",
       "title": "Tone Policing",
       "category": "Manipulation Tactic",
-      "colour": "#C47A7A",
+      "colour": "#C44A8A",
       "oneLiner": "Dismissing an argument by criticising how it's being made rather than what's being said.",
       "tags": [
         "debate",
@@ -1402,7 +1402,7 @@
       "slug": "tragedy-of-the-commons",
       "title": "Tragedy of the Commons",
       "category": "Systems Thinking",
-      "colour": "#6BA3A0",
+      "colour": "#7A8B3A",
       "oneLiner": "When individuals acting in their own rational interest collectively destroy a shared resource.",
       "tags": [
         "systems",
@@ -1417,7 +1417,7 @@
       "slug": "unintended-consequences",
       "title": "Unintended Consequences",
       "category": "Systems Thinking",
-      "colour": "#6BA3A0",
+      "colour": "#7A8B3A",
       "oneLiner": "Actions in complex systems produce outcomes nobody planned for.",
       "tags": [
         "systems",
@@ -1432,7 +1432,7 @@
       "slug": "victim-perpetrator-cycle",
       "title": "Victim-Perpetrator Cycle",
       "category": "Psychological Phenomenon",
-      "colour": "#9B8EC4",
+      "colour": "#7A3A5E",
       "oneLiner": "Groups that have suffered persecution can, once they gain power, go on to persecute others - often using their past suffering as justification.",
       "tags": [
         "power",
@@ -1449,7 +1449,7 @@
       "slug": "weasel-words",
       "title": "Weasel Words",
       "category": "Rhetorical Device",
-      "colour": "#8B9FC5",
+      "colour": "#8B5CF6",
       "oneLiner": "Language that sounds specific but commits to nothing.",
       "tags": [
         "media literacy",
@@ -1466,7 +1466,7 @@
       "slug": "whataboutism",
       "title": "Whataboutism",
       "category": "Manipulation Tactic",
-      "colour": "#C47A7A",
+      "colour": "#C44A8A",
       "oneLiner": "Deflecting criticism by pointing to someone else's wrongdoing instead of addressing the original point.",
       "tags": [
         "bad faith",
@@ -1482,7 +1482,7 @@
       "slug": "woozle-effect",
       "title": "Woozle Effect",
       "category": "Psychological Phenomenon",
-      "colour": "#9B8EC4",
+      "colour": "#7A3A5E",
       "oneLiner": "When a weak or unsupported claim gets cited and re-cited until it starts looking like established fact.",
       "tags": [
         "misinformation",
@@ -1500,7 +1500,7 @@
       "slug": "zero-sum-thinking",
       "title": "Zero-Sum Thinking",
       "category": "Cognitive Bias",
-      "colour": "#D4A574",
+      "colour": "#3559B0",
       "oneLiner": "The assumption that any situation is a competition where one person's gain must be another's loss.",
       "tags": [
         "decision-making",
@@ -4799,15 +4799,15 @@
     }
   ],
   "categoryColours": {
-    "Cognitive Bias": "#D4A574",
-    "Logical Fallacy": "#7EA886",
-    "Rhetorical Device": "#8B9FC5",
-    "Mental Model": "#C4956A",
-    "Systems Thinking": "#6BA3A0",
-    "Political Theory": "#B07AA1",
-    "Manipulation Tactic": "#C47A7A",
-    "Psychological Phenomenon": "#9B8EC4",
-    "Psychological Defence": "#7AACB0"
+    "Cognitive Bias": "#3559B0",
+    "Logical Fallacy": "#E8A533",
+    "Rhetorical Device": "#8B5CF6",
+    "Mental Model": "#B54A2A",
+    "Systems Thinking": "#7A8B3A",
+    "Political Theory": "#2A8A8A",
+    "Manipulation Tactic": "#C44A8A",
+    "Psychological Phenomenon": "#7A3A5E",
+    "Psychological Defence": "#26467D"
   },
   "meta": {
     "totalEntries": 95,
@@ -4824,6 +4824,6 @@
       "Rhetorical Device": 7,
       "Political Theory": 4
     },
-    "buildTimestamp": "2026-05-05T16:53:11.825Z"
+    "buildTimestamp": "2026-05-06T15:07:34.939Z"
   }
 }

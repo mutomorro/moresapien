@@ -1,47 +1,56 @@
 // Single source of truth for Moresapien category colours and brand palette.
-// Used by [slug].astro, KnowledgeCard.astro, ConnectionMiniMap.astro,
-// scripts/generate-og-images.mjs, and scripts/enrich-sitemap.mjs.
-// Change a colour here and run `npm run build` - it propagates everywhere.
+// Used by KnowledgeCard.astro, ConnectionMiniMap.astro, scripts/generate-og-images.mjs,
+// scripts/enrich-sitemap.mjs, and any other build-time consumer that needs raw hex.
+//
+// Page-level CSS reads tokens from src/styles/global.css instead. That file
+// and src/utils/categoryColors.ts are the authoritative source for runtime UI.
+// Keep this hex map in sync with both.
 
 export const categoryColours = {
-  'Cognitive Bias': '#c17f59',
-  'Logical Fallacy': '#6a8c69',
-  'Rhetorical Device': '#7a8b99',
-  'Mental Model': '#8a7a5a',
-  'Systems Thinking': '#5a7a8a',
-  'Political Theory': '#8a6a7a',
-  'Manipulation Tactic': '#b5564e',
-  'Psychological Phenomenon': '#7a6699',
-  'Psychological Defence': '#4a7a7a',
+  'Cognitive Bias':           '#3559B0',
+  'Logical Fallacy':          '#E8A533',
+  'Rhetorical Device':        '#8B5CF6',
+  'Mental Model':             '#B54A2A',
+  'Systems Thinking':         '#7A8B3A',
+  'Political Theory':         '#2A8A8A',
+  'Manipulation Tactic':      '#C44A8A',
+  'Psychological Phenomenon': '#7A3A5E',
+  'Psychological Defence':    '#26467D',
 };
 
 export const brandColours = {
-  cream: '#FFFBF5',
-  gold: '#C4956A',
-  darkGold: '#8B5E3C',
-  text: '#2a2520',
-  textMuted: '#6a6058',
-  textLight: '#8a7f72',
-  border: '#e8e0d8',
-  thoughtBg: '#f9f5f0',
-  connectionLine: '#C4956A',
-  relatedDot: '#5DCAA5',
+  paper:          '#F5F1E8',
+  cream:          '#F5F1E8',  // alias retained for legacy callers
+  ink:            '#15140F',
+  text:           '#15140F',
+  textMuted:      '#6B6655',
+  textLight:      '#8a8270',
+  border:         '#DCD5C2',
+  rule:           '#DCD5C2',
+  white:          '#FFFFFF',
+  coral:          '#FF5D4A',
+  mint:           '#6FE8B0',
+  thoughtBg:      '#FFFFFF',
+  connectionLine: '#6B6655',
+  relatedDot:     '#6FE8B0',
+  /* Legacy keys retained so existing components don't break before we sweep them */
+  gold:           '#FF5D4A',
+  darkGold:       '#FF5D4A',
 };
 
-// Semantic palette for hand-crafted concept diagrams in
-// src/components/diagrams/. Diagrams should never hardcode hex - always
-// import from this file so palette changes propagate to every diagram.
+// Semantic palette for hand-crafted concept diagrams in src/components/diagrams/.
+// Diagrams should always import from this file so palette changes propagate.
 export const diagramColours = {
-  positive: '#5DCAA5',     // teal - supports, true, passes through, good
-  negative: '#F09977',     // coral - contradicts, false, blocked, bad
-  positiveDark: '#0F6E56', // dark teal - text on positive fills
-  negativeDark: '#993C1D', // dark coral - text on negative fills
-  connection: '#C4956A',   // warm gold - lines between things
-  highlight: '#8B5E3C',    // dark gold - emphasis, labels
-  mutedFill: '#f9f5f0',    // thought box / highlight background
-  insightText: '#4a4540',  // closing insight line colour
+  positive:     '#6FE8B0',
+  negative:     '#FF5D4A',
+  positiveDark: '#0F6E56',
+  negativeDark: '#993C1D',
+  connection:   '#6B6655',
+  highlight:    '#15140F',
+  mutedFill:    '#FFFFFF',
+  insightText:  '#15140F',
 };
 
 export function getCategoryColour(category) {
-  return categoryColours[category] || brandColours.gold;
+  return categoryColours[category] || brandColours.coral;
 }
