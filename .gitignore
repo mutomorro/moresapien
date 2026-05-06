@@ -3,3 +3,4 @@ dist/
 .netlify/
 .astro/
 .DS_Store
+handoff/
