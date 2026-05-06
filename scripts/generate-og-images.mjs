@@ -1,14 +1,13 @@
 #!/usr/bin/env node
 
 // ============================================
-// Moresapien - OG image generator
+// Moresapien — OG image generator
 // ============================================
-// Reads every entry under src/content/entries, renders the same knowledge-card
-// design that ships inline on each page (see src/components/KnowledgeCard.astro),
-// and writes a 1200x630 PNG to public/og/{slug}.png so the existing meta tags
-// have something to point at on Bluesky / Twitter / LinkedIn.
-//
-// Run automatically as `prebuild` before `astro build`.
+// Reads every entry under src/content/entries and renders a 1200x630 PNG
+// social card to public/og/{slug}.png. Also writes the homepage card to
+// public/og/home.png. Uses Satori + resvg with woff fonts loaded from
+// @fontsource. Keep in sync with src/styles/global.css and the new
+// design system (Newsreader display, Inter body, DM Mono labels).
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -27,11 +26,13 @@ const FONT_DIR = path.join(ROOT, 'node_modules/@fontsource');
 const W = 1200;
 const H = 630;
 
-// -------------------------------------------------
-// Fonts (woff is supported by satori)
-// -------------------------------------------------
-function loadFont(family, file, weight, style) {
-  const filePath = path.join(FONT_DIR, family.toLowerCase(), 'files', file);
+// Saffron (Logical Fallacy) needs ink text for WCAG AA contrast.
+function onAccentText(category) {
+  return category === 'Logical Fallacy' ? brandColours.ink : '#FFFFFF';
+}
+
+function loadFont(family, dirName, file, weight, style) {
+  const filePath = path.join(FONT_DIR, dirName, 'files', file);
   return {
     name: family,
     data: fs.readFileSync(filePath),
@@ -41,24 +42,24 @@ function loadFont(family, file, weight, style) {
 }
 
 const fonts = [
-  loadFont('Lora', 'lora-latin-400-normal.woff', 400, 'normal'),
-  loadFont('Lora', 'lora-latin-400-italic.woff', 400, 'italic'),
-  loadFont('Lora', 'lora-latin-600-normal.woff', 600, 'normal'),
-  loadFont('Lora', 'lora-latin-700-normal.woff', 700, 'normal'),
-  loadFont('Nunito', 'nunito-latin-400-normal.woff', 400, 'normal'),
-  loadFont('Nunito', 'nunito-latin-600-normal.woff', 600, 'normal'),
-  loadFont('Nunito', 'nunito-latin-700-normal.woff', 700, 'normal'),
+  loadFont('Newsreader',    'newsreader',    'newsreader-latin-400-normal.woff',    400, 'normal'),
+  loadFont('Newsreader',    'newsreader',    'newsreader-latin-400-italic.woff',    400, 'italic'),
+  loadFont('Newsreader',    'newsreader',    'newsreader-latin-500-normal.woff',    500, 'normal'),
+  loadFont('Inter',         'inter',         'inter-latin-400-normal.woff',         400, 'normal'),
+  loadFont('Inter',         'inter',         'inter-latin-500-normal.woff',         500, 'normal'),
+  loadFont('Space Grotesk', 'space-grotesk', 'space-grotesk-latin-500-normal.woff', 500, 'normal'),
+  loadFont('DM Mono',       'dm-mono',       'dm-mono-latin-400-normal.woff',       400, 'normal'),
+  loadFont('DM Mono',       'dm-mono',       'dm-mono-latin-500-normal.woff',       500, 'normal'),
 ];
 
-// -------------------------------------------------
-// Helpers
-// -------------------------------------------------
+const FONT_DISPLAY = 'Newsreader';
+const FONT_BODY = 'Inter';
+const FONT_MONO = 'DM Mono';
+
 function stripMd(s) {
   return (s || '').replace(/\*(.*?)\*/g, '$1').replace(/\s+/g, ' ').trim();
 }
 
-// React.createElement-style helper - satori accepts this shape directly.
-// Satori requires every <div> to declare display, so we default to flex.
 function el(type, props = {}, ...children) {
   const flat = children.flat().filter((c) => c !== null && c !== undefined && c !== false);
   let nextProps = props;
@@ -71,12 +72,84 @@ function el(type, props = {}, ...children) {
   return { type, props: { ...nextProps, children: flat.length === 1 ? flat[0] : flat } };
 }
 
-// -------------------------------------------------
-// Knowledge card layout (mirrors KnowledgeCard.astro)
-// -------------------------------------------------
-function buildCard({ title, oneLiner, category, thoughtToHoldOnto, relatedTitles }) {
-  const accent = categoryColours[category] || brandColours.gold;
-  const related = relatedTitles.slice(0, 3);
+// ----- Asterisk (SVG inline) -------------------------------------------------
+function asterisk({ size = 28, color = brandColours.coral }) {
+  const r = size * 0.42;
+  const sw = Math.max(2, size / 12);
+  const cx = size / 2;
+  const cy = size / 2;
+  const cos60 = Math.cos(Math.PI / 3);
+  const sin60 = Math.sin(Math.PI / 3);
+
+  const lines = [
+    [cx - r, cy, cx + r, cy],
+    [cx - r * cos60, cy - r * sin60, cx + r * cos60, cy + r * sin60],
+    [cx + r * cos60, cy - r * sin60, cx - r * cos60, cy + r * sin60],
+  ];
+
+  return el(
+    'svg',
+    {
+      width: size,
+      height: size,
+      viewBox: `0 0 ${size} ${size}`,
+      xmlns: 'http://www.w3.org/2000/svg',
+      style: { display: 'block' },
+    },
+    ...lines.map(([x1, y1, x2, y2]) =>
+      el('line', {
+        x1, y1, x2, y2,
+        stroke: color,
+        'stroke-width': sw,
+        'stroke-linecap': 'round',
+      }),
+    ),
+  );
+}
+
+// ----- Wordmark (more*sapien*) ----------------------------------------------
+function wordmark({ size = 24, color = brandColours.ink }) {
+  // Lift the asterisk so it sits at footnote/superscript height between the
+  // words rather than reading as a bullet on the baseline.
+  const asteriskSize = size * 0.7;
+  const asteriskLift = size * 0.4;
+  return el(
+    'div',
+    {
+      style: {
+        display: 'flex',
+        alignItems: 'baseline',
+        gap: '2px',
+        fontFamily: FONT_DISPLAY,
+        fontSize: `${size}px`,
+        color,
+        letterSpacing: '-0.02em',
+      },
+    },
+    el('div', { style: { display: 'flex' } }, 'more'),
+    el(
+      'div',
+      {
+        style: {
+          display: 'flex',
+          transform: `translateY(-${asteriskLift}px)`,
+        },
+      },
+      asterisk({ size: asteriskSize, color: brandColours.coral }),
+    ),
+    el(
+      'div',
+      { style: { display: 'flex', fontStyle: 'italic' } },
+      'sapien',
+    ),
+  );
+}
+
+// ----- Entry card -----------------------------------------------------------
+function buildEntryCard({ title, oneLiner, category }) {
+  const accent = categoryColours[category] || brandColours.coral;
+  const cleanTitle = stripMd(title);
+  const cleanOneLiner = stripMd(oneLiner);
 
   return el(
     'div',
@@ -85,14 +158,20 @@ function buildCard({ title, oneLiner, category, thoughtToHoldOnto, relatedTitles
         width: `${W}px`,
         height: `${H}px`,
         display: 'flex',
-        flexDirection: 'column',
-        background: brandColours.cream,
-        fontFamily: 'Nunito',
+        flexDirection: 'row',
+        background: brandColours.paper,
       },
     },
-    // top accent bar
-    el('div', { style: { width: '100%', height: '12px', background: accent, flexShrink: 0 } }),
-    // body
+    // Left accent strip
+    el('div', {
+      style: {
+        width: '12px',
+        height: '100%',
+        background: accent,
+        flexShrink: 0,
+      },
+    }),
+    // Content column
     el(
       'div',
       {
@@ -100,171 +179,193 @@ function buildCard({ title, oneLiner, category, thoughtToHoldOnto, relatedTitles
           flex: '1 1 auto',
           display: 'flex',
           flexDirection: 'column',
-          padding: '40px 64px 36px',
+          padding: '64px 72px',
+          justifyContent: 'space-between',
         },
       },
-      // category badge
+      // Top section: eyebrow, title, one-liner
       el(
         'div',
-        {
-          style: {
-            display: 'flex',
-            alignSelf: 'flex-start',
-            background: accent,
-            color: brandColours.cream,
-            fontSize: '16px',
-            fontWeight: 700,
-            letterSpacing: '1.4px',
-            textTransform: 'uppercase',
-            padding: '8px 18px',
-            borderRadius: '999px',
-            marginBottom: '20px',
-          },
-        },
-        category
-      ),
-      // title
-      el(
-        'div',
-        {
-          style: {
-            fontFamily: 'Lora',
-            fontSize: '60px',
-            fontWeight: 600,
-            color: brandColours.text,
-            lineHeight: 1.1,
-            marginBottom: '14px',
-            display: 'flex',
-          },
-        },
-        stripMd(title)
-      ),
-      // one-liner
-      el(
-        'div',
-        {
-          style: {
-            fontFamily: 'Nunito',
-            fontSize: '26px',
-            fontStyle: 'italic',
-            color: brandColours.textMuted,
-            lineHeight: 1.4,
-            marginBottom: '24px',
-            display: 'flex',
-          },
-        },
-        stripMd(oneLiner)
-      ),
-      // divider
-      el('div', { style: { height: '1px', background: brandColours.border, marginBottom: '20px' } }),
-      // thought box
-      el(
-        'div',
-        {
-          style: {
-            display: 'flex',
-            flexDirection: 'column',
-            background: brandColours.thoughtBg,
-            borderRadius: '14px',
-            padding: '24px 32px',
-            marginBottom: '20px',
-            flex: '1 1 auto',
-          },
-        },
+        { style: { display: 'flex', flexDirection: 'column' } },
+        // Eyebrow
         el(
           'div',
           {
             style: {
-              fontFamily: 'Nunito',
-              fontSize: '14px',
-              fontWeight: 700,
-              color: accent,
-              letterSpacing: '1.6px',
-              marginBottom: '12px',
-              display: 'flex',
-            },
-          },
-          'THE THOUGHT TO HOLD ONTO'
-        ),
-        el(
-          'div',
-          {
-            style: {
-              fontFamily: 'Lora',
-              fontSize: '28px',
-              fontStyle: 'italic',
-              color: '#3a342e',
-              lineHeight: 1.4,
-              display: 'flex',
-            },
-          },
-          '“' + stripMd(thoughtToHoldOnto) + '”'
-        )
-      ),
-      // divider
-      el('div', { style: { height: '1px', background: brandColours.border, marginBottom: '16px' } }),
-      // related row + footer
-      el(
-        'div',
-        {
-          style: {
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-          },
-        },
-        el(
-          'div',
-          { style: { display: 'flex', alignItems: 'center', flexWrap: 'wrap' } },
-          ...related.flatMap((r, i) => [
-            el('div', {
-              key: `dot-${i}`,
-              style: {
-                width: '12px',
-                height: '12px',
-                borderRadius: '999px',
-                background: brandColours.relatedDot,
-                marginRight: '10px',
-                marginLeft: i === 0 ? 0 : '24px',
-              },
-            }),
-            el(
-              'div',
-              {
-                key: `lbl-${i}`,
-                style: {
-                  fontFamily: 'Nunito',
-                  fontSize: '20px',
-                  fontWeight: 500,
-                  color: brandColours.textMuted,
-                  display: 'flex',
-                },
-              },
-              r
-            ),
-          ])
-        ),
-        el(
-          'div',
-          {
-            style: {
-              fontFamily: 'Nunito',
+              fontFamily: FONT_MONO,
               fontSize: '20px',
-              fontWeight: 600,
-              color: brandColours.textLight,
+              fontWeight: 500,
+              color: accent,
+              letterSpacing: '2.4px',
+              textTransform: 'uppercase',
+              marginBottom: '36px',
               display: 'flex',
             },
           },
-          'moresapien.org'
-        )
-      )
-    )
+          category,
+        ),
+        // Title with asterisk (lifted to read as superscript)
+        el(
+          'div',
+          {
+            style: {
+              display: 'flex',
+              alignItems: 'baseline',
+              gap: '8px',
+              marginBottom: '24px',
+              flexWrap: 'wrap',
+            },
+          },
+          el(
+            'div',
+            {
+              style: {
+                fontFamily: FONT_DISPLAY,
+                fontSize: '88px',
+                fontWeight: 400,
+                color: brandColours.ink,
+                lineHeight: 0.95,
+                letterSpacing: '-0.025em',
+                display: 'flex',
+              },
+            },
+            cleanTitle,
+          ),
+          el(
+            'div',
+            {
+              style: {
+                display: 'flex',
+                transform: 'translateY(-44px)',
+              },
+            },
+            asterisk({ size: 40, color: accent }),
+          ),
+        ),
+        // One-liner
+        el(
+          'div',
+          {
+            style: {
+              fontFamily: FONT_BODY,
+              fontSize: '28px',
+              fontWeight: 400,
+              color: brandColours.textMuted,
+              lineHeight: 1.4,
+              maxWidth: '900px',
+              display: 'flex',
+            },
+          },
+          cleanOneLiner,
+        ),
+      ),
+      // Footer: wordmark + URL
+      el(
+        'div',
+        {
+          style: {
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            paddingTop: '48px',
+            borderTop: `1px solid ${brandColours.rule}`,
+          },
+        },
+        wordmark({ size: 32, color: brandColours.ink }),
+        el(
+          'div',
+          {
+            style: {
+              fontFamily: FONT_MONO,
+              fontSize: '16px',
+              fontWeight: 500,
+              color: brandColours.textMuted,
+              letterSpacing: '1.6px',
+              textTransform: 'uppercase',
+              display: 'flex',
+            },
+          },
+          'moresapien.org',
+        ),
+      ),
+    ),
   );
 }
 
-// -------------------------------------------------
-// Main
-// -------------------------------------------------
+// ----- Home card ------------------------------------------------------------
+function buildHomeCard() {
+  return el(
+    'div',
+    {
+      style: {
+        width: `${W}px`,
+        height: `${H}px`,
+        display: 'flex',
+        flexDirection: 'column',
+        background: brandColours.paper,
+        padding: '88px 96px',
+        justifyContent: 'space-between',
+      },
+    },
+    // Top: eyebrow
+    el(
+      'div',
+      {
+        style: {
+          fontFamily: FONT_MONO,
+          fontSize: '20px',
+          fontWeight: 500,
+          color: brandColours.coral,
+          letterSpacing: '2.4px',
+          textTransform: 'uppercase',
+          display: 'flex',
+        },
+      },
+      'A field guide to the mind',
+    ),
+    // Centre: wordmark + tagline
+    el(
+      'div',
+      { style: { display: 'flex', flexDirection: 'column', gap: '32px' } },
+      wordmark({ size: 140, color: brandColours.ink }),
+      el(
+        'div',
+        {
+          style: {
+            fontFamily: FONT_DISPLAY,
+            fontSize: '36px',
+            fontStyle: 'italic',
+            fontWeight: 400,
+            color: brandColours.textMuted,
+            lineHeight: 1.3,
+            maxWidth: '880px',
+            letterSpacing: '-0.01em',
+            display: 'flex',
+          },
+        },
+        'The mental tricks we play on ourselves — and the ones that get played on us.',
+      ),
+    ),
+    // Bottom: url
+    el(
+      'div',
+      {
+        style: {
+          fontFamily: FONT_MONO,
+          fontSize: '16px',
+          fontWeight: 500,
+          color: brandColours.textMuted,
+          letterSpacing: '1.6px',
+          textTransform: 'uppercase',
+          display: 'flex',
+        },
+      },
+      'moresapien.org',
+    ),
+  );
+}
+
+// ----- Main ----------------------------------------------------------------
 function readEntries() {
   return fs
     .readdirSync(ENTRIES_DIR)
@@ -277,49 +378,57 @@ function readEntries() {
     });
 }
 
-async function generateOne(entry, titlesBySlug) {
-  const { slug, data } = entry;
-  const relatedTitles = (data.relatedConcepts || [])
-    .map((r) => titlesBySlug[r.slug])
-    .filter(Boolean)
-    .slice(0, 3);
-
-  const tree = buildCard({
-    title: data.title,
-    oneLiner: data.oneLiner,
-    category: data.category,
-    thoughtToHoldOnto: data.thoughtToHoldOnto,
-    relatedTitles,
-  });
-
+async function renderToPng(tree) {
   const svg = await satori(tree, { width: W, height: H, fonts });
-  const png = new Resvg(svg, {
+  return new Resvg(svg, {
     fitTo: { mode: 'width', value: W },
-    background: brandColours.cream,
+    background: brandColours.paper,
   })
     .render()
     .asPng();
+}
 
-  const outPath = path.join(OUTPUT_DIR, `${slug}.png`);
-  fs.writeFileSync(outPath, png);
-  return outPath;
+async function generateEntry(entry) {
+  const png = await renderToPng(
+    buildEntryCard({
+      title: entry.data.title,
+      oneLiner: entry.data.oneLiner,
+      category: entry.data.category,
+    }),
+  );
+  fs.writeFileSync(path.join(OUTPUT_DIR, `${entry.slug}.png`), png);
+}
+
+async function generateHome() {
+  const png = await renderToPng(buildHomeCard());
+  fs.writeFileSync(path.join(OUTPUT_DIR, 'home.png'), png);
+  // Legacy filename used by index.astro until that meta tag is updated.
+  fs.writeFileSync(path.join(OUTPUT_DIR, 'homepage.png'), png);
 }
 
 async function main() {
   if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 
   const entries = readEntries();
-  const titlesBySlug = Object.fromEntries(entries.map((e) => [e.slug, e.data.title]));
 
   console.log(`\n🖼  OG image generator`);
   console.log('─'.repeat(50));
-  console.log(`   Rendering ${entries.length} cards at ${W}x${H}`);
+  console.log(`   Rendering ${entries.length + 1} cards at ${W}x${H}`);
 
   let okCount = 0;
-  let failures = [];
+  const failures = [];
+
+  try {
+    await generateHome();
+    okCount += 1;
+  } catch (err) {
+    failures.push({ slug: 'home', message: err.message });
+    console.error(`   ✗ home: ${err.message}`);
+  }
+
   for (const entry of entries) {
     try {
-      await generateOne(entry, titlesBySlug);
+      await generateEntry(entry);
       okCount += 1;
     } catch (err) {
       failures.push({ slug: entry.slug, message: err.message });
@@ -327,7 +436,7 @@ async function main() {
     }
   }
 
-  console.log(`\n   ✅ ${okCount}/${entries.length} OG images written to public/og/`);
+  console.log(`\n   ✅ ${okCount}/${entries.length + 1} OG images written to public/og/`);
   if (failures.length > 0) {
     console.error(`   ❌ ${failures.length} failures`);
     process.exit(1);
