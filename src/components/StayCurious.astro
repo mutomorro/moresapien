@@ -1,6 +1,6 @@
 ---
 // StayCurious.astro - Newsletter signup + Bluesky follow
-// Place in src/components/StayCurious.astro
+// Restyled to the new Moresapien design tokens. Buttondown form action unchanged.
 ---
 
 <div class="stay-curious">
@@ -18,6 +18,7 @@
         name="email"
         placeholder="your@email.com"
         required
+        aria-label="Email address"
         class="sc-email"
       />
       <button type="submit" class="sc-submit">Subscribe</button>
@@ -32,7 +33,7 @@
     rel="noopener noreferrer"
     class="sc-bluesky"
   >
-    <svg width="18" height="18" viewBox="0 0 600 530" fill="currentColor">
+    <svg width="16" height="16" viewBox="0 0 600 530" fill="currentColor" aria-hidden="true">
       <path d="M135.72 44.03C198.29 104.14 266.49 169.42 282.2 186.6c15.71-17.18 83.91-82.46 146.48-142.57C486.74-12.4 556.25-14.48 589.36 18.63c33.11 33.11 31.03 102.62-25.4 160.68-59.98 61.65-163.91 155.94-281.77 303.08C164.34 335.25 60.41 240.96.43 179.31-55.99 121.25-58.07 51.74-24.96 18.63 8.15-14.48 77.66-12.4 135.72 44.03z"/>
     </svg>
     <span>Follow on Bluesky</span>
@@ -41,25 +42,28 @@
 
 <style>
   .stay-curious {
-    background: #fff;
-    border: 1.5px solid #C4956A;
-    border-radius: 0.75rem;
-    padding: 1.25rem;
-    font-family: 'Nunito', sans-serif;
+    background: var(--ms-white);
+    border: var(--ms-rule-width) solid var(--ms-rule);
+    border-radius: var(--ms-radius-sm);
+    padding: var(--ms-r5);
+    font-family: var(--ms-font-ui);
   }
 
   .sc-heading {
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: #8B5E3C;
-    margin-bottom: 0.2rem;
+    font-family: var(--ms-font-ui);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ms-ink);
+    margin-bottom: 4px;
+    letter-spacing: -0.01em;
   }
 
   .sc-subtext {
-    font-size: 0.75rem;
-    color: #a09888;
-    margin-bottom: 0.85rem;
-    line-height: 1.4;
+    font-family: var(--ms-font-body);
+    font-size: 12px;
+    color: var(--ms-mute);
+    margin-bottom: var(--ms-r3);
+    line-height: 1.5;
   }
 
   .sc-form {
@@ -68,70 +72,71 @@
 
   .sc-input-row {
     display: flex;
-    gap: 0.4rem;
+    flex-direction: column;
+    gap: var(--ms-r2);
   }
 
   .sc-email {
-    flex: 1;
-    min-width: 0;
-    height: 2.1rem;
-    padding: 0 0.65rem;
-    border: 1px solid #e0d8ce;
-    border-radius: 0.4rem;
-    background: #faf8f5;
-    font-family: 'Nunito', sans-serif;
-    font-size: 0.8rem;
-    color: #3a3530;
+    width: 100%;
+    height: 36px;
+    padding: 0 12px;
+    border: 1px solid var(--ms-rule);
+    border-radius: var(--ms-radius-sm);
+    background: var(--ms-paper);
+    font-family: var(--ms-font-body);
+    font-size: 13px;
+    color: var(--ms-ink);
     outline: none;
-    transition: border-color 0.15s;
+    transition: border-color 0.15s ease;
   }
 
   .sc-email::placeholder {
-    color: #c0b8ae;
+    color: var(--ms-mute);
+    opacity: 0.6;
   }
 
   .sc-email:focus {
-    border-color: #C4956A;
+    border-color: var(--ms-coral);
   }
 
   .sc-submit {
-    height: 2.1rem;
-    padding: 0 0.9rem;
-    background: #C4956A;
-    color: #fff;
+    height: 36px;
+    padding: 0 16px;
+    background: var(--ms-coral);
+    color: var(--ms-white);
     border: none;
-    border-radius: 0.4rem;
-    font-family: 'Nunito', sans-serif;
-    font-size: 0.8rem;
-    font-weight: 600;
+    border-radius: var(--ms-radius-sm);
+    font-family: var(--ms-font-ui);
+    font-size: 13px;
+    font-weight: 500;
     cursor: pointer;
-    transition: background 0.15s;
-    white-space: nowrap;
+    transition: opacity 0.15s ease;
   }
 
   .sc-submit:hover {
-    background: #b0854e;
+    opacity: 0.88;
   }
 
   .sc-divider {
     height: 1px;
-    background: #eae4da;
-    margin: 0.85rem 0;
+    background: var(--ms-rule);
+    margin: var(--ms-r4) 0;
   }
 
   .sc-bluesky {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: var(--ms-r2);
     text-decoration: none;
-    color: #006AFF;
-    font-size: 0.8rem;
-    font-weight: 600;
-    transition: color 0.15s;
+    color: var(--ms-ink);
+    font-family: var(--ms-font-ui);
+    font-size: 13px;
+    font-weight: 500;
+    transition: color 0.15s ease;
   }
 
   .sc-bluesky:hover {
-    color: #0055cc;
+    color: var(--ms-coral);
   }
 
   .sc-bluesky svg {
