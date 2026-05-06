@@ -1,171 +1,114 @@
 ---
+import Wordmark from './Wordmark.astro';
+
 export interface Props {
   currentPage?: string;
 }
 
 const { currentPage = '' } = Astro.props;
+
+const links = [
+  { id: 'browse',      label: 'Browse',      href: '/' },
+  { id: 'collections', label: 'Collections', href: '/collections/' },
+  { id: 'connections', label: 'Connections', href: '/connections/' },
+  { id: 'about',       label: 'About',       href: '/about/' },
+];
+
+/* Map legacy `currentPage` values from the previous nav to the new ids */
+const aliasMap: Record<string, string> = {
+  concepts: 'browse',
+  browse: 'browse',
+  collections: 'collections',
+  connections: 'connections',
+  about: 'about',
+};
+const activeId = aliasMap[currentPage] ?? '';
 ---
-
-<nav class="site-nav">
-  <div class="nav-brand">
-    <a href="/" class="nav-logo">more<em>sapien</em></a>
-    <span class="nav-tagline">Understanding ourselves, one idea at a time.</span>
-  </div>
-
-  <div class="nav-links">
-    <a href="/" class:list={['nav-pill', { active: currentPage === 'concepts' }]}>
-      <svg class="nav-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="3" y="3" width="7" height="7" rx="1"/>
-        <rect x="14" y="3" width="7" height="7" rx="1"/>
-        <rect x="3" y="14" width="7" height="7" rx="1"/>
-        <rect x="14" y="14" width="7" height="7" rx="1"/>
-      </svg>
-      <span class="nav-label">Browse</span>
-    </a>
-
-    <a href="/collections/" class:list={['nav-pill', { active: currentPage === 'collections' }]}>
-      <svg class="nav-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
-      </svg>
-      <span class="nav-label">Collections</span>
-    </a>
-
-    <a href="/connections/" class:list={['nav-pill', { active: currentPage === 'connections' }]}>
-      <svg class="nav-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-        <circle cx="5" cy="6" r="2.5"/>
-        <circle cx="19" cy="8" r="2.5"/>
-        <circle cx="12" cy="19" r="2.5"/>
-        <line x1="7" y1="7" x2="17" y2="9"/>
-        <line x1="6" y1="8" x2="11" y2="17"/>
-        <line x1="17" y1="10" x2="13" y2="17"/>
-      </svg>
-      <span class="nav-label">Connections</span>
-    </a>
-
-    <a href="/about/" class:list={['nav-pill', { active: currentPage === 'about' }]}>
-      <svg class="nav-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-        <circle cx="12" cy="12" r="10"/>
-        <line x1="12" y1="16" x2="12" y2="12"/>
-        <circle cx="12" cy="8" r="0.5" fill="currentColor" stroke="none"/>
-      </svg>
-      <span class="nav-label">About</span>
-    </a>
-
-    <div class="nav-divider"></div>
-
-    <a href="/" class="nav-pill nav-search" aria-label="Search concepts">
-      <svg class="nav-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-        <circle cx="11" cy="11" r="8"/>
-        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
-      </svg>
-    </a>
+<nav class="ms-nav" aria-label="Primary">
+  <div class="ms-nav-inner">
+    <Wordmark size="sm" />
+    <ul class="ms-nav-links">
+      {links.map((link) => (
+        <li>
+          <a
+            href={link.href}
+            class:list={['ms-nav-link', { active: link.id === activeId }]}
+            aria-current={link.id === activeId ? 'page' : undefined}
+          >
+            {link.label}
+          </a>
+        </li>
+      ))}
+    </ul>
   </div>
 </nav>
 
 <style>
-  .site-nav {
+  .ms-nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--ms-paper);
+    border-bottom: var(--ms-rule-width) solid var(--ms-rule);
+  }
+
+  .ms-nav-inner {
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: 0.75rem 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.7rem 1.5rem;
-    background: #FAF7F2;
-    border-bottom: 1px solid #EAE4DA;
-    font-family: 'Nunito', sans-serif;
+    gap: var(--ms-r5);
   }
 
-  .nav-brand {
-    display: flex;
-    align-items: baseline;
-    gap: 0.75rem;
-  }
-
-  .nav-logo {
-    font-family: 'Lora', serif;
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #2C2825;
-    text-decoration: none;
-    letter-spacing: -0.01em;
-    flex-shrink: 0;
-  }
-
-  .nav-logo em {
-    font-style: italic;
-    color: #C4622D;
-  }
-
-  .nav-tagline {
-    font-family: 'Lora', serif;
-    font-size: 0.8rem;
-    font-style: italic;
-    color: #B0A89E;
-  }
-
-  .nav-links {
+  .ms-nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     align-items: center;
-    gap: 0.3rem;
+    gap: var(--ms-r5);
   }
 
-  .nav-pill {
-    display: flex;
-    align-items: center;
-    gap: 0.3rem;
-    padding: 0.4rem 0.75rem;
-    border-radius: 100px;
-    text-decoration: none;
-    color: #6B6059;
-    font-size: 0.825rem;
+  .ms-nav-link {
+    font-family: var(--ms-font-ui);
+    font-size: 13px;
     font-weight: 500;
-    transition: background 0.15s, color 0.15s;
+    color: var(--ms-ink);
+    text-decoration: none;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.15s ease, border-color 0.15s ease;
   }
 
-  .nav-pill:hover {
-    background: rgba(44, 40, 37, 0.06);
-    color: #2C2825;
+  .ms-nav-link:hover {
+    color: var(--ms-coral);
   }
 
-  .nav-pill.active {
-    background: rgba(196, 98, 45, 0.1);
-    color: #C4622D;
-  }
-
-  .nav-search {
-    padding: 0.4rem 0.6rem;
-  }
-
-  .nav-icon {
-    flex-shrink: 0;
-  }
-
-  .nav-divider {
-    width: 1px;
-    height: 1.25rem;
-    background: #EAE4DA;
-    margin: 0 0.2rem;
-  }
-
-  @media (max-width: 768px) {
-    .nav-tagline {
-      display: none;
-    }
+  .ms-nav-link.active {
+    border-bottom-color: var(--ms-coral);
   }
 
   @media (max-width: 640px) {
-    .site-nav {
-      padding: 0.6rem 1rem;
+    .ms-nav-inner {
+      padding: 0.625rem 1rem;
+      gap: var(--ms-r3);
+      flex-wrap: wrap;
     }
-
-    .nav-label {
-      display: none;
+    .ms-nav-links {
+      gap: var(--ms-r4);
     }
-
-    .nav-pill {
-      padding: 0.5rem;
+    .ms-nav-link {
+      font-size: 12px;
     }
+  }
 
-    .nav-divider {
-      margin: 0 0.1rem;
+  @media (max-width: 380px) {
+    .ms-nav-inner {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--ms-r3);
     }
   }
 </style>
