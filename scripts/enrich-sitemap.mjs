@@ -1,13 +1,18 @@
 #!/usr/bin/env node
 
 // ============================================
-// Moresapien - Sitemap enrichment
+// Moresapien — Sitemap enrichment
 // ============================================
-// Astro's sitemap integration writes a plain urlset. After build, we slot in
+// Astro's sitemap integration writes a plain urlset. After build, slot in
 // <image:image> blocks for every entry URL so Google Image Search has
 // something to index. The image namespace is added to <urlset> if missing.
 //
-// Run automatically as `postbuild` after `astro build`.
+// Each entry's URL gets up to two image references:
+//   1. The OG card PNG (always, if it exists in public/og/{slug}.png)
+//   2. The concept-diagram PNG (only entries with a hand-crafted diagram in
+//      diagramRegistry — file in public/diagrams/{slug}.png)
+//
+// Runs in postbuild AFTER `astro build` and after generate-diagram-images.
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -30,6 +35,10 @@ function escapeXml(s) {
     .replace(/'/g, '&apos;');
 }
 
+function escapeRegex(s) {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
 function stripMd(s) {
   return (s || '').replace(/\*(.*?)\*/g, '$1').replace(/\s+/g, ' ').trim();
 }
@@ -46,6 +55,16 @@ function readEntries() {
     });
 }
 
+function imageBlock({ url, caption, title }) {
+  return (
+    `<image:image>` +
+    `<image:loc>${escapeXml(url)}</image:loc>` +
+    `<image:caption>${escapeXml(caption)}</image:caption>` +
+    `<image:title>${escapeXml(title)}</image:title>` +
+    `</image:image>`
+  );
+}
+
 function main() {
   if (!fs.existsSync(SITEMAP_PATH)) {
     console.error(`   ⚠ sitemap not found at ${SITEMAP_PATH} - skipping`);
@@ -54,7 +73,6 @@ function main() {
 
   let xml = fs.readFileSync(SITEMAP_PATH, 'utf-8');
 
-  // Ensure the image namespace is declared.
   if (!xml.includes(`xmlns:image="${IMAGE_NS}"`)) {
     xml = xml.replace('<urlset', `<urlset xmlns:image="${IMAGE_NS}"`);
   }
@@ -62,43 +80,62 @@ function main() {
   const entries = readEntries();
   const bySlug = Object.fromEntries(entries.map((e) => [e.slug, e.data]));
   const ogDir = path.join(ROOT, 'public/og');
-  const existingPngs = fs.existsSync(ogDir)
+  const diagramDir = path.join(ROOT, 'public/diagrams');
+  const ogPngs = fs.existsSync(ogDir)
     ? new Set(fs.readdirSync(ogDir).filter((f) => f.endsWith('.png')))
+    : new Set();
+  const diagramPngs = fs.existsSync(diagramDir)
+    ? new Set(fs.readdirSync(diagramDir).filter((f) => f.endsWith('.png')))
     : new Set();
 
   let enriched = 0;
   let skipped = 0;
+  let diagramsAdded = 0;
 
-  // For each entry slug, find its <url> block in the sitemap and inject an image.
   for (const slug of Object.keys(bySlug)) {
     const data = bySlug[slug];
     const loc = `${SITE}/${slug}/`;
     const pngFile = `${slug}.png`;
-    if (!existingPngs.has(pngFile)) {
+    if (!ogPngs.has(pngFile)) {
       skipped += 1;
       continue;
     }
 
-    const imgUrl = `${SITE}/og/${slug}.png`;
-    const caption = `${data.title} - ${data.category}. ${stripMd(data.oneLiner)}`;
-    const imgTitle = `${data.title} - Moresapien`;
+    const blocks = [];
 
-    const imageBlock = `<image:image><image:loc>${escapeXml(imgUrl)}</image:loc><image:caption>${escapeXml(caption)}</image:caption><image:title>${escapeXml(imgTitle)}</image:title></image:image>`;
+    // OG card image
+    blocks.push(
+      imageBlock({
+        url: `${SITE}/og/${slug}.png`,
+        caption: `${data.title} - ${data.category}. ${stripMd(data.oneLiner)}`,
+        title: `${data.title} - Moresapien`,
+      }),
+    );
 
-    // Match the exact <url><loc>...</loc></url> block for this slug and inject
-    // the image block before the closing </url>. This is order-independent and
-    // tolerates Astro's compact one-line output.
+    // Concept-diagram PNG (only when one was rendered for this slug)
+    if (diagramPngs.has(pngFile)) {
+      blocks.push(
+        imageBlock({
+          url: `${SITE}/diagrams/${slug}.png`,
+          caption: `How ${data.title.toLowerCase()} works - a Moresapien concept diagram. ${stripMd(data.oneLiner)}`,
+          title: `How ${data.title} works - Moresapien`,
+        }),
+      );
+      diagramsAdded += 1;
+    }
+
+    const imageBlocks = blocks.join('');
+
     const urlBlockRe = new RegExp(
       `(<url>\\s*<loc>${escapeRegex(loc)}</loc>)([^<]*(?:<(?!/url>)[^<]*)*)</url>`,
-      'g'
+      'g',
     );
 
     let injected = false;
     xml = xml.replace(urlBlockRe, (match, head, middle) => {
       injected = true;
-      // If image block already present somehow, leave it.
       if (middle.includes('<image:image>')) return match;
-      return `${head}${middle}${imageBlock}</url>`;
+      return `${head}${middle}${imageBlocks}</url>`;
     });
 
     if (injected) enriched += 1;
@@ -108,13 +145,10 @@ function main() {
   console.log(`\n🗺  Sitemap enrichment`);
   console.log('─'.repeat(50));
   console.log(`   Enriched ${enriched} entry URLs with <image:image> blocks`);
+  console.log(`   Of those, ${diagramsAdded} also include a concept-diagram PNG`);
   if (skipped > 0) {
     console.log(`   Skipped ${skipped} entries with no matching PNG in public/og/`);
   }
-}
-
-function escapeRegex(s) {
-  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
 main();

@@ -65,6 +65,27 @@ const ogImageCaption = title + ' - ' + category + ' - Moresapien knowledge card'
 
 const entryHasDiagram = hasDiagram(entry.id);
 const DiagramComponent = entryHasDiagram ? await loadDiagram(entry.id) : null;
+const diagramPngUrl = entryHasDiagram ? siteUrl + '/diagrams/' + entry.id + '.png' : null;
+const diagramAltText = entryHasDiagram
+  ? title + ' — ' + category + '. ' + oneLiner
+  : null;
+
+const baseImage = {
+  '@type': 'ImageObject',
+  url: ogImage,
+  width: 1200,
+  height: 630,
+  caption: ogImageCaption,
+};
+
+const diagramImage = entryHasDiagram
+  ? {
+      '@type': 'ImageObject',
+      url: diagramPngUrl,
+      width: 1200,
+      caption: 'How the ' + title.toLowerCase() + ' works — Moresapien concept diagram',
+    }
+  : null;
 
 const structuredData = {
   '@context': 'https://schema.org',
@@ -72,13 +93,7 @@ const structuredData = {
   name: title,
   description: oneLiner,
   url: pageUrl,
-  image: {
-    '@type': 'ImageObject',
-    url: ogImage,
-    width: 1200,
-    height: 630,
-    caption: ogImageCaption,
-  },
+  image: diagramImage ? [baseImage, diagramImage] : baseImage,
   inDefinedTermSet: {
     '@type': 'DefinedTermSet',
     name: 'Moresapien Knowledge Base',
@@ -132,6 +147,18 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
         {entryHasDiagram && DiagramComponent ? (
           <div class="entry-visual entry-visual--diagram">
             <DiagramComponent category={category} />
+            <!-- Indexable raster of the diagram for Google Image Search.
+                 Visually hidden via clip rect so it stays in the DOM and
+                 crawlable. Source PNG generated in postbuild. -->
+            <img
+              src={`/diagrams/${entry.id}.png`}
+              alt={diagramAltText}
+              title={`How ${title} works — Moresapien`}
+              width="1200"
+              height="auto"
+              loading="lazy"
+              class="diagram-png-fallback"
+            />
           </div>
         ) : (
           <div class="entry-visual">
@@ -343,6 +370,22 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
 
   .entry-visual--diagram {
     padding: var(--ms-r5);
+    position: relative;
+  }
+
+  /* Hidden raster duplicate of the inline diagram SVG. Crawlable for Google
+     Image Search but not visible to sighted users. */
+  .diagram-png-fallback {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+    padding: 0;
+    margin: -1px;
   }
 
   .entry-visual :global(svg) {
