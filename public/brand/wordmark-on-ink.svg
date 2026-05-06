@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 140" width="600" height="140">
+  <rect width="600" height="140" fill="#15140F"></rect>
+  
+  <text x="40" y="100" class="wm" fill="#F5F1E8">more</text>
+  <g transform="translate(266,52)">
+    <line x1="-22" y1="0" x2="22" y2="0" stroke="#FF5D4A" stroke-width="5" stroke-linecap="round"></line>
+    <line x1="-11.000000000000002" y1="-19.05255888325765" x2="11.000000000000002" y2="19.05255888325765" stroke="#FF5D4A" stroke-width="5" stroke-linecap="round"></line>
+    <line x1="10.999999999999995" y1="-19.052558883257653" x2="-10.999999999999995" y2="19.052558883257653" stroke="#FF5D4A" stroke-width="5" stroke-linecap="round"></line>
+  </g>
+  <text x="306" y="100" class="wm" font-style="italic" fill="#F5F1E8">sapien</text>
+</svg>

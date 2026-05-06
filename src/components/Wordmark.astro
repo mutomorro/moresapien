@@ -1,0 +1,68 @@
+---
+import Asterisk from './Asterisk.astro';
+
+/* Wordmark · `more*sapien*`
+ *
+ * `more` set in Newsreader regular, the asterisk in coral, `sapien` italic.
+ * The wordmark is the only logo - never paired with another mark. */
+
+export interface Props {
+  size?: 'sm' | 'md' | 'lg';
+  variant?: 'default' | 'on-ink';
+  href?: string | null;
+  ariaLabel?: string;
+}
+
+const {
+  size = 'md',
+  variant = 'default',
+  href = '/',
+  ariaLabel = 'Moresapien home',
+} = Astro.props;
+
+const fontSizes = { sm: '1.125rem', md: '1.5rem', lg: '2rem' };
+const asteriskSizes = { sm: 12, md: 16, lg: 22 };
+const gaps = { sm: '1px', md: '2px', lg: '3px' };
+
+const textColor = variant === 'on-ink' ? 'var(--ms-paper)' : 'var(--ms-ink)';
+
+const Tag = href ? 'a' : 'span';
+const tagProps = href
+  ? { href, 'aria-label': ariaLabel, class: 'ms-wordmark ms-wordmark--link' }
+  : { class: 'ms-wordmark' };
+---
+<Tag {...tagProps} style={`font-size: ${fontSizes[size]}; color: ${textColor}; gap: ${gaps[size]};`}>
+  <span class="ms-wordmark-more">more</span>
+  <span class="ms-wordmark-asterisk"><Asterisk size={asteriskSizes[size]} /></span>
+  <span class="ms-wordmark-sapien">sapien</span>
+</Tag>
+
+<style>
+  .ms-wordmark {
+    font-family: var(--ms-font-display);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    display: inline-flex;
+    align-items: baseline;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+  .ms-wordmark--link {
+    transition: opacity 0.15s ease;
+  }
+  .ms-wordmark--link:hover {
+    opacity: 0.85;
+  }
+  .ms-wordmark-sapien {
+    font-style: italic;
+  }
+  /* Lift the asterisk so it sits at roughly cap-height — a footnote glyph,
+     not a bullet. The SVG is centred in its viewBox; offset by ~0.45em
+     of its size to put the visual centre near the top of the x-height. */
+  .ms-wordmark-asterisk {
+    display: inline-flex;
+    align-self: baseline;
+    transform: translateY(-0.4em);
+  }
+</style>

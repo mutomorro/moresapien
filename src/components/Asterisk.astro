@@ -1,0 +1,54 @@
+---
+/* Asterisk · The brand mark.
+ *
+ * Three crossed lines through a centre at 0 / 60 / 120 degrees.
+ * Default coral but accepts a category colour for in-context use. */
+
+export interface Props {
+  size?: number;
+  color?: string;
+  strokeWidth?: number;
+  class?: string;
+}
+
+const { size = 20, color = 'var(--ms-coral)', strokeWidth, class: className = '' } = Astro.props;
+
+const r = size * 0.42;
+const sw = strokeWidth ?? Math.max(1.5, size / 16);
+const cx = size / 2;
+const cy = size / 2;
+
+const cos60 = Math.cos(Math.PI / 3);
+const sin60 = Math.sin(Math.PI / 3);
+---
+<svg
+  width={size}
+  height={size}
+  viewBox={`0 0 ${size} ${size}`}
+  xmlns="http://www.w3.org/2000/svg"
+  aria-hidden="true"
+  class={`ms-asterisk ${className}`.trim()}
+>
+  <line
+    x1={cx - r} y1={cy} x2={cx + r} y2={cy}
+    stroke={color} stroke-width={sw} stroke-linecap="round"
+  />
+  <line
+    x1={cx - r * cos60} y1={cy - r * sin60}
+    x2={cx + r * cos60} y2={cy + r * sin60}
+    stroke={color} stroke-width={sw} stroke-linecap="round"
+  />
+  <line
+    x1={cx + r * cos60} y1={cy - r * sin60}
+    x2={cx - r * cos60} y2={cy + r * sin60}
+    stroke={color} stroke-width={sw} stroke-linecap="round"
+  />
+</svg>
+
+<style>
+  .ms-asterisk {
+    display: inline-block;
+    flex-shrink: 0;
+    vertical-align: middle;
+  }
+</style>
