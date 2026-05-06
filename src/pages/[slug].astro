@@ -1,11 +1,13 @@
 ---
 import { getCollection, render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
 import Nav from '../components/Nav.astro';
+import Asterisk from '../components/Asterisk.astro';
 import ShareButton from '../components/ShareButton.jsx';
 import StayCurious from '../components/StayCurious.astro';
 import KnowledgeCard from '../components/KnowledgeCard.astro';
 import ConnectionMiniMap from '../components/ConnectionMiniMap.astro';
-import { categoryColours } from '../data/categoryColours.js';
+import { getCategoryColor, getCategoryColorHex, getCategoryTextColor } from '../utils/categoryColors';
 import { hasDiagram, loadDiagram } from '../data/diagramRegistry.js';
 
 export async function getStaticPaths() {
@@ -17,14 +19,22 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-const { title, oneLiner, alsoKnownAs, category, tags, howToSpotIt, thoughtToHoldOnto, whyItMattersNow, relatedConcepts } = entry.data;
+const {
+  title,
+  oneLiner,
+  alsoKnownAs,
+  category,
+  tags,
+  howToSpotIt,
+  thoughtToHoldOnto,
+  whyItMattersNow,
+  relatedConcepts,
+} = entry.data;
 
-// Render the Markdown body (What it means + In the real world)
 const { Content } = await render(entry);
 
-// Resolve related concepts to get titles and one-liners
 const allEntries = await getCollection('entries');
-const resolvedRelated = relatedConcepts.map((rel) => {
+const resolvedRelated = relatedConcepts.map((rel: { slug: string; note?: string }) => {
   const found = allEntries.find((e) => e.id === rel.slug);
   return {
     slug: rel.slug,
@@ -38,22 +48,21 @@ const resolvedRelated = relatedConcepts.map((rel) => {
 const siteUrl = 'https://moresapien.org';
 const pageUrl = siteUrl + '/' + entry.id + '/';
 
-const accentColour = categoryColours[category] || '#c17f59';
+const accent = getCategoryColor(category);
+const accentHex = getCategoryColorHex(category);
+const onAccentText = getCategoryTextColor(category);
 
-function renderMarkdown(text: string): string {
-  return text.replace(/\*(.*?)\*/g, '<em>$1</em>');
+function renderInlineMarkdown(text: string): string {
+  return (text || '').replace(/\*(.*?)\*/g, '<em>$1</em>');
 }
 
-const pageTitle = title + ' - Moresapien';
+const pageTitle = title + ' — Moresapien';
 const pageDescription = title + ': ' + oneLiner + ' Learn about this ' + category.toLowerCase() + ' and how it affects your thinking.';
 const ogImage = siteUrl + '/og/' + entry.id + '.png';
-const thoughtHtml = renderMarkdown(thoughtToHoldOnto);
+const thoughtHtml = renderInlineMarkdown(thoughtToHoldOnto);
 
 const ogImageCaption = title + ' - ' + category + ' - Moresapien knowledge card';
 
-// If a hand-crafted concept diagram exists for this slug, render that
-// instead of the auto-generated knowledge card on the page itself.
-// (The OG/social card always remains the auto-generated PNG.)
 const entryHasDiagram = hasDiagram(entry.id);
 const DiagramComponent = entryHasDiagram ? await loadDiagram(entry.id) : null;
 
@@ -85,595 +94,578 @@ const structuredData = {
     url: siteUrl + '/',
   },
 };
+
+const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --on-accent: ${onAccentText};`;
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{pageTitle}</title>
-    <meta name="description" content={pageDescription} />
-    <link rel="canonical" href={pageUrl} />
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  canonical={pageUrl}
+  ogType="article"
+  ogImage={ogImage}
+  htmlStyle={htmlStyle}
+>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(structuredData)} />
 
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content={pageTitle} />
-    <meta property="og:description" content={oneLiner} />
-    <meta property="og:url" content={pageUrl} />
-    <meta property="og:site_name" content="Moresapien" />
-    <meta property="og:image" content={ogImage} />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+  <Nav />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={pageTitle} />
-    <meta name="twitter:description" content={oneLiner} />
-    <meta name="twitter:image" content={ogImage} />
+  <main id="main" class="entry-page">
+    <div class="entry-layout">
+      <article class="entry">
+        <header class="entry-header">
+          <p class="eyebrow">{category}</p>
+          <h1 class="entry-title">
+            <span>{title}</span>
+            <span class="title-asterisk"><Asterisk size={36} color="var(--page-accent)" /></span>
+          </h1>
+          <p class="entry-oneliner">{oneLiner}</p>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Nunito:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
+          {alsoKnownAs && alsoKnownAs.length > 0 && (
+            <p class="also-known-as">
+              <span class="aka-label">Also known as</span>
+              <span class="aka-values">{alsoKnownAs.join(' · ')}</span>
+            </p>
+          )}
+        </header>
 
-    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
-  </head>
+        {entryHasDiagram && DiagramComponent ? (
+          <div class="entry-visual entry-visual--diagram">
+            <DiagramComponent category={category} />
+          </div>
+        ) : (
+          <div class="entry-visual">
+            <KnowledgeCard
+              title={title}
+              oneLiner={oneLiner}
+              category={category}
+              thoughtToHoldOnto={thoughtToHoldOnto}
+              relatedConcepts={resolvedRelated}
+              slug={entry.id}
+            />
+          </div>
+        )}
 
-  <body>
-    <Nav />
-    <div class="page-layout">
-      <div class="page-main">
-        <nav class="breadcrumb">
-          <span class="category-label" style={"color:" + accentColour}>{category}</span>
-        </nav>
+        <div class="entry-body">
+          <Content />
+        </div>
 
-        <article class="entry">
-          <header class="entry-header">
-            <span class="category-badge" style={"background:" + accentColour}>
-              {category}
-            </span>
-            <h1 class="entry-title">{title}</h1>
-            <p class="entry-oneliner">{oneLiner}</p>
+        <section class="block block-spot">
+          <h2 class="block-label">How to spot it</h2>
+          <p class="block-body" set:html={renderInlineMarkdown(howToSpotIt)} />
+        </section>
 
-            {alsoKnownAs && alsoKnownAs.length > 0 && (
-              <p class="also-known-as">Also known as: {alsoKnownAs.join(', ')}</p>
-            )}
+        <section class="block block-thought" aria-label="A thought to hold onto">
+          <p class="block-thought-label">A thought to hold onto</p>
+          <blockquote class="block-thought-text" set:html={thoughtHtml} />
+        </section>
 
-            <div class="entry-tags">
-              {tags.map((tag: string) => (
-                <span class="tag">#{tag}</span>
-              ))}
-            </div>
-          </header>
+        {whyItMattersNow && (
+          <section class="block block-matters">
+            <h2>Why it matters now</h2>
+            <p set:html={renderInlineMarkdown(whyItMattersNow)} />
+          </section>
+        )}
 
-          <!-- Hand-crafted concept diagram if registered, otherwise the
-               auto-generated knowledge card. -->
-          {entryHasDiagram && DiagramComponent ? (
-            <div class="diagram-container">
-              <DiagramComponent category={category} />
-            </div>
-          ) : (
-            <div class="entry-visual">
-              <KnowledgeCard
+        <footer class="entry-footer">
+          <div class="share-row">
+            <span class="share-label">Found this useful?</span>
+            <ShareButton
+              client:load
+              title={title}
+              oneLiner={oneLiner}
+              url={pageUrl}
+              category={category}
+            />
+          </div>
+
+          {resolvedRelated.length > 0 && (
+            <div class="connection-map">
+              <h3>How this connects</h3>
+              <p class="map-hint">
+                {title} sits alongside {resolvedRelated.length === 1 ? 'one related idea' : `${resolvedRelated.length} related ideas`} — a quick map of the neighbourhood.
+              </p>
+              <ConnectionMiniMap
                 title={title}
-                oneLiner={oneLiner}
                 category={category}
-                thoughtToHoldOnto={thoughtToHoldOnto}
                 relatedConcepts={resolvedRelated}
                 slug={entry.id}
               />
             </div>
           )}
 
-          <!-- Markdown body: "What it means" and "In the real world" -->
-          <div class="entry-body">
-            <Content />
-          </div>
-
-          <!-- How to spot it (new in v2) -->
-          <section class="entry-section entry-spot-it">
-            <h2>How to spot it</h2>
-            <p set:html={renderMarkdown(howToSpotIt)} />
-          </section>
-
-          <section class="entry-section entry-thought">
-            <blockquote>
-              <h2>The thought to hold onto</h2>
-              <p set:html={thoughtHtml} />
-            </blockquote>
-          </section>
-
-          <!-- Why it matters now (optional, new in v2) -->
-          {whyItMattersNow && (
-            <section class="entry-section entry-matters-now">
-              <h2>Why it matters now</h2>
-              <p set:html={renderMarkdown(whyItMattersNow)} />
-            </section>
+          {resolvedRelated.length > 0 && (
+            <div class="related-concepts">
+              <h3>Related concepts</h3>
+              <div class="related-grid">
+                {resolvedRelated.map((related) => (
+                  <a
+                    href={`/${related.slug}/`}
+                    class="related-card"
+                    style={`--related-accent: ${getCategoryColor(related.category)};`}
+                  >
+                    <span class="related-eyebrow">{related.category}</span>
+                    <span class="related-title">
+                      <span>{related.title}</span>
+                      <span class="related-asterisk"><Asterisk size={11} color="var(--related-accent)" /></span>
+                    </span>
+                    <span class="related-oneliner">{related.oneLiner}</span>
+                    {related.note && <span class="related-note">{related.note}</span>}
+                  </a>
+                ))}
+              </div>
+            </div>
           )}
 
-          <footer class="entry-footer">
-            <div class="share-row">
-              <span class="share-label">Found this useful?</span>
-              <ShareButton
-                client:load
-                title={title}
-                oneLiner={oneLiner}
-                url={pageUrl}
-                category={category}
-              />
+          {tags && tags.length > 0 && (
+            <div class="tag-row" aria-label="Tags">
+              {tags.map((tag: string) => (
+                <span class="tag">#{tag}</span>
+              ))}
             </div>
+          )}
+        </footer>
+      </article>
 
-            {resolvedRelated.length > 0 && (
-              <div class="connection-map">
-                <h3>How this connects</h3>
-                <p class="map-hint">{title} sits alongside {resolvedRelated.length === 1 ? 'one related idea' : `${resolvedRelated.length} related ideas`} - a quick map of the neighbourhood.</p>
-                <ConnectionMiniMap
-                  title={title}
-                  category={category}
-                  relatedConcepts={resolvedRelated}
-                  slug={entry.id}
-                />
-              </div>
-            )}
-
-            {resolvedRelated.length > 0 && (
-              <div class="related-concepts">
-                <h3>Related concepts</h3>
-                <div class="related-grid">
-                  {resolvedRelated.map((related) => (
-                    <a href={"/" + related.slug + "/"} class="related-card">
-                      <span class="related-category" style={"color:" + (categoryColours[related.category] || '#c17f59')}>
-                        {related.category}
-                      </span>
-                      <span class="related-title">{related.title}</span>
-                      <span class="related-oneliner">{related.oneLiner}</span>
-                      {related.note && (
-                        <span class="related-note">{related.note}</span>
-                      )}
-                    </a>
-                  ))}
-                </div>
-              </div>
-            )}
-          </footer>
-        </article>
-
-        <!-- Mobile only: Stay Curious appears after the article -->
-        <div class="sc-mobile">
-          <StayCurious />
-        </div>
-
-        <div class="site-footer">
-          <p>
-            <a href="/">Moresapien</a> - Understanding ourselves, one idea at a time.
-          </p>
-        </div>
+      <div class="sc-mobile">
+        <StayCurious />
       </div>
 
-      <!-- Desktop sidebar -->
-      <aside class="page-sidebar">
+      <aside class="entry-sidebar" aria-label="Stay curious">
         <div class="sidebar-sticky">
           <StayCurious />
         </div>
       </aside>
     </div>
+  </main>
+</BaseLayout>
 
-    <style define:vars={{ accentColour }}>
-      *, *::before, *::after {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
+<style>
+  .entry-page {
+    padding: var(--ms-r7) var(--ms-r5) var(--ms-r9);
+  }
 
-      body {
-        font-family: 'Nunito', sans-serif;
-        background: #faf8f5;
-        color: #3a3530;
-        line-height: 1.7;
-        -webkit-font-smoothing: antialiased;
-      }
+  .entry-layout {
+    max-width: 64rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 16rem;
+    gap: var(--ms-r7);
+    align-items: start;
+  }
 
-      /* --- Two-column layout --- */
-      .page-layout {
-        display: flex;
-        gap: 2rem;
-        max-width: 56rem;
-        margin: 0 auto;
-        padding: 2rem 1.5rem 4rem;
-      }
+  .entry {
+    min-width: 0;
+    max-width: 38rem;
+  }
 
-      .page-main {
-        flex: 1;
-        min-width: 0;
-        max-width: 42rem;
-      }
+  .entry-sidebar {
+    position: sticky;
+    top: 5rem;
+  }
 
-      .page-sidebar {
-        width: 14rem;
-        flex-shrink: 0;
-      }
+  .sc-mobile {
+    display: none;
+  }
 
-      .sidebar-sticky {
-        position: sticky;
-        top: calc(50vh - 6rem);
-      }
+  /* --- Header --- */
+  .entry-header {
+    margin-bottom: var(--ms-r7);
+  }
 
-      /* Mobile: hide sidebar, show inline version */
-      .sc-mobile {
-        display: none;
-        margin-top: 2.5rem;
-      }
+  .eyebrow {
+    font-family: var(--ms-font-mono);
+    font-size: var(--ms-meta);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--page-accent);
+    margin-bottom: var(--ms-r4);
+  }
 
-      /* --- Entry styles (unchanged) --- */
-      .breadcrumb {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        margin-bottom: 2rem;
-        font-size: 0.875rem;
-      }
+  .entry-title {
+    font-family: var(--ms-font-display);
+    font-size: var(--ms-h1);
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    line-height: 0.95;
+    color: var(--ms-ink);
+    display: flex;
+    align-items: baseline;
+    gap: var(--ms-r2);
+    flex-wrap: wrap;
+    margin-bottom: var(--ms-r4);
+  }
+  .title-asterisk {
+    display: inline-flex;
+    align-self: baseline;
+    transform: translateY(-0.55em);
+  }
 
-      .category-label {
-        font-weight: 600;
-      }
+  .entry-oneliner {
+    font-family: var(--ms-font-body);
+    font-size: 1.25rem;
+    line-height: 1.55;
+    color: var(--ms-mute);
+    max-width: 38rem;
+  }
 
-      .entry-header {
-        margin-bottom: 3rem;
-        padding-bottom: 2rem;
-        border-bottom: 1px solid #e8e0d8;
-      }
+  .also-known-as {
+    margin-top: var(--ms-r4);
+    display: flex;
+    gap: var(--ms-r3);
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
 
-      .category-badge {
-        display: inline-block;
-        color: #faf8f5;
-        font-size: 0.75rem;
-        font-weight: 700;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        padding: 0.25rem 0.75rem;
-        border-radius: 1rem;
-        margin-bottom: 1rem;
-      }
+  .aka-label {
+    font-family: var(--ms-font-mono);
+    font-size: var(--ms-meta);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ms-mute);
+  }
 
-      .entry-title {
-        font-family: 'Lora', serif;
-        font-size: clamp(2rem, 5vw, 3rem);
-        font-weight: 700;
-        color: #2a2520;
-        line-height: 1.15;
-        margin-bottom: 0.75rem;
-      }
+  .aka-values {
+    font-family: var(--ms-font-body);
+    font-size: var(--ms-small);
+    color: var(--ms-mute);
+    font-style: italic;
+  }
 
-      .entry-oneliner {
-        font-size: 1.25rem;
-        color: #6a6058;
-        line-height: 1.5;
-        font-style: italic;
-      }
+  /* --- Visual (knowledge card / diagram) --- */
+  .entry-visual {
+    margin-bottom: var(--ms-r7);
+    border: 1px solid var(--ms-rule);
+    border-radius: var(--ms-radius-md);
+    overflow: hidden;
+    background: var(--ms-white);
+  }
 
-      .also-known-as {
-        margin-top: 0.75rem;
-        font-size: 0.9rem;
-        color: #8a7f72;
-        font-style: italic;
-      }
+  .entry-visual--diagram {
+    padding: var(--ms-r5);
+  }
 
-      .entry-tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        margin-top: 1.25rem;
-      }
+  .entry-visual :global(svg) {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 
-      .tag {
-        font-size: 0.8rem;
-        color: #a09888;
-        background: #f0ebe4;
-        padding: 0.2rem 0.6rem;
-        border-radius: 0.75rem;
-      }
+  /* --- Body --- */
+  .entry-body {
+    margin-bottom: var(--ms-r7);
+  }
 
-      /* Auto-generated knowledge card */
-      .entry-visual {
-        margin: 0 0 2rem;
-        border-radius: 12px;
-        overflow: hidden;
-        border: 1px solid #e8e0d8;
-        background: #FFFBF5;
-      }
+  .entry-body :global(h2) {
+    font-family: var(--ms-font-display);
+    font-size: var(--ms-h3);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: var(--ms-ink);
+    margin: var(--ms-r7) 0 var(--ms-r4);
+  }
 
-      .entry-visual :global(svg) {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
+  .entry-body :global(h2:first-child) {
+    margin-top: 0;
+  }
 
-      /* Hand-crafted concept diagram container (when one is registered) */
-      .diagram-container {
-        margin: 0 0 2rem;
-        padding: 1.25rem;
-        background: #FFFBF5;
-        border-radius: 12px;
-        border: 1px solid #e8e0d8;
-      }
+  .entry-body :global(p) {
+    font-family: var(--ms-font-body);
+    font-size: var(--ms-body);
+    line-height: 1.65;
+    color: var(--ms-ink);
+    margin-bottom: var(--ms-r4);
+  }
 
-      .diagram-container :global(svg) {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
+  .entry-body :global(p:last-child) {
+    margin-bottom: 0;
+  }
 
-      /* Connection mini-map */
-      .connection-map {
-        margin: 0 0 2rem;
-      }
+  .entry-body :global(em) {
+    font-style: italic;
+    color: var(--ms-coral);
+  }
 
-      .connection-map h3 {
-        font-family: 'Lora', serif;
-        font-size: 1.25rem;
-        font-weight: 600;
-        color: #2a2520;
-        margin-bottom: 0.25rem;
-      }
+  .entry-body :global(a) {
+    color: var(--ms-ink);
+    border-bottom: 1px solid var(--page-accent);
+    transition: color 0.15s ease;
+  }
 
-      .connection-map .map-hint {
-        font-size: 0.85rem;
-        color: #8a7f72;
-        margin-bottom: 1rem;
-        font-style: italic;
-      }
+  .entry-body :global(a:hover) {
+    color: var(--page-accent);
+  }
 
-      .connection-map :global(svg) {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
+  /* --- Block: How to spot it --- */
+  .block {
+    margin-bottom: var(--ms-r7);
+  }
 
-      /* Markdown body styles */
-      .entry-body {
-        margin-bottom: 2.5rem;
-      }
+  .block-spot {
+    background: var(--ms-white);
+    border-left: var(--ms-accent-rule-width) solid var(--page-accent);
+    border-top: 1px solid var(--ms-rule);
+    border-right: 1px solid var(--ms-rule);
+    border-bottom: 1px solid var(--ms-rule);
+    border-radius: 0 var(--ms-radius-sm) var(--ms-radius-sm) 0;
+    padding: var(--ms-r5) var(--ms-r6);
+  }
 
-      .entry-body :global(h2) {
-        font-family: 'Lora', serif;
-        font-size: 1.375rem;
-        font-weight: 600;
-        color: #2a2520;
-        margin-bottom: 1rem;
-        margin-top: 2.5rem;
-      }
+  .block-spot .block-label {
+    font-family: var(--ms-font-mono);
+    font-size: var(--ms-meta);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--page-accent);
+    margin-bottom: var(--ms-r3);
+  }
 
-      .entry-body :global(h2:first-child) {
-        margin-top: 0;
-      }
+  .block-spot .block-body {
+    font-family: var(--ms-font-body);
+    font-size: var(--ms-body);
+    line-height: 1.65;
+    color: var(--ms-ink);
+  }
 
-      .entry-body :global(p) {
-        margin-bottom: 1rem;
-        font-size: 1.05rem;
-        line-height: 1.8;
-      }
+  .block-spot :global(em) {
+    font-style: italic;
+    color: var(--ms-coral);
+  }
 
-      .entry-body :global(p:last-child) {
-        margin-bottom: 0;
-      }
+  /* --- Block: Thought to hold onto --- */
+  .block-thought {
+    background: var(--page-accent);
+    border-radius: var(--ms-radius-md);
+    padding: var(--ms-r6);
+    color: var(--on-accent);
+  }
 
-      .entry-body :global(h2:nth-of-type(2)) {
-        margin-top: 2.5rem;
-      }
+  .block-thought-label {
+    font-family: var(--ms-font-mono);
+    font-size: var(--ms-meta);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--on-accent);
+    opacity: 0.85;
+    margin-bottom: var(--ms-r4);
+  }
 
-      .entry-section {
-        margin-bottom: 2.5rem;
-      }
+  .block-thought-text {
+    font-family: var(--ms-font-display);
+    font-style: italic;
+    font-size: 1.25rem;
+    line-height: 1.45;
+    color: var(--on-accent);
+  }
 
-      .entry-section h2 {
-        font-family: 'Lora', serif;
-        font-size: 1.375rem;
-        font-weight: 600;
-        color: #2a2520;
-        margin-bottom: 1rem;
-      }
+  .block-thought-text :global(em) {
+    font-style: italic;
+    color: inherit;
+    opacity: 0.85;
+  }
 
-      .entry-section p {
-        margin-bottom: 1rem;
-        font-size: 1.05rem;
-        line-height: 1.8;
-      }
+  /* --- Block: Why it matters now --- */
+  .block-matters {
+    border-top: 1px solid var(--ms-rule);
+    padding-top: var(--ms-r6);
+  }
 
-      .entry-section p:last-child {
-        margin-bottom: 0;
-      }
+  .block-matters h2 {
+    font-family: var(--ms-font-display);
+    font-size: var(--ms-h3);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: var(--ms-ink);
+    margin-bottom: var(--ms-r3);
+  }
 
-      .entry-spot-it {
-        background: #f0f5ee;
-        padding: 1.75rem 2rem;
-        border-radius: 1rem;
-        border-left: 3px solid var(--accentColour);
-      }
+  .block-matters p {
+    font-family: var(--ms-font-body);
+    font-size: var(--ms-body);
+    line-height: 1.65;
+    color: var(--ms-ink);
+  }
 
-      .entry-matters-now {
-        background: #f5f0ea;
-        padding: 1.75rem 2rem;
-        border-radius: 1rem;
-        border-left: 3px solid var(--accentColour);
-      }
+  .block-matters :global(em) {
+    font-style: italic;
+    color: var(--ms-coral);
+  }
 
-      .entry-thought blockquote {
-        background: linear-gradient(135deg, #f9f5f0 0%, #f5f0ea 100%);
-        padding: 2rem 2.25rem;
-        border-radius: 1rem;
-        position: relative;
-      }
+  /* --- Footer of entry --- */
+  .entry-footer {
+    margin-top: var(--ms-r8);
+    padding-top: var(--ms-r6);
+    border-top: 1px solid var(--ms-rule);
+  }
 
-      .entry-thought blockquote::before {
-        content: '\201C';
-        font-family: 'Lora', serif;
-        font-size: 4rem;
-        color: var(--accentColour);
-        opacity: 0.25;
-        position: absolute;
-        top: 0.25rem;
-        left: 0.75rem;
-        line-height: 1;
-      }
+  .share-row {
+    display: flex;
+    align-items: center;
+    gap: var(--ms-r4);
+    margin-bottom: var(--ms-r7);
+  }
 
-      .entry-thought h2 {
-        font-family: 'Lora', serif;
-        font-size: 1rem;
-        font-weight: 600;
-        color: var(--accentColour);
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        margin-bottom: 0.75rem;
-      }
+  .share-label {
+    font-family: var(--ms-font-body);
+    font-size: var(--ms-small);
+    color: var(--ms-mute);
+  }
 
-      .entry-thought p {
-        font-family: 'Lora', serif;
-        font-size: 1.15rem;
-        font-style: italic;
-        line-height: 1.7;
-        color: #4a4540;
-      }
+  .connection-map {
+    margin-bottom: var(--ms-r7);
+  }
 
-      .entry-footer {
-        margin-top: 3rem;
-        padding-top: 2rem;
-        border-top: 1px solid #e8e0d8;
-      }
+  .connection-map h3,
+  .related-concepts h3 {
+    font-family: var(--ms-font-display);
+    font-size: var(--ms-h4);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: var(--ms-ink);
+    margin-bottom: var(--ms-r3);
+  }
 
-      .share-row {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        margin-bottom: 3rem;
-      }
+  .map-hint {
+    font-family: var(--ms-font-body);
+    font-size: var(--ms-small);
+    color: var(--ms-mute);
+    font-style: italic;
+    margin-bottom: var(--ms-r4);
+  }
 
-      .share-label {
-        font-size: 0.95rem;
-        color: #8a7f72;
-      }
+  .connection-map :global(svg) {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 
-      .related-concepts h3 {
-        font-family: 'Lora', serif;
-        font-size: 1.25rem;
-        font-weight: 600;
-        color: #2a2520;
-        margin-bottom: 1rem;
-      }
+  /* --- Related concepts --- */
+  .related-concepts {
+    margin-bottom: var(--ms-r6);
+  }
 
-      .related-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
-        gap: 1rem;
-      }
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    gap: var(--ms-r4);
+  }
 
-      .related-card {
-        display: flex;
-        flex-direction: column;
-        gap: 0.25rem;
-        padding: 1.25rem;
-        background: #fff;
-        border: 1px solid #e8e0d8;
-        border-radius: 0.75rem;
-        text-decoration: none;
-        transition: all 0.2s ease;
-      }
+  .related-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ms-r2);
+    padding: var(--ms-r4);
+    background: var(--ms-white);
+    border: 1px solid var(--ms-rule);
+    border-top: var(--ms-accent-rule-width) solid var(--related-accent);
+    border-radius: var(--ms-radius-sm);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
 
-      .related-card:hover {
-        border-color: #d0c8be;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-        transform: translateY(-1px);
-      }
+  .related-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  }
 
-      .related-category {
-        font-size: 0.7rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-      }
+  .related-eyebrow {
+    font-family: var(--ms-font-mono);
+    font-size: var(--ms-meta);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--related-accent);
+  }
 
-      .related-title {
-        font-family: 'Lora', serif;
-        font-size: 1.1rem;
-        font-weight: 600;
-        color: #2a2520;
-      }
+  .related-title {
+    font-family: var(--ms-font-display);
+    font-size: 1.125rem;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: var(--ms-ink);
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+  }
+  .related-asterisk {
+    display: inline-flex;
+    align-self: baseline;
+    transform: translateY(-0.55em);
+  }
 
-      .related-oneliner {
-        font-size: 0.85rem;
-        color: #8a7f72;
-        line-height: 1.5;
-      }
+  .related-oneliner {
+    font-family: var(--ms-font-body);
+    font-size: var(--ms-small);
+    color: var(--ms-mute);
+    line-height: 1.5;
+  }
 
-      .related-note {
-        font-size: 0.8rem;
-        color: #a09888;
-        font-style: italic;
-        line-height: 1.45;
-        margin-top: 0.25rem;
-        padding-top: 0.5rem;
-        border-top: 1px solid #f0ebe4;
-      }
+  .related-note {
+    font-family: var(--ms-font-body);
+    font-size: 12px;
+    color: var(--ms-mute);
+    font-style: italic;
+    line-height: 1.5;
+    margin-top: var(--ms-r2);
+    padding-top: var(--ms-r2);
+    border-top: 1px solid var(--ms-rule);
+  }
 
-      .site-footer {
-        margin-top: 4rem;
-        padding-top: 2rem;
-        border-top: 1px solid #e8e0d8;
-        text-align: center;
-        font-size: 0.875rem;
-        color: #a09888;
-      }
+  /* --- Tags --- */
+  .tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--ms-r2);
+    padding-top: var(--ms-r4);
+    border-top: 1px solid var(--ms-rule);
+  }
 
-      .site-footer a {
-        color: #6a6058;
-        text-decoration: none;
-        font-weight: 600;
-      }
+  .tag {
+    font-family: var(--ms-font-mono);
+    font-size: var(--ms-meta);
+    color: var(--ms-mute);
+    text-transform: lowercase;
+    letter-spacing: 0.05em;
+  }
 
-      .site-footer a:hover {
-        color: var(--accentColour);
-      }
+  /* --- Responsive --- */
+  @media (max-width: 960px) {
+    .entry-layout {
+      grid-template-columns: 1fr;
+      max-width: 42rem;
+    }
+    .entry-sidebar {
+      display: none;
+    }
+    .sc-mobile {
+      display: block;
+      margin-top: var(--ms-r7);
+    }
+  }
 
-      /* --- Responsive --- */
-      @media (max-width: 960px) {
-        .page-layout {
-          display: block;
-          max-width: 42rem;
-          padding: 2rem 1.5rem 4rem;
-        }
-
-        .page-sidebar {
-          display: none;
-        }
-
-        .sc-mobile {
-          display: block;
-        }
-      }
-
-      @media (max-width: 640px) {
-        .page-layout {
-          padding: 1.5rem 1rem 3rem;
-        }
-
-        .entry-spot-it,
-        .entry-matters-now {
-          padding: 1.25rem 1.5rem;
-        }
-
-        .entry-thought blockquote {
-          padding: 1.5rem 1.75rem;
-        }
-
-        .share-row {
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 0.75rem;
-        }
-
-        .related-grid {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
-  </body>
-</html>
+  @media (max-width: 640px) {
+    .entry-page {
+      padding: var(--ms-r5) var(--ms-r4) var(--ms-r8);
+    }
+    .entry-title {
+      font-size: clamp(2rem, 9vw, 3rem);
+    }
+    .entry-oneliner {
+      font-size: 1.0625rem;
+    }
+    .block-spot {
+      padding: var(--ms-r4) var(--ms-r5);
+    }
+    .block-thought {
+      padding: var(--ms-r5);
+    }
+    .related-grid {
+      grid-template-columns: 1fr;
+    }
+    .share-row {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--ms-r3);
+    }
+  }
+</style>
