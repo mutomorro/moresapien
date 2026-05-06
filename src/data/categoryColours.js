@@ -12,7 +12,7 @@ export const categoryColours = {
   'Rhetorical Device':        '#8B5CF6',
   'Mental Model':             '#B54A2A',
   'Systems Thinking':         '#7A8B3A',
-  'Political Theory':         '#2A8A8A',
+  'Political Theory':         '#2F6B3A',
   'Manipulation Tactic':      '#C44A8A',
   'Psychological Phenomenon': '#7A3A5E',
   'Psychological Defence':    '#26467D',

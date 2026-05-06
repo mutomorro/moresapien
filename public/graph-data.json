@@ -243,6 +243,23 @@
       "connections": 4
     },
     {
+      "slug": "capitalist-realism",
+      "title": "Capitalist Realism",
+      "category": "Cultural Influence",
+      "colour": "#1A7A7A",
+      "oneLiner": "The pervasive sense that capitalism is the only viable system - not because it's the best, but because alternatives have become unthinkable.",
+      "tags": [
+        "power",
+        "politics",
+        "culture",
+        "ideology",
+        "critical thinking",
+        "media literacy",
+        "social dynamics"
+      ],
+      "connections": 11
+    },
+    {
       "slug": "circle-of-competence",
       "title": "Circle of Competence",
       "category": "Mental Model",
@@ -288,6 +305,23 @@
       "connections": 24
     },
     {
+      "slug": "commodification",
+      "title": "Commodification",
+      "category": "Cultural Influence",
+      "colour": "#1A7A7A",
+      "oneLiner": "The process of turning things that aren't naturally products - ideas, identity, relationships, rest - into things that can be bought and sold.",
+      "tags": [
+        "culture",
+        "power",
+        "critical thinking",
+        "social dynamics",
+        "media literacy",
+        "identity",
+        "everyday life"
+      ],
+      "connections": 9
+    },
+    {
       "slug": "compartmentalisation",
       "title": "Compartmentalisation",
       "category": "Psychological Defence",
@@ -316,6 +350,23 @@
         "critical thinking"
       ],
       "connections": 4
+    },
+    {
+      "slug": "conceptual-gentrification",
+      "title": "Conceptual Gentrification",
+      "category": "Cultural Influence",
+      "colour": "#1A7A7A",
+      "oneLiner": "When ideas are stripped of their challenging, uncomfortable, or radical parts and repackaged for comfortable mainstream consumption.",
+      "tags": [
+        "culture",
+        "critical thinking",
+        "media literacy",
+        "power",
+        "social dynamics",
+        "education",
+        "everyday life"
+      ],
+      "connections": 8
     },
     {
       "slug": "concern-trolling",
@@ -349,6 +400,24 @@
         "science"
       ],
       "connections": 32
+    },
+    {
+      "slug": "cultural-hegemony",
+      "title": "Cultural Hegemony",
+      "category": "Cultural Influence",
+      "colour": "#1A7A7A",
+      "oneLiner": "When the dominant group's ideas become everyone's 'common sense' - accepted as natural rather than constructed.",
+      "tags": [
+        "power",
+        "politics",
+        "media literacy",
+        "critical thinking",
+        "culture",
+        "ideology",
+        "social dynamics",
+        "education"
+      ],
+      "connections": 12
     },
     {
       "slug": "darvo",
@@ -541,7 +610,7 @@
         "everyday life",
         "decision-making"
       ],
-      "connections": 8
+      "connections": 10
     },
     {
       "slug": "firehose-of-falsehood",
@@ -590,7 +659,7 @@
         "decision-making",
         "critical thinking"
       ],
-      "connections": 29
+      "connections": 36
     },
     {
       "slug": "fundamental-attribution-error",
@@ -719,7 +788,7 @@
         "news media",
         "advertising"
       ],
-      "connections": 14
+      "connections": 16
     },
     {
       "slug": "in-group-out-group-bias",
@@ -834,7 +903,7 @@
       "slug": "manufactured-consent",
       "title": "Manufactured Consent",
       "category": "Political Theory",
-      "colour": "#2A8A8A",
+      "colour": "#2F6B3A",
       "oneLiner": "When media systems produce public agreement with elite interests - not through censorship, but through structure.",
       "tags": [
         "politics",
@@ -844,7 +913,7 @@
         "news media",
         "social dynamics"
       ],
-      "connections": 7
+      "connections": 10
     },
     {
       "slug": "map-is-not-the-territory",
@@ -913,7 +982,7 @@
       "slug": "moral-panic",
       "title": "Moral Panic",
       "category": "Political Theory",
-      "colour": "#2A8A8A",
+      "colour": "#2F6B3A",
       "oneLiner": "Intense public fear about a perceived threat, amplified by media, disproportionate to the actual danger.",
       "tags": [
         "politics",
@@ -986,7 +1055,7 @@
         "debate",
         "everyday life"
       ],
-      "connections": 10
+      "connections": 11
     },
     {
       "slug": "negativity-bias",
@@ -1022,6 +1091,23 @@
       "connections": 18
     },
     {
+      "slug": "normalisation",
+      "title": "Normalisation",
+      "category": "Cultural Influence",
+      "colour": "#1A7A7A",
+      "oneLiner": "The gradual process by which the previously unthinkable becomes acceptable, then expected, then invisible - the slow drift of what a culture treats as normal.",
+      "tags": [
+        "critical thinking",
+        "media literacy",
+        "politics",
+        "culture",
+        "social dynamics",
+        "everyday life",
+        "power"
+      ],
+      "connections": 8
+    },
+    {
       "slug": "occams-razor",
       "title": "Occam's Razor",
       "category": "Mental Model",
@@ -1054,7 +1140,7 @@
       "slug": "overton-window",
       "title": "Overton Window",
       "category": "Political Theory",
-      "colour": "#2A8A8A",
+      "colour": "#2F6B3A",
       "oneLiner": "The range of ideas the public considers acceptable at any given time - and how that range can be deliberately shifted.",
       "tags": [
         "politics",
@@ -1063,13 +1149,13 @@
         "media literacy",
         "social dynamics"
       ],
-      "connections": 10
+      "connections": 13
     },
     {
       "slug": "paradox-of-tolerance",
       "title": "Paradox of Tolerance",
       "category": "Political Theory",
-      "colour": "#2A8A8A",
+      "colour": "#2F6B3A",
       "oneLiner": "A tolerant society that tolerates intolerance will eventually be destroyed by it.",
       "tags": [
         "politics",
@@ -1156,6 +1242,23 @@
         "critical thinking",
         "everyday life",
         "decision-making"
+      ],
+      "connections": 8
+    },
+    {
+      "slug": "recuperation",
+      "title": "Recuperation",
+      "category": "Cultural Influence",
+      "colour": "#1A7A7A",
+      "oneLiner": "When radical ideas are absorbed by the system they opposed and sold back as products - neutralising dissent by turning it into commerce.",
+      "tags": [
+        "culture",
+        "power",
+        "politics",
+        "critical thinking",
+        "media literacy",
+        "social dynamics",
+        "identity"
       ],
       "connections": 8
     },
@@ -1266,7 +1369,7 @@
         "everyday life",
         "decision-making"
       ],
-      "connections": 5
+      "connections": 9
     },
     {
       "slug": "source-laundering",
@@ -1365,6 +1468,23 @@
         "critical thinking"
       ],
       "connections": 7
+    },
+    {
+      "slug": "the-attention-economy",
+      "title": "The Attention Economy",
+      "category": "Cultural Influence",
+      "colour": "#1A7A7A",
+      "oneLiner": "A system in which human attention is treated as a scarce resource to be harvested, bought, sold, and competed for - reshaping culture around whatever captures it.",
+      "tags": [
+        "social media",
+        "culture",
+        "critical thinking",
+        "media literacy",
+        "everyday life",
+        "power",
+        "social dynamics"
+      ],
+      "connections": 6
     },
     {
       "slug": "thought-terminating-cliche",
@@ -2067,6 +2187,70 @@
       ]
     },
     {
+      "source": "capitalist-realism",
+      "target": "cultural-hegemony",
+      "notes": [
+        {
+          "from": "capitalist-realism",
+          "text": "Capitalist realism is the current dominant form of cultural hegemony - the specific way power maintains itself as 'common sense' in market-driven societies"
+        }
+      ]
+    },
+    {
+      "source": "capitalist-realism",
+      "target": "overton-window",
+      "notes": [
+        {
+          "from": "capitalist-realism",
+          "text": "Capitalist realism defines the Overton window's deepest boundary - the point beyond which ideas aren't just unpopular but genuinely unthinkable"
+        }
+      ]
+    },
+    {
+      "source": "capitalist-realism",
+      "target": "manufactured-consent",
+      "notes": [
+        {
+          "from": "capitalist-realism",
+          "text": "Manufactured consent describes the media mechanisms that help maintain capitalist realism - not through censorship but through the boundaries of 'reasonable' debate"
+        }
+      ]
+    },
+    {
+      "source": "capitalist-realism",
+      "target": "framing-effect",
+      "notes": [
+        {
+          "from": "capitalist-realism",
+          "text": "Capitalist realism operates as a master frame - it determines the terms in which problems and solutions are even discussed"
+        }
+      ]
+    },
+    {
+      "source": "capitalist-realism",
+      "target": "feedback-loops",
+      "notes": [
+        {
+          "from": "capitalist-realism",
+          "text": "Capitalist realism is maintained by reinforcing feedback loops - the system produces the culture that produces the people who reproduce the system"
+        }
+      ]
+    },
+    {
+      "source": "capitalist-realism",
+      "target": "normalisation",
+      "notes": [
+        {
+          "from": "capitalist-realism",
+          "text": "Normalisation is the process through which capitalist realism maintains itself - each generation inherits the assumption rather than choosing it"
+        },
+        {
+          "from": "normalisation",
+          "text": "Capitalist realism is the end state of a normalisation process so complete that the system feels like nature rather than a human construction"
+        }
+      ]
+    },
+    {
       "source": "circle-of-competence",
       "target": "dunning-kruger-effect",
       "notes": [
@@ -2181,6 +2365,74 @@
       ]
     },
     {
+      "source": "capitalist-realism",
+      "target": "commodification",
+      "notes": [
+        {
+          "from": "commodification",
+          "text": "Capitalist realism creates the conditions under which commodification feels natural - if the market is the only real system, then everything must eventually become a market product"
+        }
+      ]
+    },
+    {
+      "source": "commodification",
+      "target": "cultural-hegemony",
+      "notes": [
+        {
+          "from": "commodification",
+          "text": "Commodification is one of the key mechanisms through which cultural hegemony maintains itself - by making market logic feel like the only logic"
+        }
+      ]
+    },
+    {
+      "source": "commodification",
+      "target": "recuperation",
+      "notes": [
+        {
+          "from": "commodification",
+          "text": "Recuperation is what happens when commodification targets dissent itself - rebellion becomes a product, protest becomes a brand"
+        },
+        {
+          "from": "recuperation",
+          "text": "Recuperation is a specific form of commodification - the commodification of dissent, where opposition itself becomes the product"
+        }
+      ]
+    },
+    {
+      "source": "commodification",
+      "target": "conceptual-gentrification",
+      "notes": [
+        {
+          "from": "commodification",
+          "text": "Conceptual gentrification is the commodification of ideas specifically - stripping concepts of their radical edge and repackaging them for the market"
+        },
+        {
+          "from": "conceptual-gentrification",
+          "text": "Conceptual gentrification is a specific form of commodification - the commodification of ideas, where intellectual challenge is converted into consumable content"
+        }
+      ]
+    },
+    {
+      "source": "commodification",
+      "target": "framing-effect",
+      "notes": [
+        {
+          "from": "commodification",
+          "text": "Commodification works partly through framing - redefining experiences in market terms changes how we value them"
+        }
+      ]
+    },
+    {
+      "source": "commodification",
+      "target": "social-proof",
+      "notes": [
+        {
+          "from": "commodification",
+          "text": "Social proof accelerates commodification - when everyone treats something as a product, treating it as anything else feels naive"
+        }
+      ]
+    },
+    {
       "source": "cognitive-dissonance",
       "target": "compartmentalisation",
       "notes": [
@@ -2261,6 +2513,60 @@
       ]
     },
     {
+      "source": "conceptual-gentrification",
+      "target": "recuperation",
+      "notes": [
+        {
+          "from": "conceptual-gentrification",
+          "text": "Recuperation absorbs radical movements as products; conceptual gentrification absorbs radical ideas as comfortable content - two faces of the same mechanism"
+        },
+        {
+          "from": "recuperation",
+          "text": "Conceptual gentrification is recuperation applied to ideas and frameworks - stripping them of their radical edge and repackaging them for comfortable consumption"
+        }
+      ]
+    },
+    {
+      "source": "conceptual-gentrification",
+      "target": "framing-effect",
+      "notes": [
+        {
+          "from": "conceptual-gentrification",
+          "text": "Conceptual gentrification works by reframing ideas - shifting the frame from challenging to comfortable while keeping the name intact"
+        }
+      ]
+    },
+    {
+      "source": "capitalist-realism",
+      "target": "conceptual-gentrification",
+      "notes": [
+        {
+          "from": "conceptual-gentrification",
+          "text": "Capitalist realism drives conceptual gentrification by ensuring that only market-compatible versions of ideas survive mainstream circulation"
+        }
+      ]
+    },
+    {
+      "source": "conceptual-gentrification",
+      "target": "cultural-hegemony",
+      "notes": [
+        {
+          "from": "conceptual-gentrification",
+          "text": "Conceptual gentrification is one way cultural hegemony maintains itself - by allowing challenging ideas to circulate only in defanged form"
+        }
+      ]
+    },
+    {
+      "source": "conceptual-gentrification",
+      "target": "illusory-truth-effect",
+      "notes": [
+        {
+          "from": "conceptual-gentrification",
+          "text": "The gentrified version of an idea spreads so widely that it becomes 'the' version - repetition replaces the original through sheer familiarity"
+        }
+      ]
+    },
+    {
       "source": "concern-trolling",
       "target": "sealioning",
       "notes": [
@@ -2325,6 +2631,70 @@
         {
           "from": "illusory-truth-effect",
           "text": "Confirmation bias primes us to accept repeated claims that align with existing beliefs"
+        }
+      ]
+    },
+    {
+      "source": "cultural-hegemony",
+      "target": "manufactured-consent",
+      "notes": [
+        {
+          "from": "cultural-hegemony",
+          "text": "Chomsky's model describes a specific mechanism through which hegemony operates - media as a system that produces consent for the status quo"
+        }
+      ]
+    },
+    {
+      "source": "cultural-hegemony",
+      "target": "framing-effect",
+      "notes": [
+        {
+          "from": "cultural-hegemony",
+          "text": "Hegemony works partly through framing - determining not just what people think about, but the terms in which they think about it"
+        }
+      ]
+    },
+    {
+      "source": "cultural-hegemony",
+      "target": "overton-window",
+      "notes": [
+        {
+          "from": "cultural-hegemony",
+          "text": "The Overton window is hegemony made visible - the boundaries of 'acceptable' opinion are set by whoever holds cultural power"
+        }
+      ]
+    },
+    {
+      "source": "cultural-hegemony",
+      "target": "social-proof",
+      "notes": [
+        {
+          "from": "cultural-hegemony",
+          "text": "Hegemonic ideas spread partly through social proof - when everyone around you accepts something, it feels true"
+        }
+      ]
+    },
+    {
+      "source": "cultural-hegemony",
+      "target": "naive-realism",
+      "notes": [
+        {
+          "from": "cultural-hegemony",
+          "text": "Naive realism is what hegemony feels like from the inside - you're not following an ideology, you're just seeing the world as it is"
+        }
+      ]
+    },
+    {
+      "source": "cultural-hegemony",
+      "target": "normalisation",
+      "notes": [
+        {
+          "from": "cultural-hegemony",
+          "text": "Normalisation is hegemony's engine - the slow process by which constructed ideas come to feel natural and inevitable"
+        },
+        {
+          "from": "normalisation",
+          "text": "Normalisation is the engine of cultural hegemony - it's the process by which the dominant group's ideas stop being seen as ideas at all and become 'just how things are'"
         }
       ]
     },
@@ -3701,6 +4071,46 @@
       "target": "normalcy-bias"
     },
     {
+      "source": "normalisation",
+      "target": "overton-window",
+      "notes": [
+        {
+          "from": "normalisation",
+          "text": "The Overton window moves through normalisation - each small shift in what's acceptable resets the boundaries of mainstream debate"
+        }
+      ]
+    },
+    {
+      "source": "illusory-truth-effect",
+      "target": "normalisation",
+      "notes": [
+        {
+          "from": "normalisation",
+          "text": "The illusory truth effect is normalisation's psychological mechanism - the more you hear something, the more normal it feels, regardless of whether it's true"
+        }
+      ]
+    },
+    {
+      "source": "normalisation",
+      "target": "social-proof",
+      "notes": [
+        {
+          "from": "normalisation",
+          "text": "Social proof accelerates normalisation - when everyone around you accepts something, your threshold for accepting it drops"
+        }
+      ]
+    },
+    {
+      "source": "framing-effect",
+      "target": "normalisation",
+      "notes": [
+        {
+          "from": "normalisation",
+          "text": "Framing and normalisation work together - how something is framed determines whether it registers as alarming or ordinary"
+        }
+      ]
+    },
+    {
       "source": "confirmation-bias",
       "target": "occams-razor",
       "notes": [
@@ -3941,6 +4351,46 @@
         {
           "from": "rationalisation",
           "text": "Confirmation bias provides the raw material; rationalisation weaves it into a convincing narrative."
+        }
+      ]
+    },
+    {
+      "source": "capitalist-realism",
+      "target": "recuperation",
+      "notes": [
+        {
+          "from": "recuperation",
+          "text": "Recuperation is one of the key mechanisms that maintains capitalist realism - by absorbing every critique, the system demonstrates that nothing exists outside it"
+        }
+      ]
+    },
+    {
+      "source": "cultural-hegemony",
+      "target": "recuperation",
+      "notes": [
+        {
+          "from": "recuperation",
+          "text": "Recuperation is how cultural hegemony renews itself - by digesting challenges rather than fighting them, the dominant culture stays dominant"
+        }
+      ]
+    },
+    {
+      "source": "manufactured-consent",
+      "target": "recuperation",
+      "notes": [
+        {
+          "from": "recuperation",
+          "text": "While manufactured consent manages dissent through media filters, recuperation manages it by converting dissent into a consumer experience"
+        }
+      ]
+    },
+    {
+      "source": "framing-effect",
+      "target": "recuperation",
+      "notes": [
+        {
+          "from": "recuperation",
+          "text": "Recuperation works by reframing radical ideas - shifting them from a threat to the system into a product of the system"
         }
       ]
     },
@@ -4387,6 +4837,66 @@
       ]
     },
     {
+      "source": "commodification",
+      "target": "the-attention-economy",
+      "notes": [
+        {
+          "from": "the-attention-economy",
+          "text": "The attention economy is commodification applied to human consciousness itself - your focus, curiosity, and emotional responses treated as raw material"
+        }
+      ]
+    },
+    {
+      "source": "feedback-loops",
+      "target": "the-attention-economy",
+      "notes": [
+        {
+          "from": "the-attention-economy",
+          "text": "The attention economy runs on feedback loops - platforms learn what captures you and serve more of it, tightening the cycle"
+        }
+      ]
+    },
+    {
+      "source": "social-proof",
+      "target": "the-attention-economy",
+      "notes": [
+        {
+          "from": "the-attention-economy",
+          "text": "Social proof is weaponised in the attention economy - likes, shares, and follower counts create the impression that what's popular is what's important"
+        }
+      ]
+    },
+    {
+      "source": "framing-effect",
+      "target": "the-attention-economy",
+      "notes": [
+        {
+          "from": "the-attention-economy",
+          "text": "The attention economy shapes framing at scale - what gets attention determines what gets discussed, which determines how issues are understood"
+        }
+      ]
+    },
+    {
+      "source": "capitalist-realism",
+      "target": "the-attention-economy",
+      "notes": [
+        {
+          "from": "the-attention-economy",
+          "text": "The attention economy feels inevitable - as though there's no alternative to the current model of ad-funded, engagement-maximising platforms"
+        }
+      ]
+    },
+    {
+      "source": "cultural-hegemony",
+      "target": "the-attention-economy",
+      "notes": [
+        {
+          "from": "the-attention-economy",
+          "text": "The attention economy is a powerful vehicle for cultural hegemony - the ideas that spread are the ideas the algorithm rewards, not necessarily the ideas worth spreading"
+        }
+      ]
+    },
+    {
       "source": "framing-effect",
       "target": "thought-terminating-cliche",
       "notes": [
@@ -4804,19 +5314,21 @@
     "Rhetorical Device": "#8B5CF6",
     "Mental Model": "#B54A2A",
     "Systems Thinking": "#7A8B3A",
-    "Political Theory": "#2A8A8A",
+    "Political Theory": "#2F6B3A",
     "Manipulation Tactic": "#C44A8A",
     "Psychological Phenomenon": "#7A3A5E",
-    "Psychological Defence": "#26467D"
+    "Psychological Defence": "#26467D",
+    "Cultural Influence": "#1A7A7A"
   },
   "meta": {
-    "totalEntries": 95,
-    "totalConnections": 339,
+    "totalEntries": 102,
+    "totalConnections": 376,
     "totalCollections": 5,
     "categoryDistribution": {
       "Logical Fallacy": 15,
       "Cognitive Bias": 20,
       "Psychological Phenomenon": 18,
+      "Cultural Influence": 7,
       "Mental Model": 11,
       "Psychological Defence": 5,
       "Manipulation Tactic": 11,
@@ -4824,6 +5336,6 @@
       "Rhetorical Device": 7,
       "Political Theory": 4
     },
-    "buildTimestamp": "2026-05-06T15:20:07.789Z"
+    "buildTimestamp": "2026-05-06T16:57:17.046Z"
   }
 }

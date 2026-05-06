@@ -17,6 +17,7 @@ export const categoryColorMap: Record<string, string> = {
   'Systems Thinking':          'var(--ms-cat-systems)',
   'Mental Model':              'var(--ms-cat-mental-model)',
   'Political Theory':          'var(--ms-cat-political-theory)',
+  'Cultural Influence':        'var(--ms-cat-cultural-influence)',
 };
 
 export const categoryColorHexMap: Record<string, string> = {
@@ -28,7 +29,8 @@ export const categoryColorHexMap: Record<string, string> = {
   'Rhetorical Device':         '#8B5CF6',
   'Systems Thinking':          '#7A8B3A',
   'Mental Model':              '#B54A2A',
-  'Political Theory':          '#2A8A8A',
+  'Political Theory':          '#2F6B3A',
+  'Cultural Influence':        '#1A7A7A',
 };
 
 export function getCategoryColor(category: string): string {
@@ -51,6 +53,7 @@ export const CATEGORIES = [
   'Systems Thinking',
   'Mental Model',
   'Political Theory',
+  'Cultural Influence',
 ] as const;
 
 export type Category = typeof CATEGORIES[number];
