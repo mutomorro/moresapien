@@ -1,166 +1,148 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
 import Nav from '../components/Nav.astro';
+import Asterisk from '../components/Asterisk.astro';
 ---
+<BaseLayout
+  title="About — Moresapien"
+  description="About Moresapien — a free knowledge base helping people understand the mental tricks we play on ourselves, and the ones that get played on us."
+  canonical="https://moresapien.org/about/"
+>
+  <Nav currentPage="about" />
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About - Moresapien</title>
-    <meta name="description" content="About Moresapien - a free knowledge base helping people understand the mental tricks we play on ourselves, and the ones that get played on us." />
-    <link rel="canonical" href="https://moresapien.org/about/" />
+  <main id="main" class="about-page">
+    <article class="about">
+      <header class="about-header">
+        <p class="eyebrow">About</p>
+        <h1 class="about-title">
+          <span>Know thyself</span>
+          <span class="title-asterisk"><Asterisk size={28} /></span>
+        </h1>
+      </header>
 
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="About - Moresapien" />
-    <meta property="og:description" content="About Moresapien - a free knowledge base helping people understand the mental tricks we play on ourselves, and the ones that get played on us." />
-    <meta property="og:url" content="https://moresapien.org/about/" />
-    <meta property="og:site_name" content="Moresapien" />
+      <div class="about-body">
+        <p class="lede">
+          Moresapien is a free, open knowledge base helping people of all ages understand the mental tricks we play on ourselves — and the ones that get played on us.
+        </p>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Nunito:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-
-  <body>
-    <Nav currentPage="about" />
-    <div class="page-wrapper">
-      <article class="about">
-        <header class="about-header">
-          <h1 class="about-title">About Moresapien</h1>
-        </header>
-
-        <div class="about-body">
-          <p>
-            Moresapien is a free, open knowledge base helping people of all ages understand the mental tricks we play on ourselves - and the ones that get played on us.
-          </p>
-
-          <p>
-            Rooted in the ancient maxim <em>gnothi seauton</em> - "know thyself" - the project exists to make concepts from psychology, logic, rhetoric, and systems thinking genuinely accessible to everyone from teenagers to retirees. Not pseudo-intellectual. Not academic. For everyone.
-          </p>
-
-          <h2>Why it exists</h2>
-
-          <p>
-            In a world of algorithmic feeds, political spin, and information overload, understanding how our own minds work isn't a luxury - it's a survival skill. Every cognitive bias, logical fallacy, and manipulation tactic on this site is something that affects real people making real decisions every single day.
-          </p>
-
-          <p>
-            Moresapien's ambition is to become a free resource that schools and colleges can use to teach critical thinking, media literacy, and misinformation awareness. No paywalls, no ads, no data harvesting. Just clear, honest explanations of how thinking works.
-          </p>
-
-          <h2>How it works</h2>
-
-          <p>
-            Every concept on the site follows the same structure: what it means in plain language, how it shows up in the real world, how to spot it, and a thought worth holding onto. Concepts don't exist in isolation - they link to each other, forming a web of connections you can explore on the <a href="/connections/">connections map</a>.
-          </p>
-
-          <h2>Get in touch</h2>
-
-          <p>
-            Moresapien is built and maintained by James at <a href="https://mutomorro.com" target="_blank" rel="noopener">Mutomorro</a>. If you'd like to get in touch, suggest a concept, or talk about using Moresapien in an educational setting, you can find the project on <a href="https://bsky.app/profile/moresapien.bsky.social" target="_blank" rel="noopener">Bluesky</a>.
-          </p>
-        </div>
-      </article>
-
-      <div class="site-footer">
         <p>
-          <a href="/">Moresapien</a> - Understanding ourselves, one idea at a time.
+          Rooted in the ancient maxim <em>gnothi seauton</em> — <em>know thyself</em> — the project exists to make concepts from psychology, logic, rhetoric, and systems thinking genuinely accessible to everyone from teenagers to retirees. Not pseudo-intellectual. Not academic. For everyone.
+        </p>
+
+        <h2>Why it exists</h2>
+
+        <p>
+          In a world of algorithmic feeds, political spin, and information overload, understanding how our own minds work isn't a luxury — it's a survival skill. Every cognitive bias, logical fallacy, and manipulation tactic on this site is something that affects real people making real decisions every single day.
+        </p>
+
+        <p>
+          Moresapien's ambition is to become a free resource that schools and colleges can use to teach critical thinking, media literacy, and misinformation awareness. No paywalls, no ads, no data harvesting. Just clear, honest explanations of how thinking works.
+        </p>
+
+        <h2>How it works</h2>
+
+        <p>
+          Every concept on the site follows the same structure: what it means in plain language, how it shows up in the real world, how to spot it, and a thought worth holding onto. Concepts don't exist in isolation — they link to each other, forming a web you can explore on the <a href="/connections/">connections map</a>.
+        </p>
+
+        <h2>Get in touch</h2>
+
+        <p>
+          Moresapien is built and maintained by James at <a href="https://mutomorro.com" target="_blank" rel="noopener">Mutomorro</a>. If you'd like to suggest a concept or talk about using Moresapien in an educational setting, find the project on <a href="https://bsky.app/profile/moresapien.bsky.social" target="_blank" rel="noopener">Bluesky</a>.
         </p>
       </div>
-    </div>
+    </article>
+  </main>
+</BaseLayout>
 
-    <style>
-      *, *::before, *::after {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
+<style>
+  .about-page {
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: var(--ms-r7) var(--ms-r5) var(--ms-r9);
+  }
 
-      body {
-        font-family: 'Nunito', sans-serif;
-        background: #faf8f5;
-        color: #3a3530;
-        line-height: 1.7;
-        -webkit-font-smoothing: antialiased;
-      }
+  .about-header {
+    margin-bottom: var(--ms-r7);
+    padding-bottom: var(--ms-r6);
+    border-bottom: 1px solid var(--ms-rule);
+  }
 
-      .page-wrapper {
-        max-width: 42rem;
-        margin: 0 auto;
-        padding: 2rem 1.5rem 4rem;
-      }
+  .eyebrow {
+    font-family: var(--ms-font-mono);
+    font-size: var(--ms-meta);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ms-coral);
+    margin-bottom: var(--ms-r3);
+  }
 
-      .about-header {
-        margin-bottom: 2.5rem;
-        padding-bottom: 2rem;
-        border-bottom: 1px solid #e8e0d8;
-      }
+  .about-title {
+    font-family: var(--ms-font-display);
+    font-size: var(--ms-h1);
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    line-height: 0.95;
+    color: var(--ms-ink);
+    display: flex;
+    align-items: baseline;
+    gap: var(--ms-r2);
+    flex-wrap: wrap;
+  }
+  .title-asterisk {
+    display: inline-flex;
+    align-self: baseline;
+    transform: translateY(-0.55em);
+  }
 
-      .about-title {
-        font-family: 'Lora', serif;
-        font-size: clamp(2rem, 5vw, 2.75rem);
-        font-weight: 700;
-        color: #2a2520;
-        line-height: 1.15;
-      }
+  .about-body {
+    font-family: var(--ms-font-body);
+    color: var(--ms-ink);
+  }
 
-      .about-body p {
-        margin-bottom: 1rem;
-        font-size: 1.05rem;
-        line-height: 1.8;
-      }
+  .about-body p {
+    font-size: var(--ms-body);
+    line-height: 1.65;
+    margin-bottom: var(--ms-r4);
+  }
 
-      .about-body h2 {
-        font-family: 'Lora', serif;
-        font-size: 1.375rem;
-        font-weight: 600;
-        color: #2a2520;
-        margin-top: 2.5rem;
-        margin-bottom: 1rem;
-      }
+  .lede {
+    font-size: 1.25rem;
+    line-height: 1.55;
+    color: var(--ms-ink);
+    margin-bottom: var(--ms-r6);
+  }
 
-      .about-body a {
-        color: #C4622D;
-        text-decoration: none;
-        border-bottom: 1px solid rgba(196, 98, 45, 0.3);
-        transition: border-color 0.2s;
-      }
+  .about-body h2 {
+    font-family: var(--ms-font-display);
+    font-size: var(--ms-h3);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: var(--ms-ink);
+    margin: var(--ms-r7) 0 var(--ms-r4);
+  }
 
-      .about-body a:hover {
-        border-color: #C4622D;
-      }
+  .about-body em {
+    font-style: italic;
+    color: var(--ms-coral);
+  }
 
-      .about-body em {
-        font-style: italic;
-      }
+  .about-body a {
+    color: var(--ms-ink);
+    border-bottom: 1px solid var(--ms-coral);
+    transition: color 0.15s ease;
+  }
 
-      .site-footer {
-        margin-top: 4rem;
-        padding-top: 2rem;
-        border-top: 1px solid #e8e0d8;
-        text-align: center;
-        font-size: 0.875rem;
-        color: #a09888;
-      }
+  .about-body a:hover {
+    color: var(--ms-coral);
+  }
 
-      .site-footer a {
-        color: #6a6058;
-        text-decoration: none;
-        font-weight: 600;
-      }
-
-      .site-footer a:hover {
-        color: #C4622D;
-      }
-
-      @media (max-width: 640px) {
-        .page-wrapper {
-          padding: 1.5rem 1rem 3rem;
-        }
-      }
-    </style>
-  </body>
-</html>
+  @media (max-width: 640px) {
+    .about-page {
+      padding: var(--ms-r5) var(--ms-r4) var(--ms-r8);
+    }
+    .lede {
+      font-size: 1.0625rem;
+    }
+  }
+</style>
