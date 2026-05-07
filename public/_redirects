@@ -1,3 +1,7 @@
+# PostHog analytics proxy (ad-blocker bypass)
+/ingest/static/*  https://eu-assets.i.posthog.com/static/:splat  200
+/ingest/*         https://eu.i.posthog.com/:splat  200
+
 # ──────────────────────────────────────────────
 # Moresapien -- URL Redirects
 # Old WordPress URLs → New Astro URLs
