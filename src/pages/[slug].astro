@@ -132,8 +132,7 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
         <header class="entry-header">
           <p class="eyebrow">{category}</p>
           <h1 class="entry-title">
-            <span>{title}</span>
-            <span class="title-asterisk"><Asterisk size={36} color="var(--page-accent)" /></span>
+            {title}<span class="title-asterisk">{' '}<Asterisk size={36} color="var(--page-accent)" /></span>
           </h1>
           <p class="entry-oneliner">{oneLiner}</p>
 
@@ -234,8 +233,7 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
                   >
                     <span class="related-eyebrow">{related.category}</span>
                     <span class="related-title">
-                      <span>{related.title}</span>
-                      <span class="related-asterisk"><Asterisk size={11} color="var(--related-accent)" /></span>
+                      {related.title}<span class="related-asterisk">{' '}<Asterisk size={11} color="var(--related-accent)" /></span>
                     </span>
                     <span class="related-oneliner">{related.oneLiner}</span>
                     {related.note && <span class="related-note">{related.note}</span>}
@@ -319,15 +317,11 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
     letter-spacing: -0.025em;
     line-height: 0.95;
     color: var(--ms-ink);
-    display: flex;
-    align-items: baseline;
-    gap: var(--ms-r2);
-    flex-wrap: wrap;
     margin-bottom: var(--ms-r4);
   }
   .title-asterisk {
-    display: inline-flex;
-    align-self: baseline;
+    display: inline-block;
+    white-space: nowrap;
     transform: translateY(-0.55em);
   }
 
@@ -629,13 +623,10 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
     font-weight: 400;
     letter-spacing: -0.02em;
     color: var(--ms-ink);
-    display: flex;
-    align-items: baseline;
-    gap: 4px;
   }
   .related-asterisk {
-    display: inline-flex;
-    align-self: baseline;
+    display: inline-block;
+    white-space: nowrap;
     transform: translateY(-0.55em);
   }
 

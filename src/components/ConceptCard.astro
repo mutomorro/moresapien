@@ -20,8 +20,7 @@ const accent = getCategoryColor(category);
 >
   <span class="ms-card-eyebrow">{category}</span>
   <h2 class="ms-card-title">
-    <span>{title}</span>
-    <span class="ms-card-asterisk"><Asterisk size={14} color={accent} /></span>
+    {title}<span class="ms-card-asterisk">{' '}<Asterisk size={14} color={accent} /></span>
   </h2>
   <p class="ms-card-oneliner">{oneLiner}</p>
 </a>
@@ -64,14 +63,10 @@ const accent = getCategoryColor(category);
     line-height: 1.1;
     letter-spacing: -0.02em;
     color: var(--ms-ink);
-    display: flex;
-    align-items: baseline;
-    gap: 4px;
-    flex-wrap: wrap;
   }
   .ms-card-asterisk {
-    display: inline-flex;
-    align-self: baseline;
+    display: inline-block;
+    white-space: nowrap;
     transform: translateY(-0.55em);
   }
 

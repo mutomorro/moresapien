@@ -51,8 +51,7 @@ const pageTitle = title + ' — Moresapien';
       <header class="collection-header">
         <p class="eyebrow">{type === 'pathway' ? 'Learning pathway' : 'Toolkit'}</p>
         <h1 class="collection-title">
-          <span>{title}</span>
-          <span class="title-asterisk"><Asterisk size={28} /></span>
+          {title}<span class="title-asterisk">{' '}<Asterisk size={28} /></span>
         </h1>
         <p class="collection-audience">{audience}</p>
       </header>
@@ -77,8 +76,7 @@ const pageTitle = title + ' — Moresapien';
                   <div class="pathway-content">
                     <span class="pathway-category">{entry.category}</span>
                     <span class="pathway-title">
-                      <span>{entry.title}</span>
-                      <span class="entry-asterisk"><Asterisk size={11} color="var(--entry-accent)" /></span>
+                      {entry.title}<span class="entry-asterisk">{' '}<Asterisk size={11} color="var(--entry-accent)" /></span>
                     </span>
                     <span class="pathway-oneliner">{entry.oneLiner}</span>
                   </div>
@@ -96,8 +94,7 @@ const pageTitle = title + ' — Moresapien';
               >
                 <span class="toolkit-category">{entry.category}</span>
                 <span class="toolkit-title">
-                  <span>{entry.title}</span>
-                  <span class="entry-asterisk"><Asterisk size={11} color="var(--entry-accent)" /></span>
+                  {entry.title}<span class="entry-asterisk">{' '}<Asterisk size={11} color="var(--entry-accent)" /></span>
                 </span>
                 <span class="toolkit-oneliner">{entry.oneLiner}</span>
               </a>
@@ -156,20 +153,16 @@ const pageTitle = title + ' — Moresapien';
     letter-spacing: -0.025em;
     line-height: 0.95;
     color: var(--ms-ink);
-    display: flex;
-    align-items: baseline;
-    gap: var(--ms-r2);
-    flex-wrap: wrap;
     margin-bottom: var(--ms-r4);
   }
   .title-asterisk {
-    display: inline-flex;
-    align-self: baseline;
+    display: inline-block;
+    white-space: nowrap;
     transform: translateY(-0.55em);
   }
   .entry-asterisk {
-    display: inline-flex;
-    align-self: baseline;
+    display: inline-block;
+    white-space: nowrap;
     transform: translateY(-0.55em);
   }
 
@@ -271,9 +264,6 @@ const pageTitle = title + ' — Moresapien';
     font-weight: 400;
     letter-spacing: -0.02em;
     color: var(--ms-ink);
-    display: flex;
-    align-items: baseline;
-    gap: 4px;
   }
 
   .pathway-oneliner {
@@ -323,9 +313,6 @@ const pageTitle = title + ' — Moresapien';
     font-weight: 400;
     letter-spacing: -0.02em;
     color: var(--ms-ink);
-    display: flex;
-    align-items: baseline;
-    gap: 4px;
   }
 
   .toolkit-oneliner {

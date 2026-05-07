@@ -16,8 +16,7 @@ import Asterisk from '../components/Asterisk.astro';
       <header class="about-header">
         <p class="eyebrow">About</p>
         <h1 class="about-title">
-          <span>Know thyself</span>
-          <span class="title-asterisk"><Asterisk size={28} /></span>
+          Know thyself<span class="title-asterisk">{' '}<Asterisk size={28} /></span>
         </h1>
       </header>
 
@@ -87,14 +86,10 @@ import Asterisk from '../components/Asterisk.astro';
     letter-spacing: -0.025em;
     line-height: 0.95;
     color: var(--ms-ink);
-    display: flex;
-    align-items: baseline;
-    gap: var(--ms-r2);
-    flex-wrap: wrap;
   }
   .title-asterisk {
-    display: inline-flex;
-    align-self: baseline;
+    display: inline-block;
+    white-space: nowrap;
     transform: translateY(-0.55em);
   }
 

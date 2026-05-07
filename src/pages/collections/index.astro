@@ -37,8 +37,7 @@ const collectionsData = collections.map((col) => {
     <header class="collections-header">
       <p class="eyebrow">Curated pathways</p>
       <h1 class="page-title">
-        <span>Collections</span>
-        <span class="title-asterisk"><Asterisk size={28} /></span>
+        Collections<span class="title-asterisk">{' '}<Asterisk size={28} /></span>
       </h1>
       <p class="page-intro">
         Each collection groups related concepts into a journey. Read in order, or browse freely — the connections show themselves either way.
@@ -109,14 +108,10 @@ const collectionsData = collections.map((col) => {
     line-height: 0.95;
     color: var(--ms-ink);
     margin-bottom: var(--ms-r4);
-    display: flex;
-    align-items: baseline;
-    gap: var(--ms-r2);
-    flex-wrap: wrap;
   }
   .title-asterisk {
-    display: inline-flex;
-    align-self: baseline;
+    display: inline-block;
+    white-space: nowrap;
     transform: translateY(-0.55em);
   }
 
