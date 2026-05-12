@@ -1,82 +1,93 @@
 ---
 title: "Ad Hominem"
 oneLiner: "Attacking the person making the argument instead of the argument itself."
-alsoKnownAs: ["personal attack", "attacking the messenger", "playing the man not the ball"]
+alsoKnownAs:
+  - "Personal attack"
+  - "Attacking the messenger"
+  - "Playing the man not the ball"
 category: "Logical Fallacy"
-tags: ["debate", "politics", "critical thinking", "social media", "rhetoric", "manipulation"]
+tags:
+  - "debate"
+  - "politics"
+  - "critical thinking"
+  - "social media"
+  - "rhetoric"
+  - "manipulation"
+  - "bad faith"
 howToSpotIt: "When a response targets who said something rather than what was said, that's ad hominem. The test is simple: would the argument be valid or invalid regardless of who made it? If the person were anonymous, would you still need to address the point?"
 thoughtToHoldOnto: "A broken clock is right twice a day. And a flawed person can make a perfect argument."
+whyItMattersNow: "Online discourse has made the person more visible than the argument. Profile pictures, bios, post histories, and follower counts are all available before anyone reads a word of the actual point being made - and that information shapes how the point gets received."
 relatedConcepts:
   - slug: "red-herring"
-    note: "An ad hominem is a specific type of red herring - it diverts attention from the argument to the arguer."
+    note: "An ad hominem is a specific type of red herring - it diverts attention from the argument to the arguer"
   - slug: "straw-man"
-    note: "Both avoid engaging with the actual argument - straw man distorts it, ad hominem ignores it entirely."
+    note: "Both avoid engaging with the actual argument - straw man distorts it, ad hominem ignores it entirely"
   - slug: "appeal-to-false-authority"
-    note: "The mirror image of ad hominem - instead of dismissing an argument because of who made it, you accept it because of who made it."
+    note: "The mirror image of ad hominem - instead of dismissing an argument because of who made it, you accept it because of who made it"
   - slug: "sealioning"
-    note: "Persistent ad hominem attacks can be used as a form of sealioning - wearing someone down by making the conversation about them rather than the issue."
+    note: "Persistent ad hominem attacks can be used as a form of sealioning - wearing someone down by making the conversation about them rather than the issue"
+  - slug: "tone-policing"
+    note: "A subtler cousin - shifting focus from what someone said to how they said it"
 ---
 
-## What an ad hominem argument means
+## What an ad hominem argument is
 
-An ad hominem argument attacks the character, motives, or identity of the person making a claim rather than engaging with the claim itself. The [Latin phrase](https://en.wikipedia.org/wiki/Ad_hominem) translates as "to the person" - and that's exactly what it does. It redirects attention from the argument to the arguer, as if discrediting the messenger automatically discredits the message.
+An ad hominem argument attacks the character, motives, or identity of the person making a claim rather than engaging with the claim itself. The Latin translates literally as "to the person" - and that's what it does. It redirects attention from the argument to the arguer, as if discrediting the messenger automatically discredits the message.
 
-It's one of the most common logical fallacies in everyday discourse, and one of the hardest to resist - because character *does* sometimes matter. If someone has a track record of dishonesty, that's relevant when assessing their credibility as a source. But credibility and logic are different things. Even the least trustworthy person in the world can present a valid argument. And even the most respected authority can present a flawed one.
+It's one of the most common logical fallacies in everyday discourse, and one of the hardest to resist - because character *does* sometimes matter. If someone has a track record of dishonesty, that's relevant when assessing their credibility as a source. But credibility and logic are different things. Even the least trustworthy person in the world can present a valid argument. And even the most respected authority can present a deeply flawed one.
 
-The fallacy isn't in noticing that someone has flaws. It's in using those flaws as a substitute for engaging with what they've said. There's a crucial difference between "I don't trust this person, so I want to check their evidence carefully" (reasonable) and "This person is untrustworthy, therefore their argument is wrong" (fallacious). The first adjusts your level of scrutiny. The second skips the scrutiny entirely.
+The fallacy isn't in noticing that someone has flaws. It's in using those flaws as a substitute for engaging with what they've said. There's a meaningful difference between "I don't trust this person, so I want to check their evidence carefully" (reasonable) and "This person is untrustworthy, therefore their argument is wrong" (fallacious). The first uses character to calibrate attention. The second uses it to avoid thinking altogether.
 
-## Types of ad hominem argument
+## Types of ad hominem attack
 
-Not all ad hominem attacks look the same. They come in several forms, and some are subtler than others.
+Not all ad hominem arguments look the same. The [philosopher Douglas Walton's work on argumentation](https://en.wikipedia.org/wiki/Ad_hominem) identified several distinct forms, each with its own flavour of misdirection.
 
-### Abusive ad hominem - attacking character directly
+### Abusive ad hominem
 
-This is the most obvious form. Someone's argument is dismissed by attacking their intelligence, their appearance, their background, or their personality. "You failed your exams, so what would you know about education policy?" The person's academic record has no bearing on whether their argument about education is logical - but it feels like it does, and that's what makes it effective.
+The most recognisable type. Someone directly insults their opponent's character, intelligence, appearance, or background as a way of dismissing their argument. "What would you know - you didn't even go to university." "Of course you'd say that, you're an idiot." The argument itself goes unaddressed. The insult stands in for a rebuttal.
 
-### Circumstantial ad hominem - questioning motives
+### Circumstantial ad hominem
 
-This version doesn't attack the person's character but their circumstances. "Of course you'd support that policy - you stand to benefit from it." The implication is that because someone has a vested interest, their argument can be dismissed. But having a motive doesn't make an argument wrong. A doctor who profits from prescribing a treatment might still be right that the treatment works. The argument needs to be evaluated on its own evidence, regardless of who benefits.
+Rather than attacking the person's character, this version attacks their circumstances - their job, their affiliations, their background - as evidence that their argument must be biased. "You're only defending the policy because your company benefits from it." "Easy for you to say when you live in a nice area." The implication is that the person's situation makes their reasoning unreliable. But a biased person can still make a sound argument. The bias is worth noting; using it to dismiss the argument entirely is the fallacy.
 
-This form is especially common in political debate. Questioning a politician's funding sources or personal interests can feel like a devastating rebuttal, but it says nothing about whether their policy proposal is sound.
+### Tu quoque
 
-### Tu quoque - "you do it too"
+Latin for "you too." This is the ad hominem that says: you've done the same thing, so you have no right to criticise. "You can't lecture me about honesty when you lied last year." It's closely related to [whataboutism](/whataboutism/), which broadens the deflection beyond the person to any convenient counter-example. In both cases, the actual argument gets lost in a pivot to someone else's behaviour.
 
-Tu quoque (Latin for "you too") is a form of ad hominem that deflects criticism by pointing out that the critic is guilty of the same thing. "You say I should eat healthier, but I've seen what you had for lunch." This is closely related to [whataboutism](/whataboutism/) - both try to neutralise an argument by shifting attention to the person making it. But even a hypocrite can make a valid point. The quality of an argument doesn't depend on whether the person making it lives up to their own standards.
+### Guilt by association
 
-## Ad hominem arguments in the real world
+Dismissing someone's argument because of who else holds the same position, or who they associate with. "That's the same thing [disliked group] believes, so it must be wrong." The argument is judged not on its logic but on the company it keeps - which tells you nothing about whether it's true or false.
 
-### Ad hominem in political debate
+## Ad hominem in politics and public debate
 
-Political discourse runs on ad hominem. When a politician proposes a policy, the response is rarely a detailed critique of the policy itself. Instead, it's an attack on the politician's record, character, or motives. "Of course they'd say that - look who's funding them." "Easy for them to say from their country estate." The policy might be brilliant or terrible, but neither response helps you figure out which.
+Political discourse runs on ad hominem attacks. When a politician proposes a policy, the response is rarely a detailed critique of the policy itself. Instead, it's an attack on the politician's record, character, or motives. "Of course they'd say that - look who's funding them." "Easy for them to say from their country estate." The policy might be brilliant or terrible, but neither response helps you figure out which.
 
-This is often combined with other fallacies to create a layered attack. An ad hominem can be followed by a [straw man](/straw-man/) - first discredit the person, then misrepresent their argument, and the audience has already stopped listening carefully. It can also function as a [red herring](/red-herring/) - pulling the conversation away from the policy and toward the politician's personal life, where the real argument quietly disappears.
+This connects to what Moresapien describes as a [red herring](/red-herring/) - a deliberate diversion from the point that matters. The ad hominem is a specific type of red herring: instead of changing the subject entirely, it changes the subject to the person. The effect is the same. The argument goes unexamined.
 
-### Ad hominem on social media
+In broadcast media, ad hominem often takes the form of what psychologists call the [fundamental attribution error](/fundamental-attribution-error/) applied to public figures. Rather than engaging with what someone has said, commentators attribute the statement to a character flaw - arrogance, naivety, self-interest - as if that explains and dismisses it in one move.
 
-Online, ad hominem is the default mode of disagreement. Someone posts a well-reasoned thread about economic policy and the replies immediately go to their profile photo, their follower count, their previous posts, their employer. The argument is left untouched while the person is picked apart.
+## Ad hominem attacks online and on social media
 
-Social media incentivises this. A thoughtful rebuttal of someone's argument takes effort and doesn't generate much engagement. A sharp personal attack takes seconds and can go viral. The platforms reward the behaviour that makes discourse worse, which is why ad hominem attacks are so much more common online than in face-to-face conversation.
+Online, ad hominem is the default mode of disagreement. Someone posts a well-reasoned thread about economic policy and the replies immediately target their profile photo, their follower count, their previous posts, their employer. The argument is left untouched while the person is picked apart.
 
-This can also take the form of [tone policing](/tone-policing/) - dismissing someone's argument not because of who they are but because of how they expressed it. "I might take you seriously if you weren't so angry about it." The person's emotional state becomes the reason to ignore their point, which is just ad hominem in a more socially acceptable wrapper.
+Social media's architecture makes this worse. Every argument arrives attached to an identity - a name, a face, a bio, a history of public statements. Before you've even processed someone's point, you've already formed an impression of who they are. That impression shapes whether you engage with what they've said or simply react to who said it.
 
-### Ad hominem in everyday conversations
+The [straw man](/straw-man/) and ad hominem often work as a pair. First, the argument gets distorted into something weaker. Then the person making it gets attacked for holding such a ridiculous view. Neither the original argument nor the original person survives the process intact. It's a one-two combination that shuts down conversation while appearing to participate in it.
 
-In personal arguments, ad hominem is the pivot from "your point is wrong because..." to "you always do this" or "you're just saying that because you're jealous." The moment the conversation shifts from the topic to the person, the disagreement stops being resolved and starts being personal.
+There's a subtler form too - what Moresapien files under [tone policing](/tone-policing/). Rather than attacking who someone is, it attacks how they're communicating. "You'd be more persuasive if you weren't so angry." "I can't take your argument seriously when you're being so emotional." The focus shifts from the substance of what's being said to the manner of its delivery. The argument, once again, goes unaddressed.
 
-This often happens unconsciously. Under pressure, our instinct is to defend ourselves by going on the attack - and the easiest target is the person in front of us, not the abstract point they're making. It's related to the [fundamental attribution error](/fundamental-attribution-error/) - our tendency to explain other people's behaviour in terms of their character rather than their circumstances. We don't just disagree with what they said. We decide that they said it because of who they are.
+## When character is relevant - and when it isn't
 
-## Why ad hominem arguments are so hard to resist
+The trickiest thing about ad hominem is that character genuinely is relevant in some contexts. If a pharmaceutical company publishes a study about its own product, it's reasonable to look at the study with extra scrutiny. If someone has been caught fabricating data before, it's reasonable to want independent verification of their claims.
 
-Ad hominem arguments persist because they exploit a genuine heuristic. In everyday life, the source of information does matter. We trust our doctor more than a stranger on the internet, and for good reason. The problem is that this reasonable shortcut - "consider the source" - gets weaponised into an unreasonable one: "dismiss the argument because of the source."
+The distinction is between using character as a reason to examine an argument more carefully and using it as a reason to dismiss the argument without examination. The first is healthy scepticism. The second is the fallacy. A [study published in the journal *Argumentation*](https://link.springer.com/journal/10503) noted that this distinction is exactly what makes ad hominem so slippery in practice - the line between relevant character assessment and fallacious dismissal isn't always obvious in the moment.
 
-The philosopher [Stephen Toulmin](https://en.wikipedia.org/wiki/Stephen_Toulmin) drew an important distinction in his work on argumentation: the strength of an argument depends on its evidence, its reasoning, and its warrants - not on who presents it. A claim is valid or invalid regardless of the speaker's character. But in practice, our brains don't separate the message from the messenger nearly as cleanly as logic demands.
-
-This is the mirror image of [appeal to false authority](/appeal-to-false-authority/). Where ad hominem says "this person is flawed, so their argument must be wrong," appeal to authority says "this person is impressive, so their argument must be right." Both make the same mistake - evaluating the argument based on who made it rather than what it contains.
+The test that cuts through the ambiguity is simple: if the person were anonymous, would the argument still need addressing? If yes, then the person's identity is a distraction. If you find yourself thinking about who said something rather than whether what they said is true, you've probably crossed the line from scepticism into fallacy.
 
 ## How to respond to an ad hominem attack
 
-When someone attacks you rather than your argument, the temptation is to defend your character. This is usually a trap. The moment you start justifying yourself - your qualifications, your motives, your right to speak on the topic - the original argument has been successfully derailed. That's what the ad hominem was designed to do.
+When someone uses an ad hominem against you, the most effective response is to name the move and redirect. "That's about me, not about the argument. Can we get back to the point?" This works because it makes the diversion visible without escalating into a personal exchange.
 
-The more effective response is to redirect. Name what happened and return to the substance: "That's about me, not about what I said. Let's get back to the point." This doesn't always work, especially in public or online settings where the audience has already been primed to focus on the person. But it's the only response that doesn't reward the tactic.
+The harder discipline is catching yourself doing it. We're all prone to ad hominem, especially when the person making the argument frustrates or threatens us. The moment you notice your response is about the speaker rather than the speech, pause. What did they say? Is it true? That's the only question that matters.
 
-The deeper skill is learning to separate these two questions in your own thinking: "Do I trust this person?" and "Is this argument sound?" They're both worth asking. But they deserve separate answers.
+As with the [straw man](/straw-man/), the real antidote is what Julia Galef calls the scout mindset - an orientation toward finding out what's true rather than defending what you already believe. When you're in scout mode, the identity of the person making a claim is the least interesting thing about it. What matters is the evidence and the reasoning. Everything else is noise.
