@@ -4,6 +4,7 @@ oneLiner: "Misrepresenting someone's argument to make it easier to attack."
 alsoKnownAs:
   - "Straw man fallacy"
   - "Straw man argument"
+  - "Aunt Sally"
 category: "Logical Fallacy"
 tags:
   - "debate"
@@ -12,75 +13,80 @@ tags:
   - "media literacy"
   - "critical thinking"
   - "social media"
-howToSpotIt: "When someone responds to an argument, check whether they're addressing what was actually said or a distorted version of it. If you find yourself thinking 'that's not what they meant,' you're probably looking at a straw man."
+  - "rhetoric"
+howToSpotIt: "When someone responds to an argument, check whether they're addressing what was actually said or a distorted version of it. If you find yourself thinking 'that's not what they meant,' you're probably looking at a straw man. The clearest test: could the original speaker hear the rebuttal and say 'yes, that's a fair representation of my view'? If not, the argument has been quietly swapped out."
 thoughtToHoldOnto: "If someone can only defeat a twisted version of your argument, they haven't defeated your argument at all."
+whyItMattersNow: "In an era of screenshots, quote tweets, and character limits, arguments are routinely stripped of their nuance before being passed around. The straw man has never had better infrastructure."
 relatedConcepts:
   - slug: "false-dilemma"
     note: "Often used together - straw man the opposing view, then present a false choice"
   - slug: "whataboutism"
+    note: "Both deflect rather than engage - whataboutism changes the subject, straw man changes the argument"
   - slug: "motte-and-bailey"
     note: "The motte-and-bailey is a kind of reverse straw man - distorting your own position rather than your opponent's"
+  - slug: "ad-hominem"
+    note: "Both avoid engaging with the actual argument - straw man distorts it, ad hominem ignores it entirely"
   - slug: "gish-gallop"
 ---
 
-## What a straw man argument means
+## What a straw man argument is
 
-A straw man argument is when someone distorts another person's position into something easier to attack, and then attacks the distortion rather than the real argument. The name comes from the idea of a [straw training dummy](https://en.wikipedia.org/wiki/Straw_man) - something built to be knocked down without putting up a fight.
+A straw man argument is when someone distorts another person's position into something weaker or more extreme, and then attacks the distortion instead of engaging with the real argument. The name comes from the image of a straw training dummy - something built specifically to be knocked down easily.
 
-The distortion can be subtle or blatant. Sometimes it's an exaggeration: "You think we should reduce military spending" becomes "You want to leave us defenceless." Sometimes it's an oversimplification: a nuanced position gets reduced to its most extreme possible interpretation. Either way, the person is arguing against something their opponent never said.
+The move has three steps. First, someone makes a genuine argument. Second, their opponent quietly replaces it with a different, flimsier version. Third, the opponent attacks the flimsier version and claims victory. The audience often doesn't notice the substitution, because the response has the shape and rhythm of a real rebuttal. It sounds like engagement. But it isn't - it's a performance of engagement directed at something nobody said.
 
-Straw man arguments are effective because audiences often don't notice the substitution. The response sounds like a rebuttal. It has the shape and rhythm of engaging with the argument. But it's not engaging with the argument - it's engaging with a version that was built to lose.
+What makes the straw man so effective is that it works on both the audience and the person using it. A skilled debater might deploy it deliberately. But many people create straw men without realising it, because they've genuinely misunderstood the other side - or because they've only encountered a caricatured version of the position in the first place.
 
-## How straw man arguments work
+## How the straw man fallacy works
 
-The mechanics of a straw man follow a consistent three-step pattern, whether it happens in a parliamentary debate or a comment thread.
+The distortion can take several forms, and recognising them is the first step to spotting a straw man in the wild.
 
-### Step one - the real argument gets quietly replaced
+### Exaggeration
 
-This is where the work happens, and it's often the part people miss. The original position is restated in a way that changes its meaning - sometimes drastically, sometimes by just a degree or two. The restatement might use [loaded language](/loaded-language/) to make the position sound more extreme than it is, or it might strip away the qualifications and caveats that made the original argument reasonable.
+A moderate position gets inflated into an extreme one. "We should consider reducing military spending" becomes "You want to leave us completely defenceless." "Perhaps we could look at how we teach history" becomes "You want to erase our heritage." The original claim gets stretched until it sounds unreasonable, and then the stretched version is what gets attacked.
 
-A person says: "I think we should look at the evidence on this policy before expanding it." The straw man version becomes: "They don't believe the policy works at all." The shift is small enough to sound plausible, but large enough to change what's being argued.
+### Oversimplification
 
-### Step two - the distorted version gets attacked
+A nuanced position gets reduced to its crudest possible form. Someone argues that social media platforms should take more responsibility for the content they amplify, and the response treats them as if they've called for the abolition of free speech. The complexity vanishes. What remains is a cartoon that's easy to defeat - and that's the point.
 
-Once the substitution is in place, the attacker dismantles the weaker version with confidence. This is usually the most visible part - the forceful rebuttal, the devastating takedown. It looks impressive because it is impressive. Knocking down a straw man is easy. That's the whole point.
+### Selective quoting
 
-### Step three - the audience assumes the real argument has been defeated
+A single phrase gets pulled from a longer argument and treated as if it were the whole thing. This is especially common in media coverage and on social media, where a sentence lifted from context can be made to mean almost anything. The person wasn't wrong about what they quoted - they were wrong about what the argument was.
 
-If the substitution wasn't noticed, the audience walks away thinking the original position has been refuted. The person whose argument was distorted is now in the awkward position of saying "that's not what I said" - which sounds defensive even when it's entirely accurate.
+### Fabrication
 
-This is what makes the straw man so powerful as a rhetorical move. It doesn't just win the exchange. It makes the other person look like they're backtracking.
+Sometimes the substitution isn't subtle at all. Someone simply invents a position their opponent never held and argues against that instead. "My opponent believes we should just let criminals walk free." Did they say that? Almost certainly not. But the fabricated version is more outrageous, more shareable, and more likely to provoke a reaction.
 
-## Straw man arguments in political debate
+## Straw man arguments in politics and media
 
-In politics, straw man arguments are constant. "We should have a conversation about immigration policy" gets reframed as "they want open borders." "We should consider the economic impact of this regulation" becomes "they care more about money than people." The nuance vanishes, replaced by something outrageous enough to attack.
+Political debate runs on straw men. It's one of the most common [logical fallacies](/ad-hominem/) in public discourse, alongside [ad hominem](/ad-hominem/) attacks and [whataboutism](/whataboutism/). The reason is simple: engaging with a nuanced policy position is difficult and boring. Engaging with a caricature is easy and dramatic.
 
-Politicians and commentators use straw men because they work. A nuanced policy position is hard to argue against on television. A caricature of that position is easy to demolish in a soundbite. The audience rarely hears the original position stated fairly - they hear the distorted version, followed by its confident destruction.
+"We should have a conversation about immigration policy" gets reframed as "they want open borders." "We should consider the economic impact of this regulation" becomes "they care more about money than people." Each time, a position that might require careful thought to rebut gets replaced with one that requires only outrage. The philosopher [Aristotle identified this move in his work on rhetoric](https://en.wikipedia.org/wiki/Straw_man) over two thousand years ago, and it hasn't become any less effective since.
 
-This is often combined with other fallacies. A straw man can set up a [false dilemma](/false-dilemma/) - "either you support this policy exactly as written, or you don't care about the problem at all." It can be followed by [whataboutism](/whataboutism/) - deflecting from the real argument entirely. In fast-moving debates, a [gish gallop](/gish-gallop/) can deploy multiple straw men in quick succession, each one too brief to correct before the next one arrives.
+In news media, the straw man often works through [framing](/framing-effect/). A headline might accurately quote a phrase while completely misrepresenting the argument it came from. The reader encounters the distorted version first, forms an opinion, and may never go back to check what was originally said.
 
-### Straw man arguments on social media
+## Straw man arguments on social media
 
-On social media, straw men thrive because of character limits and the incentive structure of engagement. A nuanced position takes 500 words to express. A straw man version takes 20 - and gets more likes.
+Social media has given the straw man its ideal habitat. Character limits compress nuanced positions into fragments. Quote tweets let people reframe someone's words before their audience ever sees the original. Screenshots strip context entirely.
 
-The quote-tweet is the perfect straw man delivery mechanism. Someone shares a carefully worded argument. A reply reframes it into something absurd, adds a withering response, and the reframe goes viral while the original disappears. The person being straw-manned can try to correct the record, but corrections don't travel as far or as fast as outrage.
+The incentive structure makes it worse. A nuanced position takes 500 words to express. A straw man version takes 20 - and gets more likes, more shares, and more engagement. Platforms reward the distortion because outrage performs better than accuracy. The person building the straw man may not even know they're doing it; they may have only ever encountered the caricatured version of the position, passed from account to account like a game of telephone.
 
-This is closely related to how loaded language operates online. Words like "extremist", "apologist", or "denier" can transform a moderate position into a straw man with a single label. The label becomes the argument, and the actual position vanishes behind it. Once the label sticks, nobody goes back to check what the person originally said.
+This connects to what Moresapien calls [loaded language](/loaded-language/) - the words chosen to describe the distorted position carry emotional weight that the original didn't. "Concerned about housing costs" becomes "anti-development." "Questioning a policy" becomes "attacking." The substitution isn't just conceptual; it's linguistic.
 
-### Straw man arguments in everyday conversations
+## The straw man and other fallacies
 
-Straw men aren't limited to politics and media. They show up in workplaces, relationships, and everyday disagreements. "I think we should reconsider the timeline for this project" becomes "You don't think we can deliver." "I'd like us to spend less on eating out" becomes "You never want to do anything fun."
+The straw man rarely works alone. It's often the first move in a sequence that includes other distortions.
 
-In personal relationships, straw men are often unintentional. We hear what we fear rather than what was said. Someone raises a concern and we interpret it as an attack, responding to the version of the argument that feels most threatening rather than the one that was offered. The result is the same - we're arguing against something that was never said - but the intent is different from the deliberate rhetorical move.
+A common pairing is the straw man with a [false dilemma](/false-dilemma/). First, misrepresent the opposing position. Then present a false choice between that distorted version and your own. "Either we accept their reckless plan or we go with common sense." The audience is left choosing between a caricature and a reasonable-sounding alternative - which was the point all along.
 
-It's worth distinguishing this from [ad hominem](/ad-hominem/) attacks, which target the person rather than the argument. A straw man engages with a distorted version of what was said. An ad hominem ignores what was said entirely and goes after the speaker. Both are ways of avoiding the real argument, but they work through different mechanisms.
+The [motte-and-bailey](/motte-and-bailey/) is sometimes described as the straw man's mirror image. Where a straw man distorts someone else's position, a motte-and-bailey distorts your own - making a bold claim and then retreating to a more defensible one when challenged. Both depend on the audience not noticing the switch.
 
-## How to respond to a straw man argument
+It's also worth distinguishing the straw man from [tone policing](/tone-policing/), where the focus shifts from what someone said to how they said it. And from [concern trolling](/concern-trolling/), where the appearance of engaging with an argument masks the fact that the engagement is entirely performative.
 
-The instinct when someone straw-mans your position is to defend the distorted version - to engage with the reframe on its own terms. This is a mistake, because it accepts the substitution. You end up arguing about something you never said.
+## How to counter a straw man argument
 
-The more effective response is to name the move. Calmly restate your original position and point out the difference: "That's not what I said. What I said was..." This forces the conversation back to the real argument. It doesn't always work - especially when the audience has already accepted the distortion - but it's the only response that doesn't reward the tactic.
+When you suspect someone has straw-manned your position, the most effective response is to restate your actual argument clearly and calmly. "That's not what I said. What I said was..." This forces the conversation back to the real position, and it makes the distortion visible.
 
-In writing and structured debate, the philosopher [Daniel Dennett](https://en.wikipedia.org/wiki/Daniel_Dennett) suggested a principle that's the exact opposite of the straw man: before you criticise someone's position, restate it so clearly and fairly that they would say "yes, that's what I mean." He called this building a "steel man" - the strongest possible version of the opposing argument. If you can defeat the steel man, you've earned the win. If you can only defeat the straw man, you haven't defeated anything at all.
+In a public or online setting, it helps to name the move without being combative. "I notice you're responding to a version of my argument I didn't make." This flags the tactic for onlookers without escalating the exchange into a personal conflict.
 
-This habit of [first principles thinking](/first-principles-thinking/) - engaging with what's really being argued rather than a convenient caricature of it - is one of the most valuable skills in critical thinking. It's harder than straw-manning. It's slower, less satisfying, and less likely to go viral. But it's the only way to get at the truth.
+The deeper challenge is recognising when you're building a straw man yourself. We all do it - especially with positions we find frustrating or threatening. The test from psychology researcher [Julia Galef's work on scout mindset](https://juliagalef.com/) is useful here: can you describe the other side's position in terms they would recognise and agree with? If not, you might be arguing against straw.
