@@ -1,0 +1,242 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import ConceptCard from '../../components/ConceptCard.astro';
+import {
+  CATEGORIES,
+  getCategoryColor,
+  getCategoryColorHex,
+  getCategorySlug,
+  getCategoryDescription,
+} from '../../utils/categoryColors';
+
+export async function getStaticPaths() {
+  return CATEGORIES.map((category) => ({
+    params: { category: getCategorySlug(category) },
+    props: { category },
+  }));
+}
+
+const { category } = Astro.props as { category: typeof CATEGORIES[number] };
+
+const allEntries = await getCollection('entries');
+const entries = allEntries
+  .filter((e) => e.data.category === category)
+  .map((entry) => ({
+    slug: entry.id,
+    title: entry.data.title,
+    oneLiner: entry.data.oneLiner,
+    category: entry.data.category,
+  }))
+  .sort((a, b) => a.title.localeCompare(b.title));
+
+const slug = getCategorySlug(category);
+const description = getCategoryDescription(category);
+const colorHex = getCategoryColorHex(category);
+const count = entries.length;
+const canonical = `https://moresapien.org/browse/${slug}/`;
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: `${category} — Moresapien`,
+  description,
+  url: canonical,
+  isPartOf: {
+    '@type': 'WebSite',
+    name: 'Moresapien',
+    url: 'https://moresapien.org/',
+  },
+};
+---
+<BaseLayout
+  title={`${category} — Moresapien`}
+  description={description}
+  canonical={canonical}
+  ogImage="https://moresapien.org/og/home.png"
+>
+  <script
+    is:inline
+    type="application/ld+json"
+    slot="head"
+    set:html={JSON.stringify(structuredData)}
+  />
+
+  <Nav currentPage="browse" />
+
+  <main id="main" class="browse">
+    <header class="browse-header">
+      <p class="browse-eyebrow" style={`color: ${colorHex};`}>Category</p>
+      <h1 class="browse-title" style={`color: ${colorHex};`}>{category}</h1>
+      <p class="browse-intro">{description}</p>
+      <p class="browse-count">{count} {count === 1 ? 'concept' : 'concepts'}</p>
+    </header>
+
+    <nav class="cat-nav" aria-label="Browse other categories">
+      <a class="chip chip-all" href="/browse/">All</a>
+      {CATEGORIES.map((cat) => {
+        const isActive = cat === category;
+        return (
+          <a
+            class:list={['chip', { 'is-active': isActive }]}
+            href={`/browse/${getCategorySlug(cat)}/`}
+            style={`--chip-color: ${getCategoryColor(cat)};`}
+            aria-current={isActive ? 'page' : undefined}
+          >
+            {cat}
+          </a>
+        );
+      })}
+    </nav>
+
+    <div class="card-grid">
+      {entries.map((entry) => (
+        <ConceptCard
+          title={entry.title}
+          oneLiner={entry.oneLiner}
+          category={entry.category}
+          slug={entry.slug}
+        />
+      ))}
+    </div>
+
+    <footer class="browse-footer">
+      <p>
+        <a href="/connections/">See how the concepts connect →</a>
+      </p>
+    </footer>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .browse {
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: var(--ms-r7) var(--ms-r5) var(--ms-r9);
+  }
+
+  .browse-header {
+    margin-bottom: var(--ms-r7);
+  }
+
+  .browse-eyebrow {
+    font-family: var(--ms-font-mono);
+    font-size: var(--ms-meta);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: var(--ms-r3);
+  }
+
+  .browse-title {
+    font-family: var(--ms-font-display);
+    font-size: var(--ms-h1);
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    line-height: 0.95;
+    margin-bottom: var(--ms-r4);
+  }
+
+  .browse-intro {
+    font-family: var(--ms-font-body);
+    font-size: 1.125rem;
+    line-height: 1.55;
+    color: var(--ms-ink);
+    max-width: 38rem;
+    margin-bottom: var(--ms-r4);
+  }
+
+  .browse-count {
+    font-family: var(--ms-font-mono);
+    font-size: var(--ms-meta);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ms-mute);
+  }
+
+  .cat-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--ms-r2);
+    margin-bottom: var(--ms-r6);
+    padding-bottom: var(--ms-r5);
+    border-bottom: 1px solid var(--ms-rule);
+  }
+
+  .chip {
+    font-family: var(--ms-font-mono);
+    font-size: var(--ms-meta);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background: transparent;
+    color: var(--chip-color, var(--ms-ink));
+    border: 1.5px solid var(--chip-color, var(--ms-mute));
+    border-radius: var(--ms-radius-pill);
+    padding: 6px 14px;
+    text-decoration: none;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  }
+
+  .chip-all {
+    --chip-color: var(--ms-ink);
+    color: var(--ms-ink);
+    border-color: var(--ms-ink);
+  }
+
+  .chip:hover {
+    background: color-mix(in srgb, var(--chip-color, var(--ms-ink)) 12%, transparent);
+  }
+
+  .chip.is-active {
+    background: var(--chip-color, var(--ms-ink));
+    color: var(--ms-white);
+    border-color: var(--chip-color, var(--ms-ink));
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--ms-r5);
+    align-items: stretch;
+  }
+
+  .browse-footer {
+    margin-top: var(--ms-r9);
+    padding-top: var(--ms-r6);
+    border-top: 1px solid var(--ms-rule);
+    text-align: center;
+  }
+
+  .browse-footer a {
+    font-family: var(--ms-font-ui);
+    font-size: 14px;
+    color: var(--ms-coral);
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    transition: opacity 0.15s ease;
+  }
+
+  .browse-footer a:hover {
+    opacity: 0.75;
+  }
+
+  @media (max-width: 640px) {
+    .browse {
+      padding: var(--ms-r5) var(--ms-r4) var(--ms-r8);
+    }
+    .browse-header {
+      margin-bottom: var(--ms-r5);
+    }
+    .browse-intro {
+      font-size: 1rem;
+    }
+    .card-grid {
+      grid-template-columns: 1fr;
+      gap: var(--ms-r4);
+    }
+  }
+</style>

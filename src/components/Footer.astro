@@ -1,6 +1,15 @@
 ---
 // Footer.astro — shared site footer
 // Import into every page template alongside Nav.astro
+import { getCategorySlug } from '../utils/categoryColors';
+
+const footerCategories = [
+  'Cognitive Bias',
+  'Logical Fallacy',
+  'Rhetorical Device',
+  'Manipulation Tactic',
+  'Mental Model',
+] as const;
 ---
 
 <footer class="site-footer" role="contentinfo">
@@ -28,11 +37,9 @@
       <div class="footer-col">
         <h3 class="footer-col-heading">Categories</h3>
         <ul>
-          <li><a href="/browse/">Cognitive Bias</a></li>
-          <li><a href="/browse/">Logical Fallacy</a></li>
-          <li><a href="/browse/">Rhetorical Device</a></li>
-          <li><a href="/browse/">Manipulation Tactic</a></li>
-          <li><a href="/browse/">Mental Model</a></li>
+          {footerCategories.map((cat) => (
+            <li><a href={`/browse/${getCategorySlug(cat)}/`}>{cat}</a></li>
+          ))}
           <li><a href="/browse/" class="footer-more">+ 5 more</a></li>
         </ul>
       </div>
