@@ -1,37 +1,105 @@
 ---
 title: "Red Herring"
-oneLiner: "Introducing something irrelevant to divert attention from the actual issue."
-alsoKnownAs: ["diversion", "misdirection", "changing the subject"]
+oneLiner: "Introducing an irrelevant topic to divert attention from the original issue."
+alsoKnownAs: ["irrelevant conclusion", "ignoratio elenchi", "changing the subject", "diversion fallacy"]
 category: "Logical Fallacy"
-tags: ["debate", "persuasion", "politics", "media literacy", "critical thinking", "manipulation"]
-howToSpotIt: "When a conversation shifts topic and you can't quite remember what the original question was, a red herring has probably been thrown. Ask yourself: does this new point actually address what we were talking about, or has the subject quietly changed?"
-thoughtToHoldOnto: "The best diversions don't feel like diversions. They feel like the conversation naturally moving on."
+tags: ["debate", "politics", "critical thinking", "bad faith", "media literacy", "manipulation", "everyday life"]
+howToSpotIt: "When a conversation shifts away from the original point, ask yourself: does this new topic actually address the question that was asked? If it's interesting but irrelevant, it's a red herring. The test is relevance, not truth - a red herring can be entirely true and still be a diversion."
+thoughtToHoldOnto: "Changing the subject isn't the same as answering the question. Even the most compelling tangent is still a tangent."
+whyItMattersNow: "In political interviews, social media arguments, and workplace discussions, the ability to divert attention from an uncomfortable question is one of the most common and effective rhetorical moves. Recognising a red herring is the difference between following the argument and following the distraction."
 relatedConcepts:
-  - slug: "straw-man"
-    note: "A straw man distorts the argument; a red herring abandons it entirely for a different one."
-  - slug: "appeal-to-emotion"
-    note: "Emotional appeals are often used as red herrings - they shift attention from the logical question to an emotional one."
   - slug: "whataboutism"
-    note: "Whataboutism is a specific type of red herring - diverting from the issue by pointing to someone else's behaviour."
-  - slug: "gish-gallop"
-    note: "The Gish Gallop floods a debate with so many points that the original issue gets buried - red herrings at industrial scale."
-furtherReading:
-  - title: "Red herring - Wikipedia"
-    url: "https://en.wikipedia.org/wiki/Red_herring"
+    note: "Whataboutism is a specific type of red herring - diverting from the issue at hand by pointing to someone else's wrongdoing."
+  - slug: "straw-man"
+    note: "Straw man and red herring both involve shifting the argument, but straw man distorts the original point while red herring abandons it entirely."
+  - slug: "ad-hominem"
+    note: "Ad hominem attacks can function as red herrings - attacking the person diverts attention from the argument they made."
+  - slug: "appeal-to-emotion"
+    note: "Emotional appeals often serve as red herrings, generating strong feelings that divert attention from the logical weakness of the case."
+  - slug: "moving-the-goalposts"
+    note: "Moving the goalposts and red herring are both evasion tactics, but they operate differently - one shifts the standard, the other shifts the subject."
 ---
 
-## What it means
+## What a red herring means
 
-A red herring is an argument or piece of information that is introduced to distract from the actual topic of discussion. It doesn't directly contradict the original point - it sidesteps it entirely, steering the conversation somewhere else. The name comes from the practice of using smoked fish (which turns red) to train hunting dogs - or, in some tellings, to throw pursuing dogs off the scent.
+A red herring is a logical fallacy in which someone introduces an irrelevant topic, argument, or piece of information to divert attention away from the original issue. The diversion may be deliberate - a conscious rhetorical tactic - or unconscious, where someone genuinely believes the tangent is relevant when it isn't. In either case, the effect is the same: the conversation moves away from the point that matters and toward something that doesn't.
 
-What makes red herrings so effective is that they're rarely obvious in the moment. The new topic is usually related enough to seem relevant, or emotionally compelling enough that following it feels natural. It's only afterwards - if you retrace the conversation - that you realise the original question was never answered.
+The name comes from the tradition of using [smoked herring to train hunting dogs](https://en.wikipedia.org/wiki/Red_herring). A strong-smelling fish dragged across a trail would distract the dogs from the scent they were supposed to follow. In argumentation, a red herring works the same way: it provides a compelling new scent that leads the audience away from the original track.
 
-Red herrings can be deliberate tactics, used by politicians, debaters, and anyone trying to avoid an uncomfortable question. But they can also be accidental - people naturally drift toward topics they're more comfortable discussing, especially when the original topic is difficult or threatening.
+What makes a red herring tricky to spot is that the diversion doesn't need to be false. Red herrings are often true, interesting, and even important - just not relevant to the question at hand. A true but irrelevant point is still a diversion. The test isn't truth. It's relevance.
 
-## In the real world
+## How red herrings work in arguments
 
-A journalist asks a politician: "Why did your department overspend by £40 million?" The politician responds: "What we should really be talking about is the incredible work our frontline staff have been doing under enormous pressure." The staff may indeed be doing incredible work. But that wasn't the question. The overspend has quietly disappeared from the conversation.
+The basic structure is consistent: a question is asked or a point is made, and the response addresses something different. The shift can be subtle or dramatic, but the result is always the same - the original point goes unanswered.
 
-In personal arguments, red herrings are everywhere. "You forgot to pick up the shopping." "Well, you never thanked me for fixing the boiler last week." The boiler is irrelevant to the shopping - but suddenly the conversation is about gratitude rather than the original issue.
+### The anatomy of a red herring
 
-In online discourse, red herrings are the default evasion. A discussion about climate policy becomes a debate about China's emissions. A conversation about police reform becomes an argument about crime statistics. Each diversion introduces a genuinely important topic - but its function in the conversation is to draw attention away from the point that was being made.
+Consider this exchange. Someone asks: "Why did the project go over budget?" The response: "The team worked incredibly hard on this project, often staying late and going above and beyond." The response is probably true. It's also a red herring. The question was about the budget, not the team's effort. The effort may be admirable, but it doesn't explain the overrun.
+
+The red herring succeeds because the new topic is emotionally resonant and socially awkward to challenge. Criticising the team's effort feels ungracious, so the audience moves on without noticing that the original question was never answered. This emotional misdirection connects to [appeal to emotion](/appeal-to-emotion/) - the feelings generated by the diversion suppress the instinct to push back and refocus.
+
+### Why red herrings feel convincing
+
+A well-chosen red herring works because it offers the audience something compelling to engage with. If the new topic is interesting, emotionally charged, or socially validated, the audience's attention shifts naturally. The original question fades not because it was answered but because something else captured the room.
+
+This is why red herrings are a staple of evasive communication. They don't require lying or even being obviously wrong. They just require being interesting enough to pull attention away from the inconvenient question.
+
+## Red herrings in political debate
+
+Politics is one of the natural habitats of the red herring, because politicians are frequently asked questions they'd prefer not to answer.
+
+### How politicians use red herrings to avoid accountability
+
+In political interviews, the red herring often takes the form of pivoting to a talking point. A politician asked about a specific failure might respond by talking about a general success. Asked about rising costs, they might talk about job creation. Asked about a scandal, they might talk about their record on a completely different issue.
+
+The pivot is so normalised in political communication that audiences often don't notice it happening. The politician sounds like they're being responsive - they're talking fluently, with apparent conviction, about something related to governance. But they haven't answered the question. They've introduced a red herring that sounds enough like an answer to satisfy casual attention.
+
+[Whataboutism](/whataboutism/) is the most recognised form of political red herring - responding to a criticism by pointing to the other side's failings. "Why did you vote against that bill?" "Well, the other party voted against three bills last year." The counter-accusation may be true, but it doesn't answer the original question. It redirects the conversation from accountability to comparison.
+
+## Red herrings in the media
+
+Media coverage can inadvertently promote red herrings when coverage focuses on dramatic but irrelevant aspects of a story rather than the substantive issue.
+
+### How media coverage amplifies diversions
+
+When a public figure is accused of something serious and the media focuses on their emotional reaction, their family's response, or a tangential detail of their personal life, the substantive issue gets buried. The red herring isn't necessarily introduced by the accused - it can be created by the coverage itself, which chases the most engaging angle rather than the most relevant one.
+
+This connects to the [framing effect](/framing-effect/). The way a story is framed determines which aspects the audience focuses on. A frame that centres on drama, personality, or conflict can function as a red herring that diverts attention from policy, evidence, or accountability.
+
+The [availability heuristic](/availability-heuristic/) then locks the diversion in place. The dramatic tangent is more vivid and memorable than the substantive issue, so it's what people remember and discuss. The red herring doesn't just divert attention in the moment - it reshapes what the audience thinks the story is about.
+
+## Red herrings in everyday life
+
+The fallacy appears constantly in personal and professional conversations, often without anyone intending to be evasive.
+
+### Red herrings in workplace discussions
+
+In meetings, red herrings often take the form of interesting but off-topic contributions that steer the discussion away from the agenda item. Someone raises a concern about a project's timeline, and a colleague responds with an anecdote about a different project. The anecdote is engaging, the discussion follows it, and the original timeline concern goes unresolved.
+
+In performance conversations, a red herring might sound like: "I know the report was late, but I've been managing three other projects simultaneously." The workload may be a real issue worth discussing, but it doesn't address why the report was late. It shifts the conversation from accountability to sympathy.
+
+### Red herrings in personal arguments
+
+In relationships, red herrings are often unintentional. Someone raises a concern, and the other person responds with a different concern of their own. "You forgot to call the plumber." "Well, you didn't pick up the dry cleaning." The second complaint may be valid, but it doesn't address the first. Both issues end up unresolved because neither gets sustained attention.
+
+This is why arguments sometimes feel circular - each person introduces a new grievance that functions as a red herring for the previous one, and the original issue is never addressed. Recognising the pattern doesn't resolve the grievances, but it can help you notice when the conversation has left the original track.
+
+## Red herring versus related fallacies
+
+Red herring is sometimes confused with other fallacies that also involve shifting the argument, but the distinctions matter.
+
+A [straw man](/straw-man/) distorts the original argument and then attacks the distorted version. A red herring doesn't distort the original - it abandons it entirely and introduces something new. The straw man stays in the arena but fights a different opponent. The red herring leaves the arena altogether.
+
+An [ad hominem](/ad-hominem/) attacks the person making the argument rather than the argument itself. This can function as a red herring when the personal attack diverts attention from the substance of the claim. But not all ad hominem attacks are red herrings, and not all red herrings are ad hominem - the categories overlap without being identical.
+
+[Moving the goalposts](/moving-the-goalposts/) shifts the standard of success after the original standard has been met. A red herring shifts the subject. Both are evasion tactics, but they operate differently: one says "that's not good enough," the other says "let's talk about something else."
+
+## How to spot and counter red herrings
+
+The most effective tool is a simple question: does this address the original point? If the answer is no, regardless of how interesting or true the new topic is, you're looking at a red herring.
+
+In conversations, the counter is straightforward: "That's an interesting point, but it doesn't answer the original question." This is harder than it sounds, because red herrings often carry emotional weight that makes it feel rude or aggressive to redirect. But the ability to hold a discussion on track - to insist, politely, that the original question be addressed before moving on - is one of the most valuable critical thinking skills in any context.
+
+[Independent evaluation](/independent-evaluation/) helps by keeping your focus on the original claim or question rather than following wherever the conversation drifts. [First principles thinking](/first-principles-thinking/) helps by asking what the actual issue is and whether the current discussion is addressing it.
+
+The red herring is among the most common fallacies in human communication, and among the easiest to forgive - because the diversion is often genuinely interesting, and because pursuing it feels more pleasant than insisting on the uncomfortable original question. But letting a red herring succeed means letting the important thing go unaddressed. And the important thing is usually important for a reason.
