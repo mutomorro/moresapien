@@ -8,6 +8,8 @@ import ShareButton from '../components/ShareButton.jsx';
 import StayCurious from '../components/StayCurious.astro';
 import KnowledgeCard from '../components/KnowledgeCard.astro';
 import ConnectionMiniMap from '../components/ConnectionMiniMap.astro';
+import TableOfContents from '../components/TableOfContents.jsx';
+import TableOfContentsMobile from '../components/TableOfContentsMobile.jsx';
 import { getCategoryColor, getCategoryColorHex, getCategoryTextColor } from '../utils/categoryColors';
 import { hasDiagram, loadDiagram } from '../data/diagramRegistry.js';
 
@@ -33,7 +35,21 @@ const {
   furtherReading,
 } = entry.data;
 
-const { Content } = await render(entry);
+const { Content, headings: rawHeadings } = await render(entry);
+
+// Filter to H2s only for the ToC
+const tocHeadings = rawHeadings
+  .filter((h) => h.depth === 2)
+  .map((h) => ({ slug: h.slug, text: h.text }));
+
+// Fixed sections that appear on every entry (with stable IDs for jump links)
+const fixedSections = [
+  { slug: 'how-to-spot-it', text: 'How to spot it' },
+  { slug: 'thought-to-hold-onto', text: 'A thought to hold onto' },
+];
+if (whyItMattersNow) {
+  fixedSections.push({ slug: 'why-it-matters-now', text: 'Why it matters now' });
+}
 
 const allEntries = await getCollection('entries');
 const resolvedRelated = relatedConcepts.map((rel: { slug: string; note?: string }) => {
@@ -133,7 +149,7 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
         <header class="entry-header">
           <p class="eyebrow">{category}</p>
           <h1 class="entry-title">
-            {title}<span class="title-asterisk">{' '}<Asterisk size={36} color="var(--page-accent)" /></span>
+            {title}<span class="title-asterisk">{' '}<Asterisk size={36} color="var(--page-accent)" /></span>
           </h1>
           <p class="entry-oneliner">{oneLiner}</p>
 
@@ -145,12 +161,21 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
           )}
         </header>
 
+        <!-- Mobile ToC: visible only below 960px -->
+        {tocHeadings.length > 0 && (
+          <div class="toc-mobile-wrapper">
+            <TableOfContentsMobile
+              client:load
+              headings={tocHeadings}
+              fixedSections={fixedSections}
+              accentColor={accent}
+            />
+          </div>
+        )}
+
         {entryHasDiagram && DiagramComponent ? (
           <div class="entry-visual entry-visual--diagram">
             <DiagramComponent category={category} />
-            <!-- Indexable raster of the diagram for Google Image Search.
-                 Visually hidden via clip rect so it stays in the DOM and
-                 crawlable. Source PNG generated in postbuild. -->
             <img
               src={`/diagrams/${entry.id}.png`}
               alt={diagramAltText}
@@ -178,18 +203,18 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
           <Content />
         </div>
 
-        <section class="block block-spot">
+        <section class="block block-spot" id="how-to-spot-it">
           <h2 class="block-label">How to spot it</h2>
           <p class="block-body" set:html={renderInlineMarkdown(howToSpotIt)} />
         </section>
 
-        <section class="block block-thought" aria-label="A thought to hold onto">
+        <section class="block block-thought" id="thought-to-hold-onto" aria-label="A thought to hold onto">
           <p class="block-thought-label">A thought to hold onto</p>
           <blockquote class="block-thought-text" set:html={thoughtHtml} />
         </section>
 
         {whyItMattersNow && (
-          <section class="block block-matters">
+          <section class="block block-matters" id="why-it-matters-now">
             <h2>Why it matters now</h2>
             <p set:html={renderInlineMarkdown(whyItMattersNow)} />
           </section>
@@ -249,7 +274,7 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
                   >
                     <span class="related-eyebrow">{related.category}</span>
                     <span class="related-title">
-                      {related.title}<span class="related-asterisk">{' '}<Asterisk size={11} color="var(--related-accent)" /></span>
+                      {related.title}<span class="related-asterisk">{' '}<Asterisk size={11} color="var(--related-accent)" /></span>
                     </span>
                     <span class="related-oneliner">{related.oneLiner}</span>
                     {related.note && <span class="related-note">{related.note}</span>}
@@ -273,8 +298,16 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
         <StayCurious />
       </div>
 
-      <aside class="entry-sidebar" aria-label="Stay curious">
+      <aside class="entry-sidebar" aria-label="Page navigation and newsletter">
         <div class="sidebar-sticky">
+          {tocHeadings.length > 0 && (
+            <TableOfContents
+              client:load
+              headings={tocHeadings}
+              fixedSections={fixedSections}
+              accentColor={accent}
+            />
+          )}
           <StayCurious />
         </div>
       </aside>
@@ -308,8 +341,20 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
     top: 5rem;
   }
 
+  .sidebar-sticky {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ms-r5);
+  }
+
   .sc-mobile {
     display: none;
+  }
+
+  /* --- Mobile ToC wrapper --- */
+  .toc-mobile-wrapper {
+    display: none;
+    margin-bottom: var(--ms-r5);
   }
 
   /* --- Header --- */
@@ -386,8 +431,6 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
     position: relative;
   }
 
-  /* Hidden raster duplicate of the inline diagram SVG. Crawlable for Google
-     Image Search but not visible to sighted users. */
   .diagram-png-fallback {
     position: absolute;
     width: 1px;
@@ -414,11 +457,12 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
 
   .entry-body :global(h2) {
     font-family: var(--ms-font-display);
-    font-size: var(--ms-h2);
+    font-size: var(--ms-h3);
     font-weight: 400;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.02em;
     color: var(--ms-ink);
-    margin: var(--ms-r6) 0 var(--ms-r4);
+    margin: var(--ms-r7) 0 var(--ms-r4);
+    scroll-margin-top: 5.5rem;
   }
 
   .entry-body :global(h2:first-child) {
@@ -426,12 +470,7 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
   }
 
   .entry-body :global(h3) {
-    font-family: var(--ms-font-display);
-    font-size: var(--ms-h3);
-    font-weight: 500;
-    letter-spacing: -0.02em;
-    color: var(--ms-ink);
-    margin: var(--ms-r6) 0 var(--ms-r3);
+    scroll-margin-top: 5.5rem;
   }
 
   .entry-body :global(p) {
@@ -464,6 +503,7 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
   /* --- Block: How to spot it --- */
   .block {
     margin-bottom: var(--ms-r7);
+    scroll-margin-top: 5.5rem;
   }
 
   .block-spot {
@@ -537,9 +577,9 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
 
   .block-matters h2 {
     font-family: var(--ms-font-display);
-    font-size: var(--ms-h2);
+    font-size: var(--ms-h3);
     font-weight: 400;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.02em;
     color: var(--ms-ink);
     margin-bottom: var(--ms-r3);
   }
@@ -631,8 +671,8 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
   .connection-map h3,
   .related-concepts h3 {
     font-family: var(--ms-font-display);
-    font-size: var(--ms-h3);
-    font-weight: 500;
+    font-size: var(--ms-h4);
+    font-weight: 400;
     letter-spacing: -0.02em;
     color: var(--ms-ink);
     margin-bottom: var(--ms-r3);
@@ -738,6 +778,143 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
     letter-spacing: 0.05em;
   }
 
+  /* =============================================
+     Table of Contents — Desktop (sidebar)
+     ============================================= */
+  .entry-sidebar :global(.toc) {
+    padding: 0;
+  }
+
+  .entry-sidebar :global(.toc-label) {
+    font-family: var(--ms-font-mono);
+    font-size: var(--ms-meta);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ms-mute);
+    margin: 0 0 var(--ms-r3);
+  }
+
+  .entry-sidebar :global(.toc-list) {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .entry-sidebar :global(.toc-item) {
+    border-left: 2px solid transparent;
+    padding: 0.3rem 0 0.3rem 0.75rem;
+    transition: border-color 0.2s ease;
+  }
+
+  .entry-sidebar :global(.toc-item--active) {
+    border-left-width: 2px;
+    border-left-style: solid;
+  }
+
+  .entry-sidebar :global(.toc-link) {
+    font-family: var(--ms-font-body);
+    font-size: 0.8125rem;
+    line-height: 1.35;
+    color: var(--ms-mute);
+    text-decoration: none;
+    display: block;
+    transition: color 0.15s ease;
+  }
+
+  .entry-sidebar :global(.toc-link:hover) {
+    color: var(--ms-ink);
+  }
+
+  .entry-sidebar :global(.toc-link--fixed) {
+    font-size: 0.75rem;
+    color: var(--ms-rule-dark, #c0b8ae);
+  }
+
+  .entry-sidebar :global(.toc-divider) {
+    height: 1px;
+    background: var(--ms-rule);
+    margin: 0.4rem 0 0.4rem 0.75rem;
+  }
+
+  /* =============================================
+     Table of Contents — Mobile (collapsible)
+     ============================================= */
+  .toc-mobile-wrapper :global(.toc-mobile) {
+    margin: 0;
+  }
+
+  .toc-mobile-wrapper :global(.toc-mobile-toggle) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: var(--ms-white);
+    border: 1px solid var(--ms-rule);
+    border-radius: var(--ms-radius-sm);
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+  }
+
+  .toc-mobile-wrapper :global(.toc-mobile-toggle:hover) {
+    border-color: var(--ms-mute);
+  }
+
+  .toc-mobile-wrapper :global(.toc-mobile-toggle-label) {
+    font-family: var(--ms-font-mono);
+    font-size: var(--ms-meta);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ms-mute);
+  }
+
+  .toc-mobile-wrapper :global(.toc-mobile-chevron) {
+    color: var(--ms-mute);
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  .toc-mobile-wrapper :global(.toc-mobile-chevron--open) {
+    transform: rotate(180deg);
+  }
+
+  .toc-mobile-wrapper :global(.toc-mobile-list) {
+    list-style: none;
+    padding: 0.75rem 1rem;
+    margin: 0;
+    background: var(--ms-white);
+    border: 1px solid var(--ms-rule);
+    border-top: none;
+    border-radius: 0 0 var(--ms-radius-sm) var(--ms-radius-sm);
+  }
+
+  .toc-mobile-wrapper :global(.toc-mobile-item) {
+    padding: 0.35rem 0;
+  }
+
+  .toc-mobile-wrapper :global(.toc-mobile-link) {
+    font-family: var(--ms-font-body);
+    font-size: var(--ms-small);
+    color: var(--ms-mute);
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+
+  .toc-mobile-wrapper :global(.toc-mobile-link:hover) {
+    color: var(--ms-ink);
+  }
+
+  .toc-mobile-wrapper :global(.toc-mobile-link--fixed) {
+    font-size: 0.8rem;
+    color: var(--ms-rule-dark, #c0b8ae);
+  }
+
+  .toc-mobile-wrapper :global(.toc-mobile-divider) {
+    height: 1px;
+    background: var(--ms-rule);
+    margin: 0.4rem 0;
+  }
+
   /* --- Responsive --- */
   @media (max-width: 960px) {
     .entry-layout {
@@ -750,6 +927,9 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
     .sc-mobile {
       display: block;
       margin-top: var(--ms-r7);
+    }
+    .toc-mobile-wrapper {
+      display: block;
     }
   }
 
