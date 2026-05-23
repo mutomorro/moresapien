@@ -11,66 +11,53 @@ const allEntries = await getCollection('entries');
 
 const collectionsData = collections.map((col) => {
   const entryCount = col.data.collectionEntries.length;
-  const resolvedEntries = col.data.collectionEntries.slice(0, 5).map((slug) => {
-    const found = allEntries.find((e) => e.id === slug);
-    return found ? { title: found.data.title, category: found.data.category } : null;
-  }).filter(Boolean) as Array<{ title: string; category: string }>;
-
+  const firstSlug = col.data.collectionEntries[0];
+  const firstEntry = allEntries.find((e) => e.id === firstSlug);
+  const primaryCategory = firstEntry?.data.category ?? '';
   return {
     slug: col.id,
     title: col.data.title,
-    type: col.data.type,
     audience: col.data.audience,
     entryCount,
-    categories: [...new Set(resolvedEntries.map((e) => e.category))],
+    accent: primaryCategory ? getCategoryColor(primaryCategory) : 'var(--ms-mute)',
   };
 });
 ---
 <BaseLayout
   title="Collections — Moresapien"
-  description="Curated pathways through Moresapien's knowledge base. Guided journeys through cognitive biases, logical fallacies, manipulation tactics, and more."
+  description="Curated walks through Moresapien's knowledge base — guided journeys through cognitive biases, logical fallacies, manipulation tactics, and more."
   canonical="https://moresapien.org/collections/"
 >
   <Nav currentPage="collections" />
 
   <main id="main" class="collections-page">
     <header class="collections-header">
-      <p class="eyebrow">Curated pathways</p>
+      <p class="eyebrow">Index</p>
       <h1 class="page-title">
         <span class="title-tail">Collections{' '}<span class="title-asterisk"><Asterisk size={28} /></span></span>
       </h1>
-      <p class="page-intro">
-        Each collection groups related concepts into a journey. Read in order, or browse freely — the connections show themselves either way.
+      <p class="page-deck">
+        Each collection is a guided walk through one question — biases, tactics, and effects threaded into a single argument. Read in order, or jump in anywhere.
       </p>
     </header>
 
-    <ul class="collections-list">
-      {collectionsData.map((col) => (
-        <li>
-          <a href={`/collections/${col.slug}/`} class="collection-card">
-            <span
-              class:list={['type-badge', col.type === 'pathway' ? 'badge-pathway' : 'badge-toolkit']}
-            >
-              {col.type === 'pathway' ? 'Pathway' : 'Toolkit'}
-            </span>
-            <h2 class="collection-title">{col.title}</h2>
-            <p class="collection-audience">{col.audience}</p>
-            <p class="collection-meta">
-              {col.entryCount} {col.entryCount === 1 ? 'concept' : 'concepts'}
-            </p>
-            {col.categories.length > 0 && (
-              <div class="category-row">
-                {col.categories.map((cat) => (
-                  <span class="category-dot" style={`--dot: ${getCategoryColor(cat)};`}>
-                    <span class="dot" />{cat}
-                  </span>
-                ))}
-              </div>
-            )}
+    <ol class="collections-index">
+      {collectionsData.map((col, i) => (
+        <li class="collection-item" style={`--entry-accent: ${col.accent};`}>
+          <a href={`/collections/${col.slug}/`} class="collection-link">
+            <span class="collection-number" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+
+            <div class="collection-body">
+              <h2 class="collection-title">{col.title}</h2>
+              <p class="collection-deck">{col.audience}</p>
+              <p class="collection-meta">
+                {col.entryCount} concepts · Read →
+              </p>
+            </div>
           </a>
         </li>
       ))}
-    </ul>
+    </ol>
 
     <p class="page-footer-note">
       <a href="/connections/">Explore the full knowledge graph →</a>
@@ -82,13 +69,13 @@ const collectionsData = collections.map((col) => {
 
 <style>
   .collections-page {
-    max-width: 56rem;
+    max-width: 60rem;
     margin: 0 auto;
     padding: var(--ms-r7) var(--ms-r5) var(--ms-r9);
   }
 
   .collections-header {
-    margin-bottom: var(--ms-r7);
+    margin-bottom: var(--ms-r8);
   }
 
   .eyebrow {
@@ -96,7 +83,7 @@ const collectionsData = collections.map((col) => {
     font-size: var(--ms-meta);
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: var(--ms-mute);
+    color: var(--ms-coral);
     margin-bottom: var(--ms-r3);
   }
 
@@ -117,7 +104,7 @@ const collectionsData = collections.map((col) => {
     transform: translateY(-0.55em);
   }
 
-  .page-intro {
+  .page-deck {
     font-family: var(--ms-font-body);
     font-size: 1.125rem;
     line-height: 1.55;
@@ -125,67 +112,74 @@ const collectionsData = collections.map((col) => {
     max-width: 38rem;
   }
 
-  .collections-list {
+  /* --- Index --- */
+  .collections-index {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: var(--ms-r4);
   }
 
-  .collection-card {
-    display: block;
-    background: var(--ms-white);
-    border: 1px solid var(--ms-rule);
-    border-radius: var(--ms-radius-sm);
-    padding: var(--ms-r5) var(--ms-r6);
+  .collection-item {
+    border-top: 1px solid var(--ms-rule);
+  }
+
+  .collection-item:last-child {
+    border-bottom: 1px solid var(--ms-rule);
+  }
+
+  .collection-link {
+    display: grid;
+    grid-template-columns: minmax(4rem, 6rem) minmax(0, 1fr);
+    column-gap: var(--ms-r6);
+    align-items: start;
+    padding: var(--ms-r6) 0;
     text-decoration: none;
     color: inherit;
-    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    transition: transform 0.2s ease;
   }
 
-  .collection-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-    border-color: var(--ms-coral);
+  .collection-link:hover {
+    transform: translateX(2px);
   }
 
-  .type-badge {
-    display: inline-block;
-    font-family: var(--ms-font-mono);
-    font-size: var(--ms-meta);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    padding: 4px 10px;
-    border-radius: var(--ms-radius-pill);
-    border: 1.5px solid currentColor;
+  .collection-link:hover .collection-title {
+    color: var(--entry-accent);
   }
 
-  .badge-pathway {
-    color: var(--ms-coral);
+  .collection-number {
+    font-family: var(--ms-font-display);
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(3rem, 5vw, 4.5rem);
+    line-height: 0.9;
+    letter-spacing: -0.04em;
+    color: var(--entry-accent);
   }
 
-  .badge-toolkit {
-    color: var(--ms-cat-systems);
+  .collection-body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ms-r3);
+    max-width: 42rem;
   }
 
   .collection-title {
     font-family: var(--ms-font-display);
-    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 2.4vw, 2rem);
     font-weight: 400;
     letter-spacing: -0.02em;
     line-height: 1.15;
     color: var(--ms-ink);
-    margin: var(--ms-r3) 0 var(--ms-r2);
+    margin: 0;
+    transition: color 0.15s ease;
   }
 
-  .collection-audience {
+  .collection-deck {
     font-family: var(--ms-font-body);
     font-size: var(--ms-body);
-    color: var(--ms-mute);
     line-height: 1.55;
-    margin-bottom: var(--ms-r3);
+    color: var(--ms-mute);
+    margin: 0;
   }
 
   .collection-meta {
@@ -193,37 +187,13 @@ const collectionsData = collections.map((col) => {
     font-size: var(--ms-meta);
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: var(--ms-mute);
+    color: var(--entry-accent);
+    margin: var(--ms-r2) 0 0;
   }
 
-  .category-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--ms-r3);
-    margin-top: var(--ms-r3);
-  }
-
-  .category-dot {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-family: var(--ms-font-mono);
-    font-size: var(--ms-meta);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--ms-mute);
-  }
-
-  .category-dot .dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--dot, var(--ms-mute));
-    display: inline-block;
-  }
-
+  /* --- Footer note --- */
   .page-footer-note {
-    margin-top: var(--ms-r9);
+    margin-top: var(--ms-r8);
     text-align: center;
   }
 
@@ -234,21 +204,31 @@ const collectionsData = collections.map((col) => {
     border-bottom: 1px solid currentColor;
     padding-bottom: 2px;
     transition: opacity 0.15s ease;
+    text-decoration: none;
   }
 
   .page-footer-note a:hover {
     opacity: 0.75;
   }
 
-  @media (max-width: 640px) {
+  /* --- Responsive --- */
+  @media (max-width: 720px) {
     .collections-page {
       padding: var(--ms-r5) var(--ms-r4) var(--ms-r8);
     }
-    .collection-card {
-      padding: var(--ms-r4) var(--ms-r5);
+    .collections-header {
+      margin-bottom: var(--ms-r7);
     }
-    .page-intro {
+    .page-deck {
       font-size: 1rem;
+    }
+    .collection-link {
+      grid-template-columns: 1fr;
+      row-gap: var(--ms-r3);
+      padding: var(--ms-r5) 0;
+    }
+    .collection-number {
+      font-size: 3rem;
     }
   }
 </style>
