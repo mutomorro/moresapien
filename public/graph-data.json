@@ -12,9 +12,10 @@
         "critical thinking",
         "social media",
         "rhetoric",
-        "manipulation"
+        "manipulation",
+        "bad faith"
       ],
-      "connections": 6
+      "connections": 8
     },
     {
       "slug": "affect-heuristic",
@@ -302,7 +303,7 @@
         "everyday life",
         "relationships"
       ],
-      "connections": 24
+      "connections": 25
     },
     {
       "slug": "commodification",
@@ -483,6 +484,22 @@
         "everyday life"
       ],
       "connections": 10
+    },
+    {
+      "slug": "effort-justification",
+      "title": "Effort Justification",
+      "category": "Cognitive Bias",
+      "colour": "#3559B0",
+      "oneLiner": "The harder we work for something, the more we convince ourselves it was worth it - regardless of whether it was.",
+      "tags": [
+        "decision-making",
+        "self-deception",
+        "psychology",
+        "everyday life",
+        "workplace",
+        "critical thinking"
+      ],
+      "connections": 5
     },
     {
       "slug": "emergence",
@@ -976,7 +993,7 @@
         "self-deception",
         "social dynamics"
       ],
-      "connections": 7
+      "connections": 8
     },
     {
       "slug": "moral-panic",
@@ -1008,7 +1025,7 @@
         "science",
         "everyday life"
       ],
-      "connections": 21
+      "connections": 22
     },
     {
       "slug": "motte-and-bailey",
@@ -1243,7 +1260,7 @@
         "everyday life",
         "decision-making"
       ],
-      "connections": 8
+      "connections": 9
     },
     {
       "slug": "recuperation",
@@ -1417,9 +1434,10 @@
         "politics",
         "media literacy",
         "critical thinking",
-        "social media"
+        "social media",
+        "rhetoric"
       ],
-      "connections": 12
+      "connections": 13
     },
     {
       "slug": "sunk-cost-fallacy",
@@ -1434,7 +1452,7 @@
         "politics",
         "critical thinking"
       ],
-      "connections": 9
+      "connections": 10
     },
     {
       "slug": "survivorship-bias",
@@ -1516,7 +1534,7 @@
         "critical thinking",
         "rhetoric"
       ],
-      "connections": 5
+      "connections": 6
     },
     {
       "slug": "tragedy-of-the-commons",
@@ -1640,7 +1658,7 @@
       "notes": [
         {
           "from": "ad-hominem",
-          "text": "An ad hominem is a specific type of red herring - it diverts attention from the argument to the arguer."
+          "text": "An ad hominem is a specific type of red herring - it diverts attention from the argument to the arguer"
         }
       ]
     },
@@ -1650,7 +1668,11 @@
       "notes": [
         {
           "from": "ad-hominem",
-          "text": "Both avoid engaging with the actual argument - straw man distorts it, ad hominem ignores it entirely."
+          "text": "Both avoid engaging with the actual argument - straw man distorts it, ad hominem ignores it entirely"
+        },
+        {
+          "from": "straw-man",
+          "text": "Both avoid engaging with the actual argument - straw man distorts it, ad hominem ignores it entirely"
         }
       ]
     },
@@ -1660,7 +1682,7 @@
       "notes": [
         {
           "from": "ad-hominem",
-          "text": "The mirror image of ad hominem - instead of dismissing an argument because of who made it, you accept it because of who made it."
+          "text": "The mirror image of ad hominem - instead of dismissing an argument because of who made it, you accept it because of who made it"
         }
       ]
     },
@@ -1670,7 +1692,21 @@
       "notes": [
         {
           "from": "ad-hominem",
-          "text": "Persistent ad hominem attacks can be used as a form of sealioning - wearing someone down by making the conversation about them rather than the issue."
+          "text": "Persistent ad hominem attacks can be used as a form of sealioning - wearing someone down by making the conversation about them rather than the issue"
+        }
+      ]
+    },
+    {
+      "source": "ad-hominem",
+      "target": "tone-policing",
+      "notes": [
+        {
+          "from": "ad-hominem",
+          "text": "A subtler cousin - shifting focus from what someone said to how they said it"
+        },
+        {
+          "from": "tone-policing",
+          "text": "Tone policing is a form of ad hominem - it redirects attention from the argument to the person making it."
         }
       ]
     },
@@ -2847,6 +2883,56 @@
     {
       "source": "cognitive-dissonance",
       "target": "dunning-kruger-effect"
+    },
+    {
+      "source": "cognitive-dissonance",
+      "target": "effort-justification",
+      "notes": [
+        {
+          "from": "effort-justification",
+          "text": "Effort justification is one of the primary ways we resolve cognitive dissonance - if the experience was painful but we chose it, we inflate its value to make the choice feel rational."
+        }
+      ]
+    },
+    {
+      "source": "effort-justification",
+      "target": "sunk-cost-fallacy",
+      "notes": [
+        {
+          "from": "effort-justification",
+          "text": "Sunk costs and effort justification reinforce each other - the more effort you've invested, the more you justify it, and the more justified it feels, the harder it is to walk away."
+        }
+      ]
+    },
+    {
+      "source": "effort-justification",
+      "target": "rationalisation",
+      "notes": [
+        {
+          "from": "effort-justification",
+          "text": "Effort justification is a specific form of rationalisation - constructing a story about value that runs backwards from the effort rather than forwards from the outcome."
+        }
+      ]
+    },
+    {
+      "source": "effort-justification",
+      "target": "motivated-reasoning",
+      "notes": [
+        {
+          "from": "effort-justification",
+          "text": "Motivated reasoning provides the intellectual scaffolding for effort justification - we selectively find evidence that the hard experience was worthwhile."
+        }
+      ]
+    },
+    {
+      "source": "effort-justification",
+      "target": "moral-licensing",
+      "notes": [
+        {
+          "from": "effort-justification",
+          "text": "Having endured difficulty can feel like moral credit - licensing us to dismiss those who found an easier path."
+        }
+      ]
     },
     {
       "source": "emergence",
@@ -4750,7 +4836,13 @@
     },
     {
       "source": "straw-man",
-      "target": "whataboutism"
+      "target": "whataboutism",
+      "notes": [
+        {
+          "from": "straw-man",
+          "text": "Both deflect rather than engage - whataboutism changes the subject, straw man changes the argument"
+        }
+      ]
     },
     {
       "source": "motivated-reasoning",
@@ -4933,16 +5025,6 @@
         {
           "from": "thought-terminating-cliche",
           "text": "We're more likely to accept a thought-terminating cliche when it confirms what we already believe."
-        }
-      ]
-    },
-    {
-      "source": "ad-hominem",
-      "target": "tone-policing",
-      "notes": [
-        {
-          "from": "tone-policing",
-          "text": "Tone policing is a form of ad hominem - it redirects attention from the argument to the person making it."
         }
       ]
     },
@@ -5321,12 +5403,12 @@
     "Cultural Influence": "#1A7A7A"
   },
   "meta": {
-    "totalEntries": 102,
-    "totalConnections": 376,
+    "totalEntries": 103,
+    "totalConnections": 381,
     "totalCollections": 5,
     "categoryDistribution": {
       "Logical Fallacy": 15,
-      "Cognitive Bias": 20,
+      "Cognitive Bias": 21,
       "Psychological Phenomenon": 18,
       "Cultural Influence": 7,
       "Mental Model": 11,
@@ -5336,6 +5418,6 @@
       "Rhetorical Device": 7,
       "Political Theory": 4
     },
-    "buildTimestamp": "2026-05-06T16:57:17.046Z"
+    "buildTimestamp": "2026-05-23T05:44:18.080Z"
   }
 }

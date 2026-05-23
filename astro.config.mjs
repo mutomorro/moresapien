@@ -13,7 +13,15 @@ export default defineConfig({
   build: {
     format: 'directory',
   },
-  integrations: [react(), sitemap()],
+  integrations: [
+    react(),
+    sitemap({
+      serialize(item) {
+        item.lastmod = new Date().toISOString();
+        return item;
+      },
+    }),
+  ],
 
   vite: {
     plugins: [tailwindcss()]
