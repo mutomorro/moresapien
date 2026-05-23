@@ -8,7 +8,8 @@ export interface Props {
 const { currentPage = '' } = Astro.props;
 
 const links = [
-  { id: 'browse',      label: 'Browse',      href: '/' },
+  { id: 'home',        label: 'Home',        href: '/' },
+  { id: 'browse',      label: 'Browse',      href: '/browse/' },
   { id: 'collections', label: 'Collections', href: '/collections/' },
   { id: 'connections', label: 'Connections', href: '/connections/' },
   { id: 'about',       label: 'About',       href: '/about/' },
@@ -16,6 +17,7 @@ const links = [
 
 /* Map legacy `currentPage` values from the previous nav to the new ids */
 const aliasMap: Record<string, string> = {
+  home: 'home',
   concepts: 'browse',
   browse: 'browse',
   collections: 'collections',

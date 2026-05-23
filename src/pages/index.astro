@@ -7,228 +7,555 @@ import ConceptCard from '../components/ConceptCard.astro';
 import { CATEGORIES, getCategoryColor } from '../utils/categoryColors';
 
 const allEntries = await getCollection('entries');
+const allCollections = await getCollection('curatedCollections');
 
-const entries = allEntries
+const featuredSlugs = [
+  'confirmation-bias',
+  'straw-man',
+  'gaslighting',
+  'first-principles-thinking',
+] as const;
+
+const featuredEntries = featuredSlugs
+  .map((slug) => allEntries.find((e) => e.id === slug))
+  .filter(Boolean)
   .map((entry) => ({
-    slug: entry.id,
-    title: entry.data.title,
-    oneLiner: entry.data.oneLiner,
-    category: entry.data.category,
+    slug: entry!.id,
+    title: entry!.data.title,
+    oneLiner: entry!.data.oneLiner,
+    category: entry!.data.category,
+  }));
+
+const collectionsForHome = allCollections
+  .map((col) => ({
+    slug: col.id,
+    title: col.data.title,
+    entryCount: col.data.collectionEntries.length,
   }))
-  .sort((a, b) => a.title.localeCompare(b.title));
+  .sort((a, b) => b.entryCount - a.entryCount);
 
-const categoriesPresent = CATEGORIES.filter((cat) =>
-  entries.some((e) => e.category === cat),
-);
-
-const totalCount = entries.length;
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Moresapien',
+  url: 'https://moresapien.org/',
+  description:
+    'A free knowledge base of cognitive biases, logical fallacies, manipulation tactics, rhetorical devices and mental models.',
+  publisher: {
+    '@type': 'Organization',
+    name: 'Mutomorro',
+    url: 'https://mutomorro.com',
+  },
+};
 ---
 <BaseLayout
-  title="Moresapien — Understanding ourselves, one idea at a time"
-  description="A free knowledge base of cognitive biases, mental models, logical fallacies, and the mental tricks we play on ourselves. For everyone."
+  title="Moresapien — A Free Knowledge Base of Cognitive Biases, Logical Fallacies and Mental Models"
+  description="Moresapien maps out cognitive biases, logical fallacies, manipulation tactics, rhetorical devices and mental models. A free critical thinking resource for everyone. No ads, no tracking."
   canonical="https://moresapien.org/"
+  ogType="website"
   ogImage="https://moresapien.org/og/home.png"
 >
-  <Nav currentPage="browse" />
+  <script
+    is:inline
+    type="application/ld+json"
+    slot="head"
+    set:html={JSON.stringify(structuredData)}
+  />
 
-  <main id="main" class="browse">
-    <header class="browse-header">
-      <p class="browse-eyebrow">A field guide to the mind</p>
-      <h1 class="browse-title">Browse</h1>
-      <p class="browse-intro">
-        The mental tricks we play on ourselves — and the ones that get played on us.
+  <Nav currentPage="home" />
+
+  <main id="main" class="home">
+
+    <!-- Hero -->
+    <section class="hero">
+      <h1 class="hero-kicker">
+        A free knowledge base of cognitive biases, logical fallacies and mental models
+      </h1>
+      <p class="hero-title">A field guide to the mind</p>
+      <p class="hero-intro">
+        Moresapien maps out the cognitive biases, logical fallacies, manipulation tactics and rhetorical devices that shape how we think — and how others try to think for us. Written for everyone, not just academics. Free to use, no ads, no tracking.
       </p>
-      <p class="browse-count">{totalCount} concepts</p>
-    </header>
+    </section>
 
-    <div class="filter-bar" role="group" aria-label="Filter by category">
-      <button class="chip chip-all is-active" data-filter="all" type="button">All</button>
-      {categoriesPresent.map((cat) => (
-        <button
-          class="chip"
-          type="button"
-          data-filter={cat}
-          style={`--chip-color: ${getCategoryColor(cat)};`}
-        >
-          {cat}
-        </button>
-      ))}
-    </div>
+    <hr class="section-rule" />
 
-    <div class="card-grid" id="card-grid">
-      {entries.map((entry) => (
-        <div class="card-cell" data-category={entry.category}>
-          <ConceptCard
-            title={entry.title}
-            oneLiner={entry.oneLiner}
-            category={entry.category}
-            slug={entry.slug}
-          />
+    <!-- Section 1: Browse -->
+    <section class="row">
+      <div class="row-left">
+        <h2 class="row-h2">Explore concepts in psychology, logic and persuasion</h2>
+        <p class="row-body">
+          From cognitive biases and logical fallacies to mental models and systems thinking — each entry explains a concept in plain language, with real-world examples and connections to related ideas.
+        </p>
+        <a href="/browse/" class="row-link">Browse all entries →</a>
+      </div>
+      <div class="row-right">
+        <div class="featured-grid">
+          {featuredEntries.map((entry) => (
+            <ConceptCard
+              title={entry.title}
+              oneLiner={entry.oneLiner}
+              category={entry.category}
+              slug={entry.slug}
+            />
+          ))}
         </div>
-      ))}
-    </div>
+      </div>
+    </section>
 
-    <footer class="browse-footer">
-      <p>
-        <a href="/connections/">See how the concepts connect →</a>
-      </p>
-    </footer>
+    <hr class="section-rule" />
+
+    <!-- Section 2: Collections -->
+    <section class="row">
+      <div class="row-left">
+        <h2 class="row-h2">Curated collections for critical thinking and media literacy</h2>
+        <p class="row-body">
+          Themed pathways that group related concepts into guided journeys — ideal for students, teachers, and anyone who wants a structured way through the material.
+        </p>
+        <a href="/collections/" class="row-link">See all collections →</a>
+      </div>
+      <div class="row-right">
+        <ul class="collection-list">
+          {collectionsForHome.map((col) => (
+            <li>
+              <a href={`/collections/${col.slug}/`} class="collection-row">
+                <span class="collection-row-title">{col.title}</span>
+                <span class="collection-row-meta">
+                  {col.entryCount} {col.entryCount === 1 ? 'concept' : 'concepts'}
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+
+    <hr class="section-rule" />
+
+    <!-- Section 3: Categories -->
+    <section class="row">
+      <div class="row-left">
+        <h2 class="row-h2">Ten categories spanning psychology, rhetoric and systems thinking</h2>
+        <p class="row-body">
+          Every entry belongs to a category that helps you understand not just what the concept is, but what kind of thinking it represents — whether that's a bias, a fallacy, a tactic, a defence, or a model.
+        </p>
+        <a href="/browse/" class="row-link">Browse by category →</a>
+      </div>
+      <div class="row-right">
+        <ul class="category-grid">
+          {CATEGORIES.map((cat) => (
+            <li>
+              <a href="/browse/" class="category-item" style={`--cat-color: ${getCategoryColor(cat)};`}>
+                <span class="category-dot" />
+                <span class="category-name">{cat}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+
+    <hr class="section-rule" />
+
+    <!-- Section 4: Connections -->
+    <section class="row">
+      <div class="row-left">
+        <h2 class="row-h2">See how every concept connects to every other</h2>
+        <p class="row-body">
+          The real value of this knowledge base isn't any single entry — it's the web of relationships between them. Our interactive knowledge graph maps every connection across all categories.
+        </p>
+        <a href="/connections/" class="row-link">Explore the graph →</a>
+      </div>
+      <div class="row-right">
+        <a href="/connections/" class="connections-card">
+          <svg
+            class="connections-svg"
+            viewBox="0 0 240 140"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g stroke="rgba(196, 149, 106, 0.45)" stroke-width="1" fill="none">
+              <line x1="40" y1="40" x2="120" y2="70" />
+              <line x1="120" y1="70" x2="200" y2="35" />
+              <line x1="120" y1="70" x2="180" y2="110" />
+              <line x1="120" y1="70" x2="60" y2="105" />
+              <line x1="40" y1="40" x2="60" y2="105" />
+              <line x1="200" y1="35" x2="180" y2="110" />
+            </g>
+            <g fill="#C4956A">
+              <circle cx="40" cy="40" r="5" />
+              <circle cx="200" cy="35" r="4" />
+              <circle cx="180" cy="110" r="4" />
+              <circle cx="60" cy="105" r="4" />
+            </g>
+            <circle cx="120" cy="70" r="7" fill="#FF5D4A" />
+          </svg>
+          <p class="connections-title">Interactive knowledge graph</p>
+          <p class="connections-body">
+            Explore the web of connections between all concepts on the site.
+          </p>
+          <span class="connections-link">Explore connections →</span>
+        </a>
+      </div>
+    </section>
+
+    <hr class="section-rule" />
+
+    <!-- Section 5: Stay curious -->
+    <section class="stay-curious">
+      <h2 class="sc-title">Stay curious</h2>
+      <p class="sc-body">New entries and ideas, straight to your inbox. No spam, ever.</p>
+      <div class="sc-buttons">
+        <a
+          href="https://buttondown.com/moresapien"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="sc-btn sc-btn-primary"
+        >
+          Subscribe
+        </a>
+        <a
+          href="https://bsky.app/profile/moresapien.bsky.social"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="sc-btn sc-btn-secondary"
+        >
+          Bluesky
+        </a>
+      </div>
+    </section>
+
   </main>
 
   <Footer />
 </BaseLayout>
 
 <style>
-  .browse {
+  .home {
     max-width: 64rem;
     margin: 0 auto;
     padding: var(--ms-r7) var(--ms-r5) var(--ms-r9);
   }
 
-  .browse-header {
-    margin-bottom: var(--ms-r7);
+  /* Section rule between sections */
+  .section-rule {
+    border: 0;
+    border-top: 1px solid #E8E3DA;
+    margin: var(--ms-r7) 0;
   }
 
-  .browse-eyebrow {
-    font-family: var(--ms-font-mono);
-    font-size: var(--ms-meta);
+  /* ---- Hero ---- */
+  .hero {
+    padding-bottom: var(--ms-r3);
+  }
+
+  .hero-kicker {
+    font-family: var(--ms-font-ui);
+    font-size: 12px;
+    font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--ms-mute);
-    margin-bottom: var(--ms-r3);
+    letter-spacing: 0.12em;
+    color: #8B5E3C;
+    margin-bottom: var(--ms-r4);
+    max-width: 48rem;
+    line-height: 1.5;
   }
 
-  .browse-title {
+  .hero-title {
     font-family: var(--ms-font-display);
-    font-size: var(--ms-h1);
+    font-size: clamp(2rem, 4.5vw, 2.5rem);
     font-weight: 400;
     letter-spacing: -0.025em;
-    line-height: 0.95;
-    color: var(--ms-ink);
-    margin-bottom: var(--ms-r4);
+    line-height: 1.05;
+    color: #2C2A26;
+    margin-bottom: var(--ms-r5);
   }
 
-  .browse-intro {
+  .hero-intro {
     font-family: var(--ms-font-body);
-    font-size: 1.125rem;
-    line-height: 1.55;
+    font-size: 1.0625rem;
+    line-height: 1.6;
     color: var(--ms-ink);
-    max-width: 38rem;
-    margin-bottom: var(--ms-r4);
+    max-width: 42rem;
   }
 
-  .browse-count {
-    font-family: var(--ms-font-mono);
-    font-size: var(--ms-meta);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--ms-mute);
-  }
-
-  .filter-bar {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--ms-r2);
-    margin-bottom: var(--ms-r6);
-    padding-bottom: var(--ms-r5);
-    border-bottom: 1px solid var(--ms-rule);
-  }
-
-  .chip {
-    font-family: var(--ms-font-mono);
-    font-size: var(--ms-meta);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    background: transparent;
-    color: var(--chip-color, var(--ms-ink));
-    border: 1.5px solid var(--chip-color, var(--ms-mute));
-    border-radius: var(--ms-radius-pill);
-    padding: 6px 14px;
-    cursor: pointer;
-    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
-  }
-
-  .chip-all {
-    --chip-color: var(--ms-ink);
-    color: var(--ms-ink);
-    border-color: var(--ms-ink);
-  }
-
-  .chip:hover {
-    background: color-mix(in srgb, var(--chip-color, var(--ms-ink)) 12%, transparent);
-  }
-
-  .chip.is-active {
-    background: var(--chip-color, var(--ms-ink));
-    color: var(--ms-white);
-    border-color: var(--chip-color, var(--ms-ink));
-  }
-
-  .card-grid {
+  /* ---- Two-column row ---- */
+  .row {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: var(--ms-r5);
-    align-items: stretch;
+    grid-template-columns: minmax(0, 30%) minmax(0, 1fr);
+    gap: var(--ms-r7);
+    align-items: start;
   }
 
-  .card-cell {
-    display: contents;
+  .row-left {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ms-r3);
   }
 
-  .card-cell[hidden] {
-    display: none;
-  }
-
-  .browse-footer {
-    margin-top: var(--ms-r9);
-    padding-top: var(--ms-r6);
-    border-top: 1px solid var(--ms-rule);
-    text-align: center;
-  }
-
-  .browse-footer a {
+  .row-h2 {
     font-family: var(--ms-font-ui);
-    font-size: 14px;
-    color: var(--ms-coral);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.35;
+    letter-spacing: -0.005em;
+    color: var(--ms-ink);
+    margin: 0;
+  }
+
+  .row-body {
+    font-family: var(--ms-font-ui);
+    font-size: 13px;
+    line-height: 1.6;
+    color: #6B6560;
+  }
+
+  .row-link {
+    font-family: var(--ms-font-ui);
+    font-size: 13px;
+    font-weight: 500;
+    color: #8B5E3C;
     text-decoration: none;
+    align-self: flex-start;
     border-bottom: 1px solid currentColor;
     padding-bottom: 2px;
     transition: opacity 0.15s ease;
   }
 
-  .browse-footer a:hover {
-    opacity: 0.75;
+  .row-link:hover {
+    opacity: 0.7;
   }
 
-  @media (max-width: 640px) {
-    .browse {
+  /* ---- Section 1: featured cards 2x2 ---- */
+  .featured-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--ms-r4);
+  }
+
+  /* ---- Section 2: collections list ---- */
+  .collection-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .collection-list li + li {
+    border-top: 1px solid #E8E3DA;
+  }
+
+  .collection-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--ms-r4);
+    padding: var(--ms-r4) 0;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.15s ease;
+  }
+
+  .collection-row:hover {
+    color: #8B5E3C;
+  }
+
+  .collection-row-title {
+    font-family: var(--ms-font-display);
+    font-size: 1.125rem;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+    color: inherit;
+  }
+
+  .collection-row-meta {
+    font-family: var(--ms-font-mono);
+    font-size: var(--ms-meta);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ms-mute);
+    flex-shrink: 0;
+  }
+
+  /* ---- Section 3: category grid ---- */
+  .category-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--ms-r3) var(--ms-r5);
+  }
+
+  .category-item {
+    display: flex;
+    align-items: center;
+    gap: var(--ms-r3);
+    padding: var(--ms-r2) 0;
+    font-family: var(--ms-font-ui);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ms-ink);
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+
+  .category-item:hover {
+    color: var(--cat-color);
+  }
+
+  .category-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--cat-color, var(--ms-mute));
+    flex-shrink: 0;
+  }
+
+  /* ---- Section 4: connections card ---- */
+  .connections-card {
+    display: block;
+    background: #2C2A26;
+    border-radius: var(--ms-radius-md);
+    padding: var(--ms-r6);
+    text-decoration: none;
+    color: var(--ms-paper);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .connections-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.16);
+  }
+
+  .connections-svg {
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    margin-bottom: var(--ms-r4);
+  }
+
+  .connections-title {
+    font-family: var(--ms-font-display);
+    font-size: 1.375rem;
+    font-weight: 400;
+    letter-spacing: -0.015em;
+    color: var(--ms-paper);
+    margin-bottom: var(--ms-r2);
+  }
+
+  .connections-body {
+    font-family: var(--ms-font-body);
+    font-size: 0.9375rem;
+    line-height: 1.55;
+    color: #B8B3A6;
+    margin-bottom: var(--ms-r4);
+    max-width: 28rem;
+  }
+
+  .connections-link {
+    font-family: var(--ms-font-ui);
+    font-size: 13px;
+    font-weight: 500;
+    color: #C4956A;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+  }
+
+  /* ---- Section 5: Stay curious ---- */
+  .stay-curious {
+    background: #FAF6EF;
+    border-radius: var(--ms-radius-md);
+    padding: var(--ms-r7);
+    text-align: center;
+  }
+
+  .sc-title {
+    font-family: var(--ms-font-display);
+    font-size: clamp(1.625rem, 3vw, 2rem);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: var(--ms-ink);
+    margin-bottom: var(--ms-r3);
+  }
+
+  .sc-body {
+    font-family: var(--ms-font-body);
+    font-size: 1rem;
+    line-height: 1.55;
+    color: var(--ms-mute);
+    margin-bottom: var(--ms-r5);
+    max-width: 32rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sc-buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--ms-r3);
+    flex-wrap: wrap;
+  }
+
+  .sc-btn {
+    display: inline-block;
+    font-family: var(--ms-font-ui);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 22px;
+    border-radius: var(--ms-radius-pill);
+    text-decoration: none;
+    transition: opacity 0.15s ease, background 0.15s ease, color 0.15s ease;
+    border: 1.5px solid transparent;
+  }
+
+  .sc-btn-primary {
+    background: var(--ms-ink);
+    color: var(--ms-paper);
+    border-color: var(--ms-ink);
+  }
+
+  .sc-btn-primary:hover {
+    opacity: 0.88;
+  }
+
+  .sc-btn-secondary {
+    background: transparent;
+    color: var(--ms-ink);
+    border-color: var(--ms-ink);
+  }
+
+  .sc-btn-secondary:hover {
+    background: var(--ms-ink);
+    color: var(--ms-paper);
+  }
+
+  /* ---- Mobile ---- */
+  @media (max-width: 768px) {
+    .home {
       padding: var(--ms-r5) var(--ms-r4) var(--ms-r8);
     }
-    .browse-header {
-      margin-bottom: var(--ms-r5);
+
+    .section-rule {
+      margin: var(--ms-r6) 0;
     }
-    .browse-intro {
+
+    .row {
+      grid-template-columns: 1fr;
+      gap: var(--ms-r5);
+    }
+
+    .featured-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-intro {
       font-size: 1rem;
     }
-    .card-grid {
-      grid-template-columns: 1fr;
-      gap: var(--ms-r4);
+
+    .stay-curious {
+      padding: var(--ms-r5) var(--ms-r4);
     }
   }
 </style>
-
-<script>
-  const chips = document.querySelectorAll<HTMLButtonElement>('.chip');
-  const cells = document.querySelectorAll<HTMLDivElement>('.card-cell');
-
-  chips.forEach((chip) => {
-    chip.addEventListener('click', () => {
-      const filter = chip.dataset.filter || 'all';
-      chips.forEach((c) => c.classList.toggle('is-active', c === chip));
-      cells.forEach((cell) => {
-        const matches = filter === 'all' || cell.dataset.category === filter;
-        cell.hidden = !matches;
-      });
-    });
-  });
-</script>
