@@ -1,7 +1,7 @@
 ---
 title: "How Bad Information Becomes Common Knowledge"
 type: "pathway"
-audience: "Anyone who reads the news, shares articles, or tries to figure out what's true - which is everyone. Particularly useful for students, journalists, and anyone who's ever shared something online and later wondered if it was accurate."
+audience: "Most things 'everyone knows' arrived without anyone checking. Trace the journey of a dodgy claim from fringe blog to settled fact — and where the chain can still be broken."
 collectionEntries:
   - "appeal-to-false-authority"
   - "authority-bias"

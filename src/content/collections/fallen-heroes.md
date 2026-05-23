@@ -1,7 +1,7 @@
 ---
 title: "Why We Judge Fallen Heroes More Harshly Than Known Villains"
 type: "pathway"
-audience: "Anyone who has ever felt more betrayed by a hypocrite than threatened by a known bad actor"
+audience: "A corrupt politician we never trusted does less damage to our sleep than an idealist who turned out to be a fraud. The reasons run deeper than disappointment."
 collectionEntries:
   - "expectancy-violation"
   - "betrayal-aversion"

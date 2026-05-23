@@ -1,7 +1,7 @@
 ---
 title: "The Misinformation Toolkit"
 type: "pathway"
-audience: "Teachers and students aged 16+, and anyone who wants to understand how misinformation works"
+audience: "Information is abundant; trust is scarce. A guided tour through the biases, tactics, and effects that make modern misinformation work — and how to notice each one as it's happening."
 collectionEntries:
   - "confirmation-bias"
   - "illusory-truth-effect"

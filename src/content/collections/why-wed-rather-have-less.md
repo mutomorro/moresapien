@@ -1,7 +1,7 @@
 ---
 title: "Why We'd Rather Have Less Than Let Others Have More"
 type: "pathway"
-audience: "Anyone curious about why people vote against their own interests, accept worse outcomes to preserve hierarchy, or feel deprived in the midst of plenty"
+audience: "Offered a choice between everyone winning and the other person losing more than you do, a meaningful slice of people pick the second option. Once you see that pattern, a great deal of political behaviour stops being baffling."
 collectionEntries:
   - "relative-deprivation"
   - "zero-sum-thinking"
