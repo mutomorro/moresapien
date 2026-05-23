@@ -34,6 +34,24 @@
       "connections": 10
     },
     {
+      "slug": "alienation",
+      "title": "Alienation",
+      "category": "Cultural Influence",
+      "colour": "#1A7A7A",
+      "oneLiner": "The feeling of being disconnected from your work, from other people, and from yourself by the structures you live within.",
+      "tags": [
+        "work",
+        "meaning",
+        "capitalism",
+        "identity",
+        "disconnection",
+        "society",
+        "wellbeing",
+        "systems"
+      ],
+      "connections": 5
+    },
+    {
       "slug": "anchoring-bias",
       "title": "Anchoring Bias",
       "category": "Cognitive Bias",
@@ -129,7 +147,7 @@
         "everyday life",
         "risk"
       ],
-      "connections": 26
+      "connections": 27
     },
     {
       "slug": "aversive-racism",
@@ -243,7 +261,7 @@
         "control",
         "history"
       ],
-      "connections": 5
+      "connections": 6
     },
     {
       "slug": "burden-of-proof",
@@ -292,7 +310,7 @@
         "media literacy",
         "social dynamics"
       ],
-      "connections": 14
+      "connections": 17
     },
     {
       "slug": "circle-of-competence",
@@ -343,6 +361,24 @@
       "connections": 40
     },
     {
+      "slug": "collective-amnesia",
+      "title": "Collective Amnesia",
+      "category": "Cultural Influence",
+      "colour": "#1A7A7A",
+      "oneLiner": "How societies forget inconvenient histories, allowing harmful patterns to repeat unchallenged.",
+      "tags": [
+        "history",
+        "memory",
+        "society",
+        "power",
+        "politics",
+        "culture",
+        "patterns",
+        "education"
+      ],
+      "connections": 5
+    },
+    {
       "slug": "commodification",
       "title": "Commodification",
       "category": "Cultural Influence",
@@ -357,7 +393,7 @@
         "identity",
         "everyday life"
       ],
-      "connections": 11
+      "connections": 13
     },
     {
       "slug": "compartmentalisation",
@@ -490,7 +526,7 @@
         "social dynamics",
         "education"
       ],
-      "connections": 15
+      "connections": 18
     },
     {
       "slug": "darvo",
@@ -783,7 +819,7 @@
         "decision-making",
         "critical thinking"
       ],
-      "connections": 47
+      "connections": 48
     },
     {
       "slug": "fundamental-attribution-error",
@@ -799,7 +835,7 @@
         "social perception",
         "conflict"
       ],
-      "connections": 18
+      "connections": 19
     },
     {
       "slug": "gaslighting",
@@ -913,7 +949,7 @@
         "social media",
         "persuasion"
       ],
-      "connections": 13
+      "connections": 14
     },
     {
       "slug": "in-group-out-group-bias",
@@ -977,7 +1013,7 @@
         "decision-making",
         "empathy"
       ],
-      "connections": 8
+      "connections": 9
     },
     {
       "slug": "learned-helplessness",
@@ -993,7 +1029,7 @@
         "education",
         "resilience"
       ],
-      "connections": 6
+      "connections": 7
     },
     {
       "slug": "loaded-language",
@@ -1076,7 +1112,7 @@
         "manipulation",
         "culture"
       ],
-      "connections": 5
+      "connections": 6
     },
     {
       "slug": "map-is-not-the-territory",
@@ -1092,7 +1128,7 @@
         "media literacy",
         "education"
       ],
-      "connections": 7
+      "connections": 8
     },
     {
       "slug": "mere-exposure-effect",
@@ -1307,7 +1343,7 @@
         "everyday life",
         "power"
       ],
-      "connections": 12
+      "connections": 16
     },
     {
       "slug": "occams-razor",
@@ -1488,6 +1524,24 @@
       "connections": 15
     },
     {
+      "slug": "reification",
+      "title": "Reification",
+      "category": "Cultural Influence",
+      "colour": "#1A7A7A",
+      "oneLiner": "Treating human-made ideas, systems, and social arrangements as if they were natural, fixed, and unchangeable things.",
+      "tags": [
+        "assumptions",
+        "systems",
+        "power",
+        "society",
+        "change",
+        "nature",
+        "construction",
+        "philosophy"
+      ],
+      "connections": 6
+    },
+    {
       "slug": "relative-deprivation",
       "title": "Relative Deprivation",
       "category": "Psychological Phenomenon",
@@ -1649,7 +1703,7 @@
         "risk",
         "comfort zone"
       ],
-      "connections": 6
+      "connections": 7
     },
     {
       "slug": "straw-man",
@@ -1667,6 +1721,24 @@
         "rhetoric"
       ],
       "connections": 16
+    },
+    {
+      "slug": "structural-violence",
+      "title": "Structural Violence",
+      "category": "Cultural Influence",
+      "colour": "#1A7A7A",
+      "oneLiner": "Harm built into the design of social systems rather than inflicted by any individual act of aggression.",
+      "tags": [
+        "systems",
+        "inequality",
+        "power",
+        "society",
+        "justice",
+        "poverty",
+        "health",
+        "institutions"
+      ],
+      "connections": 5
     },
     {
       "slug": "sunk-cost-fallacy",
@@ -1731,7 +1803,25 @@
         "power",
         "social dynamics"
       ],
-      "connections": 9
+      "connections": 10
+    },
+    {
+      "slug": "the-culture-industry",
+      "title": "The Culture Industry",
+      "category": "Cultural Influence",
+      "colour": "#1A7A7A",
+      "oneLiner": "When culture is mass-produced to pacify rather than challenge, turning art and entertainment into instruments of conformity.",
+      "tags": [
+        "media",
+        "entertainment",
+        "capitalism",
+        "conformity",
+        "art",
+        "consumerism",
+        "mass production",
+        "culture"
+      ],
+      "connections": 5
     },
     {
       "slug": "the-meritocracy-myth",
@@ -1766,7 +1856,7 @@
         "authenticity",
         "culture"
       ],
-      "connections": 5
+      "connections": 6
     },
     {
       "slug": "thought-terminating-cliche",
@@ -2037,6 +2127,56 @@
         {
           "from": "appeal-to-emotion",
           "text": "The affect heuristic is the cognitive bias that makes appeal to emotion work - we judge things by how they make us feel."
+        }
+      ]
+    },
+    {
+      "source": "alienation",
+      "target": "commodification",
+      "notes": [
+        {
+          "from": "alienation",
+          "text": "Alienation from work is a direct consequence of commodification - when labour is treated as a commodity, the worker is separated from the meaning of what they produce."
+        }
+      ]
+    },
+    {
+      "source": "alienation",
+      "target": "capitalist-realism",
+      "notes": [
+        {
+          "from": "alienation",
+          "text": "Capitalist realism makes alienation feel inevitable rather than structural - if this is the only possible system, then feeling disconnected from your work is just how life is."
+        }
+      ]
+    },
+    {
+      "source": "alienation",
+      "target": "the-spectacle",
+      "notes": [
+        {
+          "from": "alienation",
+          "text": "The spectacle replaces genuine connection with its representation - social media creates the appearance of community while often deepening alienation."
+        }
+      ]
+    },
+    {
+      "source": "alienation",
+      "target": "normalisation",
+      "notes": [
+        {
+          "from": "alienation",
+          "text": "Alienation has been so thoroughly normalised that the question 'do you enjoy your work?' sounds naive rather than urgent."
+        }
+      ]
+    },
+    {
+      "source": "alienation",
+      "target": "learned-helplessness",
+      "notes": [
+        {
+          "from": "alienation",
+          "text": "Prolonged alienation can produce learned helplessness - the belief that meaninglessness is permanent and that nothing can be done about it."
         }
       ]
     },
@@ -2979,6 +3119,56 @@
         {
           "from": "psychological-projection",
           "text": "Projection is a way of offloading the discomfort of cognitive dissonance - attributing the unwanted trait to someone else rather than facing it in yourself."
+        }
+      ]
+    },
+    {
+      "source": "collective-amnesia",
+      "target": "normalisation",
+      "notes": [
+        {
+          "from": "collective-amnesia",
+          "text": "Normalisation and collective amnesia work together - once something has been normalised, the history of how it became normal is forgotten."
+        }
+      ]
+    },
+    {
+      "source": "collective-amnesia",
+      "target": "illusory-truth-effect",
+      "notes": [
+        {
+          "from": "collective-amnesia",
+          "text": "When the true history is forgotten, the replacement narrative benefits from the illusory truth effect - repeated often enough, it becomes the accepted story."
+        }
+      ]
+    },
+    {
+      "source": "availability-heuristic",
+      "target": "collective-amnesia",
+      "notes": [
+        {
+          "from": "collective-amnesia",
+          "text": "Collective amnesia exploits the availability heuristic - if you can't easily recall a historical pattern, it doesn't factor into your assessment of the present."
+        }
+      ]
+    },
+    {
+      "source": "collective-amnesia",
+      "target": "framing-effect",
+      "notes": [
+        {
+          "from": "collective-amnesia",
+          "text": "How history is framed determines what's remembered and what's forgotten - framing is the editorial mechanism of collective amnesia."
+        }
+      ]
+    },
+    {
+      "source": "collective-amnesia",
+      "target": "cultural-hegemony",
+      "notes": [
+        {
+          "from": "collective-amnesia",
+          "text": "The dominant culture controls which histories are told, taught, and preserved - collective amnesia is one of hegemony's most powerful tools."
         }
       ]
     },
@@ -6171,6 +6361,56 @@
       ]
     },
     {
+      "source": "cultural-hegemony",
+      "target": "reification",
+      "notes": [
+        {
+          "from": "reification",
+          "text": "Reification is one of hegemony's most powerful tools - when the dominant arrangement feels like nature rather than choice, challenging it becomes almost unthinkable."
+        }
+      ]
+    },
+    {
+      "source": "normalisation",
+      "target": "reification",
+      "notes": [
+        {
+          "from": "reification",
+          "text": "Normalisation is the process through which reification happens - something is repeated until it stops being noticed, and then it starts being treated as permanent."
+        }
+      ]
+    },
+    {
+      "source": "reification",
+      "target": "status-quo-bias",
+      "notes": [
+        {
+          "from": "reification",
+          "text": "Status quo bias is the psychological complement to reification - we prefer what already exists, and reification makes what exists feel like the only possibility."
+        }
+      ]
+    },
+    {
+      "source": "capitalist-realism",
+      "target": "reification",
+      "notes": [
+        {
+          "from": "reification",
+          "text": "Capitalist realism is reification applied to an entire economic system - the inability to imagine alternatives makes the current arrangement feel like a fact of nature."
+        }
+      ]
+    },
+    {
+      "source": "map-is-not-the-territory",
+      "target": "reification",
+      "notes": [
+        {
+          "from": "reification",
+          "text": "Reification confuses the map for the territory - treating our models of reality as if they were reality itself."
+        }
+      ]
+    },
+    {
       "source": "relative-deprivation",
       "target": "zero-sum-thinking",
       "notes": [
@@ -6617,6 +6857,56 @@
       ]
     },
     {
+      "source": "cultural-hegemony",
+      "target": "structural-violence",
+      "notes": [
+        {
+          "from": "structural-violence",
+          "text": "Cultural hegemony makes structural violence invisible by framing the systems that produce it as natural and inevitable."
+        }
+      ]
+    },
+    {
+      "source": "just-world-fallacy",
+      "target": "structural-violence",
+      "notes": [
+        {
+          "from": "structural-violence",
+          "text": "The just-world fallacy is one of the main psychological defences against recognising structural violence - if the world is fair, then unequal outcomes must be deserved."
+        }
+      ]
+    },
+    {
+      "source": "fundamental-attribution-error",
+      "target": "structural-violence",
+      "notes": [
+        {
+          "from": "structural-violence",
+          "text": "We attribute harm to individual failings rather than structural conditions - the same error that makes structural violence invisible."
+        }
+      ]
+    },
+    {
+      "source": "normalisation",
+      "target": "structural-violence",
+      "notes": [
+        {
+          "from": "structural-violence",
+          "text": "Structural violence persists because it's normalised - the harm is so constant and so familiar that it stops being perceived as violence at all."
+        }
+      ]
+    },
+    {
+      "source": "reification",
+      "target": "structural-violence",
+      "notes": [
+        {
+          "from": "structural-violence",
+          "text": "Reification treats the systems that produce structural violence as natural facts rather than human constructions that could be changed."
+        }
+      ]
+    },
+    {
       "source": "motivated-reasoning",
       "target": "sunk-cost-fallacy",
       "notes": [
@@ -6793,6 +7083,56 @@
         {
           "from": "the-attention-economy",
           "text": "The attention economy is a powerful vehicle for cultural hegemony - the ideas that spread are the ideas the algorithm rewards, not necessarily the ideas worth spreading"
+        }
+      ]
+    },
+    {
+      "source": "bread-and-circuses",
+      "target": "the-culture-industry",
+      "notes": [
+        {
+          "from": "the-culture-industry",
+          "text": "The culture industry is the modern machinery behind bread and circuses - mass-produced entertainment that absorbs attention and displaces critical engagement."
+        }
+      ]
+    },
+    {
+      "source": "the-attention-economy",
+      "target": "the-culture-industry",
+      "notes": [
+        {
+          "from": "the-culture-industry",
+          "text": "The attention economy is the business model of the culture industry - culture is produced to capture attention, and attention is sold to advertisers."
+        }
+      ]
+    },
+    {
+      "source": "commodification",
+      "target": "the-culture-industry",
+      "notes": [
+        {
+          "from": "the-culture-industry",
+          "text": "The culture industry is what happens when culture itself is commodified - produced, distributed, and consumed according to market logic."
+        }
+      ]
+    },
+    {
+      "source": "manufacturing-desire",
+      "target": "the-culture-industry",
+      "notes": [
+        {
+          "from": "the-culture-industry",
+          "text": "The culture industry manufactures cultural desires just as advertising manufactures consumer desires - it shapes what you want to watch, listen to, and experience."
+        }
+      ]
+    },
+    {
+      "source": "capitalist-realism",
+      "target": "the-culture-industry",
+      "notes": [
+        {
+          "from": "the-culture-industry",
+          "text": "The culture industry reinforces capitalist realism by ensuring that the culture people consume never seriously imagines alternatives to the current system."
         }
       ]
     },
@@ -7321,14 +7661,14 @@
     "Cultural Influence": "#1A7A7A"
   },
   "meta": {
-    "totalEntries": 117,
-    "totalConnections": 503,
+    "totalEntries": 122,
+    "totalConnections": 528,
     "totalCollections": 5,
     "categoryDistribution": {
       "Logical Fallacy": 16,
       "Cognitive Bias": 26,
+      "Cultural Influence": 18,
       "Psychological Phenomenon": 19,
-      "Cultural Influence": 13,
       "Mental Model": 11,
       "Psychological Defence": 6,
       "Manipulation Tactic": 11,
@@ -7336,6 +7676,6 @@
       "Rhetorical Device": 7,
       "Political Theory": 4
     },
-    "buildTimestamp": "2026-05-23T09:53:58.515Z"
+    "buildTimestamp": "2026-05-23T11:49:36.961Z"
   }
 }
