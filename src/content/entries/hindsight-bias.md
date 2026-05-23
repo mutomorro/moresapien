@@ -7,7 +7,7 @@ alsoKnownAs:
   - "Monday morning quarterbacking"
 category: "Cognitive Bias"
 tags:
-  - "decision making"
+  - "decision-making"
   - "memory"
   - "accountability"
   - "politics"

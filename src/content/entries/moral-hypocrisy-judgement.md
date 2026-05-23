@@ -11,7 +11,7 @@ tags:
   - "social dynamics"
   - "relationships"
   - "everyday life"
-  - "emotion"
+  - "emotions"
 howToSpotIt: "Notice when you judge two people differently for the same action. If the one who claimed to be virtuous gets more of your anger than the one who never made that claim, you're responding to the hypocrisy - the gap between words and deeds - more than the deed itself."
 thoughtToHoldOnto: "Consistency, even in dishonesty, offends us less than hypocrisy. We can forgive a villain more easily than a fraud."
 relatedConcepts:

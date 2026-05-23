@@ -9,7 +9,7 @@ alsoKnownAs:
 category: "Psychological Phenomenon"
 tags:
   - "risk perception"
-  - "decision making"
+  - "decision-making"
   - "crisis"
   - "safety"
   - "workplace"

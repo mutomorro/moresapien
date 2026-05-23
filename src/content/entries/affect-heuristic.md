@@ -7,7 +7,7 @@ alsoKnownAs:
   - "Gut feeling bias"
 category: "Cognitive Bias"
 tags:
-  - "decision making"
+  - "decision-making"
   - "emotions"
   - "risk perception"
   - "media"

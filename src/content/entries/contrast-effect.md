@@ -7,7 +7,7 @@ alsoKnownAs:
   - "Comparison effect"
 category: "Cognitive Bias"
 tags:
-  - "decision making"
+  - "decision-making"
   - "marketing"
   - "negotiation"
   - "workplace"

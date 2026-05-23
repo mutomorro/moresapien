@@ -3,7 +3,7 @@ title: "Feedback Loops"
 oneLiner: "When the output of a system feeds back in as input, either amplifying or dampening the original effect."
 alsoKnownAs: ["reinforcing loops", "balancing loops", "vicious circles", "virtuous circles", "positive feedback", "negative feedback"]
 category: "Systems Thinking"
-tags: ["systems", "critical thinking", "social media", "politics", "everyday life", "decision-making"]
+tags: ["systems thinking", "critical thinking", "social media", "politics", "everyday life", "decision-making"]
 howToSpotIt: "Ask whether the effect you're seeing is making itself stronger or weaker over time. If a situation keeps escalating with no obvious new cause, you're probably inside a reinforcing loop. If it keeps returning to a stable point, it's a balancing loop."
 thoughtToHoldOnto: "Most of the things that feel like they're spiralling out of control aren't being pushed by an outside force. They're being pulled by their own momentum."
 whyItMattersNow: "Social media algorithms, political polarisation, and climate change are all driven by feedback loops that most people don't recognise. Understanding these loops is the first step to interrupting them."

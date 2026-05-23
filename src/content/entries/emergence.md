@@ -3,7 +3,7 @@ title: "Emergence"
 oneLiner: "Complex behaviours arising from simple rules, with no central plan or control."
 alsoKnownAs: ["emergent behaviour", "emergent properties", "self-organisation", "bottom-up complexity"]
 category: "Systems Thinking"
-tags: ["systems", "critical thinking", "social dynamics", "social media", "politics", "complexity"]
+tags: ["systems thinking", "critical thinking", "social dynamics", "social media", "politics", "complexity"]
 howToSpotIt: "When you see a complex, coordinated pattern, resist the urge to assume someone is orchestrating it. Ask whether simple individual behaviours, repeated at scale, could produce the pattern on their own. If so, you may be looking at emergence rather than a plan."
 thoughtToHoldOnto: "Not everything that looks designed was designed. And not everything that looks like a conspiracy requires conspirators."
 whyItMattersNow: "From viral misinformation to housing crises to political polarisation, many of the biggest challenges we face weren't designed by anyone. They emerged from millions of ordinary decisions interacting in ways nobody predicted."

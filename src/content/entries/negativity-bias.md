@@ -6,7 +6,7 @@ alsoKnownAs:
   - "Positive-negative asymmetry"
 category: "Cognitive Bias"
 tags:
-  - "decision making"
+  - "decision-making"
   - "media"
   - "relationships"
   - "mental health"

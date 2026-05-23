@@ -3,7 +3,7 @@ title: "Tragedy of the Commons"
 oneLiner: "When individuals acting in their own rational interest collectively destroy a shared resource."
 alsoKnownAs: ["the commons dilemma", "collective action problem", "free rider problem"]
 category: "Systems Thinking"
-tags: ["systems", "politics", "critical thinking", "decision-making", "social dynamics", "environment"]
+tags: ["systems thinking", "politics", "critical thinking", "decision-making", "social dynamics", "environment"]
 howToSpotIt: "Look for situations where everyone benefits from a shared resource but nobody is responsible for maintaining it. If each person's rational choice is to take more, and everyone is making that same rational choice, the resource is heading for collapse."
 thoughtToHoldOnto: "The tragedy of the commons isn't that people are selfish. It's that individually rational decisions can be collectively suicidal."
 whyItMattersNow: "Climate change is the tragedy of the commons at planetary scale. Every country has an incentive to keep burning fossil fuels while hoping everyone else cuts back. But the same dynamic plays out in shared digital spaces, public services, and workplace resources."

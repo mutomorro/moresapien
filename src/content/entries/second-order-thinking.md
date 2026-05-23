@@ -14,7 +14,7 @@ tags:
   - "critical thinking"
   - "policy"
   - "workplace"
-  - "systems"
+  - "systems thinking"
 howToSpotIt: "When someone proposes a solution and it sounds too clean, too simple, or too good to be true, ask: 'And then what?' Do this two or three times. The plan that looked brilliant at first glance often looks very different by the third 'and then what.'"
 thoughtToHoldOnto: "First-order thinkers look for the right answer. Second-order thinkers look for the right answer that doesn't create three new problems."
 whyItMattersNow: "We live in an interconnected world where actions ripple outward in ways that are hard to predict but important to anticipate. From policy decisions to personal choices, the most damaging mistakes are rarely the result of getting the first-order effects wrong. They come from failing to ask what happens next."

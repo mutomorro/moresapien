@@ -3,7 +3,7 @@ title: "Unintended Consequences"
 oneLiner: "Actions in complex systems produce outcomes nobody planned for - sometimes worse than the original problem."
 alsoKnownAs: ["the cobra effect", "perverse incentives", "blowback", "the law of unintended consequences"]
 category: "Systems Thinking"
-tags: ["systems", "critical thinking", "politics", "decision-making", "everyday life", "policy"]
+tags: ["systems thinking", "critical thinking", "politics", "decision-making", "everyday life", "policy"]
 howToSpotIt: "Before asking 'will this work?', ask 'what else might happen?' Every action in a connected system has ripple effects. The more confident someone is that their solution has no downsides, the less likely they've thought it through."
 thoughtToHoldOnto: "The road to hell isn't just paved with good intentions. It's paved with solutions that only looked at the problem from one direction."
 whyItMattersNow: "From social media regulations to pandemic responses to AI governance, we're making high-stakes decisions in complex systems faster than ever. The history of unintended consequences suggests we should be asking 'and then what?' far more often than we do."
