@@ -1,0 +1,253 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import ConceptCard from '../../components/ConceptCard.astro';
+
+function tagToSlug(tag: string): string {
+  return tag.toLowerCase().trim().replace(/\s+/g, '-');
+}
+
+export async function getStaticPaths() {
+  const all = await getCollection('entries');
+  const entrySlugs = new Set(all.map((e) => e.id));
+
+  const tagMap = new Map<string, { tag: string; entries: typeof all }>();
+  for (const entry of all) {
+    const tags = (entry.data.tags || []) as string[];
+    for (const tag of tags) {
+      if (!tag) continue;
+      if (entrySlugs.has(tag)) continue; // safety filter: never build a tag page that collides with an entry slug
+      const slug = tag.toLowerCase().trim().replace(/\s+/g, '-');
+      if (!tagMap.has(slug)) tagMap.set(slug, { tag, entries: [] });
+      tagMap.get(slug)!.entries.push(entry);
+    }
+  }
+
+  return Array.from(tagMap.entries()).map(([slug, { tag, entries }]) => ({
+    params: { tag: slug },
+    props: { tag, entries },
+  }));
+}
+
+const { tag, entries } = Astro.props as {
+  tag: string;
+  entries: Awaited<ReturnType<typeof getCollection<'entries'>>>;
+};
+
+const sortedEntries = entries
+  .map((entry) => ({
+    slug: entry.id,
+    title: entry.data.title,
+    oneLiner: entry.data.oneLiner,
+    category: entry.data.category,
+  }))
+  .sort((a, b) => a.title.localeCompare(b.title));
+
+const tagSlug = tagToSlug(tag);
+const count = sortedEntries.length;
+const canonical = `https://moresapien.org/tag/${tagSlug}/`;
+const pageTitle = `#${tag} — Moresapien`;
+const description = `Explore Moresapien entries tagged with ${tag} — concepts from psychology, logic, and critical thinking.`;
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: pageTitle,
+  description,
+  url: canonical,
+  isPartOf: {
+    '@type': 'WebSite',
+    name: 'Moresapien',
+    url: 'https://moresapien.org/',
+  },
+};
+---
+<BaseLayout
+  title={pageTitle}
+  description={description}
+  canonical={canonical}
+  ogImage="https://moresapien.org/og/home.png"
+>
+  <script
+    is:inline
+    type="application/ld+json"
+    slot="head"
+    set:html={JSON.stringify(structuredData)}
+  />
+
+  <Nav />
+
+  <main id="main" class="tag-page">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/browse/">Browse</a>
+      <span class="breadcrumb-sep" aria-hidden="true">→</span>
+      <span class="breadcrumb-current">#{tag}</span>
+    </nav>
+
+    <header class="tag-header">
+      <p class="tag-eyebrow">Tag</p>
+      <h1 class="tag-title">
+        <span class="tag-hash" aria-hidden="true">#</span>{tag}
+      </h1>
+      <p class="tag-intro">
+        Entries tagged with <em>{tag}</em> — exploring this theme across cognitive biases, logical fallacies, mental models, and more.
+      </p>
+      <p class="tag-count">{count} {count === 1 ? 'concept' : 'concepts'}</p>
+    </header>
+
+    <div class="card-grid">
+      {sortedEntries.map((entry) => (
+        <ConceptCard
+          title={entry.title}
+          oneLiner={entry.oneLiner}
+          category={entry.category}
+          slug={entry.slug}
+        />
+      ))}
+    </div>
+
+    <footer class="tag-footer">
+      <p>
+        <a href="/browse/">← Back to Browse</a>
+      </p>
+    </footer>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .tag-page {
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: var(--ms-r7) var(--ms-r5) var(--ms-r9);
+  }
+
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: var(--ms-r2);
+    font-family: var(--ms-font-mono);
+    font-size: var(--ms-meta);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ms-mute);
+    margin-bottom: var(--ms-r6);
+  }
+
+  .breadcrumb a {
+    color: var(--ms-mute);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+
+  .breadcrumb a:hover {
+    color: var(--ms-ink);
+    border-bottom-color: currentColor;
+  }
+
+  .breadcrumb-sep {
+    color: var(--ms-rule);
+  }
+
+  .breadcrumb-current {
+    color: var(--ms-ink);
+  }
+
+  .tag-header {
+    margin-bottom: var(--ms-r7);
+  }
+
+  .tag-eyebrow {
+    font-family: var(--ms-font-mono);
+    font-size: var(--ms-meta);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ms-mute);
+    margin-bottom: var(--ms-r3);
+  }
+
+  .tag-title {
+    font-family: var(--ms-font-display);
+    font-size: var(--ms-h1);
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    line-height: 0.95;
+    color: var(--ms-ink);
+    margin-bottom: var(--ms-r4);
+  }
+
+  .tag-hash {
+    color: var(--ms-mute);
+    margin-right: 0.05em;
+  }
+
+  .tag-intro {
+    font-family: var(--ms-font-body);
+    font-size: 1.125rem;
+    line-height: 1.55;
+    color: var(--ms-ink);
+    max-width: 38rem;
+    margin-bottom: var(--ms-r4);
+  }
+
+  .tag-intro em {
+    font-style: italic;
+    color: var(--ms-coral);
+  }
+
+  .tag-count {
+    font-family: var(--ms-font-mono);
+    font-size: var(--ms-meta);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ms-mute);
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--ms-r5);
+    align-items: stretch;
+  }
+
+  .tag-footer {
+    margin-top: var(--ms-r9);
+    padding-top: var(--ms-r6);
+    border-top: 1px solid var(--ms-rule);
+    text-align: center;
+  }
+
+  .tag-footer a {
+    font-family: var(--ms-font-ui);
+    font-size: 14px;
+    color: var(--ms-coral);
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    transition: opacity 0.15s ease;
+  }
+
+  .tag-footer a:hover {
+    opacity: 0.75;
+  }
+
+  @media (max-width: 640px) {
+    .tag-page {
+      padding: var(--ms-r5) var(--ms-r4) var(--ms-r8);
+    }
+    .tag-header {
+      margin-bottom: var(--ms-r5);
+    }
+    .tag-intro {
+      font-size: 1rem;
+    }
+    .card-grid {
+      grid-template-columns: 1fr;
+      gap: var(--ms-r4);
+    }
+  }
+</style>

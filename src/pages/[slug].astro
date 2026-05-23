@@ -52,6 +52,12 @@ if (whyItMattersNow) {
 }
 
 const allEntries = await getCollection('entries');
+const entrySlugSet = new Set(allEntries.map((e) => e.id));
+
+// Filter out any tag whose value matches an entry slug (belt-and-braces against future data drift)
+const displayTags = (tags || []).filter((t: string) => t && !entrySlugSet.has(t));
+const tagToSlug = (t: string) => t.toLowerCase().trim().replace(/\s+/g, '-');
+
 const resolvedRelated = relatedConcepts.map((rel: { slug: string; note?: string }) => {
   const found = allEntries.find((e) => e.id === rel.slug);
   return {
@@ -284,10 +290,10 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
             </div>
           )}
 
-          {tags && tags.length > 0 && (
+          {displayTags.length > 0 && (
             <div class="tag-row" aria-label="Tags">
-              {tags.map((tag: string) => (
-                <span class="tag">#{tag}</span>
+              {displayTags.map((tag: string) => (
+                <a class="tag" href={`/tag/${tagToSlug(tag)}/`}>#{tag}</a>
               ))}
             </div>
           )}
@@ -793,6 +799,15 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
     color: var(--ms-mute);
     text-transform: lowercase;
     letter-spacing: 0.05em;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+
+  .tag:hover {
+    color: var(--ms-ink);
+    border-bottom-color: currentColor;
   }
 
   /* =============================================
