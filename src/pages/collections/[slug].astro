@@ -99,7 +99,7 @@ const pageTitle = title + ' — Moresapien';
       <header class="collection-header">
         <p class="eyebrow">Collection</p>
         <h1 class="collection-title">
-          {titleSplit.head}<span class="title-tail">{titleSplit.tail}{' '}<Asterisk size={28} class="title-asterisk" /></span>
+          {titleSplit.head}<span class="title-tail">{titleSplit.tail}{' '}<span class="title-asterisk"><Asterisk size={28} /></span></span>
         </h1>
         <p class="collection-audience">{audience}</p>
       </header>
@@ -134,7 +134,7 @@ const pageTitle = title + ' — Moresapien';
                         <span class="aside-eyebrow">Concept</span>
                         <span class="aside-category">{stage.entry.category}</span>
                         <span class="aside-title">
-                          {stage.entry.titleHead}<span class="entry-tail">{stage.entry.titleTail}{' '}<Asterisk size={11} color="var(--entry-accent)" class="entry-asterisk" /></span>
+                          {stage.entry.titleHead}<span class="entry-tail">{stage.entry.titleTail}{' '}<span class="entry-asterisk"><Asterisk size={11} color="var(--entry-accent)" /></span></span>
                         </span>
                         <span class="aside-oneliner">{stage.entry.oneLiner}</span>
                         <span class="aside-cta">Read →</span>
@@ -168,7 +168,7 @@ const pageTitle = title + ' — Moresapien';
                       <div class="pathway-content">
                         <span class="pathway-category">{entry.category}</span>
                         <span class="pathway-title">
-                          {entry.titleHead}<span class="entry-tail">{entry.titleTail}{' '}<Asterisk size={11} color="var(--entry-accent)" class="entry-asterisk" /></span>
+                          {entry.titleHead}<span class="entry-tail">{entry.titleTail}{' '}<span class="entry-asterisk"><Asterisk size={11} color="var(--entry-accent)" /></span></span>
                         </span>
                         <span class="pathway-oneliner">{entry.oneLiner}</span>
                       </div>
@@ -186,7 +186,7 @@ const pageTitle = title + ' — Moresapien';
                   >
                     <span class="toolkit-category">{entry.category}</span>
                     <span class="toolkit-title">
-                      {entry.titleHead}<span class="entry-tail">{entry.titleTail}{' '}<Asterisk size={11} color="var(--entry-accent)" class="entry-asterisk" /></span>
+                      {entry.titleHead}<span class="entry-tail">{entry.titleTail}{' '}<span class="entry-asterisk"><Asterisk size={11} color="var(--entry-accent)" /></span></span>
                     </span>
                     <span class="toolkit-oneliner">{entry.oneLiner}</span>
                   </a>
@@ -256,6 +256,7 @@ const pageTitle = title + ' — Moresapien';
   }
   .title-asterisk,
   .entry-asterisk {
+    display: inline-block;
     transform: translateY(-0.55em);
   }
 

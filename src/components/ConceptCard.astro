@@ -24,7 +24,7 @@ const titleTail = lastSpace === -1 ? title : title.slice(lastSpace + 1);
 >
   <span class="ms-card-eyebrow">{category}</span>
   <h2 class="ms-card-title">
-    {titleHead}<span class="ms-card-title-tail">{titleTail}{' '}<Asterisk size={14} color={accent} class="ms-card-asterisk" /></span>
+    {titleHead}<span class="ms-card-title-tail">{titleTail}{' '}<span class="ms-card-asterisk"><Asterisk size={14} color={accent} /></span></span>
   </h2>
   <p class="ms-card-oneliner">{oneLiner}</p>
 </a>
@@ -72,6 +72,7 @@ const titleTail = lastSpace === -1 ? title : title.slice(lastSpace + 1);
     white-space: nowrap;
   }
   .ms-card-asterisk {
+    display: inline-block;
     transform: translateY(-0.55em);
   }
 

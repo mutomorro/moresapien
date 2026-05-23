@@ -169,7 +169,7 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
         <header class="entry-header">
           <p class="eyebrow"><a href={`/browse/${getCategorySlug(category)}/`} class="eyebrow-link">{category}</a></p>
           <h1 class="entry-title">
-            {titleSplit.head}<span class="title-tail">{titleSplit.tail}{' '}<Asterisk size={36} color="var(--page-accent)" class="title-asterisk" /></span>
+            {titleSplit.head}<span class="title-tail">{titleSplit.tail}{' '}<span class="title-asterisk"><Asterisk size={36} color="var(--page-accent)" /></span></span>
           </h1>
           <p class="entry-oneliner">{oneLiner}</p>
 
@@ -294,7 +294,7 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
                   >
                     <span class="related-eyebrow">{related.category}</span>
                     <span class="related-title">
-                      {related.titleHead}<span class="related-tail">{related.titleTail}{' '}<Asterisk size={11} color="var(--related-accent)" class="related-asterisk" /></span>
+                      {related.titleHead}<span class="related-tail">{related.titleTail}{' '}<span class="related-asterisk"><Asterisk size={11} color="var(--related-accent)" /></span></span>
                     </span>
                     <span class="related-oneliner">{related.oneLiner}</span>
                     {related.note && <span class="related-note">{related.note}</span>}
@@ -415,6 +415,7 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
     white-space: nowrap;
   }
   .title-asterisk {
+    display: inline-block;
     transform: translateY(-0.55em);
   }
 
@@ -779,6 +780,7 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
     white-space: nowrap;
   }
   .related-asterisk {
+    display: inline-block;
     transform: translateY(-0.55em);
   }
 
