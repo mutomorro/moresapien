@@ -83,7 +83,7 @@ const pageTitle = title + ' — Moresapien';
 
     <article class="collection">
       <header class="collection-header">
-        <p class="eyebrow">{type === 'pathway' ? 'Learning pathway' : 'Toolkit'}</p>
+        <p class="eyebrow">Collection</p>
         <h1 class="collection-title">
           {title}<span class="title-asterisk">{' '}<Asterisk size={28} /></span>
         </h1>
@@ -108,20 +108,22 @@ const pageTitle = title + ' — Moresapien';
                   )}
 
                   <section class="stage" style={`--entry-accent: ${accent};`}>
-                    <header class="stage-header">
-                      <span class="stage-number">{String(stage.number).padStart(2, '0')}</span>
-                      <h2 class="stage-heading">{stage.heading}</h2>
-                    </header>
+                    <span class="stage-number" aria-hidden="true">{String(stage.number).padStart(2, '0')}</span>
 
-                    <div class="stage-body" set:html={stage.bodyHtml} />
+                    <div class="stage-content">
+                      <h2 class="stage-heading">{stage.heading}</h2>
+                      <div class="stage-body" set:html={stage.bodyHtml} />
+                    </div>
 
                     {stage.entry && (
-                      <a href={`/${stage.entry.slug}/`} class="entry-card">
-                        <span class="entry-category">{stage.entry.category}</span>
-                        <span class="entry-title">
+                      <a href={`/${stage.entry.slug}/`} class="stage-aside">
+                        <span class="aside-eyebrow">Concept</span>
+                        <span class="aside-category">{stage.entry.category}</span>
+                        <span class="aside-title">
                           {stage.entry.title}<span class="entry-asterisk">{' '}<Asterisk size={11} color="var(--entry-accent)" /></span>
                         </span>
-                        <span class="entry-oneliner">{stage.entry.oneLiner}</span>
+                        <span class="aside-oneliner">{stage.entry.oneLiner}</span>
+                        <span class="aside-cta">Read →</span>
                       </a>
                     )}
                   </section>
@@ -188,7 +190,7 @@ const pageTitle = title + ' — Moresapien';
 
 <style>
   .collection-page {
-    max-width: 48rem;
+    max-width: 60rem;
     margin: 0 auto;
     padding: var(--ms-r6) var(--ms-r5) var(--ms-r9);
   }
@@ -274,27 +276,35 @@ const pageTitle = title + ' — Moresapien';
   .stages {
     display: flex;
     flex-direction: column;
-    gap: var(--ms-r7);
+    gap: var(--ms-r8);
   }
 
   .stage {
-    display: flex;
-    flex-direction: column;
-    gap: var(--ms-r4);
-  }
-
-  .stage-header {
-    display: flex;
-    align-items: baseline;
-    gap: var(--ms-r4);
+    display: grid;
+    grid-template-columns: minmax(0, 38rem) minmax(0, 13rem);
+    grid-template-areas:
+      "number  ."
+      "content aside";
+    column-gap: var(--ms-r6);
+    row-gap: var(--ms-r4);
   }
 
   .stage-number {
-    font-family: var(--ms-font-mono);
-    font-size: var(--ms-meta);
-    letter-spacing: 0.1em;
+    grid-area: number;
+    font-family: var(--ms-font-display);
+    font-weight: 400;
+    font-style: italic;
+    font-size: clamp(4.5rem, 8vw, 6.5rem);
+    line-height: 0.9;
+    letter-spacing: -0.05em;
     color: var(--entry-accent);
-    flex-shrink: 0;
+  }
+
+  .stage-content {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    gap: var(--ms-r4);
   }
 
   .stage-heading {
@@ -305,10 +315,6 @@ const pageTitle = title + ' — Moresapien';
     line-height: 1.1;
     color: var(--ms-ink);
     margin: 0;
-  }
-
-  .stage-body {
-    max-width: 38rem;
   }
 
   .stage-body :global(p) {
@@ -328,47 +334,70 @@ const pageTitle = title + ' — Moresapien';
     color: var(--ms-coral);
   }
 
-  /* Entry card inside a stage */
-  .entry-card {
+  /* Concept aside — sits beside the body, links to the entry */
+  .stage-aside {
+    grid-area: aside;
+    align-self: start;
     display: flex;
     flex-direction: column;
     gap: var(--ms-r2);
-    padding: var(--ms-r5);
-    background: var(--ms-white);
-    border: 1px solid var(--ms-rule);
-    border-left: var(--ms-accent-rule-width) solid var(--entry-accent);
-    border-radius: 0 var(--ms-radius-sm) var(--ms-radius-sm) 0;
+    padding-left: var(--ms-r4);
+    border-left: 2px solid var(--entry-accent);
     text-decoration: none;
     color: inherit;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease;
   }
 
-  .entry-card:hover {
+  .stage-aside:hover {
     transform: translateX(2px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
   }
 
-  .entry-category {
+  .stage-aside:hover .aside-title {
+    color: var(--entry-accent);
+  }
+
+  .aside-eyebrow {
+    font-family: var(--ms-font-mono);
+    font-size: var(--ms-meta);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ms-mute);
+  }
+
+  .aside-category {
     font-family: var(--ms-font-mono);
     font-size: var(--ms-meta);
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: var(--entry-accent);
+    margin-top: var(--ms-r2);
   }
 
-  .entry-title {
+  .aside-title {
     font-family: var(--ms-font-display);
-    font-size: 1.25rem;
+    font-size: 1.0625rem;
     font-weight: 400;
     letter-spacing: -0.02em;
+    line-height: 1.2;
     color: var(--ms-ink);
+    transition: color 0.15s ease;
   }
 
-  .entry-oneliner {
+  .aside-oneliner {
     font-family: var(--ms-font-body);
     font-size: var(--ms-small);
-    line-height: 1.55;
+    line-height: 1.5;
     color: var(--ms-mute);
+    margin-top: var(--ms-r2);
+  }
+
+  .aside-cta {
+    font-family: var(--ms-font-mono);
+    font-size: var(--ms-meta);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--entry-accent);
+    margin-top: var(--ms-r3);
   }
 
   /* Part dividers */
@@ -520,12 +549,35 @@ const pageTitle = title + ' — Moresapien';
     color: var(--ms-mute);
   }
 
-  @media (max-width: 640px) {
+  /* Tablet: keep the two-column layout but tighten the gap */
+  @media (max-width: 880px) {
+    .stage {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 11rem);
+      column-gap: var(--ms-r5);
+    }
+  }
+
+  /* Mobile: collapse to single column, aside becomes a quiet footer block */
+  @media (max-width: 720px) {
     .collection-page {
       padding: var(--ms-r5) var(--ms-r4) var(--ms-r8);
     }
     .stages {
-      gap: var(--ms-r6);
+      gap: var(--ms-r7);
+    }
+    .stage {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "number"
+        "content"
+        "aside";
+      row-gap: var(--ms-r3);
+    }
+    .stage-number {
+      font-size: 4rem;
+    }
+    .stage-aside {
+      margin-top: var(--ms-r3);
     }
     .pathway-item {
       padding: var(--ms-r4);
