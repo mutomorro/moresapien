@@ -11,6 +11,10 @@ export interface Props {
 
 const { title, oneLiner, category, slug } = Astro.props;
 const accent = getCategoryColor(category);
+
+const lastSpace = title.lastIndexOf(' ');
+const titleHead = lastSpace === -1 ? '' : title.slice(0, lastSpace + 1);
+const titleTail = lastSpace === -1 ? title : title.slice(lastSpace + 1);
 ---
 <a
   href={`/${slug}/`}
@@ -20,7 +24,7 @@ const accent = getCategoryColor(category);
 >
   <span class="ms-card-eyebrow">{category}</span>
   <h2 class="ms-card-title">
-    {title}<span class="ms-card-asterisk">{' '}<Asterisk size={14} color={accent} /></span>
+    {titleHead}<span class="ms-card-title-tail">{titleTail}{' '}<Asterisk size={14} color={accent} class="ms-card-asterisk" /></span>
   </h2>
   <p class="ms-card-oneliner">{oneLiner}</p>
 </a>
@@ -64,9 +68,10 @@ const accent = getCategoryColor(category);
     letter-spacing: -0.02em;
     color: var(--ms-ink);
   }
-  .ms-card-asterisk {
-    display: inline-block;
+  .ms-card-title-tail {
     white-space: nowrap;
+  }
+  .ms-card-asterisk {
     transform: translateY(-0.55em);
   }
 
