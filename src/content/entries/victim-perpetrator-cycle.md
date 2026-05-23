@@ -28,6 +28,9 @@ relatedConcepts:
     note: "Past trauma is weaponised rhetorically to shut down scrutiny"
   - slug: "scapegoating"
     note: "New targets are identified to channel collective fear and aggression"
+furtherReading:
+  - title: "Cycle of abuse - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Cycle_of_abuse"
 ---
 
 ## What it means

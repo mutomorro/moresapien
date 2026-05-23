@@ -17,6 +17,9 @@ relatedConcepts:
     note: "Moral panics can serve the same function as manufactured consent - aligning public attention and opinion with elite interests."
   - slug: "loaded-language"
     note: "The language of moral panics is always loaded - 'epidemic', 'invasion', 'plague', 'crisis' - words chosen to escalate rather than inform."
+furtherReading:
+  - title: "Moral panic - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Moral_panic"
 ---
 
 ## What it means

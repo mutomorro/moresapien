@@ -15,6 +15,9 @@ relatedConcepts:
     note: "Every frame is a map - it highlights some features of reality and hides others."
   - slug: "occams-razor"
     note: "Occam's Razor reminds us that simpler maps are often more useful - but simplicity always means leaving things out."
+furtherReading:
+  - title: "Map-territory relation - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Map%E2%80%93territory_relation"
 ---
 
 ## What it means

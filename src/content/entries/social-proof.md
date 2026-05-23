@@ -17,6 +17,9 @@ relatedConcepts:
     note: "Authority is a specific form of social proof - we look to experts and leaders as signals for what to think."
   - slug: "halo-effect"
     note: "The halo effect makes social proof from attractive or high-status sources disproportionately persuasive."
+furtherReading:
+  - title: "Social proof - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Social_proof"
 ---
 
 ## What it means

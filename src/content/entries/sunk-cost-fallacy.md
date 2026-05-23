@@ -15,6 +15,9 @@ relatedConcepts:
     note: "Once invested, we selectively notice evidence that the investment is paying off and ignore signs it isn't."
   - slug: "framing-effect"
     note: "Sunk cost decisions are heavily influenced by whether we frame the situation as 'protecting an investment' or 'throwing good money after bad'."
+furtherReading:
+  - title: "Sunk cost - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Sunk_cost"
 ---
 
 ## What the sunk cost fallacy means

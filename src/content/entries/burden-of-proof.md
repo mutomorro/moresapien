@@ -15,6 +15,9 @@ relatedConcepts:
     note: "Post hoc claims often exploit burden of proof - 'I took the remedy and got better, prove that it didn't help' puts the burden on the sceptic."
   - slug: "weasel-words"
     note: "Weasel words help shift the burden by making claims vague enough that they're hard to disprove: 'Some people say...' - prove that no one says it."
+furtherReading:
+  - title: "Burden of proof (philosophy) - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Burden_of_proof_(philosophy)"
 ---
 
 ## What it means

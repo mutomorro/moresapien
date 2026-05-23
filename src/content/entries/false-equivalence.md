@@ -19,6 +19,9 @@ relatedConcepts:
   - slug: "framing-effect"
   - slug: "authority-bias"
   - slug: "gish-gallop"
+furtherReading:
+  - title: "False equivalence - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/False_equivalence"
 ---
 
 ## What it means

@@ -15,6 +15,9 @@ relatedConcepts:
     note: "Sealioning demands performative politeness; tone policing punishes the absence of it. Both control the terms of engagement."
   - slug: "gaslighting"
     note: "Repeated tone policing can function as gaslighting - making someone doubt whether their emotional responses are valid."
+furtherReading:
+  - title: "Tone policing - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Tone_policing"
 ---
 
 ## What it means

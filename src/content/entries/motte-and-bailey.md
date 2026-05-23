@@ -16,6 +16,9 @@ relatedConcepts:
   - slug: "whataboutism"
   - slug: "gish-gallop"
   - slug: "false-equivalence"
+furtherReading:
+  - title: "Motte-and-bailey fallacy - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Motte-and-bailey_fallacy"
 ---
 
 ## What it means

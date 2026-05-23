@@ -15,6 +15,9 @@ relatedConcepts:
     note: "Second-order thinking naturally surfaces opportunity costs - when you ask 'and then what?', you start seeing the paths not taken."
   - slug: "inversion"
     note: "Inversion helps reveal opportunity costs: instead of 'should I do X?', ask 'what am I not doing because I'm doing X?'"
+furtherReading:
+  - title: "Opportunity cost - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Opportunity_cost"
 ---
 
 ## What it means

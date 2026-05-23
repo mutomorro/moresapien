@@ -19,6 +19,9 @@ relatedConcepts:
     note: "Negative frames are more powerful because of our built-in negativity bias"
   - slug: "affect-heuristic"
   - slug: "false-dilemma"
+furtherReading:
+  - title: "Framing effect (psychology) - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Framing_effect_(psychology)"
 ---
 
 ## What it means

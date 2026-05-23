@@ -19,6 +19,9 @@ relatedConcepts:
     note: "The firehose strategy deliberately exploits the illusory truth effect through sheer volume"
   - slug: "availability-heuristic"
   - slug: "backfire-effect"
+furtherReading:
+  - title: "Illusory truth effect - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Illusory_truth_effect"
 ---
 
 ## What it means

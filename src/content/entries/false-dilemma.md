@@ -22,6 +22,9 @@ relatedConcepts:
     note: "How the options are presented shapes which one seems reasonable"
   - slug: "false-equivalence"
   - slug: "overton-window"
+furtherReading:
+  - title: "False dilemma - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/False_dilemma"
 ---
 
 ## What it means

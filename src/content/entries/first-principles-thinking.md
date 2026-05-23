@@ -15,6 +15,9 @@ relatedConcepts:
     note: "First principles gets you to the foundation; second-order thinking builds forward from there to anticipate consequences."
   - slug: "sunk-cost-fallacy"
     note: "First principles thinking is the antidote to sunk cost - it asks 'what should we do from here?' not 'what have we already done?'"
+furtherReading:
+  - title: "First principle - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/First_principle"
 ---
 
 ## What it means

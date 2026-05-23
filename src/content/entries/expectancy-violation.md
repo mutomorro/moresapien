@@ -21,6 +21,9 @@ relatedConcepts:
     note: "Normalcy bias is what happens when we refuse to update our expectations even when the evidence demands it"
   - slug: "contrast-effect"
     note: "The contrast between expectation and reality follows the same perceptual logic as the contrast effect"
+furtherReading:
+  - title: "Expectancy violations theory - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Expectancy_violations_theory"
 ---
 
 ## What it means

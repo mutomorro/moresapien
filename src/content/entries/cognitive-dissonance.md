@@ -21,6 +21,9 @@ relatedConcepts:
   - slug: "backfire-effect"
     note: "What happens when cognitive dissonance gets so intense that correction strengthens the original belief"
   - slug: "psychological-projection"
+furtherReading:
+  - title: "Cognitive dissonance - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Cognitive_dissonance"
 ---
 
 ## What cognitive dissonance means

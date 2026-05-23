@@ -15,6 +15,9 @@ relatedConcepts:
     note: "Both use indirect language, but dog whistles encode a hidden meaning while euphemisms obscure an obvious one."
   - slug: "normalcy-bias"
     note: "Euphemism feeds normalcy bias by making alarming situations sound routine."
+furtherReading:
+  - title: "Euphemism - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Euphemism"
 ---
 
 ## What it means

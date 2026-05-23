@@ -15,6 +15,9 @@ relatedConcepts:
     note: "Targets of gaslighting may engage in motivated reasoning to preserve the relationship - finding reasons to believe the gaslighter rather than their own memory."
   - slug: "whataboutism"
     note: "Gaslighters frequently use whataboutism to deflect - turning any complaint back on the person raising it."
+furtherReading:
+  - title: "Gaslighting - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Gaslighting"
 ---
 
 ## What it means

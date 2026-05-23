@@ -23,6 +23,9 @@ relatedConcepts:
     note: "A different bad-faith debate tactic - overwhelming through endless questions rather than endless claims"
   - slug: "whataboutism"
   - slug: "straw-man"
+furtherReading:
+  - title: "Gish gallop - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Gish_gallop"
 ---
 
 ## What it means

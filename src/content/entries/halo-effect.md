@@ -15,6 +15,9 @@ relatedConcepts:
     note: "Once the halo is in place, confirmation bias keeps it there - we notice evidence that supports our positive impression and ignore what contradicts it."
   - slug: "affect-heuristic"
     note: "The halo effect is a specific instance of the affect heuristic - our feelings about one trait spill over into our judgement of everything else."
+furtherReading:
+  - title: "Halo effect - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Halo_effect"
 ---
 
 ## What it means

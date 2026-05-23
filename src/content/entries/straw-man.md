@@ -27,6 +27,9 @@ relatedConcepts:
   - slug: "ad-hominem"
     note: "Both avoid engaging with the actual argument - straw man distorts it, ad hominem ignores it entirely"
   - slug: "gish-gallop"
+furtherReading:
+  - title: "Straw man - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Straw_man"
 ---
 
 ## What a straw man argument is

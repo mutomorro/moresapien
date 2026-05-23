@@ -30,6 +30,9 @@ relatedConcepts:
     note: "Conceptual gentrification is one way cultural hegemony maintains itself - by allowing challenging ideas to circulate only in defanged form"
   - slug: "illusory-truth-effect"
     note: "The gentrified version of an idea spreads so widely that it becomes 'the' version - repetition replaces the original through sheer familiarity"
+furtherReading:
+  - title: "Conceptual gentrification explained - The Sociological Review"
+    url: "https://thesociologicalreview.org/collections/gentrification/"
 ---
 
 ## What is conceptual gentrification?

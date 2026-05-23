@@ -22,6 +22,9 @@ relatedConcepts:
   - slug: "cognitive-dissonance"
     note: "The hypocrite is experiencing cognitive dissonance between their stated values and their behaviour. We're experiencing it too, when we discover the gap."
   - slug: "expectancy-violation"
+furtherReading:
+  - title: "Hypocrisy - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Hypocrisy"
 ---
 
 ## What it means

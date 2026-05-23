@@ -30,6 +30,9 @@ relatedConcepts:
     note: "Commodification works partly through framing - redefining experiences in market terms changes how we value them"
   - slug: "social-proof"
     note: "Social proof accelerates commodification - when everyone treats something as a product, treating it as anything else feels naive"
+furtherReading:
+  - title: "Commodification - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Commodification"
 ---
 
 ## What is commodification?

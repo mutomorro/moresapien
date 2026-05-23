@@ -17,6 +17,9 @@ relatedConcepts:
   - slug: "second-order-thinking"
   - slug: "availability-heuristic"
   - slug: "learned-helplessness"
+furtherReading:
+  - title: "Normalcy bias - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Normalcy_bias"
 ---
 
 ## What it means

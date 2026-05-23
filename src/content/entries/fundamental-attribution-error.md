@@ -14,6 +14,9 @@ relatedConcepts:
   - slug: "cognitive-dissonance"
     note: "Attributing our own failures to circumstances protects us from the dissonance of admitting a character flaw."
   - slug: "naive-realism"
+furtherReading:
+  - title: "Fundamental attribution error - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Fundamental_attribution_error"
 ---
 
 ## What it means

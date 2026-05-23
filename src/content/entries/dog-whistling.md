@@ -29,6 +29,9 @@ relatedConcepts:
     note: "When challenged, dog whistlers retreat to the innocent literal meaning - a classic motte-and-bailey move"
   - slug: "microaggressions"
     note: "Where dog whistling is public and strategic, microaggressions are the personal and often unconscious equivalent"
+furtherReading:
+  - title: "Dog whistle (politics) - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Dog_whistle_(politics)"
 ---
 
 ## What it means

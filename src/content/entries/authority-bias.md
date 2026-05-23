@@ -17,6 +17,9 @@ relatedConcepts:
   - slug: "independent-evaluation"
     note: "Authority bias is one of the strongest forces that independent evaluation protects against"
   - slug: "appeal-to-nature"
+furtherReading:
+  - title: "Authority bias - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Authority_bias"
 ---
 
 ## What it means

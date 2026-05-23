@@ -30,6 +30,9 @@ relatedConcepts:
     note: "The attention economy feels inevitable - as though there's no alternative to the current model of ad-funded, engagement-maximising platforms"
   - slug: "cultural-hegemony"
     note: "The attention economy is a powerful vehicle for cultural hegemony - the ideas that spread are the ideas the algorithm rewards, not necessarily the ideas worth spreading"
+furtherReading:
+  - title: "Attention economy - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Attention_economy"
 ---
 
 ## What is the attention economy?

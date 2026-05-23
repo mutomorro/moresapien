@@ -23,6 +23,9 @@ relatedConcepts:
     note: "The direct antidote to the bandwagon effect"
   - slug: "authority-bias"
   - slug: "confirmation-bias"
+furtherReading:
+  - title: "Bandwagon effect - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Bandwagon_effect"
 ---
 
 ## What it means

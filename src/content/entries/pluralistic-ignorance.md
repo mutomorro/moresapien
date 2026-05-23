@@ -17,6 +17,9 @@ relatedConcepts:
   - slug: "normalcy-bias"
   - slug: "learned-helplessness"
   - slug: "in-group-out-group-bias"
+furtherReading:
+  - title: "Pluralistic ignorance - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Pluralistic_ignorance"
 ---
 
 ## What it means

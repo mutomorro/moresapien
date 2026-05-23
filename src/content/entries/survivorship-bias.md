@@ -20,6 +20,9 @@ relatedConcepts:
   - slug: "confirmation-bias"
   - slug: "just-world-fallacy"
     note: "Survivorship bias feeds the belief that success is always deserved"
+furtherReading:
+  - title: "Survivorship bias - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Survivorship_bias"
 ---
 
 ## What it means

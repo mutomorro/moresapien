@@ -21,6 +21,9 @@ relatedConcepts:
     note: "Whataboutism often implies a false equivalence between the original criticism and the deflection"
   - slug: "gish-gallop"
   - slug: "motte-and-bailey"
+furtherReading:
+  - title: "Whataboutism - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Whataboutism"
 ---
 
 ## What it means

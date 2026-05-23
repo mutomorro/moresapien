@@ -28,6 +28,9 @@ relatedConcepts:
     note: "Another volume-based tactic - laundered sources provide the ammunition for rapid-fire claims"
   - slug: "authority-bias"
     note: "The cognitive bias being exploited - we instinctively trust information that comes from credible-looking channels"
+furtherReading:
+  - title: "Circular reporting - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Circular_reporting"
 ---
 
 ## What it means

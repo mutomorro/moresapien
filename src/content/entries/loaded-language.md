@@ -16,6 +16,9 @@ relatedConcepts:
     note: "Loaded language is one of the primary delivery mechanisms for emotional appeals."
   - slug: "thought-terminating-cliche"
     note: "Some loaded phrases work as both - emotionally charged and conversation-ending."
+furtherReading:
+  - title: "Loaded language - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Loaded_language"
 ---
 
 ## What it means

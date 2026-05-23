@@ -17,6 +17,9 @@ relatedConcepts:
     note: "The 'I've earned this' reasoning that powers moral licensing is a specific form of rationalisation."
   - slug: "confirmation-bias"
     note: "Confirmation bias provides the raw material; rationalisation weaves it into a convincing narrative."
+furtherReading:
+  - title: "Rationalisation (psychology) - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Rationalization_(psychology)"
 ---
 
 ## What it means

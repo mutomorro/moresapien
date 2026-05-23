@@ -18,6 +18,9 @@ relatedConcepts:
     note: "Scapegoating is powered by emotional appeal - fear, anger, and resentment rather than evidence."
   - slug: "framing-effect"
     note: "Scapegoating reframes a complex systemic problem as a simple story with a clear villain."
+furtherReading:
+  - title: "Scapegoating - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Scapegoating"
 ---
 
 ## What it means

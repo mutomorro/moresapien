@@ -18,6 +18,9 @@ relatedConcepts:
   - slug: "affect-heuristic"
   - slug: "framing-effect"
     note: "Framing something as a loss rather than a gain exploits negativity bias"
+furtherReading:
+  - title: "Negativity bias - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Negativity_bias"
 ---
 
 ## What it means

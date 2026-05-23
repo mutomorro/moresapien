@@ -17,6 +17,9 @@ relatedConcepts:
     note: "Others' opinions act as anchors that pull your judgement towards them"
   - slug: "confirmation-bias"
   - slug: "authority-bias"
+furtherReading:
+  - title: "Groupthink - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Groupthink"
 ---
 
 ## What it means

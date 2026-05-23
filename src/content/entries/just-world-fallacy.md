@@ -20,6 +20,9 @@ relatedConcepts:
     note: "The just-world fallacy is a way of avoiding the dissonance that comes from living in an unfair world"
   - slug: "motivated-reasoning"
   - slug: "psychological-projection"
+furtherReading:
+  - title: "Just-world hypothesis - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Just-world_hypothesis"
 ---
 
 ## What it means

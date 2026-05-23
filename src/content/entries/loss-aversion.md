@@ -15,6 +15,9 @@ relatedConcepts:
     note: "Loss aversion partly explains normalcy bias - change feels like loss, so we cling to the current state even when it's deteriorating."
   - slug: "negativity-bias"
     note: "Loss aversion and negativity bias are close cousins - both reflect the brain's tendency to weight negative experiences more heavily than positive ones."
+furtherReading:
+  - title: "Loss aversion - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Loss_aversion"
 ---
 
 ## What it means

@@ -17,6 +17,9 @@ relatedConcepts:
     note: "We often prefer complicated explanations because they fit a narrative we already believe"
   - slug: "independent-evaluation"
   - slug: "second-order-thinking"
+furtherReading:
+  - title: "Occam's razor - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Occam%27s_razor"
 ---
 
 ## What it means

@@ -20,6 +20,9 @@ relatedConcepts:
     note: "Zero-sum thinking is often a false dilemma in disguise - presenting only two options (I win or you win) when cooperation could benefit both."
   - slug: "relative-deprivation"
     note: "Relative deprivation is what zero-sum thinking feels like from the inside - the sense that your position is slipping even when your absolute situation hasn't changed."
+furtherReading:
+  - title: "Zero-sum thinking - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Zero-sum_thinking"
 ---
 
 ## What it means

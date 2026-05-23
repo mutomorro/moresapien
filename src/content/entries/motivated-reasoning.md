@@ -18,6 +18,9 @@ relatedConcepts:
     note: "Motivated reasoning is the brain's primary tool for resolving cognitive dissonance without changing beliefs"
   - slug: "backfire-effect"
   - slug: "dunning-kruger-effect"
+furtherReading:
+  - title: "Motivated reasoning - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Motivated_reasoning"
 ---
 
 ## What it means

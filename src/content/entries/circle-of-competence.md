@@ -15,6 +15,9 @@ relatedConcepts:
     note: "First principles thinking helps you stay within your circle - it forces you to identify what you actually know versus what you're assuming."
   - slug: "map-is-not-the-territory"
     note: "Your circle of competence is a map - useful within its boundaries, dangerously misleading beyond them."
+furtherReading:
+  - title: "Circle of competence - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Circle_of_competence"
 ---
 
 ## What it means

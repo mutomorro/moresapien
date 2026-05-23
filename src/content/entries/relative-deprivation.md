@@ -20,6 +20,9 @@ relatedConcepts:
     note: "Social media and news make upward comparisons constantly available, amplifying relative deprivation far beyond what we'd experience in daily life."
   - slug: "manufactured-consent"
     note: "Media and political systems can manufacture relative deprivation by choosing which comparisons to put in front of people."
+furtherReading:
+  - title: "Relative deprivation - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Relative_deprivation"
 ---
 
 ## What it means

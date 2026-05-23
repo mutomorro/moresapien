@@ -15,6 +15,9 @@ relatedConcepts:
     note: "Whataboutism is a specific type of red herring - diverting from the issue by pointing to someone else's behaviour."
   - slug: "gish-gallop"
     note: "The Gish Gallop floods a debate with so many points that the original issue gets buried - red herrings at industrial scale."
+furtherReading:
+  - title: "Red herring - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Red_herring"
 ---
 
 ## What it means

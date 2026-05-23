@@ -14,6 +14,9 @@ relatedConcepts:
     note: "Commons collapse often involves a reinforcing loop - as the resource degrades, competition for what's left intensifies, accelerating the degradation."
   - slug: "normalcy-bias"
     note: "Each individual act of overuse feels normal and harmless - it's only the cumulative effect that's catastrophic."
+furtherReading:
+  - title: "Tragedy of the commons - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Tragedy_of_the_commons"
 ---
 
 ## What it means

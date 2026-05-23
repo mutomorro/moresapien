@@ -31,6 +31,9 @@ relatedConcepts:
     note: "Naive realism is what hegemony feels like from the inside - you're not following an ideology, you're just seeing the world as it is"
   - slug: "normalisation"
     note: "Normalisation is hegemony's engine - the slow process by which constructed ideas come to feel natural and inevitable"
+furtherReading:
+  - title: "Cultural hegemony - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Cultural_hegemony"
 ---
 
 ## What is cultural hegemony?

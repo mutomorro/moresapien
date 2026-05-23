@@ -28,6 +28,9 @@ relatedConcepts:
   - slug: "confirmation-bias"
     note: "We're less likely to check the original source when the claim confirms what we already believe"
   - slug: "firehose-of-falsehood"
+furtherReading:
+  - title: "Woozle effect - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Woozle"
 ---
 
 ## What it means

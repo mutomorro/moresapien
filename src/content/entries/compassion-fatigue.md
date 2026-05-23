@@ -16,6 +16,9 @@ relatedConcepts:
     note: "Compassion fatigue can look like normalcy bias - not because you think everything is fine, but because your emotional response to 'not fine' has been exhausted."
   - slug: "negativity-bias"
     note: "Negativity bias ensures that bad news dominates attention - and the relentless weight of it is exactly what produces compassion fatigue."
+furtherReading:
+  - title: "Compassion fatigue - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Compassion_fatigue"
 ---
 
 ## What it means

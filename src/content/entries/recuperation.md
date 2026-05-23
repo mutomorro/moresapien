@@ -31,6 +31,9 @@ relatedConcepts:
     note: "While manufactured consent manages dissent through media filters, recuperation manages it by converting dissent into a consumer experience"
   - slug: "framing-effect"
     note: "Recuperation works by reframing radical ideas - shifting them from a threat to the system into a product of the system"
+furtherReading:
+  - title: "Recuperation (politics) - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Recuperation_(politics)"
 ---
 
 ## What is recuperation?

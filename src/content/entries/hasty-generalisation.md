@@ -15,6 +15,9 @@ relatedConcepts:
     note: "We generalise far more about out-groups than in-groups. One member of 'them' represents them all; one member of 'us' is just an individual."
   - slug: "survivorship-bias"
     note: "Survivorship bias is a specific form of hasty generalisation - drawing conclusions from a non-representative sample of survivors."
+furtherReading:
+  - title: "Faulty generalisation - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Faulty_generalization"
 ---
 
 ## What it means

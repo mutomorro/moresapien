@@ -15,6 +15,9 @@ relatedConcepts:
     note: "Both distort our view of the past - hindsight bias makes outcomes feel inevitable, survivorship bias makes success look easier than it was."
   - slug: "dunning-kruger-effect"
     note: "Hindsight bias inflates our sense of our own judgement, feeding the overconfidence that Dunning-Kruger describes."
+furtherReading:
+  - title: "Hindsight bias - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Hindsight_bias"
 ---
 
 ## What it means

@@ -17,6 +17,9 @@ relatedConcepts:
     note: "The backfire effect can be denial in action - when confronted with evidence against a core belief, denial hardens the belief rather than softening it."
   - slug: "motivated-reasoning"
     note: "Denial is the extreme end of motivated reasoning - not just seeking confirming evidence, but refusing to acknowledge disconfirming evidence altogether."
+furtherReading:
+  - title: "Denial - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Denial"
 ---
 
 ## What it means

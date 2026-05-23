@@ -17,6 +17,9 @@ relatedConcepts:
     note: "Occam's Razor is a probabilistic heuristic - simpler explanations aren't guaranteed to be correct, but they're more likely to be."
   - slug: "false-dilemma"
     note: "False dilemmas force binary thinking. Probabilistic thinking resists this by recognising that most situations involve a spectrum of possible outcomes."
+furtherReading:
+  - title: "Probabilistic thinking - Farnam Street"
+    url: "https://fs.blog/probabilistic-thinking/"
 ---
 
 ## What it means

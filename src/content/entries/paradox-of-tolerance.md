@@ -15,6 +15,9 @@ relatedConcepts:
     note: "The paradox is often misused as a false dilemma: 'either we tolerate everything or we censor everything.' Popper's point was more nuanced than that."
   - slug: "motte-and-bailey"
     note: "Intolerant movements often use motte-and-bailey tactics - defending extreme positions by retreating to reasonable-sounding versions when challenged."
+furtherReading:
+  - title: "Paradox of tolerance - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Paradox_of_tolerance"
 ---
 
 ## What it means

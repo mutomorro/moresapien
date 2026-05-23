@@ -15,6 +15,9 @@ relatedConcepts:
     note: "Vivid or recent coincidences feel more causally connected because they're more mentally available."
   - slug: "appeal-to-false-authority"
     note: "Post hoc reasoning often gets laundered through authority - 'studies show that X leads to Y' when the studies show only correlation."
+furtherReading:
+  - title: "Post hoc ergo propter hoc - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Post_hoc_ergo_propter_hoc"
 ---
 
 ## What it means

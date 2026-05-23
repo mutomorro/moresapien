@@ -15,6 +15,9 @@ relatedConcepts:
     note: "The concern troll's motte is 'I support your goals' - a defensible position they retreat to when challenged on their actual intent."
   - slug: "red-herring"
     note: "The expressed 'concern' is itself a red herring - it shifts discussion from the issue to the tactical question of presentation."
+furtherReading:
+  - title: "Concern troll - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Concern_troll"
 ---
 
 ## What it means

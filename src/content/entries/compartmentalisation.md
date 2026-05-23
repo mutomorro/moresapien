@@ -15,6 +15,9 @@ relatedConcepts:
     note: "Denial refuses to see a threatening fact. Compartmentalisation sees it but quarantines it from the beliefs it would threaten."
   - slug: "moral-licensing"
     note: "Moral licensing often relies on compartmentalisation - keeping the 'good me' and the 'indulgent me' in separate compartments."
+furtherReading:
+  - title: "Compartmentalisation (psychology) - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Compartmentalization_(psychology)"
 ---
 
 ## What it means

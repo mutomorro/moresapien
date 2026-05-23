@@ -17,6 +17,9 @@ relatedConcepts:
   - slug: "authority-bias"
     note: "The Dunning-Kruger effect explains why we should be cautious about self-appointed authorities"
   - slug: "cognitive-dissonance"
+furtherReading:
+  - title: "Dunning-Kruger effect - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect"
 ---
 
 ## What the Dunning-Kruger effect means

@@ -25,6 +25,9 @@ relatedConcepts:
     note: "What happens when someone tries to correct a belief held through confirmation bias"
   - slug: "availability-heuristic"
   - slug: "cognitive-dissonance"
+furtherReading:
+  - title: "Confirmation bias - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Confirmation_bias"
 ---
 
 ## What confirmation bias means

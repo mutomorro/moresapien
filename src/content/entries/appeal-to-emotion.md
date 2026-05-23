@@ -29,6 +29,9 @@ relatedConcepts:
     note: "Once an emotional appeal has landed, motivated reasoning kicks in to justify the conclusion we've already reached."
   - slug: "straw-man"
     note: "Often paired with emotional appeals - distort someone's position, then react emotionally to the distortion."
+furtherReading:
+  - title: "Appeal to emotion - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Appeal_to_emotion"
 ---
 
 ## What it means

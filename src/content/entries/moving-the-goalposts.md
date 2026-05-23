@@ -15,6 +15,9 @@ relatedConcepts:
     note: "Related evasion tactics - motte-and-bailey retreats to a safer claim when challenged, goalpost-moving changes what counts as meeting the challenge."
   - slug: "gish-gallop"
     note: "Both exhaust the other person - Gish Gallop through volume, goalpost-moving through an endless series of shifting demands."
+furtherReading:
+  - title: "Moving the goalposts - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Moving_the_goalposts"
 ---
 
 ## What it means

@@ -27,6 +27,9 @@ relatedConcepts:
     note: "The belief that people get what they deserve often rests on a Hobbesian assumption - if someone is suffering, they must have made bad choices"
   - slug: "overton-window"
     note: "What counts as a 'reasonable' policy position shifts depending on which view of human nature dominates the culture"
+furtherReading:
+  - title: "State of nature - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/State_of_nature"
 ---
 
 ## What it means

@@ -22,6 +22,9 @@ relatedConcepts:
   - slug: "framing-effect"
     note: "Framing works partly by triggering different emotional responses to the same information"
   - slug: "motivated-reasoning"
+furtherReading:
+  - title: "Affect heuristic - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Affect_heuristic"
 ---
 
 ## What it means

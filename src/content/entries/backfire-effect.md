@@ -18,6 +18,9 @@ relatedConcepts:
   - slug: "motivated-reasoning"
     note: "The backfire effect is what happens when motivated reasoning wins the fight against evidence"
   - slug: "illusory-truth-effect"
+furtherReading:
+  - title: "Backfire effect - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Backfire_effect"
 ---
 
 ## What it means

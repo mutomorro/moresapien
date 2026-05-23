@@ -27,6 +27,9 @@ relatedConcepts:
     note: "The deeper tribal wiring that aversive racism builds on"
   - slug: "cognitive-dissonance"
     note: "The discomfort when someone who believes they are fair is confronted with evidence of their own bias"
+furtherReading:
+  - title: "Aversive racism - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Aversive_racism"
 ---
 
 ## What it means

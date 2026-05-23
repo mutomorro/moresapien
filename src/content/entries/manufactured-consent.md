@@ -17,6 +17,9 @@ relatedConcepts:
     note: "False balance is one mechanism through which consent is manufactured - by framing elite-friendly positions as the 'balanced' centre."
   - slug: "illusory-truth-effect"
     note: "Repeated framing across multiple outlets triggers the illusory truth effect - the consensus feels earned when it's actually structural."
+furtherReading:
+  - title: "Manufacturing Consent - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Manufacturing_Consent"
 ---
 
 ## What it means

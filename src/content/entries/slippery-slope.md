@@ -16,6 +16,9 @@ relatedConcepts:
     note: "Slippery slope reframes a modest proposal as the first step toward catastrophe."
   - slug: "feedback-loops"
     note: "Some slippery slopes are real - when genuine reinforcing feedback loops exist, one step can accelerate the next. The fallacy is assuming this without evidence."
+furtherReading:
+  - title: "Slippery slope - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Slippery_slope"
 ---
 
 ## What it means

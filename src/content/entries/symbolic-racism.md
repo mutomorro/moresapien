@@ -28,6 +28,9 @@ relatedConcepts:
     note: "Symbolic racism depends on framing - presenting racial opposition as principled concern"
   - slug: "motivated-reasoning"
     note: "People engaging in symbolic racism are often motivated reasoners - reaching a prejudiced conclusion first, then finding principled justifications"
+furtherReading:
+  - title: "Symbolic racism - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Symbolic_racism"
 ---
 
 ## What it means

@@ -24,6 +24,9 @@ relatedConcepts:
     note: "We punish the contradiction between stated values and behaviour, not just the behaviour itself"
   - slug: "psychological-projection"
     note: "The 'every accusation is a confession' pattern - sometimes the loudest virtue-signallers are the worst offenders"
+furtherReading:
+  - title: "Betrayal aversion - ScienceDirect"
+    url: "https://www.sciencedirect.com/topics/psychology/betrayal-aversion"
 ---
 
 ## What it means

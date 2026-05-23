@@ -18,6 +18,9 @@ relatedConcepts:
     note: "Motivated reasoning provides the intellectual scaffolding for effort justification - we selectively find evidence that the hard experience was worthwhile."
   - slug: "moral-licensing"
     note: "Having endured difficulty can feel like moral credit - licensing us to dismiss those who found an easier path."
+furtherReading:
+  - title: "Effort justification - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Effort_justification"
 ---
 
 ## What effort justification means

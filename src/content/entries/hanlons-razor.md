@@ -15,6 +15,9 @@ relatedConcepts:
     note: "Naive realism makes us assume that if someone's actions are harmful, they must have intended the harm - because we can't imagine seeing the situation differently."
   - slug: "emergence"
     note: "Many outcomes that look like deliberate plans are actually emergent - the product of many small, uncoordinated mistakes rather than one big conspiracy."
+furtherReading:
+  - title: "Hanlon's razor - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Hanlon%27s_razor"
 ---
 
 ## What it means

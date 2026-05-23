@@ -21,6 +21,9 @@ relatedConcepts:
   - slug: "motivated-reasoning"
   - slug: "in-group-out-group-bias"
   - slug: "just-world-fallacy"
+furtherReading:
+  - title: "Psychological projection - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Psychological_projection"
 ---
 
 ## What it means

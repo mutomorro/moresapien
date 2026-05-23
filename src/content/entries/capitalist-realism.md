@@ -30,6 +30,9 @@ relatedConcepts:
     note: "Capitalist realism is maintained by reinforcing feedback loops - the system produces the culture that produces the people who reproduce the system"
   - slug: "normalisation"
     note: "Normalisation is the process through which capitalist realism maintains itself - each generation inherits the assumption rather than choosing it"
+furtherReading:
+  - title: "Capitalist realism - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Capitalist_realism"
 ---
 
 ## What is capitalist realism?

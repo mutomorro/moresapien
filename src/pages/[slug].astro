@@ -30,6 +30,7 @@ const {
   thoughtToHoldOnto,
   whyItMattersNow,
   relatedConcepts,
+  furtherReading,
 } = entry.data;
 
 const { Content } = await render(entry);
@@ -191,6 +192,21 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
           <section class="block block-matters">
             <h2>Why it matters now</h2>
             <p set:html={renderInlineMarkdown(whyItMattersNow)} />
+          </section>
+        )}
+
+        {furtherReading && furtherReading.length > 0 && (
+          <section class="further-reading" aria-label="Further reading">
+            <h2 class="further-reading-label">Further reading</h2>
+            <ul class="further-reading-list">
+              {furtherReading.map((item: { title: string; url: string }) => (
+                <li>
+                  <a href={item.url} target="_blank" rel="noopener noreferrer">
+                    {item.title}<span class="further-reading-icon" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
           </section>
         )}
 
@@ -529,6 +545,54 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
   .block-matters :global(em) {
     font-style: italic;
     color: var(--ms-coral);
+  }
+
+  /* --- Further reading --- */
+  .further-reading {
+    margin-bottom: var(--ms-r7);
+    padding-top: var(--ms-r5);
+    border-top: 1px solid var(--ms-rule);
+  }
+
+  .further-reading-label {
+    font-family: var(--ms-font-mono);
+    font-size: var(--ms-meta);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ms-mute);
+    margin-bottom: var(--ms-r3);
+  }
+
+  .further-reading-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--ms-r2);
+  }
+
+  .further-reading-list a {
+    font-family: var(--ms-font-body);
+    font-size: var(--ms-small);
+    color: var(--ms-ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--ms-rule);
+    padding-bottom: 2px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+
+  .further-reading-list a:hover {
+    color: var(--page-accent);
+    border-bottom-color: var(--page-accent);
+  }
+
+  .further-reading-icon {
+    display: inline-block;
+    margin-left: 0.3em;
+    font-size: 0.85em;
+    color: var(--ms-mute);
   }
 
   /* --- Footer of entry --- */

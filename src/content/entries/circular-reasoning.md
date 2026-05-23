@@ -15,6 +15,9 @@ relatedConcepts:
     note: "Circular reasoning sometimes hides behind authority: 'The policy is correct because the experts designed it, and we know they're experts because they designed correct policies.'"
   - slug: "motivated-reasoning"
     note: "Motivated reasoning naturally produces circular logic - we start with the conclusion we want and construct reasoning that leads back to it."
+furtherReading:
+  - title: "Circular reasoning - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Circular_reasoning"
 ---
 
 ## What it means

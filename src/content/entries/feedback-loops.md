@@ -15,6 +15,9 @@ relatedConcepts:
     note: "Social popularity is a classic reinforcing loop - the more people join, the more others want to join."
   - slug: "normalcy-bias"
     note: "Normalcy bias can mask a dangerous reinforcing loop - each small change feels normal until the cumulative effect is overwhelming."
+furtherReading:
+  - title: "Feedback - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Feedback"
 ---
 
 ## What it means

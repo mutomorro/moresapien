@@ -16,6 +16,9 @@ relatedConcepts:
   - slug: "whataboutism"
   - slug: "motte-and-bailey"
   - slug: "straw-man"
+furtherReading:
+  - title: "Sealioning - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Sealioning"
 ---
 
 ## What it means

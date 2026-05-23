@@ -15,6 +15,9 @@ relatedConcepts:
     note: "Inversion helps anticipate unintended consequences by deliberately imagining what could go wrong."
   - slug: "sunk-cost-fallacy"
     note: "Inversion can break the sunk cost spell: instead of asking 'should I continue?', ask 'if I weren't already in this, would I start it today?'"
+furtherReading:
+  - title: "Inversion (thinking approach) - Farnam Street"
+    url: "https://fs.blog/inversion/"
 ---
 
 ## What it means

@@ -15,6 +15,9 @@ relatedConcepts:
     note: "The Ben Franklin Effect is cognitive dissonance in action - we helped them, so we must like them"
   - slug: "motivated-reasoning"
   - slug: "affect-heuristic"
+furtherReading:
+  - title: "Ben Franklin effect - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Ben_Franklin_effect"
 ---
 
 ## What it means

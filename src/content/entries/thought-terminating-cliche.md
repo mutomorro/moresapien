@@ -16,6 +16,9 @@ relatedConcepts:
     note: "'It's just natural' is itself a thought-terminating cliche."
   - slug: "confirmation-bias"
     note: "We're more likely to accept a thought-terminating cliche when it confirms what we already believe."
+furtherReading:
+  - title: "Thought-terminating cliché - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Thought-terminating_clich%C3%A9"
 ---
 
 ## What it means

@@ -68,6 +68,12 @@ const entries = defineCollection({
         note: z.string().optional(),
       })
     ),
+    furtherReading: z.array(
+      z.object({
+        title: z.string(),
+        url: z.string().url(),
+      })
+    ).optional(),
   }),
 });
 

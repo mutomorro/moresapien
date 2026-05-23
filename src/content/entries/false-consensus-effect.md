@@ -20,7 +20,9 @@ relatedConcepts:
     note: "We spend more time with people who share our views, which inflates our sense of how common those views are."
   - slug: "naive-realism"
     note: "Naive realism says 'I see the world as it is' - the false consensus effect adds 'and so does everyone else.'"
-
+furtherReading:
+  - title: "False consensus effect - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/False_consensus_effect"
 ---
 
 ## What it means

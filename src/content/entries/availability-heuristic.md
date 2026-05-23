@@ -21,6 +21,9 @@ relatedConcepts:
   - slug: "confirmation-bias"
   - slug: "affect-heuristic"
     note: "The availability heuristic and the affect heuristic often work together - vivid memories trigger emotional responses that shape judgement"
+furtherReading:
+  - title: "Availability heuristic - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Availability_heuristic"
 ---
 
 ## What it means

@@ -24,6 +24,9 @@ relatedConcepts:
   - slug: "learned-helplessness"
     note: "The firehose's ultimate goal - a population too exhausted to seek truth"
   - slug: "whataboutism"
+furtherReading:
+  - title: "Firehose of falsehood - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Firehose_of_falsehood"
 ---
 
 ## What it means

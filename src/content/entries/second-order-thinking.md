@@ -15,6 +15,9 @@ relatedConcepts:
   - slug: "independent-evaluation"
   - slug: "normalcy-bias"
     note: "Normalcy bias stops us from thinking through second and third-order effects of change"
+furtherReading:
+  - title: "Second-order thinking - Farnam Street"
+    url: "https://fs.blog/second-order-thinking/"
 ---
 
 ## What it means

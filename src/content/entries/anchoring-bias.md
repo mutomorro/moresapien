@@ -20,6 +20,9 @@ relatedConcepts:
   - slug: "overton-window"
     note: "Extreme anchors can shift what feels like a reasonable middle ground"
   - slug: "false-dilemma"
+furtherReading:
+  - title: "Anchoring effect - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Anchoring_effect"
 ---
 
 ## What it means

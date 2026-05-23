@@ -22,6 +22,9 @@ relatedConcepts:
   - slug: "bandwagon-effect"
   - slug: "pluralistic-ignorance"
   - slug: "psychological-projection"
+furtherReading:
+  - title: "In-group favouritism - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/In-group_favoritism"
 ---
 
 ## What it means

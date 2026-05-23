@@ -15,6 +15,9 @@ relatedConcepts:
     note: "Social norms can emerge from pluralistic ignorance - everyone follows a rule that nobody privately endorses."
   - slug: "bandwagon-effect"
     note: "Trends and movements can emerge from individual bandwagon decisions cascading through a population."
+furtherReading:
+  - title: "Emergence - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Emergence"
 ---
 
 ## What it means

@@ -15,6 +15,9 @@ relatedConcepts:
     note: "The attack phase often uses whataboutism - 'What about all the times YOU did something wrong?'"
   - slug: "ad-hominem"
     note: "The attack phase of DARVO is a form of ad hominem - discrediting the accuser rather than addressing the accusation."
+furtherReading:
+  - title: "DARVO - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/DARVO"
 ---
 
 ## What it means

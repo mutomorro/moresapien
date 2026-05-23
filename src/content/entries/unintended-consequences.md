@@ -15,6 +15,9 @@ relatedConcepts:
     note: "Normalcy bias makes us assume the system will absorb our intervention without changing - which is exactly when unintended consequences strike."
   - slug: "dunning-kruger-effect"
     note: "The less you understand a complex system, the more confident you are that your intervention will work as planned."
+furtherReading:
+  - title: "Unintended consequences - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Unintended_consequences"
 ---
 
 ## What it means

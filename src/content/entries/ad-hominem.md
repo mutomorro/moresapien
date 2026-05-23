@@ -28,6 +28,9 @@ relatedConcepts:
     note: "Persistent ad hominem attacks can be used as a form of sealioning - wearing someone down by making the conversation about them rather than the issue"
   - slug: "tone-policing"
     note: "A subtler cousin - shifting focus from what someone said to how they said it"
+furtherReading:
+  - title: "Ad hominem - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Ad_hominem"
 ---
 
 ## What an ad hominem argument is

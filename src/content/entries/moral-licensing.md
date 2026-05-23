@@ -15,6 +15,9 @@ relatedConcepts:
     note: "The 'I've earned this' reasoning is a form of rationalisation - constructing a logical-sounding case for a decision made on other grounds."
   - slug: "fundamental-attribution-error"
     note: "We notice moral licensing in others ('hypocrite!') more easily than in ourselves - attribution error makes our own licensing feel earned."
+furtherReading:
+  - title: "Moral credential - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Moral_credential"
 ---
 
 ## What it means

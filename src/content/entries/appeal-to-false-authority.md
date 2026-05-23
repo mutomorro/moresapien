@@ -27,6 +27,9 @@ relatedConcepts:
   - slug: "confirmation-bias"
     note: "We're more likely to accept a dubious authority if they're telling us what we already believe"
   - slug: "illusory-truth-effect"
+furtherReading:
+  - title: "Argument from authority - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Argument_from_authority"
 ---
 
 ## What it means

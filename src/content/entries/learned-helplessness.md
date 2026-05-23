@@ -18,6 +18,9 @@ relatedConcepts:
   - slug: "pluralistic-ignorance"
   - slug: "normalcy-bias"
   - slug: "cognitive-dissonance"
+furtherReading:
+  - title: "Learned helplessness - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Learned_helplessness"
 ---
 
 ## What it means

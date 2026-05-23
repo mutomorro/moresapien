@@ -15,6 +15,9 @@ relatedConcepts:
     note: "Normalcy bias reinforces bystander inaction - 'If it were really serious, someone would have done something by now.'"
   - slug: "bandwagon-effect"
     note: "The bystander effect is the bandwagon effect in reverse - inaction is contagious in the same way action can be."
+furtherReading:
+  - title: "Bystander effect - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Bystander_effect"
 ---
 
 ## What it means

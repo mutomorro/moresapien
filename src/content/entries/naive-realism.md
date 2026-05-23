@@ -17,6 +17,9 @@ relatedConcepts:
     note: "Both involve a failure to recognise the limits of your own perspective - Dunning-Kruger about competence, naive realism about perception."
   - slug: "motivated-reasoning"
     note: "Motivated reasoning operates invisibly, which is exactly why naive realism persists - we can't see the filters we're looking through."
+furtherReading:
+  - title: "Naïve realism (psychology) - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Na%C3%AFve_realism_(psychology)"
 ---
 
 ## What it means

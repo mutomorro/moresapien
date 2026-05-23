@@ -28,6 +28,9 @@ relatedConcepts:
     note: "People on the receiving end sometimes normalise microaggressions because they are so constant - and people committing them normalise their own behaviour for the same reason"
   - slug: "pluralistic-ignorance"
     note: "Bystanders often stay silent during microaggressions because they assume nobody else noticed or minded"
+furtherReading:
+  - title: "Microaggression - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Microaggression"
 ---
 
 ## What it means

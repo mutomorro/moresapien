@@ -16,6 +16,9 @@ relatedConcepts:
     note: "False balance often elevates unqualified voices to appear as credible as genuine experts."
   - slug: "illusory-truth-effect"
     note: "Repeated false balance makes fringe positions feel more mainstream than they are."
+furtherReading:
+  - title: "False balance - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/False_balance"
 ---
 
 ## What it means

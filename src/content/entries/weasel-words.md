@@ -15,6 +15,9 @@ relatedConcepts:
     note: "Weasel words frame uncertain claims as established facts by hiding the uncertainty in the phrasing."
   - slug: "source-laundering"
     note: "Weasel words can be a lightweight form of source laundering - attributing claims to anonymous sources lends them unearned credibility."
+furtherReading:
+  - title: "Weasel word - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Weasel_word"
 ---
 
 ## What it means

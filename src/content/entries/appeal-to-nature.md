@@ -20,6 +20,9 @@ relatedConcepts:
   - slug: "framing-effect"
   - slug: "authority-bias"
   - slug: "confirmation-bias"
+furtherReading:
+  - title: "Appeal to nature - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Appeal_to_nature"
 ---
 
 ## What it means
