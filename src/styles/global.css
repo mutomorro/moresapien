@@ -37,8 +37,8 @@
 /* ---- Type scale -------------------------------------------------------- */
 :root {
   --ms-h1:    clamp(2.5rem, 5vw, 4.375rem);
-  --ms-h2:    clamp(1.75rem, 3.5vw, 2.75rem);
-  --ms-h3:    clamp(1.375rem, 2.5vw, 2rem);
+  --ms-h2:    clamp(2rem, 4vw, 3.25rem);
+  --ms-h3:    clamp(1.625rem, 3vw, 2.375rem);
   --ms-h4:    1.25rem;
   --ms-body:  1rem;
   --ms-small: 0.875rem;
