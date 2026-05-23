@@ -41,7 +41,64 @@ const activeId = aliasMap[currentPage] ?? '';
           </a>
         </li>
       ))}
+      <li class="ms-nav-search-item">
+        <button
+          type="button"
+          class="ms-search-toggle"
+          aria-label="Search"
+          aria-expanded="false"
+          aria-controls="ms-search-panel"
+          data-search-toggle
+        >
+          <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false">
+            <circle cx="9" cy="9" r="6" fill="none" stroke="currentColor" stroke-width="1.75" />
+            <line x1="13.5" y1="13.5" x2="17.5" y2="17.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+          </svg>
+        </button>
+      </li>
     </ul>
+  </div>
+
+  <div
+    id="ms-search-panel"
+    class="ms-search-panel"
+    role="search"
+    hidden
+    data-search-panel
+  >
+    <div class="ms-search-panel-inner">
+      <div class="ms-search-input-wrap">
+        <svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false" class="ms-search-input-icon">
+          <circle cx="9" cy="9" r="6" fill="none" stroke="currentColor" stroke-width="1.75" />
+          <line x1="13.5" y1="13.5" x2="17.5" y2="17.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+        </svg>
+        <input
+          type="search"
+          class="ms-search-input"
+          placeholder="Search entries…"
+          autocomplete="off"
+          spellcheck="false"
+          aria-label="Search entries"
+          aria-controls="ms-search-results"
+          data-search-input
+        />
+        <button
+          type="button"
+          class="ms-search-close"
+          aria-label="Close search"
+          data-search-close
+        >
+          esc
+        </button>
+      </div>
+      <ul
+        id="ms-search-results"
+        class="ms-search-results"
+        role="listbox"
+        aria-label="Search results"
+        data-search-results
+      ></ul>
+    </div>
   </div>
 </nav>
 
@@ -92,6 +149,206 @@ const activeId = aliasMap[currentPage] ?? '';
     border-bottom-color: var(--ms-coral);
   }
 
+  .ms-nav-search-item {
+    display: flex;
+    align-items: center;
+  }
+</style>
+
+<style is:global>
+  /* Global because the results list is injected via innerHTML from the
+     script below, which bypasses Astro's per-component CSS scoping. */
+  .ms-search-toggle {
+    background: none;
+    border: none;
+    padding: 4px;
+    margin: 0;
+    color: var(--ms-ink);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: color 0.15s ease, background-color 0.15s ease;
+  }
+
+  .ms-search-toggle:hover {
+    color: var(--ms-coral);
+  }
+
+  .ms-search-toggle[aria-expanded="true"] {
+    color: var(--ms-coral);
+  }
+
+  .ms-search-toggle:focus-visible {
+    outline: 2px solid var(--ms-coral);
+    outline-offset: 2px;
+  }
+
+  .ms-search-panel {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--ms-paper);
+    border-bottom: var(--ms-rule-width) solid var(--ms-rule);
+    box-shadow: 0 8px 24px -16px rgba(0, 0, 0, 0.18);
+  }
+
+  .ms-search-panel[hidden] {
+    display: none;
+  }
+
+  .ms-search-panel-inner {
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: 0.75rem 1.5rem 0.5rem;
+  }
+
+  .ms-search-input-wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--ms-rule);
+    border-radius: 6px;
+    background: var(--ms-paper);
+  }
+
+  .ms-search-input-wrap:focus-within {
+    border-color: var(--ms-coral);
+  }
+
+  .ms-search-input-icon {
+    color: var(--ms-mute, #888);
+    flex: 0 0 auto;
+  }
+
+  .ms-search-input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    font-family: var(--ms-font-ui);
+    font-size: 14px;
+    color: var(--ms-ink);
+    padding: 2px 0;
+    outline: none;
+    min-width: 0;
+  }
+
+  .ms-search-input::placeholder {
+    color: var(--ms-mute, #888);
+  }
+
+  .ms-search-input::-webkit-search-cancel-button {
+    display: none;
+  }
+
+  .ms-search-close {
+    background: none;
+    border: 1px solid var(--ms-rule);
+    border-radius: 4px;
+    color: var(--ms-mute, #888);
+    font-family: var(--ms-font-ui);
+    font-size: 11px;
+    padding: 2px 6px;
+    cursor: pointer;
+    text-transform: lowercase;
+    letter-spacing: 0.04em;
+  }
+
+  .ms-search-close:hover {
+    color: var(--ms-ink);
+    border-color: var(--ms-ink);
+  }
+
+  .ms-search-results {
+    list-style: none;
+    margin: 0.5rem 0 0;
+    padding: 0;
+    max-height: min(60vh, 28rem);
+    overflow-y: auto;
+  }
+
+  .ms-search-results:empty {
+    display: none;
+  }
+
+  .ms-search-result {
+    margin: 0;
+  }
+
+  .ms-search-result-link {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+    color: var(--ms-ink);
+    border-radius: 4px;
+    border-left: 3px solid transparent;
+  }
+
+  .ms-search-result-link:hover,
+  .ms-search-result.is-active .ms-search-result-link {
+    background: rgba(0, 0, 0, 0.035);
+    border-left-color: var(--result-color, var(--ms-coral));
+  }
+
+  .ms-search-result-title {
+    font-family: var(--ms-font-ui);
+    font-size: 13.5px;
+    font-weight: 600;
+    margin: 0 0 2px;
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .ms-search-result-cat {
+    font-size: 10.5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--result-color, var(--ms-mute, #888));
+  }
+
+  .ms-search-result-aka {
+    font-size: 11px;
+    color: var(--ms-mute, #888);
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  .ms-search-result-oneliner {
+    font-family: var(--ms-font-body, var(--ms-font-ui));
+    font-size: 12.5px;
+    color: var(--ms-mute, #555);
+    margin: 0;
+    line-height: 1.4;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .ms-search-empty {
+    padding: 0.75rem;
+    font-family: var(--ms-font-ui);
+    font-size: 13px;
+    color: var(--ms-mute, #888);
+    text-align: center;
+  }
+
+  .ms-search-hint {
+    padding: 0.5rem 0.75rem 0.25rem;
+    font-family: var(--ms-font-ui);
+    font-size: 11px;
+    color: var(--ms-mute, #888);
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
   @media (max-width: 640px) {
     .ms-nav-inner {
       padding: 0.625rem 1rem;
@@ -104,6 +361,9 @@ const activeId = aliasMap[currentPage] ?? '';
     .ms-nav-link {
       font-size: 12px;
     }
+    .ms-search-panel-inner {
+      padding: 0.625rem 1rem 0.5rem;
+    }
   }
 
   @media (max-width: 380px) {
@@ -114,3 +374,227 @@ const activeId = aliasMap[currentPage] ?? '';
     }
   }
 </style>
+
+<script>
+  type SearchEntry = {
+    slug: string;
+    title: string;
+    oneLiner: string;
+    category: string;
+    tags: string[];
+    alsoKnownAs: string[];
+  };
+
+  type Scored = SearchEntry & { _score: number };
+
+  const CATEGORY_COLOURS: Record<string, string> = {
+    'Cognitive Bias':           '#3559B0',
+    'Logical Fallacy':          '#E8A533',
+    'Rhetorical Device':        '#8B5CF6',
+    'Mental Model':             '#B54A2A',
+    'Systems Thinking':         '#7A8B3A',
+    'Political Theory':         '#2F6B3A',
+    'Manipulation Tactic':      '#C44A8A',
+    'Psychological Phenomenon': '#7A3A5E',
+    'Psychological Defence':    '#26467D',
+    'Cultural Influence':       '#1A7A7A',
+  };
+
+  const MAX_RESULTS = 12;
+  let cache: SearchEntry[] | null = null;
+  let loading: Promise<SearchEntry[]> | null = null;
+
+  function loadIndex(): Promise<SearchEntry[]> {
+    if (cache) return Promise.resolve(cache);
+    if (loading) return loading;
+    loading = fetch('/search.json')
+      .then((r) => r.json() as Promise<SearchEntry[]>)
+      .then((data) => {
+        cache = data;
+        return data;
+      })
+      .catch(() => {
+        loading = null;
+        return [];
+      });
+    return loading;
+  }
+
+  function escapeHtml(s: string): string {
+    return s.replace(/[&<>"']/g, (c) => {
+      switch (c) {
+        case '&': return '&amp;';
+        case '<': return '&lt;';
+        case '>': return '&gt;';
+        case '"': return '&quot;';
+        case "'": return '&#39;';
+        default: return c;
+      }
+    });
+  }
+
+  function score(entry: SearchEntry, q: string): number {
+    const needle = q.toLowerCase();
+    const title = entry.title.toLowerCase();
+    if (title === needle) return 100;
+    if (title.startsWith(needle)) return 80;
+    if (title.includes(needle)) return 60;
+    for (const aka of entry.alsoKnownAs) {
+      const a = aka.toLowerCase();
+      if (a === needle) return 70;
+      if (a.startsWith(needle)) return 55;
+      if (a.includes(needle)) return 45;
+    }
+    if (entry.oneLiner.toLowerCase().includes(needle)) return 30;
+    if (entry.category.toLowerCase().includes(needle)) return 20;
+    for (const tag of entry.tags) {
+      if (tag.toLowerCase().includes(needle)) return 15;
+    }
+    return 0;
+  }
+
+  function search(entries: SearchEntry[], q: string): Scored[] {
+    const trimmed = q.trim();
+    if (!trimmed) return [];
+    const scored: Scored[] = [];
+    for (const entry of entries) {
+      const s = score(entry, trimmed);
+      if (s > 0) scored.push({ ...entry, _score: s });
+    }
+    scored.sort((a, b) => b._score - a._score || a.title.localeCompare(b.title));
+    return scored.slice(0, MAX_RESULTS);
+  }
+
+  function init() {
+    const toggle = document.querySelector<HTMLButtonElement>('[data-search-toggle]');
+    const panel = document.querySelector<HTMLElement>('[data-search-panel]');
+    const input = document.querySelector<HTMLInputElement>('[data-search-input]');
+    const closeBtn = document.querySelector<HTMLButtonElement>('[data-search-close]');
+    const results = document.querySelector<HTMLUListElement>('[data-search-results]');
+
+    if (!toggle || !panel || !input || !closeBtn || !results) return;
+
+    let activeIndex = -1;
+    let currentResults: Scored[] = [];
+
+    function setActive(i: number) {
+      const items = results!.querySelectorAll<HTMLLIElement>('.ms-search-result');
+      items.forEach((el, idx) => el.classList.toggle('is-active', idx === i));
+      activeIndex = i;
+      if (i >= 0 && items[i]) {
+        items[i].scrollIntoView({ block: 'nearest' });
+      }
+    }
+
+    function render(items: Scored[], query: string) {
+      currentResults = items;
+      activeIndex = items.length > 0 ? 0 : -1;
+      if (!query.trim()) {
+        results!.innerHTML = '';
+        return;
+      }
+      if (items.length === 0) {
+        results!.innerHTML = `<li class="ms-search-empty">No matches for "${escapeHtml(query)}"</li>`;
+        return;
+      }
+      results!.innerHTML = items
+        .map((item, idx) => {
+          const colour = CATEGORY_COLOURS[item.category] || 'var(--ms-coral)';
+          const aka =
+            item.alsoKnownAs.length > 0
+              ? `<span class="ms-search-result-aka">aka ${escapeHtml(item.alsoKnownAs[0])}</span>`
+              : '';
+          return `
+            <li class="ms-search-result${idx === 0 ? ' is-active' : ''}" role="option" aria-selected="${idx === 0 ? 'true' : 'false'}">
+              <a class="ms-search-result-link" href="/${encodeURIComponent(item.slug)}/" style="--result-color: ${colour};">
+                <div class="ms-search-result-title">
+                  <span>${escapeHtml(item.title)}</span>
+                  <span class="ms-search-result-cat">${escapeHtml(item.category)}</span>
+                  ${aka}
+                </div>
+                <p class="ms-search-result-oneliner">${escapeHtml(item.oneLiner)}</p>
+              </a>
+            </li>`;
+        })
+        .join('');
+    }
+
+    async function open() {
+      panel!.hidden = false;
+      toggle!.setAttribute('aria-expanded', 'true');
+      loadIndex();
+      // focus on next frame so the panel is in the layout
+      requestAnimationFrame(() => input!.focus());
+    }
+
+    function close() {
+      panel!.hidden = true;
+      toggle!.setAttribute('aria-expanded', 'false');
+      input!.value = '';
+      results!.innerHTML = '';
+      currentResults = [];
+      activeIndex = -1;
+    }
+
+    toggle.addEventListener('click', () => {
+      if (panel.hidden) open();
+      else close();
+    });
+
+    closeBtn.addEventListener('click', () => {
+      close();
+      toggle.focus();
+    });
+
+    input.addEventListener('input', async () => {
+      const q = input.value;
+      const entries = await loadIndex();
+      render(search(entries, q), q);
+    });
+
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        if (currentResults.length === 0) return;
+        setActive(Math.min(activeIndex + 1, currentResults.length - 1));
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        if (currentResults.length === 0) return;
+        setActive(Math.max(activeIndex - 1, 0));
+      } else if (e.key === 'Enter') {
+        if (activeIndex >= 0 && currentResults[activeIndex]) {
+          e.preventDefault();
+          window.location.href = `/${encodeURIComponent(currentResults[activeIndex].slug)}/`;
+        }
+      } else if (e.key === 'Escape') {
+        e.preventDefault();
+        close();
+        toggle.focus();
+      }
+    });
+
+    // Click outside to close
+    document.addEventListener('click', (e) => {
+      if (panel.hidden) return;
+      const target = e.target as Node;
+      if (!panel.contains(target) && !toggle.contains(target)) {
+        close();
+      }
+    });
+
+    // Cmd/Ctrl-K to open
+    document.addEventListener('keydown', (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        if (panel.hidden) open();
+        else input.focus();
+      }
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+</script>
