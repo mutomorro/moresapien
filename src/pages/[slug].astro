@@ -10,7 +10,7 @@ import KnowledgeCard from '../components/KnowledgeCard.astro';
 import ConnectionMiniMap from '../components/ConnectionMiniMap.astro';
 import TableOfContents from '../components/TableOfContents.jsx';
 import TableOfContentsMobile from '../components/TableOfContentsMobile.jsx';
-import { getCategoryColor, getCategoryColorHex, getCategoryTextColor } from '../utils/categoryColors';
+import { getCategoryColor, getCategoryColorHex, getCategoryTextColor, getCategorySlug } from '../utils/categoryColors';
 import { hasDiagram, loadDiagram } from '../data/diagramRegistry.js';
 
 export async function getStaticPaths() {
@@ -147,7 +147,7 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
     <div class="entry-layout">
       <article class="entry">
         <header class="entry-header">
-          <p class="eyebrow">{category}</p>
+          <p class="eyebrow"><a href={`/browse/${getCategorySlug(category)}/`} class="eyebrow-link">{category}</a></p>
           <h1 class="entry-title">
             {title}<span class="title-asterisk">{' '}<Asterisk size={36} color="var(--page-accent)" /></span>
           </h1>
@@ -369,6 +369,17 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
     letter-spacing: 0.1em;
     color: var(--page-accent);
     margin-bottom: var(--ms-r4);
+  }
+
+  .eyebrow-link {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s ease;
+  }
+
+  .eyebrow-link:hover {
+    border-bottom-color: currentColor;
   }
 
   .entry-title {
