@@ -25,14 +25,13 @@ relatedConcepts:
     note: "What happens when someone tries to correct a belief held through confirmation bias"
   - slug: "availability-heuristic"
   - slug: "cognitive-dissonance"
-furtherReading:
-  - title: "Confirmation bias - Wikipedia"
-    url: "https://en.wikipedia.org/wiki/Confirmation_bias"
 ---
 
 ## What confirmation bias means
 
 Confirmation bias is the tendency to search for, interpret, and remember information in a way that confirms what you already believe. It's not that we're stupid or lazy - it's that our brains are wired to find patterns that match our existing mental models, and to quietly filter out the ones that don't.
+
+The psychologist [Peter Wason](https://en.wikipedia.org/wiki/Peter_Cathcart_Wason) demonstrated this in the 1960s with a deceptively simple card experiment. He gave people a rule and asked them to test whether it was true. Almost everyone looked for evidence that confirmed the rule rather than evidence that might disprove it - even though disproving it was the faster route to the answer. That instinct to confirm rather than challenge hasn't changed in the decades since.
 
 This happens at every stage of how we process information. We choose which sources to read. We decide which parts of an article feel credible. We remember the arguments that supported our position and forget the ones that challenged it. None of this is usually conscious - it's the brain's default setting.
 
@@ -76,9 +75,13 @@ The media environment makes this dramatically worse. Social media algorithms are
 
 In science and medicine, confirmation bias can be particularly costly. A doctor who forms an early hypothesis about a patient's condition may unconsciously seek tests that confirm it and overlook symptoms that point elsewhere. A researcher who expects a particular result may design studies that are more likely to produce it - not through fraud, but through the countless small methodological choices that favour the expected outcome. This is one reason peer review and replication matter so much - they're structural defences against a bias that no amount of individual expertise can eliminate.
 
+Raymond Nickerson's [comprehensive 1998 review](https://doi.org/10.1037/1089-2680.2.2.175) of decades of confirmation bias research concluded that it may be the single most problematic aspect of human reasoning - appearing across medicine, law, science, and everyday decision-making with remarkable consistency.
+
 ### Confirmation bias in the justice system
 
 In criminal investigations, confirmation bias can shape the entire trajectory of a case. Once a suspect is identified, detectives may focus their efforts on building a case against that person rather than considering alternative explanations. Witness statements that support the theory get weighted more heavily than those that complicate it. The investigation feels thorough, but it's been narrowed by an early assumption.
+
+Research into wrongful convictions bears this out. The [Innocence Project](https://innocenceproject.org/) has documented case after case where tunnel vision - driven by confirmation bias - led investigators to build a convincing narrative around the wrong person while overlooking evidence that pointed elsewhere.
 
 ### What happens when you try to correct it
 
