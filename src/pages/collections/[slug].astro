@@ -15,7 +15,7 @@ const { collection } = Astro.props;
 const { title, type, audience, collectionEntries, tags } = collection.data;
 
 const allEntries = await getCollection('entries');
-const resolvedEntries = collectionEntries.map((slug, index) => {
+const resolvedEntries = collectionEntries.map((slug: string, index: number) => {
   const found = allEntries.find((e) => e.id === slug);
   return {
     slug,
@@ -26,7 +26,7 @@ const resolvedEntries = collectionEntries.map((slug, index) => {
   };
 });
 
-const categoryColours: Record<string, string> = {
+const categoryColours = {
   'Cognitive Bias': '#D4A574',
   'Logical Fallacy': '#7EA886',
   'Mental Model': '#C4956A',
@@ -48,8 +48,16 @@ const stageSections = sections.slice(1);
 // Check if this collection uses the interleaved format (has H2 sections)
 const isInterleaved = stageSections.length > 0;
 
+// Part dividers - keyed by stage index (0-based)
+// These insert narrative section breaks at specific points in the journey
+const partDividers = {
+  5: 'How the crowd pulls you in',
+  8: 'The deliberate tactics',
+  14: 'What happens when it works',
+};
+
 // Parse each stage: extract heading + body
-const stages = stageSections.map((section, i) => {
+const stages = stageSections.map((section: string, i: number) => {
   const lines = section.split('\n');
   const headingLine = lines[0] || '';
   const heading = headingLine.replace(/^## /, '').trim();
@@ -59,6 +67,7 @@ const stages = stageSections.map((section, i) => {
     bodyHtml: marked.parse(body),
     entry: resolvedEntries[i] || null,
     number: i + 1,
+    dividerLabel: partDividers[i] || null,
   };
 });
 
@@ -106,7 +115,6 @@ const introHtml = introMd ? marked.parse(introMd) : '';
         padding: 2.5rem 2rem 4rem;
       }
 
-      /* Header */
       .collection-type-badge {
         display: inline-block;
         font-family: 'Space Grotesk', sans-serif;
@@ -152,23 +160,21 @@ const introHtml = introMd ? marked.parse(introMd) : '';
         margin-bottom: 2rem;
       }
 
-      /* Intro section */
       .collection-intro {
         margin-bottom: 2.5rem;
       }
 
-      .collection-intro p {
+      .collection-intro :global(p) {
         font-size: 1.0625rem;
         line-height: 1.75;
         color: #4a4540;
         margin-bottom: 0.75rem;
       }
 
-      .collection-intro p:last-child {
+      .collection-intro :global(p:last-child) {
         margin-bottom: 0;
       }
 
-      /* Stage sections */
       .stage {
         margin-bottom: 2.5rem;
       }
@@ -207,18 +213,17 @@ const introHtml = introMd ? marked.parse(introMd) : '';
         margin-bottom: 1.25rem;
       }
 
-      .stage-body p {
+      .stage-body :global(p) {
         font-size: 1.0625rem;
         line-height: 1.75;
         color: #4a4540;
         margin-bottom: 0.75rem;
       }
 
-      .stage-body p:last-child {
+      .stage-body :global(p:last-child) {
         margin-bottom: 0;
       }
 
-      /* Entry card (concept block) */
       .entry-card {
         display: flex;
         align-items: center;
@@ -293,7 +298,6 @@ const introHtml = introMd ? marked.parse(introMd) : '';
         height: 1rem;
       }
 
-      /* Part dividers */
       .part-divider {
         display: flex;
         align-items: center;
@@ -322,7 +326,7 @@ const introHtml = introMd ? marked.parse(introMd) : '';
         margin-bottom: 2.5rem;
       }
 
-      .classic-intro p {
+      .classic-intro :global(p) {
         font-size: 1.0625rem;
         line-height: 1.75;
         color: #4a4540;
@@ -452,7 +456,6 @@ const introHtml = introMd ? marked.parse(introMd) : '';
         line-height: 1.5;
       }
 
-      /* Footer */
       .site-footer {
         text-align: center;
         padding-top: 3rem;
@@ -471,7 +474,6 @@ const introHtml = introMd ? marked.parse(introMd) : '';
         text-decoration: underline;
       }
 
-      /* Responsive */
       @media (max-width: 600px) {
         .page-wrapper {
           padding: 1.5rem 1.25rem 3rem;
@@ -511,25 +513,17 @@ const introHtml = introMd ? marked.parse(introMd) : '';
 
       {isInterleaved ? (
         <>
-          {/* Interleaved format: intro + stages with entry cards */}
           <div class="collection-intro" set:html={introHtml} />
 
-          {stages.map((stage, i) => {
+          {stages.map((stage) => {
             const colour = stage.entry ? (categoryColours[stage.entry.category] || '#8a7f72') : '#8a7f72';
-
-            // Insert part dividers at narrative transitions
-            const partDividers: Record<number, string> = {
-              5: 'How the crowd pulls you in',
-              8: 'The deliberate tactics',
-              14: 'What happens when it works',
-            };
 
             return (
               <>
-                {partDividers[i] && (
+                {stage.dividerLabel && (
                   <div class="part-divider">
                     <div class="part-divider-line"></div>
-                    <span class="part-divider-label">{partDividers[i]}</span>
+                    <span class="part-divider-label">{stage.dividerLabel}</span>
                     <div class="part-divider-line"></div>
                   </div>
                 )}
@@ -564,7 +558,6 @@ const introHtml = introMd ? marked.parse(introMd) : '';
         </>
       ) : (
         <>
-          {/* Classic format: intro text + entry list */}
           <div class="classic-intro">
             <Content />
           </div>
