@@ -18,12 +18,26 @@ export async function getStaticPaths() {
 const { collection } = Astro.props;
 const { title, type, audience, collectionEntries } = collection.data;
 
+function splitLastWord(s: string) {
+  const i = s.lastIndexOf(' ');
+  return {
+    head: i === -1 ? '' : s.slice(0, i + 1),
+    tail: i === -1 ? s : s.slice(i + 1),
+  };
+}
+
+const titleSplit = splitLastWord(title);
+
 const allEntries = await getCollection('entries');
 const resolvedEntries = collectionEntries.map((slug: string, index: number) => {
   const found = allEntries.find((e) => e.id === slug);
+  const entryTitle = found ? found.data.title : slug;
+  const split = splitLastWord(entryTitle);
   return {
     slug,
-    title: found ? found.data.title : slug,
+    title: entryTitle,
+    titleHead: split.head,
+    titleTail: split.tail,
     oneLiner: found ? found.data.oneLiner : '',
     category: found ? found.data.category : '',
     index: index + 1,
@@ -85,7 +99,7 @@ const pageTitle = title + ' — Moresapien';
       <header class="collection-header">
         <p class="eyebrow">Collection</p>
         <h1 class="collection-title">
-          {title}<span class="title-asterisk">{' '}<Asterisk size={28} /></span>
+          {titleSplit.head}<span class="title-tail">{titleSplit.tail}{' '}<Asterisk size={28} class="title-asterisk" /></span>
         </h1>
         <p class="collection-audience">{audience}</p>
       </header>
@@ -120,7 +134,7 @@ const pageTitle = title + ' — Moresapien';
                         <span class="aside-eyebrow">Concept</span>
                         <span class="aside-category">{stage.entry.category}</span>
                         <span class="aside-title">
-                          {stage.entry.title}<span class="entry-asterisk">{' '}<Asterisk size={11} color="var(--entry-accent)" /></span>
+                          {stage.entry.titleHead}<span class="entry-tail">{stage.entry.titleTail}{' '}<Asterisk size={11} color="var(--entry-accent)" class="entry-asterisk" /></span>
                         </span>
                         <span class="aside-oneliner">{stage.entry.oneLiner}</span>
                         <span class="aside-cta">Read →</span>
@@ -154,7 +168,7 @@ const pageTitle = title + ' — Moresapien';
                       <div class="pathway-content">
                         <span class="pathway-category">{entry.category}</span>
                         <span class="pathway-title">
-                          {entry.title}<span class="entry-asterisk">{' '}<Asterisk size={11} color="var(--entry-accent)" /></span>
+                          {entry.titleHead}<span class="entry-tail">{entry.titleTail}{' '}<Asterisk size={11} color="var(--entry-accent)" class="entry-asterisk" /></span>
                         </span>
                         <span class="pathway-oneliner">{entry.oneLiner}</span>
                       </div>
@@ -172,7 +186,7 @@ const pageTitle = title + ' — Moresapien';
                   >
                     <span class="toolkit-category">{entry.category}</span>
                     <span class="toolkit-title">
-                      {entry.title}<span class="entry-asterisk">{' '}<Asterisk size={11} color="var(--entry-accent)" /></span>
+                      {entry.titleHead}<span class="entry-tail">{entry.titleTail}{' '}<Asterisk size={11} color="var(--entry-accent)" class="entry-asterisk" /></span>
                     </span>
                     <span class="toolkit-oneliner">{entry.oneLiner}</span>
                   </a>
@@ -236,10 +250,12 @@ const pageTitle = title + ' — Moresapien';
     margin-bottom: var(--ms-r4);
   }
 
+  .title-tail,
+  .entry-tail {
+    white-space: nowrap;
+  }
   .title-asterisk,
   .entry-asterisk {
-    display: inline-block;
-    white-space: nowrap;
     transform: translateY(-0.55em);
   }
 
