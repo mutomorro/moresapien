@@ -1,7 +1,7 @@
 ---
 title: "Why We Think Everyone Agrees With Us"
 type: "pathway"
-audience: "We all live inside a model of the world that feels like the world itself — until an election or a comment section breaks the spell. Here's the chain of biases that keeps the bubble feeling like the whole sky."
+audience: "We all live inside a model of the world that feels like the world itself - until an election or a comment section breaks the spell. Here's the chain of biases that keeps the bubble feeling like the whole sky."
 collectionEntries:
   - "naive-realism"
   - "false-consensus-effect"

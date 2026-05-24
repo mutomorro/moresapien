@@ -54,7 +54,7 @@ const stageSections = sections.slice(1);
 // Classic format = single intro + list of entries.
 const isInterleaved = stageSections.length > 0;
 
-// Narrative part dividers — keyed by stage index (0-based).
+// Narrative part dividers - keyed by stage index (0-based).
 const partDividers: Record<number, string> = {
   5: 'How the crowd pulls you in',
   8: 'The deliberate tactics',
@@ -80,7 +80,7 @@ const introHtml = introMd ? marked.parse(introMd) : '';
 
 const siteUrl = 'https://moresapien.org';
 const pageUrl = siteUrl + '/collections/' + collection.id + '/';
-const pageTitle = title + ' — Moresapien';
+const pageTitle = title + ' - Moresapien';
 ---
 <BaseLayout
   title={pageTitle}
@@ -351,7 +351,7 @@ const pageTitle = title + ' — Moresapien';
     color: var(--ms-coral);
   }
 
-  /* Concept aside — sits beside the body, links to the entry */
+  /* Concept aside - sits beside the body, links to the entry */
   .stage-aside {
     grid-area: aside;
     align-self: start;

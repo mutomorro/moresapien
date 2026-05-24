@@ -94,7 +94,7 @@ function renderInlineMarkdown(text: string): string {
   return (text || '').replace(/\*(.*?)\*/g, '<em>$1</em>');
 }
 
-const pageTitle = title + ' — Moresapien';
+const pageTitle = title + ' - Moresapien';
 const pageDescription = title + ': ' + oneLiner + ' Learn about this ' + category.toLowerCase() + ' and how it affects your thinking.';
 const ogImage = siteUrl + '/og/' + entry.id + '.png';
 const thoughtHtml = renderInlineMarkdown(thoughtToHoldOnto);
@@ -105,7 +105,7 @@ const entryHasDiagram = hasDiagram(entry.id);
 const DiagramComponent = entryHasDiagram ? await loadDiagram(entry.id) : null;
 const diagramPngUrl = entryHasDiagram ? siteUrl + '/diagrams/' + entry.id + '.png' : null;
 const diagramAltText = entryHasDiagram
-  ? title + ' — ' + category + '. ' + oneLiner
+  ? title + ' - ' + category + '. ' + oneLiner
   : null;
 
 const baseImage = {
@@ -121,7 +121,7 @@ const diagramImage = entryHasDiagram
       '@type': 'ImageObject',
       url: diagramPngUrl,
       width: 1200,
-      caption: 'How the ' + title.toLowerCase() + ' works — Moresapien concept diagram',
+      caption: 'How the ' + title.toLowerCase() + ' works - Moresapien concept diagram',
     }
   : null;
 
@@ -199,7 +199,7 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
             <img
               src={`/diagrams/${entry.id}.png`}
               alt={diagramAltText}
-              title={`How ${title} works — Moresapien`}
+              title={`How ${title} works - Moresapien`}
               width="1200"
               height="auto"
               loading="lazy"
@@ -271,7 +271,7 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
             <div class="connection-map">
               <h3>How this connects</h3>
               <p class="map-hint">
-                {title} sits alongside {resolvedRelated.length === 1 ? 'one related idea' : `${resolvedRelated.length} related ideas`} — a quick map of the neighbourhood.
+                {title} sits alongside {resolvedRelated.length === 1 ? 'one related idea' : `${resolvedRelated.length} related ideas`} - a quick map of the neighbourhood.
               </p>
               <ConnectionMiniMap
                 title={title}
@@ -829,7 +829,7 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
   }
 
   /* =============================================
-     Table of Contents — Desktop (sidebar)
+     Table of Contents - Desktop (sidebar)
      ============================================= */
   .entry-sidebar :global(.toc) {
     padding: 0;
@@ -887,7 +887,7 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
   }
 
   /* =============================================
-     Table of Contents — Mobile (collapsible)
+     Table of Contents - Mobile (collapsible)
      ============================================= */
   .toc-mobile-wrapper :global(.toc-mobile) {
     margin: 0;

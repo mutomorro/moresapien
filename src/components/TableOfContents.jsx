@@ -1,12 +1,12 @@
 import { useState, useEffect, useRef } from 'react';
 
 /**
- * TableOfContents — sticky sidebar nav with scroll-spy.
+ * TableOfContents - sticky sidebar nav with scroll-spy.
  *
  * Props:
- *   headings        — array of { slug, text } from Markdown H2s
- *   fixedSections   — array of { slug, text } for the template-level sections
- *   accentColor     — the category accent colour (CSS value)
+ *   headings - array of { slug, text } from Markdown H2s
+ *   fixedSections - array of { slug, text } for the template-level sections
+ *   accentColor - the category accent colour (CSS value)
  */
 export default function TableOfContents({ headings = [], fixedSections = [], accentColor = 'var(--page-accent)' }) {
   const [activeId, setActiveId] = useState('');

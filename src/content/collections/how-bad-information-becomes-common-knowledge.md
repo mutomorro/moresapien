@@ -1,7 +1,7 @@
 ---
 title: "How Bad Information Becomes Common Knowledge"
 type: "pathway"
-audience: "Most things 'everyone knows' arrived without anyone checking. Trace the journey of a dodgy claim from fringe blog to settled fact — and where the chain can still be broken."
+audience: "Most things 'everyone knows' arrived without anyone checking. Trace the journey of a dodgy claim from fringe blog to settled fact - and where the chain can still be broken."
 collectionEntries:
   - "appeal-to-false-authority"
   - "authority-bias"

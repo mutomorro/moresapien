@@ -48,8 +48,8 @@ const sortedEntries = entries
 const tagSlug = tagToSlug(tag);
 const count = sortedEntries.length;
 const canonical = `https://moresapien.org/tag/${tagSlug}/`;
-const pageTitle = `#${tag} — Moresapien`;
-const description = `Explore Moresapien entries tagged with ${tag} — concepts from psychology, logic, and critical thinking.`;
+const pageTitle = `#${tag} - Moresapien`;
+const description = `Explore Moresapien entries tagged with ${tag} - concepts from psychology, logic, and critical thinking.`;
 
 const structuredData = {
   '@context': 'https://schema.org',
@@ -93,7 +93,7 @@ const structuredData = {
         <span class="tag-hash" aria-hidden="true">#</span>{tag}
       </h1>
       <p class="tag-intro">
-        Entries tagged with <em>{tag}</em> — exploring this theme across cognitive biases, logical fallacies, mental models, and more.
+        Entries tagged with <em>{tag}</em> - exploring this theme across cognitive biases, logical fallacies, mental models, and more.
       </p>
       <p class="tag-count">{count} {count === 1 ? 'concept' : 'concepts'}</p>
     </header>

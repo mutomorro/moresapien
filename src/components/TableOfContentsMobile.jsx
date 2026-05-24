@@ -1,13 +1,13 @@
 import { useState } from 'react';
 
 /**
- * TableOfContentsMobile — collapsible "On this page" for mobile.
+ * TableOfContentsMobile - collapsible "On this page" for mobile.
  * Only visible below 960px (controlled by CSS in the page template).
  *
  * Props:
- *   headings        — array of { slug, text } from Markdown H2s
- *   fixedSections   — array of { slug, text } for template-level sections
- *   accentColor     — the category accent colour (CSS value)
+ *   headings - array of { slug, text } from Markdown H2s
+ *   fixedSections - array of { slug, text } for template-level sections
+ *   accentColor - the category accent colour (CSS value)
  */
 export default function TableOfContentsMobile({ headings = [], fixedSections = [], accentColor = 'var(--page-accent)' }) {
   const [open, setOpen] = useState(false);

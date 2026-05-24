@@ -65,7 +65,7 @@ export function getCategoryTextColor(category: string): string {
 }
 
 /* ---- Category slugs (URLs) ----------------------------------------------
- * Explicit map — never derive from the name at request time. Slugs are part
+ * Explicit map - never derive from the name at request time. Slugs are part
  * of the URL contract; renaming a category should not silently change them. */
 export const categorySlugMap: Record<string, string> = {
   'Cognitive Bias':            'cognitive-bias',
@@ -91,16 +91,16 @@ export function getCategoryFromSlug(slug: string): Category | undefined {
 
 /* ---- Category descriptions (intros + meta descriptions) ------------------ */
 export const categoryDescriptions: Record<string, string> = {
-  'Cognitive Bias':            'Systematic patterns in how we judge, remember and decide — the predictable ways our thinking diverges from logic.',
-  'Logical Fallacy':           'Errors in reasoning that make an argument feel sound when it isn\'t — from straw men to slippery slopes.',
-  'Rhetorical Device':         'Techniques speakers and writers use to persuade — useful, neutral and sometimes manipulative.',
-  'Manipulation Tactic':       'Deliberate strategies for bending someone\'s perception, decisions or behaviour — often without their awareness.',
-  'Mental Model':              'Frameworks for understanding how the world works — tools for clearer thinking and better decisions.',
-  'Psychological Phenomenon':  'Recurring patterns in how minds behave — observed effects that shape how we feel, act and relate to others.',
-  'Psychological Defence':     'Mental strategies the mind uses to protect itself from anxiety, shame or threat — sometimes helpful, often invisible.',
-  'Systems Thinking':          'Ways of seeing complex wholes — how parts interact, feed back and produce behaviour no single piece explains.',
-  'Political Theory':          'Frameworks for understanding power, authority and how societies organise — the ideas that shape what\'s possible.',
-  'Cultural Influence':        'The water we swim in — shared assumptions, norms and patterns that shape thought without announcing themselves.',
+  'Cognitive Bias':            'Systematic patterns in how we judge, remember and decide - the predictable ways our thinking diverges from logic.',
+  'Logical Fallacy':           'Errors in reasoning that make an argument feel sound when it isn\'t - from straw men to slippery slopes.',
+  'Rhetorical Device':         'Techniques speakers and writers use to persuade - useful, neutral and sometimes manipulative.',
+  'Manipulation Tactic':       'Deliberate strategies for bending someone\'s perception, decisions or behaviour - often without their awareness.',
+  'Mental Model':              'Frameworks for understanding how the world works - tools for clearer thinking and better decisions.',
+  'Psychological Phenomenon':  'Recurring patterns in how minds behave - observed effects that shape how we feel, act and relate to others.',
+  'Psychological Defence':     'Mental strategies the mind uses to protect itself from anxiety, shame or threat - sometimes helpful, often invisible.',
+  'Systems Thinking':          'Ways of seeing complex wholes - how parts interact, feed back and produce behaviour no single piece explains.',
+  'Political Theory':          'Frameworks for understanding power, authority and how societies organise - the ideas that shape what\'s possible.',
+  'Cultural Influence':        'The water we swim in - shared assumptions, norms and patterns that shape thought without announcing themselves.',
 };
 
 export function getCategoryDescription(category: string): string {
