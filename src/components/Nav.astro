@@ -57,7 +57,75 @@ const activeId = aliasMap[currentPage] ?? '';
         </button>
       </li>
     </ul>
+
+    <button
+      type="button"
+      class="ms-nav-burger"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="ms-nav-drawer"
+      data-nav-burger
+    >
+      <span class="ms-nav-burger-bar" aria-hidden="true"></span>
+      <span class="ms-nav-burger-bar" aria-hidden="true"></span>
+      <span class="ms-nav-burger-bar" aria-hidden="true"></span>
+    </button>
   </div>
+
+  <div
+    class="ms-nav-overlay"
+    hidden
+    data-nav-overlay
+    aria-hidden="true"
+  ></div>
+
+  <aside
+    id="ms-nav-drawer"
+    class="ms-nav-drawer"
+    aria-label="Menu"
+    hidden
+    data-nav-drawer
+  >
+    <div class="ms-nav-drawer-header">
+      <button
+        type="button"
+        class="ms-nav-drawer-close"
+        aria-label="Close menu"
+        data-nav-close
+      >
+        <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false">
+          <line x1="5" y1="5" x2="15" y2="15" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+          <line x1="15" y1="5" x2="5" y2="15" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+    <ul class="ms-nav-drawer-links">
+      {links.map((link) => (
+        <li>
+          <a
+            href={link.href}
+            class:list={['ms-nav-drawer-link', { active: link.id === activeId }]}
+            aria-current={link.id === activeId ? 'page' : undefined}
+          >
+            {link.label}
+          </a>
+        </li>
+      ))}
+      <li>
+        <button
+          type="button"
+          class="ms-nav-drawer-link ms-nav-drawer-search"
+          data-nav-search
+        >
+          <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false">
+            <circle cx="9" cy="9" r="6" fill="none" stroke="currentColor" stroke-width="1.75" />
+            <line x1="13.5" y1="13.5" x2="17.5" y2="17.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+          </svg>
+          <span>Search</span>
+        </button>
+      </li>
+    </ul>
+  </aside>
 
   <div
     id="ms-search-panel"
@@ -152,6 +220,43 @@ const activeId = aliasMap[currentPage] ?? '';
   .ms-nav-search-item {
     display: flex;
     align-items: center;
+  }
+
+  .ms-nav-burger {
+    display: none;
+    background: none;
+    border: none;
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+    color: var(--ms-ink);
+    border-radius: 4px;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .ms-nav-burger-bar {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    border-radius: 1px;
+  }
+
+  @media (max-width: 767px) {
+    .ms-nav-inner {
+      padding: 0.5rem 1rem 0.5rem 1.25rem;
+    }
+    .ms-nav-links {
+      display: none;
+    }
+    .ms-nav-burger {
+      display: inline-flex;
+    }
   }
 </style>
 
@@ -349,28 +454,118 @@ const activeId = aliasMap[currentPage] ?? '';
     gap: 1rem;
   }
 
-  @media (max-width: 640px) {
-    .ms-nav-inner {
-      padding: 0.625rem 1rem;
-      gap: var(--ms-r3);
-      flex-wrap: wrap;
-    }
-    .ms-nav-links {
-      gap: var(--ms-r4);
-    }
-    .ms-nav-link {
-      font-size: 12px;
-    }
-    .ms-search-panel-inner {
-      padding: 0.625rem 1rem 0.5rem;
-    }
+  /* ---- Mobile drawer ---- */
+  .ms-nav-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(21, 20, 15, 0.4);
+    z-index: 60;
+    opacity: 0;
+    transition: opacity 0.2s ease;
   }
 
-  @media (max-width: 380px) {
-    .ms-nav-inner {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: var(--ms-r3);
+  .ms-nav-overlay[hidden] {
+    display: none;
+  }
+
+  .ms-nav-overlay.is-open {
+    opacity: 1;
+  }
+
+  .ms-nav-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: min(280px, 84vw);
+    background: var(--ms-paper);
+    border-left: 1px solid var(--ms-rule);
+    z-index: 70;
+    transform: translateX(100%);
+    transition: transform 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -8px 0 24px -16px rgba(0, 0, 0, 0.25);
+  }
+
+  .ms-nav-drawer[hidden] {
+    display: none;
+  }
+
+  .ms-nav-drawer.is-open {
+    transform: translateX(0);
+  }
+
+  .ms-nav-drawer-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--ms-rule);
+  }
+
+  .ms-nav-drawer-close {
+    background: none;
+    border: none;
+    color: var(--ms-ink);
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .ms-nav-drawer-close:hover {
+    color: var(--ms-coral);
+  }
+
+  .ms-nav-drawer-links {
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ms-nav-drawer-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    min-height: 48px;
+    padding: 0.75rem 1.25rem;
+    font-family: var(--ms-font-ui);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--ms-ink);
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+    border-left: 3px solid transparent;
+    transition: background-color 0.12s ease, color 0.12s ease, border-color 0.12s ease;
+  }
+
+  .ms-nav-drawer-link:hover,
+  .ms-nav-drawer-link:focus-visible {
+    background: rgba(0, 0, 0, 0.04);
+  }
+
+  .ms-nav-drawer-link.active {
+    border-left-color: var(--ms-coral);
+    color: var(--ms-coral);
+  }
+
+  .ms-nav-drawer-search {
+    border-top: 1px solid var(--ms-rule);
+    margin-top: 0.5rem;
+  }
+
+  @media (max-width: 640px) {
+    .ms-search-panel-inner {
+      padding: 0.625rem 1rem 0.5rem;
     }
   }
 </style>
@@ -590,6 +785,69 @@ const activeId = aliasMap[currentPage] ?? '';
         else input.focus();
       }
     });
+
+    // ------ Mobile drawer ------
+    const burger = document.querySelector<HTMLButtonElement>('[data-nav-burger]');
+    const drawer = document.querySelector<HTMLElement>('[data-nav-drawer]');
+    const overlay = document.querySelector<HTMLElement>('[data-nav-overlay]');
+    const drawerClose = document.querySelector<HTMLButtonElement>('[data-nav-close]');
+    const drawerSearch = document.querySelector<HTMLButtonElement>('[data-nav-search]');
+
+    if (burger && drawer && overlay && drawerClose) {
+      const openDrawer = () => {
+        drawer.hidden = false;
+        overlay.hidden = false;
+        // next frame so the transitions take effect
+        requestAnimationFrame(() => {
+          drawer.classList.add('is-open');
+          overlay.classList.add('is-open');
+        });
+        burger.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+      };
+
+      const closeDrawer = () => {
+        drawer.classList.remove('is-open');
+        overlay.classList.remove('is-open');
+        burger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+        // wait for animation, then hide from a11y tree
+        setTimeout(() => {
+          drawer.hidden = true;
+          overlay.hidden = true;
+        }, 250);
+      };
+
+      burger.addEventListener('click', () => {
+        if (drawer.hidden) openDrawer();
+        else closeDrawer();
+      });
+      drawerClose.addEventListener('click', closeDrawer);
+      overlay.addEventListener('click', closeDrawer);
+
+      // Close on escape
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !drawer.hidden) {
+          closeDrawer();
+          burger.focus();
+        }
+      });
+
+      // Close drawer if viewport grows past mobile breakpoint
+      const mq = window.matchMedia('(min-width: 768px)');
+      mq.addEventListener('change', (e) => {
+        if (e.matches && !drawer.hidden) closeDrawer();
+      });
+
+      // Search button inside drawer: close drawer then open search panel
+      if (drawerSearch) {
+        drawerSearch.addEventListener('click', () => {
+          closeDrawer();
+          // give the drawer's close transition a beat before opening search
+          setTimeout(() => open(), 260);
+        });
+      }
+    }
   }
 
   if (document.readyState === 'loading') {
