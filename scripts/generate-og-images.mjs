@@ -402,8 +402,6 @@ async function generateEntry(entry) {
 async function generateHome() {
   const png = await renderToPng(buildHomeCard());
   fs.writeFileSync(path.join(OUTPUT_DIR, 'home.png'), png);
-  // Legacy filename used by index.astro until that meta tag is updated.
-  fs.writeFileSync(path.join(OUTPUT_DIR, 'homepage.png'), png);
 }
 
 async function main() {

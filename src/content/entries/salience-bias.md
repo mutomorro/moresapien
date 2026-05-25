@@ -1,6 +1,6 @@
 ---
 title: "Salience Bias"
-oneLiner: "The tendency to give disproportionate weight to information that is prominent, vivid, or emotionally striking, while overlooking information that is less noticeable."
+oneLiner: "The tendency to give disproportionate weight to prominent, vivid, or emotionally striking information while overlooking quieter details."
 alsoKnownAs:
   - "Salience effect"
   - "Prominence bias"
