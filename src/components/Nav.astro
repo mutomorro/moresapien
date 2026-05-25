@@ -23,6 +23,7 @@ const aliasMap: Record<string, string> = {
   collections: 'collections',
   connections: 'connections',
   about: 'about',
+  contact: 'contact',
 };
 const activeId = aliasMap[currentPage] ?? '';
 ---
@@ -55,6 +56,19 @@ const activeId = aliasMap[currentPage] ?? '';
             <line x1="13.5" y1="13.5" x2="17.5" y2="17.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
           </svg>
         </button>
+      </li>
+      <li class="ms-nav-search-item">
+        <a
+          href="/contact/"
+          class:list={['ms-contact-toggle', { active: activeId === 'contact' }]}
+          aria-label="Contact"
+          aria-current={activeId === 'contact' ? 'page' : undefined}
+        >
+          <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false">
+            <rect x="2.5" y="4.5" width="15" height="11" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.75" />
+            <path d="M3 5.5 L10 11 L17 5.5" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
       </li>
     </ul>
 
@@ -123,6 +137,19 @@ const activeId = aliasMap[currentPage] ?? '';
           </svg>
           <span>Search</span>
         </button>
+      </li>
+      <li>
+        <a
+          href="/contact/"
+          class:list={['ms-nav-drawer-link', { active: activeId === 'contact' }]}
+          aria-current={activeId === 'contact' ? 'page' : undefined}
+        >
+          <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false">
+            <rect x="2.5" y="4.5" width="15" height="11" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.75" />
+            <path d="M3 5.5 L10 11 L17 5.5" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span>Contact</span>
+        </a>
       </li>
     </ul>
   </aside>
@@ -286,6 +313,31 @@ const activeId = aliasMap[currentPage] ?? '';
   }
 
   .ms-search-toggle:focus-visible {
+    outline: 2px solid var(--ms-coral);
+    outline-offset: 2px;
+  }
+
+  .ms-contact-toggle {
+    background: none;
+    border: none;
+    padding: 4px;
+    margin: 0;
+    color: var(--ms-ink);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: color 0.15s ease, background-color 0.15s ease;
+  }
+
+  .ms-contact-toggle:hover,
+  .ms-contact-toggle.active {
+    color: var(--ms-coral);
+  }
+
+  .ms-contact-toggle:focus-visible {
     outline: 2px solid var(--ms-coral);
     outline-offset: 2px;
   }
