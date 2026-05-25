@@ -2,6 +2,7 @@
 // Footer.astro - shared site footer
 // Import into every page template alongside Nav.astro
 import { getCategorySlug } from '../utils/categoryColors';
+import Wordmark from './Wordmark.astro';
 
 const footerCategories = [
   'Cognitive Bias',
@@ -17,7 +18,7 @@ const footerCategories = [
 
     <!-- Wordmark & tagline -->
     <div class="footer-brand">
-      <a href="/" class="footer-logo">more<em>sapien</em></a>
+      <Wordmark size="md" variant="on-ink" />
       <p class="footer-tagline">Understanding ourselves, one idea at a time.</p>
     </div>
 
@@ -79,20 +80,6 @@ const footerCategories = [
   /* Brand */
   .footer-brand {
     margin-bottom: 2rem;
-  }
-
-  .footer-logo {
-    font-family: 'Lora', Georgia, serif;
-    font-size: 1.375rem;
-    font-weight: 700;
-    color: #F5F1E8;
-    text-decoration: none;
-    letter-spacing: -0.02em;
-  }
-
-  .footer-logo em {
-    font-style: italic;
-    font-weight: 400;
   }
 
   .footer-tagline {
