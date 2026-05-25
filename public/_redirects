@@ -42,6 +42,11 @@
 /framework/the-com-b-model/                     /                           301
 /codifiers/marcel-proust/                       /                           301
 
+# ── GSC 404 fixes (25 May 2026) ──
+/home/                                          /                           301
+/adkar-model/                                   /                           301
+/tool-topic/staff-welfare/feed/                 /                           301
+
 # ── Old WordPress essays and pages with no equivalent ──
 /the-cult-of-celebrity/                         /                           301
 /the-evolution-of-the-cult-of-celebrity/        /                           301
