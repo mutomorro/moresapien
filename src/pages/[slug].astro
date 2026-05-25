@@ -282,6 +282,10 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
             </div>
           )}
 
+          <div class="sc-mobile sc-mobile--inline">
+            <StayCurious />
+          </div>
+
           {resolvedRelated.length > 0 && (
             <div class="related-concepts">
               <h3>Related concepts</h3>
@@ -313,10 +317,6 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
           )}
         </footer>
       </article>
-
-      <div class="sc-mobile">
-        <StayCurious />
-      </div>
 
       <aside class="entry-sidebar" aria-label="Page navigation and newsletter">
         <div class="sidebar-sticky">
@@ -369,6 +369,7 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
 
   .sc-mobile {
     display: none;
+    margin-bottom: var(--ms-r6);
   }
 
   /* --- Mobile ToC wrapper --- */
@@ -976,7 +977,6 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
     }
     .sc-mobile {
       display: block;
-      margin-top: var(--ms-r7);
     }
     .toc-mobile-wrapper {
       display: block;
@@ -993,11 +993,20 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
     .entry-oneliner {
       font-size: 1.0625rem;
     }
+    .entry-visual--diagram {
+      padding: var(--ms-r4);
+    }
     .block-spot {
       padding: var(--ms-r4) var(--ms-r5);
     }
     .block-thought {
       padding: var(--ms-r5);
+    }
+    .block-thought-text {
+      font-size: 1.125rem;
+    }
+    .block-matters h2 {
+      font-size: clamp(1.5rem, 6vw, 2rem);
     }
     .related-grid {
       grid-template-columns: 1fr;
