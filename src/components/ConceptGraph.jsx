@@ -39,6 +39,20 @@ export default function ConceptGraph() {
   const [hoveredNode, setHoveredNode] = useState(null);
   const [stats, setStats] = useState(null);
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+  const [isMobile, setIsMobile] = useState(false);
+  const [filtersOpen, setFiltersOpen] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 767px)');
+    const apply = () => setIsMobile(mq.matches);
+    apply();
+    mq.addEventListener('change', apply);
+    return () => mq.removeEventListener('change', apply);
+  }, []);
+
+  const isTouchDevice =
+    typeof window !== 'undefined' &&
+    ('ontouchstart' in window || navigator.maxTouchPoints > 0);
 
   useEffect(() => {
     fetch('/graph-data.json')
@@ -393,7 +407,7 @@ export default function ConceptGraph() {
           left: 0,
           right: 0,
           zIndex: 10,
-          padding: '20px 24px 16px',
+          padding: isMobile ? '12px 16px 12px' : '20px 24px 16px',
           background:
             'linear-gradient(to bottom, ' + PAPER + ' 60%, rgba(245,241,232,0))',
           pointerEvents: 'none',
@@ -413,7 +427,7 @@ export default function ConceptGraph() {
               justifyContent: 'space-between',
               flexWrap: 'wrap',
               gap: '12px',
-              marginBottom: '16px',
+              marginBottom: isMobile ? '10px' : '16px',
             }}
           >
             <div>
@@ -433,7 +447,7 @@ export default function ConceptGraph() {
               <h1
                 style={{
                   fontFamily: FONT_DISPLAY,
-                  fontSize: '24px',
+                  fontSize: isMobile ? '20px' : '24px',
                   fontWeight: 400,
                   letterSpacing: '-0.02em',
                   color: INK,
@@ -458,97 +472,212 @@ export default function ConceptGraph() {
             )}
           </div>
 
-          <div
-            style={{
-              display: 'flex',
-              gap: '8px',
-              alignItems: 'center',
-              flexWrap: 'wrap',
-            }}
-          >
-            <input
-              type="text"
-              placeholder="Search concepts…"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              style={{
-                padding: '7px 14px',
-                border: '1px solid ' + RULE,
-                borderRadius: '4px',
-                background: '#FFFFFF',
-                color: INK,
-                fontSize: '13px',
-                fontFamily: FONT_UI,
-                outline: 'none',
-                width: '220px',
-              }}
-            />
-
-            <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
-              {categories.map((cat) => {
-                const isActive = activeCategories?.has(cat);
-                const colour = graphData.categoryColours[cat] || MUTE;
-                return (
-                  <button
-                    key={cat}
-                    onClick={() => toggleCategory(cat)}
-                    title={cat}
-                    style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '6px',
-                      padding: '4px 10px',
-                      border: '1.5px solid ' + colour,
-                      borderRadius: '999px',
-                      background: isActive ? colour : 'transparent',
-                      color: isActive ? '#FFFFFF' : colour,
-                      fontFamily: FONT_MONO,
-                      fontSize: '11px',
-                      letterSpacing: '0.1em',
-                      textTransform: 'uppercase',
-                      fontWeight: 500,
-                      cursor: 'pointer',
-                      opacity: isActive ? 1 : 0.7,
-                      transition: 'all 0.15s ease',
-                      whiteSpace: 'nowrap',
-                    }}
-                  >
-                    {cat}
-                  </button>
-                );
-              })}
-            </div>
-
-            {(searchTerm ||
-              (activeCategories && activeCategories.size < categories.length)) && (
-              <button
-                onClick={resetFilters}
+          {isMobile ? (
+            <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+              <input
+                type="text"
+                placeholder="Search…"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
                 style={{
-                  padding: '4px 12px',
+                  flex: 1,
+                  minWidth: 0,
+                  padding: '9px 12px',
                   border: '1px solid ' + RULE,
-                  borderRadius: '999px',
-                  background: 'transparent',
-                  color: MUTE,
+                  borderRadius: '4px',
+                  background: '#FFFFFF',
+                  color: INK,
+                  fontSize: '16px',
+                  fontFamily: FONT_UI,
+                  outline: 'none',
+                }}
+              />
+              <button
+                onClick={() => setFiltersOpen((v) => !v)}
+                aria-expanded={filtersOpen}
+                style={{
+                  padding: '9px 14px',
+                  border: '1px solid ' + RULE,
+                  borderRadius: '4px',
+                  background: filtersOpen ? INK : '#FFFFFF',
+                  color: filtersOpen ? PAPER : INK,
                   fontFamily: FONT_MONO,
                   fontSize: '11px',
                   letterSpacing: '0.1em',
                   textTransform: 'uppercase',
                   cursor: 'pointer',
                   whiteSpace: 'nowrap',
+                  flexShrink: 0,
                 }}
               >
-                Reset
+                Filters
+                {activeCategories && activeCategories.size < categories.length
+                  ? ` (${activeCategories.size}/${categories.length})`
+                  : ''}
               </button>
-            )}
-          </div>
+            </div>
+          ) : (
+            <div
+              style={{
+                display: 'flex',
+                gap: '8px',
+                alignItems: 'center',
+                flexWrap: 'wrap',
+              }}
+            >
+              <input
+                type="text"
+                placeholder="Search concepts…"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                style={{
+                  padding: '7px 14px',
+                  border: '1px solid ' + RULE,
+                  borderRadius: '4px',
+                  background: '#FFFFFF',
+                  color: INK,
+                  fontSize: '13px',
+                  fontFamily: FONT_UI,
+                  outline: 'none',
+                  width: '220px',
+                }}
+              />
+
+              <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
+                {categories.map((cat) => {
+                  const isActive = activeCategories?.has(cat);
+                  const colour = graphData.categoryColours[cat] || MUTE;
+                  return (
+                    <button
+                      key={cat}
+                      onClick={() => toggleCategory(cat)}
+                      title={cat}
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '6px',
+                        padding: '4px 10px',
+                        border: '1.5px solid ' + colour,
+                        borderRadius: '999px',
+                        background: isActive ? colour : 'transparent',
+                        color: isActive ? '#FFFFFF' : colour,
+                        fontFamily: FONT_MONO,
+                        fontSize: '11px',
+                        letterSpacing: '0.1em',
+                        textTransform: 'uppercase',
+                        fontWeight: 500,
+                        cursor: 'pointer',
+                        opacity: isActive ? 1 : 0.7,
+                        transition: 'all 0.15s ease',
+                        whiteSpace: 'nowrap',
+                      }}
+                    >
+                      {cat}
+                    </button>
+                  );
+                })}
+              </div>
+
+              {(searchTerm ||
+                (activeCategories && activeCategories.size < categories.length)) && (
+                <button
+                  onClick={resetFilters}
+                  style={{
+                    padding: '4px 12px',
+                    border: '1px solid ' + RULE,
+                    borderRadius: '999px',
+                    background: 'transparent',
+                    color: MUTE,
+                    fontFamily: FONT_MONO,
+                    fontSize: '11px',
+                    letterSpacing: '0.1em',
+                    textTransform: 'uppercase',
+                    cursor: 'pointer',
+                    whiteSpace: 'nowrap',
+                  }}
+                >
+                  Reset
+                </button>
+              )}
+            </div>
+          )}
         </div>
       </div>
+
+      {isMobile && filtersOpen && (
+        <div
+          style={{
+            position: 'absolute',
+            top: '92px',
+            left: '12px',
+            right: '12px',
+            zIndex: 15,
+            background: '#FFFFFF',
+            border: '1px solid ' + RULE,
+            borderRadius: '6px',
+            padding: '12px',
+            boxShadow: '0 8px 24px -12px rgba(0,0,0,0.2)',
+            maxHeight: 'calc(100vh - 200px)',
+            overflowY: 'auto',
+          }}
+        >
+          <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
+            {categories.map((cat) => {
+              const isActive = activeCategories?.has(cat);
+              const colour = graphData.categoryColours[cat] || MUTE;
+              return (
+                <button
+                  key={cat}
+                  onClick={() => toggleCategory(cat)}
+                  style={{
+                    padding: '8px 12px',
+                    border: '1.5px solid ' + colour,
+                    borderRadius: '999px',
+                    background: isActive ? colour : 'transparent',
+                    color: isActive ? '#FFFFFF' : colour,
+                    fontFamily: FONT_MONO,
+                    fontSize: '11px',
+                    letterSpacing: '0.08em',
+                    textTransform: 'uppercase',
+                    fontWeight: 500,
+                    cursor: 'pointer',
+                    opacity: isActive ? 1 : 0.7,
+                  }}
+                >
+                  {cat}
+                </button>
+              );
+            })}
+          </div>
+          {(searchTerm ||
+            (activeCategories && activeCategories.size < categories.length)) && (
+            <button
+              onClick={resetFilters}
+              style={{
+                marginTop: '10px',
+                padding: '8px 14px',
+                border: '1px solid ' + RULE,
+                borderRadius: '999px',
+                background: 'transparent',
+                color: MUTE,
+                fontFamily: FONT_MONO,
+                fontSize: '11px',
+                letterSpacing: '0.1em',
+                textTransform: 'uppercase',
+                cursor: 'pointer',
+              }}
+            >
+              Reset filters
+            </button>
+          )}
+        </div>
+      )}
 
       <svg
         ref={svgRef}
         width={dimensions.width}
         height={dimensions.height}
-        style={{ display: 'block' }}
+        style={{ display: 'block', touchAction: 'none' }}
       />
 
       {hoveredNode && (
@@ -626,8 +755,8 @@ export default function ConceptGraph() {
       <div
         style={{
           position: 'absolute',
-          bottom: '20px',
-          right: '24px',
+          bottom: isMobile ? '12px' : '20px',
+          right: isMobile ? '12px' : '24px',
           zIndex: 10,
           fontFamily: FONT_MONO,
           fontSize: '10px',
@@ -640,7 +769,7 @@ export default function ConceptGraph() {
           opacity: 0.7,
         }}
       >
-        Scroll to zoom · Drag to pan
+        {isTouchDevice ? 'Pinch to zoom · Drag to pan' : 'Scroll to zoom · Drag to pan'}
       </div>
     </div>
   );

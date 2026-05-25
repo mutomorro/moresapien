@@ -24,9 +24,10 @@ import ConceptGraph from '../components/ConceptGraph.jsx';
     overflow: hidden;
     background: var(--ms-paper);
   }
-  @media (max-width: 380px) {
+  @media (max-width: 767px) {
     .graph-container {
-      height: calc(100vh - 90px);
+      /* dvh accounts for shrinking mobile browser chrome */
+      height: calc(100dvh - 61px);
     }
   }
 </style>
