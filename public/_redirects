@@ -5,95 +5,98 @@
 # ──────────────────────────────────────────────
 # Moresapien -- URL Redirects
 # Old WordPress URLs → New Astro URLs
-# Place this file in /public/_redirects
 #
 # Astro generates trailing-slash URLs (directory + index.html).
 # Netlify auto-301s bare-slug → trailing-slash, so we do not need
 # any "same slug, just toggle trailing slash" rules here.
-# All destinations end in a trailing slash to avoid double redirects.
+# All destinations use trailing slashes to avoid double redirects.
+#
+# Netlify only applies these when no static file matches at the
+# requested path. Once an entry exists in /src/content/entries/,
+# Astro generates its page and the redirect becomes a no-op.
+#
+# Last cleaned: 25 May 2026
 # ──────────────────────────────────────────────
 
-# ── Category/archive pages → homepage ──
-/bias/                                          /               301
-/bias                                           /               301
-/mental-model/                                  /               301
-/mental-model                                   /               301
-/framework/                                     /               301
-/framework                                      /               301
-/codifiers/                                     /               301
-/codifiers                                      /               301
-/theories/                                      /               301
-/theories                                       /               301
+# ── Old category/archive pages → new browse pages ──
+/bias/                                          /browse/cognitive-bias/     301
+/bias                                           /browse/cognitive-bias/     301
+/mental-model/                                  /browse/mental-model/       301
+/mental-model                                   /browse/mental-model/       301
+/framework/                                     /browse/                    301
+/framework                                      /browse/                    301
+/codifiers/                                     /browse/                    301
+/codifiers                                      /browse/                    301
+/theories/                                      /browse/political-theory/   301
+/theories                                       /browse/political-theory/   301
 
 # ── Entries with different slugs or paths ──
-# /hot-cold-empathy-gap is not yet in the v2 content collection — point
-# at / for now; flip this back to the proper destination once migrated.
-/cognitive-dissonance/effort-justification/     /effort-justification/   301
-/cognitive-dissonance/effort-justification      /effort-justification/   301
-/empathy-gap/                                   /                        301
-/empathy-gap                                    /                        301
-/mental-model/hanlons-razor/                    /hanlons-razor/          301
-/mental-model/hanlons-razor                     /hanlons-razor/          301
+/cognitive-dissonance/effort-justification/     /effort-justification/      301
+/cognitive-dissonance/effort-justification      /effort-justification/      301
+/empathy-gap/                                   /                           301
+/empathy-gap                                    /                           301
+/mental-model/hanlons-razor/                    /hanlons-razor/             301
+/mental-model/hanlons-razor                     /hanlons-razor/             301
 
-# ── Old framework/codifier pages with no equivalent ──
-/framework/the-com-b-model/                     /               301
-/codifiers/marcel-proust/                       /               301
+# ── Old framework/codifier subpages with no equivalent ──
+/framework/the-com-b-model/                     /                           301
+/codifiers/marcel-proust/                       /                           301
 
-# ── Old WordPress essays / pages with no equivalent ──
-/the-cult-of-celebrity/                                                                 /               301
-/the-evolution-of-the-cult-of-celebrity/                                                /               301
-/the-virtue-of-epistemic-humility-navigating-the-landscape-of-knowledge/                /               301
-/exploring-sapience-a-higher-state-of-wisdom/                                           /               301
-/5-conflict-styles/                                                                     /               301
-/change-curve/                                                                          /               301
-/intersubjective-myths/                                                                 /               301
-/social-contract-theory/                                                                /               301
-/customer-dashboard/                                                                    /               301
-/writing/                                                                               /               301
-/news/                                                                                  /               301
-/essay/                                                                                 /               301
-/contact/                                                                               /               301
-/sitemap/                                                                               /               301
+# ── Old WordPress essays and pages with no equivalent ──
+/the-cult-of-celebrity/                         /                           301
+/the-evolution-of-the-cult-of-celebrity/        /                           301
+/the-virtue-of-epistemic-humility-navigating-the-landscape-of-knowledge/   /   301
+/exploring-sapience-a-higher-state-of-wisdom/   /                           301
+/5-conflict-styles/                             /                           301
+/change-curve/                                  /                           301
+/intersubjective-myths/                         /                           301
+/social-contract-theory/                        /                           301
+/customer-dashboard/                            /                           301
+/writing/                                       /                           301
+/news/                                          /                           301
+/essay/                                         /                           301
+/sitemap/                                       /                           301
 
 # ── Misc WordPress pages ──
-/privacy-policy/                                /               301
-/cookie-policy/                                 /               301
-/checkout-2/                                    /               301
+/privacy-policy/                                /                           301
+/cookie-policy/                                 /                           301
+/checkout-2/                                    /                           301
 
 # ── Old WP entries not yet migrated to v2 ──
-# Netlify only applies these when no static file matches, so once an
-# entry is migrated to /src/content/entries the redirect becomes a no-op.
-/salience-bias/                                 /               301
-/implicit-association/                          /               301
-/anthropocentrism/                              /               301
-/illusory-correlation/                          /               301
-/clustering-illusion/                           /               301
-/apophenia/                                     /               301
-/functional-fixedness/                          /               301
-/law-of-the-instrument/                         /               301
-/common-source-bias/                            /               301
-/contrast-effect/                               /               301
-/pareidolia/                                    /               301
-/arrival-fallacy/                               /               301
-/complexity-bias/                               /               301
-/conservative-bias/                             /               301
-/self-reference-effect/                         /               301
-/picture-superiority-effect/                    /               301
-/von-restorff-effect/                           /               301
-/humour-effect/                                 /               301
-/bizarreness-effect/                            /               301
-/base-rate-fallacy/                             /               301
-/omission-bias/                                 /               301
-/frequency-illusion/                            /               301
-/mood-congruent-memory-bias/                    /               301
-/cue-dependent-forgetting/                      /               301
-/context-effect/                                /               301
-/mere-exposure-effect/                          /               301
-/attentional-bias/                              /               301
+# Safety net: if any of these slugs don't have an Astro entry yet,
+# this sends visitors to the homepage instead of a 404.
+# Once an entry IS written, Astro serves it and the rule is ignored.
+/salience-bias/                                 /                           301
+/implicit-association/                          /                           301
+/anthropocentrism/                              /                           301
+/illusory-correlation/                          /                           301
+/clustering-illusion/                           /                           301
+/apophenia/                                     /                           301
+/functional-fixedness/                          /                           301
+/law-of-the-instrument/                         /                           301
+/common-source-bias/                            /                           301
+/contrast-effect/                               /                           301
+/pareidolia/                                    /                           301
+/arrival-fallacy/                               /                           301
+/complexity-bias/                               /                           301
+/conservative-bias/                             /                           301
+/self-reference-effect/                         /                           301
+/picture-superiority-effect/                    /                           301
+/von-restorff-effect/                           /                           301
+/humour-effect/                                 /                           301
+/bizarreness-effect/                            /                           301
+/base-rate-fallacy/                             /                           301
+/omission-bias/                                 /                           301
+/frequency-illusion/                            /                           301
+/mood-congruent-memory-bias/                    /                           301
+/cue-dependent-forgetting/                      /                           301
+/context-effect/                                /                           301
+/mere-exposure-effect/                          /                           301
+/attentional-bias/                              /                           301
 
 # ── WordPress uploads / admin paths ──
-/wp-content/*                                   /               301
-/wp-admin/*                                     /               301
-/wp-includes/*                                  /               301
-/wp-login.php                                   /               301
-/xmlrpc.php                                     /               301
+/wp-content/*                                   /                           301
+/wp-admin/*                                     /                           301
+/wp-includes/*                                  /                           301
+/wp-login.php                                   /                           301
+/xmlrpc.php                                     /                           301
