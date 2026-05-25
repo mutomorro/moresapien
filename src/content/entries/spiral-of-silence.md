@@ -29,7 +29,7 @@ relatedConcepts:
     note: "The spiral of silence helps define the boundaries of acceptable public discourse"
 ---
 
-The spiral of silence is a political theory developed by German political scientist Elisabeth Noelle-Neumann in the 1970s. It describes a self-reinforcing process in which people who perceive their opinion to be in the minority become less willing to express it publicly, which makes the opinion appear even less common, which causes more people to stay silent, and so on - a spiral that can render a widely held view functionally invisible.
+The spiral of silence is a political theory developed by [German political scientist Elisabeth Noelle-Neumann in the 1970s](https://en.wikipedia.org/wiki/Spiral_of_silence). It describes a self-reinforcing process in which people who perceive their opinion to be in the minority become less willing to express it publicly, which makes the opinion appear even less common, which causes more people to stay silent, and so on - a spiral that can render a widely held view functionally invisible.
 
 The theory rests on a simple observation: people have a keen sense of what opinions are socially acceptable and what opinions will attract disapproval. When they sense that their view is out of step with the perceived majority, they tend to self-censor - not because they've changed their mind, but because the social cost of speaking feels too high.
 

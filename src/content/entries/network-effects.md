@@ -31,7 +31,7 @@ relatedConcepts:
 
 Network effects describe a dynamic in which a product, service, or system becomes more valuable to each individual user as the total number of users increases. The more people who use a telephone network, the more people you can call. The more people who use a social media platform, the more content and connections are available. The value isn't in the technology itself - it's in the network of people using it.
 
-The concept was first formalised by economists studying telecommunications, but it has become one of the most important ideas in technology, business, and systems thinking. Network effects explain why some markets tend toward monopoly, why platform businesses are so powerful, and why switching costs can trap users in ecosystems they might otherwise leave.
+The concept was [first formalised by economists studying telecommunications](https://en.wikipedia.org/wiki/Network_effect), but it has become one of the most important ideas in technology, business, and systems thinking. Network effects explain why some markets tend toward monopoly, why platform businesses are so powerful, and why switching costs can trap users in ecosystems they might otherwise leave.
 
 ## How network effects work
 

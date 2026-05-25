@@ -31,7 +31,7 @@ relatedConcepts:
 
 Love bombing is a manipulation tactic in which one person overwhelms another with excessive affection, attention, flattery, and devotion - typically very early in a relationship, before genuine emotional intimacy has had time to develop. The intensity feels intoxicating to the recipient, but it serves a strategic function: creating rapid emotional dependency that can later be exploited for control.
 
-The term originated in the context of cult recruitment, where new members are surrounded by warmth, praise, and belonging to create an emotional bond before the group's controlling dynamics become apparent. It has since been recognised as a pattern in romantic relationships, friendships, workplace dynamics, and high-pressure sales environments.
+The term [originated in the context of cult recruitment](https://en.wikipedia.org/wiki/Love_bombing), where new members are surrounded by warmth, praise, and belonging to create an emotional bond before the group's controlling dynamics become apparent. It has since been recognised as a pattern in romantic relationships, friendships, workplace dynamics, and high-pressure sales environments.
 
 ## How love bombing works
 

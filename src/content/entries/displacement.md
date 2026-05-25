@@ -31,7 +31,7 @@ relatedConcepts:
 
 Displacement is a psychological defence mechanism in which an emotional impulse - most commonly anger, frustration, or hostility - is redirected from its original source to a substitute target that feels safer or more accessible. The person who's angry at their boss comes home and snaps at their partner. The child who's frustrated at school kicks the family dog. The emotion is real. The target is wrong.
 
-The concept originates in Sigmund Freud's psychoanalytic theory, where displacement was identified as one of the ego's mechanisms for managing impulses that can't be expressed toward their true object. While psychoanalytic terminology has fallen out of fashion in some quarters, the phenomenon displacement describes remains one of the most commonly observed patterns in everyday psychology.
+The concept originates in [Sigmund Freud's psychoanalytic theory](https://en.wikipedia.org/wiki/Displacement_(psychology)), where displacement was identified as one of the ego's mechanisms for managing impulses that can't be expressed toward their true object. While psychoanalytic terminology has fallen out of fashion in some quarters, the phenomenon displacement describes remains one of the most commonly observed patterns in everyday psychology.
 
 ## How displacement works
 

@@ -31,7 +31,7 @@ relatedConcepts:
 
 Reaction formation is a psychological defence mechanism in which a person unconsciously replaces an unacceptable feeling, desire, or impulse with its opposite. Rather than simply suppressing the unwanted feeling, the mind converts it into an exaggerated display of the reverse - transforming hostility into excessive friendliness, desire into vocal disgust, insecurity into aggressive confidence.
 
-The concept comes from Freudian psychoanalytic theory, where it was identified as one of the ego's strategies for managing impulses that conflict with a person's self-image, moral standards, or social expectations. While the psychoanalytic framework has evolved considerably since Freud, the pattern reaction formation describes remains widely recognised in clinical psychology and is observable in everyday life.
+The concept comes from [Freudian psychoanalytic theory](https://en.wikipedia.org/wiki/Reaction_formation), where it was identified as one of the ego's strategies for managing impulses that conflict with a person's self-image, moral standards, or social expectations. While the psychoanalytic framework has evolved considerably since Freud, the pattern reaction formation describes remains widely recognised in clinical psychology and is observable in everyday life.
 
 ## How reaction formation works
 

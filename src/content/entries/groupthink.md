@@ -31,7 +31,7 @@ relatedConcepts:
 
 Groupthink is a psychological phenomenon where the desire for consensus within a group overrides the motivation to evaluate alternatives, weigh risks, or voice dissenting opinions. The result is a kind of collective tunnel vision - the group converges on a decision that feels unanimous but hasn't been properly stress-tested.
 
-The term was coined by social psychologist Irving Janis in 1972, who studied a series of catastrophic policy decisions - including the Bay of Pigs invasion and the failure to anticipate the attack on Pearl Harbor - and found a common pattern. In each case, highly intelligent, well-informed people made decisions that were objectively poor, not because they lacked information, but because the group dynamics suppressed their ability to use it.
+The term was coined by social psychologist [Irving Janis in 1972](https://en.wikipedia.org/wiki/Groupthink), who studied a series of catastrophic policy decisions - including the Bay of Pigs invasion and the failure to anticipate the attack on Pearl Harbor - and found a common pattern. In each case, highly intelligent, well-informed people made decisions that were objectively poor, not because they lacked information, but because the group dynamics suppressed their ability to use it.
 
 ## How groupthink works in practice
 

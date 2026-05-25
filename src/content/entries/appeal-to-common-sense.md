@@ -36,7 +36,7 @@ The problem isn't that common sense is always wrong. Often it's right. The probl
 
 ## What common sense is - and isn't
 
-Common sense is the set of intuitions, heuristics, and informal knowledge that people in a particular culture or community share. It's how you navigate everyday situations without having to reason through them from scratch. Don't touch hot things. Look both ways before crossing the road. If something sounds too good to be true, it probably is.
+[Common sense](https://en.wikipedia.org/wiki/Common_sense), as philosophers from Thomas Reid to G. E. Moore have explored it, is the set of intuitions, heuristics, and informal knowledge that people in a particular culture or community share. It's how you navigate everyday situations without having to reason through them from scratch. Don't touch hot things. Look both ways before crossing the road. If something sounds too good to be true, it probably is.
 
 At this level, common sense is invaluable. It's fast, practical, and usually reliable within the context where it developed.
 

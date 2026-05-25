@@ -32,7 +32,7 @@ relatedConcepts:
 
 Steel manning is the practice of engaging with the strongest, most charitable version of someone else's argument - even when (especially when) you disagree with them. It's the deliberate opposite of a [straw man](/straw-man/), where you misrepresent someone's position to make it easier to attack. Steel manning means making their argument stronger before you respond to it.
 
-The term gained currency in online debate communities and rationalist circles as a way of raising the quality of disagreement. The underlying principle is much older - philosophers have long recognised what's called the "principle of charity," the idea that you should interpret an argument in the most reasonable way possible before criticising it. Steel manning takes this further: don't just interpret charitably, actively strengthen.
+The term gained currency in online debate communities and rationalist circles as a way of raising the quality of disagreement. The underlying principle is much older - philosophers have long recognised what's called the [principle of charity](https://plato.stanford.edu/entries/davidson/#PriCha), the idea that you should interpret an argument in the most reasonable way possible before criticising it. Steel manning takes this further: don't just interpret charitably, actively strengthen.
 
 ## How steel manning works
 

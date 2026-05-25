@@ -49,7 +49,7 @@ The implications run deep. Claiming moral high ground is a high-risk strategy. I
 
 ### The authenticity calculation
 
-When someone behaves badly, we make two separate evaluations. First, how bad is the behaviour itself? Second, how much does this behaviour contradict what this person has told us about who they are? Research by Jillian Jordan and colleagues at Yale found that the second evaluation often dominates the first. We experience the contradiction as a form of [betrayal](/betrayal-aversion/) - not of a personal relationship, but of a social contract. The person implicitly promised to be what they claimed, and they broke that promise.
+When someone behaves badly, we make two separate evaluations. First, how bad is the behaviour itself? Second, how much does this behaviour contradict what this person has told us about who they are? [Research by Jillian Jordan and colleagues at Yale](https://www.nature.com/articles/nature19844) found that the second evaluation often dominates the first. We experience the contradiction as a form of [betrayal](/betrayal-aversion/) - not of a personal relationship, but of a social contract. The person implicitly promised to be what they claimed, and they broke that promise.
 
 This explains why we can sometimes feel more anger towards a hypocritical ally than towards a consistent opponent. The opponent never promised anything. The ally did - and the violation of that implicit promise activates a betrayal response that goes beyond the behaviour itself.
 

@@ -30,7 +30,7 @@ relatedConcepts:
     note: "The obligation component of FOG often leverages past investment to maintain control"
 ---
 
-FOG is an acronym for Fear, Obligation, and Guilt - three emotional levers that, when used together, form a powerful pattern of interpersonal manipulation. The term was popularised by Susan Forward in her book *Emotional Blackmail*, where she described how these three emotions are exploited to control another person's behaviour while making the control feel like the victim's own choice.
+FOG is an acronym for Fear, Obligation, and Guilt - three emotional levers that, when used together, form a powerful pattern of interpersonal manipulation. The term was popularised by [Susan Forward in her book *Emotional Blackmail*](https://en.wikipedia.org/wiki/Emotional_Blackmail_(book)), where she described how these three emotions are exploited to control another person's behaviour while making the control feel like the victim's own choice.
 
 What makes FOG distinctive is that it doesn't rely on overt threats or explicit demands. Instead, it creates an emotional atmosphere in which the target feels compelled to comply - not because they've been ordered to, but because the alternative feels unbearable. The manipulation operates through feeling, not force.
 

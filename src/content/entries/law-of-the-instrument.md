@@ -32,7 +32,7 @@ relatedConcepts:
 
 ## What the law of the instrument means
 
-The law of the instrument is the tendency to over-rely on a familiar tool, method, or framework when approaching problems - to see every problem through the lens of the solution you already know. The most famous expression comes from Abraham Maslow's 1966 observation: "I suppose it is tempting, if the only tool you have is a hammer, to treat everything as if it were a nail."
+The law of the instrument is the tendency to over-rely on a familiar tool, method, or framework when approaching problems - to see every problem through the lens of the solution you already know. The most famous expression comes from [Abraham Maslow's 1966 observation](https://en.wikipedia.org/wiki/Law_of_the_instrument): "I suppose it is tempting, if the only tool you have is a hammer, to treat everything as if it were a nail."
 
 The law of the instrument is not about having a favourite tool. Everyone has preferred methods and areas of expertise. It becomes a bias when the familiarity of the tool overrides an honest assessment of whether it fits the problem. A surgeon who recommends surgery for conditions that would respond better to physiotherapy, a data analyst who insists every decision needs more data when some decisions need more judgement, a technology company that proposes a software solution for a problem that is fundamentally social - these are all examples of the law of the instrument at work.
 

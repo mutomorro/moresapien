@@ -32,7 +32,7 @@ relatedConcepts:
 
 No True Scotsman is a logical fallacy in which someone protects a generalisation about a group by retroactively redefining the group to exclude any counterexamples. Rather than accepting that the counterexample disproves their claim, they declare that the counterexample doesn't really count - because a "true" member of the group wouldn't behave that way.
 
-The name comes from a thought experiment by philosopher Antony Flew. Imagine someone reading the morning paper and declaring: "No Scotsman would do such a terrible thing." The next day, a report appears of a Scotsman doing precisely that. Rather than revising the claim, the person says: "Well, no true Scotsman would do such a thing."
+The name comes from a thought experiment by [philosopher Antony Flew](https://en.wikipedia.org/wiki/No_true_Scotsman). Imagine someone reading the morning paper and declaring: "No Scotsman would do such a terrible thing." The next day, a report appears of a Scotsman doing precisely that. Rather than revising the claim, the person says: "Well, no true Scotsman would do such a thing."
 
 The definition of "Scotsman" has quietly shifted from "person from Scotland" to "person from Scotland who meets my moral standards" - and the shift happened after the evidence appeared, specifically to neutralise it.
 

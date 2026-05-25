@@ -30,7 +30,7 @@ relatedConcepts:
     note: "Astroturfing can be one channel in a broader firehose strategy"
 ---
 
-Astroturfing is the practice of disguising a message from a corporation, political group, or other organised interest as spontaneous, grassroots public opinion. The name is a play on AstroTurf, the artificial grass - it looks like the real thing from a distance, but it's entirely manufactured.
+[Astroturfing](https://en.wikipedia.org/wiki/Astroturfing) is the practice of disguising a message from a corporation, political group, or other organised interest as spontaneous, grassroots public opinion. The name is a play on AstroTurf, the artificial grass - it looks like the real thing from a distance, but it's entirely manufactured.
 
 Where genuine grassroots movements emerge organically from communities with shared concerns, astroturfing is designed from the top down and made to look like it came from the bottom up. The goal is to exploit [social proof](/social-proof/) - the human tendency to follow what appears to be a popular consensus - by manufacturing that consensus artificially.
 
@@ -68,7 +68,7 @@ Corporate astroturfing operates across multiple channels.
 
 Fake product reviews are one of the most common forms. Companies pay for positive reviews of their own products or negative reviews of competitors'. Research has estimated that a significant percentage of online reviews across major platforms are fabricated. [The illusory truth effect](/illusory-truth-effect/) means that repeated exposure to positive assessments makes them feel credible, even when the assessments are manufactured.
 
-Industry-funded research organisations present corporate-friendly findings as independent science. Tobacco companies perfected this technique, funding research that questioned the link between smoking and cancer while presenting the researchers as independent. Energy companies have used similar approaches with climate science.
+Industry-funded research organisations present corporate-friendly findings as independent science. [Tobacco companies perfected this technique](https://www.bmj.com/content/337/bmj.a1191), funding research that questioned the link between smoking and cancer while presenting the researchers as independent. Energy companies have used similar approaches with climate science.
 
 Community opposition to regulation is sometimes organised by the very companies being regulated. What looks like local residents objecting to new rules may be a campaign funded, staffed, and scripted by the industry that stands to lose from those rules.
 

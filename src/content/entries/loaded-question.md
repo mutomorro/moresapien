@@ -31,7 +31,7 @@ relatedConcepts:
     note: "Many loaded questions are designed to provoke an emotional response rather than a reasoned one"
 ---
 
-A loaded question is a question that contains a built-in assumption - one that hasn't been established or agreed upon - making it difficult or impossible to answer without appearing to accept that assumption. The classic example, often attributed to courtroom tactics, is: "Have you stopped beating your wife?" Whether you answer yes or no, you've implicitly accepted that you were beating your wife at some point.
+A loaded question is a question that contains a built-in assumption - one that hasn't been established or agreed upon - making it difficult or impossible to answer without appearing to accept that assumption. The classic example, [often attributed to courtroom tactics](https://en.wikipedia.org/wiki/Loaded_question), is: "Have you stopped beating your wife?" Whether you answer yes or no, you've implicitly accepted that you were beating your wife at some point.
 
 Loaded questions are a form of logical fallacy because they smuggle a claim into the structure of a question, bypassing the normal process of establishing that claim through evidence and argument. The assumption is never argued for - it's simply presumed.
 

@@ -31,7 +31,7 @@ relatedConcepts:
 
 Reactance is a motivational response that occurs when people feel their freedom of choice is being restricted, threatened, or eliminated. Rather than complying with the perceived pressure, they push back - often by doing the exact opposite of what's being asked, or by wanting the restricted option more intensely than they did before.
 
-The concept was developed by psychologist Jack Brehm in 1966, who proposed that people have a deep need to feel autonomous and in control of their own decisions. When that sense of autonomy is threatened - whether by a rule, a demand, a piece of advice, or even a well-meaning suggestion - the psychological immune system kicks in. The result is resistance, sometimes rational, often not.
+The concept was developed by [psychologist Jack Brehm in 1966](https://en.wikipedia.org/wiki/Reactance_(psychology)), who proposed that people have a deep need to feel autonomous and in control of their own decisions. When that sense of autonomy is threatened - whether by a rule, a demand, a piece of advice, or even a well-meaning suggestion - the psychological immune system kicks in. The result is resistance, sometimes rational, often not.
 
 ## How reactance works
 

@@ -62,7 +62,7 @@ This works particularly well on people who are already frustrated with the pace 
 
 On issues like climate change, inequality, or institutional corruption, the phrase "nothing can be done" often sounds like realism. But it functions as a policy position - one that conveniently protects the status quo. If the problem is framed as too big, too entrenched, or too complex for intervention, then no intervention is needed. The people who benefit from the current arrangement get to keep it, not because they argued for it, but because everyone else was persuaded that alternatives were impossible.
 
-Mark Fisher's concept of [capitalist realism](/capitalist-realism/) describes this dynamic at its most complete: a cultural condition in which alternatives to the current system are not just unlikely but literally unimaginable. It's not that people have weighed up the options and chosen the status quo - it's that the status quo has become the only thinkable option. That's weaponised hopelessness operating at the level of an entire culture's imagination.
+[Mark Fisher's](https://www.theguardian.com/books/2017/jan/19/mark-fisher) concept of [capitalist realism](/capitalist-realism/) describes this dynamic at its most complete: a cultural condition in which alternatives to the current system are not just unlikely but literally unimaginable. It's not that people have weighed up the options and chosen the status quo - it's that the status quo has become the only thinkable option. That's weaponised hopelessness operating at the level of an entire culture's imagination.
 
 ## Why weaponised hopelessness is not the same as learned helplessness
 

@@ -72,7 +72,7 @@ In business, complexity bias manifests as over-engineering: building elaborate p
 
 ### Communication
 
-Complexity bias affects how we evaluate communication. A jargon-heavy explanation is often perceived as more authoritative than a plain-language one, even when they convey the same information. Research has shown that unnecessary complexity in academic writing can increase perceived credibility - readers assume that if something is hard to understand, it must be sophisticated.
+Complexity bias affects how we evaluate communication. A jargon-heavy explanation is often perceived as more authoritative than a plain-language one, even when they convey the same information. [Daniel Oppenheimer's research](https://onlinelibrary.wiley.com/doi/abs/10.1002/acp.1178) into "consequences of erudite vernacular" showed that needlessly complex academic writing actually *reduces* perceived intelligence of the author - though readers continue to expect that hard-to-understand text must be sophisticated.
 
 This is one reason why [weasel words](/weasel-words/) and unnecessarily complex language persist in professional communication. They exploit the bias that equates complexity with quality.
 

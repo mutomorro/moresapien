@@ -45,7 +45,7 @@ The problem is that we've inherited this wiring into a world where most importan
 
 ### The relative position obsession
 
-Research by Sara Solnick and David Hemenway at Harvard found that roughly half of people, when given the choice, would prefer to earn £50,000 in a world where everyone else earns £25,000 - rather than earn £100,000 in a world where everyone else earns £200,000. They'd accept half the real purchasing power just to be ahead. The pie doesn't matter; what matters is your slice relative to everyone else's.
+[Research by Sara Solnick and David Hemenway at Harvard](https://doi.org/10.1016/S0167-2681(98)00109-4) found that roughly half of people, when given the choice, would prefer to earn £50,000 in a world where everyone else earns £25,000 - rather than earn £100,000 in a world where everyone else earns £200,000. They'd accept half the real purchasing power just to be ahead. The pie doesn't matter; what matters is your slice relative to everyone else's.
 
 This connects directly to [relative deprivation](/relative-deprivation/) - the feeling of being worse off based on comparison rather than absolute position. Zero-sum thinking is the cognitive frame that makes relative deprivation feel rational. If you assume the pie is fixed, then someone else having more really does mean you have less. The frame validates the feeling, and the feeling reinforces the frame.
 

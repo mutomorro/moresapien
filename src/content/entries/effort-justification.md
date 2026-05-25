@@ -29,7 +29,7 @@ Effort justification is the tendency to assign greater value to outcomes that re
 
 This is a specific expression of [cognitive dissonance](/cognitive-dissonance/). When we voluntarily endure something difficult - a gruelling initiation, a painful degree, an exhausting project - we're left with two competing thoughts: "that was genuinely awful" and "I chose to do it." Since we can't easily undo the choice, we resolve the tension by inflating the reward. The experience wasn't just tolerable, we tell ourselves - it was transformative. Character-building. Essential.
 
-The psychologist Leon Festinger first identified this mechanism in the 1950s as part of his broader theory of cognitive dissonance. His student Elliot Aronson and Judson Mills tested it directly in 1959 with a now-classic experiment: participants who underwent an embarrassing initiation to join a dull discussion group rated that group as significantly more interesting and valuable than those who joined without the initiation. The group was identical. The only difference was what people had endured to get in.
+The psychologist Leon Festinger first identified this mechanism in the 1950s as part of his broader theory of cognitive dissonance. His students [Elliot Aronson and Judson Mills tested it directly in 1959](https://psycnet.apa.org/record/1960-04401-001) with a now-classic experiment: participants who underwent an embarrassing initiation to join a dull discussion group rated that group as significantly more interesting and valuable than those who joined without the initiation. The group was identical. The only difference was what people had endured to get in.
 
 ## How effort justification works in psychology
 
