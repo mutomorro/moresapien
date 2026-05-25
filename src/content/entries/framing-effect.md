@@ -64,7 +64,7 @@ Political communication is essentially applied framing. Every policy position, e
 
 The same policy can be framed as "tax relief" or "revenue reduction," "immigration reform" or "border security," "investment in public services" or "increased government spending." Each frame carries a different emotional charge, different implied values, and different suggested conclusions. None of them is necessarily dishonest, but none of them is neutral either.
 
-The [Overton window](/overton-window/) operates through framing at a structural level. What counts as "moderate" or "extreme" depends on how the boundaries of acceptable discourse have been framed. By introducing an extreme position, a political actor can reframe a previously extreme position as moderate by comparison - a process that works through both framing and [anchoring bias](/anchoring-bias/).
+The [Overton window](/overton-window/) operates through framing at a structural level. What counts as "moderate" or "extreme" depends on how the boundaries of acceptable discourse have been framed. By introducing an extreme position, a political actor can reframe a previously extreme position as moderate by comparison - a process that works through both framing and anchoring bias.
 
 Political framing also connects to [scapegoating](/scapegoating/). Framing a complex problem - economic hardship, housing shortages, strained public services - as the result of a single identifiable group's behaviour is a framing choice that simplifies the narrative and directs emotion toward a target.
 

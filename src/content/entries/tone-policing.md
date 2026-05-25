@@ -126,6 +126,6 @@ The most fundamental counter to tone policing is the recognition that emotion an
 
 ## Tone policing and the wider web of manipulation
 
-Tone policing rarely appears alone. It works alongside sealioning (provoking frustration and then criticising the response), [concern trolling](/concern-trolling/) (disguising obstruction as helpful advice), and the attack phase of [DARVO](/darvo/) (criticising how an accusation was made rather than addressing its content). It is functionally a [red herring](/red-herring/) - a diversion from substance to style - and operates as a softer form of [ad hominem](/ad-hominem/), discrediting the speaker rather than the argument.
+Tone policing rarely appears alone. It works alongside sealioning (provoking frustration and then criticising the response), concern trolling (disguising obstruction as helpful advice), and the attack phase of [DARVO](/darvo/) (criticising how an accusation was made rather than addressing its content). It is functionally a red herring - a diversion from substance to style - and operates as a softer form of ad hominem, discrediting the speaker rather than the argument.
 
 Understanding tone policing is about learning to separate the message from the messenger's mood - and insisting that everyone else in the conversation does the same.

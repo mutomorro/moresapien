@@ -89,7 +89,7 @@ The effect is to neutralise dissent by converting it from a challenge to the sys
 
 In the digital economy, your attention itself has become a commodity - arguably the primary commodity. Every app, platform, and service is competing for your time and focus, because attention can be converted into advertising revenue, data, and behavioural prediction.
 
-This creates a world where the incentive structure of entire industries is built around capturing and holding human attention, regardless of whether that attention serves the person giving it. Social media feeds are engineered not to inform or connect but to engage - and engagement, in practice, means [emotional provocation](/framing-effect/). The content that captures the most attention is rarely the most important, the most true, or the most useful. It's the most stimulating.
+This creates a world where the incentive structure of entire industries is built around capturing and holding human attention, regardless of whether that attention serves the person giving it. Social media feeds are engineered not to inform or connect but to engage - and engagement, in practice, means emotional provocation. The content that captures the most attention is rarely the most important, the most true, or the most useful. It's the most stimulating.
 
 The result is an environment where your inner life - your curiosity, your boredom, your anger, your loneliness - has been mapped, measured, and monetised. The [feedback loops](/feedback-loops/) are tight: the platform learns what triggers you, serves you more of it, and profits from the response. You are simultaneously the consumer, the product, and the raw material.
 

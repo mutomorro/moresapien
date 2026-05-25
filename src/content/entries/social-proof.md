@@ -80,7 +80,7 @@ Political behaviour is heavily shaped by social proof, from voting patterns to p
 
 ### How polls and surveys create social proof
 
-When polls show a candidate leading, the results function as social proof that can influence undecided voters. The perception of momentum - the sense that a candidate is winning - can attract support not because the candidate's positions are stronger but because people want to be on the winning side. This is the [bandwagon effect](/bandwagon-effect/) in its political form.
+When polls show a candidate leading, the results function as social proof that can influence undecided voters. The perception of momentum - the sense that a candidate is winning - can attract support not because the candidate's positions are stronger but because people want to be on the winning side. This is the bandwagon effect in its political form.
 
 [Pluralistic ignorance](/pluralistic-ignorance/) reveals the dark side of social proof in public opinion. When people privately disagree with a position but believe everyone else supports it, they stay silent - and their silence becomes social proof for others that the position really is universally held. The apparent consensus is a mirage, sustained by everyone looking at everyone else and seeing only conformity.
 

@@ -70,7 +70,7 @@ This doesn't mean learning about biases is pointless. It means the value lies no
 
 ## Blind spot bias and the [Dunning-Kruger effect](/dunning-kruger-effect/)
 
-There is a natural connection between blind spot bias and the [Dunning-Kruger effect](/dunning-kruger-effect/). Both involve a gap between perceived competence and actual competence. In the Dunning-Kruger effect, people who lack skill in an area also lack the ability to recognise their lack of skill. In blind spot bias, people who are subject to cognitive biases also lack the ability to recognise those biases in themselves.
+There is a natural connection between blind spot bias and the Dunning-Kruger effect. Both involve a gap between perceived competence and actual competence. In the Dunning-Kruger effect, people who lack skill in an area also lack the ability to recognise their lack of skill. In blind spot bias, people who are subject to cognitive biases also lack the ability to recognise those biases in themselves.
 
 The common thread is that the very thing you need - self-awareness - is itself compromised by the problem. You can't see your blind spot precisely because it's a blind spot. You can't catch your biases precisely because they operate below the level of conscious awareness. This creates a structural challenge that no amount of intelligence or education fully solves.
 

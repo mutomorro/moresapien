@@ -98,7 +98,7 @@ There's also a risk of what some call "galaxy-brained" steel manning - construct
 
 ## The relationship between straw manning and steel manning
 
-[Straw man](/straw-man/) arguments and steel manning sit at opposite ends of a spectrum. A straw man takes the weakest, least defensible version of a position and attacks that. Steel manning takes the strongest, most defensible version and engages with it.
+Straw man arguments and steel manning sit at opposite ends of a spectrum. A straw man takes the weakest, least defensible version of a position and attacks that. Steel manning takes the strongest, most defensible version and engages with it.
 
 Most everyday disagreement falls somewhere in between - neither a deliberate caricature nor a charitable reconstruction, just a somewhat inaccurate understanding that neither party pauses to check.
 

@@ -74,7 +74,7 @@ The same mechanism operates on racial justice language. After the global protest
 
 Environmentalism began as a systemic critique - of industrial capitalism, of extraction, of the growth model itself. Early environmental thinkers argued that the economic system was fundamentally incompatible with ecological sustainability. The solution, they suggested, might require rethinking the entire relationship between human economies and the natural world.
 
-Under recuperation, that systemic critique has been converted into "green consumerism." The problem is no longer the system - it's your shopping choices. Buy the right products. Choose the sustainable option. Offset your carbon. Carry a reusable bag. The [framing](/framing-effect/) has shifted from "the economic model is destroying the planet" to "you, the individual consumer, can save it by spending differently."
+Under recuperation, that systemic critique has been converted into "green consumerism." The problem is no longer the system - it's your shopping choices. Buy the right products. Choose the sustainable option. Offset your carbon. Carry a reusable bag. The framing has shifted from "the economic model is destroying the planet" to "you, the individual consumer, can save it by spending differently."
 
 This is recuperation at its most strategic. By converting a systemic critique into a consumer framework, the system neutralises the challenge while appearing to take it seriously. The language of sustainability is everywhere. The structural change it originally demanded is nowhere. Under [capitalist realism](/capitalist-realism/), this feels like progress rather than absorption.
 

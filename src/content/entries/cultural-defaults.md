@@ -76,7 +76,7 @@ This is where cultural defaults intersect with [naive realism](/naive-realism/).
 
 ## What cultural defaults are not
 
-Cultural defaults are not conspiracies. Nobody sat in a room and decided that one way of living would be treated as standard. Defaults emerge from the accumulated weight of history, power, and repetition. They're maintained not by intent but by [inertia](/status-quo-bias/) - the sheer effort required to change something that most people don't notice exists.
+Cultural defaults are not conspiracies. Nobody sat in a room and decided that one way of living would be treated as standard. Defaults emerge from the accumulated weight of history, power, and repetition. They're maintained not by intent but by inertia - the sheer effort required to change something that most people don't notice exists.
 
 They're also not inherently wrong. Some cultural defaults exist because they work well for a majority of people, and there's nothing sinister about that. The problem isn't the existence of defaults - it's the failure to recognise them as defaults rather than as the only way things could possibly be. A default that knows it's a default can be examined, questioned, and adjusted. A default that thinks it's a law of nature cannot.
 

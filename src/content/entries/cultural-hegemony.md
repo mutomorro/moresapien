@@ -86,7 +86,7 @@ A student who learns almost exclusively about Western philosophy, European histo
 
 Cultural hegemony lives in the vocabulary a culture provides. Consider the word "radical." Its literal meaning is "of or relating to the root" - getting to the root of a problem. But in common usage, it means "extreme" or "dangerous." A person who proposes fundamental change to a failing system is labelled "radical" - and the label does the work of dismissal without anyone having to engage with the actual argument.
 
-The word has been hegemonically loaded so that questioning the root of a problem sounds unreasonable, while accepting the surface of a problem sounds sensible. This is the [framing effect](/framing-effect/) operating at the level of an entire culture's vocabulary. The [Overton window](/overton-window/) - the range of ideas considered acceptable in mainstream discourse - is in many ways the visible edge of cultural hegemony. Ideas outside the window aren't necessarily wrong. They've just been placed outside the boundary of what the culture permits you to take seriously.
+The word has been hegemonically loaded so that questioning the root of a problem sounds unreasonable, while accepting the surface of a problem sounds sensible. This is the framing effect operating at the level of an entire culture's vocabulary. The [Overton window](/overton-window/) - the range of ideas considered acceptable in mainstream discourse - is in many ways the visible edge of cultural hegemony. Ideas outside the window aren't necessarily wrong. They've just been placed outside the boundary of what the culture permits you to take seriously.
 
 ## How cultural hegemony works
 
@@ -94,7 +94,7 @@ Gramsci identified several channels through which cultural hegemony operates, an
 
 **Education** teaches you what counts as knowledge and what counts as common sense. It shapes not just what you know, but how you think about knowing. The curriculum is a hegemonic document - it tells you what matters by what it includes and what it leaves out.
 
-**Media** determines what's newsworthy, whose voices are authoritative, and what the "reasonable" range of opinion looks like on any given topic. What's left out of the conversation is often more significant than what's included. Chomsky and Herman's [manufacturing consent model](/manufactured-consent/) describes this mechanism in detail - how media systems can produce ideological conformity without overt censorship.
+**Media** determines what's newsworthy, whose voices are authoritative, and what the "reasonable" range of opinion looks like on any given topic. What's left out of the conversation is often more significant than what's included. Chomsky and Herman's manufacturing consent model describes this mechanism in detail - how media systems can produce ideological conformity without overt censorship.
 
 **Institutions** - from the legal system to the economy to the family - embed certain assumptions so deeply into daily life that they become invisible. Property rights, working hours, the structure of the school day, the design of cities - all of these carry hegemonic assumptions about how life should be organised. You don't notice the water you swim in.
 

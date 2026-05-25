@@ -93,4 +93,4 @@ When someone uses an ad hominem against you, the most effective response is to n
 
 The harder discipline is catching yourself doing it. We're all prone to ad hominem, especially when the person making the argument frustrates or threatens us. The moment you notice your response is about the speaker rather than the speech, pause. What did they say? Is it true? That's the only question that matters.
 
-As with the [straw man](/straw-man/), the real antidote is what Julia Galef calls the scout mindset - an orientation toward finding out what's true rather than defending what you already believe. When you're in scout mode, the identity of the person making a claim is the least interesting thing about it. What matters is the evidence and the reasoning. Everything else is noise.
+As with the straw man, the real antidote is what Julia Galef calls the scout mindset - an orientation toward finding out what's true rather than defending what you already believe. When you're in scout mode, the identity of the person making a claim is the least interesting thing about it. What matters is the evidence and the reasoning. Everything else is noise.

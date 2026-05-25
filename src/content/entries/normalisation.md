@@ -76,7 +76,7 @@ The [Overton window](/overton-window/) - the range of ideas considered acceptabl
 
 The process works through repetition and exposure. A fringe position is stated publicly. The first time, it's shocking. The second time, it's controversial. The third time, it's "one perspective among many." By the tenth time, it's part of the normal political landscape, and the shock has evaporated entirely. The idea hasn't changed. Your baseline has.
 
-This operates in all political directions, but it's particularly potent when wielded strategically. Deliberately stating extreme positions - and accepting the backlash - can be a calculated normalisation strategy. The backlash itself generates attention and repetition, which accelerates the normalisation. Each news cycle that discusses the extreme position, even critically, familiarises the audience with it. The [illusory truth effect](/illusory-truth-effect/) ensures that familiarity gradually becomes comfort, and comfort gradually becomes acceptance.
+This operates in all political directions, but it's particularly potent when wielded strategically. Deliberately stating extreme positions - and accepting the backlash - can be a calculated normalisation strategy. The backlash itself generates attention and repetition, which accelerates the normalisation. Each news cycle that discusses the extreme position, even critically, familiarises the audience with it. The illusory truth effect ensures that familiarity gradually becomes comfort, and comfort gradually becomes acceptance.
 
 ### The normalisation of ecological loss
 
@@ -90,7 +90,7 @@ This is normalisation at its most consequential. The ecological crisis isn't jus
 
 In many countries, levels of wealth inequality that would have been considered scandalous fifty years ago are now accepted as unremarkable features of the economic landscape. The mechanisms of normalisation are multiple and reinforcing.
 
-Media coverage treats billionaire wealth as aspirational rather than structural. [Framing](/framing-effect/) focuses on individual success stories rather than systemic concentration. The language of meritocracy - which [cultural hegemony](/cultural-hegemony/) has established as common sense - explains inequality as the natural result of talent and effort rather than the predictable output of a system designed to concentrate wealth.
+Media coverage treats billionaire wealth as aspirational rather than structural. Framing focuses on individual success stories rather than systemic concentration. The language of meritocracy - which cultural hegemony has established as common sense - explains inequality as the natural result of talent and effort rather than the predictable output of a system designed to concentrate wealth.
 
 Each incremental increase in inequality is too small to provoke a specific response. A CEO who earns 300 times the median worker's salary is not dramatically different from one who earns 280 times. But the drift from 20 times (the ratio in the 1960s) to 300 times happened through exactly this kind of gradual normalisation - each step too small to resist, the cumulative shift enormous.
 
@@ -100,7 +100,7 @@ Normalisation follows a recognisable trajectory, whether it's applied to surveil
 
 **The first exposure is shocking.** A new practice, norm, or condition appears and provokes discomfort, resistance, or outrage. This is the moment when the change is most visible and most resistible.
 
-**Repetition reduces the shock.** Through continued exposure - in media, in daily experience, in the behaviour of people around you - the new thing becomes familiar. The [illusory truth effect](/illusory-truth-effect/) ensures that familiarity feels increasingly like normality. [Social proof](/social-proof/) amplifies this: when others appear to accept something, your own resistance softens.
+**Repetition reduces the shock.** Through continued exposure - in media, in daily experience, in the behaviour of people around you - the new thing becomes familiar. The illusory truth effect ensures that familiarity feels increasingly like normality. Social proof amplifies this: when others appear to accept something, your own resistance softens.
 
 **The baseline resets.** The new condition becomes the reference point against which future changes are measured. What was once the change is now the starting line. The previous baseline is forgotten - not actively suppressed, but simply lost as living memory fades.
 

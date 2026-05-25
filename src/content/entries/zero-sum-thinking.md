@@ -77,7 +77,7 @@ In relationships, zero-sum thinking shows up as scorekeeping - "I did more than 
 
 Perhaps the most potent modern application of zero-sum thinking is in culture war rhetoric, where gains in recognition or rights for one group are framed as losses for another. When marriage equality was extended in many countries, opponents consistently framed it as something being "taken away" from traditional marriage - even though no existing marriage was affected. When diversity initiatives are introduced in workplaces, they're often perceived by members of the majority group as threats to their own prospects, even when the total number of opportunities has increased.
 
-The pattern is the same in each case: someone else gaining something triggers the zero-sum alarm, and the brain registers it as a loss even when nothing has been lost. This is the mechanism that makes [scapegoating](/scapegoating/) so effective in political communication: point to a group that is gaining visibility or rights, frame that gain as your audience's loss, and the bias does the rest.
+The pattern is the same in each case: someone else gaining something triggers the zero-sum alarm, and the brain registers it as a loss even when nothing has been lost. This is the mechanism that makes scapegoating so effective in political communication: point to a group that is gaining visibility or rights, frame that gain as your audience's loss, and the bias does the rest.
 
 ## Why zero-sum thinking matters for critical thinking
 

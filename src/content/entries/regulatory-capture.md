@@ -84,7 +84,7 @@ The fines that captured regulators impose illustrate the dynamic. When a financi
 
 ## Regulatory capture and [manufactured consent](/manufactured-consent/)
 
-Regulatory capture is one mechanism through which [manufactured consent](/manufactured-consent/) operates. When regulatory bodies validate industry practices by approving them, the public reasonably assumes those practices are safe, fair, or in their interest. The regulator's stamp of approval functions as a seal of legitimacy, even when the approval process has been shaped by the industry seeking it.
+Regulatory capture is one mechanism through which manufactured consent operates. When regulatory bodies validate industry practices by approving them, the public reasonably assumes those practices are safe, fair, or in their interest. The regulator's stamp of approval functions as a seal of legitimacy, even when the approval process has been shaped by the industry seeking it.
 
 This dynamic is especially powerful because it operates through institutions that were created specifically to protect the public. If an industry claims its products are safe, the public might be sceptical. If a government regulator certifies them as safe, the scepticism melts away. Captured regulation doesn't just fail to protect - it actively creates a false sense of protection that prevents the public from seeking alternatives.
 

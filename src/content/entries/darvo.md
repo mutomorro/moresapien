@@ -122,6 +122,6 @@ For bystanders, the most practical response to DARVO is to support the person wh
 
 ## DARVO and the wider web of manipulation
 
-DARVO rarely appears in isolation. It often works alongside [gaslighting](/gaslighting/), where the target's perception of reality is systematically undermined, and [concern trolling](/concern-trolling/), where bad faith is disguised as care. In public contexts, DARVO frequently co-occurs with [red herring](/red-herring/) tactics - introducing unrelated issues to distract from the original accusation.
+DARVO rarely appears in isolation. It often works alongside gaslighting, where the target's perception of reality is systematically undermined, and [concern trolling](/concern-trolling/), where bad faith is disguised as care. In public contexts, DARVO frequently co-occurs with [red herring](/red-herring/) tactics - introducing unrelated issues to distract from the original accusation.
 
 Understanding DARVO is not about assuming the worst of everyone who denies an accusation. It is about recognising a specific, well-documented pattern that powerful people and institutions use to avoid accountability. The sequence is predictable, the effects are measurable, and knowing the name gives you a better chance of seeing it for what it is.

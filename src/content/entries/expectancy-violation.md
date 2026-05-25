@@ -114,7 +114,7 @@ In professional and personal contexts, small positive violations - exceeding exp
 
 ### Be aware of expectation anchors
 
-Because [anchoring bias](/anchoring-bias/) sets the baseline against which violations are measured, the impressions you create early in a relationship or project matter disproportionately. First impressions don't just influence how people see you - they determine the script against which everything you do subsequently will be evaluated.
+Because anchoring bias sets the baseline against which violations are measured, the impressions you create early in a relationship or project matter disproportionately. First impressions don't just influence how people see you - they determine the script against which everything you do subsequently will be evaluated.
 
 ## Why Expectancy Violation Matters
 

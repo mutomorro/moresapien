@@ -69,7 +69,7 @@ This connects to the [fundamental attribution error](/fundamental-attribution-er
 
 ## The curse of knowledge and the [Dunning-Kruger effect](/dunning-kruger-effect/)
 
-The curse of knowledge and the [Dunning-Kruger effect](/dunning-kruger-effect/) are complementary biases that create problems at opposite ends of the expertise spectrum. The Dunning-Kruger effect describes how novices overestimate their own understanding. The curse of knowledge describes how experts overestimate others' understanding. Together, they create a communication landscape where nobody accurately gauges what anyone else knows.
+The curse of knowledge and the Dunning-Kruger effect are complementary biases that create problems at opposite ends of the expertise spectrum. The Dunning-Kruger effect describes how novices overestimate their own understanding. The curse of knowledge describes how experts overestimate others' understanding. Together, they create a communication landscape where nobody accurately gauges what anyone else knows.
 
 The interaction between the two biases makes collaboration between experts and novices particularly difficult. The expert can't simplify enough because they can't see what needs simplifying. The novice can't ask the right questions because they don't know what they don't know. The result is a conversation where both parties are operating from inaccurate models of the other's knowledge state.
 

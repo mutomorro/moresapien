@@ -115,7 +115,7 @@ The process follows a recognisable pattern:
 
 **The idea enters the mainstream.** As it moves from its original context into wider circulation, it encounters selection pressure. The parts that are easy to understand, visually shareable, and commercially useful survive the journey. The parts that are complex, uncomfortable, or commercially inconvenient get left behind.
 
-**The simplified version outcompetes the original.** Through sheer repetition and reach, the gentrified version becomes "the" version. The [illusory truth effect](/illusory-truth-effect/) takes over - familiarity with the simplified version creates the feeling of understanding, and the original depth is lost.
+**The simplified version outcompetes the original.** Through sheer repetition and reach, the gentrified version becomes "the" version. The illusory truth effect takes over - familiarity with the simplified version creates the feeling of understanding, and the original depth is lost.
 
 **The original community loses ownership.** The concept now belongs to the mainstream in its diluted form. Attempts by the original community to reassert the full meaning are dismissed as gatekeeping or pedantry. The gentrified version has become the default through [cultural hegemony](/cultural-hegemony/) - it simply *is* the idea, as far as most people are concerned.
 

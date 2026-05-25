@@ -126,6 +126,6 @@ If you have any control over the format of an exchange, choose one that disadvan
 
 ## The Gish Gallop and the wider web of manipulation
 
-The Gish Gallop connects to several other tactics in Moresapien's knowledge base. It often includes [red herring](/red-herring/) claims designed to distract rather than prove. It frequently relies on [straw man](/straw-man/) distortions that are faster to state than to correct. And it exploits [cognitive dissonance](/cognitive-dissonance/) - audiences feel uncomfortable accepting that a confident, assertive speaker might be wrong about most of what they are saying.
+The Gish Gallop connects to several other tactics in Moresapien's knowledge base. It often includes [red herring](/red-herring/) claims designed to distract rather than prove. It frequently relies on straw man distortions that are faster to state than to correct. And it exploits [cognitive dissonance](/cognitive-dissonance/) - audiences feel uncomfortable accepting that a confident, assertive speaker might be wrong about most of what they are saying.
 
 Understanding the Gish Gallop is ultimately about recognising that the structure of a conversation shapes its outcome as much as the substance does. A tactic that rewards volume over validity will always favour the less rigorous position - unless the audience and the format are prepared for it.

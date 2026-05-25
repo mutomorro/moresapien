@@ -88,7 +88,7 @@ Look at the pattern of engagement. Real supporters engage with varying levels of
 
 Astroturfing exploits several deep psychological tendencies simultaneously.
 
-[Social proof](/social-proof/) is the primary mechanism. Humans are wired to look to others for guidance about what to think, believe, and do. When many people appear to hold a position, that position gains credibility regardless of its merits.
+Social proof is the primary mechanism. Humans are wired to look to others for guidance about what to think, believe, and do. When many people appear to hold a position, that position gains credibility regardless of its merits.
 
 [Conformity bias](/conformity-bias/) adds pressure. Once a position appears dominant, holding a different view feels socially risky. People suppress their own doubts because the manufactured consensus makes them feel like outliers.
 

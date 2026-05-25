@@ -115,7 +115,7 @@ A single dramatic case is not evidence of a trend. When someone uses an individu
 
 ### Remember that rare events have loud stories
 
-The rarer something is, the more newsworthy it tends to be. This means the events that receive the most attention are often the least representative of everyday reality. The base rate fallacy and the [availability heuristic](/availability-heuristic/) work together here - rare events get covered heavily, which makes them easy to recall, which makes them feel common, which makes the base rate feel irrelevant.
+The rarer something is, the more newsworthy it tends to be. This means the events that receive the most attention are often the least representative of everyday reality. The base rate fallacy and the availability heuristic work together here - rare events get covered heavily, which makes them easy to recall, which makes them feel common, which makes the base rate feel irrelevant.
 
 ## The base rate fallacy and the wider web of reasoning
 

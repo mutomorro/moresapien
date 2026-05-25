@@ -114,7 +114,7 @@ Ask whether the multiple outlets reporting a claim are actually independent. If 
 
 ### Be more sceptical of claims that confirm your beliefs
 
-Source laundering is most effective when it targets beliefs people already hold. A laundered claim that confirms your existing view will feel satisfying and credible. That feeling of satisfaction is worth noticing. It is not evidence - it is [confirmation bias](/confirmation-bias/) doing its work. The claims most worth checking are often the ones that feel least in need of checking.
+Source laundering is most effective when it targets beliefs people already hold. A laundered claim that confirms your existing view will feel satisfying and credible. That feeling of satisfaction is worth noticing. It is not evidence - it is confirmation bias doing its work. The claims most worth checking are often the ones that feel least in need of checking.
 
 ### Watch for speed as a credibility risk
 
@@ -122,6 +122,6 @@ Claims that spread very quickly are more likely to have been laundered than clai
 
 ## Source laundering and the wider web of manipulation
 
-Source laundering connects to many other tactics and phenomena in the Moresapien knowledge base. It provides the appearance of evidence for claims spread by the [firehose of falsehood](/firehose-of-falsehood/). It manufactures [social proof](/social-proof/) by making a single claim appear to have widespread support. It exploits the [bandwagon effect](/bandwagon-effect/) - the tendency to adopt beliefs that appear popular. And it is most effective against people whose [confirmation bias](/confirmation-bias/) reduces their motivation to trace sources.
+Source laundering connects to many other tactics and phenomena in the Moresapien knowledge base. It provides the appearance of evidence for claims spread by the [firehose of falsehood](/firehose-of-falsehood/). It manufactures social proof by making a single claim appear to have widespread support. It exploits the [bandwagon effect](/bandwagon-effect/) - the tendency to adopt beliefs that appear popular. And it is most effective against people whose confirmation bias reduces their motivation to trace sources.
 
 Understanding source laundering is about recognising that the credibility of a claim is not determined by how many people repeat it, but by whether anyone has verified it. Repetition is not evidence. It is just repetition.

@@ -130,10 +130,10 @@ Sealioning is often aimed at observers more than the target. If you recognise th
 
 ### Name the tactic
 
-As with [concern trolling](/concern-trolling/) and other bad-faith tactics, naming sealioning can be effective - especially if the audience is familiar with the term. "This conversation has the pattern of sealioning - repeated questions with no genuine interest in the answers" reframes the exchange and invites observers to evaluate the pattern rather than the individual questions.
+As with concern trolling and other bad-faith tactics, naming sealioning can be effective - especially if the audience is familiar with the term. "This conversation has the pattern of sealioning - repeated questions with no genuine interest in the answers" reframes the exchange and invites observers to evaluate the pattern rather than the individual questions.
 
 ## Sealioning and the wider web of manipulation
 
-Sealioning sits within a cluster of related tactics that all exploit the norms of civil discourse. It shares structural features with [concern trolling](/concern-trolling/) (hiding hostility behind a performance of good faith), the [Gish Gallop](/gish-gallop/) (exploiting the asymmetry between making demands and responding to them), and [tone policing](/tone-policing/) (using the target's emotional response against them).
+Sealioning sits within a cluster of related tactics that all exploit the norms of civil discourse. It shares structural features with concern trolling (hiding hostility behind a performance of good faith), the [Gish Gallop](/gish-gallop/) (exploiting the asymmetry between making demands and responding to them), and tone policing (using the target's emotional response against them).
 
 Understanding sealioning is about recognising that not every question is asked in the spirit of genuine inquiry - and that the obligation to respond thoughtfully to questions only applies when the questions are themselves thoughtful. A question designed to exhaust rather than to learn deserves recognition, not a response.

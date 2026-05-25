@@ -81,7 +81,7 @@ The problems start when the bias becomes so strong that it prevents learning. If
 
 ## Self-serving bias and [cognitive dissonance](/cognitive-dissonance/)
 
-Self-serving bias often works as a tool for managing [cognitive dissonance](/cognitive-dissonance/) - the uncomfortable tension between two contradictory beliefs. If you believe you are competent and you experience a failure, the dissonance between "I am good at this" and "this went badly" creates psychological discomfort. Self-serving bias resolves that discomfort by externalising the cause: the failure wasn't about your competence, it was about the circumstances.
+Self-serving bias often works as a tool for managing cognitive dissonance - the uncomfortable tension between two contradictory beliefs. If you believe you are competent and you experience a failure, the dissonance between "I am good at this" and "this went badly" creates psychological discomfort. Self-serving bias resolves that discomfort by externalising the cause: the failure wasn't about your competence, it was about the circumstances.
 
 This is one reason the bias is so persistent. It doesn't just shape how you see events - it protects your sense of identity. Challenging someone's self-serving attributions often provokes a defensive reaction, because you are not just questioning their explanation of a single event. You are threatening the story they tell themselves about who they are.
 

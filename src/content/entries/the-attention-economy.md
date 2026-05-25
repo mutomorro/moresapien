@@ -75,7 +75,7 @@ Political communication has been reshaped by the attention economy in ways that 
 
 This creates a selection pressure on political behaviour itself. Politicians learn that moderate, substantive communication doesn't cut through. Provocation does. Simplification does. Emotional appeals do. The attention economy doesn't just report on politics - it reshapes political incentives, rewarding the behaviours that generate the most engagement regardless of their democratic value.
 
-The [framing effect](/framing-effect/) operates here at industrial scale. The attention economy determines not just what political stories people see, but which aspects of those stories are emphasised. A policy that would affect millions of lives gets less attention than a gaffe, a scandal, or a conflict between personalities - because conflict captures attention and policy doesn't.
+The framing effect operates here at industrial scale. The attention economy determines not just what political stories people see, but which aspects of those stories are emphasised. A policy that would affect millions of lives gets less attention than a gaffe, a scandal, or a conflict between personalities - because conflict captures attention and policy doesn't.
 
 ### The attention economy and your inner life
 
@@ -87,7 +87,7 @@ This connects to [capitalist realism](/capitalist-realism/) in an intimate way. 
 
 ## The attention economy's hidden feedback loops
 
-The attention economy is maintained by several [reinforcing feedback loops](/feedback-loops/) that make it self-sustaining:
+The attention economy is maintained by several reinforcing feedback loops that make it self-sustaining:
 
 **The engagement loop.** Platforms learn what captures your attention and serve you more of it. Your behaviour trains the algorithm. The algorithm shapes your behaviour. Each cycle tightens the fit between what you see and what provokes a response from you.
 

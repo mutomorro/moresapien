@@ -62,7 +62,7 @@ Sometimes the substitution isn't subtle at all. Someone simply invents a positio
 
 ## Straw man arguments in politics and media
 
-Political debate runs on straw men. It's one of the most common [logical fallacies](/ad-hominem/) in public discourse, alongside [ad hominem](/ad-hominem/) attacks and [whataboutism](/whataboutism/). The reason is simple: engaging with a nuanced policy position is difficult and boring. Engaging with a caricature is easy and dramatic.
+Political debate runs on straw men. It's one of the most common [logical fallacies](/ad-hominem/) in public discourse, alongside ad hominem attacks and [whataboutism](/whataboutism/). The reason is simple: engaging with a nuanced policy position is difficult and boring. Engaging with a caricature is easy and dramatic.
 
 "We should have a conversation about immigration policy" gets reframed as "they want open borders." "We should consider the economic impact of this regulation" becomes "they care more about money than people." Each time, a position that might require careful thought to rebut gets replaced with one that requires only outrage. The philosopher [Aristotle identified this move in his work on rhetoric](https://en.wikipedia.org/wiki/Straw_man) over two thousand years ago, and it hasn't become any less effective since.
 

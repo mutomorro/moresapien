@@ -94,7 +94,7 @@ The goal is not to force simplicity where complexity is warranted, but to stop a
 
 ### Start with the simplest explanation
 
-Use [Occam's razor](/occams-razor/) as a starting point. The simplest explanation consistent with the evidence is not always correct, but it is the right place to begin. Add complexity only when the simple explanation fails to account for the evidence.
+Use Occam's razor as a starting point. The simplest explanation consistent with the evidence is not always correct, but it is the right place to begin. Add complexity only when the simple explanation fails to account for the evidence.
 
 ### Ask what can be removed
 
@@ -106,4 +106,4 @@ Train yourself to notice when you are using complexity as a shortcut for quality
 
 ## Complexity bias and the wider web of thinking
 
-Complexity bias connects to [Occam's razor](/occams-razor/) (its direct counterbalance), [apophenia](/apophenia/) (which provides the patterns complexity craves), [first principles thinking](/first-principles-thinking/) (which strips problems to their essentials), and [confirmation bias](/confirmation-bias/) (which sustains complex explanations once adopted). Recognising complexity bias is recognising that your instinct for depth can sometimes pull you away from the truth rather than toward it.
+Complexity bias connects to Occam's razor (its direct counterbalance), apophenia (which provides the patterns complexity craves), [first principles thinking](/first-principles-thinking/) (which strips problems to their essentials), and [confirmation bias](/confirmation-bias/) (which sustains complex explanations once adopted). Recognising complexity bias is recognising that your instinct for depth can sometimes pull you away from the truth rather than toward it.

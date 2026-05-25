@@ -112,4 +112,4 @@ Not acting is a choice. Choosing not to help when you could have helped is a dec
 
 ## Omission bias and the wider web of inaction
 
-Omission bias connects to [status quo bias](/status-quo-bias/) (preferring the current state), [loss aversion](/loss-aversion/) (fearing action-caused losses more than omission-caused ones), [normalcy bias](/normalcy-bias/) (assuming things will continue as they are), and the [bystander effect](/bystander-effect/) (failing to act when others are present). Together, these biases create a powerful gravitational pull toward inaction - a pull that is often invisible precisely because doing nothing feels like not making a decision at all.
+Omission bias connects to status quo bias (preferring the current state), loss aversion (fearing action-caused losses more than omission-caused ones), [normalcy bias](/normalcy-bias/) (assuming things will continue as they are), and the [bystander effect](/bystander-effect/) (failing to act when others are present). Together, these biases create a powerful gravitational pull toward inaction - a pull that is often invisible precisely because doing nothing feels like not making a decision at all.

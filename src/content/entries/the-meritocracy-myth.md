@@ -58,7 +58,7 @@ This is [cultural hegemony](/cultural-hegemony/) at its most effective. The domi
 
 Education systems are often presented as the great equaliser - the mechanism through which merit rises regardless of background. In practice, educational outcomes are strongly predicted by family income, parental education, postcode, and access to resources. Children from wealthier families arrive at school with larger vocabularies, more exposure to books, and better nutrition. They attend better-funded schools, receive more individual attention, and are more likely to be steered toward higher education.
 
-None of this means that individual students can't overcome disadvantage - many do. But treating those individuals as proof that the system works fairly is a textbook example of [survivorship bias](/survivorship-bias/). For every student who succeeds against the odds, there are many more with equal potential who don't - and their invisibility is what allows the myth to persist.
+None of this means that individual students can't overcome disadvantage - many do. But treating those individuals as proof that the system works fairly is a textbook example of survivorship bias. For every student who succeeds against the odds, there are many more with equal potential who don't - and their invisibility is what allows the myth to persist.
 
 ### In the workplace
 

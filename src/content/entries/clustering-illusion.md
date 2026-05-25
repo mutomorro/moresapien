@@ -108,4 +108,4 @@ The clustering illusion is most powerful when patterns are identified after the 
 
 ## The clustering illusion and the wider web of reasoning
 
-The clustering illusion connects to a family of biases that all stem from the same root: the human brain's deep preference for pattern over randomness. It is [apophenia](/apophenia/) applied to data, the [availability heuristic](/availability-heuristic/) applied to streaks, and [confirmation bias](/confirmation-bias/) applied to the stories we build around coincidence. Recognising the clustering illusion is one of the most practical tools for thinking clearly about the data-rich, pattern-saturated world we live in.
+The clustering illusion connects to a family of biases that all stem from the same root: the human brain's deep preference for pattern over randomness. It is apophenia applied to data, the [availability heuristic](/availability-heuristic/) applied to streaks, and [confirmation bias](/confirmation-bias/) applied to the stories we build around coincidence. Recognising the clustering illusion is one of the most practical tools for thinking clearly about the data-rich, pattern-saturated world we live in.

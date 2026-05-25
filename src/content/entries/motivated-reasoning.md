@@ -76,7 +76,7 @@ The modern information environment is perfectly designed to feed motivated reaso
 
 ### How motivated reasoning thrives online
 
-If you want to believe something, the internet will provide you with articles, studies, experts, communities, and narratives that support it - regardless of whether the belief is well-founded. [Confirmation bias](/confirmation-bias/) drives the search; motivated reasoning evaluates what you find. Together, they create an experience that feels like research but functions as reinforcement.
+If you want to believe something, the internet will provide you with articles, studies, experts, communities, and narratives that support it - regardless of whether the belief is well-founded. Confirmation bias drives the search; motivated reasoning evaluates what you find. Together, they create an experience that feels like research but functions as reinforcement.
 
 The [illusory truth effect](/illusory-truth-effect/) compounds this. The more often you encounter a claim within your self-selected information environment, the more true it feels - not because it's been verified, but because familiarity itself creates a sense of validity. Motivated reasoning then protects the belief by ensuring that contradicting information is scrutinised far more harshly than confirming information.
 
@@ -86,7 +86,7 @@ This is one of the mechanisms behind polarisation. People on different sides of 
 
 Motivated reasoning doesn't operate alone. It sits at the centre of a network of psychological defences that work together to protect beliefs from evidence.
 
-[Denial](/denial/) is motivated reasoning taken to its extreme - a flat refusal to acknowledge information that threatens a core belief. [Rationalisation](/rationalisation/) is the output of motivated reasoning - the plausible-sounding justification that emerges after the conclusion has already been reached. [Psychological projection](/psychological-projection/) can accompany motivated reasoning when someone accuses others of the very bias they're exhibiting - dismissing opponents as "emotional" or "ideological" while engaging in precisely the same motivated processing.
+[Denial](/denial/) is motivated reasoning taken to its extreme - a flat refusal to acknowledge information that threatens a core belief. Rationalisation is the output of motivated reasoning - the plausible-sounding justification that emerges after the conclusion has already been reached. [Psychological projection](/psychological-projection/) can accompany motivated reasoning when someone accuses others of the very bias they're exhibiting - dismissing opponents as "emotional" or "ideological" while engaging in precisely the same motivated processing.
 
 The [sunk cost fallacy](/sunk-cost-fallacy/) is often sustained by motivated reasoning. Having invested time, money, or identity in a position, the cost of abandoning it is high - so motivated reasoning constructs arguments for staying. The reasoning feels like careful evaluation. It's more accurately described as a search for permission to continue.
 

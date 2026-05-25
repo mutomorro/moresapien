@@ -90,6 +90,6 @@ Why was this created? What problem was it solving, what risk was it mitigating, 
 
 Does that reason still apply? Circumstances change. The problem the fence was built to solve might no longer exist. The risk it was mitigating might have been addressed by other means. If the original reason no longer applies, removal may be justified.
 
-What will happen when it's gone? Even if the original reason no longer applies, the fence might have acquired secondary functions. People might rely on it in ways the original builder didn't intend. Removing it might create a gap that needs filling. Think through the consequences - including the [second-order effects](/second-order-thinking/) - before acting.
+What will happen when it's gone? Even if the original reason no longer applies, the fence might have acquired secondary functions. People might rely on it in ways the original builder didn't intend. Removing it might create a gap that needs filling. Think through the consequences - including the second-order effects - before acting.
 
 The fence might need to come down. But the person who takes it down should be the one who can explain exactly why it was there and exactly why it no longer needs to be.
