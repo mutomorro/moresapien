@@ -15,7 +15,7 @@
 # requested path. Once an entry exists in /src/content/entries/,
 # Astro generates its page and the redirect becomes a no-op.
 #
-# Last cleaned: 25 May 2026
+# Last cleaned: 25 May 2026 (batch 2)
 # ──────────────────────────────────────────────
 
 # ── Old category/archive pages → new browse pages ──
@@ -67,37 +67,19 @@
 /cookie-policy/                                 /                           301
 /checkout-2/                                    /                           301
 
-# ── Old WP entries not yet migrated to v2 ──
-# Safety net: if any of these slugs don't have an Astro entry yet,
-# this sends visitors to the homepage instead of a 404.
-# Once an entry IS written, Astro serves it and the rule is ignored.
-/salience-bias/                                 /                           301
-/implicit-association/                          /                           301
-/anthropocentrism/                              /                           301
-/illusory-correlation/                          /                           301
-/clustering-illusion/                           /                           301
-/apophenia/                                     /                           301
-/functional-fixedness/                          /                           301
-/law-of-the-instrument/                         /                           301
-/common-source-bias/                            /                           301
-/contrast-effect/                               /                           301
-/pareidolia/                                    /                           301
-/arrival-fallacy/                               /                           301
-/complexity-bias/                               /                           301
-/conservative-bias/                             /                           301
-/self-reference-effect/                         /                           301
-/picture-superiority-effect/                    /                           301
-/von-restorff-effect/                           /                           301
-/humour-effect/                                 /                           301
-/bizarreness-effect/                            /                           301
-/base-rate-fallacy/                             /                           301
-/omission-bias/                                 /                           301
-/frequency-illusion/                            /                           301
-/mood-congruent-memory-bias/                    /                           301
-/cue-dependent-forgetting/                      /                           301
-/context-effect/                                /                           301
-/mere-exposure-effect/                          /                           301
-/attentional-bias/                              /                           301
+# ── 410 Gone: niche memory/encoding concepts not migrated ──
+# These old WP entries were too narrow/academic for the site.
+# 410 tells Google to de-index cleanly rather than flagging as errors.
+/common-source-bias/                            /                           410
+/conservative-bias/                             /                           410
+/self-reference-effect/                         /                           410
+/picture-superiority-effect/                    /                           410
+/von-restorff-effect/                           /                           410
+/humour-effect/                                 /                           410
+/bizarreness-effect/                            /                           410
+/mood-congruent-memory-bias/                    /                           410
+/cue-dependent-forgetting/                      /                           410
+/context-effect/                                /                           410
 
 # ── WordPress uploads / admin paths ──
 /wp-content/*                                   /                           301
