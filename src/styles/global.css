@@ -2,6 +2,46 @@
  * Single source of truth for design tokens, base styles and font faces.
  * Imported by every page via BaseLayout.astro. */
 
+/* ---- Self-hosted fonts ------------------------------------------------- */
+/* Display: Newsreader (regular + italic, weights 400/500/600) */
+@import '@fontsource/newsreader/400.css';
+@import '@fontsource/newsreader/500.css';
+@import '@fontsource/newsreader/600.css';
+@import '@fontsource/newsreader/400-italic.css';
+@import '@fontsource/newsreader/500-italic.css';
+
+/* UI: Space Grotesk (400/500/600) */
+@import '@fontsource/space-grotesk/400.css';
+@import '@fontsource/space-grotesk/500.css';
+@import '@fontsource/space-grotesk/600.css';
+
+/* Mono: DM Mono (400/500) */
+@import '@fontsource/dm-mono/400.css';
+@import '@fontsource/dm-mono/500.css';
+
+/* Body: General Sans (Fontshare — woff2 vendored in /public/fonts/general-sans/) */
+@font-face {
+  font-family: 'General Sans';
+  src: url('/fonts/general-sans/general-sans-400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'General Sans';
+  src: url('/fonts/general-sans/general-sans-500.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'General Sans';
+  src: url('/fonts/general-sans/general-sans-600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* ---- Colour tokens ---------------------------------------------------- */
 :root {
   /* Primary brand */
