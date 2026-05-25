@@ -26,6 +26,8 @@ relatedConcepts:
     note: "One of the biases people most confidently identify in others while exhibiting themselves"
   - slug: "fundamental-attribution-error"
     note: "Assuming others act from bias while you act from reason follows the same asymmetric pattern"
+  - slug: "implicit-association"
+    note: "Implicit association is one of the cleanest demonstrations of blind-spot bias - we can hold the bias and sincerely deny that we hold it."
 ---
 
 Blind spot bias is the tendency to recognise cognitive biases in other people's thinking while failing to detect the same biases in your own. It is, in a sense, the meta-bias - the bias that prevents you from seeing your biases. Research consistently shows that most people rate themselves as less susceptible to bias than the average person, which is itself a statistically impossible belief for the majority to hold.
@@ -38,7 +40,7 @@ The mechanism relies on an asymmetry in how you evaluate your own thinking compa
 
 This introspective access creates the illusion of objectivity. Because you can observe your own thought process from the inside, you assume it must be more reliable than what you can observe about others from the outside. But cognitive biases don't operate at the level of conscious deliberation. They shape perception, attention, and interpretation before you become aware of them. Your introspection doesn't catch them because they've already done their work by the time you start reflecting.
 
-This is closely linked to [naive realism](/naive-realism/) - the belief that you perceive reality as it is, while people who disagree with you must be seeing it through some distortion. Blind spot bias is what naive realism looks like when it encounters the concept of bias itself. You learn about biases, you recognise them in others, and you conclude that you are now part of the clear-eyed minority who can see straight.
+This is closely linked to [naive realism](/naive-realism/) - the belief that you perceive reality as it is, while people who disagree with you must be seeing it through some distortion. Blind spot bias is what naive realism looks like when it encounters the concept of bias itself. You learn about biases, you recognise them in others, and you conclude that you are now part of the clear-eyed minority who can see straight. Tools like the [implicit association](/implicit-association/) test were designed partly to address this gap - to surface preferences that the conscious mind would deny while introspection insists everything is fine.
 
 ## Blind spot bias in everyday life
 

@@ -18,6 +18,8 @@ relatedConcepts:
     note: "People reach for thought-terminating clichés when they want to stop reasoning - when continued thinking threatens a conclusion they've already committed to."
   - slug: "appeal-to-emotion"
     note: "Many thought-terminating clichés work by appealing to emotion (comfort, resignation, faith) to bypass analytical thinking."
+  - slug: "appeal-to-common-sense"
+    note: "'It's just common sense' is one of the most reliable thought-terminating clichés - it tells the listener the conversation is over without ever making an argument."
 ---
 
 ## What a thought-terminating cliché means
@@ -26,7 +28,7 @@ A thought-terminating cliché is a short, commonly used phrase that functions to
 
 The term was coined by the psychiatrist Robert Jay Lifton in his 1961 study of ideological totalism, [*Thought Reform and the Psychology of Totalism*](https://en.wikipedia.org/wiki/Thought_Reform_and_the_Psychology_of_Totalism). Lifton observed that totalitarian environments relied heavily on stock phrases that compressed complex realities into brief, easily repeatable formulas. These phrases didn't resolve questions - they made questioning itself feel pointless.
 
-But thought-terminating clichés are not confined to authoritarian regimes. They are everywhere in everyday conversation: in families, workplaces, political discourse, and online discussion. Their power lies in their familiarity and their apparent reasonableness. They sound like wisdom. They function as walls.
+But thought-terminating clichés are not confined to authoritarian regimes. They are everywhere in everyday conversation: in families, workplaces, political discourse, and online discussion. Their power lies in their familiarity and their apparent reasonableness. They sound like wisdom. They function as walls. The most common of all is probably the [appeal to common sense](/appeal-to-common-sense/) - the phrase that closes the question before any reasoning has had to start.
 
 ## How thought-terminating clichés work
 

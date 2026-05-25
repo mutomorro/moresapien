@@ -25,6 +25,8 @@ relatedConcepts:
     note: "What happens when someone tries to correct a belief held through confirmation bias"
   - slug: "availability-heuristic"
   - slug: "cognitive-dissonance"
+  - slug: "false-consensus-effect"
+    note: "Confirmation bias curates the social environment that makes false consensus feel obvious - your feed, your friends, your sources all agree."
 ---
 
 ## What confirmation bias means
@@ -35,7 +37,7 @@ The psychologist [Peter Wason](https://en.wikipedia.org/wiki/Peter_Cathcart_Waso
 
 This happens at every stage of how we process information. We choose which sources to read. We decide which parts of an article feel credible. We remember the arguments that supported our position and forget the ones that challenged it. None of this is usually conscious - it's the brain's default setting.
 
-What makes confirmation bias so dangerous is that it feels like thinking. You're reading, evaluating, weighing evidence - all the things a rational person does. But the conclusion was decided before you started. The thinking is just the scenery on the way to where you were always going.
+What makes confirmation bias so dangerous is that it feels like thinking. You're reading, evaluating, weighing evidence - all the things a rational person does. But the conclusion was decided before you started. The thinking is just the scenery on the way to where you were always going. One of its quieter side effects is the [false consensus effect](/false-consensus-effect/): once you've curated your sources, your social circles, and your feeds to confirm what you already believe, it starts feeling obvious that everyone reasonable must believe the same thing.
 
 ## How confirmation bias works
 

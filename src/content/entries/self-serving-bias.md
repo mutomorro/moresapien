@@ -27,6 +27,8 @@ relatedConcepts:
     note: "Believing your perspective is objective makes it easier to credit yourself for successes"
   - slug: "rationalisation"
     note: "The psychological defence that supports self-serving attributions"
+  - slug: "spotlight-effect"
+    note: "The spotlight effect and self-serving bias both inflate your importance to the scene - one in shame, the other in credit."
 ---
 
 Self-serving bias is the tendency to attribute your successes to internal qualities like talent, effort, or intelligence, while blaming your failures on external factors like bad luck, unfair circumstances, or other people's actions. It is one of the most common and well-documented biases in psychology, shaping how people interpret their own performance across every area of life.
@@ -39,7 +41,7 @@ The mechanism is straightforward but surprisingly hard to catch in yourself. Aft
 
 After a negative outcome, the explanatory spotlight swings outward. The presentation fell flat because the audience wasn't engaged. You didn't get the promotion because the process was political. Your team missed its targets because the goals were unrealistic.
 
-Each individual attribution might be perfectly reasonable. The bias reveals itself in the pattern. If you consistently claim the wins and disclaim the losses, something other than honest assessment is driving your explanations. What's driving it is your brain's deep commitment to maintaining a positive self-image - a motivation so powerful that it operates below conscious awareness.
+Each individual attribution might be perfectly reasonable. The bias reveals itself in the pattern. If you consistently claim the wins and disclaim the losses, something other than honest assessment is driving your explanations. What's driving it is your brain's deep commitment to maintaining a positive self-image - a motivation so powerful that it operates below conscious awareness. The flip side of this same self-centred frame is the [spotlight effect](/spotlight-effect/): just as you overestimate your importance to your own successes, you overestimate how much everyone else is noticing you when something goes wrong.
 
 Research by psychologist Dale Miller and his colleague Michael Ross established in the 1970s that self-serving attributions are pervasive across cultures, ages, and contexts. People do it in academic settings, in workplaces, in marriages, and in sport. It appears to be a default setting of human cognition rather than a character flaw.
 

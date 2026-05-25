@@ -27,6 +27,8 @@ relatedConcepts:
     note: "Naive realism can make people reject any comparison between their view and another, treating equivalence itself as offensive"
   - slug: "cognitive-dissonance"
     note: "Encountering someone who sees reality differently creates discomfort that naive realism resolves by dismissing their perspective"
+  - slug: "curse-of-knowledge"
+    note: "Curse of knowledge is naive realism applied to knowledge specifically - if I know this, surely everyone does."
 ---
 
 Naive realism is the belief that you perceive the world directly and accurately - that your experience of reality is reality itself, unfiltered by bias, interpretation, or perspective. When someone disagrees with you, naive realism leads you to conclude that they must be the ones with the distorted view. They are misinformed, biased, or irrational. You are simply seeing things as they are.
@@ -39,9 +41,9 @@ Naive realism operates through three core assumptions, most of which people hold
 
 ### The three assumptions of naive realism
 
-The first assumption is that you see reality as it is. Your perceptions, beliefs, and judgements feel like direct reflections of the world, not interpretations of it. The second assumption is that other reasonable people, given the same information, should reach the same conclusions you have. The third assumption is that anyone who does not reach the same conclusions must be biased, uninformed, or acting in bad faith.
+The first assumption is that you see reality as it is. Your perceptions, beliefs, and judgements feel like direct reflections of the world, not interpretations of it. The second assumption is that other reasonable people, given the same information, should reach the same conclusions you have. The third assumption is that anyone who does not reach the same conclusions must be biased, uninformed, or acting in bad faith. Applied specifically to knowledge, the same pattern shows up as the [curse of knowledge](/curse-of-knowledge/) - once you understand something, you struggle to imagine that other people don't yet see what you see.
 
-These three assumptions form a chain. If you see reality clearly, then disagreement cannot be a legitimate difference of perspective. It must be an error - and the error belongs to the other person.
+These three assumptions form a chain. If you see reality clearly, then disagreement cannot be a legitimate difference of perspective. It must be an error - and the error belongs to the other person. Applied to opinion at scale, naive realism becomes the [false consensus effect](/false-consensus-effect/) - the assumption that most people, being reasonable, must already share your view.
 
 ### Why it feels nothing like a bias
 
@@ -55,7 +57,7 @@ This bias operates in every interaction where two people see the same situation 
 
 ### Naive realism in relationships
 
-In close relationships, naive realism is a quiet source of enormous friction. When partners disagree about something - how to handle a situation, what a conversation meant, whether a response was fair - each person genuinely believes they are seeing the situation accurately. The other person is not just wrong. They are failing to see what is obviously there.
+In close relationships, naive realism is a quiet source of enormous friction. When partners disagree about something - how to handle a situation, what a conversation meant, whether a response was fair - each person genuinely believes they are seeing the situation accurately. The other person is not just wrong. They are failing to see what is obviously there. A neighbouring bias, the [spotlight effect](/spotlight-effect/), pushes the same logic inward - you assume that everyone else can see your slip-ups, awkwardness, or inner state as vividly as you do, because the way you see the scene feels like the way the scene actually is.
 
 This connects directly to the [fundamental attribution error](/fundamental-attribution-error/). When your partner sees things differently, naive realism stops you from considering that they might be working from different experiences, different information, or a different but valid framework. Instead, the difference is attributed to a character flaw - they are being unreasonable, defensive, or selfish.
 

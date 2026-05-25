@@ -28,6 +28,8 @@ relatedConcepts:
     note: "Experts who venture outside their field may overestimate their competence in unfamiliar territory."
   - slug: "social-proof"
     note: "Authority figures provide a powerful form of social proof - if someone important believes it, it must be worth believing."
+  - slug: "woozle-effect"
+    note: "The woozle effect produces false authority by accretion - what was speculation becomes a 'well-established finding' once it has been cited enough times."
 ---
 
 An appeal to false authority is a logical fallacy that occurs when someone uses the opinion of a person who is not a genuine expert on the topic as evidence for a claim. The person cited might be famous, highly credentialled, or widely respected - but their expertise doesn't cover the subject being discussed. Their authority is real in one domain and borrowed in another.
@@ -38,7 +40,7 @@ This fallacy is everywhere. A retired surgeon endorses a political candidate. A 
 
 The appeal to false authority - sometimes called *argumentum ad verecundiam* - is a specific type of argument from authority. Not all appeals to authority are fallacious. Citing a climate scientist on climate change, or a cardiologist on heart health, is perfectly reasonable. These are people with relevant expertise, and deferring to genuine experts is a practical necessity in a world where nobody can be an expert in everything.
 
-The fallacy occurs when the authority being cited doesn't have relevant expertise. The key word is "relevant." A Nobel laureate in chemistry is a genuine authority on chemistry. That same person's views on immigration policy, educational theory, or cryptocurrency carry no more weight than anyone else's - and presenting them as though they do is a false appeal to authority.
+The fallacy occurs when the authority being cited doesn't have relevant expertise. The key word is "relevant." A Nobel laureate in chemistry is a genuine authority on chemistry. That same person's views on immigration policy, educational theory, or cryptocurrency carry no more weight than anyone else's - and presenting them as though they do is a false appeal to authority. A subtler variant builds false authority by accretion - what researchers call the [woozle effect](/woozle-effect/), where speculation calcifies into a "well-established finding" through nothing more than enough citations pointing back to each other.
 
 ### Why we defer to authority in the first place
 

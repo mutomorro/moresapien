@@ -18,6 +18,8 @@ relatedConcepts:
     note: "Loaded language is especially effective on people who already lean a particular way - it confirms and intensifies existing feelings."
   - slug: "gaslighting"
     note: "When someone uses loaded language to describe your reasonable behaviour ('You're being hysterical'), it can cross into gaslighting."
+  - slug: "loaded-question"
+    note: "Loaded language and loaded questions are close kin - the first smuggles a judgement into a word, the second smuggles it into a question."
 ---
 
 ## What loaded language means
@@ -38,7 +40,7 @@ Loaded language works because human beings process emotion faster than they proc
 
 Psychologists who study language processing have long recognised that certain words activate emotional centres in the brain before higher-order reasoning kicks in. This is not a flaw - it's how human cognition works. Emotions help us make quick assessments of threats, opportunities, and social situations.
 
-But this speed comes at a cost. When someone deliberately chooses emotionally charged words, they are exploiting this processing gap. The [framing effect](/framing-effect/) is the broader principle at work here: how something is presented shapes how it is perceived. Loaded language is one of the sharpest tools in the framing toolkit.
+But this speed comes at a cost. When someone deliberately chooses emotionally charged words, they are exploiting this processing gap. The [framing effect](/framing-effect/) is the broader principle at work here: how something is presented shapes how it is perceived. Loaded language is one of the sharpest tools in the framing toolkit. Its close cousin is the [loaded question](/loaded-question/) - the first smuggles a judgement into a single word, the second smuggles it into the structure of a question. And both gain their power from [repetition as persuasion](/repetition-as-persuasion/): the framing wins once it is the easiest phrase to reach for.
 
 ### The asymmetry of loaded language
 

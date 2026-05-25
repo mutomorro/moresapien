@@ -18,6 +18,10 @@ relatedConcepts:
   - slug: "authority-bias"
     note: "The Dunning-Kruger effect explains why we should be cautious about self-appointed authorities"
   - slug: "cognitive-dissonance"
+  - slug: "complexity-bias"
+    note: "Real expertise sometimes intensifies complexity bias - the more you know, the more nuances you can add, and the harder simple answers feel."
+  - slug: "curse-of-knowledge"
+    note: "Curse of knowledge and Dunning-Kruger are opposite errors at opposite ends of expertise - one underestimates what others know, the other overestimates what they know themselves."
 furtherReading:
   - title: "Dunning-Kruger effect - Wikipedia"
     url: "https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect"
@@ -29,7 +33,7 @@ The Dunning-Kruger effect is the cognitive bias where people with limited knowle
 
 The effect was [formally described in 1999](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect) by psychologists David Dunning and Justin Kruger at Cornell University. Their original study asked participants to rate their own ability in logic, grammar, and humour - and found that those who scored lowest were the most likely to dramatically overrate their performance. Those who scored highest tended to slightly underrate theirs.
 
-This happens because competence and the ability to assess competence require the same underlying knowledge. If you don't know much about epidemiology, you also don't know enough to recognise what you're missing. The gaps in your knowledge are invisible to you. Meanwhile, an expert is acutely aware of everything they still don't know, which makes them more hesitant.
+This happens because competence and the ability to assess competence require the same underlying knowledge. If you don't know much about epidemiology, you also don't know enough to recognise what you're missing. The gaps in your knowledge are invisible to you. Meanwhile, an expert is acutely aware of everything they still don't know, which makes them more hesitant. Real expertise can also intensify [complexity bias](/complexity-bias/) - the more you know, the more nuances you can add, and the harder simple answers start to feel - which is one reason why experts and novices can talk past each other so completely.
 
 The effect doesn't mean uninformed people are stupid. It means they're operating with an incomplete map and don't yet realise how much territory the map is missing.
 
@@ -39,7 +43,7 @@ The Dunning-Kruger effect is often visualised as a curve that maps confidence ag
 
 ### The peak of "Mount Stupid"
 
-When someone first encounters a new subject - reads an article, watches a documentary, sits through a single lecture - they experience a rapid spike in confidence. They've gone from knowing nothing to knowing something, and that something feels like a lot. This is sometimes called the peak of "Mount Stupid": maximum confidence built on minimum understanding.
+When someone first encounters a new subject - reads an article, watches a documentary, sits through a single lecture - they experience a rapid spike in confidence. They've gone from knowing nothing to knowing something, and that something feels like a lot. This is sometimes called the peak of "Mount Stupid": maximum confidence built on minimum understanding. The mirror image, once expertise sets in, is the [curse of knowledge](/curse-of-knowledge/) - the expert can no longer imagine what it was like not to see what they now see, which makes it harder to teach, explain, or even talk to people earlier on the curve.
 
 At this point, the subject looks simpler than it is. The nuances, exceptions, contradictions, and unsolved problems haven't come into view yet. The person has learned enough to form an opinion, but not enough to know how much their opinion is missing.
 

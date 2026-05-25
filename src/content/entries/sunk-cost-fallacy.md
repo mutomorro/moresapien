@@ -16,6 +16,8 @@ relatedConcepts:
     note: "Once invested, we selectively notice evidence that the investment is paying off and ignore signs it isn't."
   - slug: "framing-effect"
     note: "Sunk cost decisions are heavily influenced by whether we frame the situation as 'protecting an investment' or 'throwing good money after bad'."
+  - slug: "arrival-fallacy"
+    note: "Arrival fallacy is what makes sunk costs sting twice - you reach the goal and discover the satisfaction you were chasing isn't there."
 furtherReading:
   - title: "Sunk cost - Wikipedia"
     url: "https://en.wikipedia.org/wiki/Sunk_cost"
@@ -37,7 +39,7 @@ The sunk cost fallacy persists because it's tangled up with several other psycho
 
 [Loss aversion](/loss-aversion/) - our tendency to feel losses more intensely than equivalent gains - is the emotional fuel behind sunk costs. First described by psychologists [Daniel Kahneman and Amos Tversky](https://en.wikipedia.org/wiki/Prospect_theory) in the late 1970s, it's one of the most robust findings in behavioural economics. Walking away doesn't just mean accepting that the future won't pay off. It means accepting that everything you already invested is gone for nothing. That feels like a loss on top of a loss, and our brains are wired to avoid that feeling at almost any cost.
 
-This is why people will drive across town to use a voucher worth a few pounds but won't walk away from a failing project worth thousands. The voucher feels like a gain. The project feels like a loss. The psychology doesn't scale with the numbers.
+This is why people will drive across town to use a voucher worth a few pounds but won't walk away from a failing project worth thousands. The voucher feels like a gain. The project feels like a loss. The psychology doesn't scale with the numbers. And even on the rare occasions when you do see the project through, the [arrival fallacy](/arrival-fallacy/) is waiting: the satisfaction you were chasing turns out to be a smaller, quieter thing than the cost suggested it would be.
 
 ### Admitting you were wrong triggers cognitive dissonance
 

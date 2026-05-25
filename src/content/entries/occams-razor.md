@@ -28,9 +28,11 @@ relatedConcepts:
     note: "The desire for a particular conclusion can make complex, unlikely explanations feel more convincing than simple ones."
   - slug: "probabilistic-thinking"
     note: "Occam's Razor is closely related to probabilistic reasoning - simpler theories tend to have higher prior probability."
+  - slug: "complexity-bias"
+    note: "Complexity bias is the cognitive force Occam's razor is meant to counteract - we instinctively prefer elaborate explanations to simple ones."
 ---
 
-Occam's Razor is the principle that when you have two or more competing explanations for the same phenomenon, you should prefer the one that makes the fewest assumptions. It does not say the simplest explanation is always correct. It says the simplest explanation is the best starting point - and that you should not multiply assumptions beyond what is necessary to explain the evidence.
+Occam's Razor is the principle that when you have two or more competing explanations for the same phenomenon, you should prefer the one that makes the fewest assumptions. It does not say the simplest explanation is always correct. It says the simplest explanation is the best starting point - and that you should not multiply assumptions beyond what is necessary to explain the evidence. The razor exists partly as a counterweight to [complexity bias](/complexity-bias/) - the cognitive pull toward elaborate explanations even when a simpler one fits the facts.
 
 The principle is named after William of Ockham, a fourteenth-century English friar and philosopher, though he never actually phrased it as a "razor." The metaphor of shaving comes from the idea of cutting away unnecessary elements from an argument. The Latin formulation often attributed to him - *entia non sunt multiplicanda praeter necessitatem* (entities should not be multiplied beyond necessity) - captures the spirit perfectly, even if the exact words came later.
 

@@ -75,7 +75,7 @@ Consider how the language of the market has infiltrated how people talk about re
 
 Professional relationships are even more explicitly commodified. "Networking" redefines human connection as a strategic activity with measurable outcomes. The question isn't "do I enjoy this person's company?" but "what can this connection do for my career?" LinkedIn, the platform that most openly commodifies professional identity, has over a billion users - a testament to how thoroughly the market framing of human relationships has been normalised.
 
-None of this means that people have stopped caring about each other. It means that the dominant cultural framework for *talking* about relationships has become a market framework, and that framework subtly reshapes how relationships are experienced. When you start measuring a friendship by its utility, something about the friendship changes - even if you don't intend it to.
+None of this means that people have stopped caring about each other. It means that the dominant cultural framework for *talking* about relationships has become a market framework, and that framework subtly reshapes how relationships are experienced. When you start measuring a friendship by its utility, something about the friendship changes - even if you don't intend it to. The longer you live inside that framework, the harder it gets to access the parts of yourself that don't translate into market terms - the same disconnect that Marx originally described as [alienation](/alienation/).
 
 ### The commodification of dissent
 

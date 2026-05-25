@@ -28,11 +28,13 @@ relatedConcepts:
     note: "When repeated claims also appear popular, the combination of familiarity and social proof becomes very difficult to resist."
   - slug: "motivated-reasoning"
     note: "We're especially vulnerable to the illusory truth effect when the repeated claim aligns with what we already want to believe."
+  - slug: "repetition-as-persuasion"
+    note: "Repetition as persuasion is the deliberate use of the illusory truth effect - say it often enough and familiarity does the rest."
 ---
 
 The illusory truth effect is the tendency to believe information is true simply because you've encountered it before. It's one of the most well-documented findings in cognitive psychology, and one of the most consequential: repeat a claim often enough and people begin to accept it, even when they were originally told it was false, and even when it contradicts what they already know.
 
-This isn't about gullibility or low intelligence. The illusory truth effect operates on a fundamental feature of human cognition - the way our brains use processing ease as a proxy for accuracy. If a statement feels smooth and familiar when you read it, your brain interprets that fluency as a signal of truth. Repetition is the simplest way to create that fluency.
+This isn't about gullibility or low intelligence. The illusory truth effect operates on a fundamental feature of human cognition - the way our brains use processing ease as a proxy for accuracy. If a statement feels smooth and familiar when you read it, your brain interprets that fluency as a signal of truth. Repetition is the simplest way to create that fluency, which is exactly why [repetition as persuasion](/repetition-as-persuasion/) is one of the oldest tools in propaganda - it doesn't argue for the claim, it just makes the claim feel familiar enough to slip past your defences.
 
 ## How the Illusory Truth Effect Works
 
@@ -48,7 +50,7 @@ The landmark study on this effect was conducted by [Hasher, Goldstein, and Toppi
 
 One of the most unsettling findings about the illusory truth effect is that prior knowledge offers only partial protection. A [2015 study by Fazio et al.](https://doi.org/10.1037/xge0000098) found that repetition increased belief in statements even when participants knew the correct answer. People who knew that the Atlantic is the ocean on the east coast of the United States still rated the false claim "The Pacific Ocean is the largest ocean on the east coast of the United States" as more plausible after seeing it multiple times.
 
-This means that the illusory truth effect doesn't simply fill knowledge gaps. It can actively work against what you already know. The familiarity signal is powerful enough to compete with - and sometimes override - stored factual knowledge.
+This means that the illusory truth effect doesn't simply fill knowledge gaps. It can actively work against what you already know. The familiarity signal is powerful enough to compete with - and sometimes override - stored factual knowledge. A more genteel version of the same dynamic shows up in academic and policy writing as the [woozle effect](/woozle-effect/) - speculation hardens into "well-established finding" once it has been cited often enough.
 
 ## The Illusory Truth Effect and Propaganda
 

@@ -27,6 +27,8 @@ relatedConcepts:
     note: "Once you have decided someone is a certain type of person, you notice evidence that confirms it"
   - slug: "ad-hominem"
     note: "Attacking a person's character rather than their argument - often fuelled by the fundamental attribution error"
+  - slug: "moral-hypocrisy-judgement"
+    note: "Hypocrisy judgement amplifies fundamental attribution error - we see the contradiction as a fixed feature of who the hypocrite is rather than as situational."
 ---
 
 The fundamental attribution error is the tendency to overemphasise personality and character when explaining other people's behaviour, while overemphasising situation and circumstance when explaining your own. When someone else makes a mistake, you think it reveals who they are. When you make the same mistake, you know it was because of what you were dealing with at the time.
@@ -37,7 +39,7 @@ This asymmetry is one of the most studied findings in social psychology. First i
 
 At its core, this bias is about where you locate the cause of behaviour. Psychologists distinguish between two types of attribution. Dispositional attributions point to internal factors - personality, character, values, intelligence. Situational attributions point to external factors - pressure, context, limited information, bad luck.
 
-The fundamental attribution error is the systematic tendency to favour dispositional explanations for other people's behaviour and situational explanations for your own. You have privileged access to your own reasons, pressures, and constraints. You do not have that access for anyone else - so you fill in the gap with character judgements.
+The fundamental attribution error is the systematic tendency to favour dispositional explanations for other people's behaviour and situational explanations for your own. You have privileged access to your own reasons, pressures, and constraints. You do not have that access for anyone else - so you fill in the gap with character judgements. This is also why [moral hypocrisy judgement](/moral-hypocrisy-judgement/) lands so hard: the gap between someone's claim and their behaviour gets attributed to who they fundamentally are rather than to the situation they were in.
 
 ### Why you know your own reasons but not theirs
 
@@ -47,7 +49,7 @@ This is not a failure of intelligence. It is a failure of information. You are w
 
 ### The actor-observer gap
 
-Psychologists call this the actor-observer asymmetry. As an actor, you look outward at the situation that shaped your behaviour. As an observer, you look at the person and assume their behaviour reflects who they are. Same behaviour, completely different explanatory frameworks - depending solely on which side of the interaction you are standing on.
+Psychologists call this the actor-observer asymmetry. As an actor, you look outward at the situation that shaped your behaviour. As an observer, you look at the person and assume their behaviour reflects who they are. Same behaviour, completely different explanatory frameworks - depending solely on which side of the interaction you are standing on. The error feeds the [spotlight effect](/spotlight-effect/) from the other end: when you stumble, you assume observers are reading the stumble as evidence of who you fundamentally are, even though the same observers would write it off as a bad day if it had happened to anyone else.
 
 This gap widens when the behaviour has negative consequences. If a colleague misses a deadline, you are far more likely to think "they are disorganised" than "they might be overwhelmed." If you miss the same deadline, you know precisely which competing demands made it impossible. The [cognitive dissonance](/cognitive-dissonance/) that would arise from seeing yourself as disorganised is resolved by pointing to circumstances. You rarely offer that same resolution to others.
 

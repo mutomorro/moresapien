@@ -18,13 +18,15 @@ relatedConcepts:
     note: "Cultural defaults frame certain choices as normal and others as deviations, shaping decisions before any conscious evaluation begins."
   - slug: "naive-realism"
     note: "Naive realism makes cultural defaults invisible - if you believe you see reality as it is, the defaults feel like nature rather than culture."
+  - slug: "appeal-to-tradition"
+    note: "When cultural defaults are challenged, appeal to tradition is the most common defence - 'we've always done it this way' is the default speaking aloud."
 ---
 
 ## What cultural defaults mean
 
 A cultural default is any norm, expectation, or way of doing things that is treated as the standard - the option that requires no explanation, no justification, and no conscious choice. It's the setting your culture comes with out of the box. Everything else is a deviation that needs to be accounted for.
 
-Cultural defaults operate across every dimension of life: how families are structured, what a "normal" career looks like, which language meetings are conducted in, what counts as professional appearance, how grief is expressed, when and how people eat, and thousands of other patterns that most people follow without ever deciding to. They're not rules - they're something more powerful than rules. Rules can be questioned and debated. Defaults are followed before anyone thinks to question them.
+Cultural defaults operate across every dimension of life: how families are structured, what a "normal" career looks like, which language meetings are conducted in, what counts as professional appearance, how grief is expressed, when and how people eat, and thousands of other patterns that most people follow without ever deciding to. They're not rules - they're something more powerful than rules. Rules can be questioned and debated. Defaults are followed before anyone thinks to question them. When someone does question them, the most common defence is an [appeal to tradition](/appeal-to-tradition/) - the claim that the default is right because it's old, which is the default speaking up for itself.
 
 The concept draws on the same insight that makes [default settings in technology](/status-quo-bias/) so powerful: whatever option is pre-selected tends to win, not because it's the best option but because choosing something different requires effort, awareness, and sometimes courage. Cultural defaults work the same way. The dominant culture's preferences are pre-selected, and opting out of them carries a cost - social friction, explanation, and sometimes punishment - that following them does not.
 
@@ -48,7 +50,7 @@ This connects to how [the Overton window](/overton-window/) operates in social l
 
 ### How defaults are maintained
 
-Cultural defaults aren't maintained by conspiracy or central planning. They're maintained by the ordinary operations of a society that treats its own assumptions as facts. Schools teach a particular version of history and call it "history." Workplaces design schedules around a particular family structure and call it "standard working hours." Healthcare systems are built around a particular body and call it "the patient."
+Cultural defaults aren't maintained by conspiracy or central planning. They're maintained by the ordinary operations of a society that treats its own assumptions as facts. Schools teach a particular version of history and call it "history." Workplaces design schedules around a particular family structure and call it "standard working hours." Healthcare systems are built around a particular body and call it "the patient." Underneath many of these arrangements sits a quiet [state of nature assumption](/state-of-nature-assumption/) - the unspoken belief that the current default reflects how humans naturally are, rather than how a particular history made them.
 
 Each of these choices is defended not as a choice but as common sense - which is precisely the [framing](/framing-effect/) that makes the default invisible. When the default is challenged, the response is rarely "we chose this because it serves specific interests." It's "that's just how things work" - a [thought-terminating cliche](/thought-terminating-cliche/) dressed up as pragmatism.
 

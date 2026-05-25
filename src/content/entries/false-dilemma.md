@@ -29,6 +29,8 @@ relatedConcepts:
     note: "False dilemmas frequently rely on fear or urgency to make the binary choice feel unavoidable."
   - slug: "false-equivalence"
     note: "Where false dilemma reduces options to two, false equivalence treats two things as equal when they aren't."
+  - slug: "loaded-question"
+    note: "A loaded question often contains a false dilemma - the answer is forced into two unacceptable options, both of which accept the smuggled premise."
 ---
 
 A false dilemma is a logical fallacy that presents only two options as though they are the only possibilities, when in reality there are other choices available. By narrowing the field to just two alternatives - usually one desirable and one undesirable - the false dilemma pressures you into accepting one of them without considering the full range of options.
@@ -39,7 +41,7 @@ You've heard this pattern countless times. "You're either with us or against us.
 
 A false dilemma works by collapsing a spectrum of possibilities into just two poles. It's sometimes called black-and-white thinking, and for good reason - it strips away all the greys.
 
-The structure is straightforward: "Either A or B. Not A. Therefore B." The logical form is valid - if there really are only two options, eliminating one does prove the other. The fallacy lies in the first step. There aren't only two options. The person presenting the dilemma has artificially limited the field.
+The structure is straightforward: "Either A or B. Not A. Therefore B." The logical form is valid - if there really are only two options, eliminating one does prove the other. The fallacy lies in the first step. There aren't only two options. The person presenting the dilemma has artificially limited the field. A close cousin is the [loaded question](/loaded-question/), where the false dilemma is folded inside the question's grammar - "have you stopped doing X?" forces a yes/no answer that accepts the unproven premise either way.
 
 ### Why our brains are drawn to binary choices
 

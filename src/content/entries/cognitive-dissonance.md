@@ -22,6 +22,8 @@ relatedConcepts:
   - slug: "backfire-effect"
     note: "What happens when cognitive dissonance gets so intense that correction strengthens the original belief"
   - slug: "psychological-projection"
+  - slug: "moral-hypocrisy-judgement"
+    note: "Moral hypocrisy judgement runs on dissonance - when someone's claimed values clash with their behaviour, observers experience the tension as betrayal."
 furtherReading:
   - title: "Cognitive dissonance - Wikipedia"
     url: "https://en.wikipedia.org/wiki/Cognitive_dissonance"
@@ -33,7 +35,7 @@ Cognitive dissonance is the psychological discomfort you feel when you hold two 
 
 The key insight is that our brains don't tolerate contradiction well. When we notice an inconsistency between what we believe and what we do - or between two things we believe - something has to give. The rational response would be to examine both beliefs and update the weaker one. What usually happens instead is that we find a way to rationalise the contradiction away, often without realising we're doing it.
 
-This is why people who've invested heavily in a bad decision often double down rather than change course. Admitting the decision was wrong would create dissonance with their self-image as a competent, rational person. So the brain resolves the conflict by finding reasons the decision was actually right all along. It's the psychological engine behind the [sunk cost fallacy](/sunk-cost-fallacy/) - we can't walk away because doing so would force us to confront an uncomfortable truth about the choice we made.
+This is why people who've invested heavily in a bad decision often double down rather than change course. Admitting the decision was wrong would create dissonance with their self-image as a competent, rational person. So the brain resolves the conflict by finding reasons the decision was actually right all along. It's the psychological engine behind the [sunk cost fallacy](/sunk-cost-fallacy/) - we can't walk away because doing so would force us to confront an uncomfortable truth about the choice we made. Dissonance also explains the visceral [moral hypocrisy judgement](/moral-hypocrisy-judgement/) we direct at others: when someone's stated values clash with their behaviour, the gap registers as a betrayal rather than as a simple lapse, because the contradiction is uncomfortable for the observer to hold too.
 
 ## How we resolve cognitive dissonance
 

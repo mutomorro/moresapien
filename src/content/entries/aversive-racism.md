@@ -74,7 +74,7 @@ Outside formal institutions, aversive racism manifests in the small, everyday de
 
 People with aversive racial biases may unconsciously choose seats further from members of other racial groups, make less eye contact, end conversations more quickly, or offer less spontaneous help. None of these behaviours is dramatic. None would, in isolation, be identifiable as biased. But in aggregate, they create an environment where some people consistently receive less warmth, less engagement, and less benefit of the doubt than others.
 
-[Microaggressions](/microaggressions/) are often the visible expression of aversive racism. The surprised compliment ("You're so well-spoken"), the assumption of foreignness ("Where are you really from?"), the unconscious exclusion from informal networks - these patterns are not products of ill will. They are products of implicit associations that the person holding them would, if confronted with them directly, reject.
+[Microaggressions](/microaggressions/) are often the visible expression of aversive racism. The surprised compliment ("You're so well-spoken"), the assumption of foreignness ("Where are you really from?"), the unconscious exclusion from informal networks - these patterns are not products of ill will. They are products of [implicit association](/implicit-association/) that the person holding them would, if confronted with it directly, reject.
 
 ### Healthcare disparities
 

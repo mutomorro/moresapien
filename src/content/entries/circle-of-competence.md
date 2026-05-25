@@ -27,6 +27,8 @@ relatedConcepts:
     note: "Motivated reasoning tempts you to act outside your circle of competence when the potential reward is large enough."
   - slug: "confirmation-bias"
     note: "Inside your circle, you can spot flawed reasoning. Outside it, confirmation bias fills the gap with false confidence."
+  - slug: "curse-of-knowledge"
+    note: "Curse of knowledge is what happens at the edge of your circle of competence - you stop being able to imagine not knowing what you know."
 ---
 
 Circle of competence is a mental model that describes the boundary between the subjects you genuinely understand through deep experience and study, and the subjects where your knowledge is shallow, borrowed, or based on assumptions. The concept was popularised by Warren Buffett and Charlie Munger, who used it to explain their investment philosophy: stick to what you truly know, and be honest about where your knowledge ends.
@@ -39,7 +41,7 @@ Everyone has a circle of competence. It is shaped by your education, your profes
 
 ### The difference between knowledge and familiarity
 
-There is an important distinction between genuinely understanding something and merely being familiar with it. You might read several articles about macroeconomics and feel informed. But that familiarity is not the same as the understanding held by someone who has spent years studying economic models, debating their limitations, and watching their predictions succeed or fail.
+There is an important distinction between genuinely understanding something and merely being familiar with it. You might read several articles about macroeconomics and feel informed. But that familiarity is not the same as the understanding held by someone who has spent years studying economic models, debating their limitations, and watching their predictions succeed or fail. The cost of standing right at the centre of a deep circle is the [curse of knowledge](/curse-of-knowledge/) - you stop being able to imagine what it was like not to know, which makes it harder to communicate across the boundary.
 
 This distinction matters because familiarity feels like competence from the inside. The [Dunning-Kruger effect](/dunning-kruger-effect/) describes exactly this phenomenon: the less you know about a subject, the less equipped you are to recognise how much you are missing. A little knowledge creates confidence. A lot of knowledge creates caution. The person who has studied a subject deeply is typically more aware of its complexity and more hesitant to offer simple answers.
 

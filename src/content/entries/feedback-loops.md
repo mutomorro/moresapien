@@ -18,6 +18,8 @@ relatedConcepts:
     note: "Feedback loops between many agents are one of the key drivers of emergence - complex patterns arising from simple interactions."
   - slug: "tragedy-of-the-commons"
     note: "Commons collapse often involves a reinforcing loop - as the resource degrades, competition for what's left intensifies."
+  - slug: "anthropocentrism"
+    note: "Anthropocentric framings make ecological feedback loops easy to miss - the system gets noticed only when it loops back to affect humans."
 ---
 
 ## What feedback loops mean
@@ -96,7 +98,7 @@ The effect compounds across media, politics, and social identity. If the people 
 
 Climate change involves some of the most dangerous reinforcing loops on the planet. Rising temperatures melt Arctic ice, which reduces the amount of sunlight reflected back into space, which raises temperatures further, which melts more ice. Each stage accelerates the next. Scientists call these "tipping points" - thresholds beyond which a balancing loop gives way to a reinforcing one, and the change becomes self-sustaining.
 
-Permafrost thawing follows a similar pattern. Frozen ground contains vast stores of methane. As temperatures rise, the permafrost thaws and releases methane - a potent greenhouse gas - which raises temperatures further, which thaws more permafrost. The [Intergovernmental Panel on Climate Change](https://www.ipcc.ch/) has identified several such loops that could, in combination, push warming beyond any level that current policy can address.
+Permafrost thawing follows a similar pattern. Frozen ground contains vast stores of methane. As temperatures rise, the permafrost thaws and releases methane - a potent greenhouse gas - which raises temperatures further, which thaws more permafrost. The [Intergovernmental Panel on Climate Change](https://www.ipcc.ch/) has identified several such loops that could, in combination, push warming beyond any level that current policy can address. These loops were operating for decades before they registered on policy radars, partly because [anthropocentrism](/anthropocentrism/) trains us to notice systems only when they start affecting humans directly.
 
 ## How to think about feedback loops
 

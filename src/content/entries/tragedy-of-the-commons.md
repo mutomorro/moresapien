@@ -18,13 +18,15 @@ relatedConcepts:
     note: "Each individual's rational choice produces an unintended collective consequence."
   - slug: "normalcy-bias"
     note: "Each individual act of overuse feels normal and harmless - it's only the cumulative effect that's catastrophic."
+  - slug: "anthropocentrism"
+    note: "The commons most at risk - atmosphere, oceans, biosphere - are also the ones an anthropocentric frame treats as backdrop rather than as systems whose collapse would unmake us."
 ---
 
 ## What the tragedy of the commons means
 
 The tragedy of the commons is a situation where multiple individuals, each acting rationally in their own self-interest, collectively deplete or destroy a shared resource that they all depend on. The concept was popularised by the ecologist [Garrett Hardin](https://en.wikipedia.org/wiki/Garrett_Hardin) in a landmark 1968 essay published in *Science*, though the underlying problem is as old as human civilisation.
 
-Imagine a village common where every farmer can graze their cattle. Each farmer benefits by adding one more cow - the extra grazing costs are spread across everyone, but the extra milk goes entirely to that farmer. The rational choice for each individual is always to add another cow. But if every farmer makes this same rational calculation, the common is overgrazed and collapses. Nobody wanted that outcome. Every single decision along the way made perfect individual sense.
+Imagine a village common where every farmer can graze their cattle. Each farmer benefits by adding one more cow - the extra grazing costs are spread across everyone, but the extra milk goes entirely to that farmer. The rational choice for each individual is always to add another cow. But if every farmer makes this same rational calculation, the common is overgrazed and collapses. Nobody wanted that outcome. Every single decision along the way made perfect individual sense. And the [anthropocentrism](/anthropocentrism/) baked into the original framing - the common as a resource that exists to serve human grazing, not as a system in its own right - is part of why the trajectory looks rational right up until it doesn't.
 
 The tragedy isn't stupidity or malice. It's a structural problem - a mismatch between individual incentives and collective outcomes. The commons fails not because people are bad, but because the system doesn't connect individual behaviour to shared consequences. Each person captures the full benefit of overuse while bearing only a fraction of the cost.
 

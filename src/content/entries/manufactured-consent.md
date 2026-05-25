@@ -18,6 +18,8 @@ relatedConcepts:
     note: "False balance is one mechanism through which consent is manufactured - by framing elite-friendly positions as the 'balanced' centre."
   - slug: "illusory-truth-effect"
     note: "Repeated framing across multiple outlets triggers the illusory truth effect - the consensus feels earned when it's actually structural."
+  - slug: "regulatory-capture"
+    note: "Regulatory capture is manufactured consent at the institutional level - the watchdog ends up speaking the language of the industry it watches."
 ---
 
 ## What manufactured consent means
@@ -26,7 +28,7 @@ Manufactured consent is the idea that in democratic societies, public opinion is
 
 Their core argument is counterintuitive. In authoritarian states, propaganda is obvious - the government controls the press, dissent is punished, and everyone knows the news is managed. In democratic societies, the process is subtler and in some ways more effective. Journalists are free to write what they want. Editors aren't told what to publish. Yet the output is remarkably uniform on the issues that matter most to powerful interests. The question Chomsky and Herman asked was: why?
 
-The answer, they argued, lies not in individual decisions but in the structure of the media system itself. The system doesn't need a conspiracy to produce consent-friendly coverage. It produces it naturally, as a consequence of how it's built - in the same way that a river flows downhill without anyone telling the water where to go.
+The answer, they argued, lies not in individual decisions but in the structure of the media system itself. The system doesn't need a conspiracy to produce consent-friendly coverage. It produces it naturally, as a consequence of how it's built - in the same way that a river flows downhill without anyone telling the water where to go. The institutional version of the same dynamic is [regulatory capture](/regulatory-capture/) - the watchdog gradually starts speaking the language of the industry it watches, not because anyone bribes it, but because the structural pressures all point the same way.
 
 ## How the propaganda model works
 
@@ -44,7 +46,7 @@ The second filter is advertising. In ad-funded media, the real customer isn't th
 
 The third filter is sourcing. Journalists need information, and the most efficient sources are powerful institutions - governments, corporations, think tanks, and PR operations. These sources are professional, available, and quotable. Grassroots voices, whistleblowers, and independent researchers are harder to access and harder to verify. The result is that news coverage naturally reflects the perspectives of the powerful, because those are the perspectives most readily available.
 
-This creates a dependency. A journalist who consistently challenges a government department's framing risks losing access to that department's briefings. The incentive structure rewards reporting that stays within acceptable bounds - not because anyone issues a threat, but because access is the currency of the profession.
+This creates a dependency. A journalist who consistently challenges a government department's framing risks losing access to that department's briefings. The incentive structure rewards reporting that stays within acceptable bounds - not because anyone issues a threat, but because access is the currency of the profession. Outside the news business, Adorno and Horkheimer described the same dynamic operating across entertainment, music, and film as [the culture industry](/the-culture-industry/) - mass culture as ideology, producing the appetites it then satisfies.
 
 ### Flak and organised pushback
 

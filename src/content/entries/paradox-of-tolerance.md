@@ -18,6 +18,8 @@ relatedConcepts:
     note: "Intolerant movements often use motte-and-bailey tactics - defending extreme positions by retreating to reasonable-sounding versions when challenged."
   - slug: "slippery-slope"
     note: "Critics of the paradox often invoke slippery slope arguments - claiming that any limits on tolerance will inevitably lead to total censorship."
+  - slug: "state-of-nature-assumption"
+    note: "The paradox of tolerance bites hardest in arguments built on a state-of-nature assumption - if humans are naturally good, intolerant minorities must be aberrations rather than predictable features."
 ---
 
 ## What the paradox of tolerance means
@@ -34,7 +36,7 @@ Understanding the mechanics helps separate the genuine insight from its frequent
 
 ### Tolerance as a social contract
 
-One useful way to think about the paradox is to treat tolerance not as a moral absolute but as a social contract. In this framing, tolerance is an agreement: I will respect your right to hold and express your views, and you will respect mine. This agreement works as long as all parties honour it. But if one party uses the protections of the contract to undermine the contract itself - using free speech to advocate for the silencing of others, using democratic processes to dismantle democracy - then the agreement has been broken.
+One useful way to think about the paradox is to treat tolerance not as a moral absolute but as a social contract. In this framing, tolerance is an agreement: I will respect your right to hold and express your views, and you will respect mine. This agreement works as long as all parties honour it. But if one party uses the protections of the contract to undermine the contract itself - using free speech to advocate for the silencing of others, using democratic processes to dismantle democracy - then the agreement has been broken. The paradox bites hardest in arguments that quietly rest on a [state of nature assumption](/state-of-nature-assumption/) - if you take it for granted that humans are naturally cooperative and good, intolerant minorities look like aberrations rather than predictable features, and the case for active defence of tolerance gets harder to make.
 
 This reframing avoids the trap of treating tolerance as either unlimited or non-existent. It's conditional. The condition is reciprocity. You don't lose the protection of tolerance by holding unpopular views. You lose it by actively working to eliminate the tolerance that protects everyone else.
 

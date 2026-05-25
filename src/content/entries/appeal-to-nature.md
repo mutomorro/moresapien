@@ -27,11 +27,13 @@ relatedConcepts:
     note: "The appeal to nature often creates a false choice between 'natural' and 'artificial' when most real options are a blend of both."
   - slug: "appeal-to-emotion"
     note: "The appeal to nature works partly through emotion - 'natural' evokes warmth and safety, bypassing evidence-based evaluation."
+  - slug: "appeal-to-common-sense"
+    note: "Both fallacies assert that something is self-evidently true rather than arguing for it - 'natural is better' and 'it's common sense' do the same rhetorical job."
 ---
 
 An appeal to nature is a logical fallacy that argues something is inherently good, right, or beneficial simply because it is natural, or inherently bad, dangerous, or inferior because it is artificial. It treats "natural" as a shorthand for "good" and "synthetic" or "man-made" as a shorthand for "bad," without offering any independent evidence for the claim.
 
-It's one of the most commercially successful fallacies in the world. The word "natural" on a food label, a skincare product, or a supplement does more persuasive work than almost any other single word in marketing. But the fact that something comes from nature tells you nothing reliable about whether it's safe, effective, or beneficial. Nature is the source of both honey and hemlock, sunlight and smallpox.
+It's one of the most commercially successful fallacies in the world. The word "natural" on a food label, a skincare product, or a supplement does more persuasive work than almost any other single word in marketing. But the fact that something comes from nature tells you nothing reliable about whether it's safe, effective, or beneficial. Nature is the source of both honey and hemlock, sunlight and smallpox. The appeal to nature works the same rhetorical trick as the [appeal to common sense](/appeal-to-common-sense/) - it asserts a conclusion without ever making an argument for it.
 
 ## What the appeal to nature means
 
@@ -39,7 +41,7 @@ The appeal to nature rests on a simple but flawed equation: natural equals good.
 
 ### The naturalistic fallacy in philosophy
 
-Philosophers have been picking at this thread for centuries. The Scottish philosopher David Hume identified the core problem in the 1700s: you can't derive what *ought* to be from what *is*. The fact that something occurs in nature is a description, not a recommendation. Poisonous mushrooms are natural. Malaria is natural. Violence between animals is natural. Describing these as "natural" doesn't make them desirable.
+Philosophers have been picking at this thread for centuries. The Scottish philosopher David Hume identified the core problem in the 1700s: you can't derive what *ought* to be from what *is*. The fact that something occurs in nature is a description, not a recommendation. Poisonous mushrooms are natural. Malaria is natural. Violence between animals is natural. Describing these as "natural" doesn't make them desirable. The same move - "this is how things are, therefore this is how they should be" - underpins the [appeal to tradition](/appeal-to-tradition/), which substitutes "old" for "natural" but runs the same logical sleight of hand.
 
 The philosopher G.E. Moore later coined the term "[naturalistic fallacy](https://en.wikipedia.org/wiki/Naturalistic_fallacy)" to describe the broader error of equating natural properties with moral goodness. While the technical philosophical debate gets complex, the everyday version is straightforward: "natural" and "good" are different concepts, and using one as proof of the other is a logical error.
 

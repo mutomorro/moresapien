@@ -29,11 +29,13 @@ relatedConcepts:
     note: "Early examples anchor our thinking, making later examples feel like confirmation rather than new data."
   - slug: "straw-man"
     note: "Hasty generalisations about an opponent's views are often the raw material for straw man arguments."
+  - slug: "base-rate-fallacy"
+    note: "Both errors come from undersampling - hasty generalisation jumps from too few cases; base rate fallacy ignores the broader population the cases sit inside."
 ---
 
 Hasty generalisation is a logical fallacy that occurs when a conclusion is drawn from a sample that is too small, too narrow, or too unrepresentative to support it. It's the leap from "I saw this happen twice" to "this is how things always work" - treating a handful of cases as though they reveal a universal pattern.
 
-It's one of the most natural errors in human thinking. We're built to learn from experience, and generalising from what we've seen is how we navigate the world. The problem comes when we generalise too quickly, from too little, and with too much confidence. That's when a useful mental shortcut becomes a logical fallacy.
+It's one of the most natural errors in human thinking. We're built to learn from experience, and generalising from what we've seen is how we navigate the world. The problem comes when we generalise too quickly, from too little, and with too much confidence. That's when a useful mental shortcut becomes a logical fallacy. The [No True Scotsman](/no-true-scotsman/) move is what people often reach for when a hasty generalisation has been caught - rather than narrow the claim to match the evidence, they narrow the group to expel the counterexample.
 
 ## What hasty generalisation means
 
@@ -109,7 +111,7 @@ This means the order in which we encounter evidence matters far more than it sho
 
 ### The role of motivation
 
-[Motivated reasoning](/motivated-reasoning/) makes hasty generalisation worse when we have a stake in the conclusion. If we want to believe something, a single supporting example feels like plenty of evidence. If we don't want to believe it, even a substantial body of evidence feels unconvincing. Our motivation determines how much evidence we need, which is the opposite of how reasoning should work.
+[Motivated reasoning](/motivated-reasoning/) makes hasty generalisation worse when we have a stake in the conclusion. If we want to believe something, a single supporting example feels like plenty of evidence. If we don't want to believe it, even a substantial body of evidence feels unconvincing. Our motivation determines how much evidence we need, which is the opposite of how reasoning should work. The [base rate fallacy](/base-rate-fallacy/) is the statistical sibling of hasty generalisation - both errors come from undersampling, but where hasty generalisation jumps from too few cases, the base rate fallacy ignores the broader population those cases sit inside.
 
 ## How to guard against hasty generalisation
 

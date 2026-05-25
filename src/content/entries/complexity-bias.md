@@ -64,7 +64,7 @@ The wellness industry thrives on complexity bias. A simple health message - eat 
 
 Complexity bias is a key engine of conspiracy thinking. When a major event occurs - a political assassination, a pandemic, a financial crisis - the straightforward explanation often feels inadequate to the magnitude of the event. Surely something this significant must have a complex, hidden cause. This feeling draws people toward elaborate explanatory frameworks involving secret coordination, hidden actors, and multi-layered cover-ups.
 
-The connection to [apophenia](/apophenia/) is direct: complexity bias makes you hungry for intricate patterns, and apophenia provides them. Each new coincidence, each suggestive detail, each ambiguous fact is woven into the complex explanation, creating a narrative that feels more complete and more satisfying than the simple one - even when it is wrong.
+The connection to [apophenia](/apophenia/) is direct: complexity bias makes you hungry for intricate patterns, and apophenia provides them. Each new coincidence, each suggestive detail, each ambiguous fact is woven into the complex explanation, creating a narrative that feels more complete and more satisfying than the simple one - even when it is wrong. Once that complex framework is in place, [confirmation bias](/confirmation-bias/) locks the door - evidence that fits the theory is absorbed, and evidence that contradicts it is dismissed or reinterpreted as further proof of concealment.
 
 ### Business and technology
 
@@ -94,11 +94,11 @@ The goal is not to force simplicity where complexity is warranted, but to stop a
 
 ### Start with the simplest explanation
 
-Use Occam's razor as a starting point. The simplest explanation consistent with the evidence is not always correct, but it is the right place to begin. Add complexity only when the simple explanation fails to account for the evidence.
+Use Occam's razor as a starting point. The simplest explanation consistent with the evidence is not always correct, but it is the right place to begin. Add complexity only when the simple explanation fails to account for the evidence. [First principles thinking](/first-principles-thinking/) serves a similar function - by stripping a problem down to its fundamental components, you can see which layers of complexity are structural and which are decorative.
 
 ### Ask what can be removed
 
-When evaluating a plan, strategy, or explanation, ask what could be removed without losing anything essential. If the answer is "a lot," you may be dealing with unnecessary complexity.
+When evaluating a plan, strategy, or explanation, ask what could be removed without losing anything essential. If the answer is "a lot," you may be dealing with unnecessary complexity. This is the principle behind good editing, good engineering, and good thinking: not what can you add, but what can you take away while keeping everything that matters.
 
 ### Separate complexity from quality
 
@@ -106,4 +106,4 @@ Train yourself to notice when you are using complexity as a shortcut for quality
 
 ## Complexity bias and the wider web of thinking
 
-Complexity bias connects to Occam's razor (its direct counterbalance), apophenia (which provides the patterns complexity craves), [first principles thinking](/first-principles-thinking/) (which strips problems to their essentials), and [confirmation bias](/confirmation-bias/) (which sustains complex explanations once adopted). Recognising complexity bias is recognising that your instinct for depth can sometimes pull you away from the truth rather than toward it.
+Complexity bias connects to Occam's razor (its direct counterbalance), apophenia (which provides the patterns complexity craves), first principles thinking (which strips problems to their essentials), and confirmation bias (which sustains complex explanations once adopted). Recognising complexity bias is recognising that your instinct for depth can sometimes pull you away from the truth rather than toward it.

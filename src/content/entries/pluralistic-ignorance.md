@@ -27,6 +27,8 @@ relatedConcepts:
     note: "Once you believe everyone else agrees with a norm, you notice the people who follow it and overlook those who quietly resist."
   - slug: "cognitive-dissonance"
     note: "Publicly going along with something you privately reject creates dissonance - which is often resolved by adjusting your private beliefs to match your public behaviour."
+  - slug: "false-consensus-effect"
+    note: "False consensus and pluralistic ignorance are mirror errors - one assumes the majority agrees, the other assumes the majority disagrees."
 ---
 
 Pluralistic ignorance is a situation in which most members of a group privately reject a belief, norm, or behaviour but incorrectly assume that most other members accept it. Everyone goes along with something that hardly anyone supports, because each individual thinks they're the odd one out. It's one of the most powerful and least visible forces in social life - a collective illusion that sustains practices, policies, and cultural norms long after they've lost genuine support.
@@ -39,7 +41,7 @@ Pluralistic ignorance arises from a simple cognitive error: mistaking public beh
 
 ### The silence spiral behind pluralistic ignorance
 
-The mechanism works like a feedback loop. Person A privately disagrees with a norm but stays silent because they assume everyone else supports it. Person B does exactly the same thing, for exactly the same reason. Each person's silence reinforces every other person's belief that they're alone in their dissent. The norm persists not because it's popular, but because nobody knows it's unpopular.
+The mechanism works like a feedback loop. Person A privately disagrees with a norm but stays silent because they assume everyone else supports it. Person B does exactly the same thing, for exactly the same reason. Each person's silence reinforces every other person's belief that they're alone in their dissent. The norm persists not because it's popular, but because nobody knows it's unpopular. The opposite error is the [false consensus effect](/false-consensus-effect/) - assuming the majority agrees with you when in fact they don't. Both biases share the same mistake: treating the visible surface of social life as an accurate measure of what people actually think.
 
 This is closely related to [social proof](/social-proof/). We look to others' behaviour to gauge what's appropriate, and when everyone else appears to be complying willingly, we interpret that compliance as endorsement. The irony is that everyone in the group is performing the same role - publicly going along with something they privately question - and each person's performance strengthens the illusion for everyone else.
 

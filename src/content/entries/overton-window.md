@@ -18,6 +18,8 @@ relatedConcepts:
     note: "We assume the current window is stable, making us slow to recognise when it's shifting."
   - slug: "paradox-of-tolerance"
     note: "The paradox of tolerance is about what happens at the window's edges - when intolerant ideas get normalised into the range of acceptable debate."
+  - slug: "regulatory-capture"
+    note: "Captured regulators police the Overton window in their sector - acceptable reform is whatever the industry can already live with."
 ---
 
 ## What the Overton Window means
@@ -38,7 +40,7 @@ The most common deliberate strategy for moving the Overton Window is [anchoring]
 
 This is the logic behind seemingly absurd political proposals. A politician who proposes abolishing an entire government department might not expect to succeed. But the proposal reframes the debate so that merely cutting the department's budget by half - previously a radical position - now feels like a reasonable compromise. The extreme anchor has moved the window.
 
-The same principle works in negotiation, marketing, and everyday persuasion. Estate agents show you the overpriced house first. The second house, priced at what they always intended, feels like a bargain. The mechanism is identical to the Overton Window - the extreme option resets what feels normal.
+The same principle works in negotiation, marketing, and everyday persuasion. Estate agents show you the overpriced house first. The second house, priced at what they always intended, feels like a bargain. The mechanism is identical to the Overton Window - the extreme option resets what feels normal. Within a single regulated sector, the same compression happens through [regulatory capture](/regulatory-capture/): once the regulator has been gradually pulled into the industry's worldview, "acceptable reform" comes to mean whatever the industry can already live with.
 
 ### Gradual normalisation
 

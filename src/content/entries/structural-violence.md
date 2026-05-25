@@ -18,13 +18,15 @@ relatedConcepts:
     note: "Structural violence persists because it's normalised - the harm is so constant and so familiar that it stops being perceived as violence at all."
   - slug: "reification"
     note: "Reification treats the systems that produce structural violence as natural facts rather than human constructions that could be changed."
+  - slug: "alienation"
+    note: "Alienation is one of the lived experiences structural violence produces - workers separated from the meaning of their labour, communities separated from any sense of agency over the arrangements that shape their lives."
 ---
 
 ## What structural violence means
 
 Structural violence is harm that is caused not by individual acts of aggression but by the way social systems are organised. It's the damage done by policies, institutions, and arrangements that systematically prevent certain people from meeting their basic needs - even when no individual intends them harm. No one pulls a trigger. No one throws a punch. But people suffer and die, predictably and preventably, because of how the world is structured.
 
-The concept was developed by Norwegian sociologist [Johan Galtung](https://en.wikipedia.org/wiki/Structural_violence) in 1969, who defined it as the gap between what is possible and what is actual - when the actual conditions of people's lives are worse than they could be, given available resources, the difference is structural violence. A child who dies of a preventable disease in a country that can afford vaccines has been killed - not by a person, but by a structure. A worker whose life expectancy is twenty years shorter than someone in a wealthier postcode has been harmed - not by an event, but by an arrangement.
+The concept was developed by Norwegian sociologist [Johan Galtung](https://en.wikipedia.org/wiki/Structural_violence) in 1969, who defined it as the gap between what is possible and what is actual - when the actual conditions of people's lives are worse than they could be, given available resources, the difference is structural violence. A child who dies of a preventable disease in a country that can afford vaccines has been killed - not by a person, but by a structure. A worker whose life expectancy is twenty years shorter than someone in a wealthier postcode has been harmed - not by an event, but by an arrangement. The everyday experience of [alienation](/alienation/) - the sense that your work, your time, and the conditions of your life belong to someone else's plan - is often structural violence registering at the level of the individual.
 
 This is a broader definition of violence than most people are accustomed to, and that broadness is precisely the point. By limiting "violence" to direct, physical acts between individuals, we make the far larger category of structural harm invisible. And invisibility is what allows structural violence to persist: it's hard to fight what you can't see, and harder still to fight what doesn't even register as a problem.
 
@@ -34,7 +36,7 @@ This is a broader definition of violence than most people are accustomed to, and
 
 Structural violence operates through the ordinary functioning of institutions and systems that weren't necessarily designed to harm but that produce harm as a predictable byproduct. A healthcare system that ties access to employment status doesn't intend to harm unemployed people - but it does. An education system that allocates resources based on property values doesn't intend to disadvantage poor children - but it does. A justice system that imposes harsher sentences on people who can't afford legal representation doesn't intend to criminalise poverty - but it does.
 
-In each case, the harm isn't an accident or an aberration - it's a structural feature. The system produces unequal outcomes not because something went wrong but because the system is working exactly as it was designed. This is what makes structural violence so difficult to address: there's no malfunction to fix. The function itself is the problem.
+In each case, the harm isn't an accident or an aberration - it's a structural feature. The system produces unequal outcomes not because something went wrong but because the system is working exactly as it was designed. This is what makes structural violence so difficult to address: there's no malfunction to fix. The function itself is the problem. [Regulatory capture](/regulatory-capture/) is one of the cleanest demonstrations - the institutions ostensibly tasked with preventing harm end up structurally aligned with the industries that cause it, and the harm continues without anyone visibly choosing it.
 
 ### Invisibility by design
 

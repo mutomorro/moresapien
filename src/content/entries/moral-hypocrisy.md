@@ -28,6 +28,8 @@ relatedConcepts:
     note: "The fundamental attribution error judges others by their actions and yourself by your intentions - the exact asymmetry that powers moral hypocrisy."
   - slug: "rationalisation"
     note: "Rationalisation provides the internal story that explains why the standard that applies to others does not apply to you."
+  - slug: "moral-hypocrisy-judgement"
+    note: "Moral hypocrisy judgement is the social mirror of moral hypocrisy - we punish the gap between claim and behaviour more harshly than the behaviour itself."
 ---
 
 Moral hypocrisy is the tendency to hold others to moral standards that you do not apply to yourself. It is not simply hypocrisy in the everyday sense of saying one thing and doing another. It is a deeper psychological pattern in which a person genuinely believes they are moral and fair, while unconsciously operating with two different rulebooks - a strict one for other people and a generous one for themselves.
@@ -36,7 +38,7 @@ You might recognise this as the unspoken rule behind the phrase "do as I say, no
 
 ## What moral hypocrisy means in psychology
 
-The concept was explored in depth by the psychologist [C. Daniel Batson](https://en.wikipedia.org/wiki/C._Daniel_Batson), whose research demonstrated that people consistently claim to value fairness but, when given the opportunity, assign themselves favourable outcomes while maintaining the appearance of moral behaviour. Batson distinguished moral hypocrisy from moral integrity - the genuine commitment to being fair - and from moral indifference. The morally hypocritical person cares about appearing moral. They just do not care as much about being moral.
+The concept was explored in depth by the psychologist [C. Daniel Batson](https://en.wikipedia.org/wiki/C._Daniel_Batson), whose research demonstrated that people consistently claim to value fairness but, when given the opportunity, assign themselves favourable outcomes while maintaining the appearance of moral behaviour. Batson distinguished moral hypocrisy from moral integrity - the genuine commitment to being fair - and from moral indifference. The morally hypocritical person cares about appearing moral. They just do not care as much about being moral. The social punishment that follows this pattern - [moral hypocrisy judgement](/moral-hypocrisy-judgement/) - explains why public moralists generate so much more anger when they slip than people who never made the claim in the first place.
 
 ### The two-rulebook problem
 

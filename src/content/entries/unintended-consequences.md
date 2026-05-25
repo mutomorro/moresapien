@@ -18,6 +18,8 @@ relatedConcepts:
     note: "The less you understand a complex system, the more confident you are that your intervention will work as planned."
   - slug: "tragedy-of-the-commons"
     note: "Policies designed to solve commons problems often produce their own unintended consequences."
+  - slug: "chestertons-fence"
+    note: "Chesterton's fence is the discipline that prevents unintended consequences - it asks why something exists before getting rid of it."
 ---
 
 ## What unintended consequences means
@@ -26,7 +28,7 @@ Unintended consequences are outcomes of an action that were not foreseen or inte
 
 The concept is sometimes called the "law of unintended consequences," though calling it a law overstates the case. It's more of a pattern - one that shows up with such regularity across history, policy, and everyday life that ignoring it is a form of wilful blindness. The sociologist [Robert K. Merton](https://en.wikipedia.org/wiki/Robert_K._Merton) formalised the concept in 1936, identifying five reasons why actions produce unexpected results: ignorance, error, short-term thinking, the way values can override analysis, and what he called the "self-defeating prediction" - when the very act of making a prediction changes the outcome.
 
-The lesson isn't that action is pointless. It's that complex systems don't respond to interventions the way simple ones do. The question isn't just "will this solve the problem?" but "what else will this change?"
+The lesson isn't that action is pointless. It's that complex systems don't respond to interventions the way simple ones do. The question isn't just "will this solve the problem?" but "what else will this change?" [Chesterton's fence](/chestertons-fence/) is the practical discipline that follows from this: before removing or replacing something whose purpose isn't obvious, take the trouble to find out why it was there to begin with.
 
 ## How unintended consequences arise
 

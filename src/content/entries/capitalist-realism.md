@@ -89,7 +89,7 @@ Capitalist realism doesn't operate through explicit argument. It operates throug
 
 **Technology** promises to disrupt everything except the underlying economic logic. Every new platform, every innovation, every "revolution" operates within the same growth-extraction-profit framework. The tools change. The operating system never does.
 
-**Everyday language** embeds market assumptions so deeply that they feel like descriptions of reality rather than one particular way of organising it. Time is money. Attention is currency. People have value, and that value can go up or down. These metaphors aren't neutral - they're the vocabulary of a specific system that has become so dominant it sounds like common sense.
+**Everyday language** embeds market assumptions so deeply that they feel like descriptions of reality rather than one particular way of organising it. Time is money. Attention is currency. People have value, and that value can go up or down. These metaphors aren't neutral - they're the vocabulary of a specific system that has become so dominant it sounds like common sense. The accumulated effect is a quiet [alienation](/alienation/) - the sense that the life you're living doesn't quite belong to you, even though you cannot picture an alternative.
 
 This is what connects capitalist realism to [cultural hegemony](/cultural-hegemony/) - it's the current, dominant form of hegemony in market-driven societies. Gramsci described how the ruling class's ideas become everyone's "common sense." Fisher showed what that looks like in the 21st century: a world where the market isn't just one way of organising life, but the only way that feels real.
 

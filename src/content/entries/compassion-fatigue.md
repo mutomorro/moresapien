@@ -27,11 +27,13 @@ relatedConcepts:
     note: "When millions see the same crisis, each person feels less personally responsible - and compassion fatigue makes it easier to let that feeling win."
   - slug: "framing-effect"
     note: "How suffering is presented to us - statistics vs. individual stories - dramatically affects whether compassion fatigue takes hold."
+  - slug: "weaponised-hopelessness"
+    note: "Compassion fatigue is the natural exhaustion weaponised hopelessness deliberately accelerates."
 ---
 
 Compassion fatigue is the gradual decline in your ability to empathise with others' suffering after prolonged or repeated exposure to it. It's the feeling of emotional numbness that sets in when you've seen too many distressing stories, absorbed too much pain, or tried to care about too many crises at once. It doesn't mean you've become a bad person. It means your brain has reached a limit that evolution never anticipated.
 
-The term was originally used in clinical settings to describe what happened to nurses, therapists, and social workers who spent years absorbing their patients' trauma. But compassion fatigue has broken out of the professional context entirely. In a world where everyone carries a screen that delivers a continuous stream of global suffering, it has become a universal experience.
+The term was originally used in clinical settings to describe what happened to nurses, therapists, and social workers who spent years absorbing their patients' trauma. But compassion fatigue has broken out of the professional context entirely. In a world where everyone carries a screen that delivers a continuous stream of global suffering, it has become a universal experience. It is also one of the natural exhaustion responses that [weaponised hopelessness](/weaponised-hopelessness/) deliberately accelerates - the more relentless the stream of crises, the easier it is to mistake exhaustion for clear-eyed realism.
 
 ## What Compassion Fatigue Really Means
 

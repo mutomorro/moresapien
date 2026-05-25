@@ -28,11 +28,13 @@ relatedConcepts:
     note: "People look to their in-group for cues about what to believe and how to behave"
   - slug: "confirmation-bias"
     note: "You seek evidence that your group is right and the other group is wrong"
+  - slug: "competitive-victimhood"
+    note: "Competitive victimhood is one of the strongest expressions of in-group/out-group bias - our pain feels real, theirs feels exaggerated, because of who's feeling it."
 ---
 
 In-group/out-group bias is the tendency to treat people more favourably when they belong to a group you identify with, and less favourably when they do not. It shapes how you allocate trust, interpret behaviour, distribute resources, and assign blame. People in your group get the benefit of the doubt. People outside it do not.
 
-This is one of the oldest and most deeply rooted patterns in human psychology. It predates politics, religion, and nationality. Decades of research in social psychology - beginning with Henri Tajfel's [minimal group experiments](https://en.wikipedia.org/wiki/Minimal_group_paradigm) in the 1970s - have shown that in-group/out-group bias does not require meaningful differences between groups. Even arbitrary distinctions - being assigned to "Team A" or "Team B" by a coin toss - are enough to trigger preferential treatment of in-group members and suspicion toward out-group members.
+This is one of the oldest and most deeply rooted patterns in human psychology. It predates politics, religion, and nationality. Decades of research in social psychology - beginning with Henri Tajfel's [minimal group experiments](https://en.wikipedia.org/wiki/Minimal_group_paradigm) in the 1970s - have shown that in-group/out-group bias does not require meaningful differences between groups. Even arbitrary distinctions - being assigned to "Team A" or "Team B" by a coin toss - are enough to trigger preferential treatment of in-group members and suspicion toward out-group members. The bias also has a moral dimension that surfaces in [competitive victimhood](/competitive-victimhood/) - our group's suffering registers as real and weighty, while equivalent suffering on the other side is quietly discounted.
 
 ## How in-group/out-group bias works
 
@@ -42,7 +44,7 @@ The bias operates through two complementary mechanisms. In-group favouritism mea
 
 Group identity served a survival function for most of human history. Cooperating with members of your group and being cautious around outsiders was a reasonable strategy when resources were scarce and strangers might represent a genuine threat. The brain evolved to make these distinctions quickly, automatically, and below conscious awareness.
 
-The problem is that this ancient sorting mechanism now operates in a world where the "groups" are often arbitrary, fluid, and socially constructed. Political affiliations, sports teams, musical preferences, generational labels, dietary choices - the brain treats all of these as meaningful group boundaries and applies the same preferential logic that once helped manage survival-critical alliances.
+The problem is that this ancient sorting mechanism now operates in a world where the "groups" are often arbitrary, fluid, and socially constructed. Political affiliations, sports teams, musical preferences, generational labels, dietary choices - the brain treats all of these as meaningful group boundaries and applies the same preferential logic that once helped manage survival-critical alliances. The cognitive machinery that does the quiet sorting is what researchers call [implicit association](/implicit-association/) - automatic links between categories and evaluations that operate well below the threshold of stated belief.
 
 ### How thin the line can be
 

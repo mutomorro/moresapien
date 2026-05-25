@@ -18,6 +18,8 @@ relatedConcepts:
     note: "The spectacle runs on social proof - we look to the images others project to determine what's valuable, desirable, and real."
   - slug: "normalisation"
     note: "The spectacle normalises the mediation of experience until living through representations feels natural rather than strange."
+  - slug: "the-culture-industry"
+    note: "The spectacle is what the culture industry produces - a society organised around images, where consumption stands in for participation."
 ---
 
 ## What the spectacle means
@@ -34,7 +36,7 @@ Debord was writing before the internet, before social media, before smartphones 
 
 The spectacle operates through a gradual shift in what counts as real. When you attend a concert but spend most of it filming on your phone, something has changed about the relationship between the experience and its documentation. The recording isn't a supplement to the experience - it's competing with it, and increasingly winning.
 
-This isn't a failure of individual willpower. It's a structural feature of a culture that has taught us to value the representable over the lived. [Social proof](/social-proof/) plays a central role: if everyone around you is filming, not filming feels like not participating. The spectacle doesn't need to be imposed - it reproduces itself through the pressure to be seen experiencing what everyone else is experiencing.
+This isn't a failure of individual willpower. It's a structural feature of a culture that has taught us to value the representable over the lived. [Social proof](/social-proof/) plays a central role: if everyone around you is filming, not filming feels like not participating. The spectacle doesn't need to be imposed - it reproduces itself through the pressure to be seen experiencing what everyone else is experiencing. The pipeline that produces the content people scroll, share, and perform is what Adorno and Horkheimer named [the culture industry](/the-culture-industry/) - mass entertainment organised around standardisation and easy consumption, supplying the raw material the spectacle then circulates.
 
 The same shift applies to how we understand world events. Most people's experience of political crises, natural disasters, and cultural moments is entirely mediated - experienced through news coverage, social media feeds, and curated content. This mediation isn't neutral. It shapes what we think happened, how we feel about it, and what we believe matters. The [framing effect](/framing-effect/) operates at every level: which events become spectacles, how they're presented, and which aspects are emphasised or hidden.
 

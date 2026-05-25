@@ -27,6 +27,8 @@ relatedConcepts:
     note: "Moral licensing lets people act badly after acting well - compartmentalisation is the mechanism that prevents the two from being weighed together."
   - slug: "motivated-reasoning"
     note: "Motivated reasoning operates within each compartment, ensuring that the beliefs inside it feel internally consistent."
+  - slug: "reaction-formation"
+    note: "Compartmentalisation keeps an unwanted feeling out of view; reaction formation goes further and replaces it with its public opposite."
 ---
 
 Compartmentalisation is the psychological defence mechanism in which a person separates conflicting thoughts, beliefs, values, or aspects of their identity into isolated mental compartments, preventing them from coming into contact with each other. It is the mind's way of living with contradiction without feeling the strain.
@@ -35,7 +37,7 @@ You might recognise it in the politician who campaigns on family values while co
 
 ## What compartmentalisation means in psychology
 
-As a defence mechanism, compartmentalisation was described within the broader psychoanalytic tradition following Sigmund Freud's work on how the mind manages anxiety. It belongs to a family of defences - alongside denial, rationalisation, and [psychological projection](/psychological-projection/) - that protect the ego from the discomfort of facing inconvenient truths.
+As a defence mechanism, compartmentalisation was described within the broader psychoanalytic tradition following Sigmund Freud's work on how the mind manages anxiety. It belongs to a family of defences - alongside denial, rationalisation, [psychological projection](/psychological-projection/), and [reaction formation](/reaction-formation/) - that protect the ego from the discomfort of facing inconvenient truths.
 
 ### How compartmentalisation avoids cognitive dissonance
 

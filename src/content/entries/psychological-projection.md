@@ -27,6 +27,8 @@ relatedConcepts:
     note: "Both involve misjudging the source of behaviour, but projection is about your own traits being misattributed to others."
   - slug: "naive-realism"
     note: "Naive realism assumes you see the world as it is - projection distorts what you see in others to match what you cannot face in yourself."
+  - slug: "displacement"
+    note: "Projection and displacement are siblings - one attributes your feelings to someone else, the other redirects your feelings toward someone else."
 ---
 
 Psychological projection is the defence mechanism in which a person unconsciously attributes their own unacceptable thoughts, feelings, or motives to someone else. Rather than recognising an uncomfortable truth about themselves, they see it reflected in other people - as if the world were a mirror showing them everything they refuse to look at directly.
@@ -39,9 +41,9 @@ The concept of projection was first described by [Sigmund Freud](https://en.wiki
 
 ### How projection works as a defence
 
-The mechanics are straightforward. Somewhere below conscious awareness, you experience something that conflicts with your self-image. Perhaps it is jealousy, dishonesty, aggression, insecurity, or desire. Acknowledging that feeling would create [cognitive dissonance](/cognitive-dissonance/) - a painful gap between who you believe yourself to be and what you are feeling. Projection solves this problem neatly. Instead of "I am jealous," the thought becomes "They are jealous of me." Instead of "I am being dishonest," it becomes "They are the ones who can't be trusted."
+The mechanics are straightforward. Somewhere below conscious awareness, you experience something that conflicts with your self-image. Perhaps it is jealousy, dishonesty, aggression, insecurity, or desire. Acknowledging that feeling would create [cognitive dissonance](/cognitive-dissonance/) - a painful gap between who you believe yourself to be and what you are feeling. Projection solves this problem neatly. Instead of "I am jealous," the thought becomes "They are jealous of me." Instead of "I am being dishonest," it becomes "They are the ones who can't be trusted." Its close sibling is [displacement](/displacement/), which keeps the feeling as yours but redirects it onto a safer target - the same emotional bookkeeping, performed slightly differently.
 
-The relief is immediate. The threatening feeling is no longer yours. It belongs to someone else. Your self-image remains intact.
+The relief is immediate. The threatening feeling is no longer yours. It belongs to someone else. Your self-image remains intact. The mirror-image manoeuvre is [reaction formation](/reaction-formation/) - rather than externalising the feeling, the mind generates a visible, performed opposite (loud devotion, principled outrage) to keep the original impulse out of view.
 
 ### Projection versus accurate perception
 

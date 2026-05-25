@@ -28,6 +28,8 @@ relatedConcepts:
     note: "Moving the goalposts is often a way to avoid the discomfort of admitting you were wrong - each new demand buys time against the growing evidence."
   - slug: "red-herring"
     note: "Moving the goalposts can function as a diversion - the new demand redirects attention away from the fact that the original demand was satisfied."
+  - slug: "no-true-scotsman"
+    note: "No True Scotsman is moving the goalposts applied to group identity - when the evidence threatens the claim, the boundary of the group quietly relocates."
 ---
 
 Moving the goalposts is a logical fallacy in which someone changes the criteria for proof or success after those criteria have been met. Instead of acknowledging that the evidence or achievement satisfies the original standard, they introduce a new, higher standard - ensuring that the original point is never conceded.
@@ -36,7 +38,7 @@ It's one of the most frustrating experiences in an argument. You're asked to pro
 
 ## What moving the goalposts means
 
-The metaphor comes from sport. Imagine scoring a goal, only to discover that the goalposts have been quietly shifted further back while the ball was in the air. The shot was good by the original standard, but the standard has changed. No matter how well you play, you can never score.
+The metaphor comes from sport. Imagine scoring a goal, only to discover that the goalposts have been quietly shifted further back while the ball was in the air. The shot was good by the original standard, but the standard has changed. No matter how well you play, you can never score. A specific variant aimed at group identity is the [No True Scotsman](/no-true-scotsman/) fallacy - when the counterexample threatens a generalisation about a group, the definition of the group quietly relocates to exclude the troublesome case.
 
 ### The structure of the fallacy
 

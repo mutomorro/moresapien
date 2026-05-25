@@ -27,6 +27,8 @@ relatedConcepts:
     note: "Resistance to imposed change can reinforce status quo bias"
   - slug: "framing-effect"
     note: "How change is framed - as a gain or a loss - determines whether status quo bias activates"
+  - slug: "appeal-to-tradition"
+    note: "Appeal to tradition is the rhetorical form status quo bias takes when it needs to argue rather than just sit still."
 ---
 
 Status quo bias is the preference for the current state of affairs, in which any deviation from the existing baseline is perceived as a loss. It is the tendency to treat the way things are now as the default option and to require a stronger justification for change than for continuity. When the status quo bias is operating, doing nothing feels safe, neutral, and reasonable, while doing something different feels risky, effortful, and in need of justification.
@@ -37,9 +39,9 @@ The term was formalised by economists William Samuelson and Richard Zeckhauser i
 
 Status quo bias draws its power from several converging psychological forces. The most fundamental is [loss aversion](/loss-aversion/) - the well-documented finding that people experience losses roughly twice as painfully as equivalent gains. When you consider changing something, your brain naturally frames the change in terms of what you might lose rather than what you might gain. The potential downsides of action loom larger than the potential upsides, while the ongoing costs of inaction fade into the background.
 
-There is also a regret asymmetry at work. If you make a change and it goes wrong, you feel the sharp sting of active regret - you did something, and it backfired. If you stay with the status quo and things go wrong, the regret is duller and more diffuse - you didn't do anything, things just continued as they were. Most people find active regret more painful than passive regret, which means the psychological cost of a bad change feels higher than the psychological cost of a bad non-change, even when the objective outcomes are identical.
+There is also a regret asymmetry at work. If you make a change and it goes wrong, you feel the sharp sting of active regret - you did something, and it backfired. If you stay with the status quo and things go wrong, the regret is duller and more diffuse - you didn't do anything, things just continued as they were. Most people find active regret more painful than passive regret, which means the psychological cost of a bad change feels higher than the psychological cost of a bad non-change, even when the objective outcomes are identical. When status quo bias needs a rationale rather than just an instinct, it usually borrows one from the [appeal to tradition](/appeal-to-tradition/) - "we've always done it this way" is the bias in its outward-facing form.
 
-Finally, there is simple cognitive effort. Evaluating alternatives takes mental energy. The status quo is already known, already understood, and already integrated into your routines and expectations. Changing requires research, deliberation, and the discomfort of uncertainty. When you're tired, busy, or overwhelmed, defaulting to what already exists is the path of least resistance.
+Finally, there is simple cognitive effort. Evaluating alternatives takes mental energy. The status quo is already known, already understood, and already integrated into your routines and expectations. Changing requires research, deliberation, and the discomfort of uncertainty. When you're tired, busy, or overwhelmed, defaulting to what already exists is the path of least resistance. [Decision fatigue](/decision-fatigue/) is the reason this defence kicks in so much harder later in the day - the more decisions you've already made, the more attractive the existing default starts to look.
 
 ## Status quo bias in everyday life
 
@@ -47,7 +49,7 @@ Finally, there is simple cognitive effort. Evaluating alternatives takes mental 
 
 Status quo bias explains why people stay with the same bank, the same insurance provider, the same phone contract, and the same daily routines long after better alternatives become available. The switching costs feel disproportionately large, not because they are, but because the brain frames the current arrangement as a possession and any change as a potential loss.
 
-This is why default options have such enormous power. Studies on organ donation, pension enrolment, and software settings consistently show that whatever option is pre-selected becomes the one most people stick with. The default doesn't just influence the lazy or inattentive - it influences nearly everyone, because status quo bias makes the default feel like a recommendation.
+This is why default options have such enormous power. Studies on organ donation, pension enrolment, and software settings consistently show that whatever option is pre-selected becomes the one most people stick with. The default doesn't just influence the lazy or inattentive - it influences nearly everyone, because status quo bias makes the default feel like a recommendation. The closely related [omission bias](/omission-bias/) is what makes this so sticky in moral terms - harms caused by acting feel heavier than equivalent harms caused by not acting, so leaving the default in place feels safer even when it isn't.
 
 ### In organisations and workplaces
 

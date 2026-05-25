@@ -18,6 +18,8 @@ relatedConcepts:
     note: "Both are deflection tactics, but straw man distorts the original argument while whataboutism abandons it for a different one."
   - slug: "moving-the-goalposts"
     note: "Whataboutism and moving the goalposts both evade accountability, but through different mechanisms - one shifts the subject, the other shifts the standard."
+  - slug: "competitive-victimhood"
+    note: "Whataboutism is competitive victimhood deployed in real time - rather than answer the criticism, point at someone else's wound."
 ---
 
 ## What whataboutism means
@@ -36,7 +38,7 @@ The structure is consistent and recognisable: an accusation is made, and instead
 
 "Your government is imprisoning journalists." "What about your country's treatment of immigrants?" The second statement may be entirely true and deeply important. But it doesn't respond to the first. It redirects. The imprisoned journalists are still imprisoned. The original criticism stands unanswered. But the conversation has moved on, and the impression has been created that both sides are equally culpable - or that the critic is a hypocrite and therefore the criticism can be dismissed.
 
-This is what distinguishes whataboutism from a genuine comparison. A legitimate comparison says: "Let's look at both cases and understand the pattern." Whataboutism says: "You can't criticise me because you've done something bad too." The first expands understanding. The second shuts down accountability.
+This is what distinguishes whataboutism from a genuine comparison. A legitimate comparison says: "Let's look at both cases and understand the pattern." Whataboutism says: "You can't criticise me because you've done something bad too." The first expands understanding. The second shuts down accountability. At a group level, it also functions as [competitive victimhood](/competitive-victimhood/) in real time - rather than answer the criticism, the responder points at someone else's wound and treats that as a complete reply.
 
 ### Why the counter-accusation doesn't cancel the criticism
 

@@ -28,11 +28,13 @@ relatedConcepts:
     note: "Circular arguments often rely on emotional resonance to mask the fact that nothing has been proven."
   - slug: "red-herring"
     note: "Where circular reasoning loops back to the start, a red herring diverts attention away from the argument entirely."
+  - slug: "no-true-scotsman"
+    note: "No True Scotsman is circular reasoning made portable - the definition of the group is rigged to make the conclusion always come out right."
 ---
 
 Circular reasoning is a logical fallacy in which the conclusion of an argument is assumed in one of its premises. Instead of offering independent evidence, the argument loops back on itself - using the thing it's trying to prove as part of the proof. The result is an argument that sounds complete but hasn't moved forward at all.
 
-You've almost certainly encountered circular reasoning, even if you didn't have a name for it at the time. It's the friend who says a film is great because it's one of the best films ever made. It's the politician who says their policy is the right one because it's what the country needs. It feels like a reason has been given, but nothing has been explained.
+You've almost certainly encountered circular reasoning, even if you didn't have a name for it at the time. It's the friend who says a film is great because it's one of the best films ever made. It's the politician who says their policy is the right one because it's what the country needs. It feels like a reason has been given, but nothing has been explained. A particularly portable version is the [No True Scotsman](/no-true-scotsman/) fallacy - the definition of the group is rigged so that any counterexample is expelled, which makes the original claim impossible to disprove.
 
 ## What circular reasoning means
 

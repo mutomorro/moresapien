@@ -28,6 +28,8 @@ relatedConcepts:
     note: "Probabilistic thinking estimates what might happen; second-order thinking follows the chain of consequences."
   - slug: "loss-aversion"
     note: "Loss aversion distorts probability judgements by making potential losses loom larger than equivalent gains."
+  - slug: "base-rate-fallacy"
+    note: "Base rate fallacy is the single most common failure mode probabilistic thinking is trying to correct."
 ---
 
 Probabilistic thinking is the practice of estimating the likelihood of different outcomes rather than treating the future as a single fixed path. Instead of asking "what will happen?" it asks "what are the chances of each possible outcome, and how should I act given those odds?" It is one of the most practically useful mental models you can develop, because almost every important decision you make involves uncertainty.
@@ -109,6 +111,10 @@ Most of the time, low-probability events can be safely ignored. But when the con
 ### The gambler's fallacy
 
 After a coin has landed heads five times in a row, many people feel that tails is "due." It is not. Each flip is independent. Past outcomes do not change future probabilities for independent events. This error is remarkably persistent, even in people who understand the maths, because our brains are built to find patterns - even where none exist.
+
+### Ignoring the base rate
+
+The [base rate fallacy](/base-rate-fallacy/) is the single most common failure mode probabilistic thinking is designed to correct. Vivid case-by-case detail crowds out boring statistics about how common something actually is in the population - and the more striking the case, the larger the gap between the felt probability and the real one.
 
 ## Probabilistic thinking alongside other mental models
 

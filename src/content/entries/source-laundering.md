@@ -28,6 +28,8 @@ relatedConcepts:
     note: "Source laundering manufactures social proof - the claim appears widely accepted because it appears in many places."
   - slug: "bandwagon-effect"
     note: "As a laundered claim spreads, each new outlet that repeats it makes it harder for individuals to question."
+  - slug: "woozle-effect"
+    note: "Source laundering is the engine of the woozle effect - each new citation buries the absence of the original evidence a layer deeper."
 ---
 
 Source laundering is a manipulation tactic in which unreliable, unverified, or fabricated information is passed through a chain of sources - each one appearing slightly more credible than the last - until the original claim acquires an unearned appearance of legitimacy. By the time the information reaches a mainstream audience, it looks well-sourced and widely confirmed, even though no one in the chain ever verified the original claim.
@@ -36,7 +38,7 @@ The process mirrors financial money laundering, where illegally obtained money i
 
 ## How source laundering works
 
-Source laundering depends on the fact that most people - including many journalists - evaluate information based on where they found it rather than where it originally came from. A claim that appears in a reputable outlet is assumed to have been checked. A claim cited by an academic paper is assumed to have been verified. These assumptions are usually reasonable, but source laundering exploits them systematically.
+Source laundering depends on the fact that most people - including many journalists - evaluate information based on where they found it rather than where it originally came from. A claim that appears in a reputable outlet is assumed to have been checked. A claim cited by an academic paper is assumed to have been verified. These assumptions are usually reasonable, but source laundering exploits them systematically. In academic and policy writing, the same dynamic shows up as the [woozle effect](/woozle-effect/) - each new citation buries the absence of the original evidence a layer deeper, until what was once speculation reads as established consensus.
 
 ### The laundering chain
 

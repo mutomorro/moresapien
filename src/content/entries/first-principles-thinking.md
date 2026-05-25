@@ -27,11 +27,13 @@ relatedConcepts:
     note: "Both favour simplicity - Occam's Razor in explanations, first principles in reasoning."
   - slug: "cognitive-dissonance"
     note: "Returning to first principles can trigger discomfort when foundational truths clash with existing beliefs."
+  - slug: "chestertons-fence"
+    note: "Chesterton's fence is the counterweight to pure first-principles reasoning - reasoning from scratch can miss reasons that aren't immediately visible."
 ---
 
-First principles thinking is a method of problem-solving that involves breaking a challenge down to its most fundamental truths - the things you know to be true beyond reasonable doubt - and building your reasoning upward from there, rather than relying on assumptions, conventions, or what other people have done before.
+First principles thinking is a method of problem-solving that involves breaking a challenge down to its most fundamental truths - the things you know to be true beyond reasonable doubt - and building your reasoning upward from there, rather than relying on assumptions, conventions, or what other people have done before. It is one of the cleanest antidotes to [complexity bias](/complexity-bias/) - the instinct to favour elaborate explanations over simple ones - because it forces every step of the argument to justify itself from the ground up.
 
-It sounds simple. In practice, it is one of the hardest thinking disciplines to maintain, because our brains are wired to take shortcuts. Most of the time, we reason by analogy: we look at how similar problems have been solved before and borrow those solutions. That works fine for routine decisions. But when you're trying to do something genuinely new, or when the old approaches have stopped working, analogy-based thinking traps you inside existing patterns.
+It sounds simple. In practice, it is one of the hardest thinking disciplines to maintain, because our brains are wired to take shortcuts. Most of the time, we reason by analogy: we look at how similar problems have been solved before and borrow those solutions. That works fine for routine decisions. But when you're trying to do something genuinely new, or when the old approaches have stopped working, analogy-based thinking traps you inside existing patterns. The natural counterweight is [Chesterton's fence](/chestertons-fence/): before reasoning your way to a clean-slate solution, ask why the existing arrangement was put there in the first place, because some of the most important constraints aren't visible from first principles alone.
 
 ## What first principles thinking means
 

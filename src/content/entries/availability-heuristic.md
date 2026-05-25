@@ -18,6 +18,8 @@ relatedConcepts:
     note: "We're more likely to remember examples that confirm what we already believe, making those beliefs feel more justified than they are."
   - slug: "normalcy-bias"
     note: "The availability heuristic and normalcy bias pull in opposite directions - one overestimates vivid risks, the other underestimates unfamiliar ones."
+  - slug: "base-rate-fallacy"
+    note: "The availability heuristic is the engine behind the base rate fallacy - vivid examples crowd out boring statistics about how common something actually is."
 ---
 
 ## What the availability heuristic means
@@ -66,7 +68,7 @@ Social media has supercharged the availability heuristic by creating an environm
 
 ### How algorithms exploit the availability heuristic
 
-When a platform's algorithm promotes content that generates strong reactions, it systematically increases the availability of extreme, unusual, and alarming events while reducing the visibility of ordinary, undramatic ones. Over time, this creates a worldview shaped not by what happens most but by what triggers the strongest emotional response.
+When a platform's algorithm promotes content that generates strong reactions, it systematically increases the availability of extreme, unusual, and alarming events while reducing the visibility of ordinary, undramatic ones. Over time, this creates a worldview shaped not by what happens most but by what triggers the strongest emotional response. [Decision fatigue](/decision-fatigue/) compounds the effect - the more drained your attention is, the more you rely on whatever example happens to be most available rather than working through the evidence.
 
 This connects to [compassion fatigue](/compassion-fatigue/) - the emotional exhaustion that comes from constant exposure to distressing content. The availability heuristic tells you that terrible things are everywhere; compassion fatigue is the psychological cost of believing it.
 
@@ -74,7 +76,7 @@ It also feeds [confirmation bias](/confirmation-bias/). If you already believe t
 
 ## The availability heuristic versus actual probability
 
-The core insight of the availability heuristic is that ease of recall is not the same as frequency. Something can be easy to remember because it happened once, dramatically, and was widely discussed - not because it happens often. Conversely, something can be genuinely common but almost invisible because it's undramatic and unreported.
+The core insight of the availability heuristic is that ease of recall is not the same as frequency. Something can be easy to remember because it happened once, dramatically, and was widely discussed - not because it happens often. Conversely, something can be genuinely common but almost invisible because it's undramatic and unreported. The closely related [base rate fallacy](/base-rate-fallacy/) is what happens when this confusion meets statistics directly - vivid case studies override boring background frequencies, and estimates end up wildly distorted.
 
 [Probabilistic thinking](/probabilistic-thinking/) is the direct antidote. Rather than asking "can I think of an example?", probabilistic thinking asks "what does the evidence say about how often this happens?" This is harder and slower than relying on availability, but it produces more accurate estimates of risk, frequency, and likelihood.
 

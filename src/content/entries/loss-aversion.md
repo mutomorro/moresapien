@@ -18,6 +18,8 @@ relatedConcepts:
     note: "Accepting a loss creates dissonance with our self-image as good decision-makers, which makes the loss feel even worse."
   - slug: "negativity-bias"
     note: "Loss aversion and negativity bias share a root - the brain gives more weight to negative experiences than positive ones."
+  - slug: "arrival-fallacy"
+    note: "Arrival fallacy is loss aversion in reverse - the imagined gain at the finish line evaporates faster than the felt loss of the effort."
 ---
 
 ## What loss aversion means
@@ -36,13 +38,13 @@ Loss aversion operates constantly and mostly invisibly, influencing decisions fr
 
 The endowment effect - a close relative of loss aversion - describes the tendency to value things more highly simply because you own them. Studies consistently show that people demand a higher price to sell an object they own than they would pay to buy the same object if they didn't own it. The mug on your desk isn't objectively worth more because it's yours, but it feels worth more because selling it would mean losing it.
 
-This extends well beyond mugs. People stay in homes that no longer suit them, hold investments that are underperforming, keep subscriptions they don't use, and remain in jobs that make them unhappy - partly because the prospect of losing the familiar feels more threatening than the prospect of gaining something better. The [sunk cost fallacy](/sunk-cost-fallacy/) is intimately connected: the reluctance to walk away from a failing investment is amplified by loss aversion, because walking away means accepting a definitive loss.
+This extends well beyond mugs. People stay in homes that no longer suit them, hold investments that are underperforming, keep subscriptions they don't use, and remain in jobs that make them unhappy - partly because the prospect of losing the familiar feels more threatening than the prospect of gaining something better. The [sunk cost fallacy](/sunk-cost-fallacy/) is intimately connected: the reluctance to walk away from a failing investment is amplified by loss aversion, because walking away means accepting a definitive loss. And on the other side of the same coin, the [arrival fallacy](/arrival-fallacy/) ensures that even the gains we do manage to capture rarely deliver the relief we were promised - the felt loss of the journey ends up heavier than the felt gain at the destination.
 
 ### Why loss aversion makes us risk-seeking
 
 Counterintuitively, loss aversion can make people more reckless rather than more careful. When faced with a certain loss, people will often gamble on a riskier option that offers a chance of avoiding the loss entirely - even when the expected value of the gamble is worse.
 
-This is Kahneman and Tversky's key insight. Given a choice between definitely losing £500 or a 50% chance of losing £1,000, many people choose the gamble - because the certain loss is psychologically intolerable, even though the expected outcomes are mathematically identical. Loss aversion doesn't make you cautious. It makes you desperate to avoid the concrete experience of losing.
+This is Kahneman and Tversky's key insight. Given a choice between definitely losing £500 or a 50% chance of losing £1,000, many people choose the gamble - because the certain loss is psychologically intolerable, even though the expected outcomes are mathematically identical. Loss aversion doesn't make you cautious. It makes you desperate to avoid the concrete experience of losing. The same asymmetry shows up as [omission bias](/omission-bias/) on the moral side: a loss you caused by acting feels worse than an identical loss you allowed by not acting.
 
 ## Loss aversion in marketing and pricing
 

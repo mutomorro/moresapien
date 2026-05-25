@@ -28,11 +28,13 @@ relatedConcepts:
     note: "Witnessing innocent suffering creates discomfort that the just-world fallacy resolves - by redefining the sufferer as not truly innocent."
   - slug: "halo-effect"
     note: "Success creates a halo that makes people seem more deserving, reinforcing the just-world belief."
+  - slug: "state-of-nature-assumption"
+    note: "The just-world fallacy and the state-of-nature assumption are siblings - one assumes the world is fair, the other assumes it was fair once and would be again without intervention."
 ---
 
 The just-world fallacy is the belief that the world is fundamentally fair - that people generally get what they deserve, and deserve what they get. Good things happen to good people. Bad things happen to bad people. Success is earned and suffering is, in some way, a consequence of the sufferer's own actions or character.
 
-It's a comforting belief, and a deeply embedded one. But it's a fallacy because the world doesn't work that way. Luck, circumstance, timing, geography, and structural factors play enormous roles in determining outcomes. The just-world fallacy doesn't describe reality. It describes a story we tell ourselves to make reality feel more manageable.
+It's a comforting belief, and a deeply embedded one. But it's a fallacy because the world doesn't work that way. Luck, circumstance, timing, geography, and structural factors play enormous roles in determining outcomes. The just-world fallacy doesn't describe reality. It describes a story we tell ourselves to make reality feel more manageable. A close cousin is the [state of nature assumption](/state-of-nature-assumption/) - the conviction that humans, left alone, would arrange themselves into fairness without effort. Both beliefs are seductive for the same reason: they let us treat existing injustices as aberrations rather than features.
 
 ## What the just-world fallacy means
 

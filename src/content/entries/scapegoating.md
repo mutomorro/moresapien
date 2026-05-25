@@ -18,6 +18,8 @@ relatedConcepts:
     note: "Scapegoating relies on the tendency to blame individuals or groups for outcomes that are shaped by systems and circumstances."
   - slug: "loaded-language"
     note: "Scapegoating is almost always accompanied by loaded language - emotionally charged words that dehumanise the target and justify the blame."
+  - slug: "competitive-victimhood"
+    note: "Competitive victimhood and scapegoating are mirror images - both refuse to acknowledge harm done by one's own group by relocating moral weight onto another."
 ---
 
 ## What scapegoating means
@@ -26,7 +28,7 @@ Scapegoating is the act of blaming a particular person, group, or entity for pro
 
 The term itself comes from an ancient Hebrew ritual described in the Book of Leviticus, in which the sins of the community were symbolically transferred onto a goat, which was then sent into the wilderness. The community was cleansed; the goat carried the blame. The metaphor has proved remarkably durable because the psychological mechanism it describes has never gone away.
 
-At its core, scapegoating is a form of displacement. Rather than confronting the true complexity of a problem - which might implicate systems, institutions, or the people doing the blaming - the focus is narrowed to a single target. The target is nearly always someone with less power, less social standing, or less ability to defend themselves.
+At its core, scapegoating is a form of [displacement](/displacement/). Rather than confronting the true complexity of a problem - which might implicate systems, institutions, or the people doing the blaming - the focus is narrowed to a single target. The target is nearly always someone with less power, less social standing, or less ability to defend themselves.
 
 ## How scapegoating works as a rhetorical strategy
 
@@ -36,7 +38,7 @@ Scapegoating follows a consistent pattern, whether it appears in politics, workp
 
 Complex problems are uncomfortable. Economic decline, social fragmentation, institutional failure - these things have multiple causes, many of them structural and slow-moving. They resist easy solutions because they don't have easy explanations.
 
-Scapegoating resolves that discomfort by offering a simple story: the problem exists because of *them*. This is deeply satisfying psychologically because it provides both an explanation and a target. Instead of feeling helpless in the face of complexity, people feel they understand the problem and know who to blame.
+Scapegoating resolves that discomfort by offering a simple story: the problem exists because of *them*. This is deeply satisfying psychologically because it provides both an explanation and a target. Instead of feeling helpless in the face of complexity, people feel they understand the problem and know who to blame. Once a scapegoat has been chosen, [competitive victimhood](/competitive-victimhood/) often follows close behind - the in-group reframes itself as the real victim, which makes the punishment of the scapegoat feel like overdue justice rather than aggression.
 
 This is the [fundamental attribution error](/fundamental-attribution-error/) operating at a collective level. Just as individuals tend to blame other people's behaviour on their character rather than their circumstances, groups tend to blame societal problems on other groups rather than on structural conditions.
 

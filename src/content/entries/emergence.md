@@ -18,6 +18,8 @@ relatedConcepts:
     note: "Trends and movements can emerge from individual bandwagon decisions cascading through a population."
   - slug: "tragedy-of-the-commons"
     note: "The tragedy of the commons is an emergent outcome - collective destruction arising from individually rational choices."
+  - slug: "anthropocentrism"
+    note: "Anthropocentrism is the lens that struggles most with emergence - because it expects systems to have a human at the centre planning them."
 ---
 
 ## What emergence means
@@ -26,7 +28,7 @@ Emergence is what happens when simple components following simple rules produce 
 
 The key insight is that emergent properties belong to the system, not to its parts. You cannot find "wetness" in a single water molecule. You cannot find "consciousness" in a single brain cell. You cannot find a "traffic jam" in a single car. These properties only exist at the level of the whole - they appear when the parts interact, and they vanish when you pull the parts apart to study them individually.
 
-This matters because humans are deeply wired to look for intentional agents behind complex patterns. When we see something that looks organised, we instinctively ask: who planned this? But in many of the most important systems we live within - economies, languages, cultures, social movements - nobody planned anything. The order emerged from the interaction of countless individual choices, each one small and reasonable on its own.
+This matters because humans are deeply wired to look for intentional agents behind complex patterns. When we see something that looks organised, we instinctively ask: who planned this? But in many of the most important systems we live within - economies, languages, cultures, social movements - nobody planned anything. The order emerged from the interaction of countless individual choices, each one small and reasonable on its own. The instinct to demand a planner is one of the costs of [anthropocentrism](/anthropocentrism/) - we struggle to credit a system that has no human at the centre running it.
 
 The philosopher [C.D. Broad](https://en.wikipedia.org/wiki/C._D._Broad) was among the first to formalise this idea in the 1920s, arguing that certain properties of complex systems are genuinely novel - they cannot be predicted, even in principle, from knowledge of the individual parts alone. That insight remains one of the most important in systems thinking.
 

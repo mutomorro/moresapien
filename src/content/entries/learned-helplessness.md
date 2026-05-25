@@ -26,6 +26,8 @@ relatedConcepts:
     note: "How a setback is framed - as a learning experience or as proof of inability - determines whether helplessness takes hold."
   - slug: "motivated-reasoning"
     note: "Believing 'I can't change this' can become motivated - it protects against the pain of trying and failing again."
+  - slug: "weaponised-hopelessness"
+    note: "Weaponised hopelessness is learned helplessness imposed from outside - the despair is real, but the powerlessness has been cultivated rather than experienced."
 ---
 
 Learned helplessness is a psychological state in which a person stops trying to improve their situation because past experience has taught them that their actions don't make a difference. It's the mental resignation that sets in after repeated exposure to uncontrollable negative events - a deep, often unconscious belief that effort is pointless because the outcome is already determined.
@@ -38,7 +40,7 @@ The research behind learned helplessness began with experiments conducted by psy
 
 ### From animal studies to human behaviour
 
-Seligman quickly recognised that the same pattern appeared in human behaviour. People who experienced prolonged periods of uncontrollable stress - difficult home environments, abusive relationships, unrewarding work - often developed the same passive resignation. They stopped applying for jobs. They stopped leaving destructive relationships. They stopped raising their hand in class. Not because the situation was hopeless, but because they had been conditioned to believe it was.
+Seligman quickly recognised that the same pattern appeared in human behaviour. People who experienced prolonged periods of uncontrollable stress - difficult home environments, abusive relationships, unrewarding work - often developed the same passive resignation. They stopped applying for jobs. They stopped leaving destructive relationships. They stopped raising their hand in class. Not because the situation was hopeless, but because they had been conditioned to believe it was. A close political cousin is [weaponised hopelessness](/weaponised-hopelessness/) - the same psychological state, but deliberately cultivated from outside through media saturation, false equivalence, and "nothing can be done" messaging.
 
 This doesn't mean people in these situations are weak or lack willpower. Learned helplessness is a predictable response to a specific set of conditions. The brain learns patterns, and "my actions don't produce results" is a pattern that, once learned, is remarkably persistent.
 

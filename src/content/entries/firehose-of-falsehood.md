@@ -28,15 +28,17 @@ relatedConcepts:
     note: "The firehose works partly because people will latch onto the claims that confirm what they already believe."
   - slug: "availability-heuristic"
     note: "The sheer volume of repeated claims makes them feel more plausible through the availability heuristic."
+  - slug: "repetition-as-persuasion"
+    note: "A firehose of falsehood is repetition as persuasion turned up to industrial scale - the volume itself becomes the argument."
 ---
 
 The firehose of falsehood is a propaganda and manipulation technique in which a source produces a rapid, continuous, high-volume stream of disinformation with no regard for consistency or truth. Rather than crafting a single convincing lie, the firehose strategy floods the information environment with so many claims - many of them contradictory - that audiences become overwhelmed, confused, and ultimately disengaged from the idea that truth can be reliably established.
 
-The term was popularised by a [2016 RAND Corporation research paper](https://www.rand.org/pubs/perspectives/PE198.html) analysing modern propaganda techniques. The researchers identified four distinctive features: the firehose is high volume, multichannel, rapid and continuous, and makes no commitment to consistency. These four characteristics distinguish it from traditional propaganda, which typically works by repeating a single carefully crafted message.
+The term was popularised by a [2016 RAND Corporation research paper](https://www.rand.org/pubs/perspectives/PE198.html) analysing modern propaganda techniques. The researchers identified four distinctive features: the firehose is high volume, multichannel, rapid and continuous, and makes no commitment to consistency. These four characteristics distinguish it from traditional propaganda, which typically works by repeating a single carefully crafted message. In effect, it is [repetition as persuasion](/repetition-as-persuasion/) industrialised - the volume itself becomes the argument, regardless of which specific claims travel inside it.
 
 ## How the firehose of falsehood works
 
-Traditional propaganda tries to convince you of something specific. The firehose of falsehood has a different goal: it tries to convince you that nothing can be known for certain. The mechanism is not persuasion - it is exhaustion.
+Traditional propaganda tries to convince you of something specific. The firehose of falsehood has a different goal: it tries to convince you that nothing can be known for certain. The mechanism is not persuasion - it is exhaustion. This is one of the most effective delivery systems for [weaponised hopelessness](/weaponised-hopelessness/) - once everything feels equally unverifiable, "nothing can be done" stops sounding cynical and starts sounding wise.
 
 ### Volume as a weapon
 

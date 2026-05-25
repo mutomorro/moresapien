@@ -18,6 +18,8 @@ relatedConcepts:
     note: "Motivated reasoning provides the intellectual scaffolding for effort justification - we selectively find evidence that the hard experience was worthwhile."
   - slug: "moral-licensing"
     note: "Having endured difficulty can feel like moral credit - licensing us to dismiss those who found an easier path."
+  - slug: "arrival-fallacy"
+    note: "Arrival fallacy is what tests effort justification - if the destination feels flat, the brain has to work overtime to keep the journey feeling worth it."
 furtherReading:
   - title: "Effort justification - Wikipedia"
     url: "https://en.wikipedia.org/wiki/Effort_justification"
@@ -73,14 +75,14 @@ This is why people stay in bad relationships, persist with failing businesses, a
 
 Some of the most powerful examples of effort justification play out in groups. Fraternities, military units, elite sports teams, and professional associations often use demanding initiations - hazing, boot camps, qualifying exams - that serve no practical purpose beyond creating shared suffering. The research consistently shows that the more severe the initiation, the more positively members evaluate the group afterwards.
 
-This isn't because harsh initiations build better organisations. It's because people who voluntarily endure difficulty need to believe it was for something. The group becomes more valuable in their minds precisely because of what they endured to join it. This mechanism helps explain why abusive organisational cultures can be so self-sustaining: the people inside them have the strongest psychological incentive to defend them.
+This isn't because harsh initiations build better organisations. It's because people who voluntarily endure difficulty need to believe it was for something. The group becomes more valuable in their minds precisely because of what they endured to join it. This mechanism helps explain why abusive organisational cultures can be so self-sustaining: the people inside them have the strongest psychological incentive to defend them. Those who suffered most under the old system are often the least willing to change it - not out of cruelty, but because reform would quietly invalidate the meaning they've attached to their own experience. This can shade into [moral licensing](/moral-licensing/) - having endured the hard path becomes a kind of moral credit that justifies dismissing those who found an easier one.
 
 ## Why effort justification matters for critical thinking
 
 Effort justification is worth understanding because it operates beneath conscious awareness and distorts our ability to make honest assessments. When we evaluate whether a course was worth taking, a job was worth enduring, or a relationship was worth saving, we're rarely working from clean data. The effort itself has already contaminated the evaluation.
 
-This connects to [motivated reasoning](/motivated-reasoning/) - the broader tendency to use our intelligence not to seek truth but to defend conclusions we've already reached. Effort justification provides both the motive (I need this to have been worth it) and the raw material (the difficulty itself becomes the evidence of value).
+This connects to [motivated reasoning](/motivated-reasoning/) - the broader tendency to use our intelligence not to seek truth but to defend conclusions we've already reached. Effort justification provides both the motive (I need this to have been worth it) and the raw material (the difficulty itself becomes the evidence of value). It also pairs with the [arrival fallacy](/arrival-fallacy/): when the destination turns out to feel oddly flat, effort justification is the mechanism that quietly inflates the journey's value to make up the difference.
 
 The practical antidote isn't to dismiss effort or pretend difficulty doesn't matter. Some things are valuable precisely because they're hard. The question is whether you can honestly separate the two: was this valuable AND hard, or are you calling it valuable BECAUSE it was hard? That distinction is where effort justification hides.
 
-One useful test is to imagine a friend describing the same experience. If they'd endured what you endured and got the outcome you got, would you tell them it was worth it? Or would you quietly think they'd wasted their time? The gap between those two answers is a measure of how much effort justification is shaping your judgement.
+One useful test is to imagine a friend describing the same experience. If they'd endured what you endured and got the outcome you got, would you tell them it was worth it? Or would you quietly think they'd wasted their time? The gap between those two answers is a measure of how much effort justification is shaping your judgement. The wider the gap, the more work the bias is doing - and the more reason you have to look again at what the experience was really worth.

@@ -27,6 +27,8 @@ relatedConcepts:
     note: "Motivated reasoning is the thinking process that supports denial - seeking only the evidence that confirms what you want to believe."
   - slug: "confirmation-bias"
     note: "Confirmation bias helps sustain denial by filtering out contradictory information."
+  - slug: "displacement"
+    note: "Displacement depends on denial - to redirect the emotion onto a substitute target, you have to refuse to see the real one."
 ---
 
 Denial is the psychological defence mechanism in which a person refuses to accept reality, rejecting facts, evidence, or experiences that feel too threatening to acknowledge. It is one of the most fundamental ways the mind protects itself from overwhelming distress - and one of the most common barriers to growth, change, and honest conversation.
@@ -39,13 +41,13 @@ Denial was first described as a defence mechanism by Sigmund Freud and later ela
 
 ### How denial differs from disagreement
 
-It is important to distinguish denial from ordinary disagreement. Two people can look at the same evidence and reach different conclusions in good faith. That is not denial. Denial involves an emotional need to reject reality, not an intellectual assessment of the facts. If someone cannot engage with the evidence at all - if they shut down, change the subject, or become hostile when the topic arises - that is a sign that denial, rather than disagreement, may be at work.
+It is important to distinguish denial from ordinary disagreement. Two people can look at the same evidence and reach different conclusions in good faith. That is not denial. Denial involves an emotional need to reject reality, not an intellectual assessment of the facts. If someone cannot engage with the evidence at all - if they shut down, change the subject, or become hostile when the topic arises - that is a sign that denial, rather than disagreement, may be at work. Denial also tends to travel with [displacement](/displacement/) - refusing to see the real source of a feeling is what allows the feeling to be redirected onto a safer target without anyone noticing.
 
 ### The role of denial in grief
 
 One of the most widely recognised forms of denial appears in the grieving process. The psychiatrist Elisabeth Kübler-Ross identified denial as the first of [five stages of grief](https://en.wikipedia.org/wiki/K%C3%BCbler-Ross_model), describing the initial numbness that follows a devastating loss. In this context, denial serves a protective purpose - it gives the mind time to absorb what has happened before the full weight of it lands. This kind of denial is temporary and, in many cases, healthy.
 
-The trouble starts when denial becomes a permanent residence rather than a temporary shelter.
+The trouble starts when denial becomes a permanent residence rather than a temporary shelter. Some of the most striking cases shade into [reaction formation](/reaction-formation/) - rather than simply refusing to see the unwanted feeling, the mind produces its conspicuous opposite, broadcasting devotion or principled outrage with an intensity that quietly contradicts what's actually being felt underneath.
 
 ## How denial works in everyday life
 

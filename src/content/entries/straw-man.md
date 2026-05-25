@@ -27,6 +27,8 @@ relatedConcepts:
   - slug: "ad-hominem"
     note: "Both avoid engaging with the actual argument - straw man distorts it, ad hominem ignores it entirely"
   - slug: "gish-gallop"
+  - slug: "loaded-question"
+    note: "Straw man arguments often arrive as loaded questions - the misrepresentation is folded into the question's structure so the target has to accept it just to respond."
 furtherReading:
   - title: "Straw man - Wikipedia"
     url: "https://en.wikipedia.org/wiki/Straw_man"
@@ -38,7 +40,7 @@ A straw man argument is when someone distorts another person's position into som
 
 The move has three steps. First, someone makes a genuine argument. Second, their opponent quietly replaces it with a different, flimsier version. Third, the opponent attacks the flimsier version and claims victory. The audience often doesn't notice the substitution, because the response has the shape and rhythm of a real rebuttal. It sounds like engagement. But it isn't - it's a performance of engagement directed at something nobody said.
 
-What makes the straw man so effective is that it works on both the audience and the person using it. A skilled debater might deploy it deliberately. But many people create straw men without realising it, because they've genuinely misunderstood the other side - or because they've only encountered a caricatured version of the position in the first place.
+What makes the straw man so effective is that it works on both the audience and the person using it. A skilled debater might deploy it deliberately. But many people create straw men without realising it, because they've genuinely misunderstood the other side - or because they've only encountered a caricatured version of the position in the first place. Straw man arguments often arrive packaged as a [loaded question](/loaded-question/) - the misrepresentation is folded into the question's structure, so the target has to accept the distortion just to begin answering.
 
 ## How the straw man fallacy works
 
@@ -58,7 +60,7 @@ A single phrase gets pulled from a longer argument and treated as if it were the
 
 ### Fabrication
 
-Sometimes the substitution isn't subtle at all. Someone simply invents a position their opponent never held and argues against that instead. "My opponent believes we should just let criminals walk free." Did they say that? Almost certainly not. But the fabricated version is more outrageous, more shareable, and more likely to provoke a reaction.
+Sometimes the substitution isn't subtle at all. Someone simply invents a position their opponent never held and argues against that instead. "My opponent believes we should just let criminals walk free." Did they say that? Almost certainly not. But the fabricated version is more outrageous, more shareable, and more likely to provoke a reaction. This form of the straw man is particularly common in election campaigns, where candidates routinely attribute positions to their opponents that no one has advocated, knowing that the denial rarely travels as far as the accusation.
 
 ## Straw man arguments in politics and media
 
@@ -91,5 +93,7 @@ It's also worth distinguishing the straw man from [tone policing](/tone-policing
 When you suspect someone has straw-manned your position, the most effective response is to restate your actual argument clearly and calmly. "That's not what I said. What I said was..." This forces the conversation back to the real position, and it makes the distortion visible.
 
 In a public or online setting, it helps to name the move without being combative. "I notice you're responding to a version of my argument I didn't make." This flags the tactic for onlookers without escalating the exchange into a personal conflict.
+
+It is worth noting that not every misrepresentation is a deliberate straw man. Sometimes people genuinely mishear an argument, or they've absorbed a distorted version of a position through [social proof](/social-proof/) - hearing it repeated so often in simplified form that they believe the simplification is the real thing. In those cases, a patient restatement is more productive than an accusation of bad faith.
 
 The deeper challenge is recognising when you're building a straw man yourself. We all do it - especially with positions we find frustrating or threatening. The test from psychology researcher [Julia Galef's work on scout mindset](https://juliagalef.com/) is useful here: can you describe the other side's position in terms they would recognise and agree with? If not, you might be arguing against straw.

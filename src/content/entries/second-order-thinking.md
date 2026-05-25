@@ -29,9 +29,11 @@ relatedConcepts:
     note: "Inversion asks 'what could go wrong?' - second-order thinking maps out how it could go wrong, step by step."
   - slug: "loss-aversion"
     note: "First-order thinking driven by loss aversion often leads to worse second-order consequences."
+  - slug: "chestertons-fence"
+    note: "Chesterton's fence is a kind of second-order thinking aimed at the past - before removing something, ask why it was put there."
 ---
 
-Second-order thinking is the practice of considering not just the immediate consequences of a decision, but the subsequent consequences of those consequences. It asks: "And then what?" First-order thinking stops at the direct result. Second-order thinking follows the chain of effects one, two, or three steps further - and often discovers that the obvious answer creates problems of its own.
+Second-order thinking is the practice of considering not just the immediate consequences of a decision, but the subsequent consequences of those consequences. It asks: "And then what?" First-order thinking stops at the direct result. Second-order thinking follows the chain of effects one, two, or three steps further - and often discovers that the obvious answer creates problems of its own. [Chesterton's fence](/chestertons-fence/) is the same instinct pointed backwards: before tearing down something whose purpose isn't obvious, ask what the second-order consequences of its absence might be.
 
 This distinction matters because the world is interconnected. Actions do not exist in isolation. They ripple outward, triggering responses, adaptations, and knock-on effects that can be far more significant than the initial impact. The person who can anticipate those ripples makes better decisions than the person who cannot.
 
