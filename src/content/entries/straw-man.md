@@ -76,6 +76,8 @@ Social media has given the straw man its ideal habitat. Character limits compres
 
 The incentive structure makes it worse. A nuanced position takes 500 words to express. A straw man version takes 20 - and gets more likes, more shares, and more engagement. Platforms reward the distortion because outrage performs better than accuracy. The person building the straw man may not even know they're doing it; they may have only ever encountered the caricatured version of the position, passed from account to account like a game of telephone.
 
+A common pattern is the "screenshot dunk." Someone posts a long, qualified thread. A quote-tweeter screenshots a single line, strips it from its surrounding caveats, and pairs it with a one-word verdict. The audience for the dunk vastly outnumbers the audience for the original thread, so the caricature becomes the version that travels. By the time the original author replies with "that's not what I said," the conversation has already moved on, and the correction sits at a tenth of the original engagement. The straw man wins not by being more persuasive but by being more shareable - and on a platform where shareability is the only currency, that's the same thing as winning.
+
 This connects to what Moresapien calls [loaded language](/loaded-language/) - the words chosen to describe the distorted position carry emotional weight that the original didn't. "Concerned about housing costs" becomes "anti-development." "Questioning a policy" becomes "attacking." The substitution isn't just conceptual; it's linguistic.
 
 ## The straw man and other fallacies
