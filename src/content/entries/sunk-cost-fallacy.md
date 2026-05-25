@@ -6,6 +6,7 @@ category: "Cognitive Bias"
 tags: ["decision-making", "everyday life", "workplace", "politics", "critical thinking"]
 howToSpotIt: "When you catch yourself saying 'but I've already spent so much time/money/effort on this', pause. That's the sunk cost talking. The only question that matters is: knowing what I know now, would I start this from scratch today?"
 thoughtToHoldOnto: "The money is gone. The time is gone. The only thing you can waste now is your future."
+whyItMattersNow: "From governments doubling down on failing policies to individuals staying in jobs, relationships, or subscriptions long past the point of return, the sunk cost fallacy shapes decisions at every scale. In an economy built on auto-renewals and long-term commitments, learning to walk away from past investment is a survival skill."
 relatedConcepts:
   - slug: "motivated-reasoning"
     note: "Sunk costs fuel motivated reasoning - we look for evidence that our investment was worthwhile because admitting otherwise feels like loss."

@@ -18,7 +18,7 @@ relatedConcepts:
     note: "'It is what it is' and 'the world's always been this way' are thought-terminating clichés that serve weaponised hopelessness perfectly."
   - slug: "capitalist-realism"
     note: "Mark Fisher's concept of capitalist realism - the idea that alternatives are literally unimaginable - is weaponised hopelessness operating at the level of an entire culture."
-  - slug: "attention-economy"
+  - slug: "the-attention-economy"
     note: "The attention economy rewards doom content because despair drives engagement. Weaponised hopelessness is profitable."
 ---
 
@@ -46,7 +46,7 @@ This is where weaponised hopelessness differs from genuine critical thinking. Cr
 
 ### The doom scroll as delivery system
 
-The [attention economy](/attention-economy/) has created a near-perfect distribution channel for weaponised hopelessness. Doom content - catastrophe, outrage, decline, collapse - drives engagement because it triggers strong emotional responses. Algorithms amplify what gets engagement. The result is a feed that presents an unrelenting stream of things going wrong, with no mechanism for showing what's going right or what's being done about it.
+The [attention economy](/the-attention-economy/) has created a near-perfect distribution channel for weaponised hopelessness. Doom content - catastrophe, outrage, decline, collapse - drives engagement because it triggers strong emotional responses. Algorithms amplify what gets engagement. The result is a feed that presents an unrelenting stream of things going wrong, with no mechanism for showing what's going right or what's being done about it.
 
 Over time, this creates a distorted picture of reality that feels comprehensive. You've seen so much bad news that the sheer volume becomes its own evidence. The world must be getting worse - look at everything you've seen. But what you've seen is a curated sample selected for its emotional impact, not a representative picture of reality. The [availability heuristic](/availability-heuristic/) does the rest: if examples of decline come to mind easily, decline must be the dominant trend.
 

@@ -11,6 +11,7 @@ tags:
   - "everyday life"
 howToSpotIt: "High confidence paired with low willingness to engage with nuance is a warning sign. If someone is absolutely certain about a complex topic and dismissive of experts, they may be on the peak of Mount Stupid. The most knowledgeable people tend to be the most cautious in their claims."
 thoughtToHoldOnto: "Real expertise feels like uncertainty. If you feel like you know everything about a topic, you probably don't know enough."
+whyItMattersNow: "Social media gives everyone a platform, but it doesn't give everyone expertise. The Dunning-Kruger effect helps explain why confident misinformation spreads faster than cautious accuracy - and why the people most certain they've 'done their own research' are often the ones who understand the least."
 relatedConcepts:
   - slug: "confirmation-bias"
   - slug: "motivated-reasoning"

@@ -1,6 +1,6 @@
 ---
 title: "The Attention Economy"
-oneLiner: "A system in which human attention is treated as a scarce resource to be harvested, bought, sold, and competed for - reshaping culture around whatever captures it."
+oneLiner: "A system in which human attention is treated as a scarce resource to be harvested, bought, sold, and competed for - reshaping culture around it."
 alsoKnownAs:
   - "Attention capitalism"
   - "The eyeball economy"

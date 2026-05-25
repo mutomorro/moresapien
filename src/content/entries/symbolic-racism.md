@@ -1,6 +1,6 @@
 ---
 title: "Symbolic Racism"
-oneLiner: "When prejudice is expressed not through overt hostility but through opposition to policies associated with marginalised groups, framed in the language of fairness and principle."
+oneLiner: "When prejudice hides behind the language of fairness - opposing policies that help marginalised groups while insisting the opposition isn't racial."
 alsoKnownAs: ["modern racism", "racial resentment", "new racism", "covert racism"]
 category: "Psychological Phenomenon"
 tags: ["politics", "prejudice", "identity", "social dynamics", "critical thinking", "media"]

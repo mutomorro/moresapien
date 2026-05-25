@@ -13,6 +13,7 @@ tags:
   - "relationships"
 howToSpotIt: "Notice when you feel defensive or uncomfortable after encountering information that challenges something you believe. That discomfort is cognitive dissonance. The question is whether you'll sit with it or rationalise it away."
 thoughtToHoldOnto: "Discomfort when your beliefs are challenged isn't a sign you're wrong - but the urge to make the discomfort disappear quickly usually is."
+whyItMattersNow: "Every algorithm-driven feed serves you content that reinforces what you already believe while occasionally confronting you with something that doesn't fit. The dissonance that creates - and the mental gymnastics we perform to resolve it - now plays out at population scale, shaping everything from vaccine hesitancy to political polarisation."
 relatedConcepts:
   - slug: "motivated-reasoning"
     note: "The tool our brains use to resolve cognitive dissonance without actually changing our minds"

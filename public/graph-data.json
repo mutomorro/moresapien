@@ -65,7 +65,39 @@
         "workplace",
         "critical thinking"
       ],
-      "connections": 18
+      "connections": 21
+    },
+    {
+      "slug": "anthropocentrism",
+      "title": "Anthropocentrism",
+      "category": "Systems Thinking",
+      "colour": "#7A8B3A",
+      "oneLiner": "The assumption that human needs, perspectives, and values are the central or most important frame for understanding the world.",
+      "tags": [
+        "environment",
+        "systems-thinking",
+        "philosophy",
+        "critical thinking",
+        "ethics",
+        "climate"
+      ],
+      "connections": 5
+    },
+    {
+      "slug": "apophenia",
+      "title": "Apophenia",
+      "category": "Psychological Phenomenon",
+      "colour": "#7A3A5E",
+      "oneLiner": "The tendency to perceive meaningful connections, patterns, or intentions in random or unrelated information.",
+      "tags": [
+        "perception",
+        "critical thinking",
+        "misinformation",
+        "belief",
+        "psychology",
+        "statistics"
+      ],
+      "connections": 9
     },
     {
       "slug": "appeal-to-common-sense",
@@ -149,6 +181,22 @@
       "connections": 5
     },
     {
+      "slug": "arrival-fallacy",
+      "title": "Arrival Fallacy",
+      "category": "Psychological Phenomenon",
+      "colour": "#7A3A5E",
+      "oneLiner": "The belief that achieving a particular goal will make you permanently happy - followed by the discovery that it doesn't.",
+      "tags": [
+        "wellbeing",
+        "decision-making",
+        "everyday life",
+        "self-awareness",
+        "psychology",
+        "work"
+      ],
+      "connections": 5
+    },
+    {
       "slug": "astroturfing",
       "title": "Astroturfing",
       "category": "Manipulation Tactic",
@@ -163,6 +211,22 @@
         "disinformation"
       ],
       "connections": 5
+    },
+    {
+      "slug": "attentional-bias",
+      "title": "Attentional Bias",
+      "category": "Cognitive Bias",
+      "colour": "#3559B0",
+      "oneLiner": "The tendency for your perception to be shaped by what you're already thinking about, worrying about, or primed to notice.",
+      "tags": [
+        "perception",
+        "media literacy",
+        "decision-making",
+        "everyday life",
+        "critical thinking",
+        "mental-health"
+      ],
+      "connections": 7
     },
     {
       "slug": "authority-bias",
@@ -196,7 +260,7 @@
         "everyday life",
         "risk"
       ],
-      "connections": 27
+      "connections": 35
     },
     {
       "slug": "aversive-racism",
@@ -212,7 +276,7 @@
         "psychology",
         "critical thinking"
       ],
-      "connections": 7
+      "connections": 8
     },
     {
       "slug": "backfire-effect",
@@ -245,7 +309,23 @@
         "everyday life",
         "critical thinking"
       ],
-      "connections": 22
+      "connections": 23
+    },
+    {
+      "slug": "base-rate-fallacy",
+      "title": "Base Rate Fallacy",
+      "category": "Logical Fallacy",
+      "colour": "#E8A533",
+      "oneLiner": "Ignoring general statistical information in favour of specific but less reliable details about an individual case.",
+      "tags": [
+        "statistics",
+        "decision-making",
+        "media literacy",
+        "health",
+        "critical thinking",
+        "risk-perception"
+      ],
+      "connections": 5
     },
     {
       "slug": "ben-franklin-effect",
@@ -393,7 +473,7 @@
         "investing",
         "leadership"
       ],
-      "connections": 5
+      "connections": 6
     },
     {
       "slug": "circular-reasoning",
@@ -412,6 +492,21 @@
       "connections": 6
     },
     {
+      "slug": "clustering-illusion",
+      "title": "Clustering Illusion",
+      "category": "Cognitive Bias",
+      "colour": "#3559B0",
+      "oneLiner": "The tendency to see meaningful patterns in small clusters of random data, when the clusters are exactly what randomness looks like.",
+      "tags": [
+        "statistics",
+        "perception",
+        "decision-making",
+        "critical thinking",
+        "everyday life"
+      ],
+      "connections": 8
+    },
+    {
       "slug": "cognitive-dissonance",
       "title": "Cognitive Dissonance",
       "category": "Cognitive Bias",
@@ -425,7 +520,7 @@
         "everyday life",
         "relationships"
       ],
-      "connections": 47
+      "connections": 48
     },
     {
       "slug": "collective-amnesia",
@@ -512,6 +607,22 @@
       "connections": 5
     },
     {
+      "slug": "complexity-bias",
+      "title": "Complexity Bias",
+      "category": "Cognitive Bias",
+      "colour": "#3559B0",
+      "oneLiner": "The tendency to prefer complex explanations over simple ones, and to mistrust simple solutions to problems that feel complicated.",
+      "tags": [
+        "critical thinking",
+        "decision-making",
+        "everyday life",
+        "workplace",
+        "problem-solving",
+        "misinformation"
+      ],
+      "connections": 5
+    },
+    {
       "slug": "conceptual-gentrification",
       "title": "Conceptual Gentrification",
       "category": "Cultural Influence",
@@ -559,7 +670,23 @@
         "news media",
         "science"
       ],
-      "connections": 52
+      "connections": 61
+    },
+    {
+      "slug": "conformity-bias",
+      "title": "Conformity Bias",
+      "category": "Cognitive Bias",
+      "colour": "#3559B0",
+      "oneLiner": "The pull to adjust your beliefs, behaviours, or opinions to match those of the group around you.",
+      "tags": [
+        "group-behaviour",
+        "social-dynamics",
+        "conformity",
+        "decision-making",
+        "social-norms",
+        "persuasion"
+      ],
+      "connections": 9
     },
     {
       "slug": "contrast-effect",
@@ -625,6 +752,22 @@
         "leadership",
         "writing",
         "teaching"
+      ],
+      "connections": 5
+    },
+    {
+      "slug": "dark-patterns",
+      "title": "Dark Patterns",
+      "category": "Manipulation Tactic",
+      "colour": "#C44A8A",
+      "oneLiner": "Deliberately deceptive design choices that trick people into doing things they didn't intend to do.",
+      "tags": [
+        "technology",
+        "manipulation",
+        "consumerism",
+        "decision-making",
+        "everyday-life",
+        "ethics"
       ],
       "connections": 5
     },
@@ -754,7 +897,7 @@
         "science",
         "everyday life"
       ],
-      "connections": 14
+      "connections": 15
     },
     {
       "slug": "effort-justification",
@@ -918,7 +1061,7 @@
         "everyday life",
         "decision-making"
       ],
-      "connections": 15
+      "connections": 16
     },
     {
       "slug": "firehose-of-falsehood",
@@ -950,7 +1093,7 @@
         "creativity",
         "workplace"
       ],
-      "connections": 15
+      "connections": 18
     },
     {
       "slug": "fog-fear-obligation-guilt",
@@ -983,7 +1126,37 @@
         "decision-making",
         "critical thinking"
       ],
-      "connections": 49
+      "connections": 56
+    },
+    {
+      "slug": "frequency-illusion",
+      "title": "Frequency Illusion",
+      "category": "Cognitive Bias",
+      "colour": "#3559B0",
+      "oneLiner": "Once you notice something for the first time, you suddenly seem to see it everywhere - not because it's more common, but because you're now looking for it.",
+      "tags": [
+        "perception",
+        "everyday life",
+        "marketing",
+        "media literacy",
+        "self-awareness"
+      ],
+      "connections": 6
+    },
+    {
+      "slug": "functional-fixedness",
+      "title": "Functional Fixedness",
+      "category": "Cognitive Bias",
+      "colour": "#3559B0",
+      "oneLiner": "The tendency to see objects, tools, and ideas only in terms of their conventional use, making it harder to find creative solutions.",
+      "tags": [
+        "problem-solving",
+        "critical thinking",
+        "everyday life",
+        "workplace",
+        "decision-making"
+      ],
+      "connections": 6
     },
     {
       "slug": "fundamental-attribution-error",
@@ -999,7 +1172,7 @@
         "social perception",
         "conflict"
       ],
-      "connections": 23
+      "connections": 24
     },
     {
       "slug": "gaslighting",
@@ -1048,7 +1221,7 @@
         "teams",
         "conformity"
       ],
-      "connections": 6
+      "connections": 8
     },
     {
       "slug": "halo-effect",
@@ -1065,7 +1238,7 @@
         "decision-making",
         "critical thinking"
       ],
-      "connections": 15
+      "connections": 16
     },
     {
       "slug": "hanlons-razor",
@@ -1097,7 +1270,7 @@
         "decision-making",
         "science"
       ],
-      "connections": 9
+      "connections": 10
     },
     {
       "slug": "hindsight-bias",
@@ -1116,6 +1289,22 @@
       "connections": 6
     },
     {
+      "slug": "illusory-correlation",
+      "title": "Illusory Correlation",
+      "category": "Cognitive Bias",
+      "colour": "#3559B0",
+      "oneLiner": "Perceiving a relationship between two things when no meaningful connection exists - or when the connection is far weaker than it appears.",
+      "tags": [
+        "perception",
+        "prejudice",
+        "statistics",
+        "critical thinking",
+        "media literacy",
+        "social dynamics"
+      ],
+      "connections": 7
+    },
+    {
       "slug": "illusory-truth-effect",
       "title": "Illusory Truth Effect",
       "category": "Psychological Phenomenon",
@@ -1129,7 +1318,23 @@
         "social media",
         "persuasion"
       ],
-      "connections": 15
+      "connections": 16
+    },
+    {
+      "slug": "implicit-association",
+      "title": "Implicit Association",
+      "category": "Psychological Phenomenon",
+      "colour": "#7A3A5E",
+      "oneLiner": "The automatic, unconscious mental connections between concepts, groups, and attributes that shape perception and behaviour without conscious awareness.",
+      "tags": [
+        "prejudice",
+        "perception",
+        "social dynamics",
+        "workplace",
+        "critical thinking",
+        "psychology"
+      ],
+      "connections": 5
     },
     {
       "slug": "in-group-out-group-bias",
@@ -1145,7 +1350,7 @@
         "social media",
         "media"
       ],
-      "connections": 17
+      "connections": 19
     },
     {
       "slug": "independent-evaluation",
@@ -1177,7 +1382,7 @@
         "workplace",
         "risk management"
       ],
-      "connections": 8
+      "connections": 10
     },
     {
       "slug": "just-world-fallacy",
@@ -1194,6 +1399,22 @@
         "empathy"
       ],
       "connections": 9
+    },
+    {
+      "slug": "law-of-the-instrument",
+      "title": "Law of the Instrument",
+      "category": "Cognitive Bias",
+      "colour": "#3559B0",
+      "oneLiner": "When all you have is a hammer, everything looks like a nail - the tendency to over-rely on a familiar tool or approach for every problem.",
+      "tags": [
+        "problem-solving",
+        "workplace",
+        "critical thinking",
+        "decision-making",
+        "everyday life",
+        "strategy"
+      ],
+      "connections": 5
     },
     {
       "slug": "learned-helplessness",
@@ -1258,7 +1479,7 @@
         "psychology",
         "critical thinking"
       ],
-      "connections": 21
+      "connections": 24
     },
     {
       "slug": "love-bombing",
@@ -1340,7 +1561,7 @@
         "media literacy",
         "education"
       ],
-      "connections": 10
+      "connections": 12
     },
     {
       "slug": "mere-exposure-effect",
@@ -1458,7 +1679,7 @@
         "everyday life",
         "psychology"
       ],
-      "connections": 28
+      "connections": 29
     },
     {
       "slug": "motte-and-bailey",
@@ -1522,7 +1743,7 @@
         "risk perception",
         "social media"
       ],
-      "connections": 7
+      "connections": 8
     },
     {
       "slug": "network-effects",
@@ -1570,7 +1791,7 @@
         "workplace",
         "climate"
       ],
-      "connections": 13
+      "connections": 14
     },
     {
       "slug": "normalisation",
@@ -1603,7 +1824,7 @@
         "politics",
         "history"
       ],
-      "connections": 6
+      "connections": 8
     },
     {
       "slug": "occams-razor",
@@ -1619,7 +1840,23 @@
         "media literacy",
         "conspiracy theories"
       ],
-      "connections": 9
+      "connections": 11
+    },
+    {
+      "slug": "omission-bias",
+      "title": "Omission Bias",
+      "category": "Cognitive Bias",
+      "colour": "#3559B0",
+      "oneLiner": "The tendency to judge harmful actions as worse than equally harmful inactions, even when doing nothing causes more damage.",
+      "tags": [
+        "decision-making",
+        "ethics",
+        "policy",
+        "critical thinking",
+        "moral-reasoning",
+        "everyday life"
+      ],
+      "connections": 5
     },
     {
       "slug": "opportunity-cost",
@@ -1686,6 +1923,21 @@
       "connections": 6
     },
     {
+      "slug": "pareidolia",
+      "title": "Pareidolia",
+      "category": "Psychological Phenomenon",
+      "colour": "#7A3A5E",
+      "oneLiner": "The tendency to see recognisable shapes - especially faces - in random patterns, clouds, textures, and noise.",
+      "tags": [
+        "perception",
+        "everyday life",
+        "psychology",
+        "critical thinking",
+        "belief"
+      ],
+      "connections": 4
+    },
+    {
       "slug": "pluralistic-ignorance",
       "title": "Pluralistic Ignorance",
       "category": "Psychological Phenomenon",
@@ -1699,7 +1951,7 @@
         "politics",
         "culture"
       ],
-      "connections": 14
+      "connections": 15
     },
     {
       "slug": "post-hoc",
@@ -1715,7 +1967,7 @@
         "health",
         "decision-making"
       ],
-      "connections": 5
+      "connections": 7
     },
     {
       "slug": "probabilistic-thinking",
@@ -1731,7 +1983,7 @@
         "workplace",
         "media literacy"
       ],
-      "connections": 11
+      "connections": 12
     },
     {
       "slug": "psychological-projection",
@@ -1779,7 +2031,7 @@
         "politics",
         "marketing"
       ],
-      "connections": 7
+      "connections": 8
     },
     {
       "slug": "reaction-formation",
@@ -1899,6 +2151,22 @@
       "connections": 5
     },
     {
+      "slug": "salience-bias",
+      "title": "Salience Bias",
+      "category": "Cognitive Bias",
+      "colour": "#3559B0",
+      "oneLiner": "The tendency to give disproportionate weight to information that is prominent, vivid, or emotionally striking, while overlooking information that is less noticeable.",
+      "tags": [
+        "perception",
+        "media literacy",
+        "decision-making",
+        "politics",
+        "advertising",
+        "critical thinking"
+      ],
+      "connections": 7
+    },
+    {
       "slug": "scapegoating",
       "title": "Scapegoating",
       "category": "Rhetorical Device",
@@ -1993,7 +2261,7 @@
         "persuasion",
         "critical thinking"
       ],
-      "connections": 25
+      "connections": 26
     },
     {
       "slug": "source-laundering",
@@ -2025,7 +2293,7 @@
         "conformity",
         "free speech"
       ],
-      "connections": 4
+      "connections": 6
     },
     {
       "slug": "spotlight-effect",
@@ -2074,7 +2342,7 @@
         "organisations",
         "technology"
       ],
-      "connections": 11
+      "connections": 14
     },
     {
       "slug": "steel-manning",
@@ -2156,7 +2424,7 @@
         "politics",
         "critical thinking"
       ],
-      "connections": 14
+      "connections": 15
     },
     {
       "slug": "survivorship-bias",
@@ -2206,7 +2474,7 @@
         "power",
         "social dynamics"
       ],
-      "connections": 10
+      "connections": 12
     },
     {
       "slug": "the-culture-industry",
@@ -2323,7 +2591,7 @@
         "social dynamics",
         "environment"
       ],
-      "connections": 10
+      "connections": 11
     },
     {
       "slug": "unintended-consequences",
@@ -2339,7 +2607,7 @@
         "everyday life",
         "policy"
       ],
-      "connections": 11
+      "connections": 12
     },
     {
       "slug": "victim-perpetrator-cycle",
@@ -2373,7 +2641,7 @@
         "critical thinking",
         "culture"
       ],
-      "connections": 5
+      "connections": 6
     },
     {
       "slug": "weasel-words",
@@ -2680,6 +2948,114 @@
       ]
     },
     {
+      "source": "anthropocentrism",
+      "target": "tragedy-of-the-commons",
+      "notes": [
+        {
+          "from": "anthropocentrism",
+          "text": "The tragedy of the commons is anthropocentrism at the systems level - individual human interests depleting shared natural resources."
+        }
+      ]
+    },
+    {
+      "source": "anthropocentrism",
+      "target": "feedback-loops",
+      "notes": [
+        {
+          "from": "anthropocentrism",
+          "text": "Anthropocentric thinking ignores the feedback loops in natural systems - treating the environment as a resource to extract from rather than a system to participate in."
+        }
+      ]
+    },
+    {
+      "source": "anthropocentrism",
+      "target": "unintended-consequences",
+      "notes": [
+        {
+          "from": "anthropocentrism",
+          "text": "Anthropocentric interventions in natural systems routinely produce unintended consequences because they optimise for human benefit while ignoring systemic effects."
+        }
+      ]
+    },
+    {
+      "source": "anthropocentrism",
+      "target": "framing-effect",
+      "notes": [
+        {
+          "from": "anthropocentrism",
+          "text": "Anthropocentrism is a framing: it positions humans at the centre of every question, which shapes what counts as important, valuable, or worth protecting."
+        }
+      ]
+    },
+    {
+      "source": "anthropocentrism",
+      "target": "map-is-not-the-territory",
+      "notes": [
+        {
+          "from": "anthropocentrism",
+          "text": "Anthropocentrism is a map that places humans at the centre. The territory - the actual web of life - has no centre."
+        }
+      ]
+    },
+    {
+      "source": "apophenia",
+      "target": "confirmation-bias",
+      "notes": [
+        {
+          "from": "apophenia",
+          "text": "Once apophenia creates a perceived pattern, confirmation bias locks it in by making you notice evidence that fits and ignore evidence that doesn't."
+        }
+      ]
+    },
+    {
+      "source": "apophenia",
+      "target": "clustering-illusion",
+      "notes": [
+        {
+          "from": "apophenia",
+          "text": "The clustering illusion is a specific form of apophenia applied to random data - seeing meaningful clusters in random distributions."
+        },
+        {
+          "from": "clustering-illusion",
+          "text": "The clustering illusion is a specific statistical form of apophenia - seeing meaningful patterns in random data."
+        }
+      ]
+    },
+    {
+      "source": "apophenia",
+      "target": "illusory-correlation",
+      "notes": [
+        {
+          "from": "apophenia",
+          "text": "Illusory correlation is apophenia applied to relationships between variables - perceiving a link between two things when none exists."
+        },
+        {
+          "from": "illusory-correlation",
+          "text": "Illusory correlation is apophenia applied to the relationship between two variables - seeing connections in randomness."
+        }
+      ]
+    },
+    {
+      "source": "apophenia",
+      "target": "availability-heuristic",
+      "notes": [
+        {
+          "from": "apophenia",
+          "text": "Patterns spotted through apophenia become vivid memories, which then inflate their apparent frequency through the availability heuristic."
+        }
+      ]
+    },
+    {
+      "source": "apophenia",
+      "target": "post-hoc",
+      "notes": [
+        {
+          "from": "apophenia",
+          "text": "Post hoc reasoning is apophenia applied to sequences - assuming that because one thing followed another, the first caused the second."
+        }
+      ]
+    },
+    {
       "source": "appeal-to-common-sense",
       "target": "appeal-to-false-authority",
       "notes": [
@@ -2932,6 +3308,56 @@
       ]
     },
     {
+      "source": "arrival-fallacy",
+      "target": "loss-aversion",
+      "notes": [
+        {
+          "from": "arrival-fallacy",
+          "text": "Loss aversion makes the arrival fallacy worse - once you achieve something, the fear of losing it replaces the joy of gaining it."
+        }
+      ]
+    },
+    {
+      "source": "arrival-fallacy",
+      "target": "cognitive-dissonance",
+      "notes": [
+        {
+          "from": "arrival-fallacy",
+          "text": "When arriving at a goal doesn't bring the expected happiness, cognitive dissonance can make you rationalise the disappointment rather than update the belief."
+        }
+      ]
+    },
+    {
+      "source": "arrival-fallacy",
+      "target": "sunk-cost-fallacy",
+      "notes": [
+        {
+          "from": "arrival-fallacy",
+          "text": "The sunk cost fallacy can keep you pursuing a goal that no longer serves you, partly because the arrival fallacy promises that happiness is just ahead."
+        }
+      ]
+    },
+    {
+      "source": "arrival-fallacy",
+      "target": "status-quo-bias",
+      "notes": [
+        {
+          "from": "arrival-fallacy",
+          "text": "After arriving, the new situation quickly becomes the new status quo - the baseline from which you evaluate future gains and losses."
+        }
+      ]
+    },
+    {
+      "source": "arrival-fallacy",
+      "target": "framing-effect",
+      "notes": [
+        {
+          "from": "arrival-fallacy",
+          "text": "How we frame our goals - as destinations to reach rather than directions to move in - feeds the arrival fallacy."
+        }
+      ]
+    },
+    {
       "source": "astroturfing",
       "target": "manufactured-consent",
       "notes": [
@@ -2978,6 +3404,64 @@
         {
           "from": "astroturfing",
           "text": "Astroturfing can be one channel in a broader firehose strategy"
+        }
+      ]
+    },
+    {
+      "source": "attentional-bias",
+      "target": "confirmation-bias",
+      "notes": [
+        {
+          "from": "attentional-bias",
+          "text": "Attentional bias is one of the mechanisms through which confirmation bias operates - you attend to information that fits your existing beliefs."
+        }
+      ]
+    },
+    {
+      "source": "attentional-bias",
+      "target": "frequency-illusion",
+      "notes": [
+        {
+          "from": "attentional-bias",
+          "text": "The frequency illusion is the subjective experience of attentional bias at work - once primed, you notice things more, and they seem suddenly common."
+        },
+        {
+          "from": "frequency-illusion",
+          "text": "Attentional bias is the underlying mechanism - once primed, your attention selectively filters for the thing you've noticed."
+        }
+      ]
+    },
+    {
+      "source": "attentional-bias",
+      "target": "salience-bias",
+      "notes": [
+        {
+          "from": "attentional-bias",
+          "text": "Salience bias determines what initially captures attention; attentional bias sustains and directs attention over time."
+        },
+        {
+          "from": "salience-bias",
+          "text": "Attentional bias is the mechanism through which salience operates - salient information captures attention disproportionately."
+        }
+      ]
+    },
+    {
+      "source": "attentional-bias",
+      "target": "availability-heuristic",
+      "notes": [
+        {
+          "from": "attentional-bias",
+          "text": "What you attend to becomes easier to recall, which inflates its perceived frequency and importance via the availability heuristic."
+        }
+      ]
+    },
+    {
+      "source": "attentional-bias",
+      "target": "framing-effect",
+      "notes": [
+        {
+          "from": "attentional-bias",
+          "text": "Framing works partly by directing attentional bias - making certain features of a situation more prominent in your perception."
         }
       ]
     },
@@ -3270,6 +3754,56 @@
         {
           "from": "halo-effect",
           "text": "Popularity creates its own halo - we assume popular things must be good because so many people like them."
+        }
+      ]
+    },
+    {
+      "source": "availability-heuristic",
+      "target": "base-rate-fallacy",
+      "notes": [
+        {
+          "from": "base-rate-fallacy",
+          "text": "The availability heuristic is why base rate neglect happens - vivid stories are easier to recall than abstract statistics."
+        }
+      ]
+    },
+    {
+      "source": "base-rate-fallacy",
+      "target": "framing-effect",
+      "notes": [
+        {
+          "from": "base-rate-fallacy",
+          "text": "How risk information is framed (as percentages vs natural frequencies) dramatically affects whether people use base rates."
+        }
+      ]
+    },
+    {
+      "source": "base-rate-fallacy",
+      "target": "confirmation-bias",
+      "notes": [
+        {
+          "from": "base-rate-fallacy",
+          "text": "When we already believe something is common or dangerous, we latch onto individual cases that confirm it and ignore the base rate."
+        }
+      ]
+    },
+    {
+      "source": "base-rate-fallacy",
+      "target": "hasty-generalisation",
+      "notes": [
+        {
+          "from": "base-rate-fallacy",
+          "text": "Drawing conclusions from individual cases while ignoring the base rate is a form of hasty generalisation."
+        }
+      ]
+    },
+    {
+      "source": "base-rate-fallacy",
+      "target": "probabilistic-thinking",
+      "notes": [
+        {
+          "from": "base-rate-fallacy",
+          "text": "Probabilistic thinking is the antidote to base rate neglect - it forces you to consider the underlying odds."
         }
       ]
     },
@@ -3806,6 +4340,50 @@
       ]
     },
     {
+      "source": "clustering-illusion",
+      "target": "confirmation-bias",
+      "notes": [
+        {
+          "from": "clustering-illusion",
+          "text": "Once you perceive a cluster as meaningful, confirmation bias makes you selectively notice further events that fit the pattern."
+        }
+      ]
+    },
+    {
+      "source": "availability-heuristic",
+      "target": "clustering-illusion",
+      "notes": [
+        {
+          "from": "clustering-illusion",
+          "text": "Dramatic clusters are easy to recall, which makes them feel more common and significant than they are."
+        }
+      ]
+    },
+    {
+      "source": "clustering-illusion",
+      "target": "illusory-correlation",
+      "notes": [
+        {
+          "from": "clustering-illusion",
+          "text": "Both the clustering illusion and illusory correlation involve perceiving structure in randomness - clusters in space/time, and correlations between variables."
+        },
+        {
+          "from": "illusory-correlation",
+          "text": "Both involve perceiving structure in random data - the clustering illusion in sequences, illusory correlation in relationships."
+        }
+      ]
+    },
+    {
+      "source": "clustering-illusion",
+      "target": "post-hoc",
+      "notes": [
+        {
+          "from": "clustering-illusion",
+          "text": "Retrospective pattern-finding in clusters is a form of post hoc reasoning - the cluster happened, so there must be a cause."
+        }
+      ]
+    },
+    {
       "source": "cognitive-dissonance",
       "target": "motivated-reasoning",
       "notes": [
@@ -4112,6 +4690,56 @@
       ]
     },
     {
+      "source": "complexity-bias",
+      "target": "occams-razor",
+      "notes": [
+        {
+          "from": "complexity-bias",
+          "text": "Occam's razor is the direct antidote to complexity bias - the principle that the simplest explanation consistent with the evidence is usually the best starting point."
+        }
+      ]
+    },
+    {
+      "source": "apophenia",
+      "target": "complexity-bias",
+      "notes": [
+        {
+          "from": "complexity-bias",
+          "text": "Complexity bias and apophenia work together - the desire for complex explanations makes you more likely to perceive intricate patterns in random data."
+        }
+      ]
+    },
+    {
+      "source": "complexity-bias",
+      "target": "confirmation-bias",
+      "notes": [
+        {
+          "from": "complexity-bias",
+          "text": "Once you're drawn to a complex explanation, confirmation bias helps you find the evidence to support it."
+        }
+      ]
+    },
+    {
+      "source": "complexity-bias",
+      "target": "dunning-kruger-effect",
+      "notes": [
+        {
+          "from": "complexity-bias",
+          "text": "Complexity bias can make simple, correct answers feel 'too obvious' - a trap that catches both experts and novices."
+        }
+      ]
+    },
+    {
+      "source": "complexity-bias",
+      "target": "first-principles-thinking",
+      "notes": [
+        {
+          "from": "complexity-bias",
+          "text": "First principles thinking cuts through complexity bias by stripping problems back to their fundamentals."
+        }
+      ]
+    },
+    {
       "source": "conceptual-gentrification",
       "target": "recuperation",
       "notes": [
@@ -4248,6 +4876,74 @@
         {
           "from": "illusory-truth-effect",
           "text": "Once the illusory truth effect makes a claim feel credible, confirmation bias locks it in by filtering for supporting evidence."
+        }
+      ]
+    },
+    {
+      "source": "bandwagon-effect",
+      "target": "conformity-bias",
+      "notes": [
+        {
+          "from": "conformity-bias",
+          "text": "Conformity bias explains the psychological pull; the bandwagon effect describes what happens when it scales across a population."
+        }
+      ]
+    },
+    {
+      "source": "conformity-bias",
+      "target": "groupthink",
+      "notes": [
+        {
+          "from": "conformity-bias",
+          "text": "When conformity takes hold inside a decision-making group, dissent disappears and the group makes decisions nobody individually would have endorsed."
+        },
+        {
+          "from": "groupthink",
+          "text": "The individual-level pressure that fuels groupthink at the collective level"
+        }
+      ]
+    },
+    {
+      "source": "conformity-bias",
+      "target": "spiral-of-silence",
+      "notes": [
+        {
+          "from": "conformity-bias",
+          "text": "Conformity bias drives the spiral of silence - people stay quiet when they believe their view is in the minority, making that view seem rarer still."
+        },
+        {
+          "from": "spiral-of-silence",
+          "text": "The social pressure that keeps people silent when they sense they're in the minority"
+        }
+      ]
+    },
+    {
+      "source": "conformity-bias",
+      "target": "social-proof",
+      "notes": [
+        {
+          "from": "conformity-bias",
+          "text": "Social proof is the informational side of conformity - we look to others for signals about what's correct."
+        }
+      ]
+    },
+    {
+      "source": "conformity-bias",
+      "target": "pluralistic-ignorance",
+      "notes": [
+        {
+          "from": "conformity-bias",
+          "text": "When everyone conforms outwardly while privately disagreeing, the group can end up enforcing a norm that nobody supports."
+        }
+      ]
+    },
+    {
+      "source": "conformity-bias",
+      "target": "obedience-to-authority",
+      "notes": [
+        {
+          "from": "obedience-to-authority",
+          "text": "Obedience to authority is conformity directed upward in a hierarchy"
         }
       ]
     },
@@ -4462,6 +5158,56 @@
         {
           "from": "curse-of-knowledge",
           "text": "Experts are often unaware that their expertise is creating a communication barrier"
+        }
+      ]
+    },
+    {
+      "source": "dark-patterns",
+      "target": "status-quo-bias",
+      "notes": [
+        {
+          "from": "dark-patterns",
+          "text": "Dark patterns exploit status quo bias directly - pre-selected options and buried cancellation flows rely on people sticking with defaults."
+        }
+      ]
+    },
+    {
+      "source": "dark-patterns",
+      "target": "framing-effect",
+      "notes": [
+        {
+          "from": "dark-patterns",
+          "text": "The way choices are visually and linguistically framed in an interface is a core dark pattern technique."
+        }
+      ]
+    },
+    {
+      "source": "dark-patterns",
+      "target": "the-attention-economy",
+      "notes": [
+        {
+          "from": "dark-patterns",
+          "text": "Dark patterns are a product of the attention economy - platforms competing for engagement have strong incentives to manipulate user behaviour."
+        }
+      ]
+    },
+    {
+      "source": "dark-patterns",
+      "target": "loss-aversion",
+      "notes": [
+        {
+          "from": "dark-patterns",
+          "text": "Many dark patterns weaponise loss aversion - warning you what you'll 'miss out on' if you cancel or decline."
+        }
+      ]
+    },
+    {
+      "source": "dark-patterns",
+      "target": "reactance",
+      "notes": [
+        {
+          "from": "dark-patterns",
+          "text": "When people recognise a dark pattern, reactance kicks in - the attempt to restrict their freedom triggers resistance."
         }
       ]
     },
@@ -5572,6 +6318,96 @@
       ]
     },
     {
+      "source": "confirmation-bias",
+      "target": "frequency-illusion",
+      "notes": [
+        {
+          "from": "frequency-illusion",
+          "text": "Once the frequency illusion has you noticing something, confirmation bias keeps you focused on it and ignoring counter-evidence."
+        }
+      ]
+    },
+    {
+      "source": "availability-heuristic",
+      "target": "frequency-illusion",
+      "notes": [
+        {
+          "from": "frequency-illusion",
+          "text": "The more you notice something, the easier it is to recall - which makes you overestimate how common it is."
+        }
+      ]
+    },
+    {
+      "source": "frequency-illusion",
+      "target": "salience-bias",
+      "notes": [
+        {
+          "from": "frequency-illusion",
+          "text": "Salience bias explains why certain things grab your attention in the first place - the frequency illusion is what happens next."
+        }
+      ]
+    },
+    {
+      "source": "frequency-illusion",
+      "target": "illusory-truth-effect",
+      "notes": [
+        {
+          "from": "frequency-illusion",
+          "text": "Repeated exposure makes things feel true (illusory truth) and common (frequency illusion) - two sides of the same coin."
+        }
+      ]
+    },
+    {
+      "source": "first-principles-thinking",
+      "target": "functional-fixedness",
+      "notes": [
+        {
+          "from": "functional-fixedness",
+          "text": "First principles thinking is the direct antidote to functional fixedness - it strips away conventional use and asks what the components can do."
+        }
+      ]
+    },
+    {
+      "source": "functional-fixedness",
+      "target": "inversion",
+      "notes": [
+        {
+          "from": "functional-fixedness",
+          "text": "Inversion helps overcome functional fixedness by forcing you to think about a problem from the opposite direction."
+        }
+      ]
+    },
+    {
+      "source": "functional-fixedness",
+      "target": "occams-razor",
+      "notes": [
+        {
+          "from": "functional-fixedness",
+          "text": "Occam's razor favours simple solutions, which often require seeing familiar resources in unfamiliar ways - exactly what functional fixedness prevents."
+        }
+      ]
+    },
+    {
+      "source": "functional-fixedness",
+      "target": "map-is-not-the-territory",
+      "notes": [
+        {
+          "from": "functional-fixedness",
+          "text": "Functional fixedness is a case of confusing the map for the territory - confusing the label we give something with the thing itself."
+        }
+      ]
+    },
+    {
+      "source": "anchoring-bias",
+      "target": "functional-fixedness",
+      "notes": [
+        {
+          "from": "functional-fixedness",
+          "text": "The conventional use of an object acts as an anchor that constrains creative thinking about alternative uses."
+        }
+      ]
+    },
+    {
       "source": "fundamental-attribution-error",
       "target": "naive-realism",
       "notes": [
@@ -5928,6 +6764,36 @@
       ]
     },
     {
+      "source": "confirmation-bias",
+      "target": "illusory-correlation",
+      "notes": [
+        {
+          "from": "illusory-correlation",
+          "text": "Once an illusory correlation forms, confirmation bias reinforces it by making you notice further cases that fit and ignore cases that don't."
+        }
+      ]
+    },
+    {
+      "source": "availability-heuristic",
+      "target": "illusory-correlation",
+      "notes": [
+        {
+          "from": "illusory-correlation",
+          "text": "Distinctive pairings are easier to recall, which makes them feel more common - the availability heuristic fuels illusory correlations."
+        }
+      ]
+    },
+    {
+      "source": "illusory-correlation",
+      "target": "in-group-out-group-bias",
+      "notes": [
+        {
+          "from": "illusory-correlation",
+          "text": "Illusory correlation is one of the cognitive mechanisms that creates and sustains out-group stereotypes."
+        }
+      ]
+    },
+    {
       "source": "anchoring-bias",
       "target": "illusory-truth-effect",
       "notes": [
@@ -5964,6 +6830,56 @@
         {
           "from": "illusory-truth-effect",
           "text": "We're especially vulnerable to the illusory truth effect when the repeated claim aligns with what we already want to believe."
+        }
+      ]
+    },
+    {
+      "source": "implicit-association",
+      "target": "in-group-out-group-bias",
+      "notes": [
+        {
+          "from": "implicit-association",
+          "text": "Implicit associations often favour in-group members over out-group members, even when the person consciously rejects prejudice."
+        }
+      ]
+    },
+    {
+      "source": "aversive-racism",
+      "target": "implicit-association",
+      "notes": [
+        {
+          "from": "implicit-association",
+          "text": "Aversive racism describes the gap between conscious egalitarian values and unconscious biased reactions - exactly the territory of implicit associations."
+        }
+      ]
+    },
+    {
+      "source": "halo-effect",
+      "target": "implicit-association",
+      "notes": [
+        {
+          "from": "implicit-association",
+          "text": "The halo effect operates through implicit associations - one positive attribute automatically activates positive associations with other attributes."
+        }
+      ]
+    },
+    {
+      "source": "confirmation-bias",
+      "target": "implicit-association",
+      "notes": [
+        {
+          "from": "implicit-association",
+          "text": "Implicit associations prime you to notice and interpret information in ways that confirm the association, feeding confirmation bias."
+        }
+      ]
+    },
+    {
+      "source": "fundamental-attribution-error",
+      "target": "implicit-association",
+      "notes": [
+        {
+          "from": "implicit-association",
+          "text": "Implicit associations shape how we explain other people's behaviour - we attribute actions to character when our implicit biases make that explanation feel natural."
         }
       ]
     },
@@ -6158,6 +7074,56 @@
         {
           "from": "just-world-fallacy",
           "text": "Success creates a halo that makes people seem more deserving, reinforcing the just-world belief."
+        }
+      ]
+    },
+    {
+      "source": "functional-fixedness",
+      "target": "law-of-the-instrument",
+      "notes": [
+        {
+          "from": "law-of-the-instrument",
+          "text": "Functional fixedness limits how you see objects; the law of the instrument limits how you see problems. Both constrain thinking to the familiar."
+        }
+      ]
+    },
+    {
+      "source": "first-principles-thinking",
+      "target": "law-of-the-instrument",
+      "notes": [
+        {
+          "from": "law-of-the-instrument",
+          "text": "First principles thinking asks what the problem actually needs, rather than what your existing tools can provide."
+        }
+      ]
+    },
+    {
+      "source": "circle-of-competence",
+      "target": "law-of-the-instrument",
+      "notes": [
+        {
+          "from": "law-of-the-instrument",
+          "text": "The circle of competence tells you where your tools work well. The law of the instrument is what happens when you use them outside that circle."
+        }
+      ]
+    },
+    {
+      "source": "anchoring-bias",
+      "target": "law-of-the-instrument",
+      "notes": [
+        {
+          "from": "law-of-the-instrument",
+          "text": "Your most familiar tool anchors your thinking about solutions, making it harder to consider unfamiliar alternatives."
+        }
+      ]
+    },
+    {
+      "source": "inversion",
+      "target": "law-of-the-instrument",
+      "notes": [
+        {
+          "from": "law-of-the-instrument",
+          "text": "Inversion helps break the law of the instrument by asking what would make the problem worse, rather than jumping to your default solution."
         }
       ]
     },
@@ -7290,6 +8256,56 @@
       ]
     },
     {
+      "source": "omission-bias",
+      "target": "status-quo-bias",
+      "notes": [
+        {
+          "from": "omission-bias",
+          "text": "Omission bias and status quo bias reinforce each other - the preference for inaction protects the current state of affairs, even when the current state is harmful."
+        }
+      ]
+    },
+    {
+      "source": "loss-aversion",
+      "target": "omission-bias",
+      "notes": [
+        {
+          "from": "omission-bias",
+          "text": "Omission bias is partly driven by loss aversion - the harms caused by action feel like losses we chose, while harms caused by inaction feel like the natural order."
+        }
+      ]
+    },
+    {
+      "source": "framing-effect",
+      "target": "omission-bias",
+      "notes": [
+        {
+          "from": "omission-bias",
+          "text": "Whether a choice is framed as an action or an omission changes how people evaluate it morally, even when the outcomes are identical."
+        }
+      ]
+    },
+    {
+      "source": "normalcy-bias",
+      "target": "omission-bias",
+      "notes": [
+        {
+          "from": "omission-bias",
+          "text": "Normalcy bias - the assumption that things will continue as they are - encourages the inaction that omission bias protects from moral scrutiny."
+        }
+      ]
+    },
+    {
+      "source": "motivated-reasoning",
+      "target": "omission-bias",
+      "notes": [
+        {
+          "from": "omission-bias",
+          "text": "Omission bias gives motivated reasoning a comfortable hiding place - 'I didn't do anything' feels like a defence even when it isn't."
+        }
+      ]
+    },
+    {
       "source": "opportunity-cost",
       "target": "sunk-cost-fallacy",
       "notes": [
@@ -7460,6 +8476,46 @@
         {
           "from": "paradox-of-tolerance",
           "text": "Critics of the paradox often invoke slippery slope arguments - claiming that any limits on tolerance will inevitably lead to total censorship."
+        }
+      ]
+    },
+    {
+      "source": "apophenia",
+      "target": "pareidolia",
+      "notes": [
+        {
+          "from": "pareidolia",
+          "text": "Pareidolia is a specific visual form of apophenia - the broader tendency to find meaningful patterns in random information."
+        }
+      ]
+    },
+    {
+      "source": "confirmation-bias",
+      "target": "pareidolia",
+      "notes": [
+        {
+          "from": "pareidolia",
+          "text": "Once you see a face or shape in something, confirmation bias makes it almost impossible to unsee it."
+        }
+      ]
+    },
+    {
+      "source": "availability-heuristic",
+      "target": "pareidolia",
+      "notes": [
+        {
+          "from": "pareidolia",
+          "text": "Viral pareidolia images become vivid memories that distort our sense of how meaningful random patterns are."
+        }
+      ]
+    },
+    {
+      "source": "clustering-illusion",
+      "target": "pareidolia",
+      "notes": [
+        {
+          "from": "pareidolia",
+          "text": "Both pareidolia and the clustering illusion involve perceiving order in randomness - one visual, the other statistical."
         }
       ]
     },
@@ -8036,6 +9092,46 @@
         {
           "from": "repetition-as-persuasion",
           "text": "Repeated slogans become thought-terminating clichés that shut down further questioning"
+        }
+      ]
+    },
+    {
+      "source": "availability-heuristic",
+      "target": "salience-bias",
+      "notes": [
+        {
+          "from": "salience-bias",
+          "text": "Salience bias feeds the availability heuristic - the more prominent something is, the easier it is to recall, and the more common or important it seems."
+        }
+      ]
+    },
+    {
+      "source": "framing-effect",
+      "target": "salience-bias",
+      "notes": [
+        {
+          "from": "salience-bias",
+          "text": "Framing is partly about controlling salience - making some aspects of a situation prominent while pushing others into the background."
+        }
+      ]
+    },
+    {
+      "source": "negativity-bias",
+      "target": "salience-bias",
+      "notes": [
+        {
+          "from": "salience-bias",
+          "text": "Negative information is inherently more salient than positive information, which is why bad news dominates good news."
+        }
+      ]
+    },
+    {
+      "source": "anchoring-bias",
+      "target": "salience-bias",
+      "notes": [
+        {
+          "from": "salience-bias",
+          "text": "The first piece of salient information often serves as an anchor that shapes subsequent judgements."
         }
       ]
     },
@@ -9236,6 +10332,16 @@
       ]
     },
     {
+      "source": "the-attention-economy",
+      "target": "weaponised-hopelessness",
+      "notes": [
+        {
+          "from": "weaponised-hopelessness",
+          "text": "The attention economy rewards doom content because despair drives engagement. Weaponised hopelessness is profitable."
+        }
+      ]
+    },
+    {
       "source": "loaded-language",
       "target": "weasel-words",
       "notes": [
@@ -9612,21 +10718,21 @@
     "Cultural Influence": "#1A7A7A"
   },
   "meta": {
-    "totalEntries": 149,
-    "totalConnections": 664,
+    "totalEntries": 166,
+    "totalConnections": 745,
     "totalCollections": 11,
     "categoryDistribution": {
-      "Logical Fallacy": 19,
-      "Cognitive Bias": 31,
+      "Logical Fallacy": 20,
+      "Cognitive Bias": 41,
       "Cultural Influence": 18,
+      "Systems Thinking": 7,
+      "Psychological Phenomenon": 27,
       "Rhetorical Device": 10,
-      "Manipulation Tactic": 16,
-      "Psychological Phenomenon": 23,
+      "Manipulation Tactic": 17,
       "Mental Model": 12,
       "Psychological Defence": 8,
-      "Systems Thinking": 6,
       "Political Theory": 6
     },
-    "buildTimestamp": "2026-05-25T15:15:11.410Z"
+    "buildTimestamp": "2026-05-25T15:37:39.576Z"
   }
 }
