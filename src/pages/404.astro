@@ -1,0 +1,123 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import Asterisk from '../components/Asterisk.astro';
+---
+<BaseLayout
+  title="Page not found - Moresapien"
+  description="The page you were looking for isn't here. Try the homepage or browse the full knowledge base."
+  canonical="https://moresapien.org/404/"
+  noIndex={true}
+>
+  <Nav />
+
+  <main id="main" class="not-found">
+    <article class="nf-card">
+      <p class="nf-eyebrow">404</p>
+      <h1 class="nf-title">
+        <span class="nf-title-tail">Page not found <span class="nf-asterisk"><Asterisk size={28} /></span></span>
+      </h1>
+      <p class="nf-body">
+        The page you were trying to reach isn't here. It may have been renamed, moved, or never existed at all - the internet is like that. Try one of these instead.
+      </p>
+
+      <ul class="nf-links">
+        <li><a class="nf-link nf-link-primary" href="/">Back to the homepage</a></li>
+        <li><a class="nf-link" href="/browse/">Browse all entries</a></li>
+        <li><a class="nf-link" href="/collections/">Read a collection</a></li>
+        <li><a class="nf-link" href="/connections/">Explore the knowledge graph</a></li>
+      </ul>
+    </article>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .not-found {
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: var(--ms-r8) var(--ms-r5) var(--ms-r9);
+  }
+
+  .nf-card {
+    text-align: left;
+  }
+
+  .nf-eyebrow {
+    font-family: var(--ms-font-mono);
+    font-size: var(--ms-meta);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ms-coral);
+    margin-bottom: var(--ms-r3);
+  }
+
+  .nf-title {
+    font-family: var(--ms-font-display);
+    font-size: var(--ms-h1);
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    line-height: 0.95;
+    color: var(--ms-ink);
+    margin-bottom: var(--ms-r5);
+  }
+
+  .nf-title-tail {
+    white-space: nowrap;
+  }
+
+  .nf-asterisk {
+    display: inline-block;
+    transform: translateY(-0.55em);
+  }
+
+  .nf-body {
+    font-family: var(--ms-font-body);
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--ms-ink);
+    margin-bottom: var(--ms-r6);
+    max-width: 36rem;
+  }
+
+  .nf-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--ms-r3);
+  }
+
+  .nf-link {
+    font-family: var(--ms-font-body);
+    font-size: var(--ms-body);
+    color: var(--ms-ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--ms-rule);
+    padding-bottom: 2px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    align-self: flex-start;
+  }
+
+  .nf-link:hover {
+    color: var(--ms-coral);
+    border-bottom-color: var(--ms-coral);
+  }
+
+  .nf-link-primary {
+    font-weight: 500;
+    border-bottom-color: var(--ms-coral);
+  }
+
+  @media (max-width: 640px) {
+    .not-found {
+      padding: var(--ms-r6) var(--ms-r4) var(--ms-r8);
+    }
+    .nf-body {
+      font-size: 1rem;
+    }
+  }
+</style>

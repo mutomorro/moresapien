@@ -10,6 +10,7 @@ import KnowledgeCard from '../components/KnowledgeCard.astro';
 import ConnectionMiniMap from '../components/ConnectionMiniMap.astro';
 import TableOfContents from '../components/TableOfContents.jsx';
 import TableOfContentsMobile from '../components/TableOfContentsMobile.jsx';
+import BreadcrumbSchema from '../components/BreadcrumbSchema.astro';
 import { getCategoryColor, getCategoryColorHex, getCategoryTextColor, getCategorySlug } from '../utils/categoryColors';
 import { hasDiagram, loadDiagram } from '../data/diagramRegistry.js';
 
@@ -95,7 +96,7 @@ function renderInlineMarkdown(text: string): string {
 }
 
 const pageTitle = title + ' - Moresapien';
-const pageDescription = title + ': ' + oneLiner + ' Learn about this ' + category.toLowerCase() + ' and how it affects your thinking.';
+const pageDescription = oneLiner;
 const ogImage = siteUrl + '/og/' + entry.id + '.png';
 const thoughtHtml = renderInlineMarkdown(thoughtToHoldOnto);
 
@@ -160,6 +161,13 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
   htmlStyle={htmlStyle}
 >
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+
+  <BreadcrumbSchema items={[
+    { name: 'Home', url: siteUrl + '/' },
+    { name: 'Browse', url: siteUrl + '/browse/' },
+    { name: category, url: siteUrl + '/browse/' + getCategorySlug(category) + '/' },
+    { name: title },
+  ]} />
 
   <Nav />
 

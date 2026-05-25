@@ -1,12 +1,39 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Nav from '../components/Nav.astro';
+import BreadcrumbSchema from '../components/BreadcrumbSchema.astro';
+
+const SITE = 'https://moresapien.org';
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'ContactPage',
+  name: 'Contact - Moresapien',
+  url: SITE + '/contact/',
+  isPartOf: {
+    '@type': 'WebSite',
+    name: 'Moresapien',
+    url: SITE + '/',
+  },
+};
 ---
 <BaseLayout
   title="Contact - Moresapien"
   description="Get in touch with Moresapien - suggest a concept, ask a question, share how you're using the knowledge base, or anything else."
   canonical="https://moresapien.org/contact/"
 >
+  <script
+    is:inline
+    type="application/ld+json"
+    slot="head"
+    set:html={JSON.stringify(structuredData)}
+  />
+
+  <BreadcrumbSchema items={[
+    { name: 'Home', url: SITE + '/' },
+    { name: 'Contact' },
+  ]} />
+
   <Nav currentPage="contact" />
 
   <main id="main" class="contact-page">

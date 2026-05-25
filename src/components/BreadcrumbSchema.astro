@@ -1,0 +1,30 @@
+---
+// Reusable BreadcrumbList JSON-LD emitter.
+//
+// Usage: place as a direct child of BaseLayout so the `slot="head"` forwards.
+//
+//   <BreadcrumbSchema items={[
+//     { name: 'Home', url: 'https://moresapien.org/' },
+//     { name: 'Browse', url: 'https://moresapien.org/browse/' },
+//     { name: category, url: `https://moresapien.org/browse/${slug}/` },
+//     { name: title }, // last item: no URL — that's the current page
+//   ]} />
+
+export interface Props {
+  items: Array<{ name: string; url?: string }>;
+}
+
+const { items } = Astro.props;
+
+const breadcrumbList = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: items.map((item, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: item.name,
+    ...(item.url ? { item: item.url } : {}),
+  })),
+};
+---
+<script slot="head" type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbList)} />

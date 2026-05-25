@@ -15,7 +15,7 @@
 # requested path. Once an entry exists in /src/content/entries/,
 # Astro generates its page and the redirect becomes a no-op.
 #
-# Last cleaned: 25 May 2026 (batch 2)
+# Last cleaned: 25 May 2026 (batch 3 — template fixes)
 # ──────────────────────────────────────────────
 
 # ── Old category/archive pages → new browse pages ──
@@ -33,57 +33,40 @@
 # ── Entries with different slugs or paths ──
 /cognitive-dissonance/effort-justification/     /effort-justification/      301
 /cognitive-dissonance/effort-justification      /effort-justification/      301
-/empathy-gap/                                   /                           301
-/empathy-gap                                    /                           301
 /mental-model/hanlons-razor/                    /hanlons-razor/             301
 /mental-model/hanlons-razor                     /hanlons-razor/             301
 
-# ── Old framework/codifier subpages with no equivalent ──
-/framework/the-com-b-model/                     /                           301
-/codifiers/marcel-proust/                       /                           301
+# ── Old slugs retargeted to the closest matching category page ──
+# Better than 301-to-homepage (which Google treats as a soft 404).
+/empathy-gap/                                   /browse/cognitive-bias/     301
+/empathy-gap                                    /browse/cognitive-bias/     301
+/adkar-model/                                   /browse/mental-model/       301
+/framework/the-com-b-model/                     /browse/mental-model/       301
 
-# ── GSC 404 fixes (25 May 2026) ──
+# ── /home/ is an alias for the root: harmless 301 ──
 /home/                                          /                           301
-/adkar-model/                                   /                           301
-/tool-topic/staff-welfare/feed/                 /                           301
-
-# ── Old WordPress essays and pages with no equivalent ──
-/the-cult-of-celebrity/                         /                           301
-/the-evolution-of-the-cult-of-celebrity/        /                           301
-/the-virtue-of-epistemic-humility-navigating-the-landscape-of-knowledge/   /   301
-/exploring-sapience-a-higher-state-of-wisdom/   /                           301
-/5-conflict-styles/                             /                           301
-/change-curve/                                  /                           301
-/intersubjective-myths/                         /                           301
-/social-contract-theory/                        /                           301
-/customer-dashboard/                            /                           301
-/writing/                                       /                           301
-/news/                                          /                           301
-/essay/                                         /                           301
-/sitemap/                                       /                           301
-
-# ── Misc WordPress pages ──
-/privacy-policy/                                /                           301
-/cookie-policy/                                 /                           301
-/checkout-2/                                    /                           301
 
 # ── 410 Gone: niche memory/encoding concepts not migrated ──
 # These old WP entries were too narrow/academic for the site.
 # 410 tells Google to de-index cleanly rather than flagging as errors.
-/common-source-bias/                            /                           410
-/conservative-bias/                             /                           410
-/self-reference-effect/                         /                           410
-/picture-superiority-effect/                    /                           410
-/von-restorff-effect/                           /                           410
-/humour-effect/                                 /                           410
-/bizarreness-effect/                            /                           410
-/mood-congruent-memory-bias/                    /                           410
-/cue-dependent-forgetting/                      /                           410
-/context-effect/                                /                           410
+/common-source-bias/                            /404.html                   410
+/conservative-bias/                             /404.html                   410
+/self-reference-effect/                         /404.html                   410
+/picture-superiority-effect/                    /404.html                   410
+/von-restorff-effect/                           /404.html                   410
+/humour-effect/                                 /404.html                   410
+/bizarreness-effect/                            /404.html                   410
+/mood-congruent-memory-bias/                    /404.html                   410
+/cue-dependent-forgetting/                      /404.html                   410
+/context-effect/                                /404.html                   410
 
-# ── WordPress uploads / admin paths ──
-/wp-content/*                                   /                           301
-/wp-admin/*                                     /                           301
-/wp-includes/*                                  /                           301
-/wp-login.php                                   /                           301
-/xmlrpc.php                                     /                           301
+# ── 410 Gone: WordPress feed/archive paths that genuinely no longer exist ──
+/tool-topic/staff-welfare/feed/                 /404.html                   410
+
+# ── 410 Gone: WordPress uploads / admin paths ──
+# Permanently gone — tells exploit scanners and Google to stop.
+/wp-content/*                                   /404.html                   410
+/wp-admin/*                                     /404.html                   410
+/wp-includes/*                                  /404.html                   410
+/wp-login.php                                   /404.html                   410
+/xmlrpc.php                                     /404.html                   410

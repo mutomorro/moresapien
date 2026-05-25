@@ -4,6 +4,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 import ConceptCard from '../components/ConceptCard.astro';
+import BreadcrumbSchema from '../components/BreadcrumbSchema.astro';
 import { CATEGORIES, getCategoryColor } from '../utils/categoryColors';
 
 const allEntries = await getCollection('entries');
@@ -29,6 +30,11 @@ const totalCount = entries.length;
   canonical="https://moresapien.org/browse/"
   ogImage="https://moresapien.org/og/home.png"
 >
+  <BreadcrumbSchema items={[
+    { name: 'Home', url: 'https://moresapien.org/' },
+    { name: 'Browse' },
+  ]} />
+
   <Nav currentPage="browse" />
 
   <main id="main" class="browse">

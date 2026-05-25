@@ -904,6 +904,21 @@ const activeId = aliasMap[currentPage] ?? '';
         });
       }
     }
+
+    // ------ ?q= deep link: open search and seed the query ------
+    // Backs the SearchAction in WebSite JSON-LD (sitelinks search box).
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const q = params.get('q');
+      if (q) {
+        open();
+        // open() focuses the input on the next frame; set the value once focused
+        requestAnimationFrame(() => {
+          input.value = q;
+          input.dispatchEvent(new Event('input', { bubbles: true }));
+        });
+      }
+    } catch {}
   }
 
   if (document.readyState === 'loading') {

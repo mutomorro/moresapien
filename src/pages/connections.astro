@@ -2,7 +2,24 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
+import BreadcrumbSchema from '../components/BreadcrumbSchema.astro';
 import ConceptGraph from '../components/ConceptGraph.jsx';
+
+const SITE = 'https://moresapien.org';
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Connections - Moresapien',
+  url: SITE + '/connections/',
+  description:
+    'Interactive knowledge graph showing how cognitive biases, logical fallacies, mental models, and manipulation tactics connect and reinforce each other.',
+  isPartOf: {
+    '@type': 'WebSite',
+    name: 'Moresapien',
+    url: SITE + '/',
+  },
+};
 ---
 <BaseLayout
   title="Connections - Moresapien"
@@ -10,15 +27,53 @@ import ConceptGraph from '../components/ConceptGraph.jsx';
   canonical="https://moresapien.org/connections/"
   fullBleed={true}
 >
+  <script
+    is:inline
+    type="application/ld+json"
+    slot="head"
+    set:html={JSON.stringify(structuredData)}
+  />
+
+  <BreadcrumbSchema items={[
+    { name: 'Home', url: SITE + '/' },
+    { name: 'Connections' },
+  ]} />
+
   <Nav currentPage="connections" />
-  <div class="graph-container">
-    <ConceptGraph client:only="react" />
-  </div>
+
+  <main id="main" class="connections-main">
+    <header class="connections-intro">
+      <h1 class="connections-h1">Connections — the Moresapien knowledge graph</h1>
+      <p class="connections-lede">
+        Explore how cognitive biases, logical fallacies, mental models, and manipulation tactics connect and reinforce each other. Every line is a relationship between ideas — drag a node, search, or filter by category to find your way around the neighbourhood.
+      </p>
+    </header>
+
+    <div class="graph-container">
+      <ConceptGraph client:only="react" />
+    </div>
+  </main>
 
   <Footer />
 </BaseLayout>
 
 <style>
+  .connections-main {
+    display: contents;
+  }
+
+  .connections-intro {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
   .graph-container {
     height: calc(100vh - 49px);
     overflow: hidden;

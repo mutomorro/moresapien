@@ -4,6 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Nav from '../../components/Nav.astro';
 import Footer from '../../components/Footer.astro';
 import Asterisk from '../../components/Asterisk.astro';
+import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 import { getCategoryColor } from '../../utils/categoryColors';
 
 const collections = await getCollection('curatedCollections');
@@ -22,12 +23,45 @@ const collectionsData = collections.map((col) => {
     accent: primaryCategory ? getCategoryColor(primaryCategory) : 'var(--ms-mute)',
   };
 });
+
+const SITE = 'https://moresapien.org';
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Collections - Moresapien',
+  description:
+    "Curated walks through Moresapien's knowledge base - guided journeys through cognitive biases, logical fallacies, manipulation tactics, and more.",
+  url: SITE + '/collections/',
+  isPartOf: {
+    '@type': 'WebSite',
+    name: 'Moresapien',
+    url: SITE + '/',
+  },
+  hasPart: collectionsData.map((col) => ({
+    '@type': 'CreativeWork',
+    name: col.title,
+    url: SITE + '/collections/' + col.slug + '/',
+  })),
+};
 ---
 <BaseLayout
   title="Collections - Moresapien"
   description="Curated walks through Moresapien's knowledge base - guided journeys through cognitive biases, logical fallacies, manipulation tactics, and more."
   canonical="https://moresapien.org/collections/"
 >
+  <script
+    is:inline
+    type="application/ld+json"
+    slot="head"
+    set:html={JSON.stringify(structuredData)}
+  />
+
+  <BreadcrumbSchema items={[
+    { name: 'Home', url: 'https://moresapien.org/' },
+    { name: 'Collections' },
+  ]} />
+
   <Nav currentPage="collections" />
 
   <main id="main" class="collections-page">

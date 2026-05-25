@@ -4,6 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Nav from '../../components/Nav.astro';
 import Footer from '../../components/Footer.astro';
 import ConceptCard from '../../components/ConceptCard.astro';
+import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 
 function tagToSlug(tag: string): string {
   return tag.toLowerCase().trim().replace(/\s+/g, '-');
@@ -77,6 +78,12 @@ const structuredData = {
     slot="head"
     set:html={JSON.stringify(structuredData)}
   />
+
+  <BreadcrumbSchema items={[
+    { name: 'Home', url: 'https://moresapien.org/' },
+    { name: 'Browse', url: 'https://moresapien.org/browse/' },
+    { name: '#' + tag },
+  ]} />
 
   <Nav />
 

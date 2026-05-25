@@ -1,12 +1,46 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Nav from '../components/Nav.astro';
+import BreadcrumbSchema from '../components/BreadcrumbSchema.astro';
+
+const SITE = 'https://moresapien.org';
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  name: 'About - Moresapien',
+  url: SITE + '/about/',
+  mainEntity: {
+    '@type': 'Organization',
+    name: 'Moresapien',
+    url: SITE + '/',
+    description:
+      'A free knowledge base covering cognitive biases, logical fallacies, rhetorical devices, manipulation tactics, mental models, and concepts from psychology, systems thinking, and political theory.',
+    publisher: {
+      '@type': 'Organization',
+      name: 'Mutomorro',
+      url: 'https://mutomorro.com',
+    },
+  },
+};
 ---
 <BaseLayout
   title="About - Moresapien"
   description="Moresapien is a free knowledge base covering cognitive biases, logical fallacies, rhetorical devices, and manipulation tactics - written in plain language for everyone."
   canonical="https://moresapien.org/about/"
 >
+  <script
+    is:inline
+    type="application/ld+json"
+    slot="head"
+    set:html={JSON.stringify(structuredData)}
+  />
+
+  <BreadcrumbSchema items={[
+    { name: 'Home', url: SITE + '/' },
+    { name: 'About' },
+  ]} />
+
   <Nav currentPage="about" />
 
   <main id="main" class="about-page">

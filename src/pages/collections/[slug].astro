@@ -5,6 +5,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Nav from '../../components/Nav.astro';
 import Footer from '../../components/Footer.astro';
 import Asterisk from '../../components/Asterisk.astro';
+import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 import { getCategoryColor } from '../../utils/categoryColors';
 
 export async function getStaticPaths() {
@@ -81,13 +82,53 @@ const introHtml = introMd ? marked.parse(introMd) : '';
 const siteUrl = 'https://moresapien.org';
 const pageUrl = siteUrl + '/collections/' + collection.id + '/';
 const pageTitle = title + ' - Moresapien';
+
+// Meta descriptions truncated to ~155 chars to fit Google's display limit.
+function trimForMeta(s: string, max = 155): string {
+  if (s.length <= max) return s;
+  const cut = s.slice(0, max);
+  const lastSpace = cut.lastIndexOf(' ');
+  return (lastSpace > 100 ? cut.slice(0, lastSpace) : cut).replace(/[.,;:\s]+$/, '') + '…';
+}
+const pageDescription = trimForMeta(audience);
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: pageTitle,
+  description: pageDescription,
+  url: pageUrl,
+  isPartOf: {
+    '@type': 'WebSite',
+    name: 'Moresapien',
+    url: siteUrl + '/',
+  },
+  mainEntity: resolvedEntries.map((e: { slug: string; title: string }) => ({
+    '@type': 'DefinedTerm',
+    name: e.title,
+    url: siteUrl + '/' + e.slug + '/',
+  })),
+};
 ---
 <BaseLayout
   title={pageTitle}
-  description={audience}
+  description={pageDescription}
   canonical={pageUrl}
   ogType="article"
 >
+  <script
+    is:inline
+    type="application/ld+json"
+    slot="head"
+    set:html={JSON.stringify(structuredData)}
+  />
+
+  <BreadcrumbSchema items={[
+    { name: 'Home', url: siteUrl + '/' },
+    { name: 'Collections', url: siteUrl + '/collections/' },
+    { name: title },
+  ]} />
+
   <Nav currentPage="collections" />
 
   <main id="main" class="collection-page">
