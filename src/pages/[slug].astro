@@ -169,11 +169,18 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
     { name: title },
   ]} />
 
-  <Nav />
+  <div class="no-print">
+    <Nav />
+  </div>
 
   <main id="main" class="entry-page">
     <div class="entry-layout">
       <article class="entry">
+        <div class="print-header print-only" aria-hidden="true">
+          <span class="print-wordmark">Moresapien<span class="print-asterisk">*</span></span>
+          <span class="print-meta">{category} · moresapien.org</span>
+        </div>
+
         <header class="entry-header">
           <p class="eyebrow"><a href={`/browse/${getCategorySlug(category)}/`} class="eyebrow-link">{category}</a></p>
           <h1 class="entry-title">
@@ -191,7 +198,7 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
 
         <!-- Mobile ToC: visible only below 960px -->
         {tocHeadings.length > 0 && (
-          <div class="toc-mobile-wrapper">
+          <div class="toc-mobile-wrapper no-print">
             <TableOfContentsMobile
               client:load
               headings={tocHeadings}
@@ -264,7 +271,7 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
         )}
 
         <footer class="entry-footer">
-          <div class="share-row">
+          <div class="share-row no-print">
             <span class="share-label">Found this useful?</span>
             <ShareButton
               client:load
@@ -273,10 +280,23 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
               url={pageUrl}
               category={category}
             />
+            <button
+              type="button"
+              class="print-link"
+              onclick="window.print()"
+              aria-label="Open the print dialog to save this entry as a PDF"
+            >
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 6 2 18 2 18 9" />
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+                <rect x="6" y="14" width="12" height="8" />
+              </svg>
+              <span>Save as PDF</span>
+            </button>
           </div>
 
           {resolvedRelated.length > 0 && (
-            <div class="connection-map">
+            <div class="connection-map no-print">
               <h3>How this connects</h3>
               <p class="map-hint">
                 {title} sits alongside {resolvedRelated.length === 1 ? 'one related idea' : `${resolvedRelated.length} related ideas`} - a quick map of the neighbourhood.
@@ -290,7 +310,7 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
             </div>
           )}
 
-          <div class="sc-mobile sc-mobile--inline">
+          <div class="sc-mobile sc-mobile--inline no-print">
             <StayCurious />
           </div>
 
@@ -317,16 +337,22 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
           )}
 
           {displayTags.length > 0 && (
-            <div class="tag-row" aria-label="Tags">
+            <div class="tag-row no-print" aria-label="Tags">
               {displayTags.map((tag: string) => (
                 <a class="tag" href={`/tag/${tagToSlug(tag)}/`}>#{tag}</a>
               ))}
             </div>
           )}
         </footer>
+
+        <div class="print-footer print-only" aria-hidden="true">
+          <p class="print-source-url">Source: <strong>{pageUrl}</strong></p>
+          <p class="print-retrieved-line">Retrieved on <span id="print-retrieved-date"></span></p>
+          <p class="print-tagline">From the Moresapien knowledge base — a free, independent reference to the patterns that shape how we think, decide, and disagree.</p>
+        </div>
       </article>
 
-      <aside class="entry-sidebar" aria-label="Page navigation and newsletter">
+      <aside class="entry-sidebar no-print" aria-label="Page navigation and newsletter">
         <div class="sidebar-sticky">
           {tocHeadings.length > 0 && (
             <TableOfContents
@@ -342,7 +368,29 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
     </div>
   </main>
 
-  <Footer />
+  <div class="no-print">
+    <Footer />
+  </div>
+
+  <script is:inline>
+    (function () {
+      function setRetrievedDate() {
+        const el = document.getElementById('print-retrieved-date');
+        if (!el) return;
+        el.textContent = new Date().toLocaleDateString('en-GB', {
+          day: 'numeric',
+          month: 'long',
+          year: 'numeric',
+        });
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', setRetrievedDate);
+      } else {
+        setRetrievedDate();
+      }
+      window.addEventListener('beforeprint', setRetrievedDate);
+    })();
+  </script>
 </BaseLayout>
 
 <style>
@@ -1023,6 +1071,333 @@ const htmlStyle = `--page-accent: ${accent}; --page-accent-hex: ${accentHex}; --
       flex-direction: column;
       align-items: flex-start;
       gap: var(--ms-r3);
+    }
+  }
+
+  /* =============================================
+     Print / Save as PDF
+     ============================================= */
+
+  /* On screen, print-only blocks stay hidden */
+  .print-only {
+    display: none;
+  }
+
+  /* The "Save as PDF" button shown next to ShareButton */
+  .print-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    background: transparent;
+    border: 1px solid var(--ms-rule);
+    border-radius: var(--ms-radius-sm);
+    font-family: var(--ms-font-ui);
+    font-size: 0.8125rem;
+    color: var(--ms-mute);
+    cursor: pointer;
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+  .print-link:hover {
+    color: var(--page-accent);
+    border-color: var(--page-accent);
+  }
+  .print-link svg {
+    display: block;
+  }
+
+  @media print {
+    @page {
+      margin: 16mm 16mm 18mm;
+    }
+
+    /* Force the page background to white in print, even though the on-screen
+       design uses the warm paper tone. Browser-print "Background graphics" gets
+       toggled inconsistently by users; setting #fff here covers both states. */
+    :global(html),
+    :global(body) {
+      background: #fff !important;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    /* Hide everything not meant for print */
+    .no-print { display: none !important; }
+
+    /* Reveal print-only blocks */
+    .print-only { display: block !important; }
+
+    /* Strip page padding/grid */
+    .entry-page {
+      padding: 0 !important;
+      background: #fff !important;
+    }
+    .entry-layout {
+      display: block !important;
+      max-width: none !important;
+      margin: 0 !important;
+      gap: 0 !important;
+    }
+    .entry {
+      max-width: none !important;
+    }
+
+    /* --- Print header (article top) --- */
+    .print-header {
+      display: flex !important;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      padding-bottom: 6mm;
+      margin-bottom: 10mm;
+      border-bottom: 1px solid var(--ms-rule);
+    }
+    .print-wordmark {
+      font-family: var(--ms-font-display);
+      font-style: italic;
+      font-size: 14pt;
+      color: var(--ms-ink);
+    }
+    .print-asterisk {
+      color: var(--page-accent);
+      font-style: normal;
+      margin-left: 1px;
+    }
+    .print-meta {
+      font-family: var(--ms-font-mono);
+      font-size: 9pt;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--ms-mute);
+    }
+
+    /* --- Entry header --- */
+    .entry-header {
+      margin-bottom: 10mm;
+    }
+    .eyebrow,
+    .eyebrow-link {
+      color: var(--page-accent) !important;
+      border-bottom: none !important;
+    }
+    .entry-title {
+      font-size: 32pt !important;
+      line-height: 1.05 !important;
+      margin-bottom: 5mm !important;
+      break-after: avoid;
+      page-break-after: avoid;
+    }
+    .entry-oneliner {
+      font-size: 13pt !important;
+      line-height: 1.45 !important;
+      color: var(--ms-mute) !important;
+      max-width: none !important;
+    }
+    .also-known-as {
+      margin-top: 4mm !important;
+    }
+
+    /* --- Visual (knowledge card / diagram) --- */
+    .entry-visual {
+      margin-bottom: 8mm !important;
+      page-break-inside: avoid;
+      break-inside: avoid;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    /* --- Body --- */
+    .entry-body {
+      margin-bottom: 8mm !important;
+    }
+    .entry-body :global(h2) {
+      font-size: 18pt !important;
+      margin: 8mm 0 4mm !important;
+      break-after: avoid;
+      page-break-after: avoid;
+    }
+    .entry-body :global(h3) {
+      font-size: 14pt !important;
+      margin: 6mm 0 3mm !important;
+      break-after: avoid;
+      page-break-after: avoid;
+    }
+    .entry-body :global(p) {
+      font-size: 11pt !important;
+      line-height: 1.55 !important;
+      color: var(--ms-ink) !important;
+      margin-bottom: 3.5mm !important;
+      orphans: 3;
+      widows: 3;
+    }
+    .entry-body :global(em) {
+      color: var(--page-accent) !important;
+    }
+    .entry-body :global(a) {
+      color: var(--ms-ink) !important;
+      border-bottom: 1px solid var(--ms-mute) !important;
+    }
+
+    /* --- Block: How to spot it --- */
+    .block-spot {
+      background: #fff !important;
+      border-left-width: 3pt !important;
+      padding: 5mm 7mm !important;
+      margin-bottom: 8mm !important;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .block-spot .block-label {
+      font-size: 9pt !important;
+      color: var(--page-accent) !important;
+      margin-bottom: 2mm !important;
+    }
+    .block-spot .block-body {
+      font-size: 11pt !important;
+      color: var(--ms-ink) !important;
+    }
+
+    /* --- Block: Thought to hold onto (keep accent fill) --- */
+    .block-thought {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+      padding: 7mm !important;
+      margin-bottom: 8mm !important;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .block-thought-label {
+      font-size: 9pt !important;
+      margin-bottom: 3mm !important;
+    }
+    .block-thought-text {
+      font-size: 13pt !important;
+      line-height: 1.4 !important;
+    }
+
+    /* --- Block: Why it matters now --- */
+    .block-matters {
+      margin-bottom: 8mm !important;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .block-matters h2 {
+      font-size: 18pt !important;
+      margin-bottom: 3mm !important;
+    }
+    .block-matters p {
+      font-size: 11pt !important;
+      color: var(--ms-ink) !important;
+    }
+
+    /* --- Further reading (show URLs inline) --- */
+    .further-reading {
+      margin-top: 8mm !important;
+      padding-top: 5mm !important;
+      border-top: 1px solid var(--ms-rule) !important;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .further-reading-label {
+      font-size: 9pt !important;
+    }
+    .further-reading-list {
+      gap: 3mm !important;
+    }
+    .further-reading-list a {
+      font-size: 10pt !important;
+      color: var(--ms-ink) !important;
+      border-bottom: none !important;
+    }
+    .further-reading-list a::after {
+      content: " — " attr(href);
+      color: var(--ms-mute);
+      font-size: 9pt;
+      word-break: break-all;
+    }
+    .further-reading-icon {
+      display: none !important;
+    }
+
+    /* --- Entry footer (strip its top border, share/etc are hidden) --- */
+    .entry-footer {
+      margin-top: 6mm !important;
+      padding-top: 0 !important;
+      border-top: none !important;
+    }
+
+    /* --- Related concepts: flatten to a clean list --- */
+    .related-concepts {
+      margin-top: 8mm !important;
+      padding-top: 5mm !important;
+      border-top: 1px solid var(--ms-rule) !important;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .related-concepts h3 {
+      font-size: 14pt !important;
+      margin-bottom: 4mm !important;
+    }
+    .related-grid {
+      display: block !important;
+    }
+    .related-card {
+      display: block !important;
+      background: transparent !important;
+      border: none !important;
+      border-top: 1px solid var(--ms-rule) !important;
+      border-radius: 0 !important;
+      padding: 3mm 0 !important;
+      box-shadow: none !important;
+      transform: none !important;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .related-card .related-eyebrow {
+      font-size: 8pt !important;
+    }
+    .related-card .related-title {
+      font-size: 11pt !important;
+      color: var(--ms-ink) !important;
+    }
+    .related-card .related-oneliner {
+      font-size: 10pt !important;
+      color: var(--ms-mute) !important;
+    }
+    .related-card .related-note {
+      font-size: 9pt !important;
+      margin-top: 1mm !important;
+      padding-top: 1mm !important;
+    }
+
+    /* --- Print footer (source + tagline) --- */
+    .print-footer {
+      display: block !important;
+      margin-top: 12mm;
+      padding-top: 6mm;
+      border-top: 1px solid var(--ms-rule);
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .print-source-url {
+      font-family: var(--ms-font-mono);
+      font-size: 9pt;
+      color: var(--ms-ink);
+      margin-bottom: 2mm;
+      word-break: break-all;
+    }
+    .print-retrieved-line {
+      font-family: var(--ms-font-mono);
+      font-size: 9pt;
+      color: var(--ms-mute);
+      margin-bottom: 3mm;
+    }
+    .print-tagline {
+      font-family: var(--ms-font-display);
+      font-style: italic;
+      font-size: 10pt;
+      line-height: 1.45;
+      color: var(--ms-mute);
     }
   }
 </style>
