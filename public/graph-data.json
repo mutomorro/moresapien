@@ -49,7 +49,7 @@
         "wellbeing",
         "systems"
       ],
-      "connections": 5
+      "connections": 6
     },
     {
       "slug": "anchoring-bias",
@@ -65,7 +65,7 @@
         "workplace",
         "critical thinking"
       ],
-      "connections": 21
+      "connections": 22
     },
     {
       "slug": "anthropocentrism",
@@ -81,7 +81,7 @@
         "ethics",
         "climate"
       ],
-      "connections": 5
+      "connections": 8
     },
     {
       "slug": "apophenia",
@@ -113,7 +113,7 @@
         "debates",
         "media"
       ],
-      "connections": 5
+      "connections": 8
     },
     {
       "slug": "appeal-to-emotion",
@@ -146,7 +146,7 @@
         "science",
         "rhetoric"
       ],
-      "connections": 11
+      "connections": 12
     },
     {
       "slug": "appeal-to-nature",
@@ -162,7 +162,7 @@
         "environment",
         "decision-making"
       ],
-      "connections": 6
+      "connections": 7
     },
     {
       "slug": "appeal-to-tradition",
@@ -178,7 +178,7 @@
         "religion",
         "critical thinking"
       ],
-      "connections": 5
+      "connections": 8
     },
     {
       "slug": "arrival-fallacy",
@@ -194,7 +194,7 @@
         "psychology",
         "work"
       ],
-      "connections": 5
+      "connections": 8
     },
     {
       "slug": "astroturfing",
@@ -260,7 +260,7 @@
         "everyday life",
         "risk"
       ],
-      "connections": 35
+      "connections": 36
     },
     {
       "slug": "aversive-racism",
@@ -325,7 +325,7 @@
         "critical thinking",
         "risk-perception"
       ],
-      "connections": 5
+      "connections": 8
     },
     {
       "slug": "ben-franklin-effect",
@@ -374,7 +374,7 @@
         "media literacy",
         "politics"
       ],
-      "connections": 6
+      "connections": 7
     },
     {
       "slug": "bread-and-circuses",
@@ -392,7 +392,7 @@
         "control",
         "history"
       ],
-      "connections": 6
+      "connections": 7
     },
     {
       "slug": "burden-of-proof",
@@ -457,7 +457,7 @@
         "systems thinking",
         "reform"
       ],
-      "connections": 5
+      "connections": 8
     },
     {
       "slug": "circle-of-competence",
@@ -473,7 +473,7 @@
         "investing",
         "leadership"
       ],
-      "connections": 6
+      "connections": 7
     },
     {
       "slug": "circular-reasoning",
@@ -489,7 +489,7 @@
         "debate",
         "philosophy"
       ],
-      "connections": 6
+      "connections": 7
     },
     {
       "slug": "clustering-illusion",
@@ -520,7 +520,7 @@
         "everyday life",
         "relationships"
       ],
-      "connections": 48
+      "connections": 49
     },
     {
       "slug": "collective-amnesia",
@@ -571,7 +571,7 @@
         "relationships",
         "politics"
       ],
-      "connections": 9
+      "connections": 10
     },
     {
       "slug": "compassion-fatigue",
@@ -587,7 +587,7 @@
         "mental health",
         "news consumption"
       ],
-      "connections": 7
+      "connections": 8
     },
     {
       "slug": "competitive-victimhood",
@@ -604,7 +604,7 @@
         "politics",
         "media"
       ],
-      "connections": 5
+      "connections": 8
     },
     {
       "slug": "complexity-bias",
@@ -620,7 +620,7 @@
         "problem-solving",
         "misinformation"
       ],
-      "connections": 5
+      "connections": 7
     },
     {
       "slug": "conceptual-gentrification",
@@ -670,7 +670,7 @@
         "news media",
         "science"
       ],
-      "connections": 61
+      "connections": 62
     },
     {
       "slug": "conformity-bias",
@@ -719,7 +719,7 @@
         "assumptions",
         "systems"
       ],
-      "connections": 7
+      "connections": 8
     },
     {
       "slug": "cultural-hegemony",
@@ -753,7 +753,7 @@
         "writing",
         "teaching"
       ],
-      "connections": 5
+      "connections": 8
     },
     {
       "slug": "dark-patterns",
@@ -801,7 +801,7 @@
         "everyday life",
         "self-control"
       ],
-      "connections": 5
+      "connections": 6
     },
     {
       "slug": "denial",
@@ -817,7 +817,7 @@
         "health",
         "politics"
       ],
-      "connections": 12
+      "connections": 13
     },
     {
       "slug": "diffusion-of-responsibility",
@@ -849,7 +849,7 @@
         "anger",
         "stress"
       ],
-      "connections": 5
+      "connections": 7
     },
     {
       "slug": "divide-and-conquer",
@@ -897,7 +897,7 @@
         "science",
         "everyday life"
       ],
-      "connections": 15
+      "connections": 17
     },
     {
       "slug": "effort-justification",
@@ -913,7 +913,7 @@
         "workplace",
         "critical thinking"
       ],
-      "connections": 6
+      "connections": 7
     },
     {
       "slug": "emergence",
@@ -929,7 +929,7 @@
         "politics",
         "complexity"
       ],
-      "connections": 10
+      "connections": 11
     },
     {
       "slug": "euphemism",
@@ -1012,7 +1012,7 @@
         "critical thinking",
         "media literacy"
       ],
-      "connections": 6
+      "connections": 8
     },
     {
       "slug": "false-dilemma",
@@ -1028,7 +1028,7 @@
         "rhetoric",
         "decision-making"
       ],
-      "connections": 14
+      "connections": 15
     },
     {
       "slug": "false-equivalence",
@@ -1061,7 +1061,7 @@
         "everyday life",
         "decision-making"
       ],
-      "connections": 16
+      "connections": 17
     },
     {
       "slug": "firehose-of-falsehood",
@@ -1077,7 +1077,7 @@
         "social media",
         "information warfare"
       ],
-      "connections": 10
+      "connections": 11
     },
     {
       "slug": "first-principles-thinking",
@@ -1093,7 +1093,7 @@
         "creativity",
         "workplace"
       ],
-      "connections": 18
+      "connections": 19
     },
     {
       "slug": "fog-fear-obligation-guilt",
@@ -1172,7 +1172,7 @@
         "social perception",
         "conflict"
       ],
-      "connections": 24
+      "connections": 25
     },
     {
       "slug": "gaslighting",
@@ -1270,7 +1270,7 @@
         "decision-making",
         "science"
       ],
-      "connections": 10
+      "connections": 11
     },
     {
       "slug": "hindsight-bias",
@@ -1318,7 +1318,7 @@
         "social media",
         "persuasion"
       ],
-      "connections": 16
+      "connections": 17
     },
     {
       "slug": "implicit-association",
@@ -1334,7 +1334,7 @@
         "critical thinking",
         "psychology"
       ],
-      "connections": 5
+      "connections": 6
     },
     {
       "slug": "in-group-out-group-bias",
@@ -1350,7 +1350,7 @@
         "social media",
         "media"
       ],
-      "connections": 19
+      "connections": 20
     },
     {
       "slug": "independent-evaluation",
@@ -1398,7 +1398,7 @@
         "decision-making",
         "empathy"
       ],
-      "connections": 9
+      "connections": 10
     },
     {
       "slug": "law-of-the-instrument",
@@ -1430,7 +1430,7 @@
         "education",
         "resilience"
       ],
-      "connections": 7
+      "connections": 8
     },
     {
       "slug": "loaded-language",
@@ -1446,7 +1446,7 @@
         "propaganda",
         "rhetoric"
       ],
-      "connections": 13
+      "connections": 14
     },
     {
       "slug": "loaded-question",
@@ -1462,7 +1462,7 @@
         "manipulation",
         "critical thinking"
       ],
-      "connections": 5
+      "connections": 8
     },
     {
       "slug": "loss-aversion",
@@ -1479,7 +1479,7 @@
         "psychology",
         "critical thinking"
       ],
-      "connections": 24
+      "connections": 25
     },
     {
       "slug": "love-bombing",
@@ -1528,7 +1528,7 @@
         "social dynamics",
         "propaganda"
       ],
-      "connections": 23
+      "connections": 24
     },
     {
       "slug": "manufacturing-desire",
@@ -1612,7 +1612,7 @@
         "emotions",
         "media literacy"
       ],
-      "connections": 6
+      "connections": 9
     },
     {
       "slug": "moral-hypocrisy",
@@ -1629,7 +1629,7 @@
         "workplace",
         "social media"
       ],
-      "connections": 7
+      "connections": 8
     },
     {
       "slug": "moral-licensing",
@@ -1711,7 +1711,7 @@
         "relationships",
         "debate"
       ],
-      "connections": 10
+      "connections": 11
     },
     {
       "slug": "naive-realism",
@@ -1727,7 +1727,7 @@
         "empathy",
         "media"
       ],
-      "connections": 18
+      "connections": 19
     },
     {
       "slug": "negativity-bias",
@@ -1775,7 +1775,7 @@
         "tribalism",
         "critical thinking"
       ],
-      "connections": 5
+      "connections": 7
     },
     {
       "slug": "normalcy-bias",
@@ -1840,7 +1840,7 @@
         "media literacy",
         "conspiracy theories"
       ],
-      "connections": 11
+      "connections": 12
     },
     {
       "slug": "omission-bias",
@@ -1904,7 +1904,7 @@
         "social dynamics",
         "critical thinking"
       ],
-      "connections": 14
+      "connections": 15
     },
     {
       "slug": "paradox-of-tolerance",
@@ -1920,7 +1920,7 @@
         "media literacy",
         "philosophy"
       ],
-      "connections": 6
+      "connections": 7
     },
     {
       "slug": "pareidolia",
@@ -1951,7 +1951,7 @@
         "politics",
         "culture"
       ],
-      "connections": 15
+      "connections": 16
     },
     {
       "slug": "post-hoc",
@@ -1983,7 +1983,7 @@
         "workplace",
         "media literacy"
       ],
-      "connections": 12
+      "connections": 13
     },
     {
       "slug": "psychological-projection",
@@ -1999,7 +1999,7 @@
         "conflict",
         "manipulation"
       ],
-      "connections": 9
+      "connections": 10
     },
     {
       "slug": "rationalisation",
@@ -2047,7 +2047,7 @@
         "self-deception",
         "unconscious"
       ],
-      "connections": 5
+      "connections": 6
     },
     {
       "slug": "recuperation",
@@ -2097,7 +2097,7 @@
         "institutions",
         "accountability"
       ],
-      "connections": 5
+      "connections": 7
     },
     {
       "slug": "reification",
@@ -2148,14 +2148,14 @@
         "social media",
         "persuasion"
       ],
-      "connections": 5
+      "connections": 7
     },
     {
       "slug": "salience-bias",
       "title": "Salience Bias",
       "category": "Cognitive Bias",
       "colour": "#3559B0",
-      "oneLiner": "The tendency to give disproportionate weight to information that is prominent, vivid, or emotionally striking, while overlooking information that is less noticeable.",
+      "oneLiner": "The tendency to give disproportionate weight to prominent, vivid, or emotionally striking information while overlooking quieter details.",
       "tags": [
         "perception",
         "media literacy",
@@ -2180,7 +2180,7 @@
         "prejudice",
         "leadership"
       ],
-      "connections": 11
+      "connections": 12
     },
     {
       "slug": "sealioning",
@@ -2212,7 +2212,7 @@
         "workplace",
         "systems thinking"
       ],
-      "connections": 15
+      "connections": 16
     },
     {
       "slug": "self-serving-bias",
@@ -2228,7 +2228,7 @@
         "decision-making",
         "politics"
       ],
-      "connections": 7
+      "connections": 8
     },
     {
       "slug": "slippery-slope",
@@ -2277,7 +2277,7 @@
         "critical thinking",
         "social media"
       ],
-      "connections": 6
+      "connections": 7
     },
     {
       "slug": "spiral-of-silence",
@@ -2309,7 +2309,7 @@
         "workplace",
         "everyday life"
       ],
-      "connections": 5
+      "connections": 6
     },
     {
       "slug": "state-of-nature-assumption",
@@ -2326,7 +2326,7 @@
         "debate",
         "media literacy"
       ],
-      "connections": 6
+      "connections": 8
     },
     {
       "slug": "status-quo-bias",
@@ -2342,7 +2342,7 @@
         "organisations",
         "technology"
       ],
-      "connections": 14
+      "connections": 15
     },
     {
       "slug": "steel-manning",
@@ -2375,7 +2375,7 @@
         "social media",
         "rhetoric"
       ],
-      "connections": 18
+      "connections": 19
     },
     {
       "slug": "streisand-effect",
@@ -2409,7 +2409,7 @@
         "health",
         "institutions"
       ],
-      "connections": 6
+      "connections": 7
     },
     {
       "slug": "sunk-cost-fallacy",
@@ -2424,7 +2424,7 @@
         "politics",
         "critical thinking"
       ],
-      "connections": 15
+      "connections": 16
     },
     {
       "slug": "survivorship-bias",
@@ -2448,7 +2448,7 @@
       "title": "Symbolic Racism",
       "category": "Psychological Phenomenon",
       "colour": "#7A3A5E",
-      "oneLiner": "When prejudice is expressed not through overt hostility but through opposition to policies associated with marginalised groups, framed in the language of fairness and principle.",
+      "oneLiner": "When prejudice hides behind the language of fairness - opposing policies that help marginalised groups while insisting the opposition isn't racial.",
       "tags": [
         "politics",
         "prejudice",
@@ -2464,7 +2464,7 @@
       "title": "The Attention Economy",
       "category": "Cultural Influence",
       "colour": "#1A7A7A",
-      "oneLiner": "A system in which human attention is treated as a scarce resource to be harvested, bought, sold, and competed for - reshaping culture around whatever captures it.",
+      "oneLiner": "A system in which human attention is treated as a scarce resource to be harvested, bought, sold, and competed for - reshaping culture around it.",
       "tags": [
         "social media",
         "culture",
@@ -2492,7 +2492,7 @@
         "mass production",
         "culture"
       ],
-      "connections": 5
+      "connections": 7
     },
     {
       "slug": "the-meritocracy-myth",
@@ -2527,7 +2527,7 @@
         "authenticity",
         "culture"
       ],
-      "connections": 6
+      "connections": 7
     },
     {
       "slug": "thought-terminating-cliche",
@@ -2543,7 +2543,7 @@
         "debate",
         "communication"
       ],
-      "connections": 9
+      "connections": 10
     },
     {
       "slug": "tipping-points",
@@ -2591,7 +2591,7 @@
         "social dynamics",
         "environment"
       ],
-      "connections": 11
+      "connections": 12
     },
     {
       "slug": "unintended-consequences",
@@ -2607,7 +2607,7 @@
         "everyday life",
         "policy"
       ],
-      "connections": 12
+      "connections": 13
     },
     {
       "slug": "victim-perpetrator-cycle",
@@ -2641,7 +2641,7 @@
         "critical thinking",
         "culture"
       ],
-      "connections": 6
+      "connections": 8
     },
     {
       "slug": "weasel-words",
@@ -2674,7 +2674,7 @@
         "social media",
         "critical thinking"
       ],
-      "connections": 10
+      "connections": 11
     },
     {
       "slug": "woozle-effect",
@@ -2690,7 +2690,7 @@
         "academic",
         "policy"
       ],
-      "connections": 5
+      "connections": 7
     },
     {
       "slug": "zero-sum-thinking",
@@ -2948,12 +2948,30 @@
       ]
     },
     {
+      "source": "anchoring-bias",
+      "target": "decision-fatigue",
+      "notes": [
+        {
+          "from": "anchoring-bias",
+          "text": "Decision fatigue makes anchoring stronger - a tired brain leans harder on whatever number it was given first."
+        },
+        {
+          "from": "decision-fatigue",
+          "text": "Fatigued minds are more susceptible to anchoring because they lack the energy to adjust"
+        }
+      ]
+    },
+    {
       "source": "anthropocentrism",
       "target": "tragedy-of-the-commons",
       "notes": [
         {
           "from": "anthropocentrism",
           "text": "The tragedy of the commons is anthropocentrism at the systems level - individual human interests depleting shared natural resources."
+        },
+        {
+          "from": "tragedy-of-the-commons",
+          "text": "The commons most at risk - atmosphere, oceans, biosphere - are also the ones an anthropocentric frame treats as backdrop rather than as systems whose collapse would unmake us."
         }
       ]
     },
@@ -2964,6 +2982,10 @@
         {
           "from": "anthropocentrism",
           "text": "Anthropocentric thinking ignores the feedback loops in natural systems - treating the environment as a resource to extract from rather than a system to participate in."
+        },
+        {
+          "from": "feedback-loops",
+          "text": "Anthropocentric framings make ecological feedback loops easy to miss - the system gets noticed only when it loops back to affect humans."
         }
       ]
     },
@@ -3092,6 +3114,10 @@
         {
           "from": "appeal-to-common-sense",
           "text": "'It's common sense' functions as a thought-terminating cliché - it closes discussion rather than opening it"
+        },
+        {
+          "from": "thought-terminating-cliche",
+          "text": "'It's just common sense' is one of the most reliable thought-terminating clichés - it tells the listener the conversation is over without ever making an argument."
         }
       ]
     },
@@ -3208,6 +3234,16 @@
       ]
     },
     {
+      "source": "appeal-to-false-authority",
+      "target": "woozle-effect",
+      "notes": [
+        {
+          "from": "appeal-to-false-authority",
+          "text": "The woozle effect produces false authority by accretion - what was speculation becomes a 'well-established finding' once it has been cited enough times."
+        }
+      ]
+    },
+    {
       "source": "appeal-to-nature",
       "target": "confirmation-bias",
       "notes": [
@@ -3258,12 +3294,26 @@
       ]
     },
     {
+      "source": "appeal-to-common-sense",
+      "target": "appeal-to-nature",
+      "notes": [
+        {
+          "from": "appeal-to-nature",
+          "text": "Both fallacies assert that something is self-evidently true rather than arguing for it - 'natural is better' and 'it's common sense' do the same rhetorical job."
+        }
+      ]
+    },
+    {
       "source": "appeal-to-tradition",
       "target": "status-quo-bias",
       "notes": [
         {
           "from": "appeal-to-tradition",
           "text": "The cognitive preference for the current state of affairs that makes appeals to tradition feel persuasive"
+        },
+        {
+          "from": "status-quo-bias",
+          "text": "Appeal to tradition is the rhetorical form status quo bias takes when it needs to argue rather than just sit still."
         }
       ]
     },
@@ -3304,6 +3354,20 @@
         {
           "from": "appeal-to-tradition",
           "text": "Many traditions function as cultural defaults - invisible until someone asks why they exist"
+        },
+        {
+          "from": "cultural-defaults",
+          "text": "When cultural defaults are challenged, appeal to tradition is the most common defence - 'we've always done it this way' is the default speaking aloud."
+        }
+      ]
+    },
+    {
+      "source": "appeal-to-common-sense",
+      "target": "appeal-to-tradition",
+      "notes": [
+        {
+          "from": "appeal-to-tradition",
+          "text": "The sibling fallacy - 'it's common sense' is appeal to tradition operating on the present tense"
         }
       ]
     },
@@ -3314,6 +3378,10 @@
         {
           "from": "arrival-fallacy",
           "text": "Loss aversion makes the arrival fallacy worse - once you achieve something, the fear of losing it replaces the joy of gaining it."
+        },
+        {
+          "from": "loss-aversion",
+          "text": "Arrival fallacy is loss aversion in reverse - the imagined gain at the finish line evaporates faster than the felt loss of the effort."
         }
       ]
     },
@@ -3334,6 +3402,10 @@
         {
           "from": "arrival-fallacy",
           "text": "The sunk cost fallacy can keep you pursuing a goal that no longer serves you, partly because the arrival fallacy promises that happiness is just ahead."
+        },
+        {
+          "from": "sunk-cost-fallacy",
+          "text": "Arrival fallacy is what makes sunk costs sting twice - you reach the goal and discover the satisfaction you were chasing isn't there."
         }
       ]
     },
@@ -3586,6 +3658,20 @@
       ]
     },
     {
+      "source": "availability-heuristic",
+      "target": "base-rate-fallacy",
+      "notes": [
+        {
+          "from": "availability-heuristic",
+          "text": "The availability heuristic is the engine behind the base rate fallacy - vivid examples crowd out boring statistics about how common something actually is."
+        },
+        {
+          "from": "base-rate-fallacy",
+          "text": "The availability heuristic is why base rate neglect happens - vivid stories are easier to recall than abstract statistics."
+        }
+      ]
+    },
+    {
       "source": "aversive-racism",
       "target": "microaggressions",
       "notes": [
@@ -3758,16 +3844,6 @@
       ]
     },
     {
-      "source": "availability-heuristic",
-      "target": "base-rate-fallacy",
-      "notes": [
-        {
-          "from": "base-rate-fallacy",
-          "text": "The availability heuristic is why base rate neglect happens - vivid stories are easier to recall than abstract statistics."
-        }
-      ]
-    },
-    {
       "source": "base-rate-fallacy",
       "target": "framing-effect",
       "notes": [
@@ -3794,6 +3870,10 @@
         {
           "from": "base-rate-fallacy",
           "text": "Drawing conclusions from individual cases while ignoring the base rate is a form of hasty generalisation."
+        },
+        {
+          "from": "hasty-generalisation",
+          "text": "Both errors come from undersampling - hasty generalisation jumps from too few cases; base rate fallacy ignores the broader population the cases sit inside."
         }
       ]
     },
@@ -3804,6 +3884,10 @@
         {
           "from": "base-rate-fallacy",
           "text": "Probabilistic thinking is the antidote to base rate neglect - it forces you to consider the underlying odds."
+        },
+        {
+          "from": "probabilistic-thinking",
+          "text": "Base rate fallacy is the single most common failure mode probabilistic thinking is trying to correct."
         }
       ]
     },
@@ -3968,6 +4052,16 @@
       ]
     },
     {
+      "source": "blind-spot-bias",
+      "target": "implicit-association",
+      "notes": [
+        {
+          "from": "blind-spot-bias",
+          "text": "Implicit association is one of the cleanest demonstrations of blind-spot bias - we can hold the bias and sincerely deny that we hold it."
+        }
+      ]
+    },
+    {
       "source": "bread-and-circuses",
       "target": "the-attention-economy",
       "notes": [
@@ -4014,6 +4108,20 @@
         {
           "from": "bread-and-circuses",
           "text": "Bread and circuses operate within capitalist realism - entertainment becomes the consolation prize for a system that can't be imagined differently."
+        }
+      ]
+    },
+    {
+      "source": "bread-and-circuses",
+      "target": "the-culture-industry",
+      "notes": [
+        {
+          "from": "bread-and-circuses",
+          "text": "The culture industry is bread-and-circuses industrialised - distraction and consent manufactured at the scale of mass entertainment."
+        },
+        {
+          "from": "the-culture-industry",
+          "text": "The culture industry is the modern machinery behind bread and circuses - mass-produced entertainment that absorbs attention and displaces critical engagement."
         }
       ]
     },
@@ -4196,6 +4304,10 @@
         {
           "from": "chestertons-fence",
           "text": "Understanding why the fence exists requires thinking about what happens when it's removed"
+        },
+        {
+          "from": "second-order-thinking",
+          "text": "Chesterton's fence is a kind of second-order thinking aimed at the past - before removing something, ask why it was put there."
         }
       ]
     },
@@ -4206,6 +4318,10 @@
         {
           "from": "chestertons-fence",
           "text": "Removing something you don't understand is a reliable way to produce consequences you didn't anticipate"
+        },
+        {
+          "from": "unintended-consequences",
+          "text": "Chesterton's fence is the discipline that prevents unintended consequences - it asks why something exists before getting rid of it."
         }
       ]
     },
@@ -4216,6 +4332,10 @@
         {
           "from": "chestertons-fence",
           "text": "Complementary model - first principles builds from scratch, Chesterton's Fence says understand before you demolish"
+        },
+        {
+          "from": "first-principles-thinking",
+          "text": "Chesterton's fence is the counterweight to pure first-principles reasoning - reasoning from scratch can miss reasons that aren't immediately visible."
         }
       ]
     },
@@ -4290,6 +4410,16 @@
       ]
     },
     {
+      "source": "circle-of-competence",
+      "target": "curse-of-knowledge",
+      "notes": [
+        {
+          "from": "circle-of-competence",
+          "text": "Curse of knowledge is what happens at the edge of your circle of competence - you stop being able to imagine not knowing what you know."
+        }
+      ]
+    },
+    {
       "source": "circular-reasoning",
       "target": "straw-man",
       "notes": [
@@ -4336,6 +4466,20 @@
         {
           "from": "circular-reasoning",
           "text": "Where circular reasoning loops back to the start, a red herring diverts attention away from the argument entirely."
+        }
+      ]
+    },
+    {
+      "source": "circular-reasoning",
+      "target": "no-true-scotsman",
+      "notes": [
+        {
+          "from": "circular-reasoning",
+          "text": "No True Scotsman is circular reasoning made portable - the definition of the group is rigged to make the conclusion always come out right."
+        },
+        {
+          "from": "no-true-scotsman",
+          "text": "The redefinition creates a circular argument: real members don't do X, so anyone who does X isn't a real member"
         }
       ]
     },
@@ -4414,6 +4558,20 @@
         {
           "from": "psychological-projection",
           "text": "Projection is a way of offloading the discomfort of cognitive dissonance - attributing the unwanted trait to someone else rather than facing it in yourself."
+        }
+      ]
+    },
+    {
+      "source": "cognitive-dissonance",
+      "target": "moral-hypocrisy-judgement",
+      "notes": [
+        {
+          "from": "cognitive-dissonance",
+          "text": "Moral hypocrisy judgement runs on dissonance - when someone's claimed values clash with their behaviour, observers experience the tension as betrayal."
+        },
+        {
+          "from": "moral-hypocrisy-judgement",
+          "text": "The hypocrite is experiencing cognitive dissonance between their stated values and their behaviour. We're experiencing it too, when we discover the gap."
         }
       ]
     },
@@ -4590,6 +4748,20 @@
       ]
     },
     {
+      "source": "compartmentalisation",
+      "target": "reaction-formation",
+      "notes": [
+        {
+          "from": "compartmentalisation",
+          "text": "Compartmentalisation keeps an unwanted feeling out of view; reaction formation goes further and replaces it with its public opposite."
+        },
+        {
+          "from": "reaction-formation",
+          "text": "Both mechanisms manage internal contradictions, but through different strategies"
+        }
+      ]
+    },
+    {
       "source": "availability-heuristic",
       "target": "compassion-fatigue",
       "notes": [
@@ -4640,6 +4812,16 @@
       ]
     },
     {
+      "source": "compassion-fatigue",
+      "target": "weaponised-hopelessness",
+      "notes": [
+        {
+          "from": "compassion-fatigue",
+          "text": "Compassion fatigue is the natural exhaustion weaponised hopelessness deliberately accelerates."
+        }
+      ]
+    },
+    {
       "source": "competitive-victimhood",
       "target": "victim-perpetrator-cycle",
       "notes": [
@@ -4656,6 +4838,10 @@
         {
           "from": "competitive-victimhood",
           "text": "Responding to criticism by pointing to the other side's suffering is a form of whataboutism"
+        },
+        {
+          "from": "whataboutism",
+          "text": "Whataboutism is competitive victimhood deployed in real time - rather than answer the criticism, point at someone else's wound."
         }
       ]
     },
@@ -4676,6 +4862,10 @@
         {
           "from": "competitive-victimhood",
           "text": "The competition reinforces sharp identity boundaries between groups"
+        },
+        {
+          "from": "in-group-out-group-bias",
+          "text": "Competitive victimhood is one of the strongest expressions of in-group/out-group bias - our pain feels real, theirs feels exaggerated, because of who's feeling it."
         }
       ]
     },
@@ -4696,6 +4886,10 @@
         {
           "from": "complexity-bias",
           "text": "Occam's razor is the direct antidote to complexity bias - the principle that the simplest explanation consistent with the evidence is usually the best starting point."
+        },
+        {
+          "from": "occams-razor",
+          "text": "Complexity bias is the cognitive force Occam's razor is meant to counteract - we instinctively prefer elaborate explanations to simple ones."
         }
       ]
     },
@@ -4726,6 +4920,10 @@
         {
           "from": "complexity-bias",
           "text": "Complexity bias can make simple, correct answers feel 'too obvious' - a trap that catches both experts and novices."
+        },
+        {
+          "from": "dunning-kruger-effect",
+          "text": "Real expertise sometimes intensifies complexity bias - the more you know, the more nuances you can add, and the harder simple answers feel."
         }
       ]
     },
@@ -4876,6 +5074,20 @@
         {
           "from": "illusory-truth-effect",
           "text": "Once the illusory truth effect makes a claim feel credible, confirmation bias locks it in by filtering for supporting evidence."
+        }
+      ]
+    },
+    {
+      "source": "confirmation-bias",
+      "target": "false-consensus-effect",
+      "notes": [
+        {
+          "from": "confirmation-bias",
+          "text": "Confirmation bias curates the social environment that makes false consensus feel obvious - your feed, your friends, your sources all agree."
+        },
+        {
+          "from": "false-consensus-effect",
+          "text": "Confirmation bias filters what we notice; the false consensus effect filters what we assume about everyone else."
         }
       ]
     },
@@ -5118,6 +5330,10 @@
         {
           "from": "curse-of-knowledge",
           "text": "The inverse pattern - the curse of knowledge affects experts who overestimate others' understanding, while Dunning-Kruger affects novices who overestimate their own"
+        },
+        {
+          "from": "dunning-kruger-effect",
+          "text": "Curse of knowledge and Dunning-Kruger are opposite errors at opposite ends of expertise - one underestimates what others know, the other overestimates what they know themselves."
         }
       ]
     },
@@ -5128,6 +5344,10 @@
         {
           "from": "curse-of-knowledge",
           "text": "Assuming your perspective is the obvious one makes it harder to see how others could find it confusing"
+        },
+        {
+          "from": "naive-realism",
+          "text": "Curse of knowledge is naive realism applied to knowledge specifically - if I know this, surely everyone does."
         }
       ]
     },
@@ -5280,16 +5500,6 @@
       ]
     },
     {
-      "source": "anchoring-bias",
-      "target": "decision-fatigue",
-      "notes": [
-        {
-          "from": "decision-fatigue",
-          "text": "Fatigued minds are more susceptible to anchoring because they lack the energy to adjust"
-        }
-      ]
-    },
-    {
       "source": "decision-fatigue",
       "target": "second-order-thinking",
       "notes": [
@@ -5368,6 +5578,20 @@
       ]
     },
     {
+      "source": "denial",
+      "target": "displacement",
+      "notes": [
+        {
+          "from": "denial",
+          "text": "Displacement depends on denial - to redirect the emotion onto a substitute target, you have to refuse to see the real one."
+        },
+        {
+          "from": "displacement",
+          "text": "Displacement often requires denying the real source of the emotion"
+        }
+      ]
+    },
+    {
       "source": "bystander-effect",
       "target": "diffusion-of-responsibility",
       "notes": [
@@ -5428,6 +5652,10 @@
         {
           "from": "displacement",
           "text": "Both involve redirecting internal experience outward - projection attributes feelings, displacement redirects them"
+        },
+        {
+          "from": "psychological-projection",
+          "text": "Projection and displacement are siblings - one attributes your feelings to someone else, the other redirects your feelings toward someone else."
         }
       ]
     },
@@ -5438,16 +5666,6 @@
         {
           "from": "displacement",
           "text": "People often rationalise displaced aggression by finding fault with the substitute target"
-        }
-      ]
-    },
-    {
-      "source": "denial",
-      "target": "displacement",
-      "notes": [
-        {
-          "from": "displacement",
-          "text": "Displacement often requires denying the real source of the emotion"
         }
       ]
     },
@@ -5634,6 +5852,16 @@
       ]
     },
     {
+      "source": "arrival-fallacy",
+      "target": "effort-justification",
+      "notes": [
+        {
+          "from": "effort-justification",
+          "text": "Arrival fallacy is what tests effort justification - if the destination feels flat, the brain has to work overtime to keep the journey feeling worth it."
+        }
+      ]
+    },
+    {
       "source": "emergence",
       "target": "feedback-loops",
       "notes": [
@@ -5692,6 +5920,16 @@
         {
           "from": "tragedy-of-the-commons",
           "text": "The tragedy is an emergent outcome - no one intends the collapse, but it arises from the interaction of individually rational choices."
+        }
+      ]
+    },
+    {
+      "source": "anthropocentrism",
+      "target": "emergence",
+      "notes": [
+        {
+          "from": "emergence",
+          "text": "Anthropocentrism is the lens that struggles most with emergence - because it expects systems to have a human at the centre planning them."
         }
       ]
     },
@@ -5916,22 +6154,16 @@
       ]
     },
     {
-      "source": "confirmation-bias",
-      "target": "false-consensus-effect",
-      "notes": [
-        {
-          "from": "false-consensus-effect",
-          "text": "Confirmation bias filters what we notice; the false consensus effect filters what we assume about everyone else."
-        }
-      ]
-    },
-    {
       "source": "false-consensus-effect",
       "target": "pluralistic-ignorance",
       "notes": [
         {
           "from": "false-consensus-effect",
           "text": "Two sides of the same coin - false consensus makes us think everyone agrees with us, pluralistic ignorance makes us think everyone agrees with each other."
+        },
+        {
+          "from": "pluralistic-ignorance",
+          "text": "False consensus and pluralistic ignorance are mirror errors - one assumes the majority agrees, the other assumes the majority disagrees."
         }
       ]
     },
@@ -6034,6 +6266,20 @@
         {
           "from": "false-equivalence",
           "text": "Both fallacies distort the landscape of a debate - false dilemma collapses it to two options, false equivalence inflates a weak option to match a strong one."
+        }
+      ]
+    },
+    {
+      "source": "false-dilemma",
+      "target": "loaded-question",
+      "notes": [
+        {
+          "from": "false-dilemma",
+          "text": "A loaded question often contains a false dilemma - the answer is forced into two unacceptable options, both of which accept the smuggled premise."
+        },
+        {
+          "from": "loaded-question",
+          "text": "Loaded questions often create a false choice by limiting the possible answers"
         }
       ]
     },
@@ -6170,6 +6416,20 @@
         {
           "from": "firehose-of-falsehood",
           "text": "The sheer volume of repeated claims makes them feel more plausible through the availability heuristic."
+        }
+      ]
+    },
+    {
+      "source": "firehose-of-falsehood",
+      "target": "repetition-as-persuasion",
+      "notes": [
+        {
+          "from": "firehose-of-falsehood",
+          "text": "A firehose of falsehood is repetition as persuasion turned up to industrial scale - the volume itself becomes the argument."
+        },
+        {
+          "from": "repetition-as-persuasion",
+          "text": "Flooding the information space with repeated claims is repetition as persuasion at industrial scale"
         }
       ]
     },
@@ -6462,6 +6722,16 @@
         {
           "from": "fundamental-attribution-error",
           "text": "Attacking a person's character rather than their argument - often fuelled by the fundamental attribution error"
+        }
+      ]
+    },
+    {
+      "source": "fundamental-attribution-error",
+      "target": "moral-hypocrisy-judgement",
+      "notes": [
+        {
+          "from": "fundamental-attribution-error",
+          "text": "Hypocrisy judgement amplifies fundamental attribution error - we see the contradiction as a fixed feature of who the hypocrite is rather than as situational."
         }
       ]
     },
@@ -6834,6 +7104,20 @@
       ]
     },
     {
+      "source": "illusory-truth-effect",
+      "target": "repetition-as-persuasion",
+      "notes": [
+        {
+          "from": "illusory-truth-effect",
+          "text": "Repetition as persuasion is the deliberate use of the illusory truth effect - say it often enough and familiarity does the rest."
+        },
+        {
+          "from": "repetition-as-persuasion",
+          "text": "The cognitive mechanism that makes repetition work - repeated statements feel more true"
+        }
+      ]
+    },
+    {
       "source": "implicit-association",
       "target": "in-group-out-group-bias",
       "notes": [
@@ -7078,6 +7362,20 @@
       ]
     },
     {
+      "source": "just-world-fallacy",
+      "target": "state-of-nature-assumption",
+      "notes": [
+        {
+          "from": "just-world-fallacy",
+          "text": "The just-world fallacy and the state-of-nature assumption are siblings - one assumes the world is fair, the other assumes it was fair once and would be again without intervention."
+        },
+        {
+          "from": "state-of-nature-assumption",
+          "text": "The belief that people get what they deserve often rests on a Hobbesian assumption - if someone is suffering, they must have made bad choices"
+        }
+      ]
+    },
+    {
       "source": "functional-fixedness",
       "target": "law-of-the-instrument",
       "notes": [
@@ -7178,6 +7476,20 @@
       ]
     },
     {
+      "source": "learned-helplessness",
+      "target": "weaponised-hopelessness",
+      "notes": [
+        {
+          "from": "learned-helplessness",
+          "text": "Weaponised hopelessness is learned helplessness imposed from outside - the despair is real, but the powerlessness has been cultivated rather than experienced."
+        },
+        {
+          "from": "weaponised-hopelessness",
+          "text": "Learned helplessness is the psychological phenomenon - you've been conditioned to stop trying. Weaponised hopelessness is the manipulation tactic that deliberately creates it."
+        }
+      ]
+    },
+    {
       "source": "confirmation-bias",
       "target": "loaded-language",
       "notes": [
@@ -7198,12 +7510,12 @@
       ]
     },
     {
-      "source": "false-dilemma",
+      "source": "loaded-language",
       "target": "loaded-question",
       "notes": [
         {
-          "from": "loaded-question",
-          "text": "Loaded questions often create a false choice by limiting the possible answers"
+          "from": "loaded-language",
+          "text": "Loaded language and loaded questions are close kin - the first smuggles a judgement into a word, the second smuggles it into a question."
         }
       ]
     },
@@ -7214,6 +7526,10 @@
         {
           "from": "loaded-question",
           "text": "A loaded question can embed a straw man by mischaracterising your position within the question"
+        },
+        {
+          "from": "straw-man",
+          "text": "Straw man arguments often arrive as loaded questions - the misrepresentation is folded into the question's structure so the target has to accept it just to respond."
         }
       ]
     },
@@ -7426,6 +7742,20 @@
       ]
     },
     {
+      "source": "manufactured-consent",
+      "target": "regulatory-capture",
+      "notes": [
+        {
+          "from": "manufactured-consent",
+          "text": "Regulatory capture is manufactured consent at the institutional level - the watchdog ends up speaking the language of the industry it watches."
+        },
+        {
+          "from": "regulatory-capture",
+          "text": "Regulatory capture is one mechanism through which powerful interests shape public outcomes without public awareness"
+        }
+      ]
+    },
+    {
       "source": "manufacturing-desire",
       "target": "social-proof",
       "notes": [
@@ -7626,16 +7956,6 @@
       ]
     },
     {
-      "source": "cognitive-dissonance",
-      "target": "moral-hypocrisy-judgement",
-      "notes": [
-        {
-          "from": "moral-hypocrisy-judgement",
-          "text": "The hypocrite is experiencing cognitive dissonance between their stated values and their behaviour. We're experiencing it too, when we discover the gap."
-        }
-      ]
-    },
-    {
       "source": "expectancy-violation",
       "target": "moral-hypocrisy-judgement",
       "notes": [
@@ -7712,6 +8032,16 @@
         {
           "from": "moral-hypocrisy",
           "text": "Rationalisation provides the internal story that explains why the standard that applies to others does not apply to you."
+        }
+      ]
+    },
+    {
+      "source": "moral-hypocrisy",
+      "target": "moral-hypocrisy-judgement",
+      "notes": [
+        {
+          "from": "moral-hypocrisy",
+          "text": "Moral hypocrisy judgement is the social mirror of moral hypocrisy - we punish the gap between claim and behaviour more harshly than the behaviour itself."
         }
       ]
     },
@@ -7938,6 +8268,20 @@
       ]
     },
     {
+      "source": "moving-the-goalposts",
+      "target": "no-true-scotsman",
+      "notes": [
+        {
+          "from": "moving-the-goalposts",
+          "text": "No True Scotsman is moving the goalposts applied to group identity - when the evidence threatens the claim, the boundary of the group quietly relocates."
+        },
+        {
+          "from": "no-true-scotsman",
+          "text": "The broader pattern of shifting criteria after evidence is presented"
+        }
+      ]
+    },
+    {
       "source": "confirmation-bias",
       "target": "naive-realism",
       "notes": [
@@ -8062,32 +8406,12 @@
       ]
     },
     {
-      "source": "moving-the-goalposts",
-      "target": "no-true-scotsman",
-      "notes": [
-        {
-          "from": "no-true-scotsman",
-          "text": "The broader pattern of shifting criteria after evidence is presented"
-        }
-      ]
-    },
-    {
       "source": "in-group-out-group-bias",
       "target": "no-true-scotsman",
       "notes": [
         {
           "from": "no-true-scotsman",
           "text": "The tribal loyalty that motivates the impulse to protect the group's image"
-        }
-      ]
-    },
-    {
-      "source": "circular-reasoning",
-      "target": "no-true-scotsman",
-      "notes": [
-        {
-          "from": "no-true-scotsman",
-          "text": "The redefinition creates a circular argument: real members don't do X, so anyone who does X isn't a real member"
         }
       ]
     },
@@ -8440,6 +8764,20 @@
       ]
     },
     {
+      "source": "overton-window",
+      "target": "regulatory-capture",
+      "notes": [
+        {
+          "from": "overton-window",
+          "text": "Captured regulators police the Overton window in their sector - acceptable reform is whatever the industry can already live with."
+        },
+        {
+          "from": "regulatory-capture",
+          "text": "Captured regulators help shift what counts as acceptable policy in ways that serve industry interests"
+        }
+      ]
+    },
+    {
       "source": "false-balance",
       "target": "paradox-of-tolerance",
       "notes": [
@@ -8476,6 +8814,16 @@
         {
           "from": "paradox-of-tolerance",
           "text": "Critics of the paradox often invoke slippery slope arguments - claiming that any limits on tolerance will inevitably lead to total censorship."
+        }
+      ]
+    },
+    {
+      "source": "paradox-of-tolerance",
+      "target": "state-of-nature-assumption",
+      "notes": [
+        {
+          "from": "paradox-of-tolerance",
+          "text": "The paradox of tolerance bites hardest in arguments built on a state-of-nature assumption - if humans are naturally good, intolerant minorities must be aberrations rather than predictable features."
         }
       ]
     },
@@ -8808,16 +9156,6 @@
       ]
     },
     {
-      "source": "compartmentalisation",
-      "target": "reaction-formation",
-      "notes": [
-        {
-          "from": "reaction-formation",
-          "text": "Both mechanisms manage internal contradictions, but through different strategies"
-        }
-      ]
-    },
-    {
       "source": "capitalist-realism",
       "target": "recuperation",
       "notes": [
@@ -8878,26 +9216,6 @@
         {
           "from": "red-herring",
           "text": "Straw man and red herring both involve shifting the argument, but straw man distorts the original point while red herring abandons it entirely."
-        }
-      ]
-    },
-    {
-      "source": "manufactured-consent",
-      "target": "regulatory-capture",
-      "notes": [
-        {
-          "from": "regulatory-capture",
-          "text": "Regulatory capture is one mechanism through which powerful interests shape public outcomes without public awareness"
-        }
-      ]
-    },
-    {
-      "source": "overton-window",
-      "target": "regulatory-capture",
-      "notes": [
-        {
-          "from": "regulatory-capture",
-          "text": "Captured regulators help shift what counts as acceptable policy in ways that serve industry interests"
         }
       ]
     },
@@ -9046,32 +9364,12 @@
       ]
     },
     {
-      "source": "illusory-truth-effect",
-      "target": "repetition-as-persuasion",
-      "notes": [
-        {
-          "from": "repetition-as-persuasion",
-          "text": "The cognitive mechanism that makes repetition work - repeated statements feel more true"
-        }
-      ]
-    },
-    {
       "source": "mere-exposure-effect",
       "target": "repetition-as-persuasion",
       "notes": [
         {
           "from": "repetition-as-persuasion",
           "text": "Repetition creates familiarity, and familiarity creates preference"
-        }
-      ]
-    },
-    {
-      "source": "firehose-of-falsehood",
-      "target": "repetition-as-persuasion",
-      "notes": [
-        {
-          "from": "repetition-as-persuasion",
-          "text": "Flooding the information space with repeated claims is repetition as persuasion at industrial scale"
         }
       ]
     },
@@ -9182,6 +9480,16 @@
         {
           "from": "scapegoating",
           "text": "Scapegoating is almost always accompanied by loaded language - emotionally charged words that dehumanise the target and justify the blame."
+        }
+      ]
+    },
+    {
+      "source": "competitive-victimhood",
+      "target": "scapegoating",
+      "notes": [
+        {
+          "from": "scapegoating",
+          "text": "Competitive victimhood and scapegoating are mirror images - both refuse to acknowledge harm done by one's own group by relocating moral weight onto another."
         }
       ]
     },
@@ -9304,6 +9612,20 @@
       ]
     },
     {
+      "source": "self-serving-bias",
+      "target": "spotlight-effect",
+      "notes": [
+        {
+          "from": "self-serving-bias",
+          "text": "The spotlight effect and self-serving bias both inflate your importance to the scene - one in shame, the other in credit."
+        },
+        {
+          "from": "spotlight-effect",
+          "text": "When we do think others notice us, we assume they judge us as harshly as we judge ourselves"
+        }
+      ]
+    },
+    {
       "source": "red-herring",
       "target": "slippery-slope",
       "notes": [
@@ -9404,6 +9726,16 @@
       ]
     },
     {
+      "source": "source-laundering",
+      "target": "woozle-effect",
+      "notes": [
+        {
+          "from": "source-laundering",
+          "text": "Source laundering is the engine of the woozle effect - each new citation buries the absence of the original evidence a layer deeper."
+        }
+      ]
+    },
+    {
       "source": "pluralistic-ignorance",
       "target": "spiral-of-silence",
       "notes": [
@@ -9464,16 +9796,6 @@
       ]
     },
     {
-      "source": "self-serving-bias",
-      "target": "spotlight-effect",
-      "notes": [
-        {
-          "from": "spotlight-effect",
-          "text": "When we do think others notice us, we assume they judge us as harshly as we judge ourselves"
-        }
-      ]
-    },
-    {
       "source": "social-proof",
       "target": "spotlight-effect",
       "notes": [
@@ -9520,16 +9842,6 @@
         {
           "from": "state-of-nature-assumption",
           "text": "Hobbesians often apply their cynicism selectively - 'my group' is trustworthy, it's 'other people' who can't be trusted"
-        }
-      ]
-    },
-    {
-      "source": "just-world-fallacy",
-      "target": "state-of-nature-assumption",
-      "notes": [
-        {
-          "from": "state-of-nature-assumption",
-          "text": "The belief that people get what they deserve often rests on a Hobbesian assumption - if someone is suffering, they must have made bad choices"
         }
       ]
     },
@@ -9758,6 +10070,16 @@
       ]
     },
     {
+      "source": "alienation",
+      "target": "structural-violence",
+      "notes": [
+        {
+          "from": "structural-violence",
+          "text": "Alienation is one of the lived experiences structural violence produces - workers separated from the meaning of their labour, communities separated from any sense of agency over the arrangements that shape their lives."
+        }
+      ]
+    },
+    {
       "source": "motivated-reasoning",
       "target": "sunk-cost-fallacy",
       "notes": [
@@ -9938,16 +10260,6 @@
       ]
     },
     {
-      "source": "bread-and-circuses",
-      "target": "the-culture-industry",
-      "notes": [
-        {
-          "from": "the-culture-industry",
-          "text": "The culture industry is the modern machinery behind bread and circuses - mass-produced entertainment that absorbs attention and displaces critical engagement."
-        }
-      ]
-    },
-    {
       "source": "the-attention-economy",
       "target": "the-culture-industry",
       "notes": [
@@ -10084,6 +10396,16 @@
         {
           "from": "the-spectacle",
           "text": "The spectacle normalises the mediation of experience until living through representations feels natural rather than strange."
+        }
+      ]
+    },
+    {
+      "source": "the-culture-industry",
+      "target": "the-spectacle",
+      "notes": [
+        {
+          "from": "the-spectacle",
+          "text": "The spectacle is what the culture industry produces - a society organised around images, where consumption stands in for participation."
         }
       ]
     },
@@ -10278,16 +10600,6 @@
         {
           "from": "victim-perpetrator-cycle",
           "text": "Internal narratives of existential threat are used to manufacture consent for aggression"
-        }
-      ]
-    },
-    {
-      "source": "learned-helplessness",
-      "target": "weaponised-hopelessness",
-      "notes": [
-        {
-          "from": "weaponised-hopelessness",
-          "text": "Learned helplessness is the psychological phenomenon - you've been conditioned to stop trying. Weaponised hopelessness is the manipulation tactic that deliberately creates it."
         }
       ]
     },
@@ -10719,7 +11031,7 @@
   },
   "meta": {
     "totalEntries": 166,
-    "totalConnections": 745,
+    "totalConnections": 761,
     "totalCollections": 11,
     "categoryDistribution": {
       "Logical Fallacy": 20,
@@ -10733,6 +11045,6 @@
       "Psychological Defence": 8,
       "Political Theory": 6
     },
-    "buildTimestamp": "2026-05-25T15:37:39.576Z"
+    "buildTimestamp": "2026-05-25T18:37:39.086Z"
   }
 }

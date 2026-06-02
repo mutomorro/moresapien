@@ -118,8 +118,9 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   /* Backstop against accidental horizontal scroll on small screens.
-     Page templates fix root causes; this catches anything that slips through. */
-  overflow-x: hidden;
+     Page templates fix root causes; this catches anything that slips through.
+     `clip` (not `hidden`) so position: sticky descendants still work. */
+  overflow-x: clip;
 }
 
 body {
@@ -127,7 +128,7 @@ body {
   font-family: inherit;
   background: inherit;
   color: inherit;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 h1, h2, h3, h4, h5, h6 {
