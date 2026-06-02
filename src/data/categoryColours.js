@@ -16,7 +16,8 @@ export const categoryColours = {
   'Manipulation Tactic':      '#C44A8A',
   'Psychological Phenomenon': '#7A3A5E',
   'Psychological Defence':    '#26467D',
-  'Cultural Influence':       '#1A7A7A'
+  'Cultural Influence':       '#1A7A7A',
+  'Technology & Society':     '#3E38A2'
 };
 
 export const brandColours = {

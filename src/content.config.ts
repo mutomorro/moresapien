@@ -10,7 +10,7 @@ import { z } from 'astro/zod';
 import { glob } from 'astro/loaders';
 
 // -------------------------------------------------
-// Categories - the 9-category taxonomy
+// Categories - the 11-category taxonomy
 // -------------------------------------------------
 export const CATEGORIES = [
   'Cognitive Bias',
@@ -23,6 +23,7 @@ export const CATEGORIES = [
   'Manipulation Tactic',
   'Psychological Phenomenon',
   'Psychological Defence',
+  'Technology & Society',
 ] as const;
 
 // -------------------------------------------------
@@ -40,7 +41,8 @@ export const CATEGORY_COLOURS: Record<string, string> = {
   'Manipulation Tactic':      '#C44A8A',
   'Psychological Phenomenon': '#7A3A5E',
   'Psychological Defence':    '#26467D',
-  'Cultural Influence':       '#1A7A7A'
+  'Cultural Influence':       '#1A7A7A',
+  'Technology & Society':     '#3E38A2'
 };
 
 // -------------------------------------------------

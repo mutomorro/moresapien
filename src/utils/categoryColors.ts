@@ -1,6 +1,6 @@
 /* Moresapien · Category colour utility
  *
- * Maps the 9-category taxonomy to CSS custom-property references.
+ * Maps the 11-category taxonomy to CSS custom-property references.
  * The values themselves live in src/styles/global.css and may be themed
  * server-side or in print contexts; resolve to hex via getCategoryColorHex().
  *
@@ -18,6 +18,7 @@ export const categoryColorMap: Record<string, string> = {
   'Mental Model':              'var(--ms-cat-mental-model)',
   'Political Theory':          'var(--ms-cat-political-theory)',
   'Cultural Influence':        'var(--ms-cat-cultural-influence)',
+  'Technology & Society':      'var(--ms-cat-technology-society)',
 };
 
 export const categoryColorHexMap: Record<string, string> = {
@@ -31,6 +32,7 @@ export const categoryColorHexMap: Record<string, string> = {
   'Mental Model':              '#B54A2A',
   'Political Theory':          '#2F6B3A',
   'Cultural Influence':        '#1A7A7A',
+  'Technology & Society':      '#3E38A2',
 };
 
 export function getCategoryColor(category: string): string {
@@ -54,6 +56,7 @@ export const CATEGORIES = [
   'Mental Model',
   'Political Theory',
   'Cultural Influence',
+  'Technology & Society',
 ] as const;
 
 export type Category = typeof CATEGORIES[number];
@@ -78,6 +81,7 @@ export const categorySlugMap: Record<string, string> = {
   'Systems Thinking':          'systems-thinking',
   'Political Theory':          'political-theory',
   'Cultural Influence':        'cultural-influence',
+  'Technology & Society':      'technology-society',
 };
 
 export function getCategorySlug(category: string): string {
@@ -101,6 +105,7 @@ export const categoryDescriptions: Record<string, string> = {
   'Systems Thinking':          'Ways of seeing complex wholes - how parts interact, feed back and produce behaviour no single piece explains.',
   'Political Theory':          'Frameworks for understanding power, authority and how societies organise - the ideas that shape what\'s possible.',
   'Cultural Influence':        'The water we swim in - shared assumptions, norms and patterns that shape thought without announcing themselves.',
+  'Technology & Society':      'How the tools and platforms we build reshape the way we think, decide and live - and the habits worth keeping as they change us back.',
 };
 
 export function getCategoryDescription(category: string): string {
