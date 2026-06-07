@@ -31,6 +31,8 @@ relatedConcepts:
     note: "Capitalist realism is the end state of a normalisation process so complete that the system feels like nature rather than a human construction"
   - slug: "framing-effect"
     note: "Framing and normalisation work together - how something is framed determines whether it registers as alarming or ordinary"
+  - slug: "neoliberalism"
+    note: "Normalisation is how neoliberal assumptions slipped out of view and began to feel like the natural order of things."
 furtherReading:
   - title: "Normalisation (sociology) - Wikipedia"
     url: "https://en.wikipedia.org/wiki/Normalization_(sociology)"

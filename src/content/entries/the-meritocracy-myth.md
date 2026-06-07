@@ -18,6 +18,8 @@ relatedConcepts:
     note: "Success stories are visible; the vastly larger number of equally talented people who didn't make it are not. Survivorship bias makes meritocracy look more real than it is."
   - slug: "capitalist-realism"
     note: "The meritocracy myth operates within capitalist realism - if this is the only possible system, then outcomes within it must reflect individual merit."
+  - slug: "neoliberalism"
+    note: "The meritocracy myth gives neoliberalism its moral cover: if the market is fair, success is earned and failure is your own fault."
 ---
 
 ## What the meritocracy myth means
