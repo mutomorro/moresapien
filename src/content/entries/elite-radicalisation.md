@@ -26,7 +26,7 @@ Elite radicalisation is what happens when extreme political views take hold at t
 
 By "elite" here we mean something specific. Not simply the rich, but the people who hold outsized control over a society's institutions - its media, its technology, its capital, its law. What makes their radicalisation distinct is not the size of their bank balance but the size of their reach.
 
-The distinction matters because the two patterns run in opposite directions. Ordinary radicalisation tends to move from the bottom up: a person finds a community, adopts its beliefs, and hardens over time. Elite radicalisation moves from the top down. The extreme view begins with people who already hold power, and the question is not how they were recruited but how far their conviction will carry once it is wired into the systems they run.
+The distinction matters because the two patterns run in opposite directions. Ordinary radicalisation tends to move from the bottom up: a person finds a community, adopts its beliefs, and hardens over time. Elite radicalisation moves from the top down. The extreme view begins with people who already hold power, and the question is not how they were recruited but how far their conviction will carry once it is wired into the systems they run. Where these top-down ideas meet a bottom-up audience, they can fuse with [diagonalism](/diagonalism/) - the cross-spectrum current in which wellness, spirituality and conspiracy blur together and drift rightward.
 
 ## How elite radicalisation works
 

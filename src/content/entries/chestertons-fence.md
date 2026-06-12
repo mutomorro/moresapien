@@ -38,7 +38,7 @@ The model isn't an argument against change. It's an argument against uninformed 
 
 This distinction matters because complex systems - organisations, laws, institutions, codebases, social norms - are full of things that look unnecessary from the outside but serve important functions. A seemingly redundant approval process might exist because of a fraud incident ten years ago. A clunky piece of legislation might be worded that way to close a loophole that was being exploited. A cultural tradition might serve a social bonding function that isn't obvious to someone encountering it for the first time.
 
-The fence might be outdated. The original reason might no longer apply. But you can only make that judgement responsibly if you first do the work of understanding why it's there. This connects to the broader principle of [feedback loops](/feedback-loops/) - the fence may be part of a system where removing one element disrupts the balance of the whole.
+The fence might be outdated. The original reason might no longer apply. But you can only make that judgement responsibly if you first do the work of understanding why it's there. This connects to the broader principle of [feedback loops](/feedback-loops/) - the fence may be part of a system where removing one element disrupts the balance of the whole. It also matters because of [path dependence](/path-dependence/) - where a system ended up depends on the route it took to get there, so a feature that looks arbitrary now may be load-bearing precisely because everything since was built around it.
 
 ## Chesterton's Fence in organisations
 

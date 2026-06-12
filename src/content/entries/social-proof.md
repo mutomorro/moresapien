@@ -30,7 +30,7 @@ Social proof isn't irrational. In many situations, other people's choices do con
 
 ## How social proof works
 
-Social proof operates through a simple but powerful mechanism: uncertainty plus observation. When you're unsure what to do, you look around. What you see others doing becomes your guide.
+Social proof operates through a simple but powerful mechanism: uncertainty plus observation. When you're unsure what to do, you look around. What you see others doing becomes your guide. The flip side is [expectancy violation](/expectancy-violation/): once a group has established what counts as normal, the person who breaks from it draws a reaction out of proportion to what they actually did.
 
 ### The conditions that strengthen social proof
 

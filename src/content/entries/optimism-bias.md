@@ -56,7 +56,7 @@ This asymmetry means that over time, our internal model of the future drifts ste
 
 ### Optimism bias and time
 
-The planning fallacy - the consistent tendency to underestimate how long tasks will take - is optimism bias applied to time. Students estimating how long an essay will take, contractors quoting project timelines, software developers forecasting delivery dates - all systematically err on the optimistic side.
+[The planning fallacy](/planning-fallacy/) - the consistent tendency to underestimate how long tasks will take - is optimism bias applied to time. Students estimating how long an essay will take, contractors quoting project timelines, software developers forecasting delivery dates - all systematically err on the optimistic side.
 
 Daniel Kahneman and Amos Tversky documented this extensively, showing that even people who have repeatedly experienced delays on previous projects will predict that the current one will go smoothly. The past doesn't update the forecast because each new project feels different - and optimism bias ensures that "different" almost always means "better."
 

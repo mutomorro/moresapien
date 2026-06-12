@@ -26,7 +26,7 @@ Survivorship bias is the cognitive error of drawing conclusions from an incomple
 
 The most famous illustration comes from the Second World War. The mathematician Abraham Wald was asked by the US military to study where to add armour to their bombers. Engineers had catalogued the bullet holes on planes that returned from combat and wanted to reinforce the most-damaged areas. [Wald's insight](https://en.wikipedia.org/wiki/Survivorship_bias) was the opposite: the holes on returning planes showed where a bomber could be hit and still survive. The planes that didn't return - the ones they couldn't study - had been hit in the other places. The missing data was the crucial data.
 
-This is survivorship bias in its purest form: studying the survivors tells you about survival, not about the full range of outcomes. The planes with holes in the wings came back. The planes with holes in the engines didn't. Without Wald's correction, the military would have armoured the wrong parts.
+This is survivorship bias in its purest form: studying the survivors tells you about survival, not about the full range of outcomes. The planes with holes in the wings came back. The planes with holes in the engines didn't. Without Wald's correction, the military would have armoured the wrong parts. Reading success stories this way feeds [outcome bias](/outcome-bias/) - judging the quality of a choice by its result, when the result may owe as much to luck or to the failures you never saw as to the decision itself.
 
 ## How survivorship bias distorts our understanding
 

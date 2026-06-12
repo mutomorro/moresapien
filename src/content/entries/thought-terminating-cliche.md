@@ -102,7 +102,7 @@ When thought-terminating clichés are used consistently to prevent a partner fro
 
 Understanding why these phrases are so appealing helps explain their persistence.
 
-Cognitive load is real. Thinking carefully about complex issues is exhausting, and not every conversation can be a deep philosophical inquiry. Thought-terminating clichés offer a shortcut - a way to acknowledge a topic without fully engaging with it. In casual conversation, this is often harmless and even socially useful.
+[Cognitive load](/cognitive-load/) is real. Thinking carefully about complex issues is exhausting, and not every conversation can be a deep philosophical inquiry. Thought-terminating clichés offer a shortcut - a way to acknowledge a topic without fully engaging with it. In casual conversation, this is often harmless and even socially useful.
 
 The problem arises when the shortcut is applied to topics that demand real engagement - when "It is what it is" is used to dismiss a problem that could be solved, or when "You just have to have faith" is used to prevent someone from asking questions that might lead to important answers.
 

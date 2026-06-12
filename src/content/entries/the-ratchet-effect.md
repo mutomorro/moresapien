@@ -39,7 +39,7 @@ The ratchet effect is not a conspiracy theory. It doesn't require anyone to deli
 
 ### The crisis window
 
-Every crisis opens a window during which dramatic action becomes politically possible. Changes that would face years of debate and opposition in normal times can be enacted in days during a genuine emergency. Public fear reduces resistance. The urgency of the situation makes careful deliberation feel irresponsible. Legislators who might normally scrutinise a proposal vote for it because opposing emergency measures looks reckless.
+Every crisis opens a window during which dramatic action becomes politically possible. Changes that would face years of debate and opposition in normal times can be enacted in days during a genuine emergency. Public fear reduces resistance. The urgency of the situation makes careful deliberation feel irresponsible. Legislators who might normally scrutinise a proposal vote for it because opposing emergency measures looks reckless. The advance can also be deliberate. [Salami tactics](/salami-tactics/) achieve a large objective by slicing it into steps small enough that each one seems too minor to resist, until the sum of them has moved things a long way.
 
 This is not inherently bad. Crises sometimes do require swift, expansive responses. The problem is what happens after the crisis. The legislation stays on the books. The agencies created to manage the emergency continue operating. The surveillance infrastructure remains active. The expanded budget becomes the new baseline. Nobody dismantles the apparatus because nobody takes on the political cost of arguing that it's no longer needed.
 

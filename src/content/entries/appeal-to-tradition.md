@@ -34,7 +34,7 @@ relatedConcepts:
 
 Appeal to tradition is a logical fallacy in which something is presented as correct, better, or preferable simply because it has been done that way for a long time. The age of a practice is treated as evidence of its quality, as though survival through time automatically confers legitimacy.
 
-The logic runs like this: we've always done X, therefore X is the right way to do things. But the fact that something has persisted doesn't tell you why it persisted - and there are plenty of reasons a practice might endure that have nothing to do with it being good. Inertia, power structures, lack of alternatives, social pressure, and simple habit can all keep a tradition alive long after the original rationale has evaporated. The fallacy travels with a close sibling - the [appeal to common sense](/appeal-to-common-sense/), which performs the same trick on the present tense rather than the past.
+The logic runs like this: we've always done X, therefore X is the right way to do things. But the fact that something has persisted doesn't tell you why it persisted - and there are plenty of reasons a practice might endure that have nothing to do with it being good. Inertia, power structures, lack of alternatives, social pressure, and simple habit can all keep a tradition alive long after the original rationale has evaporated. The fallacy travels with a close sibling - the [appeal to common sense](/appeal-to-common-sense/), which performs the same trick on the present tense rather than the past. Another close relative is the [appeal to nature](/appeal-to-nature/), which swaps longevity for naturalness - treating whatever is "natural" as automatically good and whatever is "artificial" as suspect.
 
 ## How the appeal to tradition works
 

@@ -44,7 +44,7 @@ This isn't irrational in the way people sometimes assume. The brain is doing som
 
 The [framing effect](/framing-effect/) plays a central role here. Media doesn't just report events - it frames them in ways that make certain risks feel urgent and others invisible. A week of intensive coverage about a rare disease can shift an entire population's risk perception, even when the actual risk hasn't changed. The coverage makes examples available; the availability makes the risk feel real.
 
-[Negativity bias](/negativity-bias/) compounds this. We remember negative events more vividly than positive ones, which means negative examples are more available in memory, which means we overestimate negative outcomes. A single frightening experience or news story can outweigh years of uneventful normality.
+[Negativity bias](/negativity-bias/) compounds this. We remember negative events more vividly than positive ones, which means negative examples are more available in memory, which means we overestimate negative outcomes. A single frightening experience or news story can outweigh years of uneventful normality. [Recency bias](/recency-bias/) pulls in the same direction: the latest event is also the easiest to bring to mind, so what happened most recently tends to feel both most memorable and most likely.
 
 ## The availability heuristic in everyday decisions
 

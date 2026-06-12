@@ -33,7 +33,7 @@ Populism is a way of doing politics that divides society into two opposed camps 
 
 The word gets thrown around loosely. It often works as a polite insult for any politician the speaker finds vulgar, alarming, or too popular for comfort. Used that way it explains very little. Used carefully, it names something specific and recognisable.
 
-The most widely used handle comes from the political scientist Cas Mudde, who calls populism a "thin-centred ideology". The word "thin" is doing the heavy lifting. Unlike socialism or liberalism, populism carries no full programme of its own - no settled view on the economy, the state, or how society should be run. It behaves more like a frame that attaches itself to a fuller "host" ideology. That is why there is a left-wing populism and a right-wing populism, and why the same label can sit on figures who agree on almost nothing else.
+The most widely used handle comes from the political scientist Cas Mudde, who calls populism a "thin-centred ideology". The word "thin" is doing the heavy lifting. Unlike socialism or liberalism, populism carries no full programme of its own - no settled view on the economy, the state, or how society should be run. It behaves more like a frame that attaches itself to a fuller "host" ideology. That is why there is a left-wing populism and a right-wing populism, and why the same label can sit on figures who agree on almost nothing else. Which side a given populism leans toward still traces back to the older [left-right divide](/left-and-right/) - and to the instinct underneath it about equality and hierarchy.
 
 ## Why populism is hard to pin down
 

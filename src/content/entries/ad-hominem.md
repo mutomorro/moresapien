@@ -39,7 +39,7 @@ An ad hominem argument attacks the character, motives, or identity of the person
 
 It's one of the most common logical fallacies in everyday discourse, and one of the hardest to resist - because character *does* sometimes matter. If someone has a track record of dishonesty, that's relevant when assessing their credibility as a source. But credibility and logic are different things. Even the least trustworthy person in the world can present a valid argument. And even the most respected authority can present a deeply flawed one.
 
-The fallacy isn't in noticing that someone has flaws. It's in using those flaws as a substitute for engaging with what they've said. There's a meaningful difference between "I don't trust this person, so I want to check their evidence carefully" (reasonable) and "This person is untrustworthy, therefore their argument is wrong" (fallacious). The first uses character to calibrate attention. The second uses it to avoid thinking altogether.
+The fallacy isn't in noticing that someone has flaws. It's in using those flaws as a substitute for engaging with what they've said. There's a meaningful difference between "I don't trust this person, so I want to check their evidence carefully" (reasonable) and "This person is untrustworthy, therefore their argument is wrong" (fallacious). The first uses character to calibrate attention. The second uses it to avoid thinking altogether. A pre-emptive version of the same move is [poisoning the well](/poisoning-the-well/) - discrediting a person before they have spoken, so that whatever they go on to say is dismissed in advance.
 
 ## Types of ad hominem attack
 

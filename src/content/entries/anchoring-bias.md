@@ -36,7 +36,7 @@ The mechanism is deceptively simple. You encounter a number, a price, a claim, o
 
 ### Why the first number wins
 
-When someone asks you to estimate the population of a city, your answer will be influenced by whatever number you encountered most recently - even if it was in a completely different context. If you've just been thinking about a number in the thousands, your estimate will skew lower. If you've been thinking about millions, it will skew higher. The anchor doesn't need to be related to the question. It just needs to be present.
+When someone asks you to estimate the population of a city, your answer will be influenced by whatever number you encountered most recently - even if it was in a completely different context. This is where anchoring shades into [recency bias](/recency-bias/) - the most recent figure is also the most mentally available, so it tugs at the estimate even when an earlier, better anchor should have held. If you've just been thinking about a number in the thousands, your estimate will skew lower. If you've been thinking about millions, it will skew higher. The anchor doesn't need to be related to the question. It just needs to be present.
 
 This happens because the brain doesn't start from zero when making estimates. It starts from whatever is available and adjusts from there. The problem is that the adjustment is almost always insufficient - we don't move far enough away from the anchor. Psychologists call this "insufficient adjustment," and it's remarkably consistent across cultures, contexts, and levels of expertise. The effect gets stronger under [decision fatigue](/decision-fatigue/) - a tired brain leans even harder on whatever number it was given first, because generating a fresh estimate is genuinely more expensive than nudging the anchor a little.
 
@@ -66,7 +66,7 @@ Professional decision-making is riddled with anchoring effects, from budgeting t
 
 When teams estimate how long a project will take or how much it will cost, the first estimate mentioned tends to anchor all subsequent discussion. If someone opens with "I think this is a six-month project," the conversation will orbit around six months - perhaps adjusting to five or seven, but rarely questioning whether the right answer might be two months or eighteen.
 
-This connects to the planning fallacy, where people systematically underestimate time and cost. If previous projects set the anchor and those projects were themselves underestimated, the anchor perpetuates the error. Each new estimate inherits the optimism of the last.
+This connects to the [planning fallacy](/planning-fallacy/), where people systematically underestimate time and cost. If previous projects set the anchor and those projects were themselves underestimated, the anchor perpetuates the error. Each new estimate inherits the optimism of the last.
 
 In performance reviews, anchoring shows up when a manager's initial impression of an employee - formed early in the review period or even at hiring - anchors their assessment of everything that follows. The [halo effect](/halo-effect/) and anchoring often work together here: a strong first impression creates both a positive halo and a high anchor against which all subsequent performance is judged.
 

@@ -58,7 +58,7 @@ Post hoc reasoning is everywhere. Once you learn to recognise it, you'll notice 
 
 Health is one of the most fertile areas for post hoc thinking. Someone takes a supplement and feels better the next week. A parent notices their child developing symptoms after a vaccination. A friend swears by a remedy because they recovered after using it.
 
-In each case, the timing creates a powerful sense of causation. But illnesses run their course naturally. Symptoms fluctuate day to day. [Regression to the mean](https://en.wikipedia.org/wiki/Regression_toward_the_mean) - the statistical tendency for extreme values to move back toward the average - means that if you try a remedy when you're at your worst, you're likely to feel better afterwards regardless of what you took.
+In each case, the timing creates a powerful sense of causation. But illnesses run their course naturally. Symptoms fluctuate day to day. [Regression to the mean](/regression-to-the-mean/) - the statistical tendency for extreme values to move back toward the average - means that if you try a remedy when you're at your worst, you're likely to feel better afterwards regardless of what you took.
 
 This is precisely why medical research uses controlled trials with placebo groups. The question isn't whether people got better after treatment. It's whether they got better *more than they would have without it*. Post hoc reasoning skips that crucial comparison.
 

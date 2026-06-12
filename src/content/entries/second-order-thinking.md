@@ -87,7 +87,7 @@ The most famous illustration of second-order failure is the [cobra effect](https
 
 Second-order effect: enterprising people began breeding cobras specifically to collect the bounty. When the government discovered the scheme and cancelled the programme, the breeders released their now-worthless snakes into the wild. The cobra population ended up larger than before the intervention.
 
-This is not an isolated example. It is a pattern that repeats wherever policymakers fail to ask "and then what?" Rent controls reduce available housing. Prohibition created organised crime. Agricultural subsidies can distort markets in ways that harm the very farmers they were designed to protect. In each case, the first-order effect was exactly what was intended. The second-order effects were devastating.
+This is not an isolated example. It is a pattern that repeats wherever policymakers fail to ask "and then what?" Rent controls reduce available housing. Prohibition created organised crime. Agricultural subsidies can distort markets in ways that harm the very farmers they were designed to protect. In each case, the first-order effect was exactly what was intended. The second-order effects were devastating. This is also why metrics make such treacherous targets. [Goodhart's law](/goodharts-law/) - that a measure stops being a good measure once it becomes a target - is really a second-order observation: optimise the number and you change the behaviour the number was meant to reflect.
 
 ### Why politicians struggle with second-order thinking
 

@@ -32,7 +32,7 @@ relatedConcepts:
 
 Appeal to common sense is a rhetorical device in which something is presented as self-evidently true - requiring no evidence, no argument, and no further discussion - because it supposedly aligns with what "everyone" already knows. The phrase "it's just common sense" functions as both a claim and a shield: a claim that the statement is obviously correct, and a shield against anyone who might ask for evidence.
 
-The problem isn't that common sense is always wrong. Often it's right. The problem is that "common sense" is being used as a substitute for reasoning rather than a starting point for it. When someone says "it's common sense," they're telling you the conversation is over. But frequently, that's exactly where the conversation should begin.
+The problem isn't that common sense is always wrong. Often it's right. The problem is that "common sense" is being used as a substitute for reasoning rather than a starting point for it. When someone says "it's common sense," they're telling you the conversation is over. But frequently, that's exactly where the conversation should begin. It has a close cousin in the [appeal to nature](/appeal-to-nature/), which treats "natural" as a synonym for "good" in the same way that "common sense" is treated here as a synonym for "true".
 
 ## What common sense is - and isn't
 

@@ -54,7 +54,7 @@ The [social proof](/social-proof/) mechanism compounds this. When everyone aroun
 
 Part of normalcy bias is a failure of imagination. If something has never happened in your personal experience, it is difficult to believe - in a visceral, motivating way - that it can happen at all. You can understand intellectually that [disasters occur](https://en.wikipedia.org/wiki/Normalcy_bias). But understanding it intellectually and feeling it as a real, actionable possibility are very different things.
 
-The [availability heuristic](/availability-heuristic/) reinforces this. If a disaster has not happened recently or vividly, it is harder to recall and therefore feels less likely. The absence of a recent precedent becomes, in your mind, evidence that no precedent exists - when in reality, it may simply mean you have been fortunate.
+The [availability heuristic](/availability-heuristic/) reinforces this. If a disaster has not happened recently or vividly, it is harder to recall and therefore feels less likely. The absence of a recent precedent becomes, in your mind, evidence that no precedent exists - when in reality, it may simply mean you have been fortunate. [Recency bias](/recency-bias/) sharpens this from the other side: because recent experience carries the most weight, a long stretch without disaster actively lowers your sense that one could be coming.
 
 ## Normalcy bias in everyday life
 

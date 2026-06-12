@@ -41,7 +41,7 @@ Hindsight bias is not simply lying about what you predicted. It is a genuine dis
 
 When you learn an outcome, your brain immediately begins reorganising the information that led to it. The clues that pointed toward the actual result become more prominent. The clues that pointed elsewhere fade. The result is a cleaned-up narrative where everything seems to point in one direction - even though, at the time, the signals were genuinely ambiguous.
 
-This is what the psychologist Baruch Fischhoff called "creeping determinism" - the gradual, unconscious process by which uncertain events come to seem predetermined after the fact. You do not decide that the outcome was obvious. Your memory quietly reshapes itself so that it feels obvious.
+This is what the psychologist Baruch Fischhoff called "creeping determinism" - the gradual, unconscious process by which uncertain events come to seem predetermined after the fact. You do not decide that the outcome was obvious. Your memory quietly reshapes itself so that it feels obvious. A close cousin works on judgement rather than memory. [Outcome bias](/outcome-bias/) is the habit of rating a decision by how it turned out rather than by whether the reasoning was sound at the time - so a good call that ended badly gets condemned, and a reckless one that paid off gets praised.
 
 ### The three components of hindsight bias
 

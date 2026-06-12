@@ -32,7 +32,7 @@ relatedConcepts:
 
 Decision fatigue is the phenomenon whereby the quality of a person's decisions deteriorates after making a sustained series of choices. As the brain's capacity for deliberation depletes, people increasingly default to the easiest option, make impulsive choices, or avoid deciding altogether. The mental energy required for careful decision-making is finite, and it gets used up.
 
-The concept draws on research by social psychologist Roy Baumeister and colleagues, who found that the act of making decisions draws on the same limited pool of mental resources as self-control and willpower. Each decision, no matter how trivial, costs something. By the time you've made dozens of them, the account is running low.
+The concept draws on research by social psychologist Roy Baumeister and colleagues, who found that the act of making decisions draws on the same limited pool of mental resources as self-control and willpower. Each decision, no matter how trivial, costs something. By the time you've made dozens of them, the account is running low. The trouble often begins before the fatigue does, with [choice overload](/choice-overload/) - when the sheer number of options makes each decision harder, the account drains faster.
 
 ## How decision fatigue works
 

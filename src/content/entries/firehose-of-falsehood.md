@@ -32,7 +32,7 @@ relatedConcepts:
     note: "A firehose of falsehood is repetition as persuasion turned up to industrial scale - the volume itself becomes the argument."
 ---
 
-The firehose of falsehood is a propaganda and manipulation technique in which a source produces a rapid, continuous, high-volume stream of disinformation with no regard for consistency or truth. Rather than crafting a single convincing lie, the firehose strategy floods the information environment with so many claims - many of them contradictory - that audiences become overwhelmed, confused, and ultimately disengaged from the idea that truth can be reliably established.
+The firehose of falsehood is a propaganda and manipulation technique in which a source produces a rapid, continuous, high-volume stream of disinformation with no regard for consistency or truth. Rather than crafting a single convincing lie, the firehose strategy floods the information environment with so many claims - many of them contradictory - that audiences become overwhelmed, confused, and ultimately disengaged from the idea that truth can be reliably established. In that sense it is the mirror image of [the big lie](/the-big-lie/), which stakes everything on one enormous falsehood rather than drowning the truth in a thousand small ones.
 
 The term was popularised by a [2016 RAND Corporation research paper](https://www.rand.org/pubs/perspectives/PE198.html) analysing modern propaganda techniques. The researchers identified four distinctive features: the firehose is high volume, multichannel, rapid and continuous, and makes no commitment to consistency. These four characteristics distinguish it from traditional propaganda, which typically works by repeating a single carefully crafted message. In effect, it is [repetition as persuasion](/repetition-as-persuasion/) industrialised - the volume itself becomes the argument, regardless of which specific claims travel inside it.
 
@@ -66,7 +66,7 @@ The firehose succeeds not because its individual claims are believable, but beca
 
 ### It exploits how human attention works
 
-Human attention is a limited resource. We can only process, evaluate, and respond to a finite number of claims in any given period. The firehose deliberately exceeds that capacity. When there are too many claims to track, most people default to one of two responses: they believe the claims that align with their existing views (which is [confirmation bias](/confirmation-bias/) in action), or they disengage entirely.
+Human attention is a limited resource. We can only process, evaluate, and respond to a finite number of claims in any given period. The firehose deliberately exceeds that capacity. Push someone past their [cognitive load](/cognitive-load/) - the limit of what working memory can hold at once - and careful evaluation collapses into snap judgement, which is the state the firehose is built to induce. When there are too many claims to track, most people default to one of two responses: they believe the claims that align with their existing views (which is [confirmation bias](/confirmation-bias/) in action), or they disengage entirely.
 
 Both outcomes serve the firehose's purpose. If people selectively believe the claims that suit them, the false information has done its work. If people give up on trying to distinguish truth from falsehood, the informational environment has been successfully degraded.
 

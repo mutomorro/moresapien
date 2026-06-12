@@ -102,7 +102,7 @@ Even people who understand probabilities make predictable errors. Knowing these 
 
 ### Confusing probability with certainty
 
-A 90 per cent probability is not a certainty. It means the unlikely outcome will still happen one time in ten. If you make enough 90 per cent bets, you will experience some 10 per cent outcomes. This is not bad luck or a failure of the model - it is exactly what 90 per cent means. People who say "the polls were wrong" when a 30 per cent outcome materialises are confusing probability with prediction.
+A 90 per cent probability is not a certainty. It means the unlikely outcome will still happen one time in ten. If you make enough 90 per cent bets, you will experience some 10 per cent outcomes. This is not bad luck or a failure of the model - it is exactly what 90 per cent means. People who say "the polls were wrong" when a 30 per cent outcome materialises are confusing probability with prediction. The same variation explains why a single outstanding or disastrous result is weak evidence about the underlying odds: [regression to the mean](/regression-to-the-mean/) means extreme outcomes tend to be followed by more ordinary ones, whatever you do in between.
 
 ### Ignoring small probabilities with large consequences
 

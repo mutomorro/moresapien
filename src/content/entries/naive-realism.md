@@ -43,7 +43,7 @@ Naive realism operates through three core assumptions, most of which people hold
 
 The first assumption is that you see reality as it is. Your perceptions, beliefs, and judgements feel like direct reflections of the world, not interpretations of it. The second assumption is that other reasonable people, given the same information, should reach the same conclusions you have. The third assumption is that anyone who does not reach the same conclusions must be biased, uninformed, or acting in bad faith. Applied specifically to knowledge, the same pattern shows up as the [curse of knowledge](/curse-of-knowledge/) - once you understand something, you struggle to imagine that other people don't yet see what you see.
 
-These three assumptions form a chain. If you see reality clearly, then disagreement cannot be a legitimate difference of perspective. It must be an error - and the error belongs to the other person. Applied to opinion at scale, naive realism becomes the [false consensus effect](/false-consensus-effect/) - the assumption that most people, being reasonable, must already share your view.
+These three assumptions form a chain. If you see reality clearly, then disagreement cannot be a legitimate difference of perspective. It must be an error - and the error belongs to the other person. Applied to opinion at scale, naive realism becomes the [false consensus effect](/false-consensus-effect/) - the assumption that most people, being reasonable, must already share your view. The antidote is partly procedural. The [dialectic](/dialectic/) - testing a position against its strongest opposition rather than asserting it - is built precisely to loosen the grip of naive realism.
 
 ### Why it feels nothing like a bias
 

@@ -70,7 +70,7 @@ Because the word is so loaded, the boundaries matter as much as the definition. 
 
 ### Fascism, authoritarianism, and conservatism
 
-Fascism is not a synonym for authoritarianism. A repressive ruler who wants order and control is not necessarily a fascist; what makes a movement fascist is the revolutionary rebirth myth and the mass mobilisation behind it, not simply a heavy hand. Nor is fascism the same as conservatism or the political right in general. Conservatism, broadly, wants to conserve; fascism wants rupture and rebirth. The great majority of nationalists, traditionalists, and right-wing politicians are not fascists, and collapsing the distinction makes the word useless.
+Fascism is not a synonym for authoritarianism. A repressive ruler who wants order and control is not necessarily a fascist; what makes a movement fascist is the revolutionary rebirth myth and the mass mobilisation behind it, not simply a heavy hand. Nor is fascism the same as conservatism or the political right in general. Conservatism, broadly, wants to conserve; fascism wants rupture and rebirth. The great majority of nationalists, traditionalists, and right-wing politicians are not fascists, and collapsing the distinction makes the word useless. Where fascism sits on the [left-right spectrum](/left-and-right/) is itself debated: it grew out of the right but borrowed freely from the revolutionary left, which is part of why it resists a tidy place on the line.
 
 ### Fascism and populism
 

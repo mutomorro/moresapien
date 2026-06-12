@@ -26,7 +26,7 @@ A moral panic is a wave of intense public concern about a perceived threat to so
 
 Cohen identified a recurring pattern that has since played out hundreds of times across different countries and decades. A group or behaviour is identified as a threat. Media coverage amplifies and distorts the threat. Public anxiety escalates. Authorities respond with crackdowns or new legislation. And then the panic fades - often leaving behind laws, prejudices, or institutions that long outlive the fear that created them.
 
-The threat doesn't have to be entirely invented. It often has some basis in reality. What makes it a moral panic is the gap between the evidence and the response - the way a real but limited problem is inflated into an existential crisis, and the way that inflation serves particular interests. A moral panic isn't just people being scared. It's a social process with identifiable stages, recognisable mechanics, and predictable outcomes.
+The threat doesn't have to be entirely invented. It often has some basis in reality. What makes it a moral panic is the gap between the evidence and the response - the way a real but limited problem is inflated into an existential crisis, and the way that inflation serves particular interests. Some of the most potent recent panics have been vehicles for [diagonalism](/diagonalism/) - the anti-establishment current where wellness and conspiracy fuse - which supplies a ready story of hidden enemies for the panic to name. A moral panic isn't just people being scared. It's a social process with identifiable stages, recognisable mechanics, and predictable outcomes.
 
 ## How moral panics work
 

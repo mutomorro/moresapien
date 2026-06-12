@@ -98,7 +98,7 @@ Sometimes the absence of evidence is meaningful. If you search a room thoroughly
 
 The argument from ignorance thrives in environments that can't tolerate "we don't know." When every question demands a definitive answer, the absence of evidence gets conscripted into service as evidence. Building a culture that accepts honest uncertainty - in science, in politics, in personal reasoning - removes the pressure that makes the argument from ignorance appealing.
 
-### Apply [Occam's razor](/occams-razor/)
+### Apply Occam's razor
 
 When a claim requires you to believe that evidence is being hidden, suppressed, or is simply beyond detection, ask whether the simpler explanation fits: maybe the evidence doesn't exist because the claim isn't true. This isn't always the answer, but it's the one that requires the fewest assumptions - and that's usually the place to start.
 

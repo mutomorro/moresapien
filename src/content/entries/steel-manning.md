@@ -42,7 +42,7 @@ Only then do you respond to it.
 
 This might sound simple, but it runs against deep psychological currents. [Confirmation bias](/confirmation-bias/) makes us naturally attentive to evidence against views we disagree with and evidence for views we hold. [In-group/out-group bias](/in-group-out-group-bias/) makes us instinctively generous to people in our tribe and sceptical of outsiders. Steel manning asks you to reverse both of these instincts - to look for what's strong in a view you oppose, and to engage with it honestly.
 
-The test of a good steel man is straightforward: could the person whose argument you're representing hear your version and say, "Yes, that's exactly what I mean - actually, you've put it better than I did"? If they'd say, "No, that's not what I'm arguing at all," then you haven't steel manned - you've just constructed a different straw man.
+The test of a good steel man is straightforward: could the person whose argument you're representing hear your version and say, "Yes, that's exactly what I mean - actually, you've put it better than I did"? If they'd say, "No, that's not what I'm arguing at all," then you haven't steel manned - you've just constructed a different straw man. Steel manning is one move inside a larger discipline, the [dialectic](/dialectic/) - reaching the truth through the structured clash of opposing ideas, where the aim is not to win but to be changed by the exchange.
 
 ## Why steel manning matters
 

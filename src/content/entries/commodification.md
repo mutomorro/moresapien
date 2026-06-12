@@ -81,7 +81,7 @@ None of this means that people have stopped caring about each other. It means th
 
 ### The commodification of dissent
 
-One of the most striking features of commodification under [capitalist realism](/capitalist-realism/) is its ability to absorb its own opposition. Protest becomes a T-shirt. Revolution becomes a brand aesthetic. Anti-capitalism becomes a Netflix documentary produced by a multinational corporation.
+One of the most striking features of commodification under [capitalist realism](/capitalist-realism/) is its ability to absorb its own opposition. Protest becomes a T-shirt. Revolution becomes a brand aesthetic. Anti-capitalism becomes a Netflix documentary produced by a multinational corporation. This absorption of opposition has its own name - [recuperation](/recuperation/) - the process by which a radical gesture is turned into a product and sold back, its threat defused in the act of selling.
 
 This isn't hypocrisy - it's a system feature. The market is indifferent to the content of what it sells. It will sell you rebellion as cheerfully as it sells you compliance, because both generate revenue. Che Guevara's face on a mass-produced T-shirt is the canonical example, but the mechanism operates everywhere. Environmentalism becomes green consumerism. Feminism becomes girl-boss branding. Racial justice becomes a corporate diversity statement issued the day after a protest.
 

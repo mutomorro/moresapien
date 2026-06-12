@@ -70,7 +70,7 @@ This move is effective because it puts the questioner on the back foot. Suddenly
 
 This is a subtler version. When something is unexplained, the person with a theory presents the lack of an alternative explanation as evidence for their own. "Science can't explain this phenomenon, so it must be supernatural." The gap in one explanation is treated as proof of another.
 
-This is sometimes called the "argument from ignorance" or the "god of the gaps" reasoning. It shifts the burden by implying that unless someone can provide a better explanation, the offered one wins by default. But the absence of a better explanation doesn't make a poorly supported one correct. "We don't know yet" is a perfectly legitimate answer.
+This is sometimes called the ["argument from ignorance"](/argument-from-ignorance/) or the "god of the gaps" reasoning. It shifts the burden by implying that unless someone can provide a better explanation, the offered one wins by default. But the absence of a better explanation doesn't make a poorly supported one correct. "We don't know yet" is a perfectly legitimate answer.
 
 ### Burying the burden in emotional language
 

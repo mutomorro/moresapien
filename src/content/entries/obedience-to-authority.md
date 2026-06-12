@@ -60,7 +60,7 @@ This graduated commitment is crucial. Once you've administered a 15-volt shock, 
 
 ### Social contract and legitimacy
 
-People obey authority partly because they've internalised a social contract in which authority figures are legitimate and their instructions should be followed. From childhood, we're socialised to obey parents, teachers, doctors, police, and bosses. This socialisation runs deep enough that it operates even when the specific instruction is questionable.
+People obey authority partly because they've internalised a [social contract](/social-contract/) in which authority figures are legitimate and their instructions should be followed. From childhood, we're socialised to obey parents, teachers, doctors, police, and bosses. This socialisation runs deep enough that it operates even when the specific instruction is questionable.
 
 The authority doesn't have to be legitimate in any formal sense. Milgram found that the mere appearance of authority - a lab coat, a confident manner, an institutional setting - was sufficient to produce obedience. [Appeal to false authority](/appeal-to-false-authority/) works for the same reason. People respond to the signals of authority rather than evaluating whether the authority is genuine or relevant.
 

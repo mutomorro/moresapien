@@ -60,7 +60,7 @@ The tragic legacy of colonial divide and conquer is that the divisions created f
 
 ### Workplace dynamics
 
-Divide and conquer is a recognisable pattern in toxic workplace cultures. A manager who shares different information with different team members, plays favourites to create competition for approval, or frames departmental resources as a zero-sum game is deploying a version of the strategy - whether consciously or not.
+Divide and conquer is a recognisable pattern in toxic workplace cultures. A manager who shares different information with different team members, plays favourites to create competition for approval, or frames departmental resources as a [zero-sum game](/zero-sum-thinking/) is deploying a version of the strategy - whether consciously or not.
 
 The effect is predictable. Team members who should be collaborating begin to see each other as competitors. Information flows through the manager rather than between peers, consolidating the manager's control. Complaints about the manager get redirected into complaints about each other. The team's collective power to challenge poor management is neutralised because the team never operates as a collective.
 

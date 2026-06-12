@@ -108,7 +108,7 @@ The single most effective defence is awareness. When something suddenly feels li
 
 ### Check the data
 
-If you believe something has genuinely become more common, look for data rather than relying on your subjective experience of frequency. Your perception of how often something occurs is unreliable, especially when your attention has recently been primed.
+If you believe something has genuinely become more common, look for data rather than relying on your subjective experience of frequency. Your perception of how often something occurs is unreliable, especially when your attention has recently been [primed](/priming/).
 
 ### Remember that absences are invisible
 

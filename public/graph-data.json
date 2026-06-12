@@ -15,7 +15,7 @@
         "manipulation",
         "bad faith"
       ],
-      "connections": 15
+      "connections": 16
     },
     {
       "slug": "affect-heuristic",
@@ -30,6 +30,38 @@
         "media",
         "marketing",
         "health"
+      ],
+      "connections": 10
+    },
+    {
+      "slug": "ai-slop",
+      "title": "AI Slop",
+      "category": "Technology & Society",
+      "colour": "#999999",
+      "oneLiner": "AI slop is low-quality content mass-produced by generative AI - made for clicks, not for you. How to spot it, and why it is everywhere.",
+      "tags": [
+        "artificial intelligence",
+        "social media",
+        "misinformation",
+        "attention economy",
+        "search",
+        "content"
+      ],
+      "connections": 13
+    },
+    {
+      "slug": "ai-sycophancy",
+      "title": "AI Sycophancy",
+      "category": "Technology & Society",
+      "colour": "#999999",
+      "oneLiner": "AI sycophancy is the habit AI assistants have of telling you what you want to hear rather than what is true - why it happens, and why it matters.",
+      "tags": [
+        "artificial intelligence",
+        "critical thinking",
+        "misinformation",
+        "trust",
+        "chatbots",
+        "decision-making"
       ],
       "connections": 10
     },
@@ -49,7 +81,7 @@
         "wellbeing",
         "systems"
       ],
-      "connections": 6
+      "connections": 7
     },
     {
       "slug": "anchoring-bias",
@@ -65,7 +97,7 @@
         "workplace",
         "critical thinking"
       ],
-      "connections": 22
+      "connections": 24
     },
     {
       "slug": "anthropocentrism",
@@ -181,6 +213,22 @@
       "connections": 8
     },
     {
+      "slug": "argument-from-ignorance",
+      "title": "Argument from Ignorance",
+      "category": "Logical Fallacy",
+      "colour": "#E8A533",
+      "oneLiner": "Claiming that something must be true because it hasn't been proven false, or false because it hasn't been proven true.",
+      "tags": [
+        "argumentation",
+        "critical-thinking",
+        "science",
+        "belief",
+        "debate",
+        "media-literacy"
+      ],
+      "connections": 5
+    },
+    {
       "slug": "arrival-fallacy",
       "title": "Arrival Fallacy",
       "category": "Psychological Phenomenon",
@@ -226,7 +274,7 @@
         "critical thinking",
         "mental-health"
       ],
-      "connections": 7
+      "connections": 8
     },
     {
       "slug": "authority-bias",
@@ -243,7 +291,23 @@
         "everyday life",
         "critical thinking"
       ],
-      "connections": 10
+      "connections": 12
+    },
+    {
+      "slug": "automation-bias",
+      "title": "Automation Bias",
+      "category": "Technology & Society",
+      "colour": "#999999",
+      "oneLiner": "Automation bias is trusting a machine's judgement over our own - following its advice, or missing what it fails to flag, even when we could see better.",
+      "tags": [
+        "technology",
+        "decision-making",
+        "critical thinking",
+        "media literacy",
+        "risk",
+        "everyday life"
+      ],
+      "connections": 7
     },
     {
       "slug": "availability-heuristic",
@@ -260,7 +324,7 @@
         "everyday life",
         "risk"
       ],
-      "connections": 36
+      "connections": 40
     },
     {
       "slug": "aversive-racism",
@@ -408,7 +472,7 @@
         "media literacy",
         "philosophy"
       ],
-      "connections": 10
+      "connections": 11
     },
     {
       "slug": "bystander-effect",
@@ -441,7 +505,7 @@
         "media literacy",
         "social dynamics"
       ],
-      "connections": 18
+      "connections": 23
     },
     {
       "slug": "chestertons-fence",
@@ -457,7 +521,22 @@
         "systems thinking",
         "reform"
       ],
-      "connections": 8
+      "connections": 10
+    },
+    {
+      "slug": "choice-overload",
+      "title": "Choice Overload",
+      "category": "Cognitive Bias",
+      "colour": "#3559B0",
+      "oneLiner": "When having too many options makes it harder to choose at all - and less satisfying when you do.",
+      "tags": [
+        "decision-making",
+        "consumerism",
+        "everyday-life",
+        "wellbeing",
+        "marketing"
+      ],
+      "connections": 4
     },
     {
       "slug": "circle-of-competence",
@@ -473,7 +552,7 @@
         "investing",
         "leadership"
       ],
-      "connections": 7
+      "connections": 8
     },
     {
       "slug": "circular-reasoning",
@@ -489,7 +568,7 @@
         "debate",
         "philosophy"
       ],
-      "connections": 7
+      "connections": 8
     },
     {
       "slug": "clustering-illusion",
@@ -520,7 +599,39 @@
         "everyday life",
         "relationships"
       ],
-      "connections": 49
+      "connections": 51
+    },
+    {
+      "slug": "cognitive-load",
+      "title": "Cognitive Load",
+      "category": "Psychological Phenomenon",
+      "colour": "#7A3A5E",
+      "oneLiner": "When the demands on your working memory exceed its capacity, your ability to think clearly, make good decisions, and resist manipulation drops sharply.",
+      "tags": [
+        "decision-making",
+        "everyday-life",
+        "technology",
+        "education",
+        "manipulation",
+        "wellbeing"
+      ],
+      "connections": 5
+    },
+    {
+      "slug": "cognitive-offloading",
+      "title": "Cognitive Offloading",
+      "category": "Technology & Society",
+      "colour": "#999999",
+      "oneLiner": "Handing mental work to external tools - and the risk that the thinking we stop doing is the thinking we lose.",
+      "tags": [
+        "AI",
+        "critical thinking",
+        "memory",
+        "education",
+        "decision-making",
+        "everyday life"
+      ],
+      "connections": 10
     },
     {
       "slug": "collective-amnesia",
@@ -555,7 +666,7 @@
         "identity",
         "everyday life"
       ],
-      "connections": 13
+      "connections": 21
     },
     {
       "slug": "compartmentalisation",
@@ -587,7 +698,7 @@
         "mental health",
         "news consumption"
       ],
-      "connections": 8
+      "connections": 10
     },
     {
       "slug": "competitive-victimhood",
@@ -637,7 +748,7 @@
         "education",
         "everyday life"
       ],
-      "connections": 8
+      "connections": 9
     },
     {
       "slug": "concern-trolling",
@@ -670,7 +781,7 @@
         "news media",
         "science"
       ],
-      "connections": 62
+      "connections": 67
     },
     {
       "slug": "conformity-bias",
@@ -705,6 +816,22 @@
       "connections": 6
     },
     {
+      "slug": "controlling-the-narrative",
+      "title": "Controlling the Narrative",
+      "category": "Rhetorical Device",
+      "colour": "#8B5CF6",
+      "oneLiner": "The power to decide what a story is about - and, just as importantly, what it isn't about.",
+      "tags": [
+        "media-literacy",
+        "politics",
+        "power",
+        "journalism",
+        "communication",
+        "manipulation"
+      ],
+      "connections": 5
+    },
+    {
       "slug": "cultural-defaults",
       "title": "Cultural Defaults",
       "category": "Cultural Influence",
@@ -737,7 +864,7 @@
         "social dynamics",
         "education"
       ],
-      "connections": 18
+      "connections": 25
     },
     {
       "slug": "curse-of-knowledge",
@@ -769,7 +896,7 @@
         "everyday-life",
         "ethics"
       ],
-      "connections": 5
+      "connections": 9
     },
     {
       "slug": "darvo",
@@ -788,6 +915,39 @@
       "connections": 8
     },
     {
+      "slug": "data-colonialism",
+      "title": "Data Colonialism",
+      "category": "Technology & Society",
+      "colour": "#999999",
+      "oneLiner": "The idea that tech firms extract data from human life the way old empires seized land, claiming our experience as territory to be owned and mined.",
+      "tags": [
+        "big tech",
+        "data",
+        "colonialism",
+        "political economy",
+        "privacy",
+        "global justice",
+        "critical thinking"
+      ],
+      "connections": 9
+    },
+    {
+      "slug": "dead-internet-theory",
+      "title": "Dead Internet Theory",
+      "category": "Technology & Society",
+      "colour": "#999999",
+      "oneLiner": "Dead internet theory claims bots and AI now generate most of the internet, with humans at the margins. What is true in it, and what overreaches.",
+      "tags": [
+        "technology",
+        "ai",
+        "misinformation",
+        "media literacy",
+        "conspiracy theory",
+        "big tech"
+      ],
+      "connections": 8
+    },
+    {
       "slug": "decision-fatigue",
       "title": "Decision Fatigue",
       "category": "Psychological Phenomenon",
@@ -801,7 +961,23 @@
         "everyday life",
         "self-control"
       ],
-      "connections": 6
+      "connections": 8
+    },
+    {
+      "slug": "deepfakes",
+      "title": "Deepfakes",
+      "category": "Technology & Society",
+      "colour": "#999999",
+      "oneLiner": "A deepfake is AI-generated video, audio or imagery showing real people doing things they never did, and why it breaks our trust in recordings.",
+      "tags": [
+        "technology",
+        "ai",
+        "misinformation",
+        "media literacy",
+        "trust",
+        "big tech"
+      ],
+      "connections": 8
     },
     {
       "slug": "denial",
@@ -820,6 +996,54 @@
       "connections": 13
     },
     {
+      "slug": "desensitisation",
+      "title": "Desensitisation",
+      "category": "Psychological Phenomenon",
+      "colour": "#7A3A5E",
+      "oneLiner": "When repeated exposure to something shocking, disturbing, or morally uncomfortable gradually reduces your emotional response to it - until it barely registers at all.",
+      "tags": [
+        "media-literacy",
+        "emotions",
+        "behaviour",
+        "social-norms",
+        "empathy",
+        "everyday-life"
+      ],
+      "connections": 5
+    },
+    {
+      "slug": "diagonalism",
+      "title": "Diagonalism",
+      "category": "Political Theory",
+      "colour": "#2F6B3A",
+      "oneLiner": "The blurring of left and right into one anti-establishment current - where wellness, spirituality and conspiracy fuse and drift rightward.",
+      "tags": [
+        "politics",
+        "conspiracy theories",
+        "wellness",
+        "social media",
+        "extremism",
+        "misinformation"
+      ],
+      "connections": 5
+    },
+    {
+      "slug": "dialectic",
+      "title": "The Dialectic",
+      "category": "Mental Model",
+      "colour": "#B54A2A",
+      "oneLiner": "A way of reaching the truth through the structured clash of opposing ideas, where the aim is not to win the argument but to be changed by it.",
+      "tags": [
+        "critical thinking",
+        "philosophy",
+        "debate",
+        "media literacy",
+        "self-awareness",
+        "everyday life"
+      ],
+      "connections": 5
+    },
+    {
       "slug": "diffusion-of-responsibility",
       "title": "Diffusion of Responsibility",
       "category": "Psychological Phenomenon",
@@ -832,6 +1056,22 @@
         "organisations",
         "public life",
         "social media"
+      ],
+      "connections": 7
+    },
+    {
+      "slug": "digital-amnesia",
+      "title": "Digital Amnesia",
+      "category": "Technology & Society",
+      "colour": "#999999",
+      "oneLiner": "Digital amnesia is forgetting what we let our devices remember for us. The 'Google effect', why it happens, and what it costs.",
+      "tags": [
+        "technology",
+        "attention economy",
+        "critical thinking",
+        "media literacy",
+        "everyday life",
+        "science"
       ],
       "connections": 7
     },
@@ -881,7 +1121,23 @@
         "propaganda",
         "critical thinking"
       ],
-      "connections": 8
+      "connections": 9
+    },
+    {
+      "slug": "doomscrolling",
+      "title": "Doomscrolling",
+      "category": "Technology & Society",
+      "colour": "#999999",
+      "oneLiner": "Doomscrolling is compulsively scrolling through bad news that leaves you worse off but unable to stop. Why we do it, and how feeds exploit it.",
+      "tags": [
+        "technology",
+        "social media",
+        "news media",
+        "attention economy",
+        "emotion",
+        "everyday life"
+      ],
+      "connections": 7
     },
     {
       "slug": "dunning-kruger-effect",
@@ -897,7 +1153,7 @@
         "science",
         "everyday life"
       ],
-      "connections": 17
+      "connections": 19
     },
     {
       "slug": "effort-justification",
@@ -916,6 +1172,38 @@
       "connections": 7
     },
     {
+      "slug": "elite-radicalisation",
+      "title": "Elite Radicalisation",
+      "category": "Political Theory",
+      "colour": "#2F6B3A",
+      "oneLiner": "When extreme views take hold among the powerful and spread downward - reversing the usual idea that radicalisation starts at the margins.",
+      "tags": [
+        "politics",
+        "power",
+        "media",
+        "democracy",
+        "propaganda",
+        "social media"
+      ],
+      "connections": 5
+    },
+    {
+      "slug": "eliza-effect",
+      "title": "The ELIZA Effect",
+      "category": "Technology & Society",
+      "colour": "#999999",
+      "oneLiner": "The ELIZA effect is our habit of reading real understanding, empathy or intelligence into a machine, simply because it answers us in fluent language.",
+      "tags": [
+        "technology",
+        "media literacy",
+        "critical thinking",
+        "decision-making",
+        "persuasion",
+        "everyday life"
+      ],
+      "connections": 8
+    },
+    {
       "slug": "emergence",
       "title": "Emergence",
       "category": "Systems Thinking",
@@ -928,6 +1216,22 @@
         "social media",
         "politics",
         "complexity"
+      ],
+      "connections": 12
+    },
+    {
+      "slug": "enshittification",
+      "title": "Enshittification",
+      "category": "Technology & Society",
+      "colour": "#999999",
+      "oneLiner": "Enshittification is how online platforms decay - good to you at first, then squeezed for profit until barely usable. The pattern, and why it happens.",
+      "tags": [
+        "technology",
+        "social media",
+        "big tech",
+        "attention economy",
+        "capitalism",
+        "platforms"
       ],
       "connections": 11
     },
@@ -995,7 +1299,7 @@
         "systems",
         "class"
       ],
-      "connections": 5
+      "connections": 6
     },
     {
       "slug": "false-consensus-effect",
@@ -1028,7 +1332,7 @@
         "rhetoric",
         "decision-making"
       ],
-      "connections": 15
+      "connections": 16
     },
     {
       "slug": "false-equivalence",
@@ -1048,6 +1352,22 @@
       "connections": 11
     },
     {
+      "slug": "fascism",
+      "title": "Fascism",
+      "category": "Political Theory",
+      "colour": "#2F6B3A",
+      "oneLiner": "A revolutionary, anti-democratic movement built on the myth of a nation reborn from decline, by purging its enemies and rallying behind one leader.",
+      "tags": [
+        "politics",
+        "history",
+        "authoritarianism",
+        "nationalism",
+        "media literacy",
+        "critical thinking"
+      ],
+      "connections": 6
+    },
+    {
       "slug": "feedback-loops",
       "title": "Feedback Loops",
       "category": "Systems Thinking",
@@ -1061,7 +1381,7 @@
         "everyday life",
         "decision-making"
       ],
-      "connections": 17
+      "connections": 19
     },
     {
       "slug": "firehose-of-falsehood",
@@ -1077,7 +1397,7 @@
         "social media",
         "information warfare"
       ],
-      "connections": 11
+      "connections": 14
     },
     {
       "slug": "first-principles-thinking",
@@ -1093,7 +1413,7 @@
         "creativity",
         "workplace"
       ],
-      "connections": 19
+      "connections": 21
     },
     {
       "slug": "fog-fear-obligation-guilt",
@@ -1126,7 +1446,7 @@
         "decision-making",
         "critical thinking"
       ],
-      "connections": 56
+      "connections": 59
     },
     {
       "slug": "frequency-illusion",
@@ -1172,7 +1492,7 @@
         "social perception",
         "conflict"
       ],
-      "connections": 25
+      "connections": 26
     },
     {
       "slug": "gaslighting",
@@ -1208,6 +1528,22 @@
       "connections": 8
     },
     {
+      "slug": "goodharts-law",
+      "title": "Goodhart's Law",
+      "category": "Systems Thinking",
+      "colour": "#7A8B3A",
+      "oneLiner": "When a measure becomes a target, it ceases to be a good measure.",
+      "tags": [
+        "systems",
+        "strategy",
+        "organisations",
+        "education",
+        "economics",
+        "decision-making"
+      ],
+      "connections": 5
+    },
+    {
       "slug": "groupthink",
       "title": "Groupthink",
       "category": "Cognitive Bias",
@@ -1238,7 +1574,7 @@
         "decision-making",
         "critical thinking"
       ],
-      "connections": 16
+      "connections": 17
     },
     {
       "slug": "hanlons-razor",
@@ -1286,7 +1622,7 @@
         "workplace",
         "history"
       ],
-      "connections": 6
+      "connections": 10
     },
     {
       "slug": "illusory-correlation",
@@ -1302,7 +1638,7 @@
         "media literacy",
         "social dynamics"
       ],
-      "connections": 7
+      "connections": 8
     },
     {
       "slug": "illusory-truth-effect",
@@ -1318,7 +1654,7 @@
         "social media",
         "persuasion"
       ],
-      "connections": 17
+      "connections": 21
     },
     {
       "slug": "implicit-association",
@@ -1350,7 +1686,7 @@
         "social media",
         "media"
       ],
-      "connections": 20
+      "connections": 22
     },
     {
       "slug": "independent-evaluation",
@@ -1366,7 +1702,7 @@
         "self-awareness",
         "education"
       ],
-      "connections": 6
+      "connections": 7
     },
     {
       "slug": "inversion",
@@ -1430,6 +1766,37 @@
         "education",
         "resilience"
       ],
+      "connections": 10
+    },
+    {
+      "slug": "left-and-right",
+      "title": "Left and Right",
+      "category": "Political Theory",
+      "colour": "#2F6B3A",
+      "oneLiner": "The two broad families of political belief, born from where people sat in 1789 - and still tracking, underneath, your attitude to equality and hierarchy.",
+      "tags": [
+        "politics",
+        "ideology",
+        "history",
+        "media literacy",
+        "critical thinking"
+      ],
+      "connections": 5
+    },
+    {
+      "slug": "liars-dividend",
+      "title": "Liar's Dividend",
+      "category": "Technology & Society",
+      "colour": "#999999",
+      "oneLiner": "The liar's dividend is the advantage liars gain once fakes are known to exist: they can wave away genuine, damaging recordings as just a deepfake.",
+      "tags": [
+        "technology",
+        "ai",
+        "misinformation",
+        "media literacy",
+        "trust",
+        "politics"
+      ],
       "connections": 8
     },
     {
@@ -1446,7 +1813,7 @@
         "propaganda",
         "rhetoric"
       ],
-      "connections": 14
+      "connections": 15
     },
     {
       "slug": "loaded-question",
@@ -1479,7 +1846,7 @@
         "psychology",
         "critical thinking"
       ],
-      "connections": 25
+      "connections": 26
     },
     {
       "slug": "love-bombing",
@@ -1528,7 +1895,7 @@
         "social dynamics",
         "propaganda"
       ],
-      "connections": 24
+      "connections": 29
     },
     {
       "slug": "manufacturing-desire",
@@ -1545,7 +1912,7 @@
         "manipulation",
         "culture"
       ],
-      "connections": 6
+      "connections": 7
     },
     {
       "slug": "map-is-not-the-territory",
@@ -1561,7 +1928,7 @@
         "media literacy",
         "education"
       ],
-      "connections": 12
+      "connections": 13
     },
     {
       "slug": "mere-exposure-effect",
@@ -1578,7 +1945,7 @@
         "politics",
         "decision-making"
       ],
-      "connections": 7
+      "connections": 8
     },
     {
       "slug": "microaggressions",
@@ -1645,7 +2012,7 @@
         "politics",
         "consumer behaviour"
       ],
-      "connections": 12
+      "connections": 13
     },
     {
       "slug": "moral-panic",
@@ -1662,7 +2029,7 @@
         "fear",
         "propaganda"
       ],
-      "connections": 5
+      "connections": 7
     },
     {
       "slug": "motivated-reasoning",
@@ -1679,7 +2046,7 @@
         "everyday life",
         "psychology"
       ],
-      "connections": 29
+      "connections": 31
     },
     {
       "slug": "motte-and-bailey",
@@ -1727,7 +2094,7 @@
         "empathy",
         "media"
       ],
-      "connections": 19
+      "connections": 22
     },
     {
       "slug": "negativity-bias",
@@ -1743,7 +2110,23 @@
         "risk perception",
         "social media"
       ],
-      "connections": 8
+      "connections": 10
+    },
+    {
+      "slug": "neoliberalism",
+      "title": "Neoliberalism",
+      "category": "Political Theory",
+      "colour": "#2F6B3A",
+      "oneLiner": "The political project that made free-market competition the default logic of everything, from public services to how we see ourselves.",
+      "tags": [
+        "economics",
+        "politics",
+        "capitalism",
+        "ideology",
+        "critical thinking",
+        "media literacy"
+      ],
+      "connections": 12
     },
     {
       "slug": "network-effects",
@@ -1759,7 +2142,7 @@
         "business",
         "systems"
       ],
-      "connections": 6
+      "connections": 8
     },
     {
       "slug": "no-true-scotsman",
@@ -1808,7 +2191,7 @@
         "everyday life",
         "power"
       ],
-      "connections": 16
+      "connections": 23
     },
     {
       "slug": "obedience-to-authority",
@@ -1840,7 +2223,7 @@
         "media literacy",
         "conspiracy theories"
       ],
-      "connections": 12
+      "connections": 13
     },
     {
       "slug": "omission-bias",
@@ -1888,6 +2271,21 @@
         "finance",
         "workplace"
       ],
+      "connections": 6
+    },
+    {
+      "slug": "outcome-bias",
+      "title": "Outcome Bias",
+      "category": "Cognitive Bias",
+      "colour": "#3559B0",
+      "oneLiner": "Judging the quality of a decision by how things turned out, rather than by whether the reasoning was sound at the time.",
+      "tags": [
+        "decision-making",
+        "strategy",
+        "workplace",
+        "risk",
+        "moral-reasoning"
+      ],
       "connections": 5
     },
     {
@@ -1904,7 +2302,7 @@
         "social dynamics",
         "critical thinking"
       ],
-      "connections": 15
+      "connections": 22
     },
     {
       "slug": "paradox-of-tolerance",
@@ -1919,6 +2317,22 @@
         "debate",
         "media literacy",
         "philosophy"
+      ],
+      "connections": 10
+    },
+    {
+      "slug": "parasocial-bonds",
+      "title": "Parasocial Bonds",
+      "category": "Technology & Society",
+      "colour": "#999999",
+      "oneLiner": "Parasocial bonds are the one-sided closeness we feel towards people who do not know we exist - and how platforms and AI now turn it into a product.",
+      "tags": [
+        "technology",
+        "social media",
+        "attention economy",
+        "relationships",
+        "persuasion",
+        "everyday life"
       ],
       "connections": 7
     },
@@ -1938,6 +2352,53 @@
       "connections": 4
     },
     {
+      "slug": "path-dependence",
+      "title": "Path Dependence",
+      "category": "Systems Thinking",
+      "colour": "#7A8B3A",
+      "oneLiner": "Where you end up depends on where you started - and the route you took matters more than the destination you intended.",
+      "tags": [
+        "systems",
+        "decision-making",
+        "technology",
+        "economics",
+        "history",
+        "institutions"
+      ],
+      "connections": 5
+    },
+    {
+      "slug": "planned-obsolescence",
+      "title": "Planned Obsolescence",
+      "category": "Technology & Society",
+      "colour": "#999999",
+      "oneLiner": "Planned obsolescence is designing products to wear out or feel outdated, so you keep buying replacements. How it works, and why it shapes what you own.",
+      "tags": [
+        "technology",
+        "capitalism",
+        "consumerism",
+        "big tech",
+        "sustainability",
+        "design"
+      ],
+      "connections": 6
+    },
+    {
+      "slug": "planning-fallacy",
+      "title": "Planning Fallacy",
+      "category": "Cognitive Bias",
+      "colour": "#3559B0",
+      "oneLiner": "The tendency to underestimate how long a task will take, how much it will cost, and how many things will go wrong along the way.",
+      "tags": [
+        "decision-making",
+        "work",
+        "strategy",
+        "self-deception",
+        "everyday-life"
+      ],
+      "connections": 5
+    },
+    {
       "slug": "pluralistic-ignorance",
       "title": "Pluralistic Ignorance",
       "category": "Psychological Phenomenon",
@@ -1954,6 +2415,38 @@
       "connections": 16
     },
     {
+      "slug": "poisoning-the-well",
+      "title": "Poisoning the Well",
+      "category": "Manipulation Tactic",
+      "colour": "#C44A8A",
+      "oneLiner": "Discrediting a person or source before they've even spoken, so that anything they say is automatically dismissed.",
+      "tags": [
+        "argumentation",
+        "manipulation",
+        "bad-faith",
+        "debate",
+        "media-literacy",
+        "politics"
+      ],
+      "connections": 4
+    },
+    {
+      "slug": "populism",
+      "title": "Populism",
+      "category": "Political Theory",
+      "colour": "#2F6B3A",
+      "oneLiner": "A way of doing politics that pits 'the pure people' against 'a corrupt elite' - and claims to be the one true voice of the people.",
+      "tags": [
+        "politics",
+        "democracy",
+        "media literacy",
+        "critical thinking",
+        "ideology",
+        "rhetoric"
+      ],
+      "connections": 7
+    },
+    {
       "slug": "post-hoc",
       "title": "Post Hoc",
       "category": "Logical Fallacy",
@@ -1967,7 +2460,23 @@
         "health",
         "decision-making"
       ],
-      "connections": 7
+      "connections": 8
+    },
+    {
+      "slug": "priming",
+      "title": "Priming",
+      "category": "Psychological Phenomenon",
+      "colour": "#7A3A5E",
+      "oneLiner": "When exposure to one stimulus unconsciously influences your response to a subsequent one - shaping your thoughts, feelings, and behaviour without your awareness.",
+      "tags": [
+        "psychology",
+        "perception",
+        "behaviour",
+        "marketing",
+        "manipulation",
+        "everyday-life"
+      ],
+      "connections": 5
     },
     {
       "slug": "probabilistic-thinking",
@@ -1983,7 +2492,7 @@
         "workplace",
         "media literacy"
       ],
-      "connections": 13
+      "connections": 16
     },
     {
       "slug": "psychological-projection",
@@ -2050,6 +2559,21 @@
       "connections": 6
     },
     {
+      "slug": "recency-bias",
+      "title": "Recency Bias",
+      "category": "Cognitive Bias",
+      "colour": "#3559B0",
+      "oneLiner": "Giving disproportionate weight to the most recent events, experiences, or information - as though what happened last is what matters most.",
+      "tags": [
+        "decision-making",
+        "memory",
+        "risk-perception",
+        "everyday-life",
+        "workplace"
+      ],
+      "connections": 5
+    },
+    {
       "slug": "recuperation",
       "title": "Recuperation",
       "category": "Cultural Influence",
@@ -2081,7 +2605,23 @@
         "manipulation",
         "everyday life"
       ],
-      "connections": 15
+      "connections": 16
+    },
+    {
+      "slug": "regression-to-the-mean",
+      "title": "Regression to the Mean",
+      "category": "Mental Model",
+      "colour": "#B54A2A",
+      "oneLiner": "Extreme results tend to be followed by more average ones - not because of any intervention, but because that's how variation works.",
+      "tags": [
+        "statistics",
+        "decision-making",
+        "science",
+        "everyday-life",
+        "health",
+        "strategy"
+      ],
+      "connections": 5
     },
     {
       "slug": "regulatory-capture",
@@ -2148,7 +2688,23 @@
         "social media",
         "persuasion"
       ],
-      "connections": 7
+      "connections": 8
+    },
+    {
+      "slug": "salami-tactics",
+      "title": "Salami Tactics",
+      "category": "Manipulation Tactic",
+      "colour": "#C44A8A",
+      "oneLiner": "Achieving a large objective by slicing it into small, individually insignificant steps that each seem too minor to resist.",
+      "tags": [
+        "manipulation",
+        "politics",
+        "strategy",
+        "power",
+        "relationships",
+        "accountability"
+      ],
+      "connections": 5
     },
     {
       "slug": "salience-bias",
@@ -2164,7 +2720,7 @@
         "advertising",
         "critical thinking"
       ],
-      "connections": 7
+      "connections": 8
     },
     {
       "slug": "scapegoating",
@@ -2180,7 +2736,7 @@
         "prejudice",
         "leadership"
       ],
-      "connections": 12
+      "connections": 14
     },
     {
       "slug": "sealioning",
@@ -2212,7 +2768,7 @@
         "workplace",
         "systems thinking"
       ],
-      "connections": 16
+      "connections": 19
     },
     {
       "slug": "self-serving-bias",
@@ -2228,7 +2784,7 @@
         "decision-making",
         "politics"
       ],
-      "connections": 8
+      "connections": 9
     },
     {
       "slug": "slippery-slope",
@@ -2244,7 +2800,23 @@
         "fear",
         "decision-making"
       ],
-      "connections": 8
+      "connections": 10
+    },
+    {
+      "slug": "social-contract",
+      "title": "The Social Contract",
+      "category": "Political Theory",
+      "colour": "#2F6B3A",
+      "oneLiner": "The idea that legitimate authority rests on an unspoken bargain - we trade some freedom for order and protection, and can withdraw consent if it breaks.",
+      "tags": [
+        "politics",
+        "philosophy",
+        "critical thinking",
+        "social dynamics",
+        "debate",
+        "everyday life"
+      ],
+      "connections": 5
     },
     {
       "slug": "social-proof",
@@ -2326,7 +2898,7 @@
         "debate",
         "media literacy"
       ],
-      "connections": 8
+      "connections": 10
     },
     {
       "slug": "status-quo-bias",
@@ -2342,7 +2914,7 @@
         "organisations",
         "technology"
       ],
-      "connections": 15
+      "connections": 17
     },
     {
       "slug": "steel-manning",
@@ -2358,7 +2930,7 @@
         "relationships",
         "intellectual honesty"
       ],
-      "connections": 5
+      "connections": 6
     },
     {
       "slug": "straw-man",
@@ -2409,7 +2981,7 @@
         "health",
         "institutions"
       ],
-      "connections": 7
+      "connections": 8
     },
     {
       "slug": "sunk-cost-fallacy",
@@ -2424,7 +2996,24 @@
         "politics",
         "critical thinking"
       ],
-      "connections": 16
+      "connections": 19
+    },
+    {
+      "slug": "surveillance-capitalism",
+      "title": "Surveillance Capitalism",
+      "category": "Technology & Society",
+      "colour": "#999999",
+      "oneLiner": "The business model that turns your everyday behaviour into free raw material, then sells predictions about what you'll do next.",
+      "tags": [
+        "big tech",
+        "privacy",
+        "surveillance",
+        "data",
+        "political economy",
+        "social media",
+        "critical thinking"
+      ],
+      "connections": 9
     },
     {
       "slug": "survivorship-bias",
@@ -2441,7 +3030,7 @@
         "media literacy",
         "self-deception"
       ],
-      "connections": 11
+      "connections": 13
     },
     {
       "slug": "symbolic-racism",
@@ -2460,6 +3049,23 @@
       "connections": 6
     },
     {
+      "slug": "technofeudalism",
+      "title": "Technofeudalism",
+      "category": "Technology & Society",
+      "colour": "#999999",
+      "oneLiner": "The claim that big tech has replaced capitalism with a new feudal order, where we labour like serfs and pay rent to use digital land we never own.",
+      "tags": [
+        "big tech",
+        "political economy",
+        "capitalism",
+        "platforms",
+        "rent",
+        "power",
+        "critical thinking"
+      ],
+      "connections": 9
+    },
+    {
       "slug": "the-attention-economy",
       "title": "The Attention Economy",
       "category": "Cultural Influence",
@@ -2474,7 +3080,23 @@
         "power",
         "social dynamics"
       ],
-      "connections": 12
+      "connections": 25
+    },
+    {
+      "slug": "the-big-lie",
+      "title": "The Big Lie",
+      "category": "Rhetorical Device",
+      "colour": "#8B5CF6",
+      "oneLiner": "A falsehood so enormous that people struggle to believe anyone would fabricate it - which is precisely why they accept it.",
+      "tags": [
+        "propaganda",
+        "politics",
+        "disinformation",
+        "media-literacy",
+        "manipulation",
+        "history"
+      ],
+      "connections": 5
     },
     {
       "slug": "the-culture-industry",
@@ -2510,7 +3132,23 @@
         "systems",
         "work"
       ],
-      "connections": 5
+      "connections": 7
+    },
+    {
+      "slug": "the-ratchet-effect",
+      "title": "The Ratchet Effect",
+      "category": "Political Theory",
+      "colour": "#2F6B3A",
+      "oneLiner": "When temporary expansions of power become permanent - because the emergency passes but the authority never gets handed back.",
+      "tags": [
+        "politics",
+        "power",
+        "institutions",
+        "policy",
+        "history",
+        "accountability"
+      ],
+      "connections": 6
     },
     {
       "slug": "the-spectacle",
@@ -2591,7 +3229,7 @@
         "social dynamics",
         "environment"
       ],
-      "connections": 12
+      "connections": 13
     },
     {
       "slug": "unintended-consequences",
@@ -2607,7 +3245,7 @@
         "everyday life",
         "policy"
       ],
-      "connections": 13
+      "connections": 14
     },
     {
       "slug": "victim-perpetrator-cycle",
@@ -2832,6 +3470,108 @@
         {
           "from": "appeal-to-emotion",
           "text": "The affect heuristic is the cognitive bias that makes appeal to emotion work - we judge things by how they make us feel."
+        }
+      ]
+    },
+    {
+      "source": "ai-slop",
+      "target": "cognitive-offloading",
+      "notes": [
+        {
+          "from": "ai-slop",
+          "text": "The sibling risk - letting machines do our thinking as well as our making."
+        }
+      ]
+    },
+    {
+      "source": "ai-slop",
+      "target": "ai-sycophancy",
+      "notes": [
+        {
+          "from": "ai-slop",
+          "text": "A cousin failure mode - AI that flatters the user rather than correcting them."
+        },
+        {
+          "from": "ai-sycophancy",
+          "text": "The conversational cousin - AI output tuned for something other than truth, here your approval rather than sheer volume."
+        }
+      ]
+    },
+    {
+      "source": "ai-slop",
+      "target": "enshittification",
+      "notes": [
+        {
+          "from": "ai-slop",
+          "text": "The wider platform decay that slop both feeds and feeds on."
+        },
+        {
+          "from": "enshittification",
+          "text": "Cheap filler thrives on platforms tuned for engagement over quality."
+        }
+      ]
+    },
+    {
+      "source": "ai-slop",
+      "target": "the-attention-economy",
+      "notes": [
+        {
+          "from": "ai-slop",
+          "text": "Slop is built for the marketplace where your attention is the product being sold."
+        }
+      ]
+    },
+    {
+      "source": "ai-slop",
+      "target": "illusory-truth-effect",
+      "notes": [
+        {
+          "from": "ai-slop",
+          "text": "Repeated across thousands of pages, slop's claims start to feel true."
+        }
+      ]
+    },
+    {
+      "source": "ai-sycophancy",
+      "target": "confirmation-bias",
+      "notes": [
+        {
+          "from": "ai-sycophancy",
+          "text": "A sycophantic assistant becomes a confirmation engine, echoing back whatever you already believe."
+        }
+      ]
+    },
+    {
+      "source": "ai-sycophancy",
+      "target": "cognitive-offloading",
+      "notes": [
+        {
+          "from": "ai-sycophancy",
+          "text": "The danger of handing your judgement to a tool that flatters you."
+        }
+      ]
+    },
+    {
+      "source": "ai-sycophancy",
+      "target": "enshittification",
+      "notes": [
+        {
+          "from": "ai-sycophancy",
+          "text": "Products quietly bent towards retaining users rather than serving them honestly."
+        },
+        {
+          "from": "enshittification",
+          "text": "The same retention-over-honesty logic, applied to a chatbot."
+        }
+      ]
+    },
+    {
+      "source": "ai-sycophancy",
+      "target": "motivated-reasoning",
+      "notes": [
+        {
+          "from": "ai-sycophancy",
+          "text": "Sycophancy supplies tidy justifications for the conclusion you already wanted."
         }
       ]
     },
@@ -3372,6 +4112,38 @@
       ]
     },
     {
+      "source": "argument-from-ignorance",
+      "target": "burden-of-proof",
+      "notes": [
+        {
+          "from": "argument-from-ignorance",
+          "text": "The argument from ignorance works by silently shifting the burden of proof from the person making the claim to the person questioning it."
+        }
+      ]
+    },
+    {
+      "source": "argument-from-ignorance",
+      "target": "circular-reasoning"
+    },
+    {
+      "source": "argument-from-ignorance",
+      "target": "confirmation-bias",
+      "notes": [
+        {
+          "from": "argument-from-ignorance",
+          "text": "Confirmation bias makes arguments from ignorance feel persuasive - we're more willing to accept 'you can't disprove it' for claims we already want to believe."
+        }
+      ]
+    },
+    {
+      "source": "argument-from-ignorance",
+      "target": "occams-razor"
+    },
+    {
+      "source": "argument-from-ignorance",
+      "target": "probabilistic-thinking"
+    },
+    {
       "source": "arrival-fallacy",
       "target": "loss-aversion",
       "notes": [
@@ -3606,6 +4378,70 @@
         {
           "from": "authority-bias",
           "text": "Authority bias shapes what we believe. Obedience to authority shapes what we do. Both rest on the same deference to perceived status"
+        }
+      ]
+    },
+    {
+      "source": "automation-bias",
+      "target": "eliza-effect",
+      "notes": [
+        {
+          "from": "automation-bias",
+          "text": "Believing a machine understands is the step just before trusting its judgement over your own."
+        },
+        {
+          "from": "eliza-effect",
+          "text": "Once we feel a machine understands, we start trusting its judgement over our own."
+        }
+      ]
+    },
+    {
+      "source": "ai-sycophancy",
+      "target": "automation-bias",
+      "notes": [
+        {
+          "from": "automation-bias",
+          "text": "An AI that sounds confident and agreeable makes its recommendations even harder to question."
+        }
+      ]
+    },
+    {
+      "source": "authority-bias",
+      "target": "automation-bias",
+      "notes": [
+        {
+          "from": "automation-bias",
+          "text": "Automation bias is authority bias aimed at a machine - we treat its output as the expert verdict."
+        }
+      ]
+    },
+    {
+      "source": "automation-bias",
+      "target": "cognitive-offloading",
+      "notes": [
+        {
+          "from": "automation-bias",
+          "text": "Handing the task to the machine slides quietly into handing over the judgement too."
+        }
+      ]
+    },
+    {
+      "source": "ai-slop",
+      "target": "automation-bias",
+      "notes": [
+        {
+          "from": "automation-bias",
+          "text": "We can defer to fluent, confident automated output even when there is nothing sound beneath it."
+        }
+      ]
+    },
+    {
+      "source": "automation-bias",
+      "target": "the-attention-economy",
+      "notes": [
+        {
+          "from": "automation-bias",
+          "text": "When we trust the feed's ranking to decide what is worth seeing, that is automation bias by another name."
         }
       ]
     },
@@ -4298,6 +5134,20 @@
       ]
     },
     {
+      "source": "capitalist-realism",
+      "target": "neoliberalism",
+      "notes": [
+        {
+          "from": "capitalist-realism",
+          "text": "Neoliberalism is the political project; capitalist realism is the resulting sense that it could never be any other way."
+        },
+        {
+          "from": "neoliberalism",
+          "text": "The sense that there is no alternative to the market is neoliberalism's cultural endpoint - Mark Fisher's name for the air we have learned to breathe."
+        }
+      ]
+    },
+    {
       "source": "chestertons-fence",
       "target": "second-order-thinking",
       "notes": [
@@ -4358,6 +5208,34 @@
           "text": "Your mental model of why something exists may not match the real reason it was built"
         }
       ]
+    },
+    {
+      "source": "choice-overload",
+      "target": "decision-fatigue",
+      "notes": [
+        {
+          "from": "choice-overload",
+          "text": "Decision fatigue depletes your mental energy; choice overload is one of the biggest sources of that depletion."
+        }
+      ]
+    },
+    {
+      "source": "choice-overload",
+      "target": "status-quo-bias",
+      "notes": [
+        {
+          "from": "choice-overload",
+          "text": "When choices feel overwhelming, we default to whatever we already have - status quo bias becomes the escape route from overload."
+        }
+      ]
+    },
+    {
+      "source": "choice-overload",
+      "target": "loss-aversion"
+    },
+    {
+      "source": "choice-overload",
+      "target": "dark-patterns"
     },
     {
       "source": "circle-of-competence",
@@ -4576,6 +5454,82 @@
       ]
     },
     {
+      "source": "cognitive-load",
+      "target": "decision-fatigue",
+      "notes": [
+        {
+          "from": "cognitive-load",
+          "text": "Decision fatigue is what happens when cognitive load accumulates over time - each decision drains the same limited resource."
+        }
+      ]
+    },
+    {
+      "source": "cognitive-load",
+      "target": "dark-patterns",
+      "notes": [
+        {
+          "from": "cognitive-load",
+          "text": "Dark patterns deliberately increase cognitive load to make you choose what the designer wants rather than what you want."
+        }
+      ]
+    },
+    {
+      "source": "availability-heuristic",
+      "target": "cognitive-load"
+    },
+    {
+      "source": "cognitive-load",
+      "target": "the-attention-economy",
+      "notes": [
+        {
+          "from": "cognitive-load",
+          "text": "The attention economy creates cognitive load by design - every platform competes for the same finite pool of mental bandwidth."
+        }
+      ]
+    },
+    {
+      "source": "cognitive-load",
+      "target": "learned-helplessness"
+    },
+    {
+      "source": "circle-of-competence",
+      "target": "cognitive-offloading",
+      "notes": [
+        {
+          "from": "cognitive-offloading",
+          "text": "Heavy offloading can blur the edge of what you genuinely understand versus what the tool understands for you."
+        }
+      ]
+    },
+    {
+      "source": "cognitive-offloading",
+      "target": "independent-evaluation",
+      "notes": [
+        {
+          "from": "cognitive-offloading",
+          "text": "The repair for over-offloading is checking a tool's output against your own reasoning rather than accepting it whole."
+        }
+      ]
+    },
+    {
+      "source": "cognitive-offloading",
+      "target": "dunning-kruger-effect",
+      "notes": [
+        {
+          "from": "cognitive-offloading",
+          "text": "Leaning on a tool can leave you feeling competent at something you have never actually practised."
+        }
+      ]
+    },
+    {
+      "source": "cognitive-offloading",
+      "target": "first-principles-thinking"
+    },
+    {
+      "source": "cognitive-offloading",
+      "target": "second-order-thinking"
+    },
+    {
       "source": "collective-amnesia",
       "target": "normalisation",
       "notes": [
@@ -4690,6 +5644,20 @@
         {
           "from": "commodification",
           "text": "Social proof accelerates commodification - when everyone treats something as a product, treating it as anything else feels naive"
+        }
+      ]
+    },
+    {
+      "source": "commodification",
+      "target": "neoliberalism",
+      "notes": [
+        {
+          "from": "commodification",
+          "text": "Commodification is the everyday engine of neoliberalism, pushing market logic into more and more of life."
+        },
+        {
+          "from": "neoliberalism",
+          "text": "The everyday mechanism of neoliberalism: turning more and more of life into something to be bought and sold."
         }
       ]
     },
@@ -5210,6 +6178,38 @@
       ]
     },
     {
+      "source": "controlling-the-narrative",
+      "target": "framing-effect",
+      "notes": [
+        {
+          "from": "controlling-the-narrative",
+          "text": "Framing is the mechanism through which narrative control operates - the same facts, framed differently, tell a completely different story."
+        }
+      ]
+    },
+    {
+      "source": "controlling-the-narrative",
+      "target": "manufactured-consent",
+      "notes": [
+        {
+          "from": "controlling-the-narrative",
+          "text": "Manufactured consent describes the systematic, structural version of narrative control through media systems."
+        }
+      ]
+    },
+    {
+      "source": "controlling-the-narrative",
+      "target": "red-herring"
+    },
+    {
+      "source": "controlling-the-narrative",
+      "target": "dog-whistling"
+    },
+    {
+      "source": "controlling-the-narrative",
+      "target": "loaded-language"
+    },
+    {
       "source": "cultural-defaults",
       "target": "status-quo-bias",
       "notes": [
@@ -5320,6 +6320,20 @@
         {
           "from": "normalisation",
           "text": "Normalisation is the engine of cultural hegemony - it's the process by which the dominant group's ideas stop being seen as ideas at all and become 'just how things are'"
+        }
+      ]
+    },
+    {
+      "source": "cultural-hegemony",
+      "target": "neoliberalism",
+      "notes": [
+        {
+          "from": "cultural-hegemony",
+          "text": "Neoliberalism is a clear case of cultural hegemony, a contested set of economic ideas that came to feel like plain common sense."
+        },
+        {
+          "from": "neoliberalism",
+          "text": "How a particular set of economic ideas comes to feel like ordinary common sense rather than a contested choice."
         }
       ]
     },
@@ -5490,6 +6504,122 @@
       ]
     },
     {
+      "source": "data-colonialism",
+      "target": "surveillance-capitalism",
+      "notes": [
+        {
+          "from": "data-colonialism",
+          "text": "The same extraction described as a business model, focused on prediction and behavioural futures markets rather than empire."
+        },
+        {
+          "from": "surveillance-capitalism",
+          "text": "The same extraction seen through the lens of empire, arguing that human life itself is being claimed as territory."
+        }
+      ]
+    },
+    {
+      "source": "data-colonialism",
+      "target": "technofeudalism",
+      "notes": [
+        {
+          "from": "data-colonialism",
+          "text": "Asks what kind of economy this extraction builds, and argues it looks more feudal than capitalist."
+        },
+        {
+          "from": "technofeudalism",
+          "text": "Shares the focus on extraction, but frames it as appropriation in the tradition of empire rather than feudal rent."
+        }
+      ]
+    },
+    {
+      "source": "commodification",
+      "target": "data-colonialism"
+    },
+    {
+      "source": "data-colonialism",
+      "target": "structural-violence"
+    },
+    {
+      "source": "cultural-hegemony",
+      "target": "data-colonialism"
+    },
+    {
+      "source": "alienation",
+      "target": "data-colonialism"
+    },
+    {
+      "source": "data-colonialism",
+      "target": "false-consciousness"
+    },
+    {
+      "source": "ai-slop",
+      "target": "dead-internet-theory",
+      "notes": [
+        {
+          "from": "dead-internet-theory",
+          "text": "The low-grade machine content that makes the web feel automated and same-y."
+        }
+      ]
+    },
+    {
+      "source": "dead-internet-theory",
+      "target": "deepfakes",
+      "notes": [
+        {
+          "from": "dead-internet-theory",
+          "text": "Synthetic people and events; part of why some claim nothing online is real."
+        },
+        {
+          "from": "deepfakes",
+          "text": "When enough of what we see could be synthetic, the whole information space starts to feel hollow."
+        }
+      ]
+    },
+    {
+      "source": "dead-internet-theory",
+      "target": "liars-dividend",
+      "notes": [
+        {
+          "from": "dead-internet-theory",
+          "text": "Where this can curdle: if nothing online is real, no inconvenient fact can be pinned down."
+        },
+        {
+          "from": "liars-dividend",
+          "text": "Where blanket distrust ends up: a sense that nothing online is real and nothing can be known."
+        }
+      ]
+    },
+    {
+      "source": "dead-internet-theory",
+      "target": "the-attention-economy",
+      "notes": [
+        {
+          "from": "dead-internet-theory",
+          "text": "The incentive engine - paying for engagement is what summons the bots and the slop."
+        }
+      ]
+    },
+    {
+      "source": "dead-internet-theory",
+      "target": "enshittification",
+      "notes": [
+        {
+          "from": "dead-internet-theory",
+          "text": "Platform decay from the same incentives that make the web feel hollow."
+        }
+      ]
+    },
+    {
+      "source": "dead-internet-theory",
+      "target": "emergence",
+      "notes": [
+        {
+          "from": "dead-internet-theory",
+          "text": "Why you do not need a plot - a dead-feeling internet falls out of many incentives pulling the same way."
+        }
+      ]
+    },
+    {
       "source": "decision-fatigue",
       "target": "status-quo-bias",
       "notes": [
@@ -5526,6 +6656,60 @@
         {
           "from": "decision-fatigue",
           "text": "Every decision carries an opportunity cost, and the accumulation of these costs contributes to fatigue"
+        }
+      ]
+    },
+    {
+      "source": "deepfakes",
+      "target": "liars-dividend",
+      "notes": [
+        {
+          "from": "deepfakes",
+          "text": "The flip side - once any recording could be fake, the guilty can dismiss real evidence as a deepfake."
+        },
+        {
+          "from": "liars-dividend",
+          "text": "The enabling condition - the liar's dividend only exists because convincing fakes now do."
+        }
+      ]
+    },
+    {
+      "source": "ai-slop",
+      "target": "deepfakes",
+      "notes": [
+        {
+          "from": "deepfakes",
+          "text": "The low-effort flood of machine content; deepfakes are its targeted, high-effort cousin."
+        }
+      ]
+    },
+    {
+      "source": "deepfakes",
+      "target": "naive-realism",
+      "notes": [
+        {
+          "from": "deepfakes",
+          "text": "Deepfakes exploit our habit of treating what we see and hear as a direct read-out of reality."
+        }
+      ]
+    },
+    {
+      "source": "deepfakes",
+      "target": "illusory-truth-effect",
+      "notes": [
+        {
+          "from": "deepfakes",
+          "text": "A fake that circulates widely gains borrowed credibility from sheer repetition."
+        }
+      ]
+    },
+    {
+      "source": "deepfakes",
+      "target": "firehose-of-falsehood",
+      "notes": [
+        {
+          "from": "deepfakes",
+          "text": "Synthetic media is fuel for the tactic of burying the truth under sheer volume."
         }
       ]
     },
@@ -5592,6 +6776,138 @@
       ]
     },
     {
+      "source": "desensitisation",
+      "target": "normalisation",
+      "notes": [
+        {
+          "from": "desensitisation",
+          "text": "Normalisation is the cultural outcome of desensitisation - once people stop reacting, the behaviour becomes part of the accepted landscape."
+        }
+      ]
+    },
+    {
+      "source": "compassion-fatigue",
+      "target": "desensitisation",
+      "notes": [
+        {
+          "from": "desensitisation",
+          "text": "Compassion fatigue is what desensitisation looks like when applied specifically to suffering - the erosion of empathy through overexposure."
+        }
+      ]
+    },
+    {
+      "source": "desensitisation",
+      "target": "the-attention-economy"
+    },
+    {
+      "source": "desensitisation",
+      "target": "moral-licensing"
+    },
+    {
+      "source": "desensitisation",
+      "target": "overton-window"
+    },
+    {
+      "source": "diagonalism",
+      "target": "in-group-out-group-bias",
+      "notes": [
+        {
+          "from": "diagonalism",
+          "text": "Diagonal movements run on a clean divide between the 'awakened' and the asleep."
+        }
+      ]
+    },
+    {
+      "source": "diagonalism",
+      "target": "illusory-truth-effect",
+      "notes": [
+        {
+          "from": "diagonalism",
+          "text": "Inside a sealed media world, the same claims repeat until they start to feel obviously true."
+        }
+      ]
+    },
+    {
+      "source": "diagonalism",
+      "target": "naive-realism",
+      "notes": [
+        {
+          "from": "diagonalism",
+          "text": "The whole posture rests on a certainty that you, unlike the deceived masses, see reality as it is."
+        }
+      ]
+    },
+    {
+      "source": "conceptual-gentrification",
+      "target": "diagonalism",
+      "notes": [
+        {
+          "from": "diagonalism",
+          "text": "Pastel QAnon is the same repackaging instinct turned to a darker purpose - softening hard conspiracy into shareable wellness aesthetics."
+        }
+      ]
+    },
+    {
+      "source": "cultural-hegemony",
+      "target": "diagonalism",
+      "notes": [
+        {
+          "from": "diagonalism",
+          "text": "How a worldview pushed hard enough stops feeling like a position and starts feeling like plain common sense."
+        }
+      ]
+    },
+    {
+      "source": "dialectic",
+      "target": "steel-manning",
+      "notes": [
+        {
+          "from": "dialectic",
+          "text": "Steelmanning is the dialectic's opening move - you cannot test an idea against its opposite until you have stated that opposite at full strength."
+        }
+      ]
+    },
+    {
+      "source": "dialectic",
+      "target": "false-dilemma",
+      "notes": [
+        {
+          "from": "dialectic",
+          "text": "The dialectic's natural enemy - it refuses the demand to pick one of two pre-set options and looks for the possibility neither side offered."
+        }
+      ]
+    },
+    {
+      "source": "dialectic",
+      "target": "naive-realism",
+      "notes": [
+        {
+          "from": "dialectic",
+          "text": "Dialectical thinking starts from the humility that your view is a position shaped by experience, not a clear window onto reality."
+        }
+      ]
+    },
+    {
+      "source": "cognitive-dissonance",
+      "target": "dialectic",
+      "notes": [
+        {
+          "from": "dialectic",
+          "text": "Holding two opposing ideas in tension is uncomfortable by design - in the dialectic, that discomfort is the method working, not a problem to escape."
+        }
+      ]
+    },
+    {
+      "source": "dialectic",
+      "target": "state-of-nature-assumption",
+      "notes": [
+        {
+          "from": "dialectic",
+          "text": "Hobbes versus Rousseau is a dialectic in miniature: two opposed readings of human nature whose clash sharpens both."
+        }
+      ]
+    },
+    {
       "source": "bystander-effect",
       "target": "diffusion-of-responsibility",
       "notes": [
@@ -5642,6 +6958,70 @@
         {
           "from": "diffusion-of-responsibility",
           "text": "Repeated exposure to suffering, combined with diffused responsibility, creates emotional withdrawal"
+        }
+      ]
+    },
+    {
+      "source": "cognitive-offloading",
+      "target": "digital-amnesia",
+      "notes": [
+        {
+          "from": "digital-amnesia",
+          "text": "The broad habit; digital amnesia is its memory-specific case."
+        }
+      ]
+    },
+    {
+      "source": "digital-amnesia",
+      "target": "dunning-kruger-effect",
+      "notes": [
+        {
+          "from": "digital-amnesia",
+          "text": "Easy access can feel like knowledge, inflating how much we think we understand."
+        }
+      ]
+    },
+    {
+      "source": "digital-amnesia",
+      "target": "the-attention-economy",
+      "notes": [
+        {
+          "from": "digital-amnesia",
+          "text": "The system that profits when we keep looking rather than learning."
+        }
+      ]
+    },
+    {
+      "source": "digital-amnesia",
+      "target": "enshittification",
+      "notes": [
+        {
+          "from": "digital-amnesia",
+          "text": "As search decays, the external memory we lean on gets less reliable."
+        }
+      ]
+    },
+    {
+      "source": "ai-slop",
+      "target": "digital-amnesia",
+      "notes": [
+        {
+          "from": "digital-amnesia",
+          "text": "More and more of what we retrieve is low-quality filler."
+        }
+      ]
+    },
+    {
+      "source": "digital-amnesia",
+      "target": "doomscrolling",
+      "notes": [
+        {
+          "from": "digital-amnesia",
+          "text": "A sibling habit - the same devices pulling at attention rather than memory."
+        },
+        {
+          "from": "doomscrolling",
+          "text": "A sibling habit - the same devices, pulling at attention rather than memory."
         }
       ]
     },
@@ -5790,6 +7170,56 @@
       ]
     },
     {
+      "source": "doomscrolling",
+      "target": "negativity-bias",
+      "notes": [
+        {
+          "from": "doomscrolling",
+          "text": "The wiring underneath it - bad news grabs and holds attention more tightly than good."
+        }
+      ]
+    },
+    {
+      "source": "doomscrolling",
+      "target": "the-attention-economy",
+      "notes": [
+        {
+          "from": "doomscrolling",
+          "text": "Feeds are engineered to exploit the pull, because alarm keeps you watching."
+        }
+      ]
+    },
+    {
+      "source": "availability-heuristic",
+      "target": "doomscrolling",
+      "notes": [
+        {
+          "from": "doomscrolling",
+          "text": "A relentless diet of bad news makes danger feel far more common than it is."
+        }
+      ]
+    },
+    {
+      "source": "compassion-fatigue",
+      "target": "doomscrolling",
+      "notes": [
+        {
+          "from": "doomscrolling",
+          "text": "Scroll through enough suffering and your capacity to care wears thin."
+        }
+      ]
+    },
+    {
+      "source": "doomscrolling",
+      "target": "learned-helplessness",
+      "notes": [
+        {
+          "from": "doomscrolling",
+          "text": "Watching events you cannot change can teach a draining sense of powerlessness."
+        }
+      ]
+    },
+    {
       "source": "confirmation-bias",
       "target": "dunning-kruger-effect"
     },
@@ -5862,6 +7292,110 @@
       ]
     },
     {
+      "source": "cultural-hegemony",
+      "target": "elite-radicalisation",
+      "notes": [
+        {
+          "from": "elite-radicalisation",
+          "text": "How the worldview of the powerful comes to feel like ordinary common sense, rather than one view among many."
+        }
+      ]
+    },
+    {
+      "source": "elite-radicalisation",
+      "target": "overton-window",
+      "notes": [
+        {
+          "from": "elite-radicalisation",
+          "text": "Elites can deliberately drag the boundaries of acceptable opinion, not just respond to where they sit."
+        }
+      ]
+    },
+    {
+      "source": "elite-radicalisation",
+      "target": "manufactured-consent",
+      "notes": [
+        {
+          "from": "elite-radicalisation",
+          "text": "The machinery that lets a view held at the top spread outward and downward."
+        }
+      ]
+    },
+    {
+      "source": "elite-radicalisation",
+      "target": "feedback-loops",
+      "notes": [
+        {
+          "from": "elite-radicalisation",
+          "text": "The systems the powerful control don't just carry their views - they amplify and entrench them."
+        }
+      ]
+    },
+    {
+      "source": "elite-radicalisation",
+      "target": "second-order-thinking",
+      "notes": [
+        {
+          "from": "elite-radicalisation",
+          "text": "A worked example: the first-order fact matters far less than what the systems do with it."
+        }
+      ]
+    },
+    {
+      "source": "eliza-effect",
+      "target": "parasocial-bonds",
+      "notes": [
+        {
+          "from": "eliza-effect",
+          "text": "The bond people form with an AI rests on this illusion of being understood."
+        },
+        {
+          "from": "parasocial-bonds",
+          "text": "When the figure is a machine, the bond rests on an illusion of understanding."
+        }
+      ]
+    },
+    {
+      "source": "ai-sycophancy",
+      "target": "eliza-effect",
+      "notes": [
+        {
+          "from": "eliza-effect",
+          "text": "A model tuned to agree and flatter makes the illusion of understanding far stronger."
+        }
+      ]
+    },
+    {
+      "source": "eliza-effect",
+      "target": "the-attention-economy",
+      "notes": [
+        {
+          "from": "eliza-effect",
+          "text": "A system that feels understanding keeps you talking, which is what the business model wants."
+        }
+      ]
+    },
+    {
+      "source": "cognitive-offloading",
+      "target": "eliza-effect",
+      "notes": [
+        {
+          "from": "eliza-effect",
+          "text": "Believing the machine understands makes it easy to hand over our thinking to it."
+        }
+      ]
+    },
+    {
+      "source": "ai-slop",
+      "target": "eliza-effect",
+      "notes": [
+        {
+          "from": "eliza-effect",
+          "text": "Fluent, confident output triggers the effect even when there is nothing solid underneath."
+        }
+      ]
+    },
+    {
       "source": "emergence",
       "target": "feedback-loops",
       "notes": [
@@ -5930,6 +7464,36 @@
         {
           "from": "emergence",
           "text": "Anthropocentrism is the lens that struggles most with emergence - because it expects systems to have a human at the centre planning them."
+        }
+      ]
+    },
+    {
+      "source": "enshittification",
+      "target": "the-attention-economy",
+      "notes": [
+        {
+          "from": "enshittification",
+          "text": "The marketplace whose incentives drive the squeeze."
+        }
+      ]
+    },
+    {
+      "source": "commodification",
+      "target": "enshittification",
+      "notes": [
+        {
+          "from": "enshittification",
+          "text": "As a platform decays, the user quietly becomes the product."
+        }
+      ]
+    },
+    {
+      "source": "enshittification",
+      "target": "network-effects",
+      "notes": [
+        {
+          "from": "enshittification",
+          "text": "The lock-in that makes the squeeze possible in the first place."
         }
       ]
     },
@@ -6314,6 +7878,56 @@
         {
           "from": "false-equivalence",
           "text": "Citing a single dissenting expert against a consensus of thousands is a common route to false equivalence."
+        }
+      ]
+    },
+    {
+      "source": "fascism",
+      "target": "populism",
+      "notes": [
+        {
+          "from": "fascism",
+          "text": "Fascism's close cousin, and its opposite in one key way: both invoke a pure people against enemies, but populism can be democratic, while fascism is revolutionary and anti-democratic by design."
+        }
+      ]
+    },
+    {
+      "source": "fascism",
+      "target": "scapegoating",
+      "notes": [
+        {
+          "from": "fascism",
+          "text": "The 'enemy within' is fascism's engine - a group blamed for the nation's fall and marked for purging."
+        }
+      ]
+    },
+    {
+      "source": "fascism",
+      "target": "moral-panic",
+      "notes": [
+        {
+          "from": "fascism",
+          "text": "The sense of a nation under siege from a hidden plot is built with much the same machinery."
+        }
+      ]
+    },
+    {
+      "source": "cultural-hegemony",
+      "target": "fascism",
+      "notes": [
+        {
+          "from": "fascism",
+          "text": "Roger Griffin argues fascism aims to win cultural hegemony for a new set of values, not merely to seize the state."
+        }
+      ]
+    },
+    {
+      "source": "fascism",
+      "target": "paradox-of-tolerance",
+      "notes": [
+        {
+          "from": "fascism",
+          "text": "Fascism's rejection of legitimate opposition is the sharp end of the question of how a tolerant society handles the intolerant."
         }
       ]
     },
@@ -6814,6 +8428,44 @@
           "text": "The first claims in a Gish Gallop can anchor the audience's thinking before the opponent has a chance to respond."
         }
       ]
+    },
+    {
+      "source": "goodharts-law",
+      "target": "unintended-consequences",
+      "notes": [
+        {
+          "from": "goodharts-law",
+          "text": "Goodhart's Law is one of the most reliable generators of unintended consequences - targets designed to improve a system routinely end up distorting it."
+        }
+      ]
+    },
+    {
+      "source": "feedback-loops",
+      "target": "goodharts-law",
+      "notes": [
+        {
+          "from": "goodharts-law",
+          "text": "Goodhart's Law creates feedback loops: the metric shapes behaviour, the changed behaviour changes the metric, and the metric then drives further behavioural distortion."
+        }
+      ]
+    },
+    {
+      "source": "goodharts-law",
+      "target": "map-is-not-the-territory",
+      "notes": [
+        {
+          "from": "goodharts-law",
+          "text": "A metric is a map. Goodhart's Law is what happens when you forget the map isn't the territory."
+        }
+      ]
+    },
+    {
+      "source": "goodharts-law",
+      "target": "second-order-thinking"
+    },
+    {
+      "source": "goodharts-law",
+      "target": "the-attention-economy"
     },
     {
       "source": "groupthink",
@@ -7486,6 +9138,96 @@
         {
           "from": "weaponised-hopelessness",
           "text": "Learned helplessness is the psychological phenomenon - you've been conditioned to stop trying. Weaponised hopelessness is the manipulation tactic that deliberately creates it."
+        }
+      ]
+    },
+    {
+      "source": "left-and-right",
+      "target": "overton-window",
+      "notes": [
+        {
+          "from": "left-and-right",
+          "text": "The centre is not fixed. What counts as left, right, or moderate shifts as the window of acceptable opinion moves."
+        }
+      ]
+    },
+    {
+      "source": "left-and-right",
+      "target": "neoliberalism",
+      "notes": [
+        {
+          "from": "left-and-right",
+          "text": "A clear case of the spectrum moving: ideas once seen as right-wing became the shared centre ground for decades."
+        }
+      ]
+    },
+    {
+      "source": "left-and-right",
+      "target": "populism",
+      "notes": [
+        {
+          "from": "left-and-right",
+          "text": "Populism cuts across the line rather than sitting on it, which is part of why left and right feel harder to read now."
+        }
+      ]
+    },
+    {
+      "source": "fascism",
+      "target": "left-and-right",
+      "notes": [
+        {
+          "from": "left-and-right",
+          "text": "Usually filed on the far right, yet its placement has always been argued over - a useful test of where the spectrum strains."
+        }
+      ]
+    },
+    {
+      "source": "cultural-hegemony",
+      "target": "left-and-right",
+      "notes": [
+        {
+          "from": "left-and-right",
+          "text": "Whichever set of ideas captures the 'common sense' centre shapes where left and right are even drawn."
+        }
+      ]
+    },
+    {
+      "source": "liars-dividend",
+      "target": "motivated-reasoning",
+      "notes": [
+        {
+          "from": "liars-dividend",
+          "text": "The audience side - we reach for 'it's fake' when the truth is inconvenient for our side."
+        }
+      ]
+    },
+    {
+      "source": "confirmation-bias",
+      "target": "liars-dividend",
+      "notes": [
+        {
+          "from": "liars-dividend",
+          "text": "We scrutinise inconvenient evidence far harder than the evidence we already wanted to believe."
+        }
+      ]
+    },
+    {
+      "source": "firehose-of-falsehood",
+      "target": "liars-dividend",
+      "notes": [
+        {
+          "from": "liars-dividend",
+          "text": "Both work by manufacturing doubt until people stop trying to sort true from false."
+        }
+      ]
+    },
+    {
+      "source": "ai-slop",
+      "target": "liars-dividend",
+      "notes": [
+        {
+          "from": "liars-dividend",
+          "text": "The ambient flood of synthetic content that makes 'it could be fake' plausible about almost anything."
         }
       ]
     },
@@ -8352,6 +10094,34 @@
       ]
     },
     {
+      "source": "neoliberalism",
+      "target": "the-meritocracy-myth",
+      "notes": [
+        {
+          "from": "neoliberalism",
+          "text": "If the market is fair, success must be earned and failure deserved. Neoliberalism leans heavily on this belief."
+        },
+        {
+          "from": "the-meritocracy-myth",
+          "text": "The meritocracy myth gives neoliberalism its moral cover: if the market is fair, success is earned and failure is your own fault."
+        }
+      ]
+    },
+    {
+      "source": "neoliberalism",
+      "target": "normalisation",
+      "notes": [
+        {
+          "from": "neoliberalism",
+          "text": "The process by which neoliberal assumptions became invisible - the water we swim in rather than something we decided on."
+        },
+        {
+          "from": "normalisation",
+          "text": "Normalisation is how neoliberal assumptions slipped out of view and began to feel like the natural order of things."
+        }
+      ]
+    },
+    {
       "source": "network-effects",
       "target": "tipping-points",
       "notes": [
@@ -8730,6 +10500,38 @@
       ]
     },
     {
+      "source": "hindsight-bias",
+      "target": "outcome-bias",
+      "notes": [
+        {
+          "from": "outcome-bias",
+          "text": "Hindsight bias makes past outcomes feel predictable, which strengthens outcome bias - if the result was obvious, the decision must have been good or bad accordingly."
+        }
+      ]
+    },
+    {
+      "source": "outcome-bias",
+      "target": "survivorship-bias",
+      "notes": [
+        {
+          "from": "outcome-bias",
+          "text": "Survivorship bias shows us only the winners, making outcome bias worse - we judge strategies by successful examples without seeing the identical strategies that failed."
+        }
+      ]
+    },
+    {
+      "source": "outcome-bias",
+      "target": "probabilistic-thinking"
+    },
+    {
+      "source": "fundamental-attribution-error",
+      "target": "outcome-bias"
+    },
+    {
+      "source": "outcome-bias",
+      "target": "self-serving-bias"
+    },
+    {
       "source": "framing-effect",
       "target": "overton-window",
       "notes": [
@@ -8828,6 +10630,56 @@
       ]
     },
     {
+      "source": "parasocial-bonds",
+      "target": "the-attention-economy",
+      "notes": [
+        {
+          "from": "parasocial-bonds",
+          "text": "The system that turns felt intimacy into time, loyalty and money."
+        }
+      ]
+    },
+    {
+      "source": "ai-sycophancy",
+      "target": "parasocial-bonds",
+      "notes": [
+        {
+          "from": "parasocial-bonds",
+          "text": "An AI tuned to feel like a friend is a parasocial bond by design."
+        }
+      ]
+    },
+    {
+      "source": "authority-bias",
+      "target": "parasocial-bonds",
+      "notes": [
+        {
+          "from": "parasocial-bonds",
+          "text": "Feeling close to a figure makes us trust their word well beyond their expertise."
+        }
+      ]
+    },
+    {
+      "source": "halo-effect",
+      "target": "parasocial-bonds",
+      "notes": [
+        {
+          "from": "parasocial-bonds",
+          "text": "Liking and closeness bleed into trust, so the bond shapes what we believe."
+        }
+      ]
+    },
+    {
+      "source": "commodification",
+      "target": "parasocial-bonds",
+      "notes": [
+        {
+          "from": "parasocial-bonds",
+          "text": "The relationship itself becomes the product being sold."
+        }
+      ]
+    },
+    {
       "source": "apophenia",
       "target": "pareidolia",
       "notes": [
@@ -8868,6 +10720,132 @@
       ]
     },
     {
+      "source": "path-dependence",
+      "target": "status-quo-bias",
+      "notes": [
+        {
+          "from": "path-dependence",
+          "text": "Status quo bias is the psychological dimension of path dependence - we prefer the current arrangement partly because switching feels like a loss."
+        }
+      ]
+    },
+    {
+      "source": "path-dependence",
+      "target": "sunk-cost-fallacy",
+      "notes": [
+        {
+          "from": "path-dependence",
+          "text": "Sunk cost reasoning reinforces path dependence - the more we've invested in the current path, the harder it is to abandon it, even when a better alternative exists."
+        }
+      ]
+    },
+    {
+      "source": "network-effects",
+      "target": "path-dependence",
+      "notes": [
+        {
+          "from": "path-dependence",
+          "text": "Network effects create path dependence: once a platform or standard reaches critical mass, switching costs make alternatives unviable regardless of their quality."
+        }
+      ]
+    },
+    {
+      "source": "chestertons-fence",
+      "target": "path-dependence"
+    },
+    {
+      "source": "normalisation",
+      "target": "path-dependence"
+    },
+    {
+      "source": "enshittification",
+      "target": "planned-obsolescence",
+      "notes": [
+        {
+          "from": "planned-obsolescence",
+          "text": "The same squeeze, applied to digital platforms rather than physical goods."
+        }
+      ]
+    },
+    {
+      "source": "commodification",
+      "target": "planned-obsolescence",
+      "notes": [
+        {
+          "from": "planned-obsolescence",
+          "text": "Durability becomes one more feature to strip out and sell back."
+        }
+      ]
+    },
+    {
+      "source": "manufacturing-desire",
+      "target": "planned-obsolescence",
+      "notes": [
+        {
+          "from": "planned-obsolescence",
+          "text": "The demand side - marketing teaches you to want the newer model."
+        }
+      ]
+    },
+    {
+      "source": "planned-obsolescence",
+      "target": "sunk-cost-fallacy",
+      "notes": [
+        {
+          "from": "planned-obsolescence",
+          "text": "Money already spent on a dying device clouds the repair-or-replace call."
+        }
+      ]
+    },
+    {
+      "source": "capitalist-realism",
+      "target": "planned-obsolescence",
+      "notes": [
+        {
+          "from": "planned-obsolescence",
+          "text": "Why the endless upgrade cycle can feel like simply how things are."
+        }
+      ]
+    },
+    {
+      "source": "optimism-bias",
+      "target": "planning-fallacy",
+      "notes": [
+        {
+          "from": "planning-fallacy",
+          "text": "Optimism bias is the emotional engine behind the planning fallacy - we believe things will go well because we want them to."
+        }
+      ]
+    },
+    {
+      "source": "planning-fallacy",
+      "target": "sunk-cost-fallacy",
+      "notes": [
+        {
+          "from": "planning-fallacy",
+          "text": "When a project runs over time and budget, the sunk cost fallacy keeps us pouring resources into it rather than cutting losses."
+        }
+      ]
+    },
+    {
+      "source": "cognitive-dissonance",
+      "target": "planning-fallacy"
+    },
+    {
+      "source": "hindsight-bias",
+      "target": "planning-fallacy",
+      "notes": [
+        {
+          "from": "planning-fallacy",
+          "text": "After a project finishes late, hindsight bias makes us feel we 'knew it would happen' - while doing nothing to fix the next estimate."
+        }
+      ]
+    },
+    {
+      "source": "first-principles-thinking",
+      "target": "planning-fallacy"
+    },
+    {
       "source": "pluralistic-ignorance",
       "target": "social-proof",
       "notes": [
@@ -8898,6 +10876,84 @@
         {
           "from": "pluralistic-ignorance",
           "text": "Publicly going along with something you privately reject creates dissonance - which is often resolved by adjusting your private beliefs to match your public behaviour."
+        }
+      ]
+    },
+    {
+      "source": "ad-hominem",
+      "target": "poisoning-the-well",
+      "notes": [
+        {
+          "from": "poisoning-the-well",
+          "text": "Poisoning the well is a preemptive form of ad hominem - attacking the person before they've even made their argument."
+        }
+      ]
+    },
+    {
+      "source": "framing-effect",
+      "target": "poisoning-the-well"
+    },
+    {
+      "source": "in-group-out-group-bias",
+      "target": "poisoning-the-well",
+      "notes": [
+        {
+          "from": "poisoning-the-well",
+          "text": "Poisoning the well often works by activating in-group/out-group bias - associating the source with a distrusted out-group."
+        }
+      ]
+    },
+    {
+      "source": "confirmation-bias",
+      "target": "poisoning-the-well"
+    },
+    {
+      "source": "neoliberalism",
+      "target": "populism",
+      "notes": [
+        {
+          "from": "populism",
+          "text": "A common account reads the recent populist surge as a backlash to decades of power draining from elected politics toward markets and technocrats."
+        }
+      ]
+    },
+    {
+      "source": "populism",
+      "target": "scapegoating",
+      "notes": [
+        {
+          "from": "populism",
+          "text": "The exclusionary form of populism runs on it - blaming an out-group below for troubles the elite above is said to have caused."
+        }
+      ]
+    },
+    {
+      "source": "overton-window",
+      "target": "populism",
+      "notes": [
+        {
+          "from": "populism",
+          "text": "Populist movements tend to pull once-marginal positions into the mainstream."
+        }
+      ]
+    },
+    {
+      "source": "moral-panic",
+      "target": "populism",
+      "notes": [
+        {
+          "from": "populism",
+          "text": "Populism's sense of crisis and betrayal is built with much the same machinery."
+        }
+      ]
+    },
+    {
+      "source": "paradox-of-tolerance",
+      "target": "populism",
+      "notes": [
+        {
+          "from": "populism",
+          "text": "Populism's claim to be the sole voice of the people sits in tension with a democracy that must accept its opponents as legitimate."
         }
       ]
     },
@@ -8950,6 +11006,38 @@
           "text": "We're drawn to causal explanations that support what we want to believe, making post hoc reasoning harder to resist."
         }
       ]
+    },
+    {
+      "source": "anchoring-bias",
+      "target": "priming",
+      "notes": [
+        {
+          "from": "priming",
+          "text": "Anchoring is a specific form of priming - the first number you encounter primes your subsequent estimates."
+        }
+      ]
+    },
+    {
+      "source": "framing-effect",
+      "target": "priming",
+      "notes": [
+        {
+          "from": "priming",
+          "text": "Framing effects work partly through priming - the words used to describe a choice prime different associations and emotional responses."
+        }
+      ]
+    },
+    {
+      "source": "mere-exposure-effect",
+      "target": "priming"
+    },
+    {
+      "source": "attentional-bias",
+      "target": "priming"
+    },
+    {
+      "source": "availability-heuristic",
+      "target": "priming"
     },
     {
       "source": "availability-heuristic",
@@ -9156,6 +11244,38 @@
       ]
     },
     {
+      "source": "availability-heuristic",
+      "target": "recency-bias",
+      "notes": [
+        {
+          "from": "recency-bias",
+          "text": "Recency bias is powered by the availability heuristic - recent events are easier to recall, so they feel more representative."
+        }
+      ]
+    },
+    {
+      "source": "negativity-bias",
+      "target": "recency-bias",
+      "notes": [
+        {
+          "from": "recency-bias",
+          "text": "Negativity bias and recency bias amplify each other - a recent negative event gets double the cognitive weight."
+        }
+      ]
+    },
+    {
+      "source": "anchoring-bias",
+      "target": "recency-bias"
+    },
+    {
+      "source": "recency-bias",
+      "target": "salience-bias"
+    },
+    {
+      "source": "hindsight-bias",
+      "target": "recency-bias"
+    },
+    {
       "source": "capitalist-realism",
       "target": "recuperation",
       "notes": [
@@ -9218,6 +11338,38 @@
           "text": "Straw man and red herring both involve shifting the argument, but straw man distorts the original point while red herring abandons it entirely."
         }
       ]
+    },
+    {
+      "source": "post-hoc",
+      "target": "regression-to-the-mean",
+      "notes": [
+        {
+          "from": "regression-to-the-mean",
+          "text": "Post hoc reasoning and regression to the mean work together - we see improvement after an intervention and assume the intervention caused it."
+        }
+      ]
+    },
+    {
+      "source": "regression-to-the-mean",
+      "target": "survivorship-bias"
+    },
+    {
+      "source": "probabilistic-thinking",
+      "target": "regression-to-the-mean",
+      "notes": [
+        {
+          "from": "regression-to-the-mean",
+          "text": "Probabilistic thinking helps you recognise that extreme results are, by definition, unlikely to repeat - with or without intervention."
+        }
+      ]
+    },
+    {
+      "source": "hindsight-bias",
+      "target": "regression-to-the-mean"
+    },
+    {
+      "source": "illusory-correlation",
+      "target": "regression-to-the-mean"
     },
     {
       "source": "regulatory-capture",
@@ -9392,6 +11544,38 @@
           "text": "Repeated slogans become thought-terminating clichés that shut down further questioning"
         }
       ]
+    },
+    {
+      "source": "normalisation",
+      "target": "salami-tactics",
+      "notes": [
+        {
+          "from": "salami-tactics",
+          "text": "Each salami slice normalises the new position, making the next slice feel like a smaller step than it is."
+        }
+      ]
+    },
+    {
+      "source": "salami-tactics",
+      "target": "slippery-slope",
+      "notes": [
+        {
+          "from": "salami-tactics",
+          "text": "The slippery slope fallacy is often dismissed as alarmist - but salami tactics are the real-world mechanism that slippery slope arguments are trying to describe."
+        }
+      ]
+    },
+    {
+      "source": "salami-tactics",
+      "target": "the-ratchet-effect"
+    },
+    {
+      "source": "dark-patterns",
+      "target": "salami-tactics"
+    },
+    {
+      "source": "overton-window",
+      "target": "salami-tactics"
     },
     {
       "source": "availability-heuristic",
@@ -9652,6 +11836,56 @@
         {
           "from": "slippery-slope",
           "text": "Sometimes a slippery slope argument identifies a real feedback loop - the question is whether the loop is actually self-reinforcing or whether there are natural limits."
+        }
+      ]
+    },
+    {
+      "source": "social-contract",
+      "target": "state-of-nature-assumption",
+      "notes": [
+        {
+          "from": "social-contract",
+          "text": "The social contract is the proposed escape from the state of nature - your view of one shapes which contract you think we need."
+        }
+      ]
+    },
+    {
+      "source": "social-contract",
+      "target": "tragedy-of-the-commons",
+      "notes": [
+        {
+          "from": "social-contract",
+          "text": "The contract is, at heart, a solution to a collective action problem: it binds everyone to shared rules at once, so cooperation becomes rational."
+        }
+      ]
+    },
+    {
+      "source": "manufactured-consent",
+      "target": "social-contract",
+      "notes": [
+        {
+          "from": "social-contract",
+          "text": "The theory rests on consent - but consent can be genuinely given or structurally produced, and the two are easy to confuse."
+        }
+      ]
+    },
+    {
+      "source": "overton-window",
+      "target": "social-contract",
+      "notes": [
+        {
+          "from": "social-contract",
+          "text": "What counts as a reasonable demand on citizens shifts over time - the terms of the contract move with the window of acceptable ideas."
+        }
+      ]
+    },
+    {
+      "source": "paradox-of-tolerance",
+      "target": "social-contract",
+      "notes": [
+        {
+          "from": "social-contract",
+          "text": "Both ideas wrestle with the limits of the deal - the point at which a system's tolerance of those who would destroy it has to run out."
         }
       ]
     },
@@ -10120,6 +12354,40 @@
       ]
     },
     {
+      "source": "surveillance-capitalism",
+      "target": "technofeudalism",
+      "notes": [
+        {
+          "from": "surveillance-capitalism",
+          "text": "Goes a step further, claiming the platforms have stopped acting like capitalist firms and now collect rent like feudal lords."
+        },
+        {
+          "from": "technofeudalism",
+          "text": "Keeps the word capitalism and treats the system as a mutant form of it, rather than a break into something new."
+        }
+      ]
+    },
+    {
+      "source": "surveillance-capitalism",
+      "target": "the-attention-economy"
+    },
+    {
+      "source": "commodification",
+      "target": "surveillance-capitalism"
+    },
+    {
+      "source": "dark-patterns",
+      "target": "surveillance-capitalism"
+    },
+    {
+      "source": "capitalist-realism",
+      "target": "surveillance-capitalism"
+    },
+    {
+      "source": "manufactured-consent",
+      "target": "surveillance-capitalism"
+    },
+    {
       "source": "availability-heuristic",
       "target": "survivorship-bias",
       "notes": [
@@ -10200,6 +12468,32 @@
       ]
     },
     {
+      "source": "enshittification",
+      "target": "technofeudalism",
+      "notes": [
+        {
+          "from": "technofeudalism",
+          "text": "Describes how the platform fiefs decay once users are locked in and the rent can be squeezed harder."
+        }
+      ]
+    },
+    {
+      "source": "capitalist-realism",
+      "target": "technofeudalism"
+    },
+    {
+      "source": "commodification",
+      "target": "technofeudalism"
+    },
+    {
+      "source": "planned-obsolescence",
+      "target": "technofeudalism"
+    },
+    {
+      "source": "technofeudalism",
+      "target": "the-attention-economy"
+    },
+    {
       "source": "commodification",
       "target": "the-attention-economy",
       "notes": [
@@ -10258,6 +12552,38 @@
           "text": "The attention economy is a powerful vehicle for cultural hegemony - the ideas that spread are the ideas the algorithm rewards, not necessarily the ideas worth spreading"
         }
       ]
+    },
+    {
+      "source": "illusory-truth-effect",
+      "target": "the-big-lie",
+      "notes": [
+        {
+          "from": "the-big-lie",
+          "text": "The illusory truth effect is the cognitive mechanism that powers the big lie - repetition makes any claim feel more true, regardless of its content."
+        }
+      ]
+    },
+    {
+      "source": "firehose-of-falsehood",
+      "target": "the-big-lie",
+      "notes": [
+        {
+          "from": "the-big-lie",
+          "text": "The firehose of falsehood is the modern delivery system for the big lie - overwhelming audiences with so many claims that none can be properly evaluated."
+        }
+      ]
+    },
+    {
+      "source": "repetition-as-persuasion",
+      "target": "the-big-lie"
+    },
+    {
+      "source": "confirmation-bias",
+      "target": "the-big-lie"
+    },
+    {
+      "source": "normalisation",
+      "target": "the-big-lie"
     },
     {
       "source": "the-attention-economy",
@@ -10348,6 +12674,44 @@
           "text": "The meritocracy myth operates within capitalist realism - if this is the only possible system, then outcomes within it must reflect individual merit."
         }
       ]
+    },
+    {
+      "source": "normalisation",
+      "target": "the-ratchet-effect",
+      "notes": [
+        {
+          "from": "the-ratchet-effect",
+          "text": "Normalisation is the cultural mechanism that allows ratcheted power to persist - what was once extraordinary starts to feel like the way things have always been."
+        }
+      ]
+    },
+    {
+      "source": "overton-window",
+      "target": "the-ratchet-effect",
+      "notes": [
+        {
+          "from": "the-ratchet-effect",
+          "text": "Each ratchet click shifts the Overton window - what was once politically unthinkable becomes the new normal."
+        }
+      ]
+    },
+    {
+      "source": "manufactured-consent",
+      "target": "the-ratchet-effect"
+    },
+    {
+      "source": "slippery-slope",
+      "target": "the-ratchet-effect",
+      "notes": [
+        {
+          "from": "the-ratchet-effect",
+          "text": "The ratchet effect is the empirical reality behind what slippery slope arguments often try to describe - not a logical fallacy here, but a documented pattern."
+        }
+      ]
+    },
+    {
+      "source": "chestertons-fence",
+      "target": "the-ratchet-effect"
     },
     {
       "source": "the-attention-economy",
@@ -11030,21 +13394,22 @@
     "Cultural Influence": "#1A7A7A"
   },
   "meta": {
-    "totalEntries": 166,
-    "totalConnections": 761,
+    "totalEntries": 206,
+    "totalConnections": 961,
     "totalCollections": 11,
     "categoryDistribution": {
-      "Logical Fallacy": 20,
-      "Cognitive Bias": 41,
+      "Logical Fallacy": 21,
+      "Cognitive Bias": 45,
+      "Technology & Society": 16,
       "Cultural Influence": 18,
-      "Systems Thinking": 7,
-      "Psychological Phenomenon": 27,
-      "Rhetorical Device": 10,
-      "Manipulation Tactic": 17,
-      "Mental Model": 12,
+      "Systems Thinking": 9,
+      "Psychological Phenomenon": 30,
+      "Rhetorical Device": 12,
+      "Manipulation Tactic": 19,
+      "Mental Model": 14,
       "Psychological Defence": 8,
-      "Political Theory": 6
+      "Political Theory": 14
     },
-    "buildTimestamp": "2026-05-25T18:37:39.086Z"
+    "buildTimestamp": "2026-06-12T18:09:12.606Z"
   }
 }

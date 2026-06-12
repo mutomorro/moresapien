@@ -79,7 +79,7 @@ None of this is mandated. Nobody forces you to describe yourself as a brand. But
 
 Fisher was especially interested in how capitalist realism operates through culture and entertainment. He noted that even anti-capitalist art tends to be absorbed by the system it critiques. A punk band signs to a major label. A film about the evils of consumerism is distributed by a multinational studio. A revolutionary slogan becomes a T-shirt.
 
-This isn't hypocrisy on the part of the artists. It's a feature of the system itself. Capitalist realism is so comprehensive that it can incorporate its own critique as a product. Dissent becomes a genre. Rebellion becomes a brand identity. The system doesn't fight opposition - it [sells it back to you](/commodification/). This process, which the [Situationists](https://en.wikipedia.org/wiki/Situationist_International) called recuperation, is one of the mechanisms through which capitalist realism sustains itself. Every apparent challenge to the system ends up demonstrating the system's ability to absorb challenges.
+This isn't hypocrisy on the part of the artists. It's a feature of the system itself. Capitalist realism is so comprehensive that it can incorporate its own critique as a product. Dissent becomes a genre. Rebellion becomes a brand identity. The system doesn't fight opposition - it [sells it back to you](/commodification/). This process, which the [Situationists](https://en.wikipedia.org/wiki/Situationist_International) called [recuperation](/recuperation/), is one of the mechanisms through which capitalist realism sustains itself. Every apparent challenge to the system ends up demonstrating the system's ability to absorb challenges.
 
 ## How capitalist realism shapes what we believe is possible
 

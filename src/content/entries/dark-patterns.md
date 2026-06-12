@@ -35,7 +35,7 @@ Dark patterns are user interface design choices that deliberately mislead, confu
 
 What makes dark patterns different from ordinary bad design is intent. A confusing interface might be the result of poor planning or limited resources. A dark pattern is confusing on purpose. The designer knows what the user wants to do. The pattern is engineered to make them do something else instead - subscribe when they meant to browse, share data when they meant to keep it private, buy an add-on they never asked for.
 
-Dark patterns work because they exploit the psychological shortcuts that govern how we navigate choices. We follow the path of least resistance. We trust visual emphasis. We click the big green button and avoid the small grey link. Designers know this, and dark patterns turn that knowledge against the user.
+Dark patterns work because they exploit the psychological shortcuts that govern how we navigate choices. We follow the path of least resistance. We trust visual emphasis. We click the big green button and avoid the small grey link. Some patterns manufacture [choice overload](/choice-overload/) on purpose - burying the option you want among dozens you don't, so the path of least resistance becomes the one the designer prefers. Designers know this, and dark patterns turn that knowledge against the user.
 
 ## How dark patterns work
 

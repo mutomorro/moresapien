@@ -31,7 +31,7 @@ relatedConcepts:
 
 Repetition as persuasion is the rhetorical strategy of making a claim more believable, more familiar, and more influential by stating it repeatedly. It is one of the oldest and most effective tools of persuasion, exploiting a fundamental feature of human cognition: the brain treats familiarity as a proxy for truth. A statement you have encountered many times feels more credible than one you are hearing for the first time, regardless of the evidence behind either.
 
-The strategy has been understood and deployed for centuries. The Roman rhetorician Quintilian noted its power. Napoleon is often credited with observing that "repetition is the strongest rhetorical device." Joseph Goebbels, the Nazi propaganda minister, built an entire propaganda apparatus around the principle that a lie repeated often enough becomes accepted as truth. The mechanism is the same whether it is used to sell products, win elections, or justify atrocities.
+The strategy has been understood and deployed for centuries. The Roman rhetorician Quintilian noted its power. Napoleon is often credited with observing that "repetition is the strongest rhetorical device." Joseph Goebbels, the Nazi propaganda minister, built an entire propaganda apparatus around the principle that a lie repeated often enough becomes accepted as truth. It is no accident that the same regime gave us [the big lie](/the-big-lie/) - a falsehood so enormous that its sheer audacity makes people assume it must be true, then repeated until the audacity stops registering. The mechanism is the same whether it is used to sell products, win elections, or justify atrocities.
 
 ## How repetition as persuasion works
 

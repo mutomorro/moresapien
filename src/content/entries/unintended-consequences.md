@@ -76,7 +76,7 @@ The [availability heuristic](/availability-heuristic/) adds another layer. Becau
 
 In education, schools that publish league tables to drive up standards often find teachers narrowing the curriculum to focus exclusively on tested subjects. Students get better at passing tests while potentially receiving a less rounded education. The metric improves. The thing the metric was supposed to measure might not.
 
-This pattern is so common it has a name: [Campbell's Law](https://en.wikipedia.org/wiki/Campbell%27s_law) - the principle that the more a quantitative indicator is used for social decision-making, the more it will be corrupted and the more it will distort the process it's supposed to monitor. Targets become the goal, and the original purpose gets lost in the scramble to hit them.
+This pattern is so common it has a name: [Campbell's Law](https://en.wikipedia.org/wiki/Campbell%27s_law) - the principle that the more a quantitative indicator is used for social decision-making, the more it will be corrupted and the more it will distort the process it's supposed to monitor. Targets become the goal, and the original purpose gets lost in the scramble to hit them. The same trap has a sharper, more famous name: [Goodhart's law](/goodharts-law/) - once a measure becomes a target, it stops being a good measure, because people optimise the number rather than the thing it was meant to track.
 
 ## Unintended consequences in everyday life
 

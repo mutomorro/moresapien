@@ -38,7 +38,7 @@ This is one of the oldest and most deeply rooted patterns in human psychology. I
 
 ## How in-group/out-group bias works
 
-The bias operates through two complementary mechanisms. In-group favouritism means you give preferential treatment, trust, and charitable interpretation to people you perceive as part of your group. Out-group derogation means you view people outside your group with greater suspicion, harsher judgement, and less empathy.
+The bias operates through two complementary mechanisms. In-group favouritism means you give preferential treatment, trust, and charitable interpretation to people you perceive as part of your group. Out-group derogation means you view people outside your group with greater suspicion, harsher judgement, and less empathy. This is what makes [poisoning the well](/poisoning-the-well/) so effective: tag a source as one of "them" before they speak, and out-group suspicion does the rest of the discrediting for you.
 
 ### Why the brain sorts people into groups
 

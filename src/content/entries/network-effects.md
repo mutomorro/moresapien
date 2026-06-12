@@ -39,7 +39,7 @@ The concept was [first formalised by economists studying telecommunications](htt
 
 Direct network effects occur when each additional user increases the value of the service for all existing users. The telephone is the textbook example. A telephone network with two users can make one connection. With ten users, it can make 45 connections. With a thousand users, nearly half a million. The value grows exponentially while the cost of adding each user remains roughly constant.
 
-Social media platforms exhibit the same dynamic. A messaging app with only your contacts is useful. One with everyone's contacts is indispensable. Each person who joins makes the platform marginally more valuable for everyone already there, creating a [feedback loop](/feedback-loops/) of increasing returns.
+Social media platforms exhibit the same dynamic. A messaging app with only your contacts is useful. One with everyone's contacts is indispensable. Each person who joins makes the platform marginally more valuable for everyone already there, creating a [feedback loop](/feedback-loops/) of increasing returns. This is a powerful source of [path dependence](/path-dependence/): once a network is established, later users are locked toward it by the choices of earlier ones, and a better-designed rival can struggle to displace it.
 
 This connects to [emergence](/emergence/) - the phenomenon where complex properties arise from simple interactions. No individual user creates the value of a network. The value emerges from the connections between users, which are a property of the system as a whole rather than of any individual part.
 

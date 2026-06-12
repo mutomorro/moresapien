@@ -54,7 +54,7 @@ This is why anxious people perceive the world as more dangerous than it is, and 
 
 ### Priming from recent experience
 
-Emotional states are not the only thing that primes attentional bias. Recent experience does too. This is the mechanism behind the [frequency illusion](/frequency-illusion/) - you learn a new word, and suddenly you hear it everywhere. You consider buying a particular car, and every other vehicle on the road seems to be the same model. Your attention filter has been updated with a new entry, and it dutifully flags every match.
+Emotional states are not the only thing that [primes](/priming/) attentional bias. Recent experience does too. This is the mechanism behind the [frequency illusion](/frequency-illusion/) - you learn a new word, and suddenly you hear it everywhere. You consider buying a particular car, and every other vehicle on the road seems to be the same model. Your attention filter has been updated with a new entry, and it dutifully flags every match.
 
 The priming can come from a single encounter, a conversation, a news article, or an algorithm showing you a particular type of content. Once primed, the filter runs automatically, often without your awareness that it has changed.
 
