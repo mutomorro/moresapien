@@ -1,17 +1,14 @@
 ---
 // StayCurious.astro - Newsletter signup + Bluesky follow
-// Restyled to the new Moresapien design tokens. Buttondown form action unchanged.
+// Restyled to the new Moresapien design tokens. The Buttondown endpoint is no
+// longer in the markup - see the script below for why.
 ---
 
 <div class="stay-curious">
   <p class="sc-heading">Stay curious</p>
   <p class="sc-subtext">Get new ideas in your inbox each month. No spam, ever.</p>
 
-  <form
-    action="https://buttondown.com/api/emails/embed-subscribe/moresapien"
-    method="post"
-    class="sc-form"
-  >
+  <form method="post" class="sc-form" data-newsletter-form>
     <div class="sc-input-row">
       <input
         type="email"
@@ -23,7 +20,22 @@
       />
       <button type="submit" class="sc-submit">Subscribe</button>
     </div>
+
+    {/* Spam trap. Off-screen and hidden from screen readers, so a filled one
+        is a bot. Disabled before submit so it never reaches Buttondown. */}
+    <div class="sc-trap" aria-hidden="true">
+      <input type="text" name="website" tabindex="-1" autocomplete="off" />
+    </div>
+
+    <p class="sc-status" data-newsletter-status role="status" aria-live="polite"></p>
   </form>
+
+  <noscript>
+    <style is:inline>.sc-form { display: none !important; }</style>
+    <p class="sc-noscript">
+      Subscribing needs JavaScript - it's how we keep the bots off the list.
+    </p>
+  </noscript>
 
   <div class="sc-divider"></div>
 
@@ -68,6 +80,37 @@
 
   .sc-form {
     margin: 0;
+  }
+
+  .sc-trap {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .sc-status {
+    font-family: var(--ms-font-ui);
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--ms-mute);
+    margin-top: var(--ms-r2);
+  }
+
+  .sc-status:empty {
+    display: none;
+  }
+
+  .sc-status.is-error {
+    color: var(--ms-coral);
+  }
+
+  .sc-noscript {
+    font-family: var(--ms-font-body);
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--ms-mute);
   }
 
   .sc-input-row {
@@ -143,3 +186,111 @@
     flex-shrink: 0;
   }
 </style>
+
+<script>
+  // Same reasoning as the contact form: with the endpoint sitting in the page
+  // source, subscribe bots scrape it once and POST at Buttondown forever
+  // without ever loading the page again, so no client-side check can reach
+  // them. Keeping it base64'd here means a bot has to run our JS to find it.
+  //
+  // Sending stays a native form POST. Buttondown's own confirmation page still
+  // handles the double opt-in, so the flow a subscriber sees is unchanged -
+  // the checks just decide whether that POST happens at all.
+  //
+  // This component renders twice per page (inline on mobile, sidebar on
+  // desktop), so every instance gets its own independent state.
+
+  const ENDPOINT = 'aHR0cHM6Ly9idXR0b25kb3duLmNvbS9hcGkvZW1haWxzL2VtYmVkLXN1YnNjcmliZS9tb3Jlc2FwaWVu';
+  const MIN_FILL_MS = 2500;
+  const COOLDOWN_MS = 60000;
+  const COOLDOWN_KEY = 'ms:newsletter:last-send';
+
+  function lastSendAt(): number {
+    try {
+      return Number(localStorage.getItem(COOLDOWN_KEY)) || 0;
+    } catch {
+      return 0;
+    }
+  }
+
+  function markSent() {
+    try {
+      localStorage.setItem(COOLDOWN_KEY, String(Date.now()));
+    } catch {
+      /* private mode - the cooldown is a nicety, not a guarantee */
+    }
+  }
+
+  function initNewsletterForm(form: HTMLFormElement) {
+    const status = form.querySelector<HTMLParagraphElement>('[data-newsletter-status]');
+    const trap = form.querySelector<HTMLInputElement>('input[name="website"]');
+    if (!status) return;
+
+    const readyAt = Date.now();
+    let humanTouched = false;
+    let attempts = 0;
+
+    // A person filling the field fires these. Setting `.value` from a script
+    // fires none of them, which is exactly the difference we care about.
+    const noteInteraction = () => {
+      humanTouched = true;
+    };
+    for (const evt of ['input', 'change', 'keydown', 'pointerdown', 'paste']) {
+      form.addEventListener(evt, noteInteraction, { once: true, passive: true });
+    }
+
+    const showError = (msg: string) => {
+      status.textContent = msg;
+      status.classList.add('is-error');
+    };
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      status.classList.remove('is-error');
+
+      // 1. The trap. Nothing human can reach it, so play dead: a bot files this
+      //    as subscribed and moves on instead of retrying or adapting.
+      if (trap && trap.value.trim() !== '') {
+        status.textContent = 'Thanks - check your inbox to confirm.';
+        form.reset();
+        return;
+      }
+
+      // 2. Nobody reaches a sidebar signup and types an address this fast, and
+      //    nobody fills a field without firing a single input event. A second
+      //    press counts as evidence of a person, so nobody gets locked out.
+      attempts += 1;
+      if (attempts > 1) humanTouched = true;
+      if (!humanTouched || Date.now() - readyAt < MIN_FILL_MS) {
+        showError('Give it a moment, then press Subscribe again.');
+        return;
+      }
+
+      // 3. One signup a minute per browser.
+      if (Date.now() - lastSendAt() < COOLDOWN_MS) {
+        showError('That address is already on its way - check your inbox.');
+        return;
+      }
+
+      status.textContent = 'Subscribing…';
+      markSent();
+
+      // Keep the trap out of the POST, then hand over to Buttondown.
+      if (trap) trap.disabled = true;
+      form.action = atob(ENDPOINT);
+      form.submit();
+    });
+  }
+
+  function initNewsletterForms() {
+    document
+      .querySelectorAll<HTMLFormElement>('[data-newsletter-form]')
+      .forEach(initNewsletterForm);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initNewsletterForms);
+  } else {
+    initNewsletterForms();
+  }
+</script>
