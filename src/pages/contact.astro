@@ -50,7 +50,6 @@ const structuredData = {
 
         <form
           class="contact-form"
-          action="https://formspree.io/f/mgoqljwg"
           method="POST"
           data-contact-form
           novalidate
@@ -100,11 +99,12 @@ const structuredData = {
             ></textarea>
           </div>
 
-          {/* Honeypot for bots — humans won't see it */}
-          <div class="contact-honeypot" aria-hidden="true">
-            <label>Leave this empty
-              <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
-            </label>
+          {/* Spam traps. Hidden from humans and from screen readers, so anything
+              arriving with these filled in is a bot. `_gotcha` is Formspree's own
+              convention; `website` is the field scripted fillers reach for. */}
+          <div class="contact-trap" aria-hidden="true">
+            <input type="text" name="website" tabindex="-1" autocomplete="off" />
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
           </div>
 
           <div class="contact-actions">
@@ -112,6 +112,19 @@ const structuredData = {
             <p class="contact-status" data-contact-status role="status" aria-live="polite"></p>
           </div>
         </form>
+
+        <noscript>
+          <style is:inline>.contact-form { display: none !important; }</style>
+          <p class="contact-noscript">
+            Sending this form needs JavaScript - that's part of how we keep the bots
+            out. If you'd rather leave it switched off, say hello on
+            <a
+              href="https://bsky.app/profile/moresapien.bsky.social"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Bluesky</a> instead.
+          </p>
+        </noscript>
 
         <div class="contact-success" data-contact-success hidden>
           <h2>Thanks for writing in.</h2>
@@ -225,12 +238,23 @@ const structuredData = {
     box-shadow: 0 0 0 3px rgba(255, 93, 74, 0.15);
   }
 
-  .contact-honeypot {
+  .contact-trap {
     position: absolute;
     left: -9999px;
     width: 1px;
     height: 1px;
     overflow: hidden;
+  }
+
+  .contact-noscript {
+    font-size: var(--ms-body);
+    line-height: 1.65;
+    color: var(--ms-mute);
+  }
+
+  .contact-noscript a {
+    color: var(--ms-ink);
+    border-bottom: 1px solid var(--ms-coral);
   }
 
   .contact-actions {
@@ -320,6 +344,48 @@ const structuredData = {
 </style>
 
 <script>
+  // Layered spam defences.
+  //
+  // The biggest hole in a static contact form is the endpoint sitting in the
+  // page source: scrapers harvest the submit URL and POST at it forever without
+  // ever loading the page again. So it lives here base64'd and is only decoded
+  // at submit time - nothing in the built HTML names our form provider, and a
+  // bot has to run our JS to learn where anything goes. On top of that: two
+  // honeypots, a fill-time floor, a check that a real input event happened, a
+  // per-browser cooldown, and a link-spam heuristic.
+  //
+  // This is the client half. The server half - Formspree's allowed-domains
+  // list and its captcha - has to be switched on in the Formspree dashboard.
+
+  const ENDPOINT = 'aHR0cHM6Ly9mb3Jtc3ByZWUuaW8vZi9tZ29xbGp3Zw==';
+  const MIN_FILL_MS = 3000;
+  const COOLDOWN_MS = 60000;
+  const COOLDOWN_KEY = 'ms:contact:last-send';
+  const MAX_LINKS = 4;
+  const MARKUP_SPAM = /\[\/?(?:url|link|b|i|img)\b[^\]]*\]|<a\s+href=/i;
+
+  function looksLikeLinkSpam(message: string) {
+    if (MARKUP_SPAM.test(message)) return true;
+    const links = message.match(/https?:\/\/|www\./gi);
+    return !!links && links.length > MAX_LINKS;
+  }
+
+  function lastSendAt(): number {
+    try {
+      return Number(localStorage.getItem(COOLDOWN_KEY)) || 0;
+    } catch {
+      return 0;
+    }
+  }
+
+  function markSent() {
+    try {
+      localStorage.setItem(COOLDOWN_KEY, String(Date.now()));
+    } catch {
+      /* private mode - the cooldown is a nicety, not a guarantee */
+    }
+  }
+
   function initContactForm() {
     const form = document.querySelector<HTMLFormElement>('[data-contact-form]');
     const status = document.querySelector<HTMLParagraphElement>('[data-contact-status]');
@@ -327,39 +393,110 @@ const structuredData = {
 
     if (!form || !status || !success) return;
 
+    const readyAt = Date.now();
+    let humanTouched = false;
+    let attempts = 0;
+
+    // A person filling the form fires these. Setting `.value` from a script
+    // fires none of them, which is exactly the difference we care about.
+    const noteInteraction = () => {
+      humanTouched = true;
+    };
+    for (const evt of ['input', 'change', 'keydown', 'pointerdown', 'paste']) {
+      form.addEventListener(evt, noteInteraction, { once: true, passive: true });
+    }
+
+    const submitBtn = form.querySelector<HTMLButtonElement>('.contact-submit');
+
+    const showSuccess = () => {
+      form.hidden = true;
+      status.textContent = '';
+      success.hidden = false;
+      success.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
+
+    const showError = (msg: string) => {
+      status.textContent = msg;
+      status.classList.add('is-error');
+      if (submitBtn) submitBtn.disabled = false;
+    };
+
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       status.classList.remove('is-error');
-      status.textContent = 'Sending…';
 
-      const submitBtn = form.querySelector<HTMLButtonElement>('.contact-submit');
+      const data = new FormData(form);
+      const message = String(data.get('message') || '');
+
+      // 1. Honeypots. Nothing human can reach these fields, so a filled one is
+      //    a bot - and we show it the success screen rather than an error, so
+      //    it files the submission as delivered instead of retrying or adapting.
+      const trapped = ['website', '_gotcha'].some(
+        (name) => String(data.get(name) || '').trim() !== '',
+      );
+      if (trapped) {
+        showSuccess();
+        return;
+      }
+
+      // 2. Nobody writes a real message in under three seconds, and nobody
+      //    fills a form without firing a single input event. Both are
+      //    recoverable on a second press, so a false positive costs someone one
+      //    retry rather than silently eating their message - and a second press
+      //    is itself evidence of a person, so nobody can get locked out.
+      attempts += 1;
+      if (attempts > 1) humanTouched = true;
+      if (!humanTouched || Date.now() - readyAt < MIN_FILL_MS) {
+        showError('Give it a moment, then press Send again.');
+        return;
+      }
+
+      // 3. One message a minute per browser.
+      const since = Date.now() - lastSendAt();
+      if (since < COOLDOWN_MS) {
+        showError('You just sent a message - give us a chance to read that one first.');
+        return;
+      }
+
+      // 4. Normal validation, now that we are past the bot checks.
+      if (!form.checkValidity()) {
+        status.textContent = '';
+        form.reportValidity();
+        return;
+      }
+
+      // 5. Contact-form spam is nearly always link-dropping.
+      if (looksLikeLinkSpam(message)) {
+        showError('That message has too many links in it to send. Trim them and try again.');
+        return;
+      }
+
+      status.textContent = 'Sending…';
       if (submitBtn) submitBtn.disabled = true;
 
+      // Keep the traps out of the email itself.
+      data.delete('website');
+      data.delete('_gotcha');
+
       try {
-        const response = await fetch(form.action, {
+        const response = await fetch(atob(ENDPOINT), {
           method: 'POST',
-          body: new FormData(form),
+          body: data,
           headers: { Accept: 'application/json' },
         });
 
         if (response.ok) {
-          form.hidden = true;
-          status.textContent = '';
-          success.hidden = false;
-          success.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          markSent();
+          showSuccess();
         } else {
-          const data = await response.json().catch(() => ({}));
+          const body = await response.json().catch(() => ({}));
           const msg =
-            (data && Array.isArray(data.errors) && data.errors.map((x: any) => x.message).join(', ')) ||
+            (body && Array.isArray(body.errors) && body.errors.map((x: any) => x.message).join(', ')) ||
             'Something went wrong. Please try again.';
-          status.textContent = msg;
-          status.classList.add('is-error');
-          if (submitBtn) submitBtn.disabled = false;
+          showError(msg);
         }
       } catch {
-        status.textContent = 'Network error. Please try again.';
-        status.classList.add('is-error');
-        if (submitBtn) submitBtn.disabled = false;
+        showError('Network error. Please try again.');
       }
     });
   }
