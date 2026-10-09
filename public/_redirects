@@ -1,3 +1,10 @@
+# moresapien.com is an alias: send every page to the same page on moresapien.org (one site for Google).
+# These must stay first: Netlify uses the first rule that matches.
+https://moresapien.com/*      https://moresapien.org/:splat  301!
+https://www.moresapien.com/*  https://moresapien.org/:splat  301!
+http://moresapien.com/*       https://moresapien.org/:splat  301!
+http://www.moresapien.com/*   https://moresapien.org/:splat  301!
+
 # PostHog analytics proxy (ad-blocker bypass)
 /ingest/static/*  https://eu-assets.i.posthog.com/static/:splat  200
 /ingest/*         https://eu.i.posthog.com/:splat  200
